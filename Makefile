@@ -34,8 +34,8 @@ $(shell mkdir -p $(MYSPELL_DIST))
 $(shell mkdir -p $(XPI_DIST)/dictionaries)
 $(shell mkdir -p $(OXT_DIST))
 
-KOI8U_SET = koi8-u-nl.cset
-KOI8U_MAP = koi8-u-nl.cmap
+KOI8U_SET = src/aspell/koi8-u-nl.cset
+KOI8U_MAP = src/aspell/koi8-u-nl.cmap
 
 wordlist_src = src/Dictionary/uk_words.lst
 affixfile_src = src/Affix/uk_affix.dat
@@ -54,7 +54,7 @@ include encodings.inc
 
 default:	aspell
 
-all: 		aspell myspell
+all: 		aspell myspell mozilla-xpi ooo
 
 packages:	aspell-rpm myspell-rpm myspell-zip mozilla-xpi ooo
 
@@ -120,11 +120,11 @@ $(ASPELL_DIST)/uk_affix.dat:	$(affixfile_src) encodings.inc
 #$(ASPELL_DIST)/uk_words.lst:	$(wordlist_src) encodings.inc
 #	$(iconv) -f $(SOURCE_ENC) -t $(ASPELL_ENC) < $(wordlist_src) > $@
 
-$(ASPELL_DIST)/uk.dat:		uk.dat.templ encodings.inc
-	sed "s/^data-encoding.*$$/data-encoding   $(ASPELL_ENC_NAME)/" < uk.dat.templ > $@
+$(ASPELL_DIST)/uk.dat:		src/aspell/uk.dat.templ encodings.inc
+	sed "s/^data-encoding.*$$/data-encoding   $(ASPELL_ENC_NAME)/" < src/aspell/uk.dat.templ > $@
 
 # *.kbd file should be always in UTF-8
-$(ASPELL_DIST)/ukrainian.kbd:	ukrainian.kbd
+$(ASPELL_DIST)/ukrainian.kbd:	src/aspell/ukrainian.kbd
 	cp -u $< $@
 
 # official aspell.net package
