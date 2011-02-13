@@ -1,0 +1,41 @@
+nroffchars      ().\\*
+texchars        ()\[]{}<\>\\$*.%
+
+wordchars [\x0] [\x0]	#   
+wordchars а А 
+wordchars б Б 
+wordchars в В 
+wordchars г Г 
+wordchars ґ Ґ 
+wordchars д Д 
+wordchars е Е 
+wordchars є Є 
+wordchars ж Ж 
+wordchars з З 
+wordchars и И 
+wordchars і І 
+wordchars ї Ї 
+wordchars й Й 
+wordchars к К 
+wordchars л Л 
+wordchars м М 
+wordchars н Н 
+wordchars о О 
+wordchars п П 
+wordchars р Р 
+wordchars с С 
+wordchars т Т 
+wordchars у У 
+wordchars ф Ф 
+wordchars х Х 
+wordchars ц Ц 
+wordchars ч Ч 
+wordchars ш Ш 
+wordchars щ Щ 
+wordchars ь Ь 
+wordchars ю Ю 
+wordchars я Я 
+boundarychars [\x27] 		# ' 
+boundarychars [\x60] 		# ` 
+boundarychars [\x2d] 		# - 
+

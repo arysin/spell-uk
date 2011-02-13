@@ -1,0 +1,6 @@
+SET xxENCODINGxx
+TRY '-абвгґдеєжзиіїйклмнопрстуфхцчшщьюяАБВГҐДЕЄЖЗИІЇЙКЛМОПРСТУФХЦЧШЩЬЮЯ
+WORDCHARS -'`
+BREAK 1
+BREAK -
+IGNORE ́

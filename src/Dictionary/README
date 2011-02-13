@@ -1,0 +1,30 @@
+Опис файлів у цьому каталозі:
+Description of files in this directory:
+
+
+README, TODO
+
+base.lst 		-- base file for the dictionary
+base-abbr.lst 	-- general abbriviations
+computer.lst 	-- computing related terms
+economics.lst 	-- economics related terms
+kds_dstu		-- countries from DSTU and their derivatives
+geography.lst   -- geographical names
+names.lst		-- personal names
+science.lst		-- scientific terms
+chemistry.lst 	-- chemistry, geology
+medicine.lst 	-- medicine, anatomy related terms
+
+exceptions.lst	-- words that decline under unknown/undefined rules (not sorted)
+pronouns.lst	-- pronouns with all their forms (not sorted)
+
+hypocoristic.lst - лагідно-зменшувальні слова, тощо
+    (але в base.lst знаходяться прикм. на -енький -інький)
+
+slang.lst		-- slang
+
+misc.lst		-- деякі русизми (not in dictionary)
+
+
+D. Kovalov (Дмитро Ковальов) Dec 2000
+A.Rysin (Андрій Рисін) Sep 2005-2008

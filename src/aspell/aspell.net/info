@@ -1,0 +1,33 @@
+name_english Ukrainian
+name_ascii Ukrayins'ka
+name_native Українська 
+lang uk
+data-file uk_affix.dat
+data-file ukrainian.kbd
+data-file koi8-u-nl.cmap
+data-file koi8-u-nl.cset
+copyright Other
+version 1.5.0-0
+complete true
+accurate true
+author:
+  name  Andriy Rysin
+  name-native Андрій Рисін
+  email arysin at yahoo com
+  maintainer true
+author:
+  name Eugeniy Meshcheryakov
+  name-native Євгеній Мещеряков
+  email eugen at debian org
+  maintainer false
+author:
+  name Dmytro Koval'ov
+  name-native Дмитро Ковальов
+  email dmytro kovalov at gmail com
+
+url http://ispell-uk.sourceforge.net/
+
+dict:
+  name uk
+  alias ukrainian
+  add uk
