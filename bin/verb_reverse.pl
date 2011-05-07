@@ -28,6 +28,7 @@ my %SFX_REV = (
 );
 
 # для слів, які мають і "-ся" і "-сь"
+#my $GENERIC	="([аяийіїоуюв])|(те)";
 my $GENERIC	="([аяийіїоуюв])|(те)";
 
 print "# DO NOT EDIT!! Use bin/verb_reverse.pl instead to generate this file from ukrainian.aff.VERB!\n";
@@ -92,7 +93,8 @@ while(<>) {
 
 # Створення правил для афіксів та прикладів
 
-    if( $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
+    # перші дві умови для спецвипадку "мести - мететься"
+    if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) && $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
 	$comment =~ s/([^#\s]\s+[$UK_LOW]+$GENERIC)(\s)/$1сь$4/;
 
 	push(@lines, $LINE[0]. " ". $sfx_rev. "   ". $suffix_oldbody. "\t". $suffix_newbody. "\t". $suffix_match. "\t\t#". $comment);
