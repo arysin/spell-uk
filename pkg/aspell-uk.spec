@@ -3,7 +3,7 @@
 
 Summary:	Ukrainian dictionaries for aspell
 Name:		aspell-%{languagecode}
-Version:	1.6.0
+Version:	1.6.5
 Release:	1
 Epoch:		5
 URL:		http://ispell-uk.sourceforge.net/
@@ -71,6 +71,10 @@ rm -fr $RPM_BUILD_ROOT
 %{_libdir}/aspell-*/koi8-u-nl*
 
 %changelog
+* Mon May 16 2011 22:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.5
+- 4K of new words
+- some fixes
+
 * Mon Aug 17 2009 23:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.0
 - 15K of new words
 - many fixes
