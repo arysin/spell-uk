@@ -94,7 +94,9 @@ while(<>) {
 # Створення правил для афіксів та прикладів
 
     # перші дві умови для спецвипадку "мести - мететься"
-    if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) && $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
+    if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) 
+            &&  ( !($suffix_oldbody =~ /^ти$/) || !($suffix_newbody =~ /^те$/) || !($suffix_match =~ /^ости$/)) 
+            && $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
 	$comment =~ s/([^#\s]\s+[$UK_LOW]+$GENERIC)(\s)/$1сь$4/;
 
 	push(@lines, $LINE[0]. " ". $sfx_rev. "   ". $suffix_oldbody. "\t". $suffix_newbody. "\t". $suffix_match. "\t\t#". $comment);
