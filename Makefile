@@ -93,7 +93,7 @@ aspell-rpm:	srctar
 
 install-aspell-dict: aspell
 	install -m 0755 -d  $(PREFIX)$(datadir) $(PREFIX)$(dictdir)
-	install -m 0644  $(ASPELL_DIST)/$(KOI8U_SET) $(ASPELL_DIST)/$(KOI8U_MAP) $(PREFIX)$(dictdir)
+	install -m 0644  $(KOI8U_SET) $(KOI8U_MAP) $(PREFIX)$(dictdir)
 	install -m 0644  $(ASPELL_DIST)/uk.dat $(PREFIX)$(datadir)
 	install -m 0644  $(ASPELL_DIST)/uk.rws $(ASPELL_DIST)/uk.multi $(ASPELL_DIST)/uk_affix.dat $(ASPELL_DIST)/ukrainian.alias $(ASPELL_DIST)/ukrainian.kbd $(PREFIX)$(dictdir)
 
