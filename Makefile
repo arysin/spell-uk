@@ -169,7 +169,10 @@ $(MYSPELL_DIST)/uk_UA.aff:	$(affixfile_src) src/myspell/myspell.header encodings
 
 $(MYSPELL_DIST)/uk_UA.dic:	$(wordlist_src) encodings.inc
 	wc -l < $(wordlist_src) > $@
-	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@
+	grep "'" $(wordlist_src) | sed -r "s/'/ʼ/g" | sed -r "s/\//\/\!/" > /tmp/spell_u02bc.lst
+	cat $(wordlist_src) /tmp/spell_u02bc.lst | (LC_ALL=$(LOCALE) sort) >> $@
+	rm /tmp/spell_u02bc.lst
+#	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@
 
 mozilla-xpi:	myspell
 	mkdir -p $(XPI_DIST)/dictionaries

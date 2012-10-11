@@ -12,7 +12,7 @@ for word in `grep "/V$" uk_words.lst | head -n 10`; do
   word_=${word%%/*}
 
   echo -n "doing $word_ ..." 
-  incls=`unmunch www.tmp ../../dist/myspell-uk-1.6.0/uk_UA.aff 2>> www.err`
+  incls=`unmunch www.tmp ../Affix/uk_affix.dat 2>> www.err`
   for pos in $incls; do
     echo $pos $word_ "adj:${adj_tags[i]}" >> www.out 
     ((i=i+1))

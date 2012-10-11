@@ -1,4 +1,4 @@
-This is Ukrainian spelling dictionary for myspell & hunspell version 1.6.0.
+This is Ukrainian spelling dictionary for myspell & hunspell version 1.6.5.
 
 This dictionary based on spell-uk project http://ispell-uk.sourceforge.net/
 
