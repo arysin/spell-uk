@@ -37,10 +37,10 @@ $(shell mkdir -p $(OXT_DIST))
 KOI8U_SET = src/aspell/koi8-u-nl.cset
 KOI8U_MAP = src/aspell/koi8-u-nl.cmap
 
-wordlist_src = src/Dictionary/uk_words.lst
+wordlist_src = src/Dictionary/uk_words.out
 affixfile_src = src/Affix/uk_affix.dat
 
-CLEANFILES = uk.rws uk.cwl uk.cwl.gz uk_words.lst uk_affix.dat *.bak uk.dat
+CLEANFILES = uk.rws uk.cwl uk.cwl.gz uk_words.out uk_affix.dat *.bak uk.dat
 CLEANFILES += uk.aff uk.dic tmp.header
 CLEANFILES += ukrainian.aff ukrainian.hash uk_words.enc uk_words.enc.cnt uk_words.enc.stat ukrainian
 CLEANFILES += aspell-uk-*.tgz myspell_uk_UA-*.zip ispell-uk-*.tgz
@@ -117,7 +117,7 @@ $(ASPELL_DIST)/uk.rws:	$(affixfile_src) $(wordlist_src) $(ASPELL_DIST)/uk_affix.
 $(ASPELL_DIST)/uk_affix.dat:	$(affixfile_src) encodings.inc
 	$(iconv) -f $(SOURCE_ENC) -t $(ASPELL_ENC) < $(affixfile_src) > $@
 
-#$(ASPELL_DIST)/uk_words.lst:	$(wordlist_src) encodings.inc
+#$(ASPELL_DIST)/uk_words.out:	$(wordlist_src) encodings.inc
 #	$(iconv) -f $(SOURCE_ENC) -t $(ASPELL_ENC) < $(wordlist_src) > $@
 
 $(ASPELL_DIST)/uk.dat:		src/aspell/uk.dat.templ encodings.inc
@@ -170,6 +170,7 @@ $(MYSPELL_DIST)/uk_UA.aff:	$(affixfile_src) src/myspell/myspell.header encodings
 $(MYSPELL_DIST)/uk_UA.dic:	$(wordlist_src) encodings.inc
 	wc -l < $(wordlist_src) > $@
 	grep "'" $(wordlist_src) | sed -r "s/'/ʼ/g" | sed -r "s/\//\/\!/" > /tmp/spell_u02bc.lst
+	grep "'" $(wordlist_src) | sed -r "s/'/’/g" | sed -r "s/\//\/\!/" >> /tmp/spell_u02bc.lst
 	cat $(wordlist_src) /tmp/spell_u02bc.lst | (LC_ALL=$(LOCALE) sort) >> $@
 	rm /tmp/spell_u02bc.lst
 #	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@

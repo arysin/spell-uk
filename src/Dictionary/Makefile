@@ -7,15 +7,15 @@ LC_ALL	   =	LC_ALL=$(LOCALE)
 sort	   =	$(LC_ALL) sort
 
 dict	   = 	$(INDICT)
-dictionary =	uk_words.lst
+dictionary =	uk_words.out
 
-CLEANFILES =	uk_words.lst *.tmp *.old *.bak
-
-
-all:	uk_words.lst
+CLEANFILES =	uk_words.out *.tmp *.old *.bak
 
 
-uk_words.lst: $(dict)
+all:	uk_words.out
+
+
+uk_words.out: $(dict)
 	cat $(SPACED) | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
 	cat $(NOTSPACED) spaced.tmp | $(sort) > $@
 	rm -f spaced.tmp
@@ -30,27 +30,27 @@ sort:
 
 # helper targets
 
-stat:	uk_words.lst
-	grep "/" uk_words.lst | LC_ALL=uk_UA.UTF-8 sed "s/^.*\([а-я'][а-я]\/[A-Za-z]\).*$$/\1/" | sort | uniq -c > uk_words2.stat
-	$(LC_ALL) grep -E "[а-я']{4,}/" uk_words.lst | $(LC_ALL) sed "s/^.*\([а-я'][а-я'][а-я]\/[A-Za-z]\).*$$/\1/" | sort | uniq -c > uk_words3.stat
-	$(LC_ALL) grep -E "[а-я']{4,}/" uk_words.lst | $(LC_ALL) sed "s/^.*\([а-я'][а-я'][а-я]\/[A-Za-z]\+\)$$/\1/" | sort | uniq -c > uk_words3f.stat
+stat:	uk_words.out
+	grep "/" uk_words.out | LC_ALL=uk_UA.UTF-8 sed "s/^.*\([а-я'][а-я]\/[A-Za-z]\).*$$/\1/" | sort | uniq -c > uk_words2.stat
+	$(LC_ALL) grep -E "[а-я']{4,}/" uk_words.out | $(LC_ALL) sed "s/^.*\([а-я'][а-я'][а-я]\/[A-Za-z]\).*$$/\1/" | sort | uniq -c > uk_words3.stat
+	$(LC_ALL) grep -E "[а-я']{4,}/" uk_words.out | $(LC_ALL) sed "s/^.*\([а-я'][а-я'][а-я]\/[A-Za-z]\+\)$$/\1/" | sort | uniq -c > uk_words3f.stat
 
 
 bad:	all
 	-rm -f uk_words.bad
-	-$(LC_ALL) grep -E "[EF].*[CD]|[CD].*[EF]" uk_words.lst > uk_words.bad
-	-$(LC_ALL) grep -E "[AB].*[IJ]|[IJ].*[AB]" uk_words.lst >> uk_words.bad
+	-$(LC_ALL) grep -E "[EF].*[CD]|[CD].*[EF]" uk_words.out > uk_words.bad
+	-$(LC_ALL) grep -E "[AB].*[IJ]|[IJ].*[AB]" uk_words.out >> uk_words.bad
 
 dups:	all
 	-rm -f uk_words.dups
-	-sed "s/[/A-Z]*//gi" uk_words.lst | $(LC_ALL) sort | uniq -d > uk_words.dups
-	-sed "s/[/A-Z]*//gi" uk_words.lst | $(LC_ALL) sed "s/[еє]/.e./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_e
-	-sed "s/[/A-Z]*//gi" uk_words.lst | $(LC_ALL) sed "s/[гґ]/.г./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_g
-	-sed "s/[/A-Z]*//gi" uk_words.lst | $(LC_ALL) sed "s/[иі]/.и./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_y
+	-sed "s/[/A-Z]*//gi" uk_words.out | $(LC_ALL) sort | uniq -d > uk_words.dups
+	-sed "s/[/A-Z]*//gi" uk_words.out | $(LC_ALL) sed "s/[еє]/.e./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_e
+	-sed "s/[/A-Z]*//gi" uk_words.out | $(LC_ALL) sed "s/[гґ]/.г./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_g
+	-sed "s/[/A-Z]*//gi" uk_words.out | $(LC_ALL) sed "s/[иі]/.и./ig" | $(LC_ALL) sort | uniq -d > uk_words.dups_y
 
 adj:	all
 	-rm -f uk_words.adj
-	-grep "аючий" uk_words.lst > uk_words.adj
+	-grep "аючий" uk_words.out > uk_words.adj
 
 
 clean:
