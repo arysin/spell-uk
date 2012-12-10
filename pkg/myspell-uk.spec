@@ -4,7 +4,7 @@
 
 Summary:	MySpell spelling dictionary for Ukrainian
 Name:		myspell-%{languagecode}
-Version:	1.6.5
+Version:	1.6.6
 Release:	1
 URL:		http://ispell-uk.sourceforge.net/
 Source:		spell-uk-%{version}.tgz
@@ -84,6 +84,10 @@ fi
 %{dictdir}/uk_UA.dic
 
 %changelog
+* Mon Dec 09 2011 22:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.6
+- 2K of new words
+- some fixes
+
 * Mon May 16 2011 22:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.5
 - 4K of new words
 - some fixes

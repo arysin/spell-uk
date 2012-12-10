@@ -1,5 +1,5 @@
 %define name ispell-uk
-%define version 1.6.5
+%define version 1.6.6
 %define release 1
 %define sourcename spell-uk-%{version}
 
@@ -43,6 +43,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/ispell/ukrainian.hash
 
 %changelog
+* Mon Dec 09 2011 22:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.6
+- 2K of new words
+- some fixes
+
 * Mon May 16 2011 22:11:52 Andriy Rysin <arysin@yahoo.com> 1.6.5
 - 4K of new words
 - some fixes
