@@ -20,6 +20,8 @@ uk_words.out: $(dict)
 	cat $(NOTSPACED) spaced.tmp | $(sort) > $@
 	rm -f spaced.tmp
 
+wc:     uk_words.out
+	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
 
 sort:
 	@for ff in $(SORTED) ; do \

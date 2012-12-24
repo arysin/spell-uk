@@ -2,6 +2,7 @@
 
 SORT="count"
 DICT="uk_UA"
+LIMIT=100000
 
 for i in $*
 do
@@ -54,7 +55,7 @@ function sortt() {
         sort | uniq
     else
 	echo "Сортуємо за кількістю" >&2
-        sort | uniq -c | sort -nr | awk '{print $2}'
+        sort | uniq -c | sort -nr | head -n $LIMIT | awk '{print $2}'
     fi
 }
 
@@ -97,7 +98,7 @@ fi
 
 echo "Перевіряємо правопис словником $DICT" >&2
 
-cat $FILE | tr '\n' '@' | sed -r "s/-@ *//g" | tr '@' '\n' |\
+cat $FILE | grep -vE "[а-яіїєґё][a-z]|[a-z][а-яіїєґё]" | tr '\n' '@' | sed -r "s/-@ *//g" | tr '@' '\n' |\
 sed "s/[а-яіїєґ]+\.//gi" | sed -r "s/́//g" | sed -r "s/([’ʼ‘\`]|\\')/'/g" |\
 hunspell -d $DICT -l |\
 grep -iE "^[а-щьюяїєґ'-]{4,}$" | grep -vE "^['-]|['-]$" |\
