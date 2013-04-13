@@ -70,9 +70,9 @@ while(<>) {
 	
 	if( $SFX[1] =~ /[AIKM]/ ) {
 	    push(@lines, "# Зворотня форма дієслів (-ся та -сь)\n");
-	    push(@lines, "SFX ", $sfx_rev, "   0\tся	ти		#  ~ти  ~тися\n");
-	    push(@lines, "SFX ", $sfx_rev, "   0\tсь	ти		#  ~ти  ~ись\n");
-	    push(@lines, "SFX ", $sfx_rev, "   ся	сь	тися		#  ~тися  ~ись\n");
+	    push(@lines, "SFX ", $sfx_rev, "   0\tся	ти		#  ~ти  ~тися    @ verb:inf:rev\n");
+	    push(@lines, "SFX ", $sfx_rev, "   0\tсь	ти		#  ~ти  ~ись     @ verb:inf:rev\n");
+	    push(@lines, "SFX ", $sfx_rev, "   ся	сь	тися		#  ~тися  ~ись    @ verb:inf:rev\n");
 
 	    $line_count += 3;
 	}
@@ -92,6 +92,8 @@ while(<>) {
 
 
 # Створення правил для афіксів та прикладів
+    $comment =~ s/@ verb:/@ verb:rev:/;
+
 
     # перші дві умови для спецвипадку "мести - мететься"
     if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) 

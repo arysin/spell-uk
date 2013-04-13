@@ -14,6 +14,9 @@ all: $(affixfile)
 $(affixfile): $(src_affixfiles)
 	cat $(src_affixfiles) | sed 's/#.*$$//g; s/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
 
+uk_affix.out: $(src_affixfiles)
+	cat $(src_affixfiles) | grep -Ev "^#|^REP" | sed 's/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
+
 uk.aff.VERB_REV: uk.aff.VERB $(reverse_verbs)
 	$(reverse_verbs) < uk.aff.VERB > uk.aff.VERB_REV
 
