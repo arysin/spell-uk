@@ -17,6 +17,14 @@ all:	uk_words.out
 
 uk_words.out: $(dict)
 	cat $(SPACED) | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
+	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
+	cat $(NOTSPACED) spaced.tmp | $(sort) > $@
+	rm -f spaced.tmp
+
+uk_words.tag: $(dict)
+	cat $(SPACED) | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
+	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ if ($$2 != "" && $$3 == "") print $$1,$$1,$$2; else print $$0; }' | sort -u >> spaced.tmp
+	awk '{ print $$0 " :bad" }' twisters.lst >> spaced.tmp
 	cat $(NOTSPACED) spaced.tmp | $(sort) > $@
 	rm -f spaced.tmp
 

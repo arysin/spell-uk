@@ -93,12 +93,26 @@ while(<>) {
 
 # Створення правил для афіксів та прикладів
     $comment =~ s/@ verb:/@ verb:rev:/;
-
+    $comment =~ s/@ dieprysl:/@ dieprysl:rev:/;
 
     # перші дві умови для спецвипадку "мести - мететься"
     if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) 
             &&  ( !($suffix_oldbody =~ /^ти$/) || !($suffix_newbody =~ /^те$/) || !($suffix_match =~ /^ости$/)) 
             && $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
+            
+        if( $comment =~ /.*dieprysl.*/ ) { # для дієприслівників, які мають тільки "-сь"
+            print STDERR "dieprysl";
+            $suffix_newbody =~ s/(чи|ши)$/$1сь/;
+            $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1сь$2/;
+
+	    push(@lines, $LINE[0], " ", $sfx_rev, "   ", $suffix_oldbody, "\t", $suffix_newbody, "\t", $suffix_match, "\t\t#", $comment);
+	    push(@lines, $LINE[0], " ", $sfx_rev, "   ", get_reversed($suffix_oldbody, $suffix_newbody, $suffix_match, $comment));
+
+	    $line_count += 2;
+	}
+        else {
+
+            
 	$comment =~ s/([^#\s]\s+[$UK_LOW]+$GENERIC)(\s)/$1сь$4/;
 
 	push(@lines, $LINE[0]. " ". $sfx_rev. "   ". $suffix_oldbody. "\t". $suffix_newbody. "\t". $suffix_match. "\t\t#". $comment);
@@ -111,24 +125,26 @@ while(<>) {
 	push(@lines, $LINE[0]. " ". $sfx_rev. "   ". get_reversed($suffix_oldbody, $suffix_newbody, $suffix_match, $comment));
 
 	$line_count += 4;
+	}
     }
     else {
-        if( $suffix_newbody =~ s/([еє])$/$1ться/ ) { # для слів, які мають тільки "-ться"
-	    $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ться$2/;
-	}
-	else {
-	    if ( $suffix_newbody =~ s/([$UK_LOW])$/$1ся/ ) { # для слів, які мають тільки "-ся"
-		$comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ся$2/;
+            if( $suffix_newbody =~ s/([еє])$/$1ться/ ) { # для слів, які мають тільки "-ться"
+	        $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ться$2/;
 	    }
-	    else { # для слів, які не мали закінчень"
-		$suffix_newbody =~ s/0/ся/;
-		$comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ся$2/;
+	    else {
+	        if ( $suffix_newbody =~ s/([$UK_LOW])$/$1ся/ ) { # для слів, які мають тільки "-ся"
+		    $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ся$2/;
+	        }
+	        else { # для слів, які не мали закінчень"
+		    $suffix_newbody =~ s/0/ся/;
+		    $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1ся$2/;
+	        }
 	    }
-	}
-	push(@lines, $LINE[0], " ", $sfx_rev, "   ", $suffix_oldbody, "\t", $suffix_newbody, "\t", $suffix_match, "\t\t#", $comment);
-	push(@lines, $LINE[0], " ", $sfx_rev, "   ", get_reversed($suffix_oldbody, $suffix_newbody, $suffix_match, $comment));
+	
+	    push(@lines, $LINE[0], " ", $sfx_rev, "   ", $suffix_oldbody, "\t", $suffix_newbody, "\t", $suffix_match, "\t\t#", $comment);
+	    push(@lines, $LINE[0], " ", $sfx_rev, "   ", get_reversed($suffix_oldbody, $suffix_newbody, $suffix_match, $comment));
 
-	$line_count += 2;
+	    $line_count += 2;
     }
 
   }
