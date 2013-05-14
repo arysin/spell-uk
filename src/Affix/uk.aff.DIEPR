@@ -1,0 +1,67 @@
+SFX O Y 45
+
+SFX O   вати	ючи	[ауюя]вати	#  абонувати  абонуючи 		     @ dieprysl:imperf
+SFX O   ати	учи	[рз]вати	#  рвати  рвучи			     @ dieprysl:imperf
+SFX O   зати	жучи	зати		#  казати  кажучи 	                     @ dieprysl:imperf
+SFX O   ати	учи	[днжщ]ати	#  блищати  блищучи	             @ dieprysl:imperf
+SFX O   ати	учи	[^ао]чати	#  деренчати  деренчучи	             @ dieprysl:imperf
+SFX O   ати	нучи	[ао]чати	#  зачати  зачнучи 	             @ dieprysl:imperf
+SFX O   тати	чучи	[^с]тати	#  шептати  шепчучи 	             @ dieprysl:imperf
+SFX O   кати	чучи	[^с]кати	#  плакати  плачучи 	             @ dieprysl:imperf
+SFX O   сати	шучи	сати		#  писати  пишучи	                             @ dieprysl:imperf
+SFX O   хати	шучи	хати		#  брехати  брешучи	                     @ dieprysl:imperf
+SFX O   стати	щучи	стати		#  свистати  свищучи	                     @ dieprysl:imperf
+SFX O   скати	щучи	скати		#  плескати  плещучи 	                     @ dieprysl:imperf
+SFX O   слати	шлючи	слати		#  послати  пошлючи 	                     @ dieprysl:imperf
+SFX O   ати	лючи	пати		#  сипати  сиплючи 	                     @ dieprysl:imperf
+SFX O   ати	ючи	орати		#  орати  орючи	 	                     @ dieprysl:imperf
+SFX O   рати	еручи	[бдп]рати	#  брати  беручи	 	             @ dieprysl:imperf
+SFX O   ити	жучи	[^з]дити	#  входити  входжучи		             @ dieprysl:imperf
+SFX O   здити	жджучи	здити		#  їздити  їжджучи		             @ dieprysl:imperf
+SFX O   зити	жучи	зити		#  возити  вожучи		                     @ dieprysl:imperf
+SFX O   ити	учи	[жчшщ]ити	#  бентежити  бентежучи 		             @ dieprysl:imperf
+SFX O   сити	шучи	сити		#  місити  мішучи 		             @ dieprysl:imperf
+SFX O   тити	чучи	[^с]тити	#  тратити  трачучи 		             @ dieprysl:imperf
+SFX O   стити	щучи	стити		#  мостити  мощучи 		             @ dieprysl:imperf
+SFX O   ити	лючи	[бвмпф]ити	#  вимовити  вимовлючи		             @ dieprysl:imperf
+SFX O   ити	ючи	[лнр]ити	#  творити  творючи		             @ dieprysl:imperf
+SFX O   іти	жучи	діти		#  смердіти  смерджучи		             @ dieprysl:imperf
+SFX O   іти	учи	[шж]іти		#  кишіти  кишучи 		             @ dieprysl:imperf
+SFX O   сіти	шучи	сіти		#  висіти  вишучи 		             @ dieprysl:imperf
+SFX O   тіти	чучи	[^с]тіти	#  летіти  лечучи 		             @ dieprysl:imperf
+SFX O   стіти	щучи	стіти		#  шелестіти  шелещучи 		             @ dieprysl:imperf
+SFX O   іти	лючи	[бвмп]іти	#  шуміти  шумлючи		             @ dieprysl:imperf
+SFX O   іти	ючи	[нлр]іти	#  веліти  велючи		                     @ dieprysl:imperf
+SFX O   ути	учи	нути		#  тягнути  тягнучи 	                     @ dieprysl:imperf
+SFX O   ти	дучи	бути		#  забути  забудучи 	                     @ dieprysl:imperf
+SFX O   оти	ючи	оти		#  бороти  борючи	                             @ dieprysl:imperf
+SFX O   їти	ючи	їти		#  клеїти  клеючи	                             @ dieprysl:imperf
+SFX O   ти	учи	[збв]ти		#  везти  везучи		                     @ dieprysl:imperf
+SFX O   ти	тучи	ости		#  рости  ростучи		               @ dieprysl:imperf
+SFX O   сти	тучи	[еі]сти		#  цвісти  цвітучи	               @ dieprysl:imperf
+SFX O   сти	нучи	лясти		#  клясти  клянучи	               @ dieprysl:imperf
+SFX O   кти	чучи	кти		#  текти  течучи		               @ dieprysl:imperf
+SFX O   гти	жучи	[еоиія]гти	#  допомогти  допоможучи		               @ dieprysl:imperf
+SFX O   ерти	ручи	[^дж]ерти	#  терти  тручи		               @ dieprysl:imperf
+SFX O   рти	ручи	[дж]ерти	#  жерти  жеручи		               @ dieprysl:imperf
+SFX O   ти	ючи	[аі]яти		#  паяти  паяючи 		                @ dieprysl:imperf
+
+SFX Q Y 8
+
+SFX Q   яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ dieprysl:imperf
+SFX Q   ти	ючи	[илнрцд]яти	#  ганяти  ганяючи 	         @ dieprysl:imperf
+SFX Q   ти	ючи	[аіу]ти		#  вбивати  вбиваючи 	                 @ dieprysl:imperf
+SFX Q   ити	'ючи	[бвп]ити	#  бити  б'ючи 	                 @ dieprysl:imperf
+SFX Q   ити	иючи	[врмнш]ити	#  рити  риючи	                 @ dieprysl:imperf
+SFX Q   ити	лючи	лити		#  лити  ллючи		                 @ dieprysl:imperf
+SFX Q   ти	вучи	жити		#  жити  живучи		                 @ dieprysl:imperf
+SFX Q   ти	учи	сти		#  пасти  пасучи		                 @ dieprysl:imperf
+
+#SFX K   ати	мучи	жати		#  жати  жмучи 		             @ dieprysl:imperf
+#SFX K   олоти	елючи	олоти		#  молоти  мелючи		             @ dieprysl:imperf
+#SFX M   ати	учи	ржати		#  ржати  ржучи 		           @ dieprysl:imperf
+#SFX M   ти	дучи	[йі]ти		#  йти  йдучи	           @ dieprysl:imperf
+#SFX M   хати	дучи	хати		#  їхати  їдучи	 	           @ dieprysl:imperf
+#SFX M   гнати	женучи	гнати		#  гнати  женучи		           @ dieprysl:imperf
+#SFX M   сти	дучи	[еая]сти		#  вести  ведучи		           @ dieprysl:imperf
+#SFX M   сти	м	[ії]сти		#  їсти  їм		           @ dieprysl:imperf
