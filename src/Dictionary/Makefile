@@ -16,13 +16,14 @@ all:	uk_words.out
 
 
 uk_words.out: $(dict)
-	cat $(SPACED) | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
+	cat $(SPACED) | sed -r "s/ [^ ]+ [a-z].*$$//g" | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
 	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
 	cat $(NOTSPACED) spaced.tmp | $(sort) > $@
 	rm -f spaced.tmp
 
 uk_words.tag: $(dict)
-	cat $(SPACED) | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
+	cat $(SPACED) | grep -vE " [^ ]+ [a-z].*$$" | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
+	cat $(SPACED) | grep -E " [^ ]+ [a-z].*$$" | $(LC_ALL) grep -vE "^[#[:space:]]" >> spaced.tmp
 	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ if ($$2 != "" && $$3 == "") print $$1,$$1,$$2; else print $$0; }' | sort -u >> spaced.tmp
 	grep "/" twisters.lst | sed -r "s/ .*$$//" | awk '{ print $$0 " :bad" }' >> spaced.tmp
 	cat verify.lst >> spaced.tmp
