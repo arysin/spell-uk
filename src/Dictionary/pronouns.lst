@@ -109,34 +109,35 @@
 своїх свій pron:p:v_rod/v_zna/v_mis
 своїми свій pron:p:v_oru
 
-наш наш pron
-нашого наш pron
-нашому наш pron
-нашим наш pron
-нашім наш pron
-наша наш pron
-нашої наш pron
-нашою наш pron
-нашій наш pron
-нашу наш pron
-наше наш pron
-наші наш pron
-наших наш pron
-нашими наш pron
+наш наш pron:m:v_naz/v_zna
+нашого наш pron:m:v_rod/v_zna//n:v_rod/v_zna
+нашому наш pron:m:v_dav/v_mis//n:v_dav/v_mis
+нашим наш pron:m:v_oru//n:v_oru//p:v_dav
+нашім наш pron:m:v_mis//n:v_mis
+наша наш pronf:v_naz
+нашої наш pron:f:v_rod
+нашій наш pron:f:v_dav/v_mis
+нашою наш pron:f:v_oru
+нашу наш pronf:v_zna
+наше наш pronn:v_naz/v_zna
+наші наш pronp:v_naz/v_zna
+нашими наш pronp:v_oru
+наших наш pronp:v_rod/v_zna/v_mis
 
-ваш ваш pron
-вашого ваш pron
-вашому ваш pron
-вашим ваш pron
-ваша ваш pron
-вашої ваш pron
-вашій ваш pron
-вашою ваш pron
-вашу ваш pron
-ваше ваш pron
-ваші ваш pron
-вашими ваш pron
-ваших ваш pron
+ваш ваш pron:m:v_naz/v_zna
+вашого ваш pron:m:v_rod/v_zna//n:v_rod/v_zna
+вашому ваш pron:m:v_dav/v_mis//n:v_dav/v_mis
+вашим ваш pron:m:v_oru//n:v_oru//p:v_dav
+вашім ваш pron:m:v_mis//n:v_mis
+ваша ваш pron:f:v_naz
+вашої ваш pron:f:v_rod
+вашій ваш pron:f:v_dav/v_mis
+вашою ваш pron:f:v_oru
+вашу ваш pron:f:v_zna
+ваше ваш pron:n:v_naz/v_zna
+ваші ваш pron:p:v_naz/v_zna
+вашими ваш pron:p:v_oru
+ваших ваш pron:p:v_rod/v_zna/v_mis
 
 цей цей pron
 цього цей pron
@@ -642,6 +643,9 @@
 сто сто numr:v_naz/v_zna
 ста сто numr:v_rod
 двоє два numr:v_naz/v_zna
+двох двоє noun:v_rod/v_zna/v_mis
+двом двоє noun:v_dav
+двома двоє noun:v_oru
 два два noun:m:v_naz/v_zna//n:v_naz/v_zna
 дві два noun:f:v_naz
 двох два noun:v_rod/v_zna/v_mis
@@ -651,7 +655,10 @@
 двохсот двісті numr:v_rod/v_zna
 двомстам двісті numr:v_dav
 двохстах двісті numr:v_mis
-троє три numr:v_naz/v_zna
+троє троє numr:v_naz/v_zna
+трьом троє numr:v_dav
+трьох троє numr:v_rod/v_zna/v_mis
+трьома троє numr:v_oru
 три три numr:v_naz/v_zna
 трьом три numr:v_dav
 трьох три numr:v_rod/v_zna/v_mis
@@ -661,7 +668,10 @@
 трьомстам триста numr:v_dav
 трьомастами триста numr:v_oru
 трьохстах триста numr:v_mis
-четверо чотири numr:v_naz/v_zna
+четверо четверо numr:v_naz/v_zna
+чотирма четверо numr:v_oru
+чотирьох четверо numr:v_oru/v_zna/v_mis
+чотирьом четверо numr:v_dav
 чотири чотири numr:v_naz/v_zna
 чотирма чотири numr:v_oru
 чотирьох чотири numr:v_oru/v_zna/v_mis
@@ -671,14 +681,7 @@
 чотирьомстам чотириста numr:v_dav
 чотирмастами чотириста numr:v_oru
 чотирьохстах чотириста numr:v_mis
-п'ять п'ять numr:v_naz
-п'яти п'ять numr:v_rod/v_dav/v_mis
-п'ятьох п'ять numr:v_rod/v_zna/v_mis
-п'ятьом п'ять numr:v_dav
-п'ятьма п'ять numr:v_oru
-п'ятьома п'ять numr:v_oru
 п'ятеро п'ятеро numr:v_naz
-п'ятдесятьома п'ятдесят numr:v_oru
 п'ятсот п'ятсот numr:v_naz/v_zna
 п'ятисот п'ятсот numr:v_rod
 п'ятистам п'ятсот numr:v_naz
@@ -691,7 +694,6 @@
 шістьох шість numr:v_rod/v_zna/v_mis
 шістьма шість numr:v_oru
 шістьома шість numr:v_oru
-шістдесятьома шістдесят numr:v_oru
 шістсот шістсот numr:v_naz/v_zna
 шестисот шістсот numr:v_rod
 шестистам шістсот numr:v_dav
@@ -723,7 +725,6 @@
 восьмистах вісімсот numr:v_mis
 восьмистами вісімсот numr:v_oru
 дев'ятеро дев'ять numr:v_naz/v_zna
-дев'ятьома дев'ять numr:v_oru
 дев'яносто дев'яносто numr:v_naz/v_zna
 дев'яноста дев'яносто numr:v_rod/v_dav/v_oru/v_mis
 дев'ятсот дев'ятсот numr:v_naz/v_zna
@@ -737,11 +738,11 @@
 вісімнадцятеро вісімнадцятеро numr:v_naz/v_zna
 двадцятеро двадцять numr:v_naz/v_zna
 дванадцятеро дванадцять numr:v_naz/v_zna
-кількасот кількасот nurm:v_naz/v_zna
-кількохсот кількасот nurm:v_rod
-кількомстам кількасот nurm:v_dav
-кількомастами кількасот nurm:v_oru
-кількохстах кількасот nurm:v_mis
+кількасот кількасот numr:v_naz/v_zna
+кількохсот кількасот numr:v_rod
+кількомстам кількасот numr:v_dav
+кількомастами кількасот numr:v_oru
+кількохстах кількасот numr:v_mis
 
 # Прислівники
 вдвічі adv
