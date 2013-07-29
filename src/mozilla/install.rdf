@@ -11,6 +11,8 @@
    <em:name>Ukrainian dictionary</em:name>
    <em:description>Ukrainian (uk-UA) spellchecking dictionary</em:description>
    <em:unpack>true</em:unpack>
+   <em:type>64</em:type>
+   <em:bootstrap>true</em:bootstrap>
     <em:localized>
       <Description>
         <em:locale>uk</em:locale>
@@ -24,7 +26,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>3.0a1</em:minVersion>
-        <em:maxVersion>4.0.*</em:maxVersion>
+        <em:maxVersion>26.0</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- Thunderbird -->
@@ -32,7 +34,7 @@
       <Description>
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id>
         <em:minVersion>3.0a1</em:minVersion>
-        <em:maxVersion>3.3a3pre</em:maxVersion>
+        <em:maxVersion>26.0</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- SeaMonkey -->
@@ -40,7 +42,7 @@
       <Description>
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id>
         <em:minVersion>2.0a1pre</em:minVersion>
-        <em:maxVersion>2.1b3</em:maxVersion>
+        <em:maxVersion>2.23</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- Fennec -->
@@ -57,6 +59,14 @@
         <em:id>{718e30fb-e89b-41dd-9da7-e25a45638b28}</em:id>
         <em:minVersion>0.2</em:minVersion>
         <em:maxVersion>1.0pre</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+    <!-- Android -->
+    <em:targetApplication>
+      <Description>
+       <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+       <em:minVersion>12.0</em:minVersion>
+       <em:maxVersion>26.0</em:maxVersion>
       </Description>
     </em:targetApplication>
     <!-- toolkit -->

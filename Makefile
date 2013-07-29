@@ -136,6 +136,9 @@ aspell.net:
 #
 # myspell rules
 #
+hunspell:	myspell
+
+
 myspell: 	$(MYSPELL_DIST)/uk_UA.aff $(MYSPELL_DIST)/uk_UA.dic
 
 install-myspell-dict:	myspell
@@ -169,11 +172,7 @@ $(MYSPELL_DIST)/uk_UA.aff:	$(affixfile_src) src/myspell/myspell.header encodings
 
 $(MYSPELL_DIST)/uk_UA.dic:	$(wordlist_src) encodings.inc
 	wc -l < $(wordlist_src) > $@
-	grep "'" $(wordlist_src) | sed -r "s/'/ʼ/g" | sed -r "s/\//\/\!/" > /tmp/spell_u02bc.lst
-	grep "'" $(wordlist_src) | sed -r "s/'/’/g" | sed -r "s/\//\/\!/" >> /tmp/spell_u02bc.lst
-	cat $(wordlist_src) /tmp/spell_u02bc.lst | (LC_ALL=$(LOCALE) sort) >> $@
-	rm /tmp/spell_u02bc.lst
-#	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@
+	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@
 
 mozilla-xpi:	myspell
 	mkdir -p $(XPI_DIST)/dictionaries
