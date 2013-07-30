@@ -196,7 +196,7 @@ ooo:	myspell
 	cp src/thesaurus/th_uk_UA.dat $(OXT_DIST)/uk_UA/
 	bin/th_gen_idx.pl < src/thesaurus/th_uk_UA.dat > $(OXT_DIST)/uk_UA/th_uk_UA.idx
 	-rm *.oxt
-	cd $(OXT_DIST) && zip --exclude=\*CVS\* -r ../dict-uk_UA-$(VERSION).oxt * && cd ..
+	cd $(OXT_DIST) && zip -r ../dict-uk_UA-$(VERSION).oxt * && cd ..
 
 # for myspell engine (Firefox <=2, Thunderbird <=2...)
 mozilla-xpi-old:	myspell
