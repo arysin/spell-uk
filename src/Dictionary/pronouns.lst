@@ -154,15 +154,16 @@
 цих цей pron
 цими цей pron
 
-оцей оцей pron
-оцього оцей pron
-оцьому оцей pron
-оцим оцей pron
-оця оцей pron
-оцієї оцей pron
-оцією оцей pron
-оці оцей pron
-оцих оцей pron
+оцей оцей pron:m:v_naz/v_zna
+оцього оцей pron:m:v_rod//n:v_rod
+оцьому оцей pron:m:v_dav//n:v_dav
+оцим оцей pron:m:v_oru//n:v_oru
+оця оцей pron:f:v_naz
+оцієї оцей pron:f:v_rod
+оцією оцей pron:f:v_oru
+оці оцей pron:p:v_naz/v_zna/v_mis
+оцих оцей pron:p:v_rod/v_mis
+оцими оцей pron:p:v_oru
 
 той той pron
 того той pron
