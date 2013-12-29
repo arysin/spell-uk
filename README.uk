@@ -6,24 +6,12 @@ It allows to generate dictionaries for aspell (>=0.60), myspell and ispell (>=3.
 
 The home page is http://ispell-uk.sourceforge.net/
 
-Official aspell-uk package can be found at ftp://ftp.gnu.org/gnu/aspell/dict/uk/
-
 
 Це проект українського словника для перевірки правопису.
 
-Ця праця базується на ispell-uk v.0.7. Зміни з ispell-uk-0.7 містять:
-- деякі виправлення прапорців іменників
-- деякі виправлення в словах
-- виправлення коментарів
-
-After transition from ispell-based to aspell-based generated word forms 
-were practically identical to ispell-uk-0.7. Thus regression is fine and 
-we can switch to aspell as ispell isn't being developed any more.
-
-
 Основні принципи цього словника:
-- досить сильна нормалізація слів, яка дає декілька переваг: 
--- додавання одного слова з прапорцями афіксів одразу може дати 20-30 словоформ
+- потужна нормалізація слів, яка дає декілька переваг:
+-- додавання одної лексеми з прапорцями афіксів одразу може дати 20-30 словоформ
 -- розмір суттєво менший ніж при простому переліку або рудиментарних афіксах
 - знаходження якомога більше помилок (проти перегонами за кількістю слів в словнику)
 - ліцензійна чистота словника
@@ -44,7 +32,7 @@ Editing.
 Файли афіксів для редагування: src/Affix/uk.aff.*
 
 
-Сумарно словник налічує близько 111 000 слів (1 320 000 словоформ).
+Сумарно словник налічує близько 126 000 лексем (1 500 000 словоформ).
 
 
 *********************************
@@ -54,4 +42,4 @@ Editing.
 Dictionary is distributed under GPL and LGPL licenses. 
 See Copyright, COPYING.GPL and COPYING.LGPL for more information.
 
-Andriy Rysin	Sun 30 Oct 2005 11:32:35 AM EDT
+Andriy Rysin	2013

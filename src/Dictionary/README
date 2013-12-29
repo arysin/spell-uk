@@ -18,12 +18,7 @@ medicine.lst 	-- medicine, anatomy related terms
 exceptions.lst	-- words that decline under unknown/undefined rules (not sorted)
 pronouns.lst	-- pronouns with all their forms (not sorted)
 
-hypocoristic.lst - лагідно-зменшувальні слова, тощо
-    (але в base.lst знаходяться прикм. на -енький -інький)
-
 slang.lst		-- slang
-
-misc.lst		-- деякі русизми (not in dictionary)
 
 base-compound.lst       http://www.nas.gov.ua/institutes/ium/Structure/Documents/2010_1.pdf
 

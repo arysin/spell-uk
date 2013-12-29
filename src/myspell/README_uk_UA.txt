@@ -1,4 +1,4 @@
-This is Ukrainian spelling dictionary for myspell & hunspell version 1.6.6.
+This is Ukrainian spelling dictionary for myspell & hunspell version 1.7.0
 
 This dictionary based on spell-uk project http://ispell-uk.sourceforge.net/
 
@@ -21,7 +21,7 @@ Copyright (C) 2005
     Eugeniy Meshcheryakov
     Dmytro Kovalyov
 
-Copyright (C) 2006-2012
+Copyright (C) 2006-2013
     Andriy Rysin
 
 This dictionary is licensed under GPL 2.0 or above, LGPL 2.1 or above and MPL (Mozilla Public License) 1.1 licenses.
