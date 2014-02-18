@@ -21,22 +21,26 @@
 тобі ти pron:v_dav/v_mis
 тобою ти pron:v_oru
 
-він він pron:v_naz
-його він pron:v_rod/v_zna
-нього він pron:v_zna
-йому він pron:v_dav
-ньому він pron:v_mis
-ним він pron:v_oru
-нім він pron:v_mis
+він він pron:m:v_naz
+його він pron:m:v_rod/v_zna//n:v_rod/v_zna
+нього він pron:m:v_rod/v_zna//n:v_rod/v_zna
+йому він pron:m:v_dav//n:v_dav
+ньому він pron:m:v_mis//n:v_mis
+ним він pron:m:v_oru//n:v_oru
+нім він pron:m:v_mis
 
-вона вона pron:v_naz
-її вона pron:v_rod/v_zna
-неї вона pron:v_zna
-їй вона pron:v_dav
-нею вона pron:v_oru
-ній вона pron:v_mis
+# Присвійні займенники його, її є незмінними
+його його pron:nv
+її її pron:nv
 
-воно воно pron:v_naz
+вона вона pron:f:v_naz
+її вона pron:f:v_rod/v_zna
+неї вона pron:f:v_rod/v_zna
+їй вона pron:f:v_dav
+нею вона pron:f:v_oru
+ній вона pron:f:v_mis
+
+воно воно pron:n:v_naz
 
 ми ми pron:p:v_naz
 нас ми pron:p:v_rod/v_zna/v_mis
@@ -50,191 +54,209 @@
 
 вони вони pron:p:v_naz
 їх вони pron:p:v_rod/v_zna
-них вони pron:p:v_mis
+них вони pron:p:v_rod/v_zna/v_mis
 їм вони pron:p:v_dav
 ними вони pron:p:v_oru
 
+себе себе pron:m:v_rod/v_zna//n:v_rod/v_zna
+собі себе pron:m:v_dav/v_mis//n:v_dav/v_mis
+собою себе pron:m:v_oru//n:v_oru
+
 сам сам pron:m:v_naz
-себе сам pron:m:v_rod/v_zna//n:v_rod/v_zna
-собі сам pron:m:v_dav/v_mis//n:v_dav/v_mis
-собою сам pron:m:v_oru//n:v_oru
-
+самого сам pron:m:v_rod/v_zna//n:v_rod
+самому сам pron:m:v_dav/v_mis//n:v_dav/v_mis
+самим сам pron:m:v_oru//n:v_oru//p:v_dav
+самім сам pron:m:v_mis//n:v_mis
 сама сам pron:f:v_naz
-саму сам pron:f:v_rod/v_zna
+самої сам pron:f:v_rod
 самій сам pron:f:v_dav/v_mis
+саму сам pron:f:v_zna
 самою сам pron:f:v_oru
-
 саме сам pron:n:v_naz
 само сам pron:n:v_naz
+сами сам pron:p:v_naz
+самі сам pron:p:v_naz
+самих сам pron:p:v_rod/v_zna/v_mis
+самими сам pron:p:v_oru
 
-мій мій pron:m:v_naz
-мого мій pron:m:v_rod/v_zna//n:v_rod/v_zna
+мій мій pron:m:v_naz/v_zna
+мого мій pron:m:v_rod/v_zna//n:v_rod
 моєму мій pron:m:v_dav/v_mis//n:v_dav/v_mis
-моїм мій pron:m:v_oru//n:v_oru
+моїм мій pron:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 моя мій pron:f:v_naz
 моєї мій pron:f:v_rod
-моєю мій pron:f:v_oru
 моїй мій pron:f:v_dav/v_mis
 мою мій pron:f:v_zna
-моє мій pron:n:v_naz
+моєю мій pron:f:v_oru
+моє мій pron:n:v_naz/v_zna
 мої мій pron:p:v_naz/v_zna
 моїх мій pron:p:v_rod/v_zna/v_mis
 моїми мій pron:p:v_oru
 
-твій твій pron:m:v_naz
-твого твій pron:m:v_rod/v_zna//n:v_rod/v_zna
+твій твій pron:m:v_naz/v_zna
+твого твій pron:m:v_rod/v_zna//n:v_rod
 твоєму твій pron:m:v_dav/v_mis//n:v_dav/v_mis
-твоїм твій pron:m:v_oru//n:v_oru//p:v_dav
+твоїм твій pron:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 твоя твій pron:f:v_naz
-твоєю твій pron:f:v_oru
 твоєї твій pron:f:v_rod
 твоїй твій pron:f:v_dav/v_mis
 твою твій pron:f:v_zna
-твоє твій pron:n:v_naz
+твоєю твій pron:f:v_oru
+твоє твій pron:n:v_naz/v_zna
 твої твій pron:p:v_naz/v_zna
 твоїх твій pron:p:v_rod/v_zna/v_mis
 твоїми твій pron:p:v_oru
 
-свій свій pron:m:v_naz
-свого свій pron:m:v_rod/v_zna//n:v_rod/v_zna
+свій свій pron:m:v_naz/v_zna
+свого свій pron:m:v_rod/v_zna//n:v_rod
 своєму свій pron:m:v_dav/v_mis//n:v_dav/v_mis
-своїм свій pron:m:v_oru//n:v_oru//p:v_dav
+своїм свій pron:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 своя свій pron:f:v_naz
-своєю свій pron:f:v_oru
 своєї свій pron:f:v_rod
 своїй свій pron:f:v_dav/v_mis
 свою свій pron:f:v_zna
-своє свій pron:n:v_naz
+своєю свій pron:f:v_oru
+своє свій pron:n:v_naz/v_zna
 свої свій pron:p:v_naz/v_zna
 своїх свій pron:p:v_rod/v_zna/v_mis
 своїми свій pron:p:v_oru
 
 наш наш pron:m:v_naz/v_zna
-нашого наш pron:m:v_rod/v_zna//n:v_rod/v_zna
+нашого наш pron:m:v_rod/v_zna//n:v_rod
 нашому наш pron:m:v_dav/v_mis//n:v_dav/v_mis
 нашим наш pron:m:v_oru//n:v_oru//p:v_dav
 нашім наш pron:m:v_mis//n:v_mis
-наша наш pronf:v_naz
+наша наш pron:f:v_naz
 нашої наш pron:f:v_rod
 нашій наш pron:f:v_dav/v_mis
+нашу наш pron:f:v_zna
 нашою наш pron:f:v_oru
-нашу наш pronf:v_zna
-наше наш pronn:v_naz/v_zna
-наші наш pronp:v_naz/v_zna
-нашими наш pronp:v_oru
-наших наш pronp:v_rod/v_zna/v_mis
+наше наш pron:n:v_naz/v_zna
+наші наш pron:p:v_naz/v_zna
+нашими наш pron:p:v_oru
+наших наш pron:p:v_rod/v_zna/v_mis
 
 ваш ваш pron:m:v_naz/v_zna
-вашого ваш pron:m:v_rod/v_zna//n:v_rod/v_zna
+вашого ваш pron:m:v_rod/v_zna//n:v_rod
 вашому ваш pron:m:v_dav/v_mis//n:v_dav/v_mis
 вашим ваш pron:m:v_oru//n:v_oru//p:v_dav
 вашім ваш pron:m:v_mis//n:v_mis
 ваша ваш pron:f:v_naz
 вашої ваш pron:f:v_rod
 вашій ваш pron:f:v_dav/v_mis
-вашою ваш pron:f:v_oru
 вашу ваш pron:f:v_zna
+вашою ваш pron:f:v_oru
 ваше ваш pron:n:v_naz/v_zna
 ваші ваш pron:p:v_naz/v_zna
 вашими ваш pron:p:v_oru
 ваших ваш pron:p:v_rod/v_zna/v_mis
 
-цей цей pron
-цього цей pron
-цьому цей pron
-цим цей pron
-цім цей pron
-ця цей pron
-цієї цей pron
-цій цей pron
-цю цей pron
-цією цей pron
-це цей pron
-ці цей pron
-цих цей pron
-цими цей pron
+цей цей pron:m:v_naz/v_zna
+цього цей pron:m:v_rod/v_zna//n:v_rod
+цьому цей pron:m:v_dav/v_mis//n:v_dav/v_mis
+цим цей pron:m:v_oru//n:v_oru//p:v_dav
+цім цей pron:m:v_mis//n:v_mis
+ця цей pron:f:v_naz
+цієї цей pron:f:v_rod
+цій цей pron:f:v_dav/v_mis
+цю цей pron:f:v_zna
+цією цей pron:f:v_oru
+це цей pron:n:v_naz/v_zna
+ці цей pron:p:v_naz/v_zna/v_mis
+цих цей pron:p:v_rod/v_zna/v_mis
+цими цей pron:p:v_oru
 
 оцей оцей pron:m:v_naz/v_zna
-оцього оцей pron:m:v_rod//n:v_rod
-оцьому оцей pron:m:v_dav//n:v_dav
-оцим оцей pron:m:v_oru//n:v_oru
+оцього оцей pron:m:v_rod/v_zna//n:v_rod
+оцьому оцей pron:m:v_dav/v_mis//n:v_dav/v_mis
+оцим оцей pron:m:v_oru//n:v_oru//p:v_dav
+оцім оцей pron:m:v_mis//n:v_mis
 оця оцей pron:f:v_naz
 оцієї оцей pron:f:v_rod
+оцій оцей pron:f:v_dav/v_mis
+оцю оцей pron:f:v_zna
 оцією оцей pron:f:v_oru
+оце оцей pron:n:v_zna
 оці оцей pron:p:v_naz/v_zna/v_mis
-оцих оцей pron:p:v_rod/v_mis
+оцих оцей pron:p:v_rod/v_zna/v_mis
 оцими оцей pron:p:v_oru
 
-той той pron
-того той pron
-тому той pron
-тим той pron
-тім той pron
-тої той pron
-тієї той pron
-тій той pron
-ту той pron
-тією той pron
-те той pron
-ті той pron
-тих той pron
-тими той pron
+той той pron:m:v_naz/v_zna
+того той pron:m:v_rod/v_zna//n:v_rod
+тому той pron:m:v_dav/v_mis//n:v_dav/v_mis
+тим той pron:m:v_oru//n:v_oru//p:v_dav
+тім той pron:m:v_mis//n:v_mis
+та той pron:f:v_naz
+тої той pron:f:v_rod
+тієї той pron:f:v_rod
+тій той pron:f:v_dav/v_mis
+ту той pron:f:v_zna
+тією той pron:f:v_oru
+те той pron:n:v_naz/v_zna
+ті той pron:p:v_naz/v_zna
+тих той pron:p:v_rod/v_zna/v_mis
+тими той pron:p:v_oru
 
-отой отой pron
-отого отой pron
-отому отой pron
-отим отой pron
-отім отой pron
-отої отой pron
-отієї отой pron
-отій отой pron
-оту отой pron
-отією отой pron
-оте отой pron
-оті отой pron
-отих отой pron
-отими отой pron
+отой отой pron:m:v_naz/v_zna
+отого отой pron:m:v_rod/v_zna//n:v_rod
+отому отой pron:m:v_dav/v_mis//n:v_dav/v_mis
+отим отой pron:m:v_oru//n:v_oru//p:v_dav
+отім отой pron:m:v_mis//n:v_mis
+ота отой pron:f:v_naz
+отої отой pron:f:v_rod
+отієї отой pron:f:v_rod
+отій отой pron:f:v_dav/v_mis
+оту отой pron:f:v_zna
+отією отой pron:f:v_oru
+оте отой pron:n:v_naz/v_zna
+оті отой pron:p:v_naz/v_zna
+отих отой pron:p:v_rod/v_zna/v_mis
+отими отой pron:p:v_oru
 
-хто хто pron
-кого хто pron
-кому хто pron
-ким хто pron
-кім хто pron
-що що pron
-чого що pron
-чому що pron
-чим що pron
-чім що pron
+хто хто conn
+хто хто pron:m:v_naz
+кого хто pron:m:v_rod/v_zna
+кому хто pron:m:v_dav
+ким хто pron:m:v_oru
+кім хто pron:m:v_mis
 
-чий чий pron
-чийого чий pron
-чийому чий pron
-чиєму чий pron
-чиїм чий pron
-чия чий pron
-чиєї чий pron
-чиїй чий pron
-чию чий pron
-чиєю чий pron
-чиє чий pron
-чиї чий pron
-чиїх чий pron
-чиїми чий pron
+що що conj
+що що pron:n:v_naz/v_zna
+віщо що pron:n:v_zna
+чого що pron:n:v_rod
+чому що pron:n:v_dav/v_mis
+чим що pron:n:v_oru
+чім що pron:n:v_mis
 
-нічий нічий pron
-нічийого нічий pron
-нічийому нічий pron
-нічиєму нічий pron
-нічиїм нічий pron
-нічия нічий pron
-нічиєї нічий pron
-нічиїй нічий pron
-нічию нічий pron
-нічиєю нічий pron
-нічиє нічий pron
-нічиї нічий pron
-нічиїх нічий pron
-нічиїми нічий pron
+чий чий pron:m:v_naz/v_zna
+чийого чий pron:m:v_rod/v_zna//n:v_rod
+чийому чий pron:m:v_dav/v_mis//n:v_dav/v_mis
+чиєму чий pron:m:v_dav/v_mis//n:v_mis
+чиїм чий pron:m:v_oru//n:v_oru/v_mis
+чия чий pron:f:v_naz
+чиєї чий pron:f:v_rod
+чиїй чий pron:f:v_dav/v_mis
+чию чий pron:f:v_zna
+чиєю чий pron:f:v_oru
+чиє чий pron:n:v_naz/v_zna
+чиї чий pron:p:v_naz/v_zna
+чиїх чий pron:p:v_rod/v_zna/v_mis
+чиїми чий pron:p:v_oru
+
+нічий нічий pron:m:v_naz/v_zna
+нічийого нічий pron:m:v_rod/v_zna//n:v_rod
+нічийому нічий pron:m:v_dav/v_mis//n:v_dav/v_mis
+нічиєму нічий pron:m:v_dav/v_mis//n:v_mis
+нічиїм нічий pron:m:v_oru//n:v_oru/v_mis
+нічия нічий pron:f:v_naz
+нічиєї нічий pron:f:v_rod
+нічиїй нічий pron:f:v_dav/v_mis
+нічию нічий pron:f:v_zna
+нічиєю нічий pron:f:v_oru
+нічиє нічий pron:n:v_naz/v_zna
+нічиї нічий pron:p:v_naz/v_zna
+нічиїх нічий pron:p:v_rod/v_zna/v_mis
+нічиїми нічий pron:p:v_oru
 
 весь весь pron:m:v_naz/v_zna
 всього весь pron:m:v_rod/v_zna//n:v_rod/v_zna
@@ -250,20 +272,20 @@
 всім весь pron:p:v_dav
 всіма весь pron:p:v_oru
 
-ввесь весь pron:m:v_naz/v_zna
+ввесь увесь pron:m:v_naz/v_zna
 увесь увесь pron:m:v_naz/v_zna
 усе увесь pron:n:v_naz/v_zna
-усього увесь pron
-усьому увесь pron
+усього увесь pron:n:v_rod/v_zna
+усьому увесь pron:n:v_dav/v_mis
 уся увесь pron:f:v_naz
-усієї увесь pron:f:v_rod/v_zna
-усій увесь pron:f:v_dav
+усієї увесь pron:f:v_rod
+усій увесь pron:f:v_dav/v_zna
 усією увесь pron:f:v_oru
-усю увесь pron
-усі увесь pron
-усіх увесь pron
-усім увесь pron
-усіма увесь pron
+усю увесь pron:f:v_zna
+усі увесь pron:p:v_naz/v_zna
+усіх увесь pron:p:v_rod/v_zna/v_zna
+усім увесь pron:p:v_dav
+усіма увесь pron:p:v_oru
 
 таки таки part
 тим-то тим-то conj
@@ -359,6 +381,7 @@
 чортзна-чого чортзна-що pron
 чортзна-чому чортзна-що pron
 чортзна-чим чортзна-що pron
+
 чортзна-де adv
 чортзна-як adv
 чортзна-коли adv
@@ -369,6 +392,7 @@
 хтозна-чого хтозна-що pron
 хтозна-чому хтозна-що pron
 хтозна-чим хтозна-що pron
+
 хтозна-де adv
 хтозна-як adv
 хтозна-коли adv
@@ -379,6 +403,7 @@
 казна-чого казна-що pron
 казна-чому казна-що pron
 казна-чим казна-що pron
+
 казна-де adv
 казна-як adv
 казна-коли adv
@@ -453,11 +478,13 @@
 кимось хтось pron
 кимсь хтось pron
 
-щось щось pron
-чогось щось pron
-чомусь щось pron
-чимось щось pron
-чимсь щось pron
+щось щось pron:n:v_zna
+чогось щось pron:n:v_rod/v_zna
+віщось щось pron:n:v_zna
+чомусь щось pron:n:v_dav/v_mis
+чимось щось pron:n:v_oru
+чимсь щось pron:n:v_oru
+чімсь щось pron:n:v_mis
 
 якийсь якийсь pron
 якогось якийсь pron
@@ -573,29 +600,30 @@
 багатьом
 багатьма
 
-декілька
-декількох
-декільком
-декількома
+декілька numr:v_naz/v_zna
+декількох numr:v_rod/v_zna/v_mis
+декільком numr:v_dav
+декількома numr:v_oru
 
-кілька
-кількох
-кільком
-кількома
+кілька кілька numr:v_naz/v_zna
+кількох кілька numr:v_rod/v_zna/v_mis
+кільком кілька numr:v_dav
+кількома кілька numr:v_oru
 
-скільки
-скількох
-скільком
-скількома
-стільки
-стількох
-стільком
-стількома
+скільки numr:v_naz/v_zna
+скількох numr:v_rod/v_zna/v_mis
+скільком numr:v_dav
+скількома numr:v_oru
 
-скільки-небудь
-скількох-небудь
-скільком-небудь
-скількома-небудь
+стільки numr:v_naz/v_zna
+стількох numr:v_rod/v_zna/v_mis
+стільком numr:v_dav
+стількома numr:v_oru
+
+скільки-небудь numr:v_naz/v_zna
+скількох-небудь numr:v_rod/v_zna/v_mis
+скільком-небудь numr:v_dav
+скількома-небудь numr:v_oru
 
 бозна-скільки
 
@@ -621,15 +649,16 @@
 одне один numr:n:v_naz/v_zna
 одно один numr:n:v_naz
 
-обоє обоє numr
-обох обоє numr
-обом обоє numr
-обома обоє numr
-обидва обоє numr
-обидвох обоє numr
-обидвом обоє numr
-обидвома обоє numr
-обидві обоє numr
+обоє обоє numr:p:v_naz/v_zna
+обох обоє numr:p:v_rod/v_zna/v_mis
+обом обоє numr:p:v_dav
+обома обоє numr:p:v_oru
+обидва обидва numr:m:v_naz/v_zna
+обидві обидва numr:f:v_naz/v_zna
+обидвоє обидвоє numr:p:v_naz/v_zna
+обидвох обидвоє numr:p:v_rod/v_zna/v_mis
+обидвом обидвоє numr:p:v_dav
+обидвома обидвоє numr:p:v_oru
 
 годину-дві
 годину-другу
@@ -823,6 +852,7 @@
 отам adv
 сяк сяк adv
 
+# Прийменники
 без без pryim:rv_rod
 в в pryim:rv_zna:rv_mis:rv_rod
 у у pryim:rv_zna:rv_mis:rv_rod
@@ -858,6 +888,7 @@
 з-посеред з-посеред pryim:rv_rod
 з-проміж з-проміж pryim:rv_rod
 з-серед з-серед pryim:rv_rod
+ззаду ззаду pryim:rv_rod
 зсередини зсередини pryim:rv_rod
 ізсередини ізсередини pryim:rv_rod
 коло коло pryim:rv_rod
@@ -879,6 +910,7 @@
 нижче нижче pryim:rv_zna
 о о pryim:rv_zna:rv_mis:rv_zna
 об об pryim:rv_zna:rv_mis
+обабіч обабіч pryim:rv_rod
 обіч обіч pryim:rv_rod
 окрай окрай pryim:rv_rod
 окрім окрім pryim:rv_rod
