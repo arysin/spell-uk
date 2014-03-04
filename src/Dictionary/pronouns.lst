@@ -62,7 +62,7 @@
 собі себе pron:m:v_dav/v_mis//n:v_dav/v_mis
 собою себе pron:m:v_oru//n:v_oru
 
-сам сам pron:m:v_naz
+сам сам pron:m:v_naz/v_zna
 самого сам pron:m:v_rod/v_zna//n:v_rod
 самому сам pron:m:v_dav/v_mis//n:v_dav/v_mis
 самим сам pron:m:v_oru//n:v_oru//p:v_dav
@@ -259,8 +259,9 @@
 нічиїми нічий pron:p:v_oru
 
 весь весь pron:m:v_naz/v_zna
-всього весь pron:m:v_rod/v_zna//n:v_rod/v_zna
+всього весь pron:m:v_rod/v_zna//n:v_rod
 всьому весь pron:m:v_dav/v_mis//n:v_dav/v_mis
+всім весь pron:n:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 вся весь pron:f:v_naz
 всієї весь pron:f:v_rod
 всій весь pron:f:v_dav/v_mis
@@ -269,22 +270,23 @@
 все весь pron:n:v_naz/v_zna
 всі весь pron:p:v_naz/v_zna
 всіх весь pron:p:v_rod/v_zna/v_mis
-всім весь pron:p:v_dav
 всіма весь pron:p:v_oru
+
+все adv
 
 ввесь увесь pron:m:v_naz/v_zna
 увесь увесь pron:m:v_naz/v_zna
-усе увесь pron:n:v_naz/v_zna
-усього увесь pron:n:v_rod/v_zna
-усьому увесь pron:n:v_dav/v_mis
+усього увесь pron:m:v_rod/v_zna//n:v_rod
+усьому увесь pron:m:v_dav/v_mis//n:v_dav/v_mis
+усім увесь pron:n:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 уся увесь pron:f:v_naz
 усієї увесь pron:f:v_rod
 усій увесь pron:f:v_dav/v_zna
 усією увесь pron:f:v_oru
 усю увесь pron:f:v_zna
+усе увесь pron:n:v_naz/v_zna
 усі увесь pron:p:v_naz/v_zna
-усіх увесь pron:p:v_rod/v_zna/v_zna
-усім увесь pron:p:v_dav
+усіх увесь pron:p:v_rod/v_zna/v_mis
 усіма увесь pron:p:v_oru
 
 таки таки part
@@ -342,17 +344,18 @@
 небагато-ким небагато-хто pron:v_oru
 небагато-кім небагато-хто pron:v_mis
 
-будь-хто будь-хто pron
-будь-кого будь-хто pron
-будь-кому будь-хто pron
-будь-ким будь-хто pron
-будь-кім будь-хто pron
+будь-хто будь-хто pron:v_naz
+будь-кого будь-хто pron:v_rod/v_zna
+будь-кому будь-хто pron:v_dav/v_mis
+будь-ким будь-хто pron:v_oru
+будь-кім будь-хто pron:v_mis
 
-будь-що будь-що pron
-будь-чого будь-що pron
-будь-чому будь-що pron
-будь-чим будь-що pron
-будь-чім будь-що pron
+будь-що будь-що adv
+будь-що будь-що pron:v_naz/v_zna
+будь-чого будь-що pron:v_rod
+будь-чому будь-що pron:v_dav/v_mis
+будь-чим будь-що pron:v_oru
+будь-чім будь-що pron:v_mis
 
 будь-де будь-де adv
 будь-як будь-як adv
@@ -632,7 +635,7 @@
 хтозна-скільки
 
 один один numr:m:v_naz/v_zna
-одного один numr:m:v_rod//n:v_rod
+одного один numr:m:v_rod/v_zna//n:v_rod
 одному один numr:m:v_dav/v_mis//n:v_dav/v_mis
 одним один numr:m:v_oru//n:v_oru
 однім один numr:m:v_mis//n:v_mis
@@ -645,7 +648,7 @@
 одну один numr:f:v_zna
 одні один numr:p:v_naz/v_zna
 одними один numr:p:v_oru
-одних один numr:p:v_rod
+одних один numr:p:v_rod/v_zna/v_mis
 одне один numr:n:v_naz/v_zna
 одно один numr:n:v_naz
 
@@ -677,7 +680,7 @@
 двом двоє noun:v_dav
 двома двоє noun:v_oru
 два два noun:m:v_naz/v_zna//n:v_naz/v_zna
-дві два noun:f:v_naz
+дві два noun:f:v_naz/v_zna
 двох два noun:v_rod/v_zna/v_mis
 двом два noun:v_dav
 двома два noun:v_oru
@@ -701,12 +704,14 @@
 трьохстах триста numr:v_mis
 четверо четверо numr:v_naz/v_zna
 чотирма четверо numr:v_oru
-чотирьох четверо numr:v_oru/v_zna/v_mis
+чотирьох четверо numr:v_rod/v_zna/v_mis
 чотирьом четверо numr:v_dav
 чотири чотири numr:v_naz/v_zna
 чотирма чотири numr:v_oru
 чотирьох чотири numr:v_oru/v_zna/v_mis
 чотирьом чотири numr:v_dav
+сорок сорок numr:v_naz/v_zna
+сорока сорок numr:v_rod/v_dav/v_zna/v_oru/v_mis
 чотириста чотириста numr:v_naz/v_zna
 чотирьохсот чотириста numr:v_rod/v_zna
 чотирьомстам чотириста numr:v_dav
