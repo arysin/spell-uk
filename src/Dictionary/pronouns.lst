@@ -897,6 +897,7 @@
 зсередини зсередини pryim:rv_rod
 ізсередини ізсередини pryim:rv_rod
 коло коло pryim:rv_rod
+край pryim:rv_rod
 крізь крізь pryim:rv_zna
 крім крім pryim:rv_rod
 на на pryim:rv_zna:rv_mis
@@ -913,7 +914,7 @@
 насупроти насупроти pryim:rv_rod
 невважаючи невважаючи pryim:rv_zna
 нижче нижче pryim:rv_zna
-о о pryim:rv_zna:rv_mis:rv_zna
+о о pryim:rv_zna:rv_mis:rv_zna:rv_kly
 об об pryim:rv_zna:rv_mis
 обабіч обабіч pryim:rv_rod
 обіч обіч pryim:rv_rod
