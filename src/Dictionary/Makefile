@@ -18,7 +18,7 @@ all:	uk_words.out
 uk_words.out: $(dict)
 	cat $(SPACED) | sed -r "s/ [^ ]+ [a-z].*$$//g" | $(LC_ALL) grep -vE '^[#[:space:]]' | $(spcr) > spaced.tmp
 	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
-	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[<>]//" | $(sort) > $@
+	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[<>]//g" | $(sort) > $@
 	rm -f spaced.tmp
 
 uk_words.tag: $(dict) tags.lst
