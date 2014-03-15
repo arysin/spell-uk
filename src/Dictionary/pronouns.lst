@@ -861,6 +861,9 @@
 без без pryim:rv_rod
 в в pryim:rv_zna:rv_mis:rv_rod
 у у pryim:rv_zna:rv_mis:rv_rod
+уві уві pryim:rv_zna:rv_mis:rv_rod
+вві уві pryim:rv_zna:rv_mis:rv_rod
+від від pryim:rv_rod
 відповідно відповідно pryim:rv_dav
 внаслідок внаслідок pryim:rv_rod
 унаслідок унаслідок pryim:rv_rod
@@ -897,7 +900,7 @@
 зсередини зсередини pryim:rv_rod
 ізсередини ізсередини pryim:rv_rod
 коло коло pryim:rv_rod
-край pryim:rv_rod
+край край pryim:rv_rod
 крізь крізь pryim:rv_zna
 крім крім pryim:rv_rod
 на на pryim:rv_zna:rv_mis
@@ -948,9 +951,13 @@
 при при pryim:rv_mis
 про про pryim:rv_zna
 просто просто pryim:rv_rod
+проти проти pryim:rv_rod
 раніше раніше pryim:rv_rod
 серед серед pryim:rv_rod
 спереду спереду pryim:rv_rod
+супроти супроти pryim:rv_rod
+супротив супротив pryim:rv_rod
+супротив adv
 уздовж уздовж pryim:rv_rod
 вздовж вздовж pryim:rv_rod
 через через pryim:rv_zna
