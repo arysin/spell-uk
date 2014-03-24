@@ -272,7 +272,9 @@
 всіх весь pron:p:v_rod/v_zna/v_mis
 всіма весь pron:p:v_oru
 
-все adv
+все все adv
+усюд
+усюдів
 
 ввесь увесь pron:m:v_naz/v_zna
 увесь увесь pron:m:v_naz/v_zna
@@ -293,39 +295,43 @@
 тим-то тим-то conj
 тому-то тому-то conj
 
-абихто абихто pron
-абикого абихто pron
-абикому абихто pron
-абиким абихто pron
+абихто абихто pron:v_naz
+абикого абихто pron:v_rod/v_zna
+абикому абихто pron:v_dav
+абиким абихто pron:v_oru
 
-абищо абищо pron
-абичого абищо pron
-абичому абищо pron
-абичим абищо pron
+абищо абищо pron:v_naz/v_zna
+абичого абищо pron:v_rod
+абичому абищо pron:v_dav
+абичим абищо pron:v_oru
 
-абичий абичий pron
-абичийого абичий pron
-абичийому абичий pron
-абичиїм абичий pron
-абичия абичий pron
-абичиєї абичий pron
-абичиїй абичий pron
-абичию абичий pron
-абичиєю абичий pron
-абичиї абичий pron
-абичиїх абичий pron
-абичиїми абичий pron
+абичий абичий pron:m:v_naz/v_zna
+абичийого абичий pron:m:v_rod/v_zna//n:v_rod
+абичийому абичий pron:m:v_dav/v_mis//n:v_dav/v_mis
+абичиєму абичий pron:m:v_dav/v_mis//n:v_dav/v_mis
+абичиїм абичий pron:m:v_mis//n:v_oru//p:v_dav
+абичия абичий pron:f:v_naz
+абичиєї абичий pron:f:v_rod
+абичиїй абичий pron:f:v_dav/v_mis
+абичию абичий pron:f:v_zna
+абичиєю абичий pron:f:v_oru
+абичиї абичий pron:p:v_naz/v_zna
+абичиїх абичий pron:p:v_rod/v_zna/v_mis
+абичиїми абичий pron:p:v_oru
 
 абиде абиде adv
 абиколи абиколи adv
 абикуди абикуди adv
 
-аніхто аніхто pron
-анікого аніхто pron
-анікому аніхто pron
-аніким аніхто pron
+аніхто аніхто pron:v_naz
+анікого аніхто pron:v_rod/v_zna
+анікому аніхто pron:v_dav
+аніким аніхто pron:v_oru
 
-аніщо аніщо pron
+аніщо аніщо pron:v_naz
+анічого аніщо pron:v_rod/v_zna
+анічому аніщо pron:v_dav
+анічим аніщо pron:v_oru
 
 аніде аніде adv
 анізащо анізащо adv
@@ -333,10 +339,10 @@
 анікогісінько аніколи adv
 
 небагато небагато adv
-небагато небагато numr
-небагатьох небагато numr
-небагатьом небагато numr
-небагатьма небагато numr
+небагато небагато numr:v_naz/v_zna
+небагатьох небагато numr:v_rod/v_zna/v_mis
+небагатьом небагато numr:v_dav
+небагатьма небагато numr:v_oru
 
 небагато-хто небагато-хто pron:v_naz
 небагато-кого небагато-хто pron:v_rod/v_zna
@@ -475,11 +481,12 @@
 чиїхось чийсь pron
 чиїмись чийсь pron
 
-хтось хтось pron
-когось хтось pron
-комусь хтось pron
-кимось хтось pron
-кимсь хтось pron
+хтось хтось pron:v_naz
+когось хтось pron:v_rod/v_zna
+комусь хтось pron:v_dav/v_mis
+кимось хтось pron:v_oru
+кимсь хтось pron:v_oru
+кімсь хтось pron:v_mis
 
 щось щось pron:n:v_zna
 чогось щось pron:n:v_rod/v_zna
@@ -511,8 +518,15 @@
 котромусь котрийсь pron
 котрійсь котрийсь pron
 котресь котрийсь pron
+котроїсь котрийсь pron
+котрусь котрийсь pron
 
-котрим-небудь
+котрий-небудь котрий-небудь pron
+котрого-небудь котрий-небудь pron
+котрому-небудь котрий-небудь pron
+котрим-небудь котрий-небудь pron
+
+котрий-будь котрий-будь pron
 
 який-небудь який-небудь pron
 якого-небудь який-небудь pron
@@ -576,32 +590,39 @@
 такою-то такий-то pron
 таке-то такий-то pron
 
-ніхто ніхто pron
-нікого ніхто pron
-ніким ніхто pron
-нікому ніхто pron
+ніхто ніхто pron:v_naz
+нікого ніхто pron:v_rod/v_zna
+ніким ніхто pron:v_oru
+нікому ніхто pron:v_dav
 
-ніщо ніщо pron
-нічого ніщо pron
-нічому ніщо pron
-нічим ніщо pron
+нічого нічого prysduk_sl
+нічого нічого adv
 
-дехто дехто pron
-декого дехто pron
-декому дехто pron
-деким дехто pron
+ніщо ніщо pron:v_naz/v_zna
+нічого ніщо pron:v_rod
+нічому ніщо pron:v_dav
+нічим ніщо pron:v_oru
 
-дещо дещо pron
-дечого дещо pron
-дечому дещо pron
-дечим дещо pron
+дехто дехто pron:v_naz
+декого дехто pron:v_rod/v_zna
+декому дехто pron:v_dav/v_mis
+деким дехто pron:v_oru
+декім дехто pron:v_mis
+
+дещо дещо adv
+дещо дещо pron:v_naz/v_zna
+дечого дещо pron:v_rod
+дечому дещо pron:v_dav/v_mis
+дечим дещо pron:v_oru
+дечім дещо pron:v_mis
 
 кудись кудись adv
 звідкись звідкись adv
 
-багатьох
-багатьом
-багатьма
+багато багато numr:v_naz/v_zna
+багатьох багато numr:v_rod/v_zna/v_mis
+багатьом багато numr:v_dav
+багатьма багато numr:v_oru
 
 декілька numr:v_naz/v_zna
 декількох numr:v_rod/v_zna/v_mis
@@ -628,11 +649,9 @@
 скільком-небудь numr:v_dav
 скількома-небудь numr:v_oru
 
-бозна-скільки
-
-чортзна-скільки
-
-хтозна-скільки
+бозна-скільки adv
+чортзна-скільки adv
+хтозна-скільки adv
 
 один один numr:m:v_naz/v_zna
 одного один numr:m:v_rod/v_zna//n:v_rod
@@ -775,6 +794,9 @@
 вісімнадцятеро вісімнадцятеро numr:v_naz/v_zna
 двадцятеро двадцять numr:v_naz/v_zna
 дванадцятеро дванадцять numr:v_naz/v_zna
+тридцятеро тридцятеро numr:v_naz/v_zna
+сімнадцятеро сімнадцятеро numr:v_naz/v_zna
+чотирнадцятеро чотирнадцятеро numr:v_naz/v_zna
 кількасот кількасот numr:v_naz/v_zna
 кількохсот кількасот numr:v_rod
 кількомстам кількасот numr:v_dav
@@ -882,13 +904,20 @@
 за за pryim:rv_rod:rv_zna:rv_oru
 із із pryim:rv_rod:rv_zna:rv_oru
 зі зі pryim:rv_rod:rv_zna:rv_oru
+зо зо pryim:rv_rod:rv_zna:rv_oru
+задля задля pryim:rv_rod
 залежно залежно pryim:rv_rod
+замість замість pryim:rv_rod
 заради заради pryim:rv_rod
 згідно згідно pryim:rv_rod
+здовж здовж adv
+здовж здовж pryim:rv_rod
 з-за з-за pryim:rv_rod
 із-за із-за pryim:rv_rod
+з-над з-над pryim:rv_rod
 з-перед з-перед pryim:rv_rod
 з-під з-під pryim:rv_rod
+із-під із-під pryim:rv_rod
 з-поза з-поза pryim:rv_rod
 з-поміж з-поміж pryim:rv_rod
 з-понад з-понад pryim:rv_rod
