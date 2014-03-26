@@ -405,6 +405,8 @@
 хтозна-чим хтозна-що pron:v_oru
 хтозна-чім хтозна-що pron:v_mis
 
+хтозна-хто
+
 хтозна-де adv
 хтозна-як adv
 хтозна-коли adv
@@ -633,6 +635,8 @@
 такою-то такий-то pron:f:v_oru
 таке-то такий-то pron:n:v_naz/v_zna
 
+сякий-такий сякий-такий pron:m:v_naz
+
 ніхто ніхто pron:v_naz
 нікого ніхто pron:v_rod/v_zna
 нікому ніхто pron:v_dav
@@ -762,6 +766,8 @@
 трьох три numr:v_rod/v_zna/v_mis
 трьома три numr:v_oru
 триста триста numr:v_naz/v_zna
+тринадцятеро
+тринадцяти
 трьохсот триста numr:v_rod/v_zna
 трьомстам триста numr:v_dav
 трьомастами триста numr:v_oru
@@ -840,8 +846,10 @@
 двадцятеро двадцять numr:v_naz/v_zna
 дванадцятеро дванадцять numr:v_naz/v_zna
 тридцятеро тридцятеро numr:v_naz/v_zna
+шістнадцятеро шістнадцятеро numr:v_naz/v_zna
 сімнадцятеро сімнадцятеро numr:v_naz/v_zna
 чотирнадцятеро чотирнадцятеро numr:v_naz/v_zna
+
 кількасот кількасот numr:v_naz/v_zna
 кількохсот кількасот numr:v_rod
 кількомстам кількасот numr:v_dav
@@ -978,6 +986,7 @@
 крізь крізь pryim:rv_zna
 крім крім pryim:rv_rod
 між між pruim:rv_rod:rv_zna:rv_oru
+проміж проміж pruim:rv_rod:rv_zna:rv_oru
 поміж поміж pruim:rv_rod:rv_zna:rv_oru
 на на pryim:rv_zna:rv_mis
 навпаки навпаки pryim:rv_dav
@@ -1052,6 +1061,8 @@
 супротив adv
 уздовж уздовж pryim:rv_rod
 вздовж вздовж pryim:rv_rod
+упродовж упродовж adv
+упродовж упродовж pryim:rv_rod
 через через pryim:rv_zna
 шляхом шляхом pryim:rv_rod
 щодо щодо pryim:rv_rod
