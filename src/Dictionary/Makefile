@@ -9,7 +9,7 @@ sort	   =	$(LC_ALL) sort
 dict	   = 	$(INDICT)
 dictionary =	uk_words.out
 
-CLEANFILES =	uk_words.out *.tmp *.old *.bak
+CLEANFILES =	uk_words.out *.tmp *.old *.bak *.tag
 
 
 all:	uk_words.out
