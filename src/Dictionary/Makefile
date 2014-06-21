@@ -24,7 +24,7 @@ uk_words.out: $(dict)
 uk_words.tag: $(dict) tags.lst
 	cat $(SPACED) | grep -vE " [^ ]+ [a-z].*$$" | $(LC_ALL) grep -vE "^[#[:space:]]" | $(spcr) > spaced.tmp
 	cat $(SPACED) | grep -E " [^ ]+ [a-z].*$$" | $(LC_ALL) grep -vE "^[#[:space:]]" >> spaced.tmp
-	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ if ($$2 != "" && $$3 == "") print $$1,$$1,$$2; else print $$0; }' | sort -u >> spaced.tmp
+	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ if ($$2 != "" && $$3 == "" && $$1 !~ "[а-яіїєґА-ЯІЇЄҐ]/") print $$1,$$1,$$2; else print $$0; }' | sort -u >> spaced.tmp
 	grep "/" twisters.lst | sed -r "s/ .*$$//" | awk '{ print $$0 " :bad" }' >> spaced.tmp
 	cat verify.lst >> spaced.tmp
 	cat $(NOTSPACED) spaced.tmp tags.lst | sed -r "s/-$$//" | sed -r "s/^[А-ЯІЇЄҐ]{2,}$$/\0 \0 noun:nv/" | $(sort) > $@
