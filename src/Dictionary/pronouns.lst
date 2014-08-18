@@ -192,6 +192,7 @@
 тій той pron:f:v_dav/v_mis
 ту той pron:f:v_zna
 тією той pron:f:v_oru
+тою той pron:f:v_oru
 те той pron:n:v_naz/v_zna
 ті той pron:p:v_naz/v_zna
 тих той pron:p:v_rod/v_zna/v_mis
@@ -1017,6 +1018,7 @@
 опісля опісля pryim:rv_rod
 опріч опріч pryim:rv_rod
 опріч опріч adv
+пепед перед pryim:rv_oru:rv_zna
 під під pryim:rv_zna:rv_oru
 після після pryim:rv_rod
 по по pryim:rv_mis:rv_zna
