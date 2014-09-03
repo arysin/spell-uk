@@ -277,6 +277,8 @@ def generate_suffix(word, affixFlag, affix_list, allAffixFlags, origAffixFlags):
             
             if( affixFlag == 'W' and not word.endswith('ти') ):
                 lines.append( deriv + ' ' + deriv + ' ' + 'adv' )
+#            elif 'dieprysl' in affix.tags:
+#                lines.append( deriv + ' ' + deriv + ' ' + affix.tags )
             else:
                 if affixFlag == 'p':
                     if 'm:v_naz' in affix.tags:
@@ -335,6 +337,10 @@ def post_process(line, affixFlags):
            line = re.sub('impers.*:bad', 'impers:bad', line)
         else:
            line = re.sub('impers.*', 'impers', line)
+    elif "dieprysl" in line:
+        line = re.sub('(dieprysl:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+    elif ":rev" in line and "tran" in line:
+        line = re.sub(':(in)?tran', '', line)
     elif "verb:pres" in line and ":perf" in line:
         if  not ":imperf" in line:
             line = line.replace(':pres', ':futr')

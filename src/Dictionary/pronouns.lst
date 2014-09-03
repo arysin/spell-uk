@@ -936,22 +936,28 @@
 
 # Прийменники
 без без pryim:rv_rod
-в в pryim:rv_zna:rv_mis:rv_rod
-у у pryim:rv_zna:rv_mis:rv_rod
-уві уві pryim:rv_zna:rv_mis:rv_rod
-вві уві pryim:rv_zna:rv_mis:rv_rod
+в в pryim:rv_zna:rv_mis:rv_rod:v-u
+у у pryim:rv_zna:rv_mis:rv_rod:v-u
+уві уві pryim:rv_zna:rv_mis:rv_rod:v-u
+вві вві pryim:rv_zna:rv_mis:rv_rod:v-u
 від від pryim:rv_rod
 відповідно відповідно pryim:rv_dav
-внаслідок внаслідок pryim:rv_rod
-унаслідок унаслідок pryim:rv_rod
-вподовж вподовж pryim:rv_rod
-уподовж уподовж pryim:rv_rod
-впоперек впоперек pryim:rv_rod
-упоперек упоперек pryim:rv_rod
-вслід вслід pryim:rv_dav
-услід услід pryim:rv_dav
-всупереч всупереч pryim:rv_dav
-усупереч усупереч pryim:rv_dav
+внаслідок внаслідок pryim:rv_rod:v-u
+унаслідок унаслідок pryim:rv_rod:v-u
+вподовж вподовж pryim:rv_rod:v-u
+уподовж уподовж pryim:rv_rod:v-u
+впродовж впродовж adv
+упродовж упродовж adv
+впродовж впродовж pryim:rv_rod:v-u
+упродовж упродовж pryim:rv_rod:v-u
+уздовж уздовж pryim:rv_rod:v-u
+вздовж вздовж pryim:rv_rod:v-u
+впоперек впоперек pryim:rv_rod:v-u
+упоперек упоперек pryim:rv_rod:v-u
+вслід вслід pryim:rv_dav:v-u
+услід услід pryim:rv_dav:v-u
+всупереч всупереч pryim:rv_dav:v-u
+усупереч усупереч pryim:rv_dav:v-u
 для для pryim:rv_rod
 до до pryim:rv_rod
 довкола довкола pryim:rv_rod
@@ -972,6 +978,8 @@
 з-над з-над pryim:rv_rod
 з-перед з-перед pryim:rv_rod
 з-під з-під pryim:rv_rod
+з-попід з-попід pryim:rv_rod
+з-позад з-позад pryim:rv_rod
 із-під із-під pryim:rv_rod
 з-поза з-поза pryim:rv_rod
 з-поміж з-поміж pryim:rv_rod
@@ -1039,6 +1047,7 @@
 поздовж поздовж pryim:rv_rod
 покрай покрай pryim:rv_rod
 понад понад pryim:rv_oru:rv_zna
+понадо понадо pryim:rv_oru:rv_zna
 понижче понижче pryim:rv_rod
 поперек поперек pryim:rv_rod
 поперед поперед adv
@@ -1062,10 +1071,6 @@
 супроти супроти pryim:rv_rod
 супротив супротив pryim:rv_rod
 супротив adv
-уздовж уздовж pryim:rv_rod
-вздовж вздовж pryim:rv_rod
-упродовж упродовж adv
-упродовж упродовж pryim:rv_rod
 через через pryim:rv_zna
 шляхом шляхом pryim:rv_rod
 щодо щодо pryim:rv_rod
