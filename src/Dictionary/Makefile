@@ -22,7 +22,7 @@ uk_words.out: $(dict) Makefile
 	rm -f spaced.tmp
 
 uk_words.tag: $(dict) tags.lst Makefile
-	../../bin/mk_tagged_wordlist.py $(dict) tags.lst twisters.lst verify.lst rare.lst | $(sort) > $@
+	../../bin/tag/mk_tagged_wordlist.py $(dict) tags.lst twisters.lst verify.lst rare.lst | $(sort) > $@
 
 wc:     uk_words.out
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
