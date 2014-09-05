@@ -320,8 +320,10 @@ class MyDlg < Qt::Widget
 	return if item == nil
 	
 	outText = item.text.force_encoding('utf-8')
-	ot = outText.delete(' ').split(/[:]/)
-	@d.txtResult.setText( ot[1] )
+#	ot = outText.delete(' ').split(/[:]/)
+	ot = outText.split(/[:]/)[1].strip().split(' ')
+	@d.txtResult.setText( ot[0] )
+	@d.txtExtra.setText( ot[1] )
 	@d.lstOutput.takeItem( @d.lstOutput.currentRow )
 
 	remove_word_from_dict(ot[0], ot[1])

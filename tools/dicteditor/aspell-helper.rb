@@ -175,7 +175,7 @@ end
 def find_in_krym(word)
     ret = []
     
-    cmd = IO.popen("grep -i -E \"#{word}$\" data/ukr.lst", mode: 'r+:UTF-8',)
+    cmd = IO.popen("grep -i -E \"#{word}$\" data/dict*.lst", mode: 'r+:UTF-8',)
     while r = cmd.gets
       ret << r.chop
     end
