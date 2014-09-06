@@ -48,6 +48,8 @@ prefixes = []
 affixMap = {}
 comparatives = []
 comparatives_shy = []
+adverbs_compar = []
+adverbs = []
 
 with_flags_re = re.compile('.*[а-яіїєґА-ЯІЇЄҐ]/.*')
 with_Y_flag_re = re.compile('[^ ]*/[^ ]*Y.*')
@@ -348,6 +350,7 @@ def post_process(line, affixFlags):
             line = line + "\n" + line.replace(':pres', ':futr')
     elif 'comp' in line or 'super' in line: # and not ' якнай' in line:
         line = re.sub(' (як|що)?най', ' ', line)
+        
 
         lemma = line.split(' ')[1]
         if lemma in COMPAR_FORMS:
@@ -360,13 +363,22 @@ def post_process(line, affixFlags):
 
         if ':compr' in line and line.startswith('най'):
             line = line.replace(':compr', ':super')
+    
+    lines = [line]
+    
+    if re.match('[^ ]+ше [^ ]+ .*v_naz.*(compr|super).*', line):
+        line1 = re.sub('([^ ]+ше [^ ]+[чш])ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
+        line1 = re.sub('([^ ]+ше [^ ]+[^чш])ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
+        adverbs_compar.append( line1 )
 
-    return line
+    return lines
 
 
 def collect_all_words(line):
     if not ':bad' in line and not ':rare' in line:
         allWords.append(line.split(' ')[0])
+    if ' adv' in line:
+        adverbs.append(line.split(' ')[0])
 
 
 #@profile
@@ -476,15 +488,15 @@ def process_line(line):
         
         out_line += extra_tag
         
-        out_line = post_process(out_line, affixFlags)
+        out_lines2 = post_process(out_line, affixFlags)
         
-        if main_tag:
-            out_line = re.sub(' [a-z]+', ' ' + main_tag, out_line)
+        for out_line2 in out_lines2:
+            if main_tag:
+                 out_line2 = re.sub(' [a-z]+', ' ' + main_tag, out_line2)
         
-        ofile.write( out_line + '\n' )
+            ofile.write( out_line2 + '\n' )
         
-        collect_all_words(out_line)
-
+            collect_all_words(out_line2)
 
 
 # end
@@ -584,6 +596,14 @@ for line in ifile:
 
     for line in lines:
         process_line(line)
+
+
+
+for adv_line in adverbs_compar:
+    adv = adv_line.split(' ')[1]
+    if adv in adverbs:
+        ofile.write( adv_line + '\n' )
+
 
 
 locale.setlocale(locale.LC_ALL, "uk_UA.UTF-8")
