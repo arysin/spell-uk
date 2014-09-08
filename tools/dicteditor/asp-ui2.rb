@@ -339,7 +339,7 @@ class MyDlg < Qt::Widget
 	@d.btnDefinition.setEnabled( !noText )
 	@d.btnStardict.setEnabled( !noText )
 	
-	wellFormed = /^[а-яіїєґ'-]+(\/[a-z0-9]+(<>?)?)?$/i.match(text) ? true : false	#'
+	wellFormed = /^[а-яіїєґ'-]+(\/[a-z0-9]+(<>?)?-?)?$/i.match(text) ? true : false	#'
 	#puts "wellFormed #{wellFormed}"
 	@d.btnAdd.setEnabled( wellFormed )
 	

@@ -15,6 +15,8 @@ Not_In_Dict_List=['misc.lst']
 Sort_Command="sort -d "
 Sort_Command="cat "
 
+#expand_affix_cmd = nil
+
 def aspell_expand(word)
 	return [] if word.empty? 
 	return [word] if !word.include?('/')
@@ -22,14 +24,17 @@ def aspell_expand(word)
 puts "expanding: #{word}"
 
     begin
-	res = `echo \"#{word}\" | aspell -l #{Language} expand`
-    rescue
-	puts "Failed to expand"
-	begin
-	    res = `echo \"#{word}\" | aspell -l #{Language} expand`
-	rescue
-	    puts "Failed to expand twice"
-	end
+
+    if $exp_stdin == nil
+	   $exp_stdin = IO.popen("/usr/bin/python3 ../../bin/tag/affix.py -f", mode: 'r+:UTF-8')
+	   $exp_stdin.sync = true
+    end
+
+    $exp_stdin.puts(word + "\n")
+#	res = `echo \"#{word}\" | aspell -l #{Language} expand`
+    res = $exp_stdin.gets
+#    rescue
+#	    puts "Failed to expand"
     end
 #	cmd = IO.popen("echo \"#{word}\" | aspell -l #{Language} expand", mode: 'r+:UTF-8')
 #	res = cmd.gets

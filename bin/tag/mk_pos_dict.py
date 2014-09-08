@@ -9,6 +9,9 @@ import subprocess
 import logging
 import locale
 
+import affix
+from affix import affixMap
+from affix import prefixes
 from compar_forms import COMPAR_FORMS
 
 
@@ -20,32 +23,8 @@ spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
 PLURAL_FLAGS_RE = '[bfjlq]'
 NOUN_FLAGS_RE = '[a-z]';
 
-class Affix(object):
-#    _flag = ''
-    _fromm = ''
-    _to = ''
-    _match = ''
-    _tags = ''
-
-    def __init__(self, from_, to_, match_, tags_):
-        self.fromm = from_
-        self.to = to_
-        self.match = match_
-        self.tags = tags_
-        self.match_ends_re = re.compile('.*'+match_+'$')
-
-#    def __eq__(self, other):
-#        if isinstance(other, Affix):
-#            return self. == other._flag \
-#                and self._suffix == other._suffix
-#        else:
-#            return False
-
-
 allWords = []
 
-prefixes = []
-affixMap = {}
 comparatives = []
 comparatives_shy = []
 adverbs_compar = []
@@ -274,7 +253,7 @@ def generate_suffix(word, affixFlag, affix_list, allAffixFlags, origAffixFlags):
             lines.append(base_line)
 
     for affix in affix_list:
-        if affix.match_ends_re.match(word):
+        if affix.match_ends_re.search(word):
             deriv = re.sub(affix.fromm+'$', affix.to, word)
             
             if( affixFlag == 'W' and not word.endswith('ти') ):
@@ -501,60 +480,19 @@ def process_line(line):
 
 # end
 
-ifile = open(spell_uk_dir + "src/Affix/uk_affix.tag", "r")
+# --------------
+# main code
+# --------------
+
+affix.load_affixes(spell_uk_dir + "src/Affix/uk_affix.tag")
 
 
-for line in ifile:
-
-    line = line.strip()
-    
-    # PFX
-    if not re.match('^[PS]FX.*', line):
-        continue
-
-    if re.match('^[SP]FX[ \t]+[a-zA-Z0][ \t]+[a-zA-Z0][ \t]+[0-9]+', line):
-        affixFlag = re.split('[ \t]+', line)[1]
-        affixMap[ affixFlag ] = []
-        
-        if re.match('^PFX[ \t]+[a-zA-Z][ \t]+[a-zA-Z][ \t]+[0-9]+', line):
-            prefixes.append(affixFlag)
-            print("prefix", affixFlag)
-
-        continue
-
-        
-    halfs = re.split('@', line)
-        
-    parts = re.split('[ \t]+', halfs[0].strip())
-
-    if len(parts) < 5:
-        continue
-
-    if len(halfs) > 1:
-        tags = halfs[1].strip()
-    else:
-        tags = ''
-        
-    affix = parts[1]
-    
-    fromm = parts[2]
-    to = parts[3]
-    
-    if fromm == '0':
-        fromm = ''
-    if to == '0':
-        to = ''
-    
-    affixMap[affix].append(Affix(fromm, to, parts[4], tags))
-
-#    print(parts[2], parts[3], tags)
-
-print(len(affixMap))
 
 src_filename = spell_uk_dir + "src/Dictionary/uk_words.tag"
 
 file_sfx = ''
 if '-t' in sys.argv:
+    print("Running in test mode")
     file_sfx = '.test'
     src_filename = "uk_words.tag.test"
 

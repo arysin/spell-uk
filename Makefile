@@ -52,7 +52,7 @@ iconv	= iconv
 
 include encodings.inc
 
-default:	aspell
+default:	myspell
 
 all: 		aspell myspell mozilla-xpi ooo
 
@@ -210,7 +210,10 @@ mozilla-xpi-old:	myspell
 #
 # ispell rules
 #
-ispell:		$(ISPELL_DIST)/ukrainian.aff $(ISPELL_DIST)/ukrainian.hash
+#ispell:		$(ISPELL_DIST)/ukrainian.aff $(ISPELL_DIST)/ukrainian.hash
+ispell:
+	@echo "FATAL: ispell is not supported any more" >&2
+	@/bin/false
 
 install-ispell-dict:	ispell
 	install -m 0755 -d $(PREFIX)$(ISPELLDIR)
