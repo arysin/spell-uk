@@ -67,6 +67,7 @@ install-all:	install-aspell install-myspell
 # 
 #aspell:		$(ASPELL_DIST)/uk.rws $(ASPELL_DIST)/uk_affix.dat $(ASPELL_DIST)/uk.dat uk.multi ukrainian.alias $(ASPELL_DIST)/ukrainian.kbd
 aspell:		$(ASPELL_DIST)/uk.rws $(ASPELL_DIST)/uk.dat src/aspell/uk.multi src/aspell/ukrainian.alias $(ASPELL_DIST)/ukrainian.kbd
+	echo "aspell is not actively maintained any more, please switch to hunspell"
 	cp -u src/aspell/uk.multi src/aspell/ukrainian.alias $(ASPELL_DIST)
 
 $(ASPELL_DIST)/uk_repl.dat:
@@ -212,7 +213,7 @@ mozilla-xpi-old:	myspell
 #
 #ispell:		$(ISPELL_DIST)/ukrainian.aff $(ISPELL_DIST)/ukrainian.hash
 ispell:
-	@echo "FATAL: ispell is not supported any more" >&2
+	@echo "FATAL: ispell is not supported any more, please use hunspell" >&2
 	@/bin/false
 
 install-ispell-dict:	ispell

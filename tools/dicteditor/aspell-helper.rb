@@ -3,7 +3,7 @@
 
 require 'open3'
 
-Dictionary_Src_Dir="#{ENV['HOME']}/work/ukr/spelling/spell-uk/src/Dictionary"
+Dictionary_Src_Dir="../../src/Dictionary"
 Aspell_Personal_Dic="#{ENV['HOME']}/.aspell.uk.pws"
 Output_Dir="./out"
 Language="uk"
@@ -15,7 +15,6 @@ Not_In_Dict_List=['misc.lst']
 Sort_Command="sort -d "
 Sort_Command="cat "
 
-#expand_affix_cmd = nil
 
 def aspell_expand(word)
 	return [] if word.empty? 
@@ -31,7 +30,6 @@ puts "expanding: #{word}"
     end
 
     $exp_stdin.puts(word + "\n")
-#	res = `echo \"#{word}\" | aspell -l #{Language} expand`
     res = $exp_stdin.gets
 #    rescue
 #	    puts "Failed to expand"
@@ -54,40 +52,49 @@ def aspell_munch(word)
 #	cmd.close
 #	res, status = Open3.capture2("echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 aspell -l #{Language} munch")
     begin
-	res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
+
+    if $munch_stdin == nil
+	   $munch_stdin = IO.popen("/usr/bin/python3 ../../bin/tag/affix.py munch", mode: 'r+:UTF-8')
+	   $munch_stdin.sync = true
+    end
+    
+    $munch_stdin.puts(word + "\n")
+    res = $munch_stdin.gets
+
+#	res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
 	return res.split(/[ \n]/)
     rescue
 	puts "Failed to munch"
-	begin
-	    res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
-	    return res.split(/[ \n]/)
-	rescue
-	    puts "Failed to munch twice"
-	    return []
-	end
+#	begin
+#	    res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
+#	    return res.split(/[ \n]/)
+#	rescue
+#	    puts "Failed to munch twice"
+#	    return []
+#	end
     end
 end
 
-def munch_all(input_file)
-#	cmd = IO.popen("echo #{word} | aspell -l #{Language} munch", "r+")
-	cmd = IO.popen("grep -E '...' #{input_file} | sort | uniq | aspell -l #{Language} munch", mode: 'r+:UTF-8');
-	res = cmd.gets
-    cmd.close
-	return res.split(/[ ]/)
-end
+#def munch_all(input_file)
+##	cmd = IO.popen("echo #{word} | aspell -l #{Language} munch", "r+")
+#	cmd = IO.popen("grep -E '...' #{input_file} | sort | uniq | aspell -l #{Language} munch", mode: 'r+:UTF-8');
+#	res = cmd.gets
+#    cmd.close
+#	return res.split(/[ ]/)
+#end
 
 
-def create_munch_freqs(input_file)
-  freqs = Hash.new(0)
-
-  munch_list = munch_all(input_file)
-  for munch_ver in munch_list
-#		if freqs.has_key?(munch_ver)
-	freqs[ munch_ver ] += 1
-  end
-
-  freqs.each {|key, value| puts "#{key} is #{value}" }
-end
+#def create_munch_freqs(input_file)
+#  freqs = Hash.new(0)
+#
+#  munch_list = munch_all(input_file)
+#  for munch_ver in munch_list
+##		if freqs.has_key?(munch_ver)
+#	freqs[ munch_ver ] += 1
+#  end
+#
+#  freqs.each {|key, value| puts "#{key} is #{value}" }
+#end
 
 
 $SrcFile = Aspell_Personal_Dic
