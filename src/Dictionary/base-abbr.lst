@@ -3,17 +3,17 @@
 АКШУ noun:nv
 АМКУ noun:nv
 АМНУ noun:nv
-АН noun:nv
 АНТК noun:nv
-АП noun:nv
+АН noun:nv
 АПК noun:nv
+АП noun:nv
 АРСР noun:nv
 АСЕАН noun:nv
 АТЕК noun:nv
 АТЗТ noun:nv
 АТП noun:nv
-БК noun:nv
 б-ка noun:nv
+БК noun:nv
 БМД noun:nv
 БМП noun:nv
 БРІК noun:nv
@@ -28,22 +28,22 @@
 ВДНГ noun:nv
 ВДЦП noun:nv
 вид-во/ij
-ВІЛ noun:nv
 ВІЛ-СНІД noun:nv
+ВІЛ noun:nv
 ВІНК noun:nv
 ВЛКСМ noun:nv
 ВМГО noun:nv
-ВМС noun:nv
 ВМСУ noun:nv
+ВМС noun:nv
 ВНДІ noun:nv
 ВНЗ noun:nv
 ВНП noun:nv
-ВО noun:nv
 ВООЗ noun:nv
+ВО noun:nv
 ВПК noun:nv
 ВПС noun:nv
-ВР noun:nv
 ВРУ noun:nv
+ВР noun:nv
 ВССУ noun:nv
 ВТССУМ noun:nv
 ВУАН noun:nv
@@ -70,14 +70,14 @@
 Дж noun:nv
 ДІНЗ noun:nv
 ДКЦПФР noun:nv
-дм noun:nv
 ДМЗ noun:nv
 ДМСУ noun:nv
+дм noun:nv
 дНТФ noun:nv
-ДПА noun:nv
 ДПАУ noun:nv
-ДПС noun:nv
+ДПА noun:nv
 ДПСУ noun:nv
+ДПС noun:nv
 ДСЕС noun:nv
 ДСК noun:nv
 ДСТУ noun:nv
@@ -91,13 +91,13 @@
 ЄДАПС noun:nv
 ЄДРПОУ noun:nv
 ЄЕП noun:nv
-ЄЕС noun:nv
 ЄЕСУ noun:nv
+ЄЕС noun:nv
 ЄКА noun:nv
 ЕКГ noun:nv
 ЄКРН noun:nv
-ЄС noun:nv
 ЄСПЛ noun:nv
+ЄС noun:nv
 ЖБК noun:nv
 ЖЕК/ef
 ЖКГ noun:nv
@@ -112,25 +112,24 @@
 ІОЦ noun:nv
 ІТ noun:nv
 кВт
-кг noun:nv
 КГЗКОР noun:nv
 кГц noun:nv
-КД noun:nv
+кг noun:nv
 КДБ noun:nv
 кДж noun:nv
 КДМА noun:nv
+КД noun:nv
 ккал noun:nv
-км noun:nv
 КМДА noun:nv
 КМКФ noun:nv
 КМУ noun:nv
+км noun:nv
 КНДР noun:nv
 КНЕУ noun:nv
 КНЛУ noun:nv
-КНУ noun:nv
 КНУКіМ noun:nv
+КНУ noun:nv
 КОАТУУ noun:nv
-КП noun:nv
 кПа noun:nv
 КПЗУ noun:nv
 КПІ noun:nv
@@ -138,6 +137,7 @@
 КПРС noun:nv
 КПРФ noun:nv
 КПУ noun:nv
+КП noun:nv
 к-ть
 КУІн noun:nv
 ЛАЗ/e
@@ -145,12 +145,11 @@
 ЛНУ noun:nv
 ЛОДА noun:nv
 ЛуАЗ/e
-м noun:nv
 МАГАТЕ noun:nv
 МАУП noun:nv
 МБРР noun:nv
-МВС noun:nv
 МВСУ noun:nv
+МВС noun:nv
 МВт
 МВФ noun:nv
 МГц noun:nv
@@ -158,26 +157,27 @@
 МінАП noun:nv
 мкм noun:nv
 мкФ noun:nv
-мл noun:nv
 млн noun:nv
 млрд noun:nv
-мм noun:nv
+мл noun:nv
 ММКФ noun:nv
+мм noun:nv
 МНС noun:nv
-МО noun:nv
 МОЗ noun:nv
-МОН noun:nv
 МОНМС noun:nv
+МОН noun:nv
+МО noun:nv
 МПа noun:nv
 мРНК noun:nv
 мс noun:nv
 МФТІ noun:nv
 МХАТ noun:nv
+м noun:nv
 НАЕК noun:nv
 НАК/e
 НАМН noun:nv
-НАН noun:nv
 НАНУ noun:nv
+НАН noun:nv
 НАПН noun:nv
 НАСА noun:nv
 НАСК noun:nv
@@ -194,8 +194,8 @@
 НКРЕ noun:nv
 НКРЗ noun:nv
 НЛО noun:nv
-нм noun:nv
 НМПУ noun:nv
+нм noun:nv
 НРКУ noun:nv
 НРУ noun:nv
 НСДАП noun:nv
@@ -226,36 +226,36 @@
 ООН noun:nv
 ОПЕК noun:nv
 ОСББ noun:nv
-ОУН noun:nv
 ОУН-УПА noun:nv
-Па noun:nv
+ОУН noun:nv
 ПАРЄ noun:nv
-ПДВ noun:nv
+Па noun:nv
 ПДВЛ noun:nv
+ПДВ noun:nv
 ПЕК noun:nv
 ПЕОМ noun:nv
-ПЗ noun:nv
 ПЗРК noun:nv
+ПЗ noun:nv
 ППО noun:nv
-ПР noun:nv
-ПРО noun:nv
 ПРООН noun:nv
+ПРО noun:nv
 пр-т/e
+ПР noun:nv
 ПСПУ noun:nv
 ПТСР noun:nv
 ПУМБ noun:nv
-пФ noun:nv
 ПФТС noun:nv
+пФ noun:nv
 р
 РАГС/e
 РАЕС noun:nv
 РАТАУ noun:nv
 РВВС noun:nv
 РДА noun:nv
-р-н/ef
-РНБО noun:nv
 РНБОУ noun:nv
+РНБО noun:nv
 РНК noun:nv
+р-н/ef
 РПГ noun:nv
 рРНК noun:nv
 РСЧА noun:nv
@@ -268,8 +268,8 @@
 сек noun:nv
 СІЗО noun:nv
 СКА noun:nv
-см noun:nv
 смт noun:n:nv
+см noun:nv
 СНБОУ noun:nv
 СНІД/e
 СОТ noun:nv
@@ -287,11 +287,11 @@
 ТРК noun:nv
 тРНК noun:nv
 УААН noun:nv
-УАЗ noun:nv
 УАЗТ noun:nv
+УАЗ noun:nv
 УАНМ noun:nv
-УАПЦ noun:nv
 УАПЦ-КП noun:nv
+УАПЦ noun:nv
 УАСС noun:nv
 УБЕЗ noun:nv
 УБЗПТЛ noun:nv
@@ -308,21 +308,21 @@
 УККА noun:nv
 УКТЗЕД noun:nv
 УМВГ noun:nv
-УМВС noun:nv
 УМВСУ noun:nv
-УНА noun:nv
+УМВС noun:nv
 УНА-УНСО noun:nv
+УНА noun:nv
 УНДП noun:nv
 УНІАН noun:nv
 УНКВД noun:nv
 УНП noun:nv
-УНР noun:nv
 УНРА noun:nv
+УНР noun:nv
 УНСО noun:nv
 УНЦПД noun:nv
 УПА noun:nv
-УПЦ noun:nv
 УПЦ-КП noun:nv
+УПЦ noun:nv
 УРСР noun:nv
 УСБУ noun:nv
 УСПП noun:nv
@@ -335,8 +335,8 @@
 ФДМУ noun:nv
 ФІДЕ noun:nv
 ФІФА noun:nv
-ФК noun:nv
 ф-ка/a
+ФК noun:nv
 ФМ-діапазон/e
 ФМ-станція/af
 ФСБ noun:nv
