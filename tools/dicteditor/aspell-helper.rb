@@ -20,7 +20,9 @@ def aspell_expand(word)
 	return [] if word.empty? 
 	return [word] if !word.include?('/')
 	
-puts "expanding: #{word}"
+	word.delete!('<>-')
+	
+  puts "expanding: #{word}"
 
     begin
 
@@ -31,8 +33,9 @@ puts "expanding: #{word}"
 
     $exp_stdin.puts(word + "\n")
     res = $exp_stdin.gets
-#    rescue
-#	    puts "Failed to expand"
+    rescue
+	    puts "Failed to expand", $!, $@
+	    $exp_stdin = nil
     end
 #	cmd = IO.popen("echo \"#{word}\" | aspell -l #{Language} expand", mode: 'r+:UTF-8')
 #	res = cmd.gets
@@ -62,9 +65,11 @@ def aspell_munch(word)
     res = $munch_stdin.gets
 
 #	res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
-	return res.split(/[ \n]/)
+	  return res.split(/[ \n]/)
+    
     rescue
-	puts "Failed to munch"
+	    puts "Failed to munch", $!, $@
+	    $munch_stdin = nil
 #	begin
 #	    res = `echo \"#{word}\" | LC_ALL=uk_UA.UTF-8 /usr/bin/aspell -l #{Language} munch`
 #	    return res.split(/[ \n]/)

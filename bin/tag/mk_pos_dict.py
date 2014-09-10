@@ -321,7 +321,7 @@ def post_process(line, affixFlags):
     elif "dieprysl" in line:
         line = re.sub('(dieprysl:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
     elif ":rev" in line and "tran" in line:
-        line = re.sub(':(in)?tran', '', line)
+        line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif "verb:pres" in line and ":perf" in line:
         if  not ":imperf" in line:
             line = line.replace(':pres', ':futr')
