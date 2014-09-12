@@ -26,7 +26,7 @@ uk_words.tag: $(dict) tags.lst Makefile
 
 wc:     uk_words.out
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
-	sed -r "s/[WZYXOP]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.out | wc -l
+	sed -r "s/[WZYXOPQR0]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.out | wc -l
 
 sort:
 	@for ff in $(SORTED) ; do \

@@ -12,7 +12,7 @@ all: $(affixfile)
 
 
 $(affixfile): $(src_affixfiles)
-	cat $(src_affixfiles) | sed 's/#.*$$//g; s/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
+	cat $(src_affixfiles) | sed 's/[\t ]*#.*$$//g; s/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
 
 uk_affix.tag: $(src_affixfiles)
 	cat $(src_affixfiles) | grep -Ev "^#|^REP" | sed 's/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
