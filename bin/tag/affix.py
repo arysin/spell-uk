@@ -60,18 +60,20 @@ affixMap = {}
 def expand_prefixes(word, affixFlags):
     words = [ word ]
 
-#    affixFlagsToRemove = list()
     for affixFlag in affixFlags:
-        if affixFlag in prefixes:
-            affix_list = affixMap[affixFlag]
-            for affix in affix_list:
-                if affix.match_start_re.match(word):
-                    wrd = affix.sub_from_pfx.sub(affix.to, word)
-                    words.append( wrd )
-#            affixFlagsToRemove.append(affixFlag)
-    
-#    for f in affixFlagsToRemove:
-#        affixFlags.remove(f)
+        if affixFlag not in prefixes:
+          continue
+          
+        appliedCnt = 0
+        affix_list = affixMap[affixFlag]
+        for affix in affix_list:
+            if affix.match_start_re.match(word):
+                wrd = affix.sub_from_pfx.sub(affix.to, word)
+                words.append( wrd )
+                appliedCnt += 1
+
+        if appliedCnt == 0:
+          print("Flag", affixFlag, "not applicable to", word, file=sys.stderr)
     
     return words
 
@@ -82,12 +84,20 @@ def expand_suffixes(word, affixFlags):
     words = [ word ]
 
     for affixFlag in affixFlags:
-        if not affixFlag in prefixes:
-            affix_list = affixMap[affixFlag]
-            for affix in affix_list:
-             if affix.match_ends_re.search(word):
-                 deriv = affix.sub_from_sfx.sub(affix.to, word)
-                 words.append(deriv)
+        if affixFlag in prefixes:
+          continue
+          
+        appliedCnt = 0
+        
+        affix_list = affixMap[affixFlag]
+        for affix in affix_list:
+          if affix.match_ends_re.search(word):
+             deriv = affix.sub_from_sfx.sub(affix.to, word)
+             words.append(deriv)
+             appliedCnt += 1
+        
+        if appliedCnt == 0:
+          print("Flag", affixFlag, "not applicable to", word, file=sys.stderr)
 
     return words
 
@@ -98,6 +108,8 @@ def load_affixes(filename):
  re_afx=re.compile('^[SP]FX[ \t]+[a-zA-Z0][ \t]+[a-zA-Z0][ \t]+[0-9]+')
  re_pfx=re.compile('^PFX[ \t]+[a-zA-Z][ \t]+[a-zA-Z][ \t]+[0-9]+')
  re_whitespace=re.compile('[ \t]+')
+ decl_aff_counts = {}
+ real_aff_counts = {}
 
  with open(filename, "r") as aff_file:
 
@@ -110,15 +122,18 @@ def load_affixes(filename):
         continue
 
     if re_afx.match(line):
-        affixFlag = re_whitespace.split(line)[1]
+        line_parts = re_whitespace.split(line)
+        affixFlag = line_parts[1]
         affixMap[ affixFlag ] = []
+        decl_aff_counts[ affixFlag ] = int(line_parts[3])
+        real_aff_counts[ affixFlag ] = 0
         
         if re_pfx.match(line):
             prefixes.append(affixFlag)
 
         continue
 
-    halfs = re.split('@', line)
+    halfs = line.split('@')
     parts = re_whitespace.split(halfs[0].strip())
 
     if len(parts) < 5:
@@ -129,18 +144,23 @@ def load_affixes(filename):
     else:
         tags = ''
         
-    affix = parts[1]
+    affixFlag = parts[1]
     fromm = parts[2]
     to = parts[3]
     match = parts[4]
-    
-    affixObj = Affix(fromm, to, match, tags, is_pfx)
-    affixMap[affix].append(affixObj)
 
+    affixObj = Affix(fromm, to, match, tags, is_pfx)
+    affixMap[affixFlag].append(affixObj)
+
+    real_aff_counts[ affixFlag ] += 1
 
   if len(affixMap) == 0:
     print("ERROR: Failed to load affixes from", filename, file=sys.stderr)
     sys.exit(1)
+    
+  for affixFlag in decl_aff_counts:
+    if decl_aff_counts[affixFlag] != real_aff_counts[affixFlag]:
+      print("Declared count of ", decl_aff_counts[affixFlag], "for", affixFlag, "not equals real line count", real_aff_counts[affixFlag], file=sys.stderr)
 
   print("Loaded", len(affixMap), "affixes", ", prefixes:", prefixes, file=sys.stderr)
 
@@ -226,7 +246,7 @@ if __name__ == "__main__":
   if aff_arg_idx != -1:
     affix_filename = sys.argv[aff_arg_idx+1]
   else:
-    affix_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Affix/uk_affix.tag"
+    affix_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Affix/uk_affix.dat"
 
   load_affixes(affix_filename)
 
