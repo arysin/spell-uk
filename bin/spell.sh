@@ -77,7 +77,7 @@ function filter_ru() {
 function filter_1() {
     if [ "$FILTER_DICT" != "" ]; then
         echo "Відфільтровуємо слова-покручі" >&2
-        hunspell -l -d $FILTER_DICT
+        tee ${FILE}.withtwisters.txt | hunspell -l -d $FILTER_DICT
     else
         cat
     fi
@@ -98,8 +98,8 @@ fi
 
 echo "Перевіряємо правопис словником $DICT" >&2
 
-cat $FILE | grep -vE "[а-яіїєґё][a-z]|[a-z][а-яіїєґё]" | tr '\n' '@' | sed -r "s/-@ *//g" | tr '@' '\n' |\
-sed "s/[а-яіїєґ]+\.//gi" | sed -r "s/́//g" | sed -r "s/([’ʼ‘\`]|\\')/'/g" |\
+cat $FILE | grep -vE "[а-яіїєґё][a-z]|[a-z][а-яіїєґё]" |\
+sed "s/[а-яіїєґ]+\.//gi" | sed -r "s/́//g" | sed -r "s/([’ʼ‘\`]|\\\')/'/g" |\
 hunspell -d $DICT -l |\
 grep -iE "^[а-щьюяїєґ'-]{4,}$" | grep -vE "^['-]|['-]$" |\
 grep -vE "$IGNORE" | filter_1 | sortt > $FILE.spelled
@@ -114,6 +114,11 @@ fi
 if [ "$SPLIT_CAPS" == "1" ]; then
     grep "^[А-ЯІЇЄҐ]" $OUTFILE > $OUTFILE.caps
     grep "^[^А-ЯІЇЄҐ]" $OUTFILE > $OUTFILE.nocaps
+fi
+
+if [ "$FILTER_DICT" != "" ]; then
+    echo "Створюємо список слів-покручів" >&2
+    hunspell -G -d $FILTER_DICT ${FILE}.withtwisters.txt
 fi
 
 # hunspell does not handle long strings (>5K utf-8 chars) well - need to split

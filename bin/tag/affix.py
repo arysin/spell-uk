@@ -105,7 +105,7 @@ def expand_suffixes(word, affixFlags):
 
 #@profile
 def load_affixes(filename):
- re_afx=re.compile('^[SP]FX[ \t]+[a-zA-Z0][ \t]+[a-zA-Z0][ \t]+[0-9]+')
+ re_afx=re.compile('^[SP]FX[ \t]+[a-zA-Z0-9][ \t]+[a-zA-Z0-9][ \t]+[0-9]+')
  re_pfx=re.compile('^PFX[ \t]+[a-zA-Z][ \t]+[a-zA-Z][ \t]+[0-9]+')
  re_whitespace=re.compile('[ \t]+')
  decl_aff_counts = {}

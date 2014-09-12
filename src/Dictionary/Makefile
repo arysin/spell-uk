@@ -10,7 +10,8 @@ dict	   = 	$(INDICT)
 dictionary =	uk_words.out
 
 CLEANFILES =	uk_words.out *.tmp *.old *.bak *.tag
-
+BAD_FLAG_RE="([IJ].*[OP]|[AB].*[QR]|/[^AIKM].*0|/[^AIKM].*[OQ])"
+BAD_TAGS_RE="(nontran|:[а-яіїєґ])"
 
 all:	uk_words.out
 
@@ -20,9 +21,11 @@ uk_words.out: $(dict) Makefile
 	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
 	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[<>]//g" | $(sort) > $@
 	rm -f spaced.tmp
+	@(grep -E $(BAD_FLAG_RE) $@ && echo "ERROR: Bad flag combinations exist!" && /bin/false) || /bin/true
 
 uk_words.tag: $(dict) tags.lst Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) tags.lst twisters.lst verify.lst rare.lst | $(sort) > $@
+	@(grep -E $(BAD_TAGS_RE) $@ && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
 
 wc:     uk_words.out
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc

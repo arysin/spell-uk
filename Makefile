@@ -73,10 +73,10 @@ aspell:		$(ASPELL_DIST)/uk.rws $(ASPELL_DIST)/uk.dat src/aspell/uk.multi src/asp
 $(ASPELL_DIST)/uk_repl.dat:
 	cp -u src/aspell/uk_repl.dat $(ASPELL_DIST)
 
-$(affixfile_src):
+affix-dir:
 	$(MAKE) -C src/Affix
 
-$(wordlist_src):
+dictionary-dir:
 	$(MAKE) -C src/Dictionary
 
 
@@ -165,13 +165,13 @@ $(DIST)/myspell-uk_UA-$(VERSION).zip: myspell
 	zip -j $@ $(MYSPELL_DIST)/uk_UA.aff $(MYSPELL_DIST)/uk_UA.dic src/myspell/README*
 
 # myspell dependencies
-$(MYSPELL_DIST)/uk_UA.aff:	$(affixfile_src) src/myspell/myspell.header encodings.inc
+$(MYSPELL_DIST)/uk_UA.aff:	affix-dir src/myspell/myspell.header encodings.inc
 	mkdir -p $(MYSPELL_DIST)
 	sed s/xxENCODINGxx/UTF-8/ < src/myspell/myspell.header > tmp.header
 	cat tmp.header $(affixfile_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) > $@
 	-rm tmp.header
 
-$(MYSPELL_DIST)/uk_UA.dic:	$(wordlist_src) encodings.inc
+$(MYSPELL_DIST)/uk_UA.dic:	dictionary-dir encodings.inc
 	wc -l < $(wordlist_src) > $@
 	cat $(wordlist_src) | $(iconv) -f $(SOURCE_ENC) -t $(MYSPELL_ENC) >> $@
 
@@ -257,20 +257,9 @@ install-wordlist: ukrainian
 	install -m 0755 -d $(PREFIX)/usr/share/dict
 	install -m 0644 ukrainian $(PREFIX)/usr/share/dict
 
-# common rules
-#
-$(affixfile_src): affix-dir
-$(wordlist_src): dictionary-dir
-
-affix-dir:
-	$(MAKE) -C src/Affix
-
-dictionary-dir:
-	$(MAKE) -C src/Dictionary
-
 # regression test
 #
-regtest:	aspell $(wordlist_src)
+regtest:
 	$(MAKE) -C test regtest
 
 regtestroll:
