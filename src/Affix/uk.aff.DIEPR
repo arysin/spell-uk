@@ -1,4 +1,4 @@
-SFX O Y 46
+SFX O Y 47
 
 SFX O   вати	ючи	[ауюя]вати	#  абонувати  абонуючи 		     @ dieprysl:imperf
 SFX O   ати	учи	[рз]вати	#  рвати  рвучи			     @ dieprysl:imperf
@@ -19,7 +19,8 @@ SFX O   рати	еручи	[бдп]рати	#  брати  беручи	 	     
 SFX O   ити	жучи	[^зо]дити	#  входити  входжучи		             @ dieprysl:imperf
 SFX O   ити	ячи	одити	      #  винаходити  винаходячи		             @ dieprysl:imperf
 SFX O   здити	жджучи	здити		#  їздити  їжджучи		             @ dieprysl:imperf
-SFX O   зити	жучи	зити		#  возити  вожучи		                     @ dieprysl:imperf
+SFX O   зити	жучи	[^о]зити		#  возити  вожучи		                     @ dieprysl:imperf
+SFX O   ити	ячи	озити		#  возити  вожучи		                     @ dieprysl:imperf
 SFX O   ити	учи	[жчшщ]ити	#  бентежити  бентежучи 		             @ dieprysl:imperf
 SFX O   сити	сячи	сити		#  місити  місячи 		             @ dieprysl:imperf
 SFX O   тити	чучи	[^с]тити	#  тратити  трачучи 		             @ dieprysl:imperf

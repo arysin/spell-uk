@@ -73,7 +73,7 @@ def expand_prefixes(word, affixFlags):
                 appliedCnt += 1
 
         if appliedCnt == 0:
-          print("Flag", affixFlag, "not applicable to", word, file=sys.stderr)
+          print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
     
     return words
 
@@ -87,6 +87,10 @@ def expand_suffixes(word, affixFlags):
         if affixFlag in prefixes:
           continue
           
+        if not affixFlag in affixMap:
+          print("ERROR: Invalid flag", affixFlag, file=sys.stderr)
+          continue
+          
         appliedCnt = 0
         
         affix_list = affixMap[affixFlag]
@@ -97,7 +101,7 @@ def expand_suffixes(word, affixFlags):
              appliedCnt += 1
         
         if appliedCnt == 0:
-          print("Flag", affixFlag, "not applicable to", word, file=sys.stderr)
+          print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
 
     return words
 

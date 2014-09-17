@@ -516,9 +516,9 @@ if line_cnt < 1:
    sys.exit(1)
 
 
-print("comparatives " + str(len(comparatives)))
+print("comparatives", len(comparatives))
 #print("comparatives " + str(comparatives))
-print("comparatives_shy " + str(comparatives_shy))
+print("comparatives_shy", len(comparatives_shy))
 
 ifile = open(src_filename, "r")
 #ifile = open("test.lst", "r")
