@@ -77,7 +77,7 @@ for filename in sys.argv:
         continue
 
       if '-' in line:
-        line = line.replace('-', '')
+        line = re.sub('-( |$)', '\\1', line)
 
       if filename == 'twisters.lst':
         line = re.sub(' .*$', '', line)

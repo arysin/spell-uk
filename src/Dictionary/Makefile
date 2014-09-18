@@ -25,7 +25,7 @@ uk_words.out: $(dict) Makefile
 
 uk_words.tag: $(dict) tags.lst Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) tags.lst twisters.lst verify.lst rare.lst | $(sort) > $@
-	@(grep -E $(BAD_TAGS_RE) $@ && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
+	@(grep -E $(BAD_TAGS_RE) $@ | grep -v "imperf:perf" && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
 
 wc:     uk_words.out
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc

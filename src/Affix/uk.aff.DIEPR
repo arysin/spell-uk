@@ -21,12 +21,12 @@ SFX O   ити	ячи	одити	      #  винаходити  винаходя
 SFX O   здити	жджучи	здити		#  їздити  їжджучи		             @ dieprysl:imperf
 SFX O   зити	жучи	[^о]зити		#  возити  вожучи		                     @ dieprysl:imperf
 SFX O   ити	ячи	озити		#  возити  вожучи		                     @ dieprysl:imperf
-SFX O   ити	учи	[жчшщ]ити	#  бентежити  бентежучи 		             @ dieprysl:imperf
-SFX O   сити	сячи	сити		#  місити  місячи 		             @ dieprysl:imperf
+SFX O   ити	ачи	[жчшщ]ити	#  бентежити  бентежучи 		             @ dieprysl:imperf
+SFX O   ити	ячи	[лс]ити		#  місити  місячи 		             @ dieprysl:imperf
 SFX O   тити	чучи	[^с]тити	#  тратити  трачучи 		             @ dieprysl:imperf
 SFX O   стити	щучи	стити		#  мостити  мощучи 		             @ dieprysl:imperf
 SFX O   ити	лючи	[бвмпф]ити	#  вимовити  вимовлючи		             @ dieprysl:imperf
-SFX O   ити	ючи	[лнр]ити	#  творити  творючи		             @ dieprysl:imperf
+SFX O   ити	ючи	[нр]ити	#  творити  творючи		             @ dieprysl:imperf
 SFX O   іти	жучи	діти		#  смердіти  смерджучи		             @ dieprysl:imperf
 SFX O   іти	учи	[шж]іти		#  кишіти  кишучи 		             @ dieprysl:imperf
 SFX O   сіти	шучи	сіти		#  висіти  вишучи 		             @ dieprysl:imperf
