@@ -320,6 +320,8 @@ def post_process(line, affixFlags):
            line = re.sub('impers.*', 'impers', line)
     elif "adp" in line:
         line = re.sub('(adp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+        if ":rev" in line and "tran" in line:
+            line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif ":rev" in line and "tran" in line:
         line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif "verb:pres" in line and ":perf" in line:
