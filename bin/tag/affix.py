@@ -88,7 +88,7 @@ def expand_suffixes(word, affixFlags):
           continue
           
         if not affixFlag in affixMap:
-          print("ERROR: Invalid flag", affixFlag, file=sys.stderr)
+          print("ERROR: Invalid flag", affixFlag, "for", word, file=sys.stderr)
           continue
           
         appliedCnt = 0
