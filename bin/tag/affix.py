@@ -15,15 +15,23 @@ import logging
 logger = logging.getLogger('affix')
 #logger.setLevel(logging.DEBUG)
 
+class AffixGroup(object):
+    def __init__(self, match_, pfx):
+        self.match = match_
+        self.affixes = []
+
+        if pfx:
+          self.match_start_re = re.compile('^'+match_)
+        else:
+          self.match_ends_re = re.compile(match_+'$')
+
+        self.counter = 0
+
+
 class Affix(object):
-#    _flag = ''
-#    _fromm = ''
-#    _to = ''
-#    _match = ''
-#    _tags = ''
 
     #@profile
-    def __init__(self, from_, to_, match_, tags_, pfx):
+    def __init__(self, from_, to_, tags_, pfx):
         if from_ != '0':
           self.fromm = from_
         else:
@@ -33,23 +41,12 @@ class Affix(object):
         else:
           self.to = ''
           
-        self.match = match_
-        self.tags = tags_   # optiona tags field for POS dictionary
+        self.tags = tags_   # optional tags field for POS dictionary
         
         if pfx:
-          self.match_start_re = re.compile('^'+match_)
           self.sub_from_pfx = re.compile('^'+self.fromm)
         else:
-          self.match_ends_re = re.compile(match_+'$')
           self.sub_from_sfx = re.compile(self.fromm+'$')
-
-
-#    def __eq__(self, other):
-#        if isinstance(other, Affix):
-#            return self. == other._flag \
-#                and self._suffix == other._suffix
-#        else:
-#            return False
 
 
 prefixes = []
@@ -61,19 +58,21 @@ def expand_prefixes(word, affixFlags):
     words = [ word ]
 
     for affixFlag in affixFlags:
-        if affixFlag not in prefixes:
-          continue
+      if affixFlag not in prefixes:
+        continue
           
-        appliedCnt = 0
-        affix_list = affixMap[affixFlag]
-        for affix in affix_list:
-            if affix.match_start_re.match(word):
+      appliedCnt = 0
+      affixGroupMap = affixMap[affixFlag]
+      for match, affixGroup in affixGroupMap.items():
+        if affixGroup.match_start_re.match(word):
+            for affix in affixGroup.affixes:
                 wrd = affix.sub_from_pfx.sub(affix.to, word)
                 words.append( wrd )
                 appliedCnt += 1
+            affixGroup.counter += 1
 
-        if appliedCnt == 0:
-          print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
+      if appliedCnt == 0:
+        print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
     
     return words
 
@@ -84,24 +83,26 @@ def expand_suffixes(word, affixFlags):
     words = [ word ]
 
     for affixFlag in affixFlags:
-        if affixFlag in prefixes:
+      if affixFlag in prefixes:
           continue
           
-        if not affixFlag in affixMap:
+      if not affixFlag in affixMap:
           print("ERROR: Invalid flag", affixFlag, "for", word, file=sys.stderr)
           continue
           
-        appliedCnt = 0
+      appliedCnt = 0
         
-        affix_list = affixMap[affixFlag]
-        for affix in affix_list:
-          if affix.match_ends_re.search(word):
+      affixGroupMap = affixMap[affixFlag]
+      for match, affixGroup in affixGroupMap.items():
+        if affixGroup.match_ends_re.search(word):
+          for affix in affixGroup.affixes:
              deriv = affix.sub_from_sfx.sub(affix.to, word)
              words.append(deriv)
              appliedCnt += 1
+          affixGroup.counter += 1
         
-        if appliedCnt == 0:
-          print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
+      if appliedCnt == 0:
+        print("WARNING: Flag", affixFlag, "not applicable to", word, file=sys.stderr)
 
     return words
 
@@ -128,7 +129,7 @@ def load_affixes(filename):
     if re_afx.match(line):
         line_parts = re_whitespace.split(line)
         affixFlag = line_parts[1]
-        affixMap[ affixFlag ] = []
+        affixMap[ affixFlag ] = {}
         decl_aff_counts[ affixFlag ] = int(line_parts[3])
         real_aff_counts[ affixFlag ] = 0
         
@@ -153,8 +154,20 @@ def load_affixes(filename):
     to = parts[3]
     match = parts[4]
 
-    affixObj = Affix(fromm, to, match, tags, is_pfx)
-    affixMap[affixFlag].append(affixObj)
+    if not affixFlag in affixMap:
+      affixMap[affixFlag] = {}
+
+    affixGroupMap = affixMap[affixFlag]
+
+    if not match in affixGroupMap:
+      affixGroup = AffixGroup(match, is_pfx)
+#      print(affixGroupMap, file=sys.stderr)
+      affixGroupMap[match] = affixGroup
+    else:
+      affixGroup = affixGroupMap[match]
+
+    affixObj = Affix(fromm, to, tags, is_pfx)
+    affixGroup.affixes.append(affixObj)
 
     real_aff_counts[ affixFlag ] += 1
 
@@ -203,8 +216,9 @@ def munch_match(word, affix, affixFlag):
 # NOTE: does not suggest combined suffix with prefixes
 def munch(word):
   words = [word]
-  for affixFlag, affix_list in affixMap.items():
-    for affix in affix_list:
+  for affixFlag, affixGroupMap in affixMap.items():
+   for match, affixGroup in affixGroupMap.items():
+    for affix in affixGroup.affixes:
       if munch_match(word, affix, affixFlag):
         if affixFlag in prefixes:
           if len(affix.to) > 0:
@@ -212,7 +226,7 @@ def munch(word):
           else:
             base = word
           base = affix.fromm + base
-          if affix.match_start_re.match(base):
+          if affixGroup.match_start_re.match(base):
             words.append(base + '/' + affixFlag)
             
         else:
@@ -221,13 +235,21 @@ def munch(word):
           else:
             base = word
           base = base + affix.fromm
-          if affix.match_ends_re.search(base):
+          if affixGroup.match_ends_re.search(base):
             words.append(base + '/' + affixFlag)
 
 #        words.append(base + '/' + affixFlag)
         
   print(' '.join(words))
   sys.stdout.flush()
+
+
+def log_usage():
+    for affixFlag, affixGroups in affixMap.items():
+      print(affixFlag, ':', len(affixGroups), file=sys.stderr)
+      for match, affixGroup in affixGroups.items():
+          print("\t", match, ':', affixGroup.counter, "\t\t(", len(affixGroup.affixes), ')', file=sys.stderr)
+
 
 
 #----------
@@ -264,3 +286,7 @@ if __name__ == "__main__":
       munch(line)
     else:
       expand_line(line)
+
+  if mode == 'expand' and '--log-usage' in sys.argv:
+    log_usage()
+ 
