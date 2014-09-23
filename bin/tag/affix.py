@@ -16,6 +16,7 @@ logger = logging.getLogger('affix')
 #logger.setLevel(logging.DEBUG)
 
 class AffixGroup(object):
+    #@profile
     def __init__(self, match_, pfx):
         self.match = match_
         self.affixes = []
@@ -44,9 +45,11 @@ class Affix(object):
         self.tags = tags_   # optional tags field for POS dictionary
         
         if pfx:
-          self.sub_from_pfx = re.compile('^'+self.fromm)
+           self.sub_from_len = len(self.fromm)
+#          self.sub_from_pfx = re.compile('^'+self.fromm)
         else:
-          self.sub_from_sfx = re.compile(self.fromm+'$')
+           self.sub_from_len = -len(self.fromm) if self.fromm != '' else 100
+#          self.sub_from_sfx = re.compile(self.fromm+'$')
 
 
 prefixes = []
@@ -63,10 +66,11 @@ def expand_prefixes(word, affixFlags):
           
       appliedCnt = 0
       affixGroupMap = affixMap[affixFlag]
-      for match, affixGroup in affixGroupMap.items():
+      for affixGroup in affixGroupMap.values():
         if affixGroup.match_start_re.match(word):
             for affix in affixGroup.affixes:
-                wrd = affix.sub_from_pfx.sub(affix.to, word)
+#                wrd = affix.sub_from_pfx.sub(affix.to, word)
+                wrd = affix.to + word[affix.sub_from_len:]
                 words.append( wrd )
                 appliedCnt += 1
             affixGroup.counter += 1
@@ -96,7 +100,8 @@ def expand_suffixes(word, affixFlags):
       for match, affixGroup in affixGroupMap.items():
         if affixGroup.match_ends_re.search(word):
           for affix in affixGroup.affixes:
-             deriv = affix.sub_from_sfx.sub(affix.to, word)
+#             deriv = affix.sub_from_sfx.sub(affix.to, word)
+             deriv = word[:affix.sub_from_len] + affix.to
              words.append(deriv)
              appliedCnt += 1
           affixGroup.counter += 1
@@ -196,7 +201,7 @@ def expand(word, flags, flush_stdout):
 
   logger.debug("expanded", ' '.join(words), file=sys.stderr)
 
-
+#@profile
 def expand_line(line):
     logger.debug("expanding", line, file=sys.stderr)
     wsp = line.split('/')
