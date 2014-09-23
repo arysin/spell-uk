@@ -20,6 +20,7 @@ class AffixGroup(object):
     def __init__(self, match_, pfx):
         self.match = match_
         self.affixes = []
+        self.pfx = pfx
 
         if pfx:
           self.match_start_re = re.compile('^'+match_)
@@ -27,6 +28,13 @@ class AffixGroup(object):
           self.match_ends_re = re.compile(match_+'$')
 
         self.counter = 0
+
+    def matches(self, word):
+        if self.pfx:
+          return self.match_start_re.match(word)
+        
+        return self.match_ends_re.search(word)
+
 
 
 class Affix(object):
@@ -43,6 +51,7 @@ class Affix(object):
           self.to = ''
           
         self.tags = tags_   # optional tags field for POS dictionary
+        self.pfx = pfx
         
         if pfx:
            self.sub_from_len = len(self.fromm)
@@ -50,6 +59,12 @@ class Affix(object):
         else:
            self.sub_from_len = -len(self.fromm) if self.fromm != '' else 100
 #          self.sub_from_sfx = re.compile(self.fromm+'$')
+
+    def apply(self, word):
+      if self.pfx:
+        return self.to + word[self.sub_from_len:]
+
+      return word[:self.sub_from_len] + self.to
 
 
 prefixes = []
@@ -67,10 +82,10 @@ def expand_prefixes(word, affixFlags):
       appliedCnt = 0
       affixGroupMap = affixMap[affixFlag]
       for affixGroup in affixGroupMap.values():
-        if affixGroup.match_start_re.match(word):
+        if affixGroup.matches(word):
             for affix in affixGroup.affixes:
 #                wrd = affix.sub_from_pfx.sub(affix.to, word)
-                wrd = affix.to + word[affix.sub_from_len:]
+                wrd = affix.apply(word)
                 words.append( wrd )
                 appliedCnt += 1
             affixGroup.counter += 1
@@ -98,10 +113,10 @@ def expand_suffixes(word, affixFlags):
         
       affixGroupMap = affixMap[affixFlag]
       for match, affixGroup in affixGroupMap.items():
-        if affixGroup.match_ends_re.search(word):
+        if affixGroup.matches(word):
           for affix in affixGroup.affixes:
 #             deriv = affix.sub_from_sfx.sub(affix.to, word)
-             deriv = word[:affix.sub_from_len] + affix.to
+             deriv = affix.apply(word)
              words.append(deriv)
              appliedCnt += 1
           affixGroup.counter += 1

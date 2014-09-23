@@ -101,9 +101,9 @@ def generate(word, allAffixFlags, origAffixFlags):
         if affixFlag in "<>":
           continue
     
-        affix_list = affixMap[affixFlag]
+        affixGroups = affixMap[affixFlag]
 
-        lines = generate_suffix(word, affixFlag, affix_list, allAffixFlags, origAffixFlags)
+        lines = generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
         
         for line in lines:
 #            print(affixFlag, word, ':', line, file=sys.stderr)
@@ -243,7 +243,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
 
 
 #@profile
-def generate_suffix(word, affixFlag, affix_list, allAffixFlags, origAffixFlags):
+def generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags):
     addTag = ''
     lines = []
 
@@ -252,9 +252,11 @@ def generate_suffix(word, affixFlag, affix_list, allAffixFlags, origAffixFlags):
         if base_line != '':
             lines.append(base_line)
 
-    for affix in affix_list:
-        if affix.match_ends_re.search(word):
-            deriv = re.sub(affix.fromm+'$', affix.to, word)
+    for affixGroup in affixGroups.values():
+
+      if affixGroup.matches(word):
+         for affix in affixGroup.affixes:
+            deriv = affix.apply(word)
             
             if( affixFlag == 'W' and not word.endswith('ти') ):
                 lines.append( deriv + ' ' + deriv + ' ' + 'adv' )
@@ -291,8 +293,8 @@ def expand_word(word, affixFlags):
     for affixFlag in affixFlags:
         if affixFlag in prefixes:
 #            print(affixFlag, 'in prefixes for', word)
-            affix_list = affixMap[affixFlag]
-            words.append( expand_prefix(word, affixFlag, affix_list) )
+            affixGroups = affixMap[affixFlag]
+            words.append( expand_prefix(word, affixFlag, affixGroups) )
             affixFlagsToRemove.append(affixFlag)
     
     for f in affixFlagsToRemove:
@@ -302,13 +304,13 @@ def expand_word(word, affixFlags):
 
 
 #@profile
-def expand_prefix(word, affixFlag, affix_list):
+def expand_prefix(word, affixFlag, affixGroups):
     str = word
 
-    for affix in affix_list:
-        if re.match('^'+affix.match+'.*', word):
-            str = re.sub('^'+affix.fromm, affix.to, word)
-#            print('subbed:', '^'+affix.fromm, affix.to, word, ':', str)
+    for affixGroup in affixGroups.values():
+      if affixGroup.matches(word):
+        for affix in affixGroup.affixes:
+          str = affix.apply(word)
 
     return str
 
