@@ -15,55 +15,61 @@ import logging
 logger = logging.getLogger('affix')
 #logger.setLevel(logging.DEBUG)
 
-class AffixGroup(object):
+class PrefixGroup(object):
     #@profile
-    def __init__(self, match_, pfx):
+    def __init__(self, match_):
         self.match = match_
         self.affixes = []
-        self.pfx = pfx
-
-        if pfx:
-          self.match_start_re = re.compile('^'+match_)
-        else:
-          self.match_ends_re = re.compile(match_+'$')
-
+        self.match_start_re = re.compile('^'+match_)
         self.counter = 0
 
     def matches(self, word):
-        if self.pfx:
-          return self.match_start_re.match(word)
-        
+        return self.match_start_re.match(word)
+
+class SuffixGroup(object):
+    #@profile
+    def __init__(self, match_):
+        self.match = match_
+        self.affixes = []
+        self.match_ends_re = re.compile(match_+'$')
+        self.counter = 0
+
+    def matches(self, word):
         return self.match_ends_re.search(word)
 
 
+def convert0(part):
+  if part == '0':
+    return ''
+  return part
 
-class Affix(object):
+
+class Prefix(object):
 
     #@profile
-    def __init__(self, from_, to_, tags_, pfx):
-        if from_ != '0':
-          self.fromm = from_
-        else:
-          self.fromm = ''
-        if to_ != '0':
-          self.to = to_
-        else:
-          self.to = ''
-          
+    def __init__(self, from_, to_, tags_):
+        self.fromm = convert0(from_)
+        self.to = convert0(to_)
         self.tags = tags_   # optional tags field for POS dictionary
-        self.pfx = pfx
         
-        if pfx:
-           self.sub_from_len = len(self.fromm)
+        self.sub_from_len = len(self.fromm)
 #          self.sub_from_pfx = re.compile('^'+self.fromm)
-        else:
-           self.sub_from_len = -len(self.fromm) if self.fromm != '' else 100
+
+    def apply(self, word):
+        return self.to + word[self.sub_from_len:]
+
+
+class Suffix(object):
+
+    #@profile
+    def __init__(self, from_, to_, tags_):
+        self.fromm = convert0(from_)
+        self.to = convert0(to_)
+        self.tags = tags_   # optional tags field for POS dictionary
+        self.sub_from_len = -len(self.fromm) if self.fromm != '' else 100
 #          self.sub_from_sfx = re.compile(self.fromm+'$')
 
     def apply(self, word):
-      if self.pfx:
-        return self.to + word[self.sub_from_len:]
-
       return word[:self.sub_from_len] + self.to
 
 
@@ -180,13 +186,20 @@ def load_affixes(filename):
     affixGroupMap = affixMap[affixFlag]
 
     if not match in affixGroupMap:
-      affixGroup = AffixGroup(match, is_pfx)
-#      print(affixGroupMap, file=sys.stderr)
+      if is_pfx:
+        affixGroup = PrefixGroup(match)
+      else:
+        affixGroup = SuffixGroup(match)
+
       affixGroupMap[match] = affixGroup
     else:
       affixGroup = affixGroupMap[match]
 
-    affixObj = Affix(fromm, to, tags, is_pfx)
+    if is_pfx:
+      affixObj = Prefix(fromm, to, tags)
+    else:
+      affixObj = Suffix(fromm, to, tags)
+      
     affixGroup.affixes.append(affixObj)
 
     real_aff_counts[ affixFlag ] += 1
