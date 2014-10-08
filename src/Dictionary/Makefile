@@ -10,8 +10,8 @@ dict	   = 	$(INDICT)
 dictionary =	uk_words.out
 
 CLEANFILES =	uk_words.out *.tmp *.old *.bak *.tag
-BAD_FLAG_RE="([IJ].*[OP]|[AB].*[QR]|/[^AIKM].*0|/[^AIKM].*[OQ])"
-BAD_TAGS_RE="(nontran|:[а-яіїєґ]|/.* [a-z]|[OPQR].*:perf|/.* [a-z])"
+BAD_FLAG_RE="(/[IJ].*[OP]|[AB][^IJ]*[QR]|/[^AIKM].*[OQ0]|JH?O|BH?R|AG?Q|IG?O)"
+BAD_TAGS_RE="(nontran|:[а-яіїєґ]|/.* [a-z]|[OPQR].*:perf|/.* [a-z]|[A-T].* :([^ipbr]|in))"
 
 all:	uk_words.out
 
@@ -25,7 +25,7 @@ uk_words.out: $(dict) Makefile
 
 uk_words.tag: $(dict) tags.lst Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) tags.lst twisters.lst verify.lst rare.lst | $(sort) > $@
-	@(grep -E $(BAD_TAGS_RE) $@ | grep -v "imperf:perf" && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
+	@(grep -E $(BAD_TAGS_RE) $@ && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
 
 wc:     uk_words.out
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
