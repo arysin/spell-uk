@@ -10,6 +10,6 @@ NOTINDICT=""
 SORTED=base.lst base-compound.lst names.lst computer.lst geography.lst colors.lst base-abbr.lst slang.lst twisters.lst verify.lst tags.lst rare.lst
 NOTSORTED=exceptions.lst pronouns.lst
 
-TAGGED=base.lst base-compound.lst base-abbr.lst computer.lst geography.lst pronouns.lst names.lst dstu_kds.lst
+TAGGED=base.lst base-compound.lst base-abbr.lst computer.lst geography.lst pronouns.lst names.lst dstu_kds.lst slang.lst
 SPACED=exceptions.lst lang.lst
-NOTSPACED=colors.lst slang.lst
+NOTSPACED=colors.lst
