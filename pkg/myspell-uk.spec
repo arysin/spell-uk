@@ -4,7 +4,7 @@
 
 Summary:	MySpell spelling dictionary for Ukrainian
 Name:		myspell-%{languagecode}
-Version:	1.7.0
+Version:	1.8.0
 Release:	1
 URL:		http://ispell-uk.sourceforge.net/
 Source:		spell-uk-%{version}.tgz

@@ -267,7 +267,7 @@ regtestroll:
 
 
 srctar: clean
-	tar cfz $(DIST)/spell-uk-$(VERSION).tgz --exclude=test/all* --exclude=dist/*spell* --exclude=dist/*openoffice* --exclude=dist/*.oxt --exclude=*.old --exclude=src_text --exclude=CVS --exclude=--exclude=.* --exclude=tools *
+	tar cfz $(DIST)/spell-uk-$(VERSION).tgz --exclude=test --exclude=dist/*spell* --exclude=dist/*openoffice* --exclude=dist/*.oxt --exclude=*.old --exclude=src_text --exclude=CVS --exclude=--exclude=.* --exclude=tools *
 	mkdir -p $(DIST)/spell-uk-$(VERSION)
 	tar xCfz $(DIST)/spell-uk-$(VERSION) $(DIST)/spell-uk-$(VERSION).tgz
 	tar cCfz $(DIST) $(DIST)/spell-uk-$(VERSION).tgz --owner=root --group=root spell-uk-$(VERSION)

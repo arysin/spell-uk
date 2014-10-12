@@ -1,5 +1,5 @@
 %define name ispell-uk
-%define version 1.7.0
+%define version 1.8.0
 %define release 1
 %define sourcename spell-uk-%{version}
 
