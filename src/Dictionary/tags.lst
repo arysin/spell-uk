@@ -1,9 +1,11 @@
 барлогу барліг noun:m:v_rod
 бен бен unknown
 будинкові будинок noun:m:v_mis
+варіанту варіанта noun:m:v_rod
 двору двір noun:m:v_mis
 мосту міст noun:m:v_mis
 мосту міст noun:m:v_rod
+паркану паркан noun:m:v_rod
 роду рід noun:m:v_mis
 сміло сміло adv
 столу стіл noun:m:v_mis
@@ -11,3 +13,4 @@
 телемосту телеміст noun:m:v_mis
 телемосту телеміст noun:m:v_rod
 тролеєві тролей noun:m:v_mis
+шлунку шлунок noun:m:v_rod
