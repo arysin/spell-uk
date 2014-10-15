@@ -327,10 +327,10 @@ def post_process(line, affixFlags):
     elif ":rev" in line and "tran" in line:
         line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif "verb:pres" in line and ":perf" in line:
-        if  not ":imperf" in line:
+        if not ":imperf" in line:
             line = line.replace(':pres', ':futr')
-        else:
-            line = line + "\n" + line.replace(':pres', ':futr')
+        else: # :imperf:perf
+            line = line.replace(':perf', '') + "\n" + line.replace(':pres', ':futr').replace(':imperf', '')
     elif 'comp' in line or 'super' in line: # and not ' якнай' in line:
         line = re.sub(' (як|що)?най', ' ', line)
         
