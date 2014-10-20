@@ -83,6 +83,7 @@ def expand_alts(lines, splitter, regexp):
     return out
 
 
+
 #def isAcegSuffix(affixFlag, allAffixFlags):
  #   return (affixFlag == 'e' and not 'g' in allAffixFlags) #or (affixFlag == 'a' and 'c' in allAffixFlags)
 
@@ -322,15 +323,28 @@ def post_process(line, affixFlags):
            line = re.sub('impers.*', 'impers', line)
     elif "adp" in line:
         line = re.sub('(adp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+# дієприслівник, як окрема лема
+#        line = re.sub('([^ ]+) [^ ]+ (adp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1 \\1 \\2\\3', line)
         if ":rev" in line and "tran" in line:
             line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
-    elif ":rev" in line and "tran" in line:
-        line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
-    elif "verb:pres" in line and ":perf" in line:
-        if not ":imperf" in line:
+    elif "verb" in line:
+        if ":rev" in line and "tran" in line:
+            line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
+            
+        if ":imperf:perf" in line:
+            line1 = line.replace(":perf", "")
+            line2 = line.replace(":imperf", "")
+
+            if ":pres" in line2:
+                line2 = line2.replace(':pres', ':futr')
+
+            return [line1, line2]
+        
+        if ":pres" in line and ":perf" in line:
+#            if not ":imperf" in line:
             line = line.replace(':pres', ':futr')
-        else: # :imperf:perf
-            line = line.replace(':perf', '') + "\n" + line.replace(':pres', ':futr').replace(':imperf', '')
+#            else: # :imperf:perf
+#                line = line.replace(':perf', '') + "\n" + line.replace(':pres', ':futr').replace(':imperf', '')
     elif 'comp' in line or 'super' in line: # and not ' якнай' in line:
         line = re.sub(' (як|що)?най', ' ', line)
         
