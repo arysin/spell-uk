@@ -94,14 +94,14 @@ while(<>) {
 
 # Створення правил для афіксів та прикладів
     $comment =~ s/@ verb:/@ verb:rev:/;
-    $comment =~ s/@ adp:/@ adp:rev:/;
+    $comment =~ s/@ advp:/@ advp:rev:/;
 
     # перші дві умови для спецвипадку "мести - мететься"
     if( ( !($suffix_oldbody =~ /^сти$/) || !($suffix_newbody =~ /^те$/)) 
             &&  ( !($suffix_oldbody =~ /^ти$/) || !($suffix_newbody =~ /^те$/) || !($suffix_match =~ /^ости$/)) 
             && $suffix_newbody =~ s/($GENERIC)$/$1сь/ ) {
             
-        if( $comment =~ /.*adp.*/ ) { # для дієприслівників, які мають тільки "-сь"
+        if( $comment =~ /.*advp.*/ ) { # для дієприслівників, які мають тільки "-сь"
             $suffix_newbody =~ s/(чи|ши)$/$1сь/;
             $comment =~ s/([^#\s]\s+[$UK_LOW]+)(\s)/$1сь$2/;
 

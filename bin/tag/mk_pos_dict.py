@@ -33,8 +33,8 @@ adverbs = []
 with_flags_re = re.compile('.*[а-яіїєґА-ЯІЇЄҐ]/.*')
 with_Y_flag_re = re.compile('[^ ]*/[^ ]*Y.*')
 yi_V_flag_re = re.compile('[^ ]*[іи]й/[^ ]*V.*')
-adp_re = re.compile('.*[уаяю]чи$')
-adp_rev_re = re.compile('.*[уаяю]чись$')
+advp_re = re.compile('.*[уаяю]чи$')
+advp_rev_re = re.compile('.*[уаяю]чись$')
 
 tag_split0_re = re.compile('[^ ]+$')
 tag_split1_re = re.compile('[^: ]+$')
@@ -261,7 +261,7 @@ def generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
             
             if( affixFlag == 'W' and not word.endswith('ти') ):
                 lines.append( deriv + ' ' + deriv + ' ' + 'adv' )
-#            elif 'adp' in affix.tags:
+#            elif 'advp' in affix.tags:
 #                lines.append( deriv + ' ' + deriv + ' ' + affix.tags )
             else:
                 if affixFlag == 'p':
@@ -321,10 +321,10 @@ def post_process(line, affixFlags):
            line = re.sub('impers.*:bad', 'impers:bad', line)
         else:
            line = re.sub('impers.*', 'impers', line)
-    elif "adp" in line:
-        line = re.sub('(adp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+    elif "advp" in line:
+        line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
 # дієприслівник, як окрема лема
-#        line = re.sub('([^ ]+) [^ ]+ (adp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1 \\1 \\2\\3', line)
+#        line = re.sub('([^ ]+) [^ ]+ (advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1 \\1 \\2\\3', line)
         if ":rev" in line and "tran" in line:
             line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif "verb" in line:
@@ -439,14 +439,14 @@ def process_line(line):
     if not with_flags_re.match(line):
         tag = ' unknown'
         
-        if adp_re.match(line):
-            tag = ' adp:imperf'
-        elif adp_rev_re.match(line):
-            tag = ' adp:rev:imperf'
+        if advp_re.match(line):
+            tag = ' advp:imperf'
+        elif advp_rev_re.match(line):
+            tag = ' advp:rev:imperf'
         elif line.endswith('ши'):
-            tag = ' adp:perf'
+            tag = ' advp:perf'
         elif line.endswith('шись'):
-            tag = ' adp:rev:perf'
+            tag = ' advp:rev:perf'
             
         if tag == '' and extra_tag != '':
             tag = ' '

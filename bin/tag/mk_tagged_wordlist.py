@@ -41,7 +41,8 @@ def process_line(line, extra_tags):
     out_line = re.sub('([^ ]+) ?', '\\1 ' + base + ' unknown' + extra_tags + '\n', line)
     return out_line[:-1]
 
-  if extra_tags != '' and not re.match('.* [a-z].*$', out_line):
+#  if extra_tags != '' and not re.match('.* [a-z].*$', out_line):
+  if extra_tags != '' and not ' ' in out_line:
     extra_tags = ' ' + extra_tags
 
 #  if len(out_line)> 100:
@@ -80,7 +81,7 @@ for filename in sys.argv:
         line = re.sub('-( |$)', '\\1', line)
 
       if filename == 'twisters.lst':
-        line = re.sub(' .*$', '', line)
+        line = re.sub(' [^:^].*$', '', line)
 
       if filename == 'exceptions.lst':
         out_line = process_line_exceptions(line, extra_tags)
