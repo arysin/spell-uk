@@ -26,18 +26,27 @@
 жалуватися/B
 жемчужний/V
 завідатель/eg<
+одітий/V ^adjp:pasv:past
+озутий/V ^adjp:pasv:past
+опірений/V ^adjp:pasv:past
 угощати/I :imperf:tran
 уїхати/M :perf:intran
 уйматися/J :imperf
 укапати/I :perf:tran
 укапувати/A :imperf:tran
+укараний/V ^adjp:pasv:past:dial
 укландати/I :perf:tran
 уконтентовувати/AB :imperf:tran
 уконтентувати/AB :perf:tran
 укохати/I :perf:tran
 упоминати/IJ :imperf:tran:intran
 упруг/eg
+урадуваний/V ^adjp:pasv:past
+уряджений/V ^adjp:pasv:past
+успокоєний/V ^adjp:pasv:past
+ухорканий/VX ^adjp:pasv:past
 фашистівський/V
+хватаний/V
 челюсті
 чуткість/l
 шияка/a

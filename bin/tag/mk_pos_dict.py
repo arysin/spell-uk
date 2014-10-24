@@ -489,7 +489,11 @@ def process_line(line):
         
         for out_line2 in out_lines2:
             if main_tag:
+              if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не')):
                  out_line2 = re.sub(' [a-z]+', ' ' + main_tag, out_line2)
+              if " adjp" in out_line2:
+                if 'Z' in origAffixFlags or 'W' in origAffixFlags:
+                  out_line2 += ":+adj"
         
             ofile.write( out_line2 + '\n' )
         
