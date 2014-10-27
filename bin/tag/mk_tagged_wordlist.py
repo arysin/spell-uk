@@ -23,6 +23,13 @@ def process_line_exceptions(line, extra_tags):
     base = re.findall('^[^ ]+', line)[0]
       
     out_line = re.sub('([^ ]+) ?', '\\1 ' + base + ' ' + except_base_tag + 'unknown' + extra_tags + '\n', line)
+    
+    if except_base_tag == 'verb:':
+      base_add = 'inf:'
+      if base.endswith('ся'):
+        base_add = base_add + 'rev:'
+      out_line = out_line.replace(except_base_tag, except_base_tag+base_add, 1)
+    
     return out_line[:-1]
 
 

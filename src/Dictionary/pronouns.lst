@@ -11,52 +11,57 @@
 й й part
 
 # Займенники
-я я pron:v_naz
-мене я pron:v_rod/v_zna
-мені я pron:v_dav/v_mis
-мною я pron:v_oru
+я я pron:pers:s:1:v_naz
+мене я pron:pers:s:1:v_rod/v_zna
+мені я pron:pers:s:1:v_dav/v_mis
+мною я pron:pers:s:1:v_oru
 
-ти ти pron:v_naz
-тебе ти pron:v_rod/v_zna
-тобі ти pron:v_dav/v_mis
-тобою ти pron:v_oru
+ти ти pron:pers:s:2:v_naz
+тебе ти pron:pers:s:2:v_rod/v_zna
+тобі ти pron:pers:s:2:v_dav/v_mis
+тобою ти pron:pers:s:2:v_oru
 
-він він pron:m:v_naz
-його він pron:m:v_rod/v_zna//n:v_rod/v_zna
-нього він pron:m:v_rod/v_zna//n:v_rod/v_zna
-йому він pron:m:v_dav//n:v_dav
-ньому він pron:m:v_mis//n:v_mis
-ним він pron:m:v_oru//n:v_oru
-нім він pron:m:v_mis
+він він pron:pers:m:3:v_naz
+його він pron:pers:m:3:v_rod/v_zna
+нього він pron:pers:m:3:v_rod/v_zna
+йому він pron:pers:m:3:v_dav
+ньому він pron:pers:m:3:v_mis
+ним він pron:pers:m:3:v_oru
+нім він pron:pers:m:3:v_mis
 
 # Присвійні займенники його, її є незмінними
-його його pron:nv
-її її pron:nv
+його його pron:m:nv//n:nv
+її її pron:f:nv
 
-вона вона pron:f:v_naz
-її вона pron:f:v_rod/v_zna
-неї вона pron:f:v_rod/v_zna
-їй вона pron:f:v_dav
-нею вона pron:f:v_oru
-ній вона pron:f:v_mis
+вона вона pron:pers:f:3:v_naz
+її вона pron:pers:f:3:v_rod/v_zna
+неї вона pron:pers:f:3:v_rod/v_zna
+їй вона pron:pers:f:3:v_dav
+нею вона pron:pers:f:3:v_oru
+ній вона pron:pers:f:3:v_mis
 
-воно воно pron:n:v_naz
+воно воно pron:pers:n:3:v_naz
+його воно pron:pers:n:3:v_rod/v_zna
+нього воно pron:pers:n:3:v_rod/v_zna
+йому воно pron:pers:n:3:v_dav
+ньому воно pron:pers:n:3:v_mis
+ним воно pron:pers:n:3:v_oru
 
-ми ми pron:p:v_naz
-нас ми pron:p:v_rod/v_zna/v_mis
-нам ми pron:p:v_dav
-нами ми pron:p:v_oru
+ми ми pron:pers:p:1:v_naz
+нас ми pron:pers:p:1:v_rod/v_zna/v_mis
+нам ми pron:pers:p:1:v_dav
+нами ми pron:pers:p:1:v_oru
 
-ви ви pron:p:v_naz
-вас ви pron:p:v_rod/v_zna/v_mis
-вам ви pron:p:v_dav
-вами ви pron:p:v_oru
+ви ви pron:pers:p:2:v_naz
+вас ви pron:pers:p:2:v_rod/v_zna/v_mis
+вам ви pron:pers:p:2:v_dav
+вами ви pron:pers:p:2:v_oru
 
-вони вони pron:p:v_naz
-їх вони pron:p:v_rod/v_zna
-них вони pron:p:v_rod/v_zna/v_mis
-їм вони pron:p:v_dav
-ними вони pron:p:v_oru
+вони вони pron:pers:p:3:v_naz
+їх вони pron:pers:p:3:v_rod/v_zna
+них вони pron:pers:p:3:v_rod/v_zna/v_mis
+їм вони pron:pers:p:3:v_dav
+ними вони pron:pers:p:3:v_oru
 
 себе себе pron:m:v_rod/v_zna//n:v_rod/v_zna
 собі себе pron:m:v_dav/v_mis//n:v_dav/v_mis
@@ -636,6 +641,7 @@
 таке-то такий-то pron:n:v_naz/v_zna
 
 сякий-такий сякий-такий pron:m:v_naz
+такий-сякий такий-сякий pron:m:v_naz
 
 ніхто ніхто pron:v_naz
 нікого ніхто pron:v_rod/v_zna
@@ -730,17 +736,20 @@
 обидвом обидвоє numr:p:v_dav
 обидвома обидвоє numr:p:v_oru
 
-годину-дві
-годину-другу
-місяць-другий
-тиждень-другий
-рік-другий
-вдвічі-втричі
-сам-самісінький
-такий-сякий
+годину-дві adv
+годину-другу adv
+місяць-другий adv
+тиждень-другий adv
+рік-другий adv
+вдвічі-втричі adv
+
+сам-самісінький сам-самісінький pron:m:v_naz/v_zna
 
 # Числівники
-обидвоє
+обидвоє обидвоє numr:v_naz/v_zna
+обидвох обидвоє numr:v_rod/v_zna/v_mis
+обидвом обидвоє numr:v_dav
+обидвома обидвоє numr:v_oru
 
 сто сто numr:v_naz/v_zna
 ста сто numr:v_rod
@@ -767,8 +776,7 @@
 трьох три numr:v_rod/v_zna/v_mis
 трьома три numr:v_oru
 триста триста numr:v_naz/v_zna
-тринадцятеро
-тринадцяти
+тринадцятеро numr:v_naz/v_zna
 трьохсот триста numr:v_rod/v_zna
 трьомстам триста numr:v_dav
 трьомастами триста numr:v_oru
@@ -858,76 +866,49 @@
 кількохстах кількасот numr:v_mis
 
 # Прислівники
-вдвічі adv
-втричі adv
-вдвоє adv
-втроє adv
-вчетверо adv
-вп'ятеро adv
-вшестеро adv
-всемеро adv
-ввосьмеро adv
-вдев'ятеро adv
-вдесятеро adv
-удвічі adv
-утричі adv
-удвоє adv
-утроє adv
-учетверо adv
-уп'ятеро adv
-ушестеро adv
-усемеро adv
-увосьмеро adv
-удев'ятеро adv
-удесятеро adv
-вдвох adv
-втрьох adv
-вчотирьох adv
-вп'ятьох adv
-вшістьох adv
-всімох adv
-ввісьмох adv
-вдев'ятьох adv
-вдесятьох adv
-удвох adv
-утрьох adv
-учотирьох adv
-уп'ятьох adv
-ушістьох adv
-усімох adv
-увісьмох adv
-удев'ятьох adv
-удесятьох adv
+вдвічі/X ^adv
+втричі/X ^adv
+вдвоє/X ^adv
+втроє/X ^adv
+вчетверо/X ^adv
+вп'ятеро/X ^adv
+вшестеро/X ^adv
+всемеро/X ^adv
+ввосьмеро/X ^adv
+вдев'ятеро/X ^adv
+вдесятеро/X ^adv
+вдвох/X ^adv
+втрьох/X ^adv
+вчотирьох/X ^adv
+вп'ятьох/X ^adv
+вшістьох/X ^adv
+всімох/X ^adv
+ввісьмох/X ^adv
+вдев'ятьох/X ^adv
+вдесятьох/X ^adv
 
-вдруге вдруге adv
-втретє втретє adv
-вчетверте вчетверте adv
-вп'яте вп'яте adv
-вшосте вшосте adv
-всьоме всьоме adv
-ввосьме ввосьме adv
-вдев'яте вдев'яте adv
-удруге удруге adv
-утретє утретє adv
-учетверте учетверте adv
-уп'яте уп'яте adv
-ушосте ушосте adv
-усьоме усьоме adv
-увосьме увосьме adv
-удев'яте удев'яте adv
+вдруге/X ^adv
+втретє/X ^adv
+вчетверте/X ^adv
+вп'яте/X ^adv
+вшосте/X ^adv
+всьоме/X ^adv
+ввосьме/X ^adv
+вдев'яте/X ^adv
+вдесяте/X ^adv
 
 щодесять adv
 
-два-три
-дві-три
-двома-трьома
-двох-трьох
-три-чотири
+один-два numr:p:v_naz/v_zna
+два-три numr:p:v_naz/v_zna
+дві-три numr:p:v_naz/v_zna
+двома-трьома numr:v_oru
+двох-трьох numr:v_rod/v_zna/v_mis
+три-чотири numr:v_naz/v_zna
 
-один-два
-один-єдиний
-одна-єдина
-одне-єдине
+один-єдиний adj
+одна-єдина adj
+одне-єдине adj
 
 отут adv
 отам adv
