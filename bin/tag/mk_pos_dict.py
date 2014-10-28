@@ -389,6 +389,18 @@ def process_line(line):
         
         return
 
+#    if line.endswith('ен'):
+#        tag = 'adj:m:v_naz'
+#        outline = line + ' ' + re.sub('ен$', 'ний', line)
+#        ofile.write(outline + ' ' + tag + '\n')
+#
+#        tag = 'adj:m:v_zna'
+#        ofile.write(outline + ' ' + tag + '\n')
+#
+#        collect_all_words(outline)
+#        return
+
+
     extra_tag = ''
 
     if with_Y_flag_re.match(line):

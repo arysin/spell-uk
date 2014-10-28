@@ -906,11 +906,11 @@
 двох-трьох numr:v_rod/v_zna/v_mis
 три-чотири numr:v_naz/v_zna
 
-день-два
+день-два adv
 
-один-єдиний adj
-одна-єдина adj
-одне-єдине adj
+один-єдиний adj:m:v_naz/v_zna
+одна-єдина adj:f:v_naz
+одне-єдине adj:n:v_naz/v_zna
 
 отут adv
 отам adv
