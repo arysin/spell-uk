@@ -641,7 +641,7 @@
 таке-то такий-то pron:n:v_naz/v_zna
 
 сякий-такий сякий-такий pron:m:v_naz
-такий-сякий такий-сякий pron:m:v_naz
+такий-сякий такий-сякий pron:m:v_naz/v_zna
 
 ніхто ніхто pron:v_naz
 нікого ніхто pron:v_rod/v_zna
@@ -906,6 +906,8 @@
 двох-трьох numr:v_rod/v_zna/v_mis
 три-чотири numr:v_naz/v_zna
 
+день-два
+
 один-єдиний adj
 одна-єдина adj
 одне-єдине adj
@@ -913,6 +915,8 @@
 отут adv
 отам adv
 сяк сяк adv
+галай-балай
+дель
 
 # Прийменники
 без без prep:rv_rod
@@ -1093,3 +1097,131 @@
 по-вашому по-вашому insert
 по-перше по-перше insert
 по-друге по-друге insert
+
+# частки і сполучники
+аби-но conj
+аби conj
+абощо conj
+або conj
+авжеж part
+адже part|conj
+ажень part
+аж part|conj
+але conj|excl
+амінь part|noun:n:nv
+аніж conj
+ані-ні part
+ані conj|part
+ану excl|part
+атож part
+ато part
+ач excl|part
+аякже part
+ба excl|part|conj
+би part
+бодай part
+бо conj|part
+буцімто conj|part
+буцім conj|part
+відколи adv|conj
+власне insert|part
+властиво part|predic
+все-таки/X ^conj
+все-таки/X ^part
+втім adv:v-u|conj:v-u
+геть adv|excl|part
+дедалі adv|part
+де adv|part
+доки adv|conj
+допоки conj
+еге part|excl
+же part|conj
+зате conj
+затим adv|conj
+ібн part
+іще adv|conj|part
+коли adv|conj|part
+ледве adv|part|conj
+ледь adv|conj
+лишень part|conj
+лише part|conj
+лиш part|conj
+мерсі part
+мовби conj|part
+навіть part
+нате part
+натомість adv|conj
+начебто conj
+начебто part
+начеб conj|part
+на part|excl
+невже part
+немовбито conj|part
+немовби conj|part
+немов conj
+немов part
+неначебто conj|part
+нехай part|conj
+не part
+нібито conj|part
+ніби conj|part
+ніж conj
+ні-ні part
+ні part
+нумо excl|part
+ну excl|part
+однак однак conj
+одначе conj
+онде part|adv
+он part
+оскільки conj
+ось part
+отже part|conj
+отож-то conj
+отож part|conj
+ото part
+от part
+пак part
+позаяк conj
+поки conj
+покіль adv|conj
+попросту adv|part
+прецінь part|adv|insert|conj
+причім adv|conj
+причому adv|conj
+проте conj|adv
+саме adv|part
+себто conj
+сиріч conj
+справді adv|insert|part
+також adv|conj
+так adv|part|conj
+там adv|part
+та conj|part
+теє part
+теж adv|part
+тільки-но adv|part|conj
+тільки adv|conj|part
+тобто conj|part
+тож conj|part
+тощо part
+то conj
+уже part
+утім adv:v-u|conj:v-u
+утім conj
+хай part|conj
+хіба conj|part
+хоча conj|part
+хоч conj|part
+цебто conj|part
+чи conj|part
+ще adv|conj|part
+щоби conj|part
+щоб conj|part
+щойно adv|conj|part
+щоправда conj
+якби conj
+як-от part
+якраз adv|part
+якщо conj
+як adv|conj|part

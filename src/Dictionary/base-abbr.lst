@@ -12,6 +12,7 @@
 АТЕК noun:nv
 АТЗТ noun:n:nv
 АТП noun:n:nv
+БД noun:f:nv
 б-ка б-ка noun:f:nv
 БК noun:m:nv
 БМД noun:m:nv
@@ -25,10 +26,12 @@
 ВАСУ noun:m:nv
 ВАТ noun:n:nv
 ВВП noun:m:nv
+ВВ noun:nv
 ВГСУ noun:m:nv
 ВДНГ noun:f:nv
 ВДЦП noun:m:nv
 вид-во/ij
+ВИХ noun:m:nv
 ВІЛ-СНІД ВІЛ-СНІД noun:nv
 ВІЛ noun:m:nv
 ВІНК noun:f:nv
@@ -52,6 +55,9 @@
 ВУЦВК noun:m:nv
 ВЦРПС noun:f:nv
 ГАЕС noun:f:nv
+Гбайт noun:m:nv
+Гбіт noun:m:nv
+Гб noun:m:nv
 ГГц ГГц noun:nv
 ГеВ noun:nv
 ГЕС noun:f:nv
@@ -66,6 +72,7 @@
 Гц Гц noun:nv
 ДАІ noun:nv
 ДБСТ noun:m:nv
+дБ noun:m:nv
 ДДСО noun:f:nv
 ДДТ noun:m:nv
 ДемПУ noun:f:nv
@@ -76,9 +83,12 @@
 ДМЗ noun:m:nv
 ДМСУ noun:f:nv
 дм noun:nv
+ДНК noun:f:nv
 дНТФ noun:m:nv
+ДОС noun:f:nv
 ДПАУ noun:f:nv
 ДПА noun:f:nv
+ДПЕК noun:m:nv
 ДПСУ noun:f:nv
 ДПС noun:f:nv
 ДСЕС noun:f:nv
@@ -89,6 +99,7 @@
 ДТРК noun:f:nv
 ДЮСШ noun:f:nv
 ЕКГ noun:f:nv
+ЕОМ noun:f:nv
 ЄАНТК noun:m:nv
 ЄБРР noun:m:nv
 ЄврАзЕС ЄврАзЕС noun:n:nv
@@ -115,17 +126,22 @@
 ін-т/ef
 ІОЦ noun:m:nv
 ІТ noun:p:nv
+кбайт noun:m:nv
+кбіт noun:m:nv
+кб noun:m:nv
 кВт кВт noun:nv
 КГЗКОР noun:m:nv
 кГц кГц noun:nv
 кг noun:nv
 КДБ noun:m:nv
 кДж noun:nv
+КДКА noun:f:nv
 КДМА noun:f:nv
 КД noun:f:nv
 КД noun:m:nv
 ккал noun:nv
 КМДА noun:f:nv
+КМІС noun:m:nv
 КМКФ noun:m:nv
 КМУ noun:m:nv
 км noun:nv
@@ -149,10 +165,14 @@
 ЛДПР noun:f:nv
 ЛНУ noun:m:nv
 ЛОДА noun:f:nv
+ЛОМ noun:f:nv
 ЛуАЗ/e
 МАГАТЕ noun:n:nv
 МАУП noun:f:nv
+Мбайт noun:m:nv
+Мбіт noun:m:nv
 МБРР noun:m:nv
+Мб noun:m:nv
 МВСУ noun:n:nv
 МВС noun:n:nv
 МВт МВт noun:nv
@@ -228,6 +248,7 @@
 ОДПІ noun:f:nv
 ОДПУ noun:n:nv
 ОДТРК noun:f:nv
+ОЗП noun:m:nv
 ОІЯД noun:m:nv
 ООН noun:f:nv
 ОПЕК noun:f:nv
@@ -236,12 +257,17 @@
 ОУН noun:f:nv
 ПАРЄ noun:f:nv
 Па noun:nv
+Пбайт noun:m:nv
+Пб noun:m:nv
 ПДВЛ noun:m:nv
 ПДВ noun:m:nv
+ПДП noun:m:nv
 ПЕК noun:m:nv
 ПЕОМ noun:f:nv
+ПЗП noun:m:nv
 ПЗРК noun:m:nv
 ПЗ noun:n:nv
+ПК noun:m:nv
 ППО noun:n:nv
 ПРООН noun:f:nv
 ПРО noun:f:nv
@@ -258,6 +284,7 @@
 РАТАУ noun:n:nv
 РВВС noun:m:nv
 РДА noun:f:nv
+РКД noun:m:nv
 РНБОУ noun:f:nv
 РНБО noun:f:nv
 РНК noun:f:nv
@@ -275,6 +302,7 @@
 сек noun:nv
 СІЗО noun:m:nv
 СКА noun:m:nv
+СКБД noun:f:nv
 смт noun:nv
 см noun:nv
 СНБОУ noun:f:nv
@@ -282,6 +310,8 @@
 СОТ noun:f:nv
 СПУ noun:f:nv
 СУМ/e
+Тбайт noun:m:nv
+Тб noun:m:nv
 ТБ noun:n:nv
 ТВЕЛ/efg
 Т-ДНК noun:f:nv
@@ -356,10 +386,12 @@
 ЦГЗК noun:m:nv
 ЦЕРН/e
 ЦК noun:m:nv
+ЦП noun:m:nv
 ЦРУ noun:n:nv
 ЦСКА noun:m:nv
 ЦУМ noun:m:nv
 ЧАЕС noun:f:nv
+ЧАП noun:m:nv
 ЧС noun:m:nv
 ЧФ noun:m:nv
 ЮНЕСКО noun:n:nv
