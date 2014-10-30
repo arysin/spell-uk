@@ -231,6 +231,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna'
         elif affixFlag == 'i' and word[-1] in "ьаячшжрвф":
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
+        elif affixFlag == 'i' and word.endswith('ін'):
+            str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'j' and word[-1] in ['і']:
             str = word + ' ' + word + ' noun:p:v_naz/v_zna'
         elif re.match('[a-p]', affixFlag):
