@@ -102,7 +102,7 @@
 ЕОМ noun:f:nv
 ЄАНТК noun:m:nv
 ЄБРР noun:m:nv
-ЄврАзЕС ЄврАзЕС noun:n:nv
+ЄврАзЕС noun:n:nv
 ЄДАПС noun:f:nv
 ЄДРПОУ noun:m:nv
 ЄЕП noun:m:nv
@@ -129,12 +129,13 @@
 кбайт noun:m:nv
 кбіт noun:m:nv
 кб noun:m:nv
-кВт кВт noun:nv
+КВК noun:m:nv
+кВт кВт noun:m:nv
 КГЗКОР noun:m:nv
 кГц кГц noun:nv
-кг noun:nv
+кг noun:m:nv
 КДБ noun:m:nv
-кДж noun:nv
+кДж noun:m:nv
 КДКА noun:f:nv
 КДМА noun:f:nv
 КД noun:f:nv
@@ -144,7 +145,7 @@
 КМІС noun:m:nv
 КМКФ noun:m:nv
 КМУ noun:m:nv
-км noun:nv
+км noun:m:nv
 КНДР noun:f:nv
 КНЕУ noun:m:nv
 КНЛУ noun:m:nv
@@ -387,6 +388,7 @@
 ЦГЗК noun:m:nv
 ЦЕРН/e
 ЦК noun:m:nv
+ЦНС noun:f:nv
 ЦП noun:m:nv
 ЦРУ noun:n:nv
 ЦСКА noun:m:nv
