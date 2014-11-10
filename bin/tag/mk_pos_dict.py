@@ -120,6 +120,10 @@ def generate(word, allAffixFlags, origAffixFlags):
                 if affixFlag in 'ac' and 'o' not in allAffixFlags and 'b' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
 
+            if '/v_kly' in line:
+                if not istota(word, origAffixFlags) or '>' in origAffixFlags:
+                    line = re.sub('/v_kly', '', line)
+
             # handle rodovyi for singular
             if affixFlag == 'e':
                 if not 'g' in allAffixFlags and 'noun:m:v_dav' in line and ending_uyu_re.match(line) and not 'о ' in line:
@@ -221,7 +225,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'l' and re.match('.*ець$', word):
             str = word + ' ' + word + ' noun:m:v_naz'
-        elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш])$', word):
+        elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
@@ -233,8 +237,11 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
-        elif affixFlag == 'j' and word[-1] in ['і']:
-            str = word + ' ' + word + ' noun:p:v_naz/v_zna'
+        elif affixFlag == 'j' and word[-1] in 'іа':
+            if not istota(word, allAffixFlags):
+                str = word + ' ' + word + ' noun:p:v_naz/v_zna'
+            else:
+                str = word + ' ' + word + ' noun:p:v_naz'
         elif re.match('[a-p]', affixFlag):
             str = word + ' ' + word + ' noun:unknown'
             print(str, '---', word, affixFlag)

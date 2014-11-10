@@ -255,7 +255,7 @@
 весь весь pron:m:v_naz/v_zna
 всього весь pron:m:v_rod/v_zna//n:v_rod
 всьому весь pron:m:v_dav/v_mis//n:v_dav/v_mis
-всім весь pron:n:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+всім весь pron:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 вся весь pron:f:v_naz
 всієї весь pron:f:v_rod
 всій весь pron:f:v_dav/v_mis
@@ -274,7 +274,7 @@
 увесь увесь pron:m:v_naz/v_zna
 усього увесь pron:m:v_rod/v_zna//n:v_rod
 усьому увесь pron:m:v_dav/v_mis//n:v_dav/v_mis
-усім увесь pron:n:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
+усім увесь pron:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav
 уся увесь pron:f:v_naz
 усієї увесь pron:f:v_rod
 усій увесь pron:f:v_dav/v_zna
