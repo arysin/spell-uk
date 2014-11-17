@@ -1094,7 +1094,7 @@
 # Однолітерні слова
 а а conj:coord|part
 б б part
-ж ж conj
+ж ж conj:coord
 ж ж part
 і і conj:coord|part
 й й conj:coord|part
@@ -1102,7 +1102,7 @@
 # решта
 аби conj:subord
 аби-но conj:subord
-абощо conj
+абощо part
 або conj:coord
 авжеж part
 адже part|conj:subord
@@ -1127,7 +1127,7 @@
 відколи adv|conj:subord
 власне insert|part
 властиво part|predic
-все-таки/X ^conj
+все-таки/X ^conj:coord
 все-таки/X ^part
 втім adv:v-u|conj:coord:v-u
 геть adv|excl|part
@@ -1136,9 +1136,9 @@
 доки adv|conj:subord
 допоки adv|conj:subord
 еге part|excl
-же part|conj
+же part|conj:coord
 зате conj:coord
-затим adv|conj
+затим adv
 ібн part
 коли adv|conj:subord|part
 ледве adv|part|conj:subord
@@ -1147,23 +1147,27 @@
 лише part|conj:subord
 лишень part|conj:subord
 мерсі part
+мов conj:subord|part
 мовби conj:subord|part
+мовбито conj:subord|part
 навіть part
 нате part
-натомість adv|conj
+натомість adv
 начебто conj:subord|part
 начеб conj:subord|part
+наче conj:subord|part
+неначе conj:subord|part
 на part|excl
 невже part
 немов conj:subord|part
 немовби conj:subord|part
 немовбито conj:subord|part
 неначебто conj:subord|part
-нехай part|conj
+нехай part|conj:subord
 не part
 ніби conj:subord|part
 нібито conj:subord|part
-ніж conj
+ніж conj:subord
 ні-ні part
 ні part
 нумо excl|part
@@ -1174,9 +1178,9 @@
 он part
 оскільки conj:subord
 ось part
-отже part|conj
-отож-то conj
-отож part|conj
+отже part|conj:subord
+отож-то conj:subord
+отож part|conj:subord
 ото part
 от part
 пак part
@@ -1188,12 +1192,13 @@
 причім adv|conj:subord
 причому adv|conj:subord
 проте conj:coord|adv
+раз adv|conj:subord
 саме adv|part
 себто conj:subord
 сиріч conj:subord
 справді adv|insert|part
 також adv|conj:coord
-так adv|part|conj:coord
+так adv|part|conj:coord:subord
 там adv|part
 та conj:coord|part
 теє part
@@ -1206,13 +1211,13 @@
 тощо part
 то conj:subord
 утім adv:v-u|conj:coord:v-u
-хай part|conj
+хай part|conj:subord
 хіба conj:subord|part
 хоча conj:subord|part
 хоч conj:subord|part
 хто conj:subord
 цебто conj:subord|part
-чи conj:coord|part
+чи conj:coord:subord|part
 що conj:subord|part
 щоби conj:subord|part
 щоб conj:subord|part
