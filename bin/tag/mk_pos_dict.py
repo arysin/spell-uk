@@ -154,7 +154,7 @@ def generate(word, allAffixFlags, origAffixFlags):
   
             # handle znahidny for plural
             if len(set(allAffixFlags) & set("bofjm")) > 0:
-                if len(set(allAffixFlags) & set("bo")) > 0:
+                if len(set(allAffixFlags) & set("bojm")) > 0:
                     if '<' in allAffixFlags or 'p' in allAffixFlags:
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags:
@@ -510,7 +510,7 @@ def process_line(line):
         
         for out_line2 in out_lines2:
             if main_tag:
-              if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не')):
+              if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
                  out_line2 = re.sub(' [a-z]+', ' ' + main_tag, out_line2)
               if " adjp" in out_line2:
                 if 'Z' in origAffixFlags or 'W' in origAffixFlags:
