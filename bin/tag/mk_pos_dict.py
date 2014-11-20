@@ -17,7 +17,7 @@ from compar_forms import COMPAR_FORMS
 
 logger = logging.getLogger('tofsa')
 
-spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
+#spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
 
 
 PLURAL_FLAGS_RE = '[bfjlq]'
@@ -527,23 +527,30 @@ def process_line(line):
 # main code
 # --------------
 
-affix.load_affixes(spell_uk_dir + "src/Affix/uk_affix.tag")
+aff_arg_idx = sys.argv.index('-aff') if '-aff' in sys.argv else -1
+if aff_arg_idx != -1:
+  affix_filename = sys.argv[aff_arg_idx+1]
+else:
+  affix_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Affix/uk_affix.tag"
+
+affix.load_affixes(affix_filename)
 
 
+if not '-' in sys.argv:
+  src_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Dictionary/uk_words.tag"
 
-src_filename = spell_uk_dir + "src/Dictionary/uk_words.tag"
-
-file_sfx = ''
-if '-t' in sys.argv:
+  file_sfx = ''
+  if '-t' in sys.argv:
     print("Running in test mode")
     file_sfx = '.test'
     src_filename = "uk_words.tag.test"
 
-print("Working with word list from", src_filename)
+  print("Working with word list from", src_filename)
 
-ifile = open(src_filename, "r")
-line_cnt = 0
-for line in ifile:
+  ifile = open(src_filename, "r")
+
+  line_cnt = 0
+  for line in ifile:
     line = line.strip()
     if 'ий/V' in line:
         if 'іший/V' in line and 'Y' in line:
@@ -554,18 +561,21 @@ for line in ifile:
             comparatives.append( re.sub('^най(.*)іший/.*$', '\\1', line ) )
     line_cnt += 1
 
-if line_cnt < 1:
-   print("ERROR: empty source file", file=sys.stderr)
-   sys.exit(1)
+  if line_cnt < 1:
+    print("ERROR: empty source file", file=sys.stderr)
+    sys.exit(1)
 
 
 print("comparatives", len(comparatives))
 #print("comparatives " + str(comparatives))
 print("comparatives_shy", len(comparatives_shy))
 
-ifile = open(src_filename, "r")
-#ifile = open("test.lst", "r")
-ofile = open("tagged.main.txt"+file_sfx, "w")
+if '-' in sys.argv:
+  ifile = sys.stdin
+  ofile = sys.stdout
+else:
+  ifile = open(src_filename, "r")
+  ofile = open("tagged.main.txt"+file_sfx, "w")
 
 for line in ifile:
 
@@ -586,16 +596,17 @@ for adv_line in adverbs_compar:
         ofile.write( adv_line + '\n' )
 
 
+if not '-' in sys.argv:
 
-locale.setlocale(locale.LC_ALL, "uk_UA.UTF-8")
+  locale.setlocale(locale.LC_ALL, "uk_UA.UTF-8")
 
-lst_ofile = open("all_words.lst"+file_sfx, "w")
-allWords = list(set(allWords))
-allWords.sort(key=locale.strxfrm)
+  lst_ofile = open("all_words.lst"+file_sfx, "w")
+  allWords = list(set(allWords))
+  allWords.sort(key=locale.strxfrm)
 
-for w in allWords:
-  if not w.startswith('#'):
-    lst_ofile.write(w + '\n')
+  for w in allWords:
+    if not w.startswith('#'):
+      lst_ofile.write(w + '\n')
 
 ## expand_alts
 ## process_line
