@@ -21,7 +21,7 @@ SFX a Y 241
 #
 # тверда група в Називному відмінку однини з закінченням на -а
 # однина
-SFX a   а	и	[^жчшщ]а		# хата  хати 	(Р.)                    @ noun:f:v_rod//p:v_naz
+SFX a   а	и	[^жчшщ]а		# хата  хати 	(Р.)                    @ noun:f:v_rod//p:v_naz/v_kly
 SFX a   а	і	[^гґкхжчшщ]а		# хата  хаті 	(Д.М.)                  @ noun:f:v_dav/v_mis
 SFX a   а	і	[жчшщ]а		        # їжа  їжі 	(Р.Д.М.)                @ noun:f:v_rod/v_dav/v_mis//p:v_naz
 SFX a   а	у	а			# хата  хату 	(З.)                    @ noun:f:v_zna
