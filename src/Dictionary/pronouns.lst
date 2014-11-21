@@ -322,7 +322,7 @@
 анікому аніхто pron:v_dav
 аніким аніхто pron:v_oru
 
-аніщо аніщо pron:v_naz
+аніщо аніщо pron:v_naz/v_zna
 анічого аніщо pron:v_rod/v_zna
 анічому аніщо pron:v_dav
 анічим аніщо pron:v_oru
@@ -419,8 +419,8 @@
 казна-куди adv
 казна-звідки adv
 
-будь-чий будь-чий pron:m:v_naz
-будь-чийого будь-чий pron:m:v_rod//n:v_rod
+будь-чий будь-чий pron:m:v_naz/v_zna
+будь-чийого будь-чий pron:m:v_rod/v_zna//n:v_rod
 будь-чийому будь-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 будь-чиєму будь-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 будь-чиїм будь-чий pron:m:v_oru//n:v_oru
@@ -434,8 +434,8 @@
 будь-чиїх будь-чий pron:p:v_rod/v_zna/v_mis
 будь-чиїми будь-чий pron:p:v_oru
 
-бозна-чий бозна-чий pron:m:v_naz
-бозна-чийого бозна-чий pron:m:v_rod//n:v_rod
+бозна-чий бозна-чий pron:m:v_naz/v_zna
+бозна-чийого бозна-чий pron:m:v_rod/v_zna//n:v_rod
 бозна-чийому бозна-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 бозна-чиєму бозна-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 бозна-чиїм бозна-чий pron:m:v_oru//n:v_oru
@@ -449,8 +449,8 @@
 бозна-чиїх бозна-чий pron:p:v_rod/v_zna/v_mis
 бозна-чиїми бозна-чий pron:p:v_oru
 
-чортзна-чий чортзна-чий pron:m:v_naz
-чортзна-чийого чортзна-чий pron:m:v_rod//n:v_rod
+чортзна-чий чортзна-чий pron:m:v_naz/v_zna
+чортзна-чийого чортзна-чий pron:m:v_rod/v_zna//n:v_rod
 чортзна-чийому чортзна-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 чортзна-чиєму чортзна-чий pron:m:v_dav/v_mis//n:v_dav/v_mis
 чортзна-чиїм чортзна-чий pron:m:v_oru//n:v_oru
@@ -465,7 +465,7 @@
 чортзна-чиїми чортзна-чий pron:p:v_oru
 
 чийсь чийсь pron:m:v_naz/v_zna
-чийогось чийсь pron:m:v_rod//n:v_rod
+чийогось чийсь pron:m:v_rod/v_zna//n:v_rod
 чийомусь чийсь pron:m:v_dav/v_mis//n:v_dav/v_mis
 чиємусь чийсь pron:m:v_dav/v_mis//n:v_dav/v_mis
 чиїмсь чийсь pron:m:v_oru//n:v_oru
@@ -593,7 +593,7 @@
 ким-небудь хто-небудь pron:v_oru
 кім-небудь хто-небудь pron:v_mis
 
-що-небудь що-небудь pron:n:v_zna
+що-небудь що-небудь pron:n:v_naz/v_zna
 чого-небудь що-небудь pron:n:v_rod/v_zna
 віщо-небудь що-небудь pron:n:v_zna
 чому-небудь що-небудь pron:n:v_dav/v_mis
@@ -617,7 +617,7 @@
 тими-таки той-таки pron:p:v_oru
 
 такий-то такий-то pron:m:v_naz/v_zna
-такого-то такий-то pron:m:v_rod//n:v_rod
+такого-то такий-то pron:m:v_rod/v_zna//n:v_rod
 такому-то такий-то pron:m:v_dav/v_mis//n:v_dav/v_mis
 таким-то такий-то pron:m:v_oru//n:v_oru//p:v_dav
 такім-то такий-то pron:m:v_mis//n:v_mis
@@ -640,7 +640,7 @@
 нічого нічого adv
 
 ніщо ніщо pron:v_naz/v_zna
-нічого ніщо pron:v_rod
+нічого ніщо pron:v_rod/v_zna
 нічому ніщо pron:v_dav
 нічим ніщо pron:v_oru
 
@@ -992,7 +992,8 @@
 насупроти насупроти prep:rv_rod
 невважаючи невважаючи prep:rv_zna
 нижче нижче prep:rv_zna
-о о prep:rv_zna:rv_mis:rv_zna:rv_kly
+о о prep:rv_zna:rv_mis
+о о excl
 об об prep:rv_zna:rv_mis
 обабіч обабіч prep:rv_rod
 обіч обіч prep:rv_rod

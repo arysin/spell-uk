@@ -201,7 +201,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             else:
                 str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag in 'bfo':
-            str = word + ' ' + word + ' noun:p:v_naz'
+            str = word + ' ' + word + ' noun:p:v_naz/v_kly'
         elif affixFlag == 'e' and (word.endswith('ко') or ('<' in allAffixFlags and (word.endswith('ич') or word.endswith('ук') or word.endswith('юк')))) and word[0].isupper():
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
