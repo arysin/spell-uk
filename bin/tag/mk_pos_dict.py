@@ -59,6 +59,7 @@ shy_remove_re = re.compile('[шщч]ий/.*$')
 yi_sub_re = re.compile('ий/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
 
+end_tag_re = re.compile('((?::(?:&[a-z]+|bad|dial|obs|rare))+)(:.+)')
 
 #@profile
 def expand_alts(lines, splitter, regexp):
@@ -412,12 +413,13 @@ def process_line(line):
 
     extra_tag = ''
 
-    if with_Y_flag_re.match(line):
+    if not '^noun' in line:
+      if with_Y_flag_re.match(line):
         if line.startswith('най'):
             extra_tag += ':super';
         else:
             extra_tag += ':compr';
-    elif yi_V_flag_re.match(line):
+      elif yi_V_flag_re.match(line):
         if (line.startswith('най') and 'іший/' in line) or line.startswith('якнай') or line.startswith('щонай'):
             extra_tag += ':super';
         elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
@@ -513,8 +515,13 @@ def process_line(line):
               if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
                  out_line2 = re.sub(' [a-z]+', ' ' + main_tag, out_line2)
               if " adjp" in out_line2:
-                if 'Z' in origAffixFlags or 'W' in origAffixFlags:
-                  out_line2 += ":+adj"
+                if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
+                  out_line2 += ":&adj"
+            
+              # put end tags at the end
+              if end_tag_re.search(out_line2):
+                #print('main tag for ', out_line2, file=sys.stderr)
+                out_line2 = end_tag_re.sub('\\2\\1', out_line2)
         
             ofile.write( out_line2 + '\n' )
         
