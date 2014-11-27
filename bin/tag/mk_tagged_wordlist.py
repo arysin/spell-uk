@@ -88,7 +88,7 @@ for filename in sys.argv:
         line = re.sub('-( |$)', '\\1', line)
 
       if filename == 'twisters.lst':
-        line = re.sub(' [^:^].*$', '', line)
+        line = re.sub(' [^:^a-z].*$', '', line)
 
       if filename == 'exceptions.lst':
         out_line = process_line_exceptions(line, extra_tags)
