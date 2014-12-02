@@ -151,8 +151,9 @@ def generate(word, allAffixFlags, origAffixFlags):
 #                    line = line.replace('m:v_dav', 'm:v_dav/v_mis')
                 if ending_istu_re.match(line):
                     line = line.replace('m:v_dav/v_mis', 'm:v_dav')
-                if 'j' in allAffixFlags and word.endswith('о'):
+                if ('j' in allAffixFlags or 'b' in allAffixFlags) and word.endswith('о'):
                     line = line.replace('m:v_rod', 'm:v_rod//p:v_naz')
+                    line = line.replace(':m:', ':n:')
 
                 if istota(word, allAffixFlags):
                     if 'm:v_rod' in line:
@@ -224,7 +225,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
-            if not istota(word, allAffixFlags):
+            if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
                 str = word + ' ' + word + ' noun:m:v_naz/v_zna'
             else:
                 str = word + ' ' + word + ' noun:m:v_naz'
