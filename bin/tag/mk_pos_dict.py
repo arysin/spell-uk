@@ -147,8 +147,8 @@ def generate(word, allAffixFlags, origAffixFlags):
             if affixFlag == 'e':
                 if not 'g' in allAffixFlags and 'noun:m:v_dav' in line and ending_uyu_re.match(line) and not 'о ' in line:
                     line = line.replace('m:v_dav', 'm:v_rod/v_dav')
-                if not 'g' in allAffixFlags and 'noun:m:v_dav' in line and ending_uyu_re.match(line) and 'о ' in line and word[0].isupper():
-                    line = line.replace('m:v_dav', 'm:v_dav/v_mis')
+#                if not 'g' in allAffixFlags and 'noun:m:v_dav' in line and ending_uyu_re.match(line) and 'о ' in line and word[0].isupper():
+#                    line = line.replace('m:v_dav', 'm:v_dav/v_mis')
                 if ending_istu_re.match(line):
                     line = line.replace('m:v_dav/v_mis', 'm:v_dav')
                 if 'j' in allAffixFlags and word.endswith('о'):
