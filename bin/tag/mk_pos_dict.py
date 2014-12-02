@@ -88,10 +88,24 @@ def expand_alts(lines, splitter, regexp):
 #def isAcegSuffix(affixFlag, allAffixFlags):
  #   return (affixFlag == 'e' and not 'g' in allAffixFlags) #or (affixFlag == 'a' and 'c' in allAffixFlags)
 
+def lastname(word, allAffixFlags):
+  return '+' in allAffixFlags \
+    or ('e' in allAffixFlags and word[0].isupper() \
+           and (word.endswith('ко') or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
+
+def lastname_dual(word, allAffixFlags):
+  return ('e' in allAffixFlags and word[0].isupper() \
+           and (word.endswith('ко') or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
+
 def istota(word, allAffixFlags):
   return ('p' in allAffixFlags or '<' in allAffixFlags) \
-    or ('e' in allAffixFlags and word[0].isupper() and word.endswith('ко'))
+    or lastname(word, allAffixFlags)
 #    and ('g' in allAffixFlags or 'c' in allAffixFlags or ('e' in allAffixFlags and word.endswith('о')))) \
+
+def person(word, allAffixFlags):
+  return ('p' in allAffixFlags or ('<' in allAffixFlags and not '>' in allAffixFlags)) \
+    or lastname(word, allAffixFlags)
+
 
 
 #@profile
@@ -100,7 +114,7 @@ def generate(word, allAffixFlags, origAffixFlags):
     all_forms = []
     
     for affixFlag in allAffixFlags:
-        if affixFlag in "<>":
+        if affixFlag in "<>+":
           continue
     
         affixGroups = affixMap[affixFlag]
@@ -122,7 +136,10 @@ def generate(word, allAffixFlags, origAffixFlags):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
 
             if '/v_kly' in line:
-                if not istota(word, origAffixFlags) or '>' in origAffixFlags:
+                if not person(word, origAffixFlags) \
+                  or ('v_dav' in line and 'h' in origAffixFlags and affixFlag != 'p') \
+                  or (('v_zna' in line or 'v_dav' in line) and 'd' in origAffixFlags and affixFlag != 'p') \
+                  or lastname(word, origAffixFlags):
                     line = re.sub('/v_kly', '', line)
 
             # handle rodovyi for singular
@@ -203,7 +220,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
                 str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag in 'bfo':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
-        elif affixFlag == 'e' and (word.endswith('ко') or ('<' in allAffixFlags and (word.endswith('ич') or word.endswith('ук') or word.endswith('юк')))) and word[0].isupper():
+        elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
             if not istota(word, allAffixFlags):
@@ -220,6 +237,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'l' and word[-1] in 'яа':
             #if not istota(word, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna'
+            if istota(word, allAffixFlags):
+              str += '/v_kly'
             #else:
             #    str = word + ' ' + word + ' noun:n:v_naz'
         elif affixFlag == 'l' and re.match('.*[еє]нь$', word):
