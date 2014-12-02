@@ -90,8 +90,9 @@ def expand_alts(lines, splitter, regexp):
 
 def lastname(word, allAffixFlags):
   return '+' in allAffixFlags \
+    or ('+' in allAffixFlags and word.endswith('о')) \
     or ('e' in allAffixFlags and word[0].isupper() \
-           and (word.endswith('ко') or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
+           and ( word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
 def lastname_dual(word, allAffixFlags):
   return ('e' in allAffixFlags and word[0].isupper() \
@@ -253,6 +254,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna'
+            if word.endswith('е') and istota(word, allAffixFlags):
+              str += '/v_kly'
         elif affixFlag == 'i' and word[-1] in "ьаячшжрвф":
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and word.endswith('ін'):
@@ -536,10 +539,13 @@ def process_line(line):
             if main_tag:
               if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
                  if 'noun:' in main_tag:
-                   repl_str=re.sub('[^ :]+', '[^ :]+', main_tag)
+                   if not ':p:' in out_line2:
+                     repl_str=re.sub('[^ :]+', '[^ :]+', main_tag)
+                     out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
                  else:
                    repl_str='[a-z]+'
-                 out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
+                   out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
+
               if " adjp" in out_line2:
                 if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
                   out_line2 += ":&adj"
