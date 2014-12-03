@@ -198,7 +198,7 @@ def generate(word, allAffixFlags, origAffixFlags):
 def get_word_base(word, affixFlag, allAffixFlags):
         str = ''
 
-        if affixFlag == 'U' and ( word.endswith('ов') or word.endswith('єв') ):
+        if affixFlag == 'U' and '+' in allAffixFlags:
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'V' or affixFlag == 'U':
             if word.endswith('е'):
@@ -206,6 +206,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
             elif word.endswith('ій'):
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna//f:v_dav/v_mis'
             else:
+              if istota(word, allAffixFlags):
+                str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+              else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
         elif re.match('[AIKM]', affixFlag):
             str = word + ' ' + word + ' verb:inf'

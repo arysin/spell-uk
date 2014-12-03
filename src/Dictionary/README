@@ -29,6 +29,7 @@ Additional flags for LanguageTool that won't be used in spell-uk:
   affix "-" extra line for LT (ignored altogether for spell-uk)
   affix "<" creature, live being, person
   affix "<>" creature, live being
+  affix "+" last name
 
 D. Kovalov (Дмитро Ковальов) Dec 2000
 A. Rysin (Андрій Рисін) 2005-2014
