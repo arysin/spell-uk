@@ -171,7 +171,11 @@ def generate(word, allAffixFlags, origAffixFlags):
             elif affixFlag in 'cgq':
                 if istota(word, allAffixFlags) and 'noun:m:' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
-  
+
+            if not '/v_kly' in line:
+              if 'p:v_naz' in line and person(word, allAffixFlags):
+                line = line.replace('p:v_naz', 'p:v_naz/v_kly')
+
             # handle znahidny for plural
             if len(set(allAffixFlags) & set("bofjm")) > 0:
                 if len(set(allAffixFlags) & set("bojm")) > 0:
@@ -202,7 +206,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'V' or affixFlag == 'U':
             if word.endswith('е'):
-                str = word + ' ' + word + ' adj:n:v_naz'
+                str = word + ' ' + word + ' noun:n:v_naz/v_zna'
             elif word.endswith('ій'):
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna//f:v_dav/v_mis'
             else:
