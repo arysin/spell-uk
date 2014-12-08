@@ -1,23 +1,23 @@
-баяти/I
+баяти/I :imperf
 бистрота/a
-бісиця/a
+бісиця/ad<
 благовіщення/i
-босячка/a
+босячка/abd<
 бюрко
 ваганки
 вазка/a
 вигибти verb:dial
 вилочний/V
 виміна/a
-винаймити/A
+винаймити/A :perf
 виразистість
-вирощати/I
-висказатися/B
-висказати/A
-висміватися/J
-висмівати/I
-вистреляти/I
-відіткати/I :perf:tran
+вирощати/I :imperf
+висказатися/B :perf
+висказати/A :perf
+висміватися/J :imperf
+висмівати/I :imperf
+вистреляти/I :perf
+відіткати/I :perf
 воркотливий/V
 вхорканий/VX ^adjp:pasv:past
 головочка/a
@@ -25,23 +25,23 @@
 дармо adv
 дільчий/V
 дрожка/ab
-жалуватися/B
+жалуватися/BHP :imperf
 жемчужний/V
 завідатель/eg<
 одітий/V ^adjp:pasv:past
 озутий/V ^adjp:pasv:past
 опірений/V ^adjp:pasv:past
-угощати/I :imperf:tran
-уїхати/M :perf:intran
+угощати/I :imperf
+уїхати/M :perf
 уйматися/J :imperf
-укапати/I :perf:tran
-укапувати/A :imperf:tran
+укапати/I :perf
+укапувати/A :imperf
 укараний/V ^adjp:pasv:past:dial
-укландати/I :perf:tran
-уконтентовувати/AB :imperf:tran
-уконтентувати/AB :perf:tran
-укохати/I :perf:tran
-упоминати/IJ :imperf:tran:intran
+укландати/I :perf
+уконтентовувати/AB :imperf
+уконтентувати/AB :perf
+укохати/I :perf
+упоминати/IJ :imperf
 упруг/eg
 урадуваний/V ^adjp:pasv:past
 уряджений/V ^adjp:pasv:past
