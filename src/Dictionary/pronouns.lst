@@ -1229,3 +1229,50 @@
 якраз adv|part
 якщо conj:subord
 як adv|conj:subord|part
+
+ге part|excl
+се part
+осе part
+отсе part
+таж part
+так-таки part
+ачей part
+так-так part|excl
+всього-на-всього part
+усього-на-всього part
+но part|excl
+онно part
+оно part
+так-то part|adv
+то-то part
+отто part
+осісьо part
+угу part
+чень part
+помісь part
+хоть part
+хотя part
+
+#subordinate conjunction
+таж conj:subord
+помісь conj:subord
+хоть conj:subord
+
+# рідковживані
+ув ув prep:rv_zna:rv_mis:rv_rod
+з-між з-між prep:rv_rod
+ві ві prep:rv_zna:rv_mis
+звиш звиш prep:rv_rod:rv_zna:dial
+поконець поконець prep:rv_rod:dial
+межи межи prep:rv_oru:rv_rod:rv_zna
+помежи помежи prep:rv_oru:rv_rod:rv_zna
+пред пред prep:rv_oru:rv_zna:obs
+передо передо prep:rv_oru:rv_zna:obs
+предо предо prep:rv_oru:rv_zna:obs
+підо підо prep:rv_oru:rv_zna
+во во prep:rv_zna:rv_mis:obs
+вколо вколо prep:rv_rod|adv
+поуз поуз prep:rv_rod:rv_zna:coll
+попроз попроз prep:rv_zna:dial:coll
+зверх зверх prep:rv_rod:dial:coll
+намість намість prep:rv_rod:dial:coll

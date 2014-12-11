@@ -64,7 +64,8 @@ extra_tag_map = {
   'base-abbr.lst': ':abbr',
   'twisters.lst': ':bad',
   'rare.lst': ':rare',
-  'verify.lst': ':rare'
+  'verify.lst': ':rare',
+  'alt.lst': ':alt'
 }
 
 

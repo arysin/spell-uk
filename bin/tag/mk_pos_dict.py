@@ -412,7 +412,7 @@ def post_process(line, affixFlags):
 
 
 def collect_all_words(line):
-    if not ':bad' in line and not ':rare' in line:
+    if not ':bad' in line and not ':rare' in line and not ':obs' in line and not ':coll' in line: # and not ':alt' in line:
         allWords.append(line.split(' ')[0])
     if ' adv' in line:
         adverbs.append(line.split(' ')[0])
