@@ -3,6 +3,7 @@
 АКШУ noun:f:nv
 АМКУ noun:m:nv
 АМНУ noun:f:nv
+АНДР noun:f:nv
 АНТК noun:m:nv
 АН noun:f:nv
 АПК noun:m:nv
@@ -12,8 +13,11 @@
 АТЕК noun:nv
 АТЗТ noun:n:nv
 АТП noun:n:nv
+АТР noun:m:nv
+АТС noun:f:nv
+АТ noun:n:nv
 БД noun:f:nv
-б-ка б-ка noun:f:nv
+б-ка noun:f:nv
 БК noun:m:nv
 БМД noun:m:nv
 БМП noun:f:nv
@@ -32,12 +36,12 @@
 ВДЦП noun:m:nv
 вид-во/ij
 ВИХ noun:m:nv
-ВІЛ-СНІД ВІЛ-СНІД noun:nv
+ВІЛ-СНІД noun:nv
 ВІЛ noun:m:nv
 ВІНК noun:f:nv
 ВЛКСМ noun:f:nv
 ВМГО noun:f:nv
-ВМСУ noun:p:nv 
+ВМСУ 
 ВМС noun:p:nv
 ВНДІ noun:m:nv
 ВНЗ noun:m:nv
@@ -51,25 +55,32 @@
 ВССУ noun:m:nv
 ВТССУМ noun:m:nv
 ВУАН noun:f:nv
+ВУНАС noun:f:nv
 ВУФКУ noun:n:nv
 ВУЦВК noun:m:nv
+ВЦВК noun:m:nv
 ВЦРПС noun:f:nv
+ВЧК noun:f:nv:bad
 ГАЕС noun:f:nv
+ГАТТ noun:f:nv
 Гбайт noun:m:nv
 Гбіт noun:m:nv
 Гб noun:m:nv
-ГГц ГГц noun:nv
+ГГц noun:nv
 ГеВ noun:nv
 ГЕС noun:f:nv
 ГІС noun:f:nv
+ГОЕЛРО noun:nv
+ГПО noun:nv
 ГПУ noun:f:nv
 ГРВІ noun:f:nv
 грн noun:nv
+ГРУ noun:n:nv
 Гр noun:f:nv
 ГУБОЗ noun:n:nv
 ГУМВС noun:n:nv
 ГУУАМ noun:nv
-Гц Гц noun:nv
+Гц noun:nv
 ДАІ noun:nv
 ДБСТ noun:m:nv
 дБ noun:m:nv
@@ -79,10 +90,12 @@
 Дж noun:nv
 ДІНЗ noun:f:nv
 ДКЦПФР noun:f:nv
+ДЛК noun:m:nv
 ДМЗ noun:f:nv
 ДМЗ noun:m:nv
 ДМСУ noun:f:nv
 дм noun:nv
+ДНД noun:f:nv
 ДНК noun:f:nv
 дНТФ noun:m:nv
 ДОС noun:f:nv
@@ -92,18 +105,27 @@
 ДПСУ noun:f:nv
 ДПС noun:f:nv
 ДП noun:n:nv
+ДРВ noun:f:nv
+ДРЕС noun:f:nv
+ДРК noun:f:nv
+д-р/efg<
 ДСЕС noun:f:nv
 ДСК noun:f:nv
 ДСТУ noun:m:nv
+ДСУ noun:f:nv
+ДС noun:m:nv
 ДТЕК noun:f:nv
 ДТП noun:f:nv
 ДТРК noun:f:nv
+ДЮСШОР noun:f:nv
 ДЮСШ noun:f:nv
 ЕКГ noun:f:nv
 ЕОМ noun:f:nv
 ЄАНТК noun:m:nv
+ЄАР noun:f:nv
 ЄБРР noun:m:nv
 ЄврАзЕС noun:n:nv
+ЄВС noun:f:nv
 ЄДАПС noun:f:nv
 ЄДРПОУ noun:m:nv
 ЄЕП noun:m:nv
@@ -119,21 +141,28 @@
 зав noun:m:nv
 ЗАТ noun:n:nv
 з-д/efg
+ЗЄС noun:m:nv
 ЗМІ noun:p:nv
+ЗМОП noun:m:nv
 ЗНО noun:n:nv
 ЗРК noun:m:nv
 ЗСУ noun:p:nv
 ЗУНР noun:f:nv
+ІНК noun:m:nv
 ін-т/ef
 ІОЦ noun:m:nv
+ІПС noun:f:nv
+ІРІ noun:f:nv
+ІСРП noun:f:nv
+ІТТ noun:m:nv
 ІТ noun:p:nv
 кбайт noun:m:nv
 кбіт noun:m:nv
 кб noun:m:nv
 КВК noun:m:nv
-кВт кВт noun:m:nv
+кВт noun:m:nv
 КГЗКОР noun:m:nv
-кГц кГц noun:nv
+кГц noun:nv
 кг noun:m:nv
 КДБ noun:m:nv
 кДж noun:m:nv
@@ -142,6 +171,7 @@
 КД noun:f:nv
 КД noun:m:nv
 ккал noun:nv
+ККД noun:m:nv
 КМДА noun:f:nv
 КМІС noun:m:nv
 КМКФ noun:m:nv
@@ -150,12 +180,16 @@
 КНДР noun:f:nv
 КНЕУ noun:m:nv
 КНЛУ noun:m:nv
-КНУКіМ КНУКіМ noun:m:nv
+КНР noun:f:nv
+КНУКіМ noun:m:nv
 КНУ noun:m:nv
 КОАТУУ noun:m:nv
 кПа noun:nv
+КПВ noun:f:nv
 КПЗУ noun:f:nv
 КПІ noun:m:nv
+КПК noun:f:nv
+КПК noun:m:nv
 КПП noun:m:nv
 КПРС noun:f:nv
 КПРФ noun:f:nv
@@ -163,25 +197,36 @@
 КП noun:m:nv
 к-сть/lm
 КУІн noun:nv
+КУК noun:m:nv
 ЛАЗ/e
+ЛАК noun:f:nv
+ЛБД noun:f:nv
 ЛДПР noun:f:nv
+ЛДПУ noun:f:nv
+ЛКСМУ noun:f:nv
+ЛНДР noun:f:nv
 ЛНУ noun:m:nv
 ЛОДА noun:f:nv
 ЛОМ noun:f:nv
+л-ра/a
+ЛСД noun:nv
 ЛуАЗ/e
 МАГАТЕ noun:n:nv
 МАУП noun:f:nv
 Мбайт noun:m:nv
+МБА noun:m:nv
 Мбіт noun:m:nv
 МБРР noun:m:nv
 Мб noun:m:nv
 МВСУ noun:n:nv
 МВС noun:n:nv
-МВт МВт noun:nv
+МВт noun:nv
 МВФ noun:m:nv
-МГц МГц noun:nv
+МГД noun:nv
+МГц noun:nv
+МЖК noun:m:nv
 МЗС noun:n:nv
-МінАП МінАП noun:n:nv
+МінАП noun:n:nv
 мкм noun:nv
 мкФ noun:nv
 млн noun:nv
@@ -189,6 +234,8 @@
 мл noun:nv
 ММКФ noun:m:nv
 мм noun:nv
+МНРП noun:f:nv
+МНР noun:f:nv
 МНС noun:n:nv
 МОЗ noun:n:nv
 МОК noun:m:nv
@@ -196,10 +243,12 @@
 МОН noun:n:nv
 МО noun:n:nv
 МПа noun:nv
+МПЛА noun:m:nv
 мРНК noun:f:nv
 мс noun:nv
 МФТІ noun:m:nv
 МХАТ noun:m:nv
+МЮ noun:n:nv
 м noun:nv
 НАЕК noun:f:nv
 НАК/e
@@ -211,8 +260,13 @@
 НАСК noun:f:nv
 НАТО noun:n:nv
 НаУКМА noun:f:nv
+НБА noun:f:nv
+НБУВ noun:f:nv
 НБУ noun:f:nv
+НВЦ noun:m:nv
 НДІ noun:m:nv
+НДО noun:f:nv
+НДП noun:f:nv
 НеоЛАЗ noun:m:nv
 НЕП/e
 НКАУ noun:n:nv
@@ -224,27 +278,42 @@
 НЛО noun:m:nv
 НМПУ noun:f:nv
 нм noun:nv
+НОП noun:f:nv
+НРБ noun:m:nv
 НРКУ noun:f:nv
+НРП noun:f:nv
 НРУ noun:m:nv
+НСБ noun:f:nv
 НСДАП noun:f:nv
+НСЖУ noun:f:nv
 НСКУ noun:f:nv
+НСК noun:m:nv
 НСМЕП noun:f:nv
 НСНУ noun:m:nv
 НСПУ noun:f:nv
+НСРА noun:f:nv
 НСТУ noun:f:nv
 НСХУ noun:f:nv
+НТД noun:pl:nv
 НТКУ noun:f:nv
+НТП noun:m:nv
 НТР noun:f:nv
 НТУУ noun:m:nv
-НУ-НС НУ-НС noun:nv
+НТШ noun:n:nv
 НУНС noun:nv
+НУ-НС noun:nv
 НУХТ noun:m:nv
+НФЛ noun:f:nv
 НФПУ noun:m:nv
 НХЛ noun:f:nv
 НХМУ noun:m:nv
+ОАД noun:f:nv
+ОАЄ noun:f:nv
+ОАС noun:nv
 облУВС noun:n:nv
 ОБСЄ noun:f:nv
 ОВДП noun:p:nv
+ОВП noun:f:nv
 ОДА noun:f:nv
 ОДКБ noun:f:nv
 ОДПІ noun:f:nv
@@ -256,7 +325,7 @@
 ООН noun:f:nv
 ОПЕК noun:f:nv
 ОСББ noun:n:nv
-ОУН-УПА ОУН-УПА noun:nv
+ОУН-УПА noun:nv
 ОУН noun:f:nv
 ПАРЄ noun:f:nv
 Па noun:nv
@@ -269,16 +338,24 @@
 ПЕОМ noun:f:nv
 ПЗП noun:m:nv
 ПЗРК noun:m:nv
+ПЗУ noun:f:nv
 ПЗ noun:n:nv
 ПК noun:m:nv
+ПНР noun:f:nv
+ПОРП noun:f:nv
 ППО noun:n:nv
+ПППУ noun:f:nv
+ПП noun:n:nv
+ПрикВО noun:m:nv
 ПРООН noun:f:nv
 ПРО noun:f:nv
+ПРП noun:f:nv
 пр-т/e
 ПРУ noun:f:nv
 ПР noun:f:nv
 ПСПУ noun:f:nv
 ПТСР noun:m:nv
+ПТУ noun:n:nv
 ПУМБ noun:m:nv
 ПФТС noun:f:nv
 пФ noun:nv
@@ -287,51 +364,84 @@
 РАТАУ noun:n:nv
 РВВС noun:m:nv
 РДА noun:f:nv
+РЄ noun:f:nv
 РКД noun:m:nv
+РКЦ noun:f:nv
+РЛС noun:f:nv
 РНБОУ noun:f:nv
 РНБО noun:f:nv
+РНГ noun:f:nv
 РНК noun:f:nv
 р-н/ef
 РПГ noun:m:nv
-рРНК рРНК noun:f:nv
+РПЦ noun:f:nv
+рРНК noun:f:nv
+РСДРП noun:f:nv
 РСЧА noun:f:nv
 РУВС noun:n:nv
+РУП noun:f:nv
 РФ noun:f:nv
+РХП noun:f:nv
 р unknown
 САПР noun:n:nv
+САР noun:f:nv
 САУ noun:f:nv
 СБУ noun:f:nv
+СВАПО noun:f:nv
+СВУ noun:f:nv
+СДПН noun:f:nv
 СДПУ noun:f:nv
+СДПФ noun:f:nv
+СДРПШ noun:f:nv
 сек noun:nv
+СелПУ noun:f:nv
 СІЗО noun:m:nv
 СКА noun:m:nv
 СКБД noun:f:nv
+СКВУ noun:m:nv
+СК noun:m:nv
 смт noun:nv
 см noun:nv
 СНБОУ noun:f:nv
 СНІД/e
+СНПУ noun:f:nv
 СОТ noun:f:nv
+СОУ noun:f:nv
+СПС noun:m:nv
 СПУ noun:f:nv
+СРВ noun:f:nv
+СРР noun:f:nv
+СРЮ noun:f:nv
+СР noun:f:nv
+ССР noun:f:nv
+СТД noun:f:nv
+СУБД noun:f:nv
 СУМ/e
+СФРЮ noun:f:nv
+ТАРС noun:n:nv
 Тбайт noun:m:nv
 Тб noun:m:nv
 ТБ noun:n:nv
 ТВЕЛ/efg
+т-во/i
 Т-ДНК noun:f:nv
 ТЕФІ noun:nv
 ТЕЦ noun:f:nv
 ТзОВ noun:n:nv
-ТНК-ВР ТНК-ВР noun:f:nv
+ТЗ noun:n:nv
+ТНК-ВР noun:f:nv
 ТНМК noun:m:nv
+ТНС noun:pl:nv
 ТОВ noun:n:nv
+ТОУК noun:n:nv
 ТРК noun:f:nv
-тРНК тРНК noun:f:nv
+тРНК noun:f:nv
 т noun:f:nv
 УААН noun:f:nv
 УАЗТ noun:f:nv
 УАЗ noun:m:nv
 УАНМ noun:f:nv
-УАПЦ-КП УАПЦ-КП noun:f:nv
+УАПЦ-КП noun:f:nv
 УАПЦ noun:f:nv
 УАСС noun:nv
 УБЕЗ noun:n:nv
@@ -339,56 +449,94 @@
 УБОЗ/e
 УВКБ noun:n:nv
 УВКР noun:f:nv
+УГА noun:f:nv
+УГВР noun:f:nv
 УГКЦ noun:f:nv
+УГС noun:f:nv
 УДАР/e
+УДК noun:f:nv
 УДППЗ noun:n:nv
 УДСБЕЗ noun:n:nv
 УДСО noun:n:nv
 УДЦР noun:m:nv
 УЄФА noun:f:nv
 УККА noun:m:nv
+УКП noun:f:nv
+УКСМ noun:f:nv
 УКТЗЕД noun:nv
 УМВГ noun:f:nv
 УМВСУ noun:n:nv
 УМВС noun:n:nv
-УНА-УНСО УНА-УНСО noun:f:nv
+УНА-УНСО noun:f:nv
 УНА noun:f:nv
+УНДО noun:n:nv
 УНДП noun:f:nv
 УНІАН noun:n:nv
+УНІТА noun:m:nv
 УНКВД noun:n:nv
+УНКМО noun:m:nv
+УНКП noun:f:nv
 УНП noun:f:nv
 УНРА noun:f:nv
 УНР noun:f:nv
 УНСО noun:f:nv
 УНЦПД noun:m:nv
 УПА noun:f:nv
-УПЦ-КП УПЦ-КП noun:f:nv
+УПСР noun:f:nv
+УПЦ-КП noun:f:nv
+УПЦ-МП noun:f:nv
 УПЦ noun:f:nv
+УРДП noun:f:nv
+УРЕ noun:f:nv
+УРП noun:f:nv
 УРСР noun:f:nv
 УСБУ noun:n:nv
+УСДП noun:f:nv
+УСДРП noun:f:nv
 УСПП noun:m:nv
 УСРР noun:f:nv
+УСС noun:nv
+УТН noun:pl:nv
 УТОГ noun:n:nv
 УТОС noun:n:nv
+УХДП noun:f:nv
 УЦЕПД noun:m:nv
+ФАО noun:f:nv
 ФАТХ noun:nv
 ФБР noun:n:nv
 ФДМУ noun:m:nv
+ФІБА noun:f:nv
 ФІДЕ noun:f:nv
+ФІЖ noun:f:nv
+ФІЛА noun:f:nv
+ФІНА noun:f:nv
+ФІСУ noun:f:nv
 ФІФА noun:f:nv
 ф-ка/a
+ФКП noun:f:nv
 ФК noun:m:nv
 ФМ-діапазон/e
 ФМ-станція/af
+ФМШ noun:f:nv
+фоб noun:nv
+ФОС noun:m:nv
+ФРЕЛІМО noun:m:nv
 ФСБ noun:f:nv
+ФСП noun:f:nv
 ФФУ noun:f:nv
 ХАЕС noun:f:nv
 ХАМАС noun:m:nv
+ХДПУ noun:f:nv
+ХЛПУ noun:f:nv
+ХНС noun:m:nv
+ХСС noun:m:nv
+ЦАР noun:f:nv
 ЦАХАЛ noun:m:nv
 ЦВК noun:f:nv
 ЦГЗК noun:m:nv
 ЦЕРН/e
 ЦК noun:m:nv
+ЦНБ noun:f:nv
 ЦНС noun:f:nv
 ЦП noun:m:nv
 ЦРУ noun:n:nv
@@ -396,8 +544,13 @@
 ЦУМ noun:m:nv
 ЧАЕС noun:f:nv
 ЧАП noun:m:nv
+ЧК noun:f:nv:bad
+ЧР noun:f:nv
+ЧССР noun:f:nv
+ЧСФР noun:f:nv
 ЧС noun:m:nv
 ЧФ noun:m:nv
+ШВСМ noun:f:nv
 ЮНЕСКО noun:n:nv
 ЮНІСЕФ noun:m:nv
 ЯМР noun:m:nv

@@ -399,7 +399,11 @@
 хтозна-чим хтозна-що pron:v_oru
 хтозна-чім хтозна-що pron:v_mis
 
-хтозна-хто
+хтозна-хто хтозна-хто pron:v_naz
+хтозна-кого хтозна-хто pron:v_rod/v_zna
+хтозна-кому хтозна-хто pron:v_dav/mis
+хтозна-ким хтозна-хто pron:v_oru
+хтозна-кім хтозна-хто pron:v_mis
 
 хтозна-де adv
 хтозна-як adv
@@ -1118,6 +1122,8 @@
 атож part
 ато part
 ач excl|part
+іч excl
+ич excl|part
 аякже part
 ба excl|part|conj:subord
 би part

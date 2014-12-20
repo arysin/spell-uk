@@ -17,7 +17,9 @@
 киплячий/V ^adjp:actv:pres:bad
 лежачий/V ^adjp:actv:pres:bad
 люблячий/V ^adjp:actv:pres:bad
-мати мати noun:f:v_naz:ist/v_kly:ist
+максимум adv
+мати мати noun:f:v_naz/v_kly:ist
+мінімум adv
 мосту міст noun:m:v_mis
 мосту міст noun:m:v_rod
 нев'янучий/V ^adjp:actv:pres:bad
@@ -26,6 +28,7 @@
 пливучий/V ^adjp:actv:pres:bad
 плоту пліт noun:m:v_mis
 плоту пліт noun:m:v_rod
+помосту поміст noun:m:v_mis
 роду рід noun:m:v_mis
 свистячий/V ^adjp:actv:pres:bad
 сидячий/V ^adjp:actv:pres:bad

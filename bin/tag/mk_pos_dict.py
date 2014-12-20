@@ -70,16 +70,25 @@ def expand_alts(lines, splitter, regexp):
         if not splitter in line:
             out.append( line )
             continue
+            
+        if splitter == '/':
+          groups = re.match("^([^/]+:)([^:]+)(:[^/]+)?$", line).groups()
+        elif splitter == '|':
+          groups = re.match("^(.* )(.*)$", line).groups()
+        else:
+          groups = re.match("^([^/:]+:)(.*)$", line).groups()
 
-        split1 = line.split(splitter)
-        base = split1[0]
+#        print(groups)
 
-        out.append( base )
+        split1 = groups[1].split(splitter)
+        base = groups[0]
+        end = ""
+        if len(groups) > 2 and groups[2] :
+          end = groups[2]
 
-        for split_ in split1[1:]:
+        for split_ in split1:
 #            print('split', splitter, base, split_)
-            new_tags1 = regexp.sub( split_, base )
-            out.append( new_tags1 )
+            out.append( base + split_ + end )
 
     return out
 
@@ -117,7 +126,11 @@ def generate(word, allAffixFlags, origAffixFlags):
     for affixFlag in allAffixFlags:
         if affixFlag in "<>+":
           continue
-    
+
+        if not affixFlag in affixMap:
+          print("ERROR: Invalid flag", affixFlag, "for", word, file=sys.stderr)
+          continue
+
         affixGroups = affixMap[affixFlag]
 
         lines = generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
