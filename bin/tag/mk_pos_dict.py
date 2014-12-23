@@ -144,6 +144,8 @@ def generate(word, allAffixFlags, origAffixFlags):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag == 'i' and 'j' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
+                if affixFlag == 'r' and 's' not in allAffixFlags:
+                    line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag in 'lq' and 'm' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag in 'ac' and 'o' not in allAffixFlags and 'b' not in allAffixFlags:
@@ -174,6 +176,13 @@ def generate(word, allAffixFlags, origAffixFlags):
                 else:
                     if not ending_iv_re.match(word) and ending_evi_re.match(line):
                         line = line.replace('m:v_dav/v_mis', 'm:v_dav')
+            elif affixFlag in "ir":
+                 if istota(word, allAffixFlags):
+                   if 'noun:f:v_rod' in line and not word.endswith('матір'):
+                     line = line.replace('f:v_rod', 'f:v_rod/v_zna')
+#                 else:
+#                   if 'noun:f:v_naz' in line:
+#                     line = line.replace('f:v_naz', 'f:v_naz/v_zna')
             elif affixFlag == 'a':
                 if 'c' not in allAffixFlags:
                     if 'noun:m:v_dav' in line and ('у ' in line or 'ю ' in line):
@@ -182,7 +191,7 @@ def generate(word, allAffixFlags, origAffixFlags):
                     if not ending_iv_re.match(word) and ending_evi_re.match(line):
                         line = line.replace('m:v_dav/v_mis', 'm:v_dav')
             elif affixFlag in 'cgq':
-                if istota(word, allAffixFlags) and 'noun:m:' in line:
+                if istota(word, allAffixFlags) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
 
             if not '/v_kly' in line:
@@ -190,8 +199,8 @@ def generate(word, allAffixFlags, origAffixFlags):
                 line = line.replace('p:v_naz', 'p:v_naz/v_kly')
 
             # handle znahidny for plural
-            if len(set(allAffixFlags) & set("bofjm")) > 0:
-                if len(set(allAffixFlags) & set("bojm")) > 0:
+            if len(set(allAffixFlags) & set("bofjms")) > 0:
+                if len(set(allAffixFlags) & set("bojms")) > 0:
                     if '<' in allAffixFlags or 'p' in allAffixFlags:
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags:
@@ -277,8 +286,10 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna'
             if word.endswith('е') and istota(word, allAffixFlags):
               str += '/v_kly'
-        elif affixFlag == 'i' and word[-1] in "ьаячшжрвф":
-            str = word + ' ' + word + ' noun:f:v_naz/v_zna'
+        elif affixFlag in "ir" and word[-1] in "ьаячшжрвф":
+            str = word + ' ' + word + ' noun:f:v_naz'
+            if not istota(word, allAffixFlags) or word.endswith('матір'):
+              str += '/v_zna'
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'j' and word[-1] in 'іа':

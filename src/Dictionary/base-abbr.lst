@@ -294,7 +294,7 @@
 НСРА noun:f:nv
 НСТУ noun:f:nv
 НСХУ noun:f:nv
-НТД noun:pl:nv
+НТД noun:p:nv
 НТКУ noun:f:nv
 НТП noun:m:nv
 НТР noun:f:nv
@@ -431,7 +431,7 @@
 ТЗ noun:n:nv
 ТНК-ВР noun:f:nv
 ТНМК noun:m:nv
-ТНС noun:pl:nv
+ТНС noun:p:nv
 ТОВ noun:n:nv
 ТОУК noun:n:nv
 ТРК noun:f:nv
@@ -496,7 +496,7 @@
 УСПП noun:m:nv
 УСРР noun:f:nv
 УСС noun:nv
-УТН noun:pl:nv
+УТН noun:p:nv
 УТОГ noun:n:nv
 УТОС noun:n:nv
 УХДП noun:f:nv
