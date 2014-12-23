@@ -298,8 +298,12 @@ def get_word_base(word, affixFlag, allAffixFlags):
             else:
                 str = word + ' ' + word + ' noun:p:v_naz'
         elif re.match('[a-p]', affixFlag):
+            if affixFlag == 'p' and allAffixFlags[0] == 'p':
+              return str
+              
             str = word + ' ' + word + ' noun:unknown'
             print(str, '---', word, affixFlag)
+            str = ""
         else:
             str = word + ' ' + word + ' unknown'
             print(str, '---', word, affixFlag)
