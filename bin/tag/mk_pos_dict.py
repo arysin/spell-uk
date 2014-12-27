@@ -236,7 +236,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
                 str = word + ' ' + word + ' noun:m:v_naz/v_zna'
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
-        elif re.match('[AIKM]', affixFlag):
+        elif re.match('[AIKMC]', affixFlag):
             str = word + ' ' + word + ' verb:inf'
         elif re.match('[BJLN]', affixFlag):
             str = word + ' ' + word + ' verb:rev:inf'
