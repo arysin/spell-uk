@@ -59,7 +59,7 @@ shy_remove_re = re.compile('[шщч]ий/.*$')
 yi_sub_re = re.compile('ий/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
 
-end_tag_re = re.compile('((?::(?:&[a-z]+|bad|dial|obs|rare))+)(:.+)')
+end_tag_re = re.compile('((?::(?:&[a-z]+|bad|slang|rare|coll))+)(:.+)')
 
 #@profile
 def expand_alts(lines, splitter, regexp):
@@ -280,6 +280,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+        elif affixFlag == 'i' and word.endswith('ів'):
+            str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
@@ -293,9 +295,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'j' and word[-1] in 'іа':
-            if not istota(word, allAffixFlags):
-                str = word + ' ' + word + ' noun:p:v_naz/v_zna'
-            else:
+#            if not istota(word, allAffixFlags):
+#                str = word + ' ' + word + ' noun:p:v_naz/v_zna'
+#            else:
                 str = word + ' ' + word + ' noun:p:v_naz'
         elif re.match('[a-p]', affixFlag):
             if affixFlag == 'p' and allAffixFlags[0] == 'p':

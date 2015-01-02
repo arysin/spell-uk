@@ -7,7 +7,7 @@
 INDICT=base.lst base-compound.lst names.lst dstu_kds.lst geography.lst lang.lst colors.lst base-abbr.lst exceptions.lst pronouns.lst slang.lst
 NOTINDICT=""
 
-SORTED=base.lst base-compound.lst names.lst geography.lst colors.lst base-abbr.lst slang.lst twisters.lst verify.lst tags.lst rare.lst alt.lst
+SORTED=base.lst base-compound.lst names.lst geography.lst colors.lst base-abbr.lst slang.lst twisters.lst tags.lst rare.lst alt.lst
 NOTSORTED=exceptions.lst pronouns.lst
 
 TAGGED=base.lst base-compound.lst base-abbr.lst geography.lst pronouns.lst names.lst dstu_kds.lst slang.lst lang.lst

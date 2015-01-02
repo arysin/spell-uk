@@ -1,6 +1,6 @@
 DICT_BASE=../../src/Dictionary
 AFF_BASE=../../src/Affix
-DICT_SRC=$(DICT_BASE)/twisters.lst $(DICT_BASE)/verify.lst $(DICT_BASE)/rare.lst
+DICT_SRC=$(DICT_BASE)/twisters.lst $(DICT_BASE)/slang.lst $(DICT_BASE)/rare.lst
 
 all:    uk_invert.dic uk_invert.aff
 
