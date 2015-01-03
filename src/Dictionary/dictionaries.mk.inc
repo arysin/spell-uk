@@ -5,6 +5,7 @@
 # --dk
 #
 INDICT=base.lst base-compound.lst names.lst dstu_kds.lst geography.lst lang.lst colors.lst base-abbr.lst exceptions.lst pronouns.lst slang.lst
+TAGS_ONLY=tags.lst twisters.lst rare.lst alt.lst
 NOTINDICT=""
 
 SORTED=base.lst base-compound.lst names.lst geography.lst colors.lst base-abbr.lst slang.lst twisters.lst tags.lst rare.lst alt.lst

@@ -508,7 +508,7 @@ def process_line(line):
         extra_tag += ':v-u'
 
     if "<" in line or "p" in line:
-        extra_tag += ':ist'
+        extra_tag += ':anim'
         # if not ">" in line:
         #   extra_tag += ':pers'
 

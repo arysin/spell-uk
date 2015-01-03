@@ -1,8 +1,8 @@
 Аарон/egh<
-А-Ба-Ба-Га-Ла-Ма-Га noun:n:nv
-а-ба-ба-га-ла-ма-га noun:n:nv
+А-Ба-Ба-Га-Ла-Ма-Га noun:n:nv:np
+а-ба-ба-га-ла-ма-га noun:n:nv:np
 абабагаламагівський/V
-Абашидзе noun:m:nv:ist
+Абашидзе noun:m:nv:np:anim
 Аббас/egh<
 Абвер/e
 Абдалла/ad< ^noun:m
@@ -17,10 +17,10 @@
 Абрахам/eghp<
 Абромавічус/eg<+
 Абсурдистан/eg
-Абуладзе noun:m:nv:ist
+Абуладзе noun:m:nv:np:anim
 Аваков/U<+
 Августин/egh<
-Августо noun:m:nv:ist
+Августо noun:m:nv:np:anim
 Август/egh<
 Авдєєв/U<+
 Авдєєнко/e<+
@@ -32,7 +32,7 @@
 Авіант/e
 Авігдор/egh<
 Авіценна/a ^noun:m
-Авогадро noun:m:nv:ist
+Авогадро noun:m:nv:np:anim
 Авраам/egh<
 Авраменко/e<+
 Аврамов/U<+
@@ -42,14 +42,14 @@
 АвтоКрАЗ/e
 Автомайдан/e
 Агамемнон/egh<
-Агассі noun:m:nv:ist
+Агассі noun:m:nv:np:anim
 Агатангел/egh<
 Агафія/ad<
 Агафон/eghp
 Агахова/a ^noun:m
 Агєєв/U<+
 Агнеса/ad<
-Агнес noun:f:nv:ist
+Агнес noun:f:nv:np:anim
 агрипинин/V
 Адальберт/egh<
 Адаменко/e<+
@@ -60,17 +60,17 @@
 Адам/eghp
 Ада/ad<
 Аденауер/eg<+
-Адідас noun:m:nv
+Адідас noun:m:nv:np
 Адлінгтон/eg<+
-Адольфо noun:m:nv:ist
+Адольфо noun:m:nv:np:anim
 Адольф/eghp
-Адріано noun:m:nv:ist
+Адріано noun:m:nv:np:anim
 Адріан/eghp
 Адріяна/ad<
 Аеліта/ad<
 АероСвіт/e
 Аеросвіт/e
-Азазелло noun:m:nv:ist
+Азазелло noun:m:nv:np:anim
 Азазель/eg<
 азаровський/V
 азаровщина/a
@@ -82,40 +82,40 @@
 Азовсталь/i
 Аїда/a
 Аїд/egh<
-Айболить noun:m:nv:ist
+Айболить noun:m:nv:np:anim
 Айвазовська/i<+
 Айвазовський/i<+
 Айварас/egh<
-Айвенго noun:m:nv:ist
-Айдан noun:m:nv:ist|noun:f:nv:ist
+Айвенго noun:m:nv:np:anim
+Айдан noun:m:nv:np:anim|noun:f:nv:np:anim
 Айдар/eg
 Айдер/egh<
 Айзек/eg<
 Айман/egh<
 Айна/ad<
-Айне noun:f:nv:ist
+Айне noun:f:nv:np:anim
 Айнтрахт/eg
 айнштайновий/V
 Айнштайн/egh<
 Айседора/ad<
 Айтматов/U<+
-Айше noun:f:nv:ist
+Айше noun:f:nv:np:anim
 Акаєв/U<+
 Акакій/eg<
 Акбар/eg<+
 Аквінський/i
 Акименко/e<+
 Акімов/U<+
-Акіхіто noun:m:nv:ist
+Акіхіто noun:m:nv:np:anim
 Акопян/eg<+
 Аксаков/U<+
 Аксельрод/eg<+
 Аксель/eg<
 Аксентійчук/eg<+
 Алан/egh<
-Алатрісте noun:m:nv:ist
+Алатрісте noun:m:nv:np:anim
 Алейхем/eg<+
-Алеко noun:m:nv:ist
+Алеко noun:m:nv:np:anim
 Александер/egh<
 Алексєєв/U<+
 Алексійчук/eg<+
@@ -124,72 +124,72 @@
 Алекс/egh<
 Алек/eg<
 Ален/egh<
-Алессандро noun:m:nv:ist
-Алессіо noun:m:nv:ist
-Алехандро noun:m:nv:ist
+Алессандро noun:m:nv:np:anim
+Алессіо noun:m:nv:np:anim
+Алехандро noun:m:nv:np:anim
 Алібек/eg<
 Алієв/U<+
-Алізаде noun:m:nv:ist|noun:f:nv:ist
+Алізаде noun:m:nv:np:anim|noun:f:nv:np:anim
 Алік/eg<
 Аліна/ad<
 Аліса/ad<
 Алісія/ad<
 Алістер/egh<
 Алішер/egh<
-Алі noun:m:nv:ist
+Алі noun:m:nv:np:anim
 Алла/ad<
-Алонсо noun:m:nv:ist
+Алонсо noun:m:nv:np:anim
 Алфєєв/U<+
 Алфьоров/U<+
 Алханов/U<+
 Аль-Акса/a
 Аль-Арабія/a
-Альберто noun:m:nv:ist
+Альберто noun:m:nv:np:anim
 Альберт/eghp
 Альбер/egh<
 Альбіна/ad<
-Альбіноні noun:m:nv:ist
+Альбіноні noun:m:nv:np:anim
 Альбіон/e
 Альбрехт/egh<
 Альварес/eg<+
-Альваро noun:m:nv:ist
+Альваро noun:m:nv:np:anim
 Альгемайне
 Альгірдас/egh<
 Альдебаран/eg
 Аль-Джазіра/a
 Альдо
-Альєнде noun:m:nv:ist
+Альєнде noun:m:nv:np:anim
 Аль-Каїда/a
 аль-Кайда/a
 Аль-Кудс/eg
-аль-Малікі noun:m:nv:ist
+аль-Малікі noun:m:nv:np:anim
 Альма/ad
 Альмодовар/eg<+
 Альона/ad<
 Альтман/eg<+
-Альтомонте noun:m:nv:ist
-Альфано noun:m:nv:ist
-Альфонсо noun:m:nv:ist
-Альфредо noun:m:nv:ist
+Альтомонте noun:m:nv:np:anim
+Альфано noun:m:nv:np:anim
+Альфонсо noun:m:nv:np:anim
+Альфредо noun:m:nv:np:anim
 Альфред/eghp
 Альцгеймер/eg<+
 Амадей/eg<
-Амадео noun:m:nv:ist
+Амадео noun:m:nv:np:anim
 Амадеус/egh<
 Амальтея/a
 Аманда/ad<
-Амарето noun:m:nv
+Амарето noun:m:nv:np
 Амаркорд
 Амброзій/eg<
 Амвросій/eg<
 Амелія/ad<
-Амелі noun:f:nv:ist
+Амелі noun:f:nv:np:anim
 Аменабар/eg<+
-Америко noun:m:nv:ist
+Америко noun:m:nv:np:anim
 Аміксин/e
 Амір/egh<
-Амонашвілі noun:m:nv:ist
-Аморі noun:m:nv:ist
+Амонашвілі noun:m:nv:np:anim
+Аморі noun:m:nv:np:anim
 Амосов/U<+
 Амос/egh<
 Ананд/egh<
@@ -204,10 +204,10 @@
 Анджей/eg<
 Анджеліна/ad<
 Андреас/egh<
-Андреа noun:m:nv:ist
-Андреотті noun:m:nv:ist
+Андреа noun:m:nv:np:anim
+Андреотті noun:m:nv:np:anim
 Андрес/egh<
-Андре noun:m:nv:ist
+Андре noun:m:nv:np:anim
 Андрєєв/U<+
 Андріана/ad<
 Андріанов/U<+
@@ -221,7 +221,7 @@
 Андріян/egh<
 Андромаха/ad<
 Андромеда/ad<
-Андронікашвілі noun:m:nv:ist
+Андронікашвілі noun:m:nv:np:anim
 Андрон/egh<
 Андропов/U<+
 Андрощук/eg<+
@@ -237,16 +237,16 @@
 Анжела/ad<
 Анжеліка/ad<
 Анжеліна/ad<
-Анжі noun:m:nv|noun:n:nv
+Анжі noun:m:nv:np|noun:n:nv:np
 Анищенко/e<+
 Анісімов/U<+
 Аніщенко/e<+
 Аннан/egh<
 Анна/ad<
 Анничка/ad<
-Анрі noun:m:nv:ist
+Анрі noun:m:nv:np:anim
 Ансельм/egh<
-Антадзе noun:m:nv:ist
+Антадзе noun:m:nv:np:anim
 Антанта/a
 Антахович/eg<+
 Антей/eg<
@@ -257,13 +257,13 @@
 Антігона/a
 Антін/egh<
 Антоненко/e<+
-Антонеску noun:m:nv:ist
+Антонеску noun:m:nv:np:anim
 Антонич/eg<+
 Антоній/eg<
 Антоніна/a
-Антоніо noun:m:nv:ist
+Антоніо noun:m:nv:np:anim
 Антоніс/egh<
-Антоніу noun:m:nv:ist
+Антоніу noun:m:nv:np:anim
 Антонов/U<+
 Антонюк/eg<+
 Антоняк/eg<+
@@ -272,13 +272,13 @@
 Антуан/egh<
 Анубіс/egh<
 Анфіса/ad<
-Анчелотті noun:m:nv:ist
+Анчелотті noun:m:nv:np:anim
 Анштайновий/V
-Аньямке noun:m:nv:ist
+Аньямке noun:m:nv:np:anim
 Аня/a<
 Аполлінер/eg<+
 Аполлон/eghp
-Аполло noun:m:nv:ist
+Аполло noun:m:nv:np:anim
 Арафат/eg<+
 Арбузов/U<+
 Арвідас/egh<
@@ -288,19 +288,19 @@
 Аристотель/eg<
 Аріадна/ad<
 Аріель/eg<
-Аріель- noun:f:nv:ist
+Аріель- noun:f:nv:np:anim
 Аркадій/egp<
 Арктур/eg
-Арлекіно noun:m:nv:ist
+Арлекіно noun:m:nv:np:anim
 арлекінський/V
-Армандо noun:m:nv:ist
-Армані noun:m:nv:ist
+Армандо noun:m:nv:np:anim
+Армані noun:m:nv:np:anim
 Арман/egh<
 Армен/egh<
 Армстронг/eg<+
-Арні noun:m:nv:ist
+Арні noun:m:nv:np:anim
 Арнольд/eghp
-Арно noun:m:nv:ist
+Арно noun:m:nv:np:anim
 Арсеній/egp<
 Арсенюк/eg<+
 Арсен/eghp
@@ -312,8 +312,8 @@
 Артеміда/ad<
 Артемій/egp
 Артем/eghp
-Арто noun:m:nv:ist
-Артуро noun:m:nv:ist
+Арто noun:m:nv:np:anim
+Артуро noun:m:nv:np:anim
 Артур/eghp
 Артюшенко/e<+
 Арутюнян/eg<+
@@ -329,11 +329,11 @@
 Аслунд/eg<+
 Асман/egh<
 Ассанж/eg<+
-Ассанте noun:m:nv:ist
+Ассанте noun:m:nv:np:anim
 Астаф'єв/U<+
 Астахов/U<+
 Астон/egh<
-Астрід noun:f:nv:ist
+Астрід noun:f:nv:np:anim
 Аталанта/ad<
 Аталанта/a- ^noun:m
 Атамбаєв/U<+
@@ -342,15 +342,15 @@
 Атаян/egh<
 Атена/ad< ^noun:m
 Аткінсон/eg<+
-Атлант-М noun:m:nv
-Атлетико noun:m:nv:ist
-Атлетіко noun:m:nv:ist
+Атлант-М noun:m:nv:np
+Атлетико noun:m:nv:np:anim
+Атлетіко noun:m:nv:np:anim
 Атон/egh<
 Атос/egh<
 Аттила/ad< ^noun:m
 Аттіла/ad< ^noun:m
-Аугусто noun:m:nv:ist
-Ауді noun:nv
+Аугусто noun:m:nv:np:anim
+Ауді noun:nv:np
 Аудронюс/egh<
 Ауріка/ad<
 Афанасій/egp
@@ -369,12 +369,12 @@
 Ахмед/egh<
 Ахметов/U<+
 Ахмет/egh<
-Ахтісаарі noun:m:nv:ist
+Ахтісаарі noun:m:nv:np:anim
 Ашан/e
 Ашот/egh<
 Аякс/eg
 Баал/egh<
-Баас noun:f:nv:ist
+Баас noun:f:nv:np:anim
 Бабаєв/U<+
 Бабай/eg<
 Бабаков/U<+
@@ -401,19 +401,19 @@
 Базилевич/eg<+
 Базилевський/V<
 Базилевс/eg<+
-Базиліо noun:m:nv:ist
+Базиліо noun:m:nv:np:anim
 Байден/eg<+
 Байєр/eg<+
 Байрон/eg<+
-Байру noun:m:nv:ist
+Байру noun:m:nv:np:anim
 Байсаров/U<+
 Бакієв/U<+
 Бакіров/U<+
 Бакстер/eg<+
 Бакулін/U<+
 Бакуменко/e<+
-Бакуріані noun:m:nv:ist
-Баку noun:n:nv
+Бакуріані noun:m:nv:np:anim
+Баку noun:n:nv:np
 Бакштаєв/U<+
 Балабанов/U<+
 Балабуєв/U<+
@@ -425,10 +425,10 @@
 Балаян/eg<+
 Балицький/V
 Баллак/eg<+
-Баллок noun:m:nv:ist|noun:f:nv:ist
+Баллок noun:m:nv:np:anim|noun:f:nv:np:anim
 Балмер/eg<+
 Балога/a ^noun:m
-Балотеллі noun:m:nv:ist
+Балотеллі noun:m:nv:np:anim
 Балтія/a
 бальзаківський/V
 Бальзак/eg<+
@@ -439,37 +439,37 @@
 Бангура/ad< ^noun:m
 Бандерас/eg<+
 Бандера/ad< ^noun:m
-Бандінеллі noun:m:nv:ist
+Бандінеллі noun:m:nv:np:anim
 Баніоніс/eg<+
 Банников/U<+
-Бано noun:m:nv:ist
+Бано noun:m:nv:np:anim
 Банчук/eg<+
 Барабанов/U<+
 Барабашов/U<+
 Барабаш/eg<+
-Барамідзе noun:m:nv:ist
+Барамідзе noun:m:nv:np:anim
 Баранкевич/eg<+
 Баранович/efg<+
 Барановський/i<+
 Баранов/U<+
 Барбара/ad<
 Барбаросса/a
-Барбі noun:f:nv
+Барбі noun:f:nv:np
 Барвіненко/e<+
 Барвінський/V
-Бардо noun:m:nv:ist
-Барзані noun:m:nv:ist
+Бардо noun:m:nv:np:anim
+Барзані noun:m:nv:np:anim
 Баркер/eg<+
-Барлоу noun:m:nv:ist
+Барлоу noun:m:nv:np:anim
 Барнард/eg<+
-Барні noun:m:nv:ist
-Баррі noun:m:nv:ist
-Баррозо noun:m:nv:ist
-Баррозу noun:m:nv:ist
+Барні noun:m:nv:np:anim
+Баррі noun:m:nv:np:anim
+Баррозо noun:m:nv:np:anim
+Баррозу noun:m:nv:np:anim
 Барський/V<
 Бартенєв/U<+
-Бартолі noun:f:nv:ist
-Бартоломео noun:m:nv:ist
+Бартолі noun:f:nv:np:anim
+Бартоломео noun:m:nv:np:anim
 Барт/egh<
 Бар'яхтар/egh<
 Басаєв/U<+
@@ -494,17 +494,17 @@
 Бах/eg<+
 Башар/egh<
 Башмет/eg<+
-Беатрікс noun:f:nv:ist
-Беатріс noun:f:nv:ist
-Беатріче noun:f:nv:ist
+Беатрікс noun:f:nv:np:anim
+Беатріс noun:f:nv:np:anim
+Беатріче noun:f:nv:np:anim
 Бебель/eg<+
-Беверлі noun:nv
+Беверлі noun:nv:np
 Беженар/egh<
 Безп'ятчук/eg<+
 Безсонов/U<+
 Безуглий/V<
 Безулик/eg<+
-Безьє noun:m:nv:ist
+Безьє noun:m:nv:np:anim
 Бейкер/eg<+
 Бекенштайн/eg<+
 Бекешкіна/i<+
@@ -515,30 +515,30 @@
 Бекхем/eg<+
 Белінський/V<
 Белла/ad<
-Белліні noun:m:nv:ist
+Белліні noun:m:nv:np:anim
 Беллона/ad<
-Беллуччі noun:f:nv:ist
+Беллуччі noun:f:nv:np:anim
 Белтрансгаз/e
 Белькевич/eg<+
-Бельмондо noun:m:nv:ist
+Бельмондо noun:m:nv:np:anim
 Беляєв/U<+
-Бембі noun:m:nv:ist
-Беназір noun:f:nv:ist
-Бенвенуто noun:m:nv:ist
+Бембі noun:m:nv:np:anim
+Беназір noun:f:nv:np:anim
+Бенвенуто noun:m:nv:np:anim
 Бен-Гуріон/eg<+
 Бенджамін/egh<
 Бенедикт/eghp
 Бенжамін/egh<
 Беніта/ad<
-Беніто noun:m:nv:ist
+Беніто noun:m:nv:np:anim
 Бенкендорф/eg<+
 Бенкс/eg<+
 Бенсон/eg<+
-Бентлі noun:m:nv
+Бентлі noun:m:nv:np
 Бентон/eg<+
-Бенуа noun:m:nv:ist
+Бенуа noun:m:nv:np:anim
 Бенфіка/ad
-Беньо noun:m:nv:ist
+Беньо noun:m:nv:np:anim
 Беньямін/egh<
 Бенюк/eg<+
 Беня/a< ^noun:m
@@ -553,37 +553,37 @@
 Бержерак/eg<+
 Берінг/eg<+
 Берія/a<+ ^noun:m
-Берлінале noun:m:nv:ist
+Берлінале noun:m:nv:np:anim
 Берліоз/eg<+
-Берлусконі noun:m:nv:ist
-Бернанке noun:m:nv:ist
-Бернардо noun:m:nv:ist
+Берлусконі noun:m:nv:np:anim
+Бернанке noun:m:nv:np:anim
+Бернардо noun:m:nv:np:anim
 Бернард/egh<
 Бернар/egh<
-Бернерс-Лі noun:m:nv:ist
-Берніні noun:m:nv:ist
+Бернерс-Лі noun:m:nv:np:anim
+Берніні noun:m:nv:np:anim
 Бернстайн/eg<+
 Бернс/eg<+
-Бернуллі noun:m:nv:ist
+Бернуллі noun:m:nv:np:anim
 Беррімор/eg<+
-Беррі noun:m:nv:ist|noun:f:nv:ist
-Берсані noun:m:nv:ist|noun:f:nv:ist
+Беррі noun:m:nv:np:anim|noun:f:nv:np:anim
+Берсані noun:m:nv:np:anim|noun:f:nv:np:anim
 Берта/ad<
-Бертолуччі noun:m:nv:ist|noun:f:nv:ist
+Бертолуччі noun:m:nv:np:anim|noun:f:nv:np:anim
 Бертон/egh<
 Бертран/egh<
 Берт/egh<
 Бесараб/eg<+
-Бесеску noun:m:nv:ist
+Бесеску noun:m:nv:np:anim
 Беспалий/i<+
 Бессель/eg<+
 Бессінджер/eg<+
 Бессонов/U<+
 Бессон/eg<+
-Бетельгейзе noun:f:nv:ist
+Бетельгейзе noun:f:nv:np:anim
 Бетмен/egh<
-Бетсі noun:f:nv:ist
-Бетті noun:f:nv:ist
+Бетсі noun:f:nv:np:anim
+Бетті noun:f:nv:np:anim
 Бетховен/eg<+
 Бехтерєв/U<+
 Бешикташ/e
@@ -594,12 +594,12 @@
 Бистрицький/V<
 Биструшкін/eg<
 Бистряков/U<+
-Бі-Бі-Сі noun:f:nv:ist
-Бі-бі-сі noun:f:nv:ist
-Бігелоу noun:m:nv:ist|noun:f:nv:ist
+Бі-Бі-Сі noun:f:nv:np:anim
+Бі-бі-сі noun:f:nv:np:anim
+Бігелоу noun:m:nv:np:anim|noun:f:nv:np:anim
 Білецький/V<
-Білик noun:f:nv
-Біллі noun:m:nv
+Білик noun:f:nv:np
+Біллі noun:m:nv:np
 Білл/egh<
 Білоблоцький/V<
 Білодід/eg<+
@@ -609,7 +609,7 @@
 Бірюков/U<+
 Бісмарк/eg<+
 Бітлз noun:p:nv
-Бйорк noun:f:nv:ist
+Бйорк noun:f:nv:np:anim
 Бйорн/egh<
 Благонравов/U<+
 Блаттер/eg<+
@@ -620,11 +620,11 @@
 Блумберг/eg<+
 Блум/eg<+
 Блюхер/eg<+
-Боббі noun:m:nv:ist
+Боббі noun:m:nv:np:anim
 Боб/egh<
-Боварі noun:f:nv:ist
-Бовуар noun:f:nv:ist
-Бовуа noun:m:nv:ist
+Боварі noun:f:nv:np:anim
+Бовуар noun:f:nv:np:anim
+Бовуа noun:m:nv:np:anim
 Богарт/eg<+
 Богатирьов/U<+
 Богачевський/V<
@@ -649,13 +649,13 @@
 Бодянський/V
 Божена/ad<
 Боженко/e<+
-Бозе noun:m:nv:ist
+Бозе noun:m:nv:np:anim
 Боїнг/efg
 Бойл/eg<+
 Бойченко/e<+
 Бойчук/eg<+
-Боккаччо noun:m:nv:ist
-Боккеріні noun:m:nv:ist
+Боккаччо noun:m:nv:np:anim
+Боккеріні noun:m:nv:np:anim
 Болдирєв/U<+
 Болдрідж/eg<+
 Болдуїн/eg<+
@@ -664,16 +664,16 @@
 Боллівуд/eg
 Болтон/eg<+
 Большаков/U<+
-Бомарше noun:m:nv:ist
+Бомарше noun:m:nv:np:anim
 Бонапарт/eg<+
 Бондаренко/e<+
 бондіана/a
-Бонді noun:m:nv:ist
+Бонді noun:m:nv:np:anim
 Бонд/eg<+
-Боннер noun:m:nv:ist|noun:f:nv:ist
-Боно noun:m:nv:ist
-Борджіа noun:m:nv:ist|noun:f:nv:ist
-Бореллі noun:m:nv:ist
+Боннер noun:m:nv:np:anim|noun:f:nv:np:anim
+Боно noun:m:nv:np:anim
+Борджіа noun:m:nv:np:anim|noun:f:nv:np:anim
+Бореллі noun:m:nv:np:anim
 Борзенко/e<+
 Борисенко/e<+
 Борислав/eg-
@@ -685,7 +685,7 @@
 Борман/eg<+
 Боровець/ac<
 Боровиковський/V
-Боровскі noun:m:nv:ist|noun:f:nv:ist
+Боровскі noun:m:nv:np:anim|noun:f:nv:np:anim
 Боровський/V
 Бородай/eg<+
 Бородін/U<+
@@ -700,32 +700,32 @@
 Босенко/e<+
 Босх/eg<+
 Боткін/eg<+
-Боттічеллі noun:m:nv:ist
-Боуї noun:m:nv:ist
+Боттічеллі noun:m:nv:np:anim
+Боуї noun:m:nv:np:anim
 Бочкарьов/U<+
 Бочковський/V
 Боярчук/eg<+
-Браве noun:m:nv:ist
+Браве noun:m:nv:np:anim
 Брагін/U<+
 Бразаускас/eg<+
 Брайант/eg<+
 Брайз/eg<+
 Брайчевський/V
 Брамс/eg<+
-Брандао noun:m:nv:ist
-Брандо noun:m:nv:ist
+Брандао noun:m:nv:np:anim
+Брандо noun:m:nv:np:anim
 Брандт/eg<+
 Братислава/a
 Братунь/eg<+
-Брауде noun:m:nv:ist
+Брауде noun:m:nv:np:anim
 Браунер/eg<+
 Браун/eg<+
 Брахма/ad< ^noun:m
 Браян/egh<
-Брегвадзе noun:m:nv:ist
+Брегвадзе noun:m:nv:np:anim
 Брегович/eg<+
-Бредбері noun:m:nv:ist
-Бредлі noun:m:nv:ist
+Бредбері noun:m:nv:np:anim
+Бредлі noun:m:nv:np:anim
 брежнєвізм/e
 брежнєвський/V
 брежнєвщина/a
@@ -740,34 +740,34 @@
 Бригінець/ac<
 Бризгалов/U<+
 Брильська/i<+
-Бріджит noun:f:nv:ist
+Бріджит noun:f:nv:np:anim
 Бровко/e<+
 Бровченко/e<+
 Бродський/i<+
-Бромвіч noun:m:nv
+Бромвіч noun:m:nv:np
 Брондуков/U<+
 Броніслав/eghp
 Бронников/U<+
-Бронте noun:f:nv:ist
+Бронте noun:f:nv:np:anim
 Бронштейн/eg<+
 Броснан/eg<+
 Брукс/eg<+
-Бруні noun:m:nv:ist|noun:f:nv:ist
-Бруно noun:m:nv:ist|noun:f:nv:ist
+Бруні noun:m:nv:np:anim|noun:f:nv:np:anim
+Бруно noun:m:nv:np:anim|noun:f:nv:np:anim
 Брут/eg<+
 Брюллов/U<+
-Брюно noun:m:nv:ist
+Брюно noun:m:nv:np:anim
 Брюс/egh<
 Брюховецький/V<
-Буазізі noun:m:nv:ist
-Бу-Ба-Бу noun:n:nv:ist
+Буазізі noun:m:nv:np:anim
+Бу-Ба-Бу noun:n:nv:np:anim
 Бубнов/U<+
 Бугаєв/U<+
 Будда/ad< ^noun:m
 Будьонний/i<+
 Бузек/eg<+
-Букіккіо noun:m:nv:ist
-Буковскі noun:m:nv:ist
+Букіккіо noun:m:nv:np:anim
+Буковскі noun:m:nv:np:anim
 Буковський/V
 Булавін/U<+
 Булатецький/i<+
@@ -779,9 +779,9 @@
 Бунін/U<+
 Бунюель/eg<+
 Буняк/eg<+
-Буратіно noun:m:nv:ist
-Бурджанадзе noun:f:nv:ist
-Бурже noun:m:nv
+Буратіно noun:m:nv:np:anim
+Бурджанадзе noun:f:nv:np:anim
+Бурже noun:m:nv:np
 Бурмака/a<+
 Бурр/eg<+
 Бурштейн/eg<+
@@ -791,7 +791,7 @@
 Бутейко/e<+
 Бутенко/e<+
 Буткевич/eg<+
-Бутко noun:m:nv:ist|noun:f:nv:ist
+Бутко noun:m:nv:np:anim|noun:f:nv:np:anim
 Буткявічюс/eg<+
 Бутман/eg<+
 Бутовський/V
@@ -799,9 +799,9 @@
 Бутусов/U<+
 Буцефал/egh<
 Бучма/a<+ ^noun:m
-Буше noun:m:nv:ist
+Буше noun:m:nv:np:anim
 Буш/eg<+
-Бхутто noun:f:nv:ist
+Бхутто noun:f:nv:np:anim
 Бюлент/eg<+
 бютівський/V
 Ваал/eg<
@@ -810,7 +810,7 @@
 Вагіт/egh<
 вагнерівський/V
 Вадим/eghp
-Вайкуле noun:f:nv:ist
+Вайкуле noun:f:nv:np:anim
 Вайлд/eg<+
 Вайлз/eg<+
 Вайльд/eg<
@@ -832,9 +832,9 @@
 Валенса/a<+ ^noun:m
 Валентайн/eg<+
 Валентина/ad<
-Валентино noun:m:nv:ist
+Валентино noun:m:nv:np:anim
 Валентин/eghp
-Валентіно noun:m:nv:ist
+Валентіно noun:m:nv:np:anim
 Валера/ad<
 Валеріан/eghp
 Валерій/egp
@@ -844,14 +844,14 @@
 валуєвський/V
 Вальбург/eg<+
 Вальдемар/egh<
-Вальєхо noun:m:nv:ist
-Вальзуані noun:f:nv
+Вальєхо noun:m:nv:np:anim
+Вальзуані noun:f:nv:np
 Вальтер/egh<
 Ванга/ad<
 Ванда/ad<
 Ванесса/ad<
 Ванников/U<+
-Вано noun:m:nv:ist
+Вано noun:m:nv:np:anim
 Ваня/a< ^noun:m
 Варвара/ad<
 Варгас/eg<+
@@ -862,9 +862,9 @@
 варфоломіївський/V
 Варфоломій/egp
 Варцаба/a ^noun:m
-Варшаломідзе noun:m:nv:ist
+Варшаломідзе noun:m:nv:np:anim
 Варя/a<
-Васадзе noun:m:nv:ist
+Васадзе noun:m:nv:np:anim
 Василевський/V<
 Василенко/e<+
 Василина/ad<
@@ -889,7 +889,7 @@
 Вахтангов/U<+
 Вахтанг/eg<
 Вацлав/egh<
-Вашадзе noun:m:nv:ist
+Вашадзе noun:m:nv:np:anim
 Ващенко/e<+
 Ващук/eg<+
 Вдовиченко/e<+
@@ -918,7 +918,7 @@
 Вергеліс/eg<+
 Вергілій/eg<
 Вердер/eg<+
-Верді noun:m:nv:ist
+Верді noun:m:nv:np:anim
 Вередюк/eg<+
 Веремій/egp
 Веремчук/eg<+
@@ -929,7 +929,7 @@
 Вернидубов/U<+
 Верн/eg<+
 Вероніка/ad<
-Версаче noun:m:nv:ist
+Версаче noun:m:nv:np:anim
 Верстюк/eg<+
 Вертер/eg<+
 Вертинський/V<
@@ -941,8 +941,8 @@
 Веслав/egh<
 Веспасіан/eg<+
 Веста/ad<
-Вествуд noun:f:nv:ist
-Вестервелле noun:m:nv:ist
+Вествуд noun:f:nv:np:anim
+Вестервелле noun:m:nv:np:anim
 Вестінгауз/eg
 Вест-Пойнт/eg
 Вестфалія/a
@@ -967,29 +967,29 @@
 Вишинський/V<
 Вишневський/V<
 віагра/a
-Віардо noun:m:nv:ist|noun:f:nv:ist
-Вівальді noun:m:nv:ist
-Вів'єн noun:f:nv:ist
+Віардо noun:m:nv:np:anim|noun:f:nv:np:anim
+Вівальді noun:m:nv:np:anim
+Вів'єн noun:f:nv:np:anim
 Вівіан/eh<
-Вігго noun:m:nv:ist
+Вігго noun:m:nv:np:anim
 Відоплясова
 Візенталь/eg<+
 Війтович/eg<+
 Вікентій/egp
-Віке-Фрейберга noun:f:nv:ist
-Вікілікс noun:m:nv
+Віке-Фрейберга noun:f:nv:np:anim
+Вікілікс noun:m:nv:np
 Вікторія/ad<
 Віктор/efghp
 Віктюк/eg<+
 Вілен/egh<
 Вілкул/eg<+
-Вілле noun:m:nv:ist
+Вілле noun:m:nv:np:anim
 Вілліс/eg<+
-Віллі noun:m:nv:ist
+Віллі noun:m:nv:np:anim
 Вілсон/eg<+
 Вільгельм/eghp
-Вільде noun:m:nv:ist|noun:f:nv:ist
-Вільмонт noun:m:nv:ist
+Вільде noun:m:nv:np:anim|noun:f:nv:np:anim
+Вільмонт noun:m:nv:np:anim
 Вільнер/eg<+
 Вільногірський/i<+
 Вільпен/eg<+
@@ -1003,27 +1003,27 @@
 Вінер/eg<+
 Вінклер/eg<+
 Вінні-Пух/eg<+
-Вінні noun:m:nv:ist
+Вінні noun:m:nv:np:anim
 Вінокуров/U<+
 Вінсент/egh<
-Вінслет noun:f:nv:ist
+Вінслет noun:f:nv:np:anim
 Вінстон/egh<
 Вінський/i<+
 Вінтерберг/eg<+
 Вінтерботтом/eg<+
 Вінтер/eg<+
 Вінтон/eg<+
-Вінфрі noun:f:nv:ist
-Вінченцо noun:m:nv:ist
-Вінчі noun:m:nv:ist
+Вінфрі noun:f:nv:np:anim
+Вінченцо noun:m:nv:np:anim
+Вінчі noun:m:nv:np:anim
 Віолетта/ad<
 Вірастюк/eg<+
 Вірляна/ad<
-Вірсаладзе noun:m:nv:ist
+Вірсаладзе noun:m:nv:np:anim
 Вірський/i<+
 Вірт/eg<+
-Вісенте noun:m:nv:ist
-Вісконті noun:m:nv:ist
+Вісенте noun:m:nv:np:anim
+Вісконті noun:m:nv:np:anim
 Віслава/a
 Віслава/ad<-
 Віссаріон/eghp
@@ -1038,23 +1038,23 @@
 Вітенко/e<+
 Вітковський/V<
 Вітмен/eg<+
-Вітні noun:f:nv:ist
+Вітні noun:f:nv:np:anim
 Вітовський/V<
 Вітовт/egh<
 Вітольд/eghp
 Віторган/eg<+
-Віто noun:m:nv:ist
-Вітренко noun:f:nv:ist
-Вітторіо noun:m:nv:ist
+Віто noun:m:nv:np:anim
+Вітренко noun:f:nv:np:anim
+Вітторіо noun:m:nv:np:anim
 Віцин/eg<+
-Вішну noun:m:nv:ist
+Вішну noun:m:nv:np:anim
 Владислав/eghp
 Владлен/eghp
 Власенко/e<+
 Власов/U<+
 Власта/ad<
 Влодзімеж/egh<
-Влодко noun:m:nv:ist
+Влодко noun:m:nv:np:anim
 Воверайт/eg<+
 Вовкун/eg<+
 Водохреще/i
@@ -1082,7 +1082,7 @@
 Володін/U<+
 Володя/a< ^noun:m
 Волокітін/U<+
-Волосожар noun:m:nv:ist|noun:f:nv:ist
+Волосожар noun:m:nv:np:anim|noun:f:nv:np:anim
 Волосянка/a
 Волочкова/i<+
 Волошин/eg<+
@@ -1090,8 +1090,8 @@
 Волощук/eg<+
 Волтер/eg<+
 Волт/egh<
-Вольвенд noun:m:nv:ist|noun:f:nv:ist
-Вольво noun:m:nv
+Вольвенд noun:m:nv:np:anim|noun:f:nv:np:anim
+Вольво noun:m:nv:np
 Вольдемар/egh<
 Вольський/V<
 Вольтер/eg<+
@@ -1112,15 +1112,15 @@
 Ворхол/eg<+
 Воскресенський/V<
 Вотергейт/e
-Воццек noun:m:nv:ist
+Воццек noun:m:nv:np:anim
 Вощевський/i<+
 Вронська/i<+
 Врубель/eg<+
 Врублевський/V
 Врунгель/eg<+
 Всеволод/eghp
-Вуді noun:m:nv:ist
-Вудро noun:m:nv:ist
+Вуді noun:m:nv:np:anim
+Вудро noun:m:nv:np:anim
 Вудсток/e
 Вудс/eg<+
 Вудхауз/eg<+
@@ -1128,17 +1128,17 @@
 Вулфовіц/eg<+
 Вулф/eg<+
 Вульф/eg<+
-Вупі noun:f:nv:ist
+Вупі noun:f:nv:np:anim
 Вучетич/eg<+
 В'язівський/V<
 В'ятрович/eg<+
 В'ячеслав/eghp
-Габашвілі noun:m:nv:ist
+Габашвілі noun:m:nv:np:anim
 Габбл/eg<+
 Габен/eg<+
 Габор/egh<
 Габріела/ad<
-Габріеле noun:m:nv:ist
+Габріеле noun:m:nv:np:anim
 Габріель/eg<
 Габсбург/efg<+
 Габсбург/eg-
@@ -1160,12 +1160,12 @@
 Гагарін/U<+
 Гадес/eg
 Гадюкін/U<+
-Гаетано noun:m:nv:ist
+Гаетано noun:m:nv:np:anim
 Гаєвський/V<
 Газекспорт/e
 Газзаєв/U<+
 Газманов/U<+
-Газовик-Скала noun:m:nv
+Газовик-Скала noun:m:nv:np
 Газпромбанк/e
 Газпромзбут/e
 газпромівський/V
@@ -1201,8 +1201,8 @@
 Гамлет/eg<+
 Гамсун/eg<+
 Гандзюк/eg<+
-Ганді noun:m:nv:ist
-Ганеке noun:m:nv:ist
+Ганді noun:m:nv:np:anim
+Ганеке noun:m:nv:np:anim
 Ганжа/ad<
 Ганна/ad<
 Ганнібал/egh<
@@ -1215,10 +1215,10 @@
 Гапчук/eg<+
 Гаральд/egh<
 Гарбарчук/eg<+
-Гарбо noun:f:nv:ist
-Гаргантюа noun:m:nv:ist
+Гарбо noun:f:nv:np:anim
+Гаргантюа noun:m:nv:np:anim
 Гардецький/V<
-Гарібальді noun:m:nv:ist
+Гарібальді noun:m:nv:np:anim
 Гарік/eg<
 Гарін/U<+
 Гаркавенко/e<+
@@ -1226,31 +1226,31 @@
 Гарольд/egh<
 Гаррісон/egh<
 Гарріс/eg<+
-Гаррі noun:m:nv:ist
-Гарроне noun:m:nv:ist
-Гаррос noun:m:nv:ist
-Гарсіа noun:m:nv:ist
+Гаррі noun:m:nv:np:anim
+Гарроне noun:m:nv:np:anim
+Гаррос noun:m:nv:np:anim
+Гарсіа noun:m:nv:np:anim
 Гарсія/ad<
 Гартман/eg<+
 Гасанов/U<+
 Гаскойн/eg<+
 Гаспарян/eg<+
 Гаспар/eg<+
-Гаташ noun:m:nv:ist|noun:f:nv:ist
+Гаташ noun:m:nv:np:anim|noun:f:nv:np:anim
 Гаудеамус/eg
-Гауді noun:m:nv:ist
+Гауді noun:m:nv:np:anim
 Гафійка/ad<
 Гафія/ad<
 Гафт/eg<+
-Гачечіладзе noun:m:nv:ist|noun:f:nv:ist
+Гачечіладзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Гачкевич/eg<+
 Гашек/eg<+
-Гаяне noun:f:nv:ist
-Гварнері noun:m:nv:ist
-Гвен noun:f:nv:ist
-Гвердцителі noun:m:nv:ist|noun:f:nv:ist
-Гвідо noun:m:nv:ist
-Гвінет noun:f:nv:ist
+Гаяне noun:f:nv:np:anim
+Гварнері noun:m:nv:np:anim
+Гвен noun:f:nv:np:anim
+Гвердцителі noun:m:nv:np:anim|noun:f:nv:np:anim
+Гвідо noun:m:nv:np:anim
+Гвінет noun:f:nv:np:anim
 Геба/ad<
 Геббельс/eg<+
 Гебріел/egh<
@@ -1262,9 +1262,9 @@
 Гейдар/egh<
 Гейзенберг/eg<+
 Гейзенберґ/eg<+
-Гейлі noun:f:nv:ist
+Гейлі noun:f:nv:np:anim
 Гейтс/efg<+
-Гекльберрі noun:m:nv:ist
+Гекльберрі noun:m:nv:np:anim
 Гектор/egh<
 Гелетей/eg<+
 Геліос/egh<
@@ -1277,13 +1277,13 @@
 Геннадій/egp
 Генрик/eg<
 Генріх/eg<
-Генрі noun:m:nv:ist
+Генрі noun:m:nv:np:anim
 Геншер/eg<+
 Георгієвський/V<
 Георгієв/U<+
 Георгій/egp
 Георгіос/egh<
-Георгіу noun:m:nv:ist|noun:f:nv:ist
+Георгіу noun:m:nv:np:anim|noun:f:nv:np:anim
 Георг/eg<
 Геракліт/egh<
 Геракл/egh<
@@ -1299,12 +1299,12 @@
 Гергієв/U<+
 Герич/eg<+
 геркулесовий/V
-Гермайзе noun:m:nv:ist
+Гермайзе noun:m:nv:np:anim
 Герман/eghp
 Гермес/egh<
 Герміона/ad<
 Геродот/egh<
-Геррі noun:m:nv:ist
+Геррі noun:m:nv:np:anim
 Герта/ad<
 Гертруда/ad<
 Герцен/eg<+
@@ -1312,8 +1312,8 @@
 Гершель/eg<+
 Гершел/eg<+
 Гершензон/eg<+
-Гессе noun:m:nv:ist
-Гете noun:m:nv:ist
+Гессе noun:m:nv:np:anim
+Гете noun:m:nv:np:anim
 Гетсиманський/i
 Гетьманчук/eg<+
 Гефест/eg<+
@@ -1321,28 +1321,28 @@
 Гжегож/egh<
 Гирич/eg<+
 Гібсон/eg<+
-Гіві noun:m:nv:ist
-Гігіадзе noun:m:nv:ist
-Гігі noun:m:nv:ist
+Гіві noun:m:nv:np:anim
+Гігіадзе noun:m:nv:np:anim
+Гігі noun:m:nv:np:anim
 Гіґс/eg<+
 Гідон/egh<
-Гідо noun:m:nv:ist
+Гідо noun:m:nv:np:anim
 Гійом/egh<
-Гіларі noun:f:nv:ist
+Гіларі noun:f:nv:np:anim
 Гілберт/egh<
 Гілевич/eg<+
 Гіленко/e<+
-Гілларі noun:f:nv:ist
+Гілларі noun:f:nv:np:anim
 Гіменей/eg<+
 Гіммлер/eg<+
 Гінзберг/eg<+
 Гінзбург/eg<+
 Гіннесс/eg<+
-Гіоане noun:m:nv:ist
+Гіоане noun:m:nv:np:anim
 Гіппократ/egh<
 Гітлер/egh<
 Гія/a
-Гі noun:m:nv:ist
+Гі noun:m:nv:np:anim
 Гладій/eg<+
 Гладкова/i<+
 Гладченко/e<+
@@ -1372,7 +1372,7 @@
 Гоголь/eg<+
 Годар/eg<+
 Годвін/eg<+
-Годунко noun:m:nv:ist|noun:f:nv:ist
+Годунко noun:m:nv:np:anim|noun:f:nv:np:anim
 Годунов/U<+
 Гокінг/eg<+
 Голенко/e<+
@@ -1405,7 +1405,7 @@
 Гомес/eg<+
 Гомеш/eg<+
 Гомулка/a<+ ^noun:m
-Гонгадзе noun:m:nv:ist
+Гонгадзе noun:m:nv:np:anim
 Гонзалес/eg<+
 Гонкурівська/i<+
 Гонсалес/eg<+
@@ -1417,7 +1417,7 @@
 Горак/eg<+
 Горан/egh<
 Горацій/eg<
-Гораціо noun:m:nv:ist
+Гораціо noun:m:nv:np:anim
 Горбаль/eg<+
 Горбатенко/e<+
 Горбатов/U<+
@@ -1430,7 +1430,7 @@
 Горбулін/eg<+
 Горбуненко/e<+
 Горбунов/U<+
-Горделадзе noun:m:nv:ist|noun:f:nv:ist
+Горделадзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Гордєєв/U<+
 Гординський/V<
 гордієвий/V
@@ -1466,17 +1466,17 @@
 Гребенщиков/U<+
 Гребенюк/eg<+
 Гребешков/U<+
-Грегорі noun:m:nv:ist
+Грегорі noun:m:nv:np:anim
 Грег/eg<
-Грейс noun:m:nv:ist|noun:f:nv:ist
-Греммі noun:f:nv:ist
+Грейс noun:m:nv:np:anim|noun:f:nv:np:anim
+Греммі noun:f:nv:np:anim
 Гресь/eg<+
 Грета/ad<
 Гретер/eg<+
-Гретхен noun:f:nv:ist
+Гретхен noun:f:nv:np:anim
 Гречко/i<+
 Грибанов/U<+
-Грибаускайте noun:f:nv:ist
+Грибаускайте noun:f:nv:np:anim
 Грибовицький/V<
 Грибович/eg<+
 Грибоєдов/U<+
@@ -1505,10 +1505,10 @@
 Гришко/e<+
 Грищенко/e<+
 Грищук/eg<+
-Грімальді noun:m:nv:ist|noun:f:nv:ist
+Грімальді noun:m:nv:np:anim|noun:f:nv:np:anim
 Грінченко/e<+
 Гройсман/eg<+
-Громико noun:m:nv:ist
+Громико noun:m:nv:np:anim
 Громовенко/e<+
 Гроссман/eg<+
 Гросс/eg<+
@@ -1518,18 +1518,18 @@
 Губерман/eg<+
 Губерський/i<+
 Губерт/eg<+
-Губіанурі noun:m:nv:ist|noun:f:nv:ist
+Губіанурі noun:m:nv:np:anim|noun:f:nv:np:anim
 Губський/i<+
 Гувер/eg<+
-Гуго noun:m:nv:ist
+Гуго noun:m:nv:np:anim
 Гудзь/eg<+
 Гудзяк/eg<+
 Гудима/a<+ ^noun:m
 Гудименко/e<+
 Гудимов/U<+
-Гудіні noun:m:nv:ist
+Гудіні noun:m:nv:np:anim
 Гузар/eg<+
-Гулак-Артемовський noun:m:v_naz:ist
+Гулак-Артемовський noun:m:v_naz:anim
 Гулієв/U<+
 Гумберт/egh<
 Гумбольдт/eg<+
@@ -1539,7 +1539,7 @@
 Гуморина/a
 Гундяєв/U<+
 Гурвіц/eg<+
-Гурченко noun:f:nv:ist
+Гурченко noun:f:nv:np:anim
 Гусаров/U<+
 Гусейнов/U<+
 Гусєв/U<+
@@ -1548,12 +1548,12 @@
 Гусман/eg<+
 Густав/egh<
 Гуцол/eg<+
-Гуччі noun:m:nv:ist
-Гюго noun:m:nv:ist
-Гюльчатай noun:f:nv:ist
+Гуччі noun:m:nv:np:anim
+Гюго noun:m:nv:np:anim
+Гюльчатай noun:f:nv:np:anim
 Гюстав/egh<
 Ґалілей/eg<+
-Ґалілео noun:m:nv:ist
+Ґалілео noun:m:nv:np:anim
 Ґамп/eg<+
 Давиденко/e<+
 Давидов/U<+
@@ -1562,10 +1562,10 @@
 Дагаєв/U<+
 Даглас/eg<+
 Дажбог/eg<
-Даладьє noun:m:nv:ist
+Даладьє noun:m:nv:np:anim
 д'Аламбер/eg<+
 Даліла/ad<
-Далі noun:m:nv
+Далі noun:m:nv:np
 Даль/eg<+
 Даманський/V<
 Дамм/eg<+
@@ -1582,12 +1582,12 @@
 Данило/ehp
 Данильчук/eg<+
 Данилюк/eg<+
-Даніеле noun:m:nv:ist
+Даніеле noun:m:nv:np:anim
 Даніель/eg<
 Даніел/egh<
 Данко/e<
 Дантес/eg<+
-Данте noun:m:nv:ist
+Данте noun:m:nv:np:anim
 Дантон/eg<+
 Данченко/e<+
 Данькевич/eg<+
@@ -1597,9 +1597,9 @@
 Даринка/ad<
 Дарійка/ad<
 Дарій/eg<
-Даріо noun:m:nv:ist
+Даріо noun:m:nv:np:anim
 Дарія/ad<
-д'Арк noun:f:nv:ist
+д'Арк noun:f:nv:np:anim
 д'Артаньян/eg<+
 Даруня/a<
 Даруся/a<
@@ -1617,29 +1617,29 @@
 Дашкевич/eg<+
 Даяна/ad<
 Дворак/eg<+
-Дебюссі noun:m:nv:ist
+Дебюссі noun:m:nv:np:anim
 Девід/egh<
 Девіс/eg<+
 Девіч/eg<+
-Деві noun:m:nv:ist|noun:f:nv:ist
+Деві noun:m:nv:np:anim|noun:f:nv:np:anim
 Дегтярівська/i<+
 Дегтярьов/U<+
 Дездемона/ad<
 Дейвід/egh<
 Дейвіс/eg<+
 Дейв/egh<
-Дейзі noun:f:nv:ist
+Дейзі noun:f:nv:np:anim
 Дейк/eg<+
 Дейл/egh<
 Деймон/eg<+
 Дейч/eg<+
 Декамерон/eg<+
 Декарт/eg<+
-Делакруа noun:m:nv:ist|noun:f:nv:ist
+Делакруа noun:m:nv:np:anim|noun:f:nv:np:anim
 Делієв/U<+
 Делон/eg<+
 Дементьєв/U<+
-Деметрадзе noun:m:nv:ist
+Деметрадзе noun:m:nv:np:anim
 Деметра/ad<
 Демиденко/e<+
 Демидович/eg<+
@@ -1647,9 +1647,9 @@
 Деміен/egh<
 Демієн/egh<
 Демішкан/eg<+
-Демі noun:f:nv:ist
+Демі noun:f:nv:np:anim
 Демосфен/eg<+
-Демпсі noun:m:nv:ist
+Демпсі noun:m:nv:np:anim
 Демуцький/i<+
 Демчак/eg<+
 Демченко/e<+
@@ -1665,14 +1665,12 @@
 Деніел/egh<
 денікінський/V
 Денікін/eg<+
-Дені noun:m:nv:ist
+Дені noun:m:nv:np:anim
 Денніс/egh<
-Денніс noun:f:nv:ist
-Денні noun:m:nv:ist
-Курков/U<+
-Кротов/U<+
-Депардьє noun:m:nv:ist
-Депортиво noun:m:nv:ist
+Денніс noun:f:nv:np:anim
+Денні noun:m:nv:np:anim
+Депардьє noun:m:nv:np:anim
+Депортиво noun:m:nv:np:anim
 Депп/eg<+
 Дергаусов/U<+
 Дергачов/U<+
@@ -1692,19 +1690,19 @@
 Держгірпромнагляд/e
 Держземагентство/i
 Держказначейство/i
-Держкіно noun:n:nv
+Держкіно noun:n:nv:np
 Держкомархів/ef
-Держкомветмедицини noun:m:nv
+Держкомветмедицини noun:m:nv:np
 Держкомзем/e
 Держкомінформ/e
 Держкомкордон/e
 Держкомлісгосп/e
 Держкомліс/e
-Держкомпідприємництва noun:m:nv
+Держкомпідприємництва noun:m:nv:np
 Держкомрезерв/e
 Держкомрибгосп/e
 Держкомспорт/e
-Держкомтелерадіо noun:m:nv
+Держкомтелерадіо noun:m:nv:np
 Держмитниця/a
 Держмитслужба/a
 Держнацпроект/e
@@ -1716,41 +1714,41 @@
 Держспоживінспекція/a
 Держспоживстандарт/e
 Держстат/e
-Держтелерадіо noun:n:nv
+Держтелерадіо noun:n:nv:np
 Держфільмофонд/e
-Держфінпослуг noun:f:nv
+Держфінпослуг noun:f:nv:np
 Дериземля/a
 Дерипаска/a<+ ^noun:m
 Десмонд/egh<
 д'Естен/eg<+
-Дефо noun:m:nv:ist
+Дефо noun:m:nv:np:anim
 Дехтярьова/i<+
 Джавахарлал/egh<
 Джаггер/eg<+
-Джакометті noun:m:nv:ist
-Джакомо noun:m:nv:ist
+Джакометті noun:m:nv:np:anim
+Джакомо noun:m:nv:np:anim
 Джаліль/eg<+
 Джамаладінов/U<+
 Джамала/a<+
 Джаміль/eg<
-Джанет noun:f:nv:ist
-Джанні noun:m:nv:ist
-Джапарідзе noun:m:nv:ist
+Джанет noun:f:nv:np:anim
+Джанні noun:m:nv:np:anim
+Джапарідзе noun:m:nv:np:anim
 Джармуш/eg<+
-Джарти noun:m:nv:ist
+Джарти noun:m:nv:np:anim
 Джаспер/egh<
 Джастін/egh<
 Джафар/egh<
-Джейд noun:f:nv
+Джейд noun:f:nv:np
 Джейкобс/eg<+
 Джейк/eg<
 Джейлан/eg<+
 Джеймз/egh<
 Джеймс/egh<
-Джейн noun:f:nv:ist
+Джейн noun:f:nv:np:anim
 Джейсон/egh<
-Джей noun:m:nv|noun:f:nv
-Джекі noun:f:nv:ist
+Джей noun:m:nv:np|noun:f:nv:np
+Джекі noun:f:nv:np:anim
 Джекоб/egh<
 Джексона-Веніка noun:m:v_rod
 Джексон/eg<+
@@ -1758,80 +1756,80 @@
 Джемілєв/U<+
 Джемільов/U<+
 Дженерал
-Дженет noun:f:nv:ist
-Дженіс noun:f:nv:ist
-Дженіфер noun:f:nv:ist
+Дженет noun:f:nv:np:anim
+Дженіс noun:f:nv:np:anim
+Дженіфер noun:f:nv:np:anim
 Дженкінс/eg<+
-Дженніфер noun:f:nv:ist
-Дженні noun:f:nv:ist
-Джен noun:f:nv:ist
+Дженніфер noun:f:nv:np:anim
+Дженні noun:f:nv:np:anim
+Джен noun:f:nv:np:anim
 Джералд/egh<
 Джеральд/egh<
 Джерард/egh<
-Джеремі noun:m:nv:ist
-Джері noun:m:nv:ist
+Джеремі noun:m:nv:np:anim
+Джері noun:m:nv:np:anim
 Джером/egh<
-Джеррі noun:m:nv:ist
+Джеррі noun:m:nv:np:anim
 Джессіка/ad<
-Джессі noun:f:nv:ist
-Джефрі noun:m:nv:ist
+Джессі noun:f:nv:np:anim
+Джефрі noun:m:nv:np:anim
 Джефферсон/eg<+
-Джеффрі noun:m:nv:ist
+Джеффрі noun:m:nv:np:anim
 Джеф/egh<
 Джигарханян/eg<+
-Джиммі noun:m:nv:ist
+Джиммі noun:m:nv:np:anim
 Джим/egh<
-Джоаккіно noun:m:nv:ist
+Джоаккіно noun:m:nv:np:anim
 Джоанна/ad<
-Джоан noun:f:nv:ist
+Джоан noun:f:nv:np:anim
 Джобс/eg<+
-Джованні noun:m:nv:ist
-Джованотті noun:m:nv:ist|noun:f:nv:ist
+Джованні noun:m:nv:np:anim
+Джованотті noun:m:nv:np:anim|noun:f:nv:np:anim
 Джоджик/eg<+
-Джоді noun:f:nv:ist
+Джоді noun:f:nv:np:anim
 Джоел/eg<+
 Джозеф/egh<
 Джойс/egh<
 Джокович/eg<+
 Джоконда/ad<
-Джолі noun:f:nv:ist
-Джонні noun:m:nv:ist
+Джолі noun:f:nv:np:anim
+Джонні noun:m:nv:np:anim
 Джонсон/eg<+
 Джонс/eg<+
 Джон/egh<
-Джоплін noun:f:nv:ist
-Джордано noun:m:nv:ist
+Джоплін noun:f:nv:np:anim
+Джордано noun:m:nv:np:anim
 Джордан/egh<
-Джорджадзе noun:m:nv:ist
+Джорджадзе noun:m:nv:np:anim
 Джорджіна/ad<
-Джорджіо noun:m:nv:ist
-Джорджоне noun:m:nv:ist
-Джорджо noun:m:nv:ist
+Джорджіо noun:m:nv:np:anim
+Джорджоне noun:m:nv:np:anim
+Джорджо noun:m:nv:np:anim
 Джордж/egh<
 Джорж/egh<
 Джоул/eg<+
-Джошуа noun:m:nv:ist
+Джошуа noun:m:nv:np:anim
 Джош/eg<
-Джо noun:m:nv:ist
+Джо noun:m:nv:np:anim
 Джугастрянська/i<+
-Джугашвілі noun:m:nv:ist
-Джудіт noun:f:nv:ist
+Джугашвілі noun:m:nv:np:anim
+Джудіт noun:f:nv:np:anim
 Джуд/egh<
-Джузеппе noun:m:nv:ist
+Джузеппе noun:m:nv:np:anim
 Джуканович/eg<+
-Джуліано noun:m:nv:ist
+Джуліано noun:m:nv:np:anim
 Джуліан/egh<
-Джуліо noun:m:nv:ist
+Джуліо noun:m:nv:np:anim
 Джулія/a<
-Джулі noun:f:nv:ist
+Джулі noun:f:nv:np:anim
 Джульєтта/ad<
-Джульєтто noun:m:nv:ist
-Джульєтт noun:f:nv:ist
+Джульєтто noun:m:nv:np:anim
+Джульєтт noun:f:nv:np:anim
 Джуринський/V<
 Дзержинськвугілля/i
 Дзержинський/i<+
 Дзиндра/a<+
-Дзінтарі noun:nv
+Дзінтарі noun:nv:np
 Дзюбенко/e<+
 Димитрій/eg<
 Димитров/U<+
@@ -1842,26 +1840,26 @@
 Дідик/eg<+
 Дідона/ad<
 Дідро/i<+
-Дідьє noun:m:nv:ist
-Дієго noun:m:nv:ist
-Діззі noun:m:nv:ist
-Дізраелі noun:m:nv:ist
-Діке noun:m:nv:ist
+Дідьє noun:m:nv:np:anim
+Дієго noun:m:nv:np:anim
+Діззі noun:m:nv:np:anim
+Дізраелі noun:m:nv:np:anim
+Діке noun:m:nv:np:anim
 Дікінсон/eg<+
 Діккенс/eg<+
-Діксі noun:m:nv|noun:f:nv
+Діксі noun:m:nv:np|noun:f:nv:np
 Діксон/eg<+
 Ділан/eg<+
 Дімаров/U<+
 Діма/ad<
 Дімітріс/egh<
 Діна/ad<
-Діно noun:m:nv:ist
+Діно noun:m:nv:np:anim
 Діоген/egh<
 Діонісій/eg<
 Діоніс/eg<
-Діон noun:m:nv:ist|noun:f:nv:ist
-Діскавері noun:m:nv
+Діон noun:m:nv:np:anim|noun:f:nv:np:anim
+Діскавері noun:m:nv:np
 Діснейленд/e
 Дісней/eg<+
 Дітер/egh<
@@ -1872,12 +1870,12 @@
 Дмитриченко/e<+
 Дмитро/ehp
 Дмитрук/eg<+
-Дніпроавіа noun:f:nv:ist
+Дніпроавіа noun:f:nv:np:anim
 Дніпроазот/e
 Дніпрогаз/e
 Дніпрогес/e
-Дніпроенерго noun:n:nv
-Дніпрообленерго noun:n:nv
+Дніпроенерго noun:n:nv:np
+Дніпрообленерго noun:n:nv:np
 Дніпроспецсталь/i
 Дністровськ/eg
 Добкін/eg<+
@@ -1897,26 +1895,26 @@
 Докінз/eg<+
 Долгополов/U<+
 Долинський/V<
-Долорес noun:f:nv:ist
+Долорес noun:f:nv:np:anim
 Доманський/V<
 Домбровський/i<+
-Доменіко noun:m:nv:ist
-Домінго noun:m:nv:ist
+Доменіко noun:m:nv:np:anim
+Домінго noun:m:nv:np:anim
 Домінік/eg<
 Домогаров/U<+
 Домонтович/eg<+
 Дональдсон/eg<+
 Дональд/egh<
-Донбасаеро noun:f:nv:ist
+Донбасаеро noun:f:nv:np:anim
 Донбасантрацит/e
-Донбасенерго noun:n:nv
+Донбасенерго noun:n:nv:np
 Донгорбанк/e
 Донецьквугілля/i
 Донецькміськтепломережа/a
-Донецькобленерго noun:n:nv
+Донецькобленерго noun:n:nv:np
 Донецьксталь/i
 Доній/eg<+
-Доніцетті noun:m:nv:ist
+Доніцетті noun:m:nv:np:anim
 Донміськбанк/e
 Донцов/U<+
 допплерівський/V
@@ -1925,7 +1923,7 @@
 Доріан/egh<
 Дорота/ad<
 Доротея/a<
-Дороті noun:f:nv:ist
+Дороті noun:f:nv:np:anim
 Дорошенко/e<+
 Дорошкевич/eg<+
 Дорфман/eg<+
@@ -1934,7 +1932,7 @@
 Доценко/e<+
 Драган/eg<+
 Драгоманов/U<+
-Драго noun:m:nv:ist
+Драго noun:m:nv:np:anim
 Драйзер/eg<+
 Дракула/a<+ ^noun:m
 Дрейк/eg<+
@@ -1958,7 +1956,7 @@
 Дугін/U<+
 Дуглас/egh<
 Дудаєв/U<+
-Дулітл noun:m:nv:ist
+Дулітл noun:m:nv:np:anim
 Думанський/i<+
 Дунаєвський/i<+
 Дункан/eg<+
@@ -1969,12 +1967,12 @@
 Душан/egh<
 Дьєрдь/eg<+
 Дьомін/U<+
-Дювальє noun:m:nv:ist|noun:f:nv:ist
-Дюверже noun:m:nv:ist
-Дюма noun:m:nv:ist
-Дюранті noun:m:nv:ist
+Дювальє noun:m:nv:np:anim|noun:f:nv:np:anim
+Дюверже noun:m:nv:np:anim
+Дюма noun:m:nv:np:anim
+Дюранті noun:m:nv:np:anim
 Дюрер/eg<+
-Дюре noun:m:nv:ist|noun:f:nv:ist
+Дюре noun:m:nv:np:anim|noun:f:nv:np:anim
 Дюрренматт/eg<+
 Дюрчань/eg<+
 Дюшан/eg<+
@@ -1983,28 +1981,28 @@
 Дядюра/a<+ ^noun:m
 Дяченко/ef<+
 Дячук/eg<+
-Еббі noun:m:nv:ist|noun:f:nv:ist
+Еббі noun:m:nv:np:anim|noun:f:nv:np:anim
 Ебергард/eg<+
 Еберт/eg<+
 Еванс/eg<+
 Еван/egh<
 Евеліна/ad<
-Евелін noun:f:nv:ist
+Евелін noun:f:nv:np:anim
 евклідовий/V
 Евклід/egh<
 Едвардс/eg<+
 Едвард/eghp
 Едвін/egh<
 Едгар/eghp
-Едді noun:m:nv:ist
+Едді noun:m:nv:np:anim
 Едик/eg<
 Едіп/egh<
 Едісон/eg<+
 Едіта/ad<
-Едіт noun:f:nv:ist
+Едіт noun:f:nv:np:anim
 Едмонд/eghp
 Едмунд/eghp
-Едуардо noun:m:nv:ist
+Едуардо noun:m:nv:np:anim
 Едуард/eghp
 Едуар/egh<
 Ежен/egh<
@@ -2012,15 +2010,15 @@
 Ейзенхауер/eg<+
 Ейзенштейн/eg<+
 Ейлер/eg<+
-Ейлін noun:f:nv:ist
+Ейлін noun:f:nv:np:anim
 Ейнштейн/eg<+
-Ейрі noun:m:nv:ist
+Ейрі noun:m:nv:np:anim
 Ейфелева/i
 Ейфель/eg<+
 Ейфман/eg<+
 Ейхман/eg<+
 Ека/a<
-Екзюпері noun:m:nv:ist
+Екзюпері noun:m:nv:np:anim
 екс-бютівець/abc<
 Експоцентр/e
 Екхард/eg<+
@@ -2029,24 +2027,24 @@
 Елвіс/egh<
 Елгар/eg<+
 Електроважмаш/e
-Елен noun:f:nv:ist
+Елен noun:f:nv:np:anim
 Елеонора/ad<
-Елеонор noun:f:nv:ist
-Еліаде noun:m:nv:ist
+Елеонор noun:f:nv:np:anim
+Еліаде noun:m:nv:np:anim
 Еліассон/eg<+
 Еліас/egh<
-Еліа noun:m:nv:ist
-Елізабет noun:f:nv:ist
+Еліа noun:m:nv:np:anim
+Елізабет noun:f:nv:np:anim
 Еліза/ad<
 Еліна/ad<
 Еліот/egh<
-Еліс noun:f:nv:ist
+Еліс noun:f:nv:np:anim
 Елла/ad<
-Еллен noun:f:nv:ist
+Еллен noun:f:nv:np:anim
 Елліотт/egh<
 Елліот/egh<
 Еллісон/egh<
-Еллі noun:f:nv:ist
+Еллі noun:f:nv:np:anim
 Еллочка/ad<
 Елоїза/ad<
 Елтон/egh<
@@ -2056,79 +2054,79 @@
 Ельмар/egh<
 Ельнара/ad<
 Емануель/eg<
-Емануель- noun:f:nv:ist
-Емелі noun:f:nv:ist
+Емануель- noun:f:nv:np:anim
+Емелі noun:f:nv:np:anim
 Емерсон/egh<
-Еміліо noun:m:nv:ist
+Еміліо noun:m:nv:np:anim
 Емілія/ad<
-Емілі noun:f:nv:ist
+Емілі noun:f:nv:np:anim
 Еміль/eg<
 Еміл/eg<
-Емі noun:f:nv:ist
+Емі noun:f:nv:np:anim
 Еммануель/eg<
 Еммануїл/eghp
 Емма/ad<
-Емполі noun:m:nv
+Емполі noun:m:nv:np
 Емський/V
 Енгельгардт/eg<+
 Енгельс/eg<+
-Енді noun:m:nv:ist
-Ендре noun:m:nv:ist
+Енді noun:m:nv:np:anim
+Ендре noun:m:nv:np:anim
 Ендрюс/eg<+
-Ендрю noun:m:nv:ist
+Ендрю noun:m:nv:np:anim
 Енеїда/a
 Еней/eg<
 Енергоатом/e
 Енергоінвест/e
 Енігма/a
-Енніо noun:m:nv:ist
-Енріке noun:m:nv:ist
-Енріко noun:m:nv:ist
-Ентоні noun:m:nv:ist
+Енніо noun:m:nv:np:anim
+Енріке noun:m:nv:np:anim
+Енріко noun:m:nv:np:anim
+Ентоні noun:m:nv:np:anim
 Еол/egh<
 Епштейн/eg<+
 Еразм/egh<
 Ераст/egh<
 Ервін/egh<
 Ергард/egh<
-Ерделі noun:m:nv:ist
+Ерделі noun:m:nv:np:anim
 Ердеш/eg<
 Ердоган/eg<+
 Еренбург/eg<+
 Еріка/ad<
 Еріксон/eg<+
 Ерік/eg<
-Ерін noun:f:nv:ist
+Ерін noun:f:nv:np:anim
 Еріх/eg<
 Ерленд/egh<
 Ерліх/eg<
 Ерл/egh<
-Ернесто noun:m:nv:ist
+Ернесто noun:m:nv:np:anim
 Ернест/egh<
-Ерні noun:m:nv:ist
+Ерні noun:m:nv:np:anim
 Ернст/egh<
-Ерріо noun:m:nv:ist
+Ерріо noun:m:nv:np:anim
 Ерхард/egh<
 есдек/efg<
 Есмарх/eg<+
 Есмеральда/ad<
-Еспозіто noun:m:nv:ist
-Естергазі noun:m:nv:ist|noun:f:nv:ist
-Естер noun:f:nv:ist
-Есте noun:f:nv:ist
-Есфір noun:f:nv:ist
+Еспозіто noun:m:nv:np:anim
+Естергазі noun:m:nv:np:anim|noun:f:nv:np:anim
+Естер noun:f:nv:np:anim
+Есте noun:f:nv:np:anim
+Есфір noun:f:nv:np:anim
 Есхіл/eg<+
-Етель noun:m:nv|noun:f:nv:ist
-Ето'О noun:m:nv:ist
+Етель noun:m:nv:np|noun:f:nv:np:anim
+Ето'О noun:m:nv:np:anim
 Еттінгер/eg<+
 Етуш/eg<+
 Етьєн/egh<
 Ефрон/eg<+
 Ефрос/eg<+
 Ехуд/egh<
-Ешлі noun:m:nv:ist
+Ешлі noun:m:nv:np:anim
 Ештон/egh<
-Ештон noun:f:nv
+Ештон noun:f:nv:np
 Єва/ad<
 Євгеній/egp
 Євгенія/ad<
@@ -2144,7 +2142,7 @@
 Єврокомісія/a
 Єврокон/e
 євромайдан/ef
-Євроньюз noun:m:nv
+Євроньюз noun:m:nv:np
 Європол/e
 Євростат/e
 Євросуд/e
@@ -2206,11 +2204,11 @@
 Жаботинський/i<+
 Жадан/eg<+
 Жадсон/eg<+
-Жаклін noun:f:nv:ist
+Жаклін noun:f:nv:np:anim
 Жакоб/egh<
-Жанетт noun:f:nv:ist
+Жанетт noun:f:nv:np:anim
 Жан-Жак/eg<
-Жан-Луї noun:m:nv:ist
+Жан-Луї noun:m:nv:np:anim
 Жанна/ad<
 Жан/egh<
 Жарков/U<+
@@ -2221,31 +2219,31 @@
 Жданов/U<+
 Жебрівський/V<
 Жебровський/V<
-Жеваго noun:m:nv:ist
+Жеваго noun:m:nv:np:anim
 Жевуський/V<
 Жеглов/U<+
 Желєзняк/eg<+
 Желябов/U<+
-Желязни noun:m:nv:ist
+Желязни noun:m:nv:np:anim
 Женя/a<
 Женя/a<- ^noun:m
 Жерар/egh<
 Жердицький/V<
-Жеремі noun:m:nv:ist
-Жеріко noun:m:nv:ist
+Жеремі noun:m:nv:np:anim
+Жеріко noun:m:nv:np:anim
 Жером/egh<
-Живаго noun:m:nv:ist
+Живаго noun:m:nv:np:anim
 Жигулі/f
 Жижек/eg<
-Жизель noun:f:nv:ist
-Жирардо noun:m:nv:ist
+Жизель noun:f:nv:np:anim
+Жирардо noun:m:nv:np:anim
 Жириновський/i<+
-Жискар noun:m:nv:ist
-Житомиробленерго noun:n:nv
+Жискар noun:m:nv:np:anim
+Житомиробленерго noun:n:nv:np
 Жовніренко/e<+
 Жозефіна/ad<
 Жозеф/egh<
-Жозе noun:m:nv:ist
+Жозе noun:m:nv:np:anim
 Жолдак/eg<+
 Жолкевський/V<
 Жора/ad<
@@ -2257,8 +2255,8 @@
 Жуков/U<+
 Жулинська/i<+
 Жулинський/i<+
-Жулі noun:f:nv:ist
-Жульєт noun:f:nv:ist
+Жулі noun:f:nv:np:anim
+Жульєт noun:f:nv:np:anim
 Жуль/eg<
 Жунько/e<+
 Журавльов/U<+
@@ -2266,7 +2264,7 @@
 Забзалюк/eg<+
 Заболотний/i<+
 Заборовський/V<
-Забужко noun:f:nv:ist
+Забужко noun:f:nv:np:anim
 Завадський/V<
 Заваров/U<+
 Завгородній/V<
@@ -2280,14 +2278,14 @@
 Зайченко/e<+
 Зайчук/eg<+
 Закарпатгаз/e
-Закарпаттяобленерго noun:n:nv
+Закарпаттяобленерго noun:n:nv:np
 Закревський/i<+
-Зануссі noun:m:nv:ist
+Зануссі noun:m:nv:np:anim
 Заньковецька/i<+
-Запоріжжяобленерго noun:n:nv
+Запоріжжяобленерго noun:n:nv:np
 Запоріжсталь/i
 Заратустра/ad< ^noun:m
-Зардарі noun:m:nv:ist
+Зардарі noun:m:nv:np:anim
 Заремба/a<+ ^noun:m
 Зарицький/V<
 Зарудний/V<
@@ -2302,14 +2300,14 @@
 Захарчук/eg<+
 Захар/eghp
 Захер-Мазох/eg<+
-Західенерго noun:n:nv
+Західенерго noun:n:nv:np
 Західінкомбанк/e
 Збанацький/V<
 Зборівський/V<
 Зборовський/V<
 Зварич/eg<+
 Звягільський/i<+
-Згуладзе noun:m:nv:ist|noun:f:nv:ist
+Згуладзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Згуровський/i<+
 Зденек/eg<+
 Зевс/egh<
@@ -2325,7 +2323,7 @@
 Зеров/U<+
 Зиновій/egp
 Зідан/eg<+
-Зімбардо noun:m:nv:ist
+Зімбардо noun:m:nv:np:anim
 Зінаїда/ad<
 Зіна/ad<
 Зінедін/egh<
@@ -2342,9 +2340,10 @@
 Золотухін/U<+
 Золтан/egh<
 Зоммер/eg<+
-Зорге noun:m:nv:ist
+Зоран/egh<
+Зорге noun:m:nv:np:anim
 Зореслав/egh<
-Зорро noun:m:nv:ist
+Зорро noun:m:nv:np:anim
 Зоряна/ad<
 Зорянка/ad<
 Зосімов/U<+
@@ -2358,7 +2357,7 @@
 Зубрицька/i<+
 Зубченко/e<+
 Зуєв/U<+
-Зурабішвілі noun:m:nv:ist|noun:f:nv:ist
+Зурабішвілі noun:m:nv:np:anim|noun:f:nv:np:anim
 Зурабов/U<+
 Зураб/egh<
 Зюскінд/eg<+
@@ -2368,7 +2367,7 @@
 Іваненко/e<+
 Іваницький/i<+
 Іваничук/eg<+
-Іванішвілі noun:m:nv:ist|noun:f:nv:ist
+Іванішвілі noun:m:nv:np:anim|noun:f:nv:np:anim
 Іванка/ad<
 Іванко/e<
 Іванна/ad<
@@ -2386,7 +2385,7 @@
 Іващенко/e<+
 Іващук/eg<+
 Івета/ad<
-Івон noun:f:nv:ist
+Івон noun:f:nv:np:anim
 Івченко/e<+
 Іглесіас/eg<+
 Ігнатенко/e<+
@@ -2400,7 +2399,7 @@
 Іда/ad<
 Ієн/egh<
 Ієронім/egh<
-Ізабель noun:f:nv:ist
+Ізабель noun:f:nv:np:anim
 Іздрик/eg<+
 Ізіда/ad<
 Ізмаїльський/V<
@@ -2414,9 +2413,9 @@
 Іларіон/eghp
 Іларія/a<
 Ілащук/eg<+
-Ілзе noun:f:nv:ist
+Ілзе noun:f:nv:np:anim
 Іліада/a
-Ілієску noun:m:nv:ist|noun:f:nv:ist
+Ілієску noun:m:nv:np:anim|noun:f:nv:np:anim
 Іліодор/eghp
 Іліч/eg<+
 Іллєнко/e<+
@@ -2433,30 +2432,30 @@
 Ілюмжинов/U<+
 Імексбанк/e
 Іммануїл/egh<
-Імре noun:m:nv:ist
+Імре noun:m:nv:np:anim
 Інга/ad<
 Інгмар/egh<
-Індевор noun:m:nv
-Індзагі noun:m:nv:ist
+Індевор noun:m:nv:np
+Індзагі noun:m:nv:np:anim
 Індіра/ad<
 Інеса/ad<
-Інес noun:f:nv:ist
+Інес noun:f:nv:np:anim
 Інна/ad<
 Інокентій/egp
-Інтернаціонале noun:m:nv
+Інтернаціонале noun:m:nv:np
 Інтернешнл
 Інтерпайп/e
-Інтерфакс-Україна noun:n:nv
+Інтерфакс-Україна noun:n:nv:np
 Інтерфакс/e
 Інтер/eg
-Інфантіно noun:m:nv:ist
-Іньярріту noun:m:nv:ist
+Інфантіно noun:m:nv:np:anim
+Іньярріту noun:m:nv:np:anim
 Іоанна/ad<
 Іоан/egh<
 Іоланта/a
-Іонеско noun:m:nv:ist|noun:f:nv:ist
-Іонеску noun:m:nv:ist|noun:f:nv:ist
-Іоселіані noun:m:nv:ist
+Іонеско noun:m:nv:np:anim|noun:f:nv:np:anim
+Іонеску noun:m:nv:np:anim|noun:f:nv:np:anim
+Іоселіані noun:m:nv:np:anim
 Іпатіївський/V
 Іпатій/egp
 Іполит/eghp
@@ -2466,7 +2465,7 @@
 Ірвінг/eg<+
 Ірвін/egh<
 Ірена/ad<
-Ірен noun:f:nv:ist
+Ірен noun:f:nv:np:anim
 Ірина/ad<
 Іринка/ad<
 Ірма/ad<
@@ -2478,7 +2477,7 @@
 Ісаченко/e<+
 Ісидор/egh<
 Іскандер/eg<+
-Іскаріот noun:m:nv:ist
+Іскаріот noun:m:nv:np:anim
 Іскрицький/V<
 Ісмаїл/egh<
 Іствуд/eg<+
@@ -2488,17 +2487,17 @@
 Іштван/egh<
 Іщенко/e<+
 Їжакевич/eg<+
-Їржі noun:m:nv:ist
+Їржі noun:m:nv:np:anim
 Йенс/egh<
 Йоахім/egh<
-Йовович noun:f:nv:ist
+Йовович noun:f:nv:np:anim
 Йоганнес/egh<
 Йоганн/egh<
 Йогансен/eg<+
 Йоган/egh<
 Йожеф/egh<
 Йозеф/egh<
-Йоко noun:f:nv:ist
+Йоко noun:f:nv:np:anim
 Йонас/egh<
 Йонеско/e<+
 Йонсен/egh<
@@ -2509,19 +2508,19 @@
 Йосипчук/eg<+
 Йосип/eghp
 Йосиф/egh<
-Йоффе noun:m:nv:ist
+Йоффе noun:m:nv:np:anim
 Йоханссон/eg<+
 Йохан/egh<
 Йошка/ad< ^noun:m
-Кабальє noun:m:nv:ist
+Кабальє noun:m:nv:np:anim
 Кабанов/U<+
 Кабачинська/i<+
 Кавабата/ad< ^noun:m
-Кавалерідзе noun:m:nv:ist|noun:f:nv:ist
+Кавалерідзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Каверін/U<+
-Кавсадзе noun:m:nv:ist|noun:f:nv:ist
+Кавсадзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Каганович/eg<+
-Каддафі noun:m:nv:ist
+Каддафі noun:m:nv:np:anim
 Каденюк/eg<+
 Кадиров/U<+
 Кадочникова/i<+
@@ -2530,7 +2529,7 @@
 Казандзакіс/eg<+
 Казанова/ad< ^noun:m
 Казантип/e
-Казбегі noun:n:nv
+Казбегі noun:n:nv:np
 Казимир/eghp
 Казімеж/eg<
 Казімєж/e-
@@ -2539,11 +2538,11 @@
 Кайдашиха/ad<
 Кайзерслаутерн/eg
 кайзерський/V
-Кайку noun:m:nv:ist
-Кайлі noun:f:nv:ist
+Кайку noun:m:nv:np:anim
+Кайлі noun:f:nv:np:anim
 Кайрат/eg
-Кака noun:m:nv:ist
-Каладзе noun:m:nv:ist
+Кака noun:m:nv:np:anim
+Каладзе noun:m:nv:np:anim
 Калашников/U<+
 Калениченко/e<+
 Калетник/eg<+
@@ -2556,11 +2555,11 @@
 Калитовський/V<
 Калігула/ad< ^noun:m
 Калінін/U<+
-Каліостро noun:m:nv:ist
-Каліпсо noun:f:nv:ist
-Калісто noun:m:nv
-Калліо noun:m:nv:ist
-Калмахелідзе noun:m:nv:ist|noun:f:nv:ist
+Каліостро noun:m:nv:np:anim
+Каліпсо noun:f:nv:np:anim
+Калісто noun:m:nv:np
+Калліо noun:m:nv:np:anim
+Калмахелідзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Калнишевський/V<
 Кальварія/a
 Кальдерон/eg<+
@@ -2573,21 +2572,21 @@
 Каменєв/U<+
 Каменський/V
 Камерон/egh<
-Камерон noun:f:nv:ist
+Камерон noun:f:nv:np:anim
 Каміла/ad<
 Камілла/ad<
-Камілло noun:m:nv:ist
+Камілло noun:m:nv:np:anim
 Каміль/eg<
-Камо noun:m:nv:ist
+Камо noun:m:nv:np:anim
 Кампанелла/a<+ ^noun:m
-Кампо noun:m:nv:ist
-Камю noun:m:nv:ist
-Канделакі noun:nv:ist
+Кампо noun:m:nv:np:anim
+Камю noun:m:nv:np:anim
+Канделакі noun:nv:np:anim
 Каневський/V<
-Канетті noun:m:nv:ist
+Канетті noun:m:nv:np:anim
 кантівський/V
-Канчелі noun:m:nv:ist
-Капелло noun:m:nv:ist
+Канчелі noun:m:nv:np:anim
+Капелло noun:m:nv:np:anim
 Капітолійський/V
 Капітоненко/e<+
 Капітонов/U<+
@@ -2595,14 +2594,14 @@
 Капітошка/ad<
 Капіца/a<+ ^noun:m
 Каплан/eg<+
-Капоне noun:m:nv:ist
+Капоне noun:m:nv:np:anim
 Капранов/U<+
-Капріо noun:m:nv:ist
-Капулетті noun:m:nv:ist
+Капріо noun:m:nv:np:anim
+Капулетті noun:m:nv:np:anim
 Капур/eg<+
 Капустін/eg<+
 Карабас/egh<
-Караваджо noun:m:nv:ist
+Караваджо noun:m:nv:np:anim
 Караваєв/U<+
 Караванський/V<
 Караджич/eg<+
@@ -2618,27 +2617,27 @@
 Карелін/U<+
 Кареніна/i<+
 Карен/egh<
-Карен noun:f:nv:ist
+Карен noun:f:nv:np:anim
 Карзай/eg<+
 Каримов/U<+
 Карімов/U<+
 Карлові/j
 Карлос/egh<
-Карло noun:m:nv:ist
+Карло noun:m:nv:np:anim
 Карлсен/eg<+
 Карлсон/egh<
 Карл/eghp
 Кармазін/U<+
 Кармалюк/eg<+
-Кармапа noun:m:nv:ist
+Кармапа noun:m:nv:np:anim
 кармелітський/V
 Кармелюк/eg<+
-Кармен noun:f:nv:ist
+Кармен noun:f:nv:np:anim
 Карнаухов/U<+
-Карнегі noun:m:nv:ist
-Каролін noun:f:nv:ist
-Кароль noun:f:nv:ist
-Каро noun:nv
+Карнегі noun:m:nv:np:anim
+Каролін noun:f:nv:np:anim
+Кароль noun:f:nv:np:anim
+Каро noun:nv:np
 Карпачов/U<+
 Карпа/a<+
 Карпенка-Карого
@@ -2648,56 +2647,56 @@
 Карпо/ep
 Карпунцов/U<+
 Каррерас/eg<+
-Карре noun:nv
+Карре noun:nv:np
 Карр/eg<+
 Карсон/eg<+
 Карташов/U<+
-Картьє noun:m:nv:ist
-Карузо noun:m:nv:ist
+Картьє noun:m:nv:np:anim
+Карузо noun:m:nv:np:anim
 Карякін/eg<+
 Касіян/eg<+
 Каспаров/U<+
 Каспер/egh<
 Каспрук/eg<+
 Кассандра/ad<
-Кассіні noun:m:nv
+Кассіні noun:m:nv:np
 Кассіопея/a<
 Кастанеда/a<+ ^noun:m
-Кастеллі noun:m:nv
-Кастро noun:m:nv:ist
+Кастеллі noun:m:nv:np
+Кастро noun:m:nv:np:anim
 Каськів/egac<+
 Касьянов/U<+
 Кас'ян/eghp
 Катажина/ad<
-Катамадзе noun:f:nv:ist
+Катамадзе noun:f:nv:np:anim
 Катарина/ad<
 Катаріна/ad<
 Катерина/ad<
 Катеринчук/eg<+
 Катріна/ad<
-Катрін noun:f:nv:ist
+Катрін noun:f:nv:np:anim
 Катруся/a<
 Катря/a<
-Каттані noun:m:nv:ist
+Каттані noun:m:nv:np:anim
 Катя/a<
 каудальний/V
 Кауфман/eg<+
 Кафка/a<+ ^noun:m
 Каха/ad< ^noun:m
-Кахідзе noun:m:nv:ist|noun:f:nv:ist
+Кахідзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Кацман/eg<+
 Качинський/V<
 Качиньський/i<+
 Качуровський/i<+
 Кашпіровський/i<+
-Квазар-Мікро noun:f:nv
-Квазімодо noun:m:nv:ist
+Квазар-Мікро noun:f:nv:np
+Квазімодо noun:m:nv:np:anim
 Квасневський/i<+
 Кваснєвський/i<+
 Квасьнєвський/i<+
 Квентін/egh<
-Квінсі noun:m:nv:ist
-Квіташвілі noun:m:nv:ist|noun:f:nv:ist
+Квінсі noun:m:nv:np:anim
+Квіташвілі noun:m:nv:np:anim|noun:f:nv:np:anim
 Квітка-Основ'яненко
 Квітки-Основ'яненка
 Квіт/eg<+
@@ -2706,33 +2705,33 @@
 Кейдж/eg<+
 Кейнс/eg<+
 Кейн/eg<+
-Кейті noun:f:nv:ist
-Кейт noun:f:nv:ist
+Кейті noun:f:nv:np:anim
+Кейт noun:f:nv:np:anim
 Келлер/eg<+
-Келлі noun:f:nv:ist
-Келсі noun:nv
+Келлі noun:f:nv:np:anim
+Келсі noun:nv:np
 Кемаль/eg<+
 Кемерон/eg<+
 Кемпбелл/eg<+
 Кемпбел/eg<+
 Кендзьор/eg<+
-Кеннеді noun:m:nv:ist|noun:f:nv:ist
+Кеннеді noun:m:nv:np:anim|noun:f:nv:np:anim
 Кеннет/egh<
 Кентерберійський/V
 Кеплер/eg<+
 Керенський/i<+
 Керзон/eg<+
-Кері noun:m:nv:ist|noun:f:nv:ist
+Кері noun:m:nv:np:anim|noun:f:nv:np:anim
 Кернес/eg<+
 Керницький/V
-Керол noun:f:nv:ist
-Керрі noun:m:nv:ist|noun:f:nv:ist
+Керол noun:f:nv:np:anim
+Керрі noun:m:nv:np:anim|noun:f:nv:np:anim
 Керролл/eg<+
 Кертіс/eg<+
-Кессі noun:m:nv:ist|noun:f:nv:ist
-Кетлін noun:f:nv:ist
-Кетрін noun:f:nv:ist
-К'єво noun:m:nv
+Кессі noun:m:nv:np:anim|noun:f:nv:np:anim
+Кетлін noun:f:nv:np:anim
+Кетрін noun:f:nv:np:anim
+К'єво noun:m:nv:np
 Києво-Могилянський/V
 Кизима/a<+ ^noun:m
 Київводоканал/e
@@ -2740,7 +2739,7 @@
 Київгенплан/e
 Київдержадміністрація/a
 Київенергохолдинг/e
-Київенерго noun:n:nv
+Київенерго noun:n:nv:np
 Київжитлоспецексплуатація/a
 Київзеленбуд/e
 Київміськадміністрація/a
@@ -2749,7 +2748,7 @@
 Київміськрада/a
 Київмлин/e
 Київнаукфільм/e
-Київобленерго noun:n:nv
+Київобленерго noun:n:nv:np
 Київпастранс/e
 Київпроект/e
 Київрада/a
@@ -2770,41 +2769,41 @@
 Киричук/eg<+
 Кирпонос/eg<+
 Кисельов/U<+
-Кіану noun:m:nv:ist
-Кіаростамі noun:m:nv:ist
+Кіану noun:m:nv:np:anim
+Кіаростамі noun:m:nv:np:anim
 Ківалов/U<+
-Кідман noun:f:nv:ist
-Кікабідзе noun:m:nv:ist
-Кіквідзе noun:m:nv:ist
-Кімберлі noun:f:nv:ist
-Кім noun:f:nv:ist
+Кідман noun:f:nv:np:anim
+Кікабідзе noun:m:nv:np:anim
+Кіквідзе noun:m:nv:np:anim
+Кімберлі noun:f:nv:np:anim
+Кім noun:f:nv:np:anim
 Кінах/eg<+
 Кінг-Конг/eg<
-Кінгслі noun:m:nv:ist
+Кінгслі noun:m:nv:np:anim
 Кінг/eg<+
-Кін-дза-дза noun:nv
-Кіндзмараулі noun:n:nv
+Кін-дза-дза noun:nv:np
+Кіндзмараулі noun:n:nv:np
 Кіндратій/egp
 Кіндрат/eghp
 Кінотавр/e
-Кінскі noun:f:nv:ist
-кіокушинкай noun:m:nv
-Кіпіані noun:m:nv:ist|noun:f:nv:ist
+Кінскі noun:f:nv:np:anim
+кіокушинкай noun:m:nv:np
+Кіпіані noun:m:nv:np:anim|noun:f:nv:np:anim
 Кіплінг/eg<+
 Кіра/ad<
 Кіреєв/U<+
 Кірєєв/U<+
 Кірієнко/e<+
 Кіркоров/U<+
-Кіровоградобленерго noun:n:nv
+Кіровоградобленерго noun:n:nv:np
 Кірпа/a<+ ^noun:m
 Кірсанов/U<+
 Кірсан/egh<
-Кірстен noun:m:nv:ist|noun:f:nv:ist
+Кірстен noun:m:nv:np:anim|noun:f:nv:np:anim
 Кірш/eg<+
 Кіссінджер/eg<+
-Кітано noun:m:nv:ist
-Кітті noun:f:nv:ist
+Кітано noun:m:nv:np:anim
+Кітті noun:f:nv:np:anim
 Кіхот/eg<+
 Клавдій/egp
 Клавдія/ad<
@@ -2814,14 +2813,14 @@
 Кларенс/egh<
 Кларксон/eg<+
 Кларк/eg<+
-Клаудіо noun:m:nv:ist
+Клаудіо noun:m:nv:np:anim
 Клаудія/ad<
 Клаус/egh<
 Клейтон/eg<+
 Клеопатра/ad<
 Клепаков/e
 Клептон/eg<+
-Клер noun:f:nv:ist
+Клер noun:f:nv:np:anim
 Клименко/e<+
 Климентій/eg<
 Климентьєв/U<+
@@ -2834,13 +2833,13 @@
 Клімов/U<+
 Клімт/eg<+
 Клінтон/efg<+
-Клінтон noun:f:nv
+Клінтон noun:f:nv:np
 Клінт/egh<
-Кліо noun:f:nv:ist
+Кліо noun:f:nv:np:anim
 Клод/egh<
-Клозе noun:m:nv:ist
+Клозе noun:m:nv:np:anim
 Клочкова/i<+
-Клочко noun:m:nv:ist|noun:f:nv:ist
+Клочко noun:m:nv:np:anim|noun:f:nv:np:anim
 Клюєв/U<+
 Ключковський/V<
 Кляйн/eg<+
@@ -2857,8 +2856,8 @@
 Ковальчук/eg<+
 Ковжун/eg<+
 Ковтуненко/e<+
-Коельйо noun:m:nv:ist
-Коельо noun:m:nv:ist
+Коельйо noun:m:nv:np:anim
+Коельо noun:m:nv:np:anim
 Коен/efg<+
 Кожевін/U<+
 Кожедуб/eg<+
@@ -2873,11 +2872,11 @@
 Козленко/e<+
 Козловський/i<+
 Козулін/eg<+
-Коїдзумі noun:m:nv:ist
+Коїдзумі noun:m:nv:np:anim
 Койпер/eg<+
-Кокойти noun:m:nv:ist
+Кокойти noun:m:nv:np:anim
 Кокотюха/a<+ ^noun:m
-Коко noun:f:nv:ist
+Коко noun:f:nv:np:anim
 Колдер/eg<+
 Колдуелл/eg<+
 Колесниченко/e<+
@@ -2899,7 +2898,7 @@
 Коля/a< ^noun:m
 Комарницький/V<
 Комаровський/V<
-Коменчіні noun:m:nv:ist
+Коменчіні noun:m:nv:np:anim
 Комісаренко/e<+
 Коморовський/V<
 Компанієць/ac<
@@ -2914,8 +2913,8 @@
 Конєв/U<+
 Кониський/V
 Конкорд/efg
-Коннері noun:m:nv:ist|noun:f:nv:ist
-Конні noun:f:nv:ist
+Коннері noun:m:nv:np:anim|noun:f:nv:np:anim
+Конні noun:f:nv:np:anim
 Коноваленко/e<+
 Коновалець/ac<
 Коновалов/U<+
@@ -2926,8 +2925,8 @@
 Конрад/egh<
 Константінос/egh<
 Констанція/ad<
-Консуело noun:m:nv:ist
-Конте noun:m:nv:ist|noun:f:nv:ist
+Консуело noun:m:nv:np:anim
+Конте noun:m:nv:np:anim|noun:f:nv:np:anim
 Конфуцій/eg<
 Концевич/eg<+
 Кончаловський/V<
@@ -2943,14 +2942,14 @@
 Копперфілд/eg<+
 Коппола/a<+ ^noun:m
 Коран/eh
-Кордеро noun:m:nv:ist
+Кордеро noun:m:nv:np:anim
 Корецький/V<
 Коржаков/U<+
-Корлеоне noun:m:nv:ist
+Корлеоне noun:m:nv:np:anim
 Корнацький/i<+
 Корнелій/eg<
 Корнеліус/egh<
-Корнеліу noun:m:nv:ist
+Корнеліу noun:m:nv:np:anim
 Корнелюк/eg<+
 Корнієнко/e<+
 Корнійчук/eg<+
@@ -2969,12 +2968,12 @@
 Коротков/U<+
 Коротченко/e<+
 Корпан/eg<+
-Корраді noun:m:nv:ist
-Коррадо noun:m:nv:ist
-Коррі noun:m:nv:ist|noun:f:nv:ist
+Корраді noun:m:nv:np:anim
+Коррадо noun:m:nv:np:anim
+Коррі noun:m:nv:np:anim|noun:f:nv:np:anim
 Кортасар/eg<+
 Кортес/eg<+
-Кортні noun:f:nv:ist
+Кортні noun:f:nv:np:anim
 Корчагін/U<+
 Корчинський/i<+
 Коршунов/U<+
@@ -2987,7 +2986,7 @@
 Космодем'янська/i<+
 Кособукін/U<+
 Костас/egh<
-Костелло noun:m:nv:ist
+Костелло noun:m:nv:np:anim
 Костельник/eg<+
 Костенко/e<+
 Костецький/V<
@@ -3002,7 +3001,7 @@
 Котляревський/i<+
 Которович/eg<+
 Коул/eg<+
-Кофі noun:m:nv:ist
+Кофі noun:m:nv:np:anim
 Кофман/eg<+
 Коцемир/eg<+
 Коцький/i<+
@@ -3024,13 +3023,13 @@
 Краснов/U<+
 Краснодонвугілля/i
 Красовський/V<
-Краузе noun:m:nv:ist
+Краузе noun:m:nv:np:anim
 Краус/eg<+
 Кредитпромбанк/e
 Кредобанк/e
 Крейг/eg<+
 Кремер/eg<+
-Креспо noun:m:nv:ist
+Креспо noun:m:nv:np:anim
 Кретьєн/eg<+
 Кривенко/e<+
 Криволап/eg<+
@@ -3041,7 +3040,7 @@
 Крижанівський/V<
 Крижановський/V<
 Крилов/U<+
-Крименерго noun:n:nv
+Крименерго noun:n:nv:np
 Кримтеплиця/a
 Криницький/V<
 Крип'якевич/eg<+
@@ -3056,32 +3055,33 @@
 Крістер/eg<+
 Крістіан/egh<
 Крістіна/ad<
-Крістіно noun:m:nv:ist
-Крістін noun:f:nv:ist
+Крістіно noun:m:nv:np:anim
+Крістін noun:f:nv:np:anim
 Крістобаль/eg<
 Крістофер/egh<
 Крістоф/egh<
 Кріс/egh<
 Крішна/ad< ^noun:m
-Кріштіану noun:m:nv:ist
-Кромбі noun:m:nv:ist
+Кріштіану noun:m:nv:np:anim
+Кромбі noun:m:nv:np:anim
 Кромвель/eg<+
 Кроненберг/eg<+
 Кронін/eg<+
 Кропивницький/i<+
 Кропоткін/U<+
-Кроулі noun:nv
+Кротов/U<+
+Кроулі noun:nv:np
 Кроуфорд/eg<+
-Кроуфорд noun:f:nv:ist
-Крофт noun:m:nv:ist|noun:f:nv:ist
+Кроуфорд noun:f:nv:np:anim
+Крофт noun:m:nv:np:anim|noun:f:nv:np:anim
 Крощенко/e<+
 Круглов/U<+
 Крузенштерн/eg<+
-Крузо noun:m:nv:ist
+Крузо noun:m:nv:np:anim
 Круз/eg<+
 Крупп/eg<+
 Крупська/i<+
-Крус noun:f:nv:ist
+Крус noun:f:nv:np:anim
 Крушельницький/V<
 Крюгер/eg<+
 Крюківський/i<+
@@ -3089,7 +3089,7 @@
 Крючков/U<+
 Ксаверій/eg<
 Ксавер/egh<
-Ксав'є noun:m:nv:ist
+Ксав'є noun:m:nv:np:anim
 Ксенія/ad<
 Ксенофонтов/U<+
 Ксенофонт/egh<
@@ -3101,7 +3101,7 @@
 Кудрявцев/U<+
 Кудряков/U<+
 Кудряшов/U<+
-Кужель noun:m:nv:ist|noun:f:nv:ist
+Кужель noun:m:nv:np:anim|noun:f:nv:np:anim
 Кужелюк/eg<+
 Кузнєцов/U<+
 Кузьма/adp
@@ -3110,8 +3110,8 @@
 Кузьмін/eg<+
 Кузьмович/eg<+
 Кузьмук/eg<+
-Кузьо noun:m:nv:ist|noun:f:nv:ist
-Куїнджі noun:m:nv:ist
+Кузьо noun:m:nv:np:anim|noun:f:nv:np:anim
+Куїнджі noun:m:nv:np:anim
 Куйбишевський/V<
 Куйбишев/eg
 Куйбишев/U<+
@@ -3144,17 +3144,18 @@
 курбасівець/abc<
 Курбас/eg<+
 Курбатов/U<+
+Курков/U<+
 Курманбек/eg<
 Куросава/a<+ ^noun:m
 Курочкін/eg<+
-Куртуа noun:m:nv:ist
+Куртуа noun:m:nv:np:anim
 Курт/egh<
-Кусто noun:m:nv:ist
+Кусто noun:m:nv:np:anim
 Кустуріца/a<+ ^noun:m
-Кутателадзе noun:m:nv:ist|noun:f:nv:ist
+Кутателадзе noun:m:nv:np:anim|noun:f:nv:np:anim
 Кутузов/U<+
-Кутуньо noun:m:nv:ist
-Кухалейшвілі noun:m:nv:ist|noun:f:nv:ist
+Кутуньо noun:m:nv:np:anim
+Кухалейшвілі noun:m:nv:np:anim|noun:f:nv:np:anim
 Кухаренко/e<+
 Куценко/e<+
 Кучеренко/e<+
@@ -3191,12 +3192,12 @@
 Лаймон/egh<
 Лайон/eg<+
 Лайош/eg<+
-Лакшмі noun:m:nv:ist
+Лакшмі noun:m:nv:np:anim
 Лана/ad<
-Ланге noun:m:nv:ist
+Ланге noun:m:nv:np:anim
 Ланг/eg<+
-Ланґе noun:m:nv:ist
-Ландау noun:m:nv:ist
+Ланґе noun:m:nv:np:anim
+Ландау noun:m:nv:np:anim
 Ландик/eg<+
 Ландік/eg<+
 Ландсбергіс/eg<+
@@ -3207,20 +3208,20 @@
 Лариса/ad<
 Ларін/eg<+
 Ларіонов/U<+
-Ларошфуко noun:m:nv:ist
-Ларрі noun:m:nv:ist
+Ларошфуко noun:m:nv:np:anim
+Ларрі noun:m:nv:np:anim
 Ларссон/eg<+
 Ларс/egh<
-Ласло noun:m:nv:ist
+Ласло noun:m:nv:np:anim
 Лаура/ad<
-Лаціо noun:m:nv
+Лаціо noun:m:nv:np
 Лебедєв/U<+
 Лебединський/V<
 Лебедько/e<+
 Левандовський/V<
 Леван/egh<
 Левицький/V<
-Левінскі noun:m:nv:ist|noun:f:nv:ist
+Левінскі noun:m:nv:np:anim|noun:f:nv:np:anim
 Левінсон/eg<+
 Левітан/eg<+
 Левкович/eg<+
@@ -3229,14 +3230,14 @@
 Левченко/e<+
 Левчук/eg<+
 Лев/eghp
-Леже noun:m:nv:ist
+Леже noun:m:nv:np:anim
 Лейла/ad<
 лексус/efg
 Леля/a<
 Лемберг/eg<+
-Лем'є noun:m:nv:ist
+Лем'є noun:m:nv:np:anim
 Ленард/eg<
-Лендау noun:m:nv:ist
+Лендау noun:m:nv:np:anim
 ленінсько-сталінський/V
 Ленін/ih<
 Леннарт/egh<
@@ -3244,22 +3245,22 @@
 Леннон/eg<+
 Ленфільм/e
 Ленц/eg<+
-Леонардо noun:m:nv:ist
+Леонардо noun:m:nv:np:anim
 Леонард/egh<
 Леонід/eghp
-Леонкавалло noun:m:nv:ist
+Леонкавалло noun:m:nv:np:anim
 Леонов/U<+
 Леонтій/egp
 Леонтович/eg<+
 Леонтьєв/U<+
 Леополіс/eg
 Леопольд/eghp
-Лепсе noun:m:nv:ist
-Лері noun:m:nv:ist
+Лепсе noun:m:nv:np:anim
+Лері noun:m:nv:np:anim
 лермонтовський/V
 Лермонтов/U<+
-Леррі noun:m:nv:ist
-Леслі noun:f:nv:ist
+Леррі noun:m:nv:np:anim
+Леслі noun:f:nv:np:anim
 Лессінг/eg<+
 Лесь/eg<
 Леся/a<
@@ -3271,7 +3272,7 @@
 Лєшек/eg<
 Лжедмитрій/eg<
 Либідь/i<+
-Лижичко noun:f:nv:ist
+Лижичко noun:f:nv:np:anim
 Лизогуб/eg<+
 Лимонов/U<+
 Линник/eg<+
@@ -3288,8 +3289,8 @@
 Литвинова/i<+
 Литвинцев/eg<+
 Литовченко/e<+
-Ліббі noun:m:nv
-Ліберасьйон noun:f:nv:ist
+Ліббі noun:m:nv:np
+Ліберасьйон noun:f:nv:np:anim
 Ліберман/eg<+
 Лібкнехт/eg<+
 Лівадійський/V
@@ -3297,24 +3298,24 @@
 Лівінгстон/eg<+
 Лівінгстоун/eg<+
 Лівшиць/eg<+
-Лігеті noun:m:nv:ist
+Лігеті noun:m:nv:np:anim
 Ліда/ad<
 Лідія/ad<
 Ліза/ad<
-Ліз noun:f:nv:ist
+Ліз noun:f:nv:np:anim
 Лікарчук/eg<+
 Лікуд/e<+
-Ліліан noun:f:nv:ist
+Ліліан noun:f:nv:np:anim
 Лілієнталь/eg<+
 Ліля/a<
 Лімонов/U<+
 Ліна/ad<
 Лінда/ad<
 Ліндберг/eg<+
-Ліндгрен noun:m:nv:ist|noun:f:nv:ist
-Лінде noun:m:nv:ist
+Ліндгрен noun:m:nv:np:anim|noun:f:nv:np:anim
+Лінде noun:m:nv:np:anim
 Ліндон/egh<
-Ліндсі noun:f:nv:ist
+Ліндсі noun:f:nv:np:anim
 Лінецький/V<
 Лінкольн/eg<+
 Лінней/eg<+
@@ -3322,7 +3323,7 @@
 Лінус/egh<
 Лінч/eg<+
 Ліонель/eg<
-Ліппі noun:m:nv:ist
+Ліппі noun:m:nv:np:anim
 Лісогор/eg<+
 Ліхачов/U<+
 Ліховий/V<
@@ -3337,11 +3338,11 @@
 Лоліта/ad<
 Ломаченко/e<+
 Лопатин/eg<+
-Лопес noun:m:nv:ist|noun:f:nv:ist
-Лорак noun:f:nv:ist
+Лопес noun:m:nv:np:anim|noun:f:nv:np:anim
+Лорак noun:f:nv:np:anim
 Лоран/eg<+
 Лоренс/egh<
-Лоренцо noun:m:nv:ist
+Лоренцо noun:m:nv:np:anim
 Лоренц/egh<
 Лорка/a<+ ^noun:m
 Лотман/eg<+
@@ -3350,17 +3351,17 @@
 Лубківський/i<+
 Лувр/e
 Луганськвугілля/i
-Луганськобленерго noun:n:nv
+Луганськобленерго noun:n:nv:np
 Луганськтепловоз/e
-Лудовічі noun:f:nv:ist
+Лудовічі noun:f:nv:np:anim
 Лужков/U<+
 Лужники/f
-Луїджі noun:m:nv:ist
+Луїджі noun:m:nv:np:anim
 Луїза/ad<
 Луїз/egh<
 Луїс/egh<
 Луїш/eg<
-Луї noun:m:nv:ist
+Луї noun:m:nv:np:anim
 Лукас/egh<
 Лукашевич/eg<+
 лукашенківський/V
@@ -3379,23 +3380,23 @@
 Лула/ad< ^noun:m
 Лунченко/e<+
 Лупул/eg<+
-Лур'є noun:m:nv:ist|noun:f:nv:ist
+Лур'є noun:m:nv:np:anim|noun:f:nv:np:anim
 Лусія/ad<
 Лускунчик/eg<
 Луценко/e<+
-Луцьктепло noun:n:nv
-Луческу noun:m:nv:ist
+Луцьктепло noun:n:nv:np
+Луческу noun:m:nv:np:anim
 Лучкевич/eg<+
 Львіввікнопласт/e
 Львівводоканал/e
 Львіввугілля/i
 Львівгаз/e
 Львівелектротранс/e
-Львівобленерго noun:n:nv
+Львівобленерго noun:n:nv:np
 Львівприлад/e
-Львівсистеменерго noun:n:nv
-Львівтеплоенерго noun:n:nv
-Львівтеплокомуненерго noun:n:nv
+Львівсистеменерго noun:n:nv:np
+Львівтеплоенерго noun:n:nv:np
+Львівтеплокомуненерго noun:n:nv:np
 Львівтрансгаз/e
 Львович/efg<
 Льовочкін/eg<+
@@ -3420,10 +3421,10 @@
 Людовік/eg<
 Люмет/eg<+
 Люм'єр/efg<+
-Люсіль noun:f:nv:ist
+Люсіль noun:f:nv:np:anim
 Люсінда/ad<
 Люсія/ad<
-Люсі noun:f:nv:ist
+Люсі noun:f:nv:np:anim
 Лютер/egh<
 Люфтганза/a
 Люція/a<
@@ -3434,7 +3435,7 @@
 Ляшенко/e<+
 Ляшко/e<+
 Мавка/ad<
-Мавроді noun:m:nv:ist
+Мавроді noun:m:nv:np:anim
 Магдалина/ad<
 Магдаліна/ad<
 Магеллан/eg<+
@@ -3444,9 +3445,9 @@
 Магомед/egh<
 Магомет/egh<
 Маделіна/ad<
-Мадлен noun:f:nv:ist
+Мадлен noun:f:nv:np:anim
 Маєвський/i<+
-Мазаріні noun:m:nv:ist
+Мазаріні noun:m:nv:np:anim
 Мазепа/ad<
 мазепинець/abc<
 мазепинський/V
@@ -3461,7 +3462,7 @@
 Майборода/a ^noun:m
 Майкельсон/eg<+
 Майкл/egh<
-Майкрософт noun:f:nv
+Майкрософт noun:f:nv:np
 Майк/eg<
 Майлз/egh<
 Майлс/egh<
@@ -3470,18 +3471,18 @@
 Макарій/eg<
 Макаров/U<+
 Макар/eghp
-Макбет noun:f:nv:ist
+Макбет noun:f:nv:np:anim
 МакДональдз/eg
 Макдональдз/eg<+
-Макензі noun:m:nv:ist|noun:f:nv:ist
-Макіавеллі noun:m:nv:ist
+Макензі noun:m:nv:np:anim|noun:f:nv:np:anim
+Макіавеллі noun:m:nv:np:anim
 Маківчук/eg<+
 Макіїввугілля/i
-Маккабі noun:m:nv
-Маккарті noun:m:nv:ist|noun:f:nv:ist
-Маккартні noun:m:nv:ist|noun:f:nv:ist
+Маккабі noun:m:nv:np
+Маккарті noun:m:nv:np:anim|noun:f:nv:np:anim
+Маккартні noun:m:nv:np:anim|noun:f:nv:np:anim
 Маккейн/eg<+
-Маккензі noun:m:nv:ist|noun:f:nv:ist
+Маккензі noun:m:nv:np:anim|noun:f:nv:np:anim
 Маклафлін/eg<+
 Макміллан/eg<+
 Макнамара/a<+ ^noun:m
@@ -3493,7 +3494,7 @@
 Максимчук/eg<+
 Максим/eghp<
 Максін/egh<
-Максін noun:f:nv:ist
+Максін noun:f:nv:np:anim
 Макс/egh<
 Маланка/a
 Маланчук/eg<+
@@ -3508,10 +3509,10 @@
 Малишко/e<+
 Малкович/eg<+
 Малкольм/egh<
-Малларме noun:m:nv:ist
+Малларме noun:m:nv:np:anim
 Маломуж/eg<+
 Малуша/ad<
-Мальборо noun:nv
+Мальборо noun:nv:np
 Мальвіна/ad<
 Мальцев/U<+
 Малюков/U<+
@@ -3519,7 +3520,7 @@
 Маляренко/e<+
 Мамаєв/U<+
 Мамай/eg<+
-Мамардашвілі noun:m:nv:ist
+Мамардашвілі noun:m:nv:np:anim
 Мамедов/U<+
 Мамонов/U<+
 Мамука/ad< ^noun:m
@@ -3539,63 +3540,63 @@
 Манштейн/eg<+
 Маня/a<
 Марадона/a<+ ^noun:m
-Маразлі noun:m:nv:ist
+Маразлі noun:m:nv:np:anim
 Марат/egh<
 Марвін/egh<
 Маргарета/ad<
-Маргарет noun:f:nv:ist
+Маргарет noun:f:nv:np:anim
 Маргарита/ad<
 Марголін/eg<+
-Марго noun:f:nv:ist
+Марго noun:f:nv:np:anim
 Маргуліс/eg<+
-Мардж noun:f:nv:ist
+Мардж noun:f:nv:np:anim
 Марек/eg<
 Маренич/efg<+
-Маре noun:m:nv:ist
+Маре noun:m:nv:np:anim
 Марина/ad<
 Мариненко/e<+
 Мариніна/i<+
 Маринович/eg<+
 Марися/a<
-Маріам noun:f:nv:ist
+Маріам noun:f:nv:np:anim
 Маріана/ad<
 Маріанна/ad<
-Маріано noun:m:nv:ist
-Маріан noun:f:nv:ist
-Марі-Домінік noun:f:nv:ist
+Маріано noun:m:nv:np:anim
+Маріан noun:f:nv:np:anim
+Марі-Домінік noun:f:nv:np:anim
 Марієтта/ad<
 Марійка/ad<
 Маріка/ad<
-Маріко noun:f:nv:ist
+Маріко noun:f:nv:np:anim
 Марініна/i<+
-Маріон noun:f:nv:ist|noun:n:nv:ist
+Маріон noun:f:nv:np:anim|noun:n:nv:np:anim
 Маріотт/eg
-Маріо noun:m:nv:ist
-Маріс noun:f:nv:ist
+Маріо noun:m:nv:np:anim
+Маріс noun:f:nv:np:anim
 Маріус/egh<
 Марічка/ad<
 Марія/ad<
-Марі noun:f:nv
+Марі noun:f:nv:np
 Маркарян/eg<+
 Маркевич/eg<+
 Маркес/eg<+
 Маркіян/egh<
 Марков/U<+
-Марконі noun:m:nv:ist
+Марконі noun:m:nv:np:anim
 Маркос/egh<
 Марко/ep
 марксистсько-ленінський/V
 Маркс/egh<
-Маркузе noun:m:nv:ist
+Маркузе noun:m:nv:np:anim
 Маркус/egh<
 Маркуш/eg<
 Марк/eg<
-Марлен noun:f:nv:ist
+Марлен noun:f:nv:np:anim
 Марлон/egh<
-Марло noun:m:nv:ist|noun:f:nv:ist
+Марло noun:m:nv:np:anim|noun:f:nv:np:anim
 Мармазов/U<+
 Марсельєза/ad
-Марсо noun:m:nv:ist|noun:f:nv:ist
+Марсо noun:m:nv:np:anim|noun:f:nv:np:anim
 Марс/eg-
 Марс/egh<
 Марта/ad<
@@ -3608,7 +3609,7 @@
 Мартищук/eg<+
 Мартіна/ad<
 Мартінес/eg<+
-Мартіно noun:m:nv:ist
+Мартіно noun:m:nv:np:anim
 Мартін/eg<+
 Мартос/eg<+
 Маруся/a<
@@ -3618,8 +3619,8 @@
 Марцінкевич/eg<+
 Марцін/egh<
 Марчак/eg<+
-Марчелло noun:m:nv:ist
-Марчело noun:m:nv:ist
+Марчелло noun:m:nv:np:anim
+Марчело noun:m:nv:np:anim
 Марченко/e<+
 Марчук/eg<+
 Маршак/eg<+
@@ -3633,10 +3634,10 @@
 Масенко/e<+
 Маскалевич/eg<+
 Маслов/U<+
-Маслоу noun:m:nv:ist
+Маслоу noun:m:nv:np:anim
 Масляков/U<+
-Массне noun:m:nv:ist
-Мастроянні noun:m:nv:ist
+Массне noun:m:nv:np:anim
+Мастроянні noun:m:nv:np:anim
 Масуд/eg<+
 Масхадов/U<+
 Матвєєв/U<+
@@ -3646,24 +3647,24 @@
 Матейко/e<+
 Матешко/e<+
 Матіас/eg<+
-Матіос noun:m:nv:ist|noun:f:nv:ist
+Матіос noun:m:nv:np:anim|noun:f:nv:np:anim
 Матісс/eg<+
 Матіяш/eg<+
 Матковський/i<+
-Маттео noun:m:nv:ist
+Маттео noun:m:nv:np:anim
 Маттіас/eg<+
 Матузалем/eg<+
-Матьє noun:m:nv:ist|noun:f:nv:ist
+Матьє noun:m:nv:np:anim|noun:f:nv:np:anim
 Матюхін/U<+
 Матюшенко/e<+
 Матяш/eg<+
-Мауглі noun:m:nv:ist
-Маурісіо noun:m:nv:ist
-Мауріціо noun:m:nv:ist
-Мауро noun:m:nv:ist
+Мауглі noun:m:nv:np:anim
+Маурісіо noun:m:nv:np:anim
+Мауріціо noun:m:nv:np:anim
+Мауро noun:m:nv:np:anim
 Махабхарата/a
 Махатма/ad< ^noun:m
-Махді noun:m:nv:ist
+Махді noun:m:nv:np:anim
 Махмуд/egh<
 махновський/V
 Махно/i<+ ^noun:m
@@ -3673,26 +3674,26 @@
 Мацкевич/eg<+
 Маша/ad<
 Машков/U<+
-Машо noun:m:nv
+Машо noun:m:nv:np
 Мащенко/e<+
 Маяковський/V<
 Мая/a<
 Мебіус/eg<+
 Мегабанк/e
-Меггі noun:f:nv:ist
+Меггі noun:f:nv:np:anim
 медведєвський/V
 Медведєв/U<+
 Медведчук/eg<+
 Медведько/e<+
 Медея/a<
 Медісон/eg<+
-Медічі noun:f:nv:ist
+Медічі noun:f:nv:np:anim
 Меєр/eg<+
 Мейнард/eg<+
 Мейс/eg<+
 Мейтус/eg<+
-Меладзе noun:m:nv:ist
-Мелані noun:f:nv:ist
+Меладзе noun:m:nv:np:anim
+Мелані noun:f:nv:np:anim
 Мелашка/ad<
 Мелащенко/e<+
 Мелвілл/eg<+
@@ -3717,30 +3718,30 @@
 Меньшиков/U<+
 Меньшов/U<+
 Меола/a<+ ^noun:m
-Мерабішвілі noun:m:nv:ist
+Мерабішвілі noun:m:nv:np:anim
 Мераб/egh<
 Мердок/eg<+
 Мережковський/i<+
-Мерилін noun:f:nv:ist
-Меріл noun:f:nv:ist
-Меріме noun:m:nv:ist
-Меркель noun:f:nv:ist
+Мерилін noun:f:nv:np:anim
+Меріл noun:f:nv:np:anim
+Меріме noun:m:nv:np:anim
+Меркель noun:f:nv:np:anim
 Меркулов/U<+
 Меркурій/eg-
 Меркурій/egp
-Мерк'юрі noun:m:nv:ist
-Мерседес-Бенц noun:m:nv
+Мерк'юрі noun:m:nv:np:anim
+Мерседес-Бенц noun:m:nv:np
 мерседес/ef
-Мерседес noun:f:nv:ist
-Мерсьє noun:m:nv:ist|noun:f:nv:ist
-Мерфі noun:m:nv:ist|noun:f:nv:ist
+Мерседес noun:f:nv:np:anim
+Мерсьє noun:m:nv:np:anim|noun:f:nv:np:anim
+Мерфі noun:m:nv:np:anim|noun:f:nv:np:anim
 Мессіан/eg<+
-Мессі noun:m:nv:ist
+Мессі noun:m:nv:np:anim
 Метінвест/e
 Меттерніх/eg<+
 Метт/egh<
 Метьюз/eg<+
-Метью noun:m:nv:ist
+Метью noun:m:nv:np:anim
 Мефодій/egp
 Мехмед/egh<
 Мехмет/egh<
@@ -3784,15 +3785,15 @@
 Михась/eg<
 Мігель/eg<
 Мідас/eg<+
-Мідлсбро noun:m:nv
+Мідлсбро noun:m:nv:np
 Мізін/eg<+
 Мікаель/eg<
 Міка/ad< ^noun:m
-Мікеланджело noun:m:nv:ist
-Мікеле noun:m:nv:ist
+Мікеланджело noun:m:nv:np:anim
+Мікеле noun:m:nv:np:anim
 Мікель/eg<
 Міккі-Маус/eg<+
-Міккі noun:m:nv:ist
+Міккі noun:m:nv:np:anim
 Міклош/eg<
 Мікоян/eg<+
 Мікулаш/eg<
@@ -3812,25 +3813,25 @@
 Мільтон/eg<+
 Мільченко/e<+
 Мільштейн/eg<+
-Міміно noun:m:nv:ist
-Мімі noun:f:nv:ist
-Мінагрополітики noun:n:nv
+Міміно noun:m:nv:np:anim
+Мімі noun:f:nv:np:anim
+Мінагрополітики noun:n:nv:np
 Мінвуглепром/e
-Мінеллі noun:f:nv:ist
-Міненергетики noun:n:nv
+Мінеллі noun:f:nv:np:anim
+Міненергетики noun:n:nv:np
 Міненерговугілля/i
-Міненерго noun:n:nv
-Мінзв'язку noun:n:nv
+Міненерго noun:n:nv:np
+Мінзв'язку noun:n:nv:np
 Мінін/eg<+
 Мінкульт/e
-Мінпалива noun:n:nv
-Мінприроди noun:n:nv
+Мінпалива noun:n:nv:np
+Мінприроди noun:n:nv:np
 Мінрегіонбуд/e
-Мінрегіонрозвитку noun:n:nv
-Мінсім'ї noun:n:nv
-Мінсоцполітики noun:n:nv
-Мінтрансзв'язку noun:n:nv
-Мінтранспорту noun:n:nv
+Мінрегіонрозвитку noun:n:nv:np
+Мінсім'ї noun:n:nv:np
+Мінсоцполітики noun:n:nv:np
+Мінтрансзв'язку noun:n:nv:np
+Мінтранспорту noun:n:nv:np
 Мінтранс/e
 Мінфін/e
 Мінюст/e
@@ -3839,7 +3840,7 @@
 Мірошников/U<+
 Мірошниченко/e<+
 Мірошніченко/e<+
-Міро noun:m:nv:ist
+Міро noun:m:nv:np:anim
 Мірча/a< ^noun:m
 Мітрідат/egh<
 Міттал/eg<+
@@ -3854,21 +3855,21 @@
 Міхель/eg<
 Міхнік/eg<+
 Міхновський/V<
-Міхо noun:m:nv:ist
+Міхо noun:m:nv:np:anim
 Міцкевич/eg<+
 мічиганський/V
-Мічіо noun:m:nv:ist
+Мічіо noun:m:nv:np:anim
 мічурінський/V
 Мічурін/U<+
 Мішель/eg<
-Мішель noun:f:nv
+Мішель noun:f:nv:np
 Міщенко/e<+
 Мкртчян/eg<+
 Млада/ad<
 Младена/ad<
 Младич/eg<+
 Млодінов/eg<+
-Мобі noun:m:nv:ist
+Мобі noun:m:nv:np:anim
 Могилевич/eg<+
 Могилевська/i<+
 Могильов/U<+
@@ -3877,13 +3878,13 @@
 могилянський/V
 Могол/eg<+
 Модест/eghp
-Модільяні noun:m:nv:ist
+Модільяні noun:m:nv:np:anim
 Можаровський/V<
 Мозговий/V<
 Мозер/eg<+
 Мозолевський/i<+
 Мойсей/egp
-Моллі noun:f:nv:ist
+Моллі noun:f:nv:np:anim
 Молотова-Ріббентропа noun:m:v_rod
 Молотов/U<+
 Молчанов/U<+
@@ -3891,44 +3892,44 @@
 Мольєр/eg<+
 монастириський/V
 Мона/ad<
-Моне noun:m:nv:ist
-Монігетті noun:m:nv:ist
+Моне noun:m:nv:np:anim
+Монігетті noun:m:nv:np:anim
 Моніка/ad<
 Мономах/eg<+
-Монро noun:f:nv:ist
-Монсеррат noun:f:nv:ist
-Монтгомері noun:m:nv:ist|noun:f:nv:ist
+Монро noun:f:nv:np:anim
+Монсеррат noun:f:nv:np:anim
+Монтгомері noun:m:nv:np:anim|noun:f:nv:np:anim
 Монтеккі noun:p:nv
-Монте-Крісто noun:m:nv:ist
+Монте-Крісто noun:m:nv:np:anim
 Монтень/eg<+
-Монтеск'є noun:m:nv:ist
-Монтессорі noun:f:nv
-Монті noun:m:nv:ist|noun:f:nv:ist
-Монтян noun:m:nv:ist|noun:f:nv:ist
+Монтеск'є noun:m:nv:np:anim
+Монтессорі noun:f:nv:np
+Монті noun:m:nv:np:anim|noun:f:nv:np:anim
+Монтян noun:m:nv:np:anim|noun:f:nv:np:anim
 Мопассан/eg<+
 Моралес/eg<+
 Морган/egh<
-Морган noun:f:nv:ist
+Морган noun:f:nv:np:anim
 Моргот/eg<+
 Моргунов/U<+
 Моргун/eg<+
 Мордюкова/i<+
-Моретті noun:m:nv:ist
-Морзе noun:m:nv:ist
-Моріссо noun:m:nv:ist
+Моретті noun:m:nv:np:anim
+Морзе noun:m:nv:np:anim
+Моріссо noun:m:nv:np:anim
 Моріс/egh<
 Моріц/egh<
-Морлі noun:m:nv:ist
+Морлі noun:m:nv:np:anim
 Морозенко/e<+
 Морозов/U<+
-Моро noun:m:nv:ist
-Морріконе noun:m:nv:ist
+Моро noun:m:nv:np:anim
+Морріконе noun:m:nv:np:anim
 Моррісон/eg<+
 Морріс/eg<+
 Мортенсен/eg<+
 Мортен/eg<+
 Мортон/eg<+
-Моруа noun:m:nv:ist
+Моруа noun:m:nv:np:anim
 Мосієнко/e<+
 Москаленко/e<+
 Москалиця/a<
@@ -3936,7 +3937,7 @@
 Моссад/e
 Мосфільм/e
 Мотря/a<
-Моуріньо noun:m:nv:ist
+Моуріньо noun:m:nv:np:anim
 Мохамад/egh<
 Мохамед/egh<
 Мохаммад/egh<
@@ -3947,22 +3948,22 @@
 Мстислав/eghp
 Муаммар/egh<
 Мубарак/eg<+
-Мугабе noun:m:nv:ist
+Мугабе noun:m:nv:np:anim
 Музичко/e<+
 Музичук/eg<+
 Мунтіян/eg<+
 Мунтян/eg<+
 Муравйов/U<+
 Мурад/egh<
-Муракамі noun:m:nv:ist
+Муракамі noun:m:nv:np:anim
 Муратов/U<+
 Мурат/egh<
-Мурсі noun:m:nv:ist
+Мурсі noun:m:nv:np:anim
 Мусієнко/e<+
 Мусій/eg<+
 Мусіяка/a<+ ^noun:m
 Мусоргський/i<+
-Муссоліні noun:m:nv:ist
+Муссоліні noun:m:nv:np:anim
 Мустафаєв/U<+
 Мустафа/ad< ^noun:m
 Мустафін/eg<+
@@ -3978,16 +3979,16 @@
 Мюррей/eg<+
 Мягков/U<+
 Набоков/U<+
-Набукко noun:m:nv
+Набукко noun:m:nv:np
 Наваз/egh<
 Навзікая/a<
-Навої noun:m:nv:ist
+Навої noun:m:nv:np:anim
 Навроцький/i<+
 Нагорняк/eg<+
 Надаль/eg<+
 Наджибулла/a<+ ^noun:m
 Надійка/ad<
-Надін noun:f:nv:ist
+Надін noun:f:nv:np:anim
 Надя/ad<
 Назарбаєв/U<+
 Назаренко/e<+
@@ -3998,19 +3999,19 @@
 Найєм/eg<+
 Найман/eg<+
 Наймарк/eg<+
-Найтінгейл noun:f:nv:ist
+Найтінгейл noun:f:nv:np:anim
 Найт/eg<+
 Налбандян/eg<+
 Налєпа/a<+ ^noun:m
 Наливайко/e<+
 Наливайченко/e<+
-Нанні noun:f:nv:ist
+Нанні noun:f:nv:np:anim
 Нансен/eg<+
-Наомі noun:f:nv:ist
-Наото noun:m:nv:ist
+Наомі noun:f:nv:np:anim
+Наото noun:m:nv:np:anim
 наполеонів/V
 Наполеон/egh<
-Наполітано noun:m:nv:ist|noun:f:nv:ist
+Наполітано noun:m:nv:np:anim|noun:f:nv:np:anim
 Нарбут/eg<+
 Наріман/egh<
 Насер/eg<+
@@ -4038,7 +4039,7 @@
 Нафтуся/a
 Нахімов/U<+
 Нахман/egp
-Нахтігаль noun:m:nv
+Нахтігаль noun:m:nv:np
 Нацбанк/e
 Нацкомісія/a
 Нацрада/a
@@ -4047,7 +4048,7 @@
 Небоженко/e<+
 Невілл/eg<+
 Негребецький/i<+
-Негропонте noun:m:nv:ist
+Негропонте noun:m:nv:np:anim
 Недашковський/i<+
 Недзельський/i<+
 Неділько/e<+
@@ -4056,31 +4057,31 @@
 Нейман/eg<+
 Нейтан/eg<
 Некрасов/U<+
-Неллі noun:f:nv:ist
+Неллі noun:f:nv:np:anim
 Нельсон/egh<
 Неля/a<
-Немеску noun:m:nv:ist
+Немеску noun:m:nv:np:anim
 Немирич/eg<+
 Немиря/a< ^noun:m
-Немсадзе noun:m:nv:ist
-Ненсі noun:f:nv:ist
+Немсадзе noun:m:nv:np:anim
+Ненсі noun:f:nv:np:anim
 Неоніла/ad<
 Непомук/eg<+
 Нептун/eg-
 Нептун/egh<
 Нерон/egh<
 Неруда/a<+ ^noun:m
-Неру noun:m:nv:ist
+Неру noun:m:nv:np:anim
 Несс/eg<+
 Нестайко/e<+
 Нестеренко/e<+
 Нестеров/U<+
 Нестерук/eg<+
 Нестор/eghp
-Нетаньягу noun:m:nv:ist
-Нетаньяху noun:m:nv:ist
-Нефертіті noun:f:nv:ist
-Нефтчі noun:m:nv
+Нетаньягу noun:m:nv:np:anim
+Нетаньяху noun:m:nv:np:anim
+Нефертіті noun:f:nv:np:anim
+Нефтчі noun:m:nv:np
 Нефьодов/U<+
 Нечаєв/U<+
 Нечай/eg<+
@@ -4098,21 +4099,21 @@
 Никодим/eghp
 Никоненко/e<+
 Ничипір/acdp
-Нізамі noun:m:nv:ist
+Нізамі noun:m:nv:np:anim
 Ніка/ad<
 Нікіта/ad<
 Нікітенко/e<+
 Нікітін/eg<+
 Нікітський/V
 Нікіфоров/U<+
-Ніккі noun:f:nv:ist
+Ніккі noun:f:nv:np:anim
 Нікколо/i<+
 Ніклас/egh<
 Ніковський/V<
-Ніколае noun:m:nv:ist
+Ніколае noun:m:nv:np:anim
 Ніколаєв/U<+
 Ніколаєнко/e<+
-Ніколає noun:m:nv:ist
+Ніколає noun:m:nv:np:anim
 Ніколай/eg<
 Ніколас/egh<
 Ніколаус/egh<
@@ -4120,14 +4121,14 @@
 Ніколенко/e<+
 Ніколич/eg<+
 Ніколіч/eg<+
-Ніколо noun:m:nv:ist
+Ніколо noun:m:nv:np:anim
 Ніколсон/eg<+
 Нікольський/i<+
-Ніколь noun:m:nv:ist|noun:f:nv:ist
-Ніколя noun:m:nv:ist
+Ніколь noun:m:nv:np:anim|noun:f:nv:np:anim
+Ніколя noun:m:nv:np:anim
 Ніконов/U<+
 Нікос/egh<
-Ніко noun:nv
+Ніко noun:nv:np
 Ніксон/eg<+
 Нікулін/U<+
 Нілсен/eg<+
@@ -4136,18 +4137,18 @@
 Німіц/eg<+
 Німчук/eg<+
 Ніна/ad<
-Нінель noun:f:nv:ist
-Ніно noun:f:nv:ist
-Ніро noun:m:nv:ist
+Нінель noun:f:nv:np:anim
+Ніно noun:f:nv:np:anim
+Ніро noun:m:nv:np:anim
 Ністелрой/eg<+
-Ніцше noun:m:nv:ist
+Ніцше noun:m:nv:np:anim
 Ніязов/U<+
 Нобель/eg<+
 Новаківський/i<+
 Новицький/i<+
 Новиченко/e<+
 новоогарьовський/V
-Новотни noun:m:nv:ist
+Новотни noun:m:nv:np:anim
 Ноель/eg<
 Нолан/eg<+
 Номис/eg<+
@@ -4160,13 +4161,13 @@
 Носарєва/i<+
 Носенко/e<+
 Нострадамус/egh<
-Нотр-Дам noun:m:nv
+Нотр-Дам noun:m:nv:np
 но-шпа/a
 Нувель/eg<+
 Нугзар/egh<
 нунсівець/abc<
 Нуріель/eg<
-Нурі noun:m:nv:ist
+Нурі noun:m:nv:np:anim
 Нурсултан/egh<
 Нью-Васюки/f
 Ньюман/eg<+
@@ -4179,7 +4180,7 @@
 Облводгосп/e
 Облонський/V<
 Образцов/U<+
-Обрі noun:m:nv:ist
+Обрі noun:m:nv:np:anim
 Обухов/U<+
 Ованес/eg<+
 Овен/abc
@@ -4201,16 +4202,16 @@
 Одаронька/ad<
 Одарочка/ad<
 Одарченко/e<+
-Одесаобленерго noun:n:nv
+Одесаобленерго noun:n:nv:np
 Оджалан/eg<+
 Одигітрія/a
-Одрі noun:f:nv:ist
-Оззі noun:m:nv:ist
+Одрі noun:f:nv:np:anim
+Оззі noun:m:nv:np:anim
 Ойстрах/eg<+
 Окамовий/V
 Окара/a<+ ^noun:m
 О'Коннор/eg<+
-Окруашвілі noun:m:nv:ist
+Окруашвілі noun:m:nv:np:anim
 Оксана/ad<
 Оксанка/ad<
 Оксентій/egp
@@ -4221,9 +4222,10 @@
 Окуджава/a<+ ^noun:m
 Окуневський/V<
 Олаф/egh<
-Олбі noun:m:nv:ist
-Олбрайт noun:f:nv:ist
+Олбі noun:m:nv:np:anim
+Олбрайт noun:f:nv:np:anim
 Олдос/eg<+
+Олевськ/eg
 Олег/eghp
 Олександер/egh<
 Олександра/ad<
@@ -4248,7 +4250,7 @@
 Олімпіакос/eg
 Олімпік/eg
 Олланд/eg<+
-Оллі noun:m:nv:ist
+Оллі noun:m:nv:np:anim
 Олсон/eg<+
 Олссон/eg<+
 Ольбрахт/eg<+
@@ -4267,7 +4269,7 @@
 Омелянчук/eg<+
 Омелян/eghp
 Омеляшко/e<+
-Омрі noun:m:nv:ist
+Омрі noun:m:nv:np:anim
 Онєгін/i<+
 Онисим/eghp
 Онисько/e<+
@@ -4281,7 +4283,7 @@
 Онопко/e<+
 Онопрієнко/e<+
 Онопрій/egp
-Оноре noun:m:nv:ist
+Оноре noun:m:nv:np:anim
 Онуфрій/egp
 Онух/eg<+
 Опанасенко/e<+
@@ -4291,7 +4293,7 @@
 Опришко/e<+
 Оранський/i<+
 Оранта/ad<
-Орбакайте noun:m:nv:ist|noun:f:nv:ist
+Орбакайте noun:m:nv:np:anim|noun:f:nv:np:anim
 Орбан/eg<+
 Орвелл/eg<+
 Орест/eghp
@@ -4306,7 +4308,7 @@
 Орленко/e<+
 Орлов/U<+
 Оробець/ac<
-Оробець noun:f:nv:ist
+Оробець noun:f:nv:np:anim
 Орсон/eg<+
 Оруелл/eg<+
 Орфей/eg<
@@ -4314,7 +4316,7 @@
 Осаволюк/eg<+
 Осадчук/eg<+
 Осама/ad< ^noun:m
-Осасуна noun:m:nv
+Осасуна noun:m:nv:np
 Осауленко/e<+
 Осборн/eg<+
 Освальд/egh<
@@ -4337,9 +4339,9 @@
 Островський/V<
 Осьмак/eg<+
 Осьмачка/a<+ ^noun:m
-Отелло noun:m:nv:ist
-Оттавіо noun:m:nv:ist
-Отто noun:m:nv:ist
+Отелло noun:m:nv:np:anim
+Оттавіо noun:m:nv:np:anim
+Отто noun:m:nv:np:anim
 Отунбаєва/i<+
 Оуен/eg<+
 оунівець/abc<
@@ -4353,24 +4355,24 @@
 Охрім/eghp
 Очеретенко/e<+
 Ощипко/e<+
-Пабло noun:m:nv:ist
-Паваротті noun:m:nv:ist
+Пабло noun:m:nv:np:anim
+Паваротті noun:m:nv:np:anim
 Павленко/e<+
 Павличко/e<+
 Павлишин/eg<+
-Павліашвілі noun:m:nv:ist
+Павліашвілі noun:m:nv:np:anim
 Павловський/V<
 Павлов/U<+
 Павлоградвугілля/i
 Павло/ehp
 Павлюк/eg<+
-Паганіні noun:m:nv:ist
+Паганіні noun:m:nv:np:anim
 Падеревський/i<+
-Пазоліні noun:m:nv:ist
+Пазоліні noun:m:nv:np:anim
 Паїсій/egp
 Пайпс/eg<+
 Пайфер/eg<+
-Пако noun:m:nv:ist
+Пако noun:m:nv:np:anim
 Паксас/eg<+
 Палагнюк/eg<+
 Палажка/ad<
@@ -4382,21 +4384,21 @@
 Панас/eghp
 Панатінаїкос/eg
 Пандора/a
-Панетта noun:f:nv:ist
+Панетта noun:f:nv:np:anim
 Паніковський/i<+
-Паніотто noun:m:nv:ist
+Паніотто noun:m:nv:np:anim
 Панкрат/eghp
 Панса/a<+ ^noun:m
-Пантагрюель noun:m:nv:ist
+Пантагрюель noun:m:nv:np:anim
 Пантелеймон/eghp
 Панфілов/U<+
 Панченко/e<+
 Панчишин/eg<+
 Панчук/eg<+
-Паола noun:f:nv:ist
-Паоло noun:m:nv:ist
-Пападополі noun:m:nv:ist
-Папандреу noun:m:nv:ist
+Паола noun:f:nv:np:anim
+Паоло noun:m:nv:np:anim
+Пападополі noun:m:nv:np:anim
+Папандреу noun:m:nv:np:anim
 Папанов/U<+
 Папієв/U<+
 Параджанов/U<+
@@ -4406,18 +4408,18 @@
 Параскева/ad<
 Параскевія/ad<
 Паращук/eg<+
-Парваті noun:f:nv:ist
+Парваті noun:f:nv:np:anim
 Парвус/eg<+
 Паркер/eg<+
 Паркінсон/eg<+
 Паркс/eg<+
 Парнас/eg<+
-Паррі noun:m:nv:ist
-Парсіфаль noun:f:nv
+Паррі noun:m:nv:np:anim
+Парсіфаль noun:f:nv:np
 Парфьонов/U<+
 Пархоменко/e<+
 Пархомчук/eg<+
-Парцхаладзе noun:m:nv:ist
+Парцхаладзе noun:m:nv:np:anim
 Пасенюк/eg<+
 Паскуаль/eg<
 Паславський/i<+
@@ -4431,8 +4433,8 @@
 Паттерсон/eg<+
 Пауелл/eg<+
 Паула/ad<
-Паулі noun:m:nv:ist
-Пауло noun:m:nv:ist
+Паулі noun:m:nv:np:anim
+Пауло noun:m:nv:np:anim
 Паулс/eg<+
 Пауль/eg<
 Паулюс/eg<+
@@ -4443,33 +4445,33 @@
 Паша/ad< ^noun:m
 Пащенко/e<+
 Пегас/egh<
-Пеггі noun:f:nv:ist
-Педро noun:m:nv:ist
-пежо noun:m:nv
+Пеггі noun:f:nv:np:anim
+Педро noun:m:nv:np:anim
+пежо noun:m:nv:np
 Пейдж/eg<+
-Пейлін noun:f:nv:ist
+Пейлін noun:f:nv:np:anim
 Пейн/eg<+
 Пелагея/a<
-Пеле noun:m:nv:ist
-Пелосі noun:f:nv:ist
+Пеле noun:m:nv:np:anim
+Пелосі noun:f:nv:np:anim
 Пенелопа/ad<
 Пенн/eg<+
 Пенроуз/eg<+
-Пеппі noun:f:nv:ist
-пепсі noun:m:nv
+Пеппі noun:f:nv:np:anim
+пепсі noun:m:nv:np
 Первез/egh<
 Перверзія/a
 пергамський/V
 Пергам/e
-Перголезі noun:m:nv:ist
+Перголезі noun:m:nv:np:anim
 Перегрін/egh<
 Перельман/eg<+
 Перемисл/egh<
 Перес/eg<+
-Періс noun:f:nv:ist
-Перотті noun:m:nv:ist
-Перрі noun:m:nv:ist|noun:f:nv:ist
-Перро noun:m:nv:ist
+Періс noun:f:nv:np:anim
+Перотті noun:m:nv:np:anim
+Перрі noun:m:nv:np:anim|noun:f:nv:np:anim
+Перро noun:m:nv:np:anim
 Персей/eg<
 Перселл/eg<+
 Перун/egh<
@@ -4479,9 +4481,9 @@
 Петерсен/eg<+
 Петерсон/eg<+
 Петер/egh<
-Петефі noun:m:nv:ist
-Петіпа noun:m:nv:ist
-Петі noun:m:nv:ist
+Петефі noun:m:nv:np:anim
+Петіпа noun:m:nv:np:anim
+Петі noun:m:nv:np:anim
 Петлюра/a<+ ^noun:m
 Петрарка/a<+ ^noun:m
 Петренко/e<+
@@ -4497,11 +4499,11 @@
 Петрушевич/eg<+
 Петьовка/a<+ ^noun:m
 Пєрацький/i<+
-П'єрлуїджі noun:m:nv:ist
-П'єро noun:m:nv:ist
+П'єрлуїджі noun:m:nv:np:anim
+П'єро noun:m:nv:np:anim
 П'єр/egh<
-П'єта noun:f:nv:ist
-П'єтро noun:m:nv:ist
+П'єта noun:f:nv:np:anim
+П'єтро noun:m:nv:np:anim
 Пєчкін/eg<+
 Пивоваров/U<+
 Пивоварський/V<
@@ -4513,12 +4515,12 @@
 Пимоненко/e<+
 Пинзеник/eg<+
 Пинтя/a< ^noun:m
-Пиркало noun:f:nv:ist
+Пиркало noun:f:nv:np:anim
 Пирогоща/a
 Пироженко/e<+
 Писаренко/e<+
 Писарчук/eg<+
-Піаф noun:f:nv:ist
+Піаф noun:f:nv:np:anim
 Південмашзавод/e
 Південмаш/e
 Південно-Західний/V
@@ -4529,23 +4531,23 @@
 Піддубний/i<+
 Підлуцький/i<+
 Підмогильний/i<+
-Пікассо noun:m:nv:ist
+Пікассо noun:m:nv:np:anim
 Піккардійський/V
-Пікколі noun:m:nv:ist
+Пікколі noun:m:nv:np:anim
 Пілат/egh<
 Пілсудський/i<+
 Пінзель/eg<+
-Піноккіо noun:m:nv:ist
+Піноккіо noun:m:nv:np:anim
 Піночет/eg<+
-Піно noun:m:nv
+Піно noun:m:nv:np
 Пінтер/eg<+
 Пінчук/eg<+
 Піонтковський/i<+
-Піранделло noun:m:nv:ist
-Пірі noun:m:nv:ist
-Піросмані noun:m:nv:ist
+Піранделло noun:m:nv:np:anim
+Пірі noun:m:nv:np:anim
+Піросмані noun:m:nv:np:anim
 Пірсон/eg<+
-Пісарро noun:m:nv:ist
+Пісарро noun:m:nv:np:anim
 Піскун/eg<+
 Пітерсон/eg<+
 Пітерс/eg<+
@@ -4555,8 +4557,8 @@
 Піфагор/egh<
 Планковий/V
 Планк/eg<+
-Пласідо noun:n:nv:ist
-Платіні noun:n:nv:ist
+Пласідо noun:n:nv:np:anim
+Платіні noun:n:nv:np:anim
 Платонов/U<+
 Платон/egh<
 Плачинда/a<+ ^noun:m
@@ -4571,7 +4573,7 @@
 Плутарх/eg<
 Плутон/eg
 по-азаровськи adv
-Повалій noun:f:nv:ist
+Повалій noun:f:nv:np:anim
 Поваляєв/U<+
 Погорєлов/U<+
 Погребняк/eg<+
@@ -4584,9 +4586,9 @@
 Познер/eg<+
 Познякижитлобуд/e
 Покальчук/eg<+
-Поклітару noun:m:nv
-Поланскі noun:m:nv:ist
-Поланськи noun:m:nv:ist
+Поклітару noun:m:nv:np
+Поланскі noun:m:nv:np:anim
+Поланськи noun:m:nv:np:anim
 Поліграфтехніка/a
 Полікарп/eghp
 Поліна/ad<
@@ -4597,31 +4599,31 @@
 Полонія/a<
 Полсон/eg<+
 Полтававодоканал/e
-Полтаваобленерго noun:n:nv
+Полтаваобленерго noun:n:nv:np
 Поль/eg<
 Поляков/U<+
 Поляченко/e<+
 Пол/egh<
 Помпея/a<
-Помпіду noun:m:nv:ist
+Помпіду noun:m:nv:np:anim
 Понеділко/e<+
 Пономаренко/e<+
 Пономарьов/U<+
-Понте noun:m:nv
+Понте noun:m:nv:np
 Понтій/eg<
 Понятовський/V<
-Попандопуло noun:m:nv:ist
+Попандопуло noun:m:nv:np:anim
 Попелюшко/e<+
-Попеску noun:m:nv:ist
+Попеску noun:m:nv:np:anim
 Попков/U<+
 Поплавський/i<+
 Попов/U<+
 Поппер/eg<+
-Поппінс noun:f:nv:ist
+Поппінс noun:f:nv:np:anim
 порошенківський/V
 Порошенко/e<+
 Портер/eg<+
-Портман noun:m:nv:ist|noun:f:nv:ist
+Портман noun:m:nv:np:anim|noun:f:nv:np:anim
 Портников/U<+
 Портнов/U<+
 Портос/egh<
@@ -4630,28 +4632,28 @@
 Потебенько/e<+
 Потоцький/V<
 Поттер/eg<+
-Потьє noun:m:nv:ist
+Потьє noun:m:nv:np:anim
 Потьомкін/eg<+
 Правденко/e<+
 Правекс-Банк/e
 Правекс/e
-Прадо noun:m:nv
+Прадо noun:m:nv:np
 Преображенський/V<
 Прескотт/eg<+
-Преслі noun:m:nv:ist
+Преслі noun:m:nv:np:anim
 Пржевальський/i<+
 ПриватБанк/e
 Приватбанк/e
 Пригодський/i<+
 Приймаченко/e<+
-Прикарпаттяобленерго noun:n:nv
+Прикарпаттяобленерго noun:n:nv:np
 Примаченко/e<+
 Присяжнюк/eg<+
 Притула/a<+
 Приходько/e<+
 Пріська/ad<
 Проданчук/eg<+
-Проді noun:m:nv:ist
+Проді noun:m:nv:np:anim
 Прокіп/ach
 прокомуністичний/V
 Прокопенко/e<+
@@ -4667,7 +4669,7 @@
 промосковський/V
 Проня/a<
 Просперо
-Простоквашино noun:n:nv
+Простоквашино noun:n:nv:np
 Протасов/U<+
 Прохасько/e<+
 Прохір/acdp
@@ -4677,11 +4679,11 @@
 Психея/a
 Птолемеєвий/V
 Птолемей/eg<
-Пуанкаре noun:m:nv:ist
-Пуаро noun:m:nv:ist
+Пуанкаре noun:m:nv:np:anim
+Пуаро noun:m:nv:np:anim
 Пугачов/U<+
 Пуговкін/U<+
-Пуерта noun:m:nv:ist
+Пуерта noun:m:nv:np:anim
 Пукач/eg<+
 Пукшин/eg<+
 Пулітцерівський/V
@@ -4693,19 +4695,19 @@
 путініст/efgh<
 путінський/V
 Путін/i<+
-Пуччіні noun:m:nv:ist
+Пуччіні noun:m:nv:np:anim
 Пушкін/Uh<+
 Пфайфер/eg<+
 Пчілка/a<+
 Пшемислав/egh<
 Пшонка/a<+ ^noun:m
-П'юзо noun:m:nv:ist
+П'юзо noun:m:nv:np:anim
 П'ятницький/i<+
 П'ятов/U<+
 П'яццолла/a<+ ^noun:m
 Рабинович/eg<+
 Рабіндранат/egh<
-Рабле noun:m:nv:ist
+Рабле noun:m:nv:np:anim
 Равель/eg<+
 Равіль/eg<+
 Равшан/egh<
@@ -4717,7 +4719,7 @@
 Радзієвський/V<
 Радимира/ad<
 Радислав/egh<
-Радко noun:m:nv:ist
+Радко noun:m:nv:np:anim
 Раднарком/e
 Радован/egh<
 Радомир/egh<
@@ -4735,44 +4737,44 @@
 Райзер/eg<+
 Райкін/U<+
 Райко/e<+
-Райлі noun:m:nv:ist|noun:f:nv:ist
+Райлі noun:m:nv:np:anim|noun:f:nv:np:anim
 Раймонд/egh<
 Райнгард/eg<+
 Райнер/eg<+
-Райс noun:m:nv:ist|noun:f:nv:ist
+Райс noun:m:nv:np:anim|noun:f:nv:np:anim
 Райт/eg<+
 Райффайзенбанк/e
-Райффайзен noun:m:nv
-Ракоці noun:m:nv:ist
-Ракоші noun:m:nv:ist
+Райффайзен noun:m:nv:np
+Ракоці noun:m:nv:np:anim
+Ракоші noun:m:nv:np:anim
 Ральф/egh<
-Рамазотті noun:m:nv:ist
+Рамазотті noun:m:nv:np:anim
 Рамзан/egh<
 Рамзес/egh<
 Раміль/eg<
 Рамірес/egh<
-Рамішвілі noun:m:nv:ist
+Рамішвілі noun:m:nv:np:anim
 Рамон/egh<
-Рамо noun:m:nv:ist
+Рамо noun:m:nv:np:anim
 Рамсфелд/eg<+
 Раневська/i<+
-Раньєрі noun:m:nv:ist
+Раньєрі noun:m:nv:np:anim
 Рапопорт/eg<+
 Раппопорт/eg<+
 Раскіна/i<+
 Расмуссен/eg<+
 Распутін/U<+
 Рассел/eg<+
-Растреллі noun:m:nv:ist
+Растреллі noun:m:nv:np:anim
 Расул/egh<
 Ратибор/egh<
 Ратимир/egh<
 Ратислав/egh<
-Ратко noun:m:nv:ist
+Ратко noun:m:nv:np:anim
 Ратушняк/eg<+
 Ратцінгер/eg<+
 Рауль/eg<
-Рафаелло noun:m:nv:ist
+Рафаелло noun:m:nv:np:anim
 Рафаель/eg<
 Рафаїл/egh<
 Рафал/egh<
@@ -4785,33 +4787,33 @@
 Рахмон/egh<
 Рашид/egh<
 Раян/egh<
-РБК-Україна noun:n:nv
+РБК-Україна noun:n:nv:np
 Ребекка/ad<
 Ребров/U<+
 Ревуцький/i<+
 Регіна/ad<
-Реджані noun:m:nv:ist
+Реджані noun:m:nv:np:anim
 Реджеп/egh<
 Реджина/ad<
 Редкліфф/eg<+
 Редьярд/egh<
-Режі noun:m:nv:ist
+Режі noun:m:nv:np:anim
 Резникович/eg<+
-Резо noun:m:nv:ist
+Резо noun:m:nv:np:anim
 Рейган/eg<+
 Реймонд/egh<
-Рейнджерс noun:m:nv
-Рейчел noun:f:nv:ist
+Рейнджерс noun:m:nv:np
+Рейчел noun:f:nv:np:anim
 Рей/eg<
 Ремарк/eg<+
-Рембо noun:m:nv:ist
+Рембо noun:m:nv:np:anim
 Рембрандт/eg<+
 Ремер/eg<+
 Рената/ad<
-Ренато noun:m:nv:ist
+Ренато noun:m:nv:np:anim
 Ренат/eghp
-Рене noun:m:nv:ist|noun:f:nv:ist
-Рені noun:m:nv:ist|noun:f:nv:ist
+Рене noun:m:nv:np:anim|noun:f:nv:np:anim
+Рені noun:m:nv:np:anim|noun:f:nv:np:anim
 Ренуар/eg<+
 Реріх/eg<+
 Рефат/egh<
@@ -4832,57 +4834,57 @@
 Ринат/egh<
 Ришард/eg<+
 Ріббентроп/eg<+
-Рівалдо noun:m:nv:ist
+Рівалдо noun:m:nv:np:anim
 Рівнеазот/e
-Рівнеенерго noun:n:nv
-Ріголетто noun:f:nv
-Рідлі noun:m:nv:ist
-Рікардо noun:m:nv:ist
-Ріккардо noun:m:nv:ist
-Рільке noun:m:nv:ist
+Рівнеенерго noun:n:nv:np
+Ріголетто noun:f:nv:np
+Рідлі noun:m:nv:np:anim
+Рікардо noun:m:nv:np:anim
+Ріккардо noun:m:nv:np:anim
+Рільке noun:m:nv:np:anim
 Рінат/egh<
-Рінго noun:m:nv:ist
+Рінго noun:m:nv:np:anim
 Рінкон/eg<+
-Ріплі noun:m:nv:ist|noun:f:nv:ist
-Рісто noun:m:nv:ist
-Ріфеншталь noun:m:nv:ist
+Ріплі noun:m:nv:np:anim|noun:f:nv:np:anim
+Рісто noun:m:nv:np:anim
+Ріфеншталь noun:m:nv:np:anim
 Ріхард/egh<
 Ріхтер/eg<+
 Річардсон/eg<+
 Річардс/eg<+
 Річард/egh<
-Річі noun:m:nv:ist
-Річчі noun:m:nv:ist
+Річі noun:m:nv:np:anim
+Річчі noun:m:nv:np:anim
 Рішар/egh<
-Рішельє noun:m:nv:ist
+Рішельє noun:m:nv:np:anim
 Роалд/egh<
 Роальд/egh<
-Роббі noun:m:nv:ist
-Робертіно noun:m:nv:ist
-Роберто noun:m:nv:ist
+Роббі noun:m:nv:np:anim
+Робертіно noun:m:nv:np:anim
+Роберто noun:m:nv:np:anim
 Робертсон/eg<+
 Робертс/eg<+
 Роберт/eghp
 Робесп'єр/eg<+
 Робінсон/eg<+
 Робін/egh<
-Рогге noun:m:nv:ist
+Рогге noun:m:nv:np:anim
 Роговцева/i<+
 Рогозін/eg<+
-Родарі noun:m:nv:ist
+Родарі noun:m:nv:np:anim
 Роден/eg<+
 Роджерс/eg<+
 Роджер/egh<
 Родик/eg<
 Родіонов/U<+
 Родіон/eghp
-Родні noun:m:nv:ist|noun:f:nv:ist
+Родні noun:m:nv:np:anim|noun:f:nv:np:anim
 Роднянський/i<+
-Родольфо noun:m:nv:ist
+Родольфо noun:m:nv:np:anim
 Родослава/ad<
 Родослав/egh<
 Родрігес/eg<+
-Родріго noun:m:nv:ist
+Родріго noun:m:nv:np:anim
 Родрік/eg<
 Рождественський/i<+
 Розаліна/ad<
@@ -4897,14 +4899,14 @@
 Розенталь/eg<+
 Розенфельд/eg<+
 Розен/eg<+
-Розмарі noun:f:nv:ist
+Розмарі noun:f:nv:np:anim
 Розумовський/V<
 Ройзман/eg<+
 Рой/eg<
-Роккі noun:m:nv:ist
+Роккі noun:m:nv:np:anim
 Рокоссовський/i<+
 Роксана/ad<
-Роксі noun:f:nv:ist
+Роксі noun:f:nv:np:anim
 Роксолана/ad<
 Роксоляна/ad<
 Рокфеллер/eg<+
@@ -4916,50 +4918,50 @@
 Романишин/eg<+
 Романна/ad<
 Романов/U<+
-Романо noun:m:nv:ist|noun:f:nv:ist
+Романо noun:m:nv:np:anim|noun:f:nv:np:anim
 Романчук/eg<+
 Романюк/eg<+
 Роман/eghp
-Ромео noun:m:nv:ist
-Ромеро noun:m:nv:ist
+Ромео noun:m:nv:np:anim
+Ромеро noun:m:nv:np:anim
 Ромер/egh<
 Ромко/e<
-Ромні noun:m:nv:ist|noun:f:nv:ist
+Ромні noun:m:nv:np:anim|noun:f:nv:np:anim
 Ромпей/eg<+
 Ромул/eg<+
 Ромчик/eg<
-Роналдіньо noun:m:nv:ist
-Роналдо noun:m:nv:ist
-Роналду noun:m:nv
+Роналдіньо noun:m:nv:np:anim
+Роналдо noun:m:nv:np:anim
+Роналду noun:m:nv:np
 Роналд/egh<
 Рональд/egh<
-Ронні noun:m:nv:ist
-Росаріо noun:m:nv:ist
+Ронні noun:m:nv:np:anim
+Росаріо noun:m:nv:np:anim
 Росатом/e
-Росселіні noun:m:nv:ist
-Россіні noun:m:nv:ist
-Россі noun:m:nv:ist
+Росселіні noun:m:nv:np:anim
+Россіні noun:m:nv:np:anim
+Россі noun:m:nv:np:anim
 Ростислав/eghp
 Ростоцький/i<+
 Ростропович/eg<+
 Ростсельмаш/e
-РосУкренерго noun:n:nv
-Росукренерго noun:n:nv
+РосУкренерго noun:n:nv:np
+Росукренерго noun:n:nv:np
 Ротань/eg<+
-Ротару noun:f:nv:ist
+Ротару noun:f:nv:np:anim
 Ротфельд/eg<+
 Ротшильд/efg<+
-Роуз noun:m:nv:ist|noun:f:nv:ist
-Роулінг noun:m:nv:ist|noun:f:nv:ist
+Роуз noun:m:nv:np:anim|noun:f:nv:np:anim
+Роулінг noun:m:nv:np:anim|noun:f:nv:np:anim
 Рошен/e
-Роше noun:nv
+Роше noun:nv:np
 Рошфор/eg<+
 Рубан/egh<
 Рубенс/eg<+
 Рубен/eghp
 Рубік/eg<+
 Рубінштейн/eg<+
-Рубі noun:f:nv:ist
+Рубі noun:f:nv:np:anim
 Рубльов/U<+
 Рудаков/U<+
 Руданський/i<+
@@ -4975,30 +4977,30 @@
 Рузвельт/eg<+
 Руїз/egh<
 Руїс/egh<
-Руні noun:m:nv
+Руні noun:m:nv:np
 Руперт/egh<
 Рупрехт/egh<
 Рурк/eg<+
 Руслана/ad<
 Руслан/eghp
 Русол/eg<+
-Руссо noun:m:nv:ist
-Руставелі noun:m:nv:ist
+Руссо noun:m:nv:np:anim
+Руставелі noun:m:nv:np:anim
 Рустам/egh<
 Рута/ad<
 Рутковський/i<+
 Руфус/eg<+
-Рухлє noun:m:nv:ist
-Рушді noun:m:nv:ist
+Рухлє noun:m:nv:np:anim
+Рушді noun:m:nv:np:anim
 Рюрикович/efg<+
 Рюрик/efg<+
 Рябченко/e<+
 Рябчук/eg<+
 Рязанов/U<+
 Саад/egh<
-Саакашвілі noun:m:nv:ist
+Саакашвілі noun:m:nv:np:anim
 Сабіна/ad<
-Сабіне noun:f:nv:ist
+Сабіне noun:f:nv:np:anim
 Сабодан/egh<
 Сабоніс/eg<+
 Сабріна/ad<
@@ -5014,32 +5016,32 @@
 Савік/eg<
 Савка/ad< ^noun:m
 Савович/eg<+
-Саволделлі noun:m:nv:ist
+Саволделлі noun:m:nv:np:anim
 Савченко/e<+
 Савчук/eg<+
 Садальський/i<+
 саддамівський/V
 Саддам/egh<
-Садко noun:nv
+Садко noun:nv:np
 Садовський/V<
 Саєнко/e<+
 Сазерленд/eg<+
 Сазонов/U<+
 Саїд/egh<
 Саймон/egh<
-Сакамото noun:m:nv:ist
-Сакартвело noun:f:nv
+Сакамото noun:m:nv:np:anim
+Сакартвело noun:f:nv:np
 Саксаганський/V<
 Салазар/eg<+
 Саламатін/eg<+
 Саленко/e<+
 Салліван/eg<+
-Саллі noun:f:nv:ist
+Саллі noun:f:nv:np:anim
 Салман/egh<
 Саломея/a<
 Салтиков/U<+
-Сальваторе noun:m:nv:ist
-Сальєрі noun:m:nv:ist
+Сальваторе noun:m:nv:np:anim
+Сальєрі noun:m:nv:np:anim
 Сальма/ad<
 Саманта/ad<
 Самаранч/eg<+
@@ -5064,14 +5066,14 @@
 Санта/ad< ^noun:m
 Сантос/eg<+
 Санчес/eg<+
-Санчо noun:m:nv:ist
+Санчо noun:m:nv:np:anim
 Сапармурат/egh<
-Сапатеро noun:m:nv:ist
-сапераві noun:m:nv
+Сапатеро noun:m:nv:np:anim
+сапераві noun:m:nv:np
 Сара/ad<
 Саргсян/eg<+
 Саркісян/eg<+
-Саркозі noun:m:nv:ist
+Саркозі noun:m:nv:np:anim
 Сартр/eg<+
 Сатурн/eg-
 Сатурн/egh<
@@ -5079,7 +5081,7 @@
 Сафіуллін/U<+
 Сахаров/U<+
 Сахно/e<+
-сациві noun:m:nv
+сациві noun:m:nv:np
 Сацюк/eg<+
 Саша/ad< ^noun:m
 Сашко/e<
@@ -5101,11 +5103,11 @@
 Святослав/eghp
 Святоюрський/V
 Себастьян/egh<
-Севастопольенерго noun:n:nv
-Северинсен noun:f:nv:ist
+Севастопольенерго noun:n:nv:np
+Северинсен noun:f:nv:np:anim
 Северин/efg<+
-Северінсен noun:f:nv:ist
-Сеголен noun:f:nv:ist
+Северінсен noun:f:nv:np:anim
+Сеголен noun:f:nv:np:anim
 Сезанн/eg<+
 Сезарія/a<
 Сезар/egh<
@@ -5128,13 +5130,13 @@
 Сем/egh<
 Сендак/eg<+
 Сендега/a<+ ^noun:m
-Сенді noun:f:nv:ist
+Сенді noun:f:nv:np:anim
 Сенека/ad< ^noun:m
 Сененко/e<+
 Сенкевич/eg<+
 Сен-Лоран/eg<+
 Сен-Санс/eg<+
-Сент-Екзюпері noun:m:nv:ist
+Сент-Екзюпері noun:m:nv:np:anim
 Сенченко/e<+
 Сенчук/eg<+
 Серафима/ad<
@@ -5142,19 +5144,19 @@
 Сергієнко/e<+
 Сергіїв/V
 Сергій/egp
-Серго noun:m:nv:ist
-Серджіо noun:m:nv:ist
-Серджо noun:m:nv:ist
+Серго noun:m:nv:np:anim
+Серджіо noun:m:nv:np:anim
+Серджо noun:m:nv:np:anim
 сердючка/abd<
 Сердючка/ad<-
 Серебренников/U<+
 Серена/ad<
-Сержіо noun:m:nv:ist
-Серрано noun:m:nv:ist
-Серхіо noun:m:nv:ist
+Сержіо noun:m:nv:np:anim
+Серрано noun:m:nv:np:anim
+Серхіо noun:m:nv:np:anim
 Сесар/eg<+
 Сесілія/ad<
-Сесіль noun:f:nv:ist
+Сесіль noun:f:nv:np:anim
 Сибнефть/i
 Сигізмунд/eghp
 Сидір/acdp
@@ -5164,7 +5166,7 @@
 Силіна/i<+
 Сильвестров/U<+
 Сильвестр/egp
-Сильвіо noun:m:nv:ist
+Сильвіо noun:m:nv:np:anim
 Сильвія/ad<
 Симеон/egh<
 Симиренко/e<+
@@ -5175,39 +5177,39 @@
 Синявський/i<+
 Сібеліус/eg<+
 Сівкович/eg<+
-Сі-Ен-Ен noun:n:nv
+Сі-Ен-Ен noun:n:nv:np
 сізіфів/V
 Сізіф/egh<
 Сікорський/i<+
-Сільвіо noun:m:nv:ist
+Сільвіо noun:m:nv:np:anim
 Сільвія/ad<
 Сіменс/e
 Сіммонс/eg<+
-Сімоне noun:m:nv:ist|noun:f:nv:ist
+Сімоне noun:m:nv:np:anim|noun:f:nv:np:anim
 Сімон/egh<
 Сінатра/a<+ ^noun:m
 Сіньков/U<+
-Сірано noun:m:nv:ist
+Сірано noun:m:nv:np:anim
 Сіренко/e<+
 Сіріус/eg
 Сірко/e<+
-Сканаві noun:m:nv:ist
+Сканаві noun:m:nv:np:anim
 Скарбек/eg<+
-Скарлатті noun:m:nv:ist
-Скарлетт noun:f:nv:ist
+Скарлатті noun:m:nv:np:anim
+Скарлетт noun:f:nv:np:anim
 Скліфосовський/V<
 Склодовська-Кюрі
 Склодовська/i<+
 Склодовської-Кюрі
 Скляренко/e<+
 Скляров/U<+
-Сколарі noun:m:nv:ist
+Сколарі noun:m:nv:np:anim
 Сколотяний/i<+
 Скомаровський/i<+
 Скопенко/e<+
-Скорик noun:f:nv:ist
+Скорик noun:f:nv:np:anim
 Скоропадський/V<
-Скорсезе noun:m:nv:ist
+Скорсезе noun:m:nv:np:anim
 Скотленд-Ярд/e
 Скотт/egh<
 скрипниківка/a
@@ -5238,7 +5240,7 @@
 Собєський/i<+
 Соболєв/U<+
 соборівець/abc<
-Совіньйон noun:m:nv
+Совіньйон noun:m:nv:np
 Содерберг/eg<+
 Соколовський/i<+
 Сократ/egh<
@@ -5248,8 +5250,6 @@
 Соловйов/U<+
 Солов'яненко/e<+
 Соломійка/ad<
-Зоран/egd<
-Олевськ/eg
 Соломія/ad<
 соломонів/V
 Соломон/eghp
@@ -5262,17 +5262,17 @@
 соросівський/V
 Сорос/eg<+
 Сосновський/i<+
-Сосо noun:m:nv:ist
-Сосьєдад noun:m:nv
+Сосо noun:m:nv:np:anim
+Сосьєдад noun:m:nv:np
 Сосюра/a<+ ^noun:m
-Сотбі noun:m:nv
+Сотбі noun:m:nv:np
 сотівський/V
-сото-сю noun:f:nv
-сото noun:nv
+сото-сю noun:f:nv:np
+сото noun:nv:np
 Софійка/ad<
-Софіко noun:f:nv
+Софіко noun:f:nv:np
 Софокл/egh<
-Софо noun:f:nv
+Софо noun:f:nv:np
 Соцінтерн/e
 Спартак/eg
 Спартак/eg<-
@@ -5280,8 +5280,8 @@
 Співаков/U<+
 Спілберг/eg<+
 Спіноза/a<+ ^noun:m
-Спірс noun:f:nv:ist
-Срна noun:m:nv:ist
+Спірс noun:f:nv:np:anim
+Срна noun:m:nv:np:anim
 Ставицький/V<
 Ставнійчук/eg<+
 Ставропігійський/V
@@ -5289,8 +5289,8 @@
 сталінсько-хрущовський/V
 сталінщина/a
 Сталін/ih<
-Сталлоне noun:m:nv:ist
-Станік noun:f:nv:ist
+Сталлоне noun:m:nv:np:anim
+Станік noun:f:nv:np:anim
 Станіславський/V<
 Станіслав/eghp
 Станкович/eg<+
@@ -5302,9 +5302,9 @@
 Сташевський/i<+
 Стейнбек/eg<+
 Стейнвей/eg<+
-Стейсі noun:f:nv:ist
+Стейсі noun:f:nv:np:anim
 Стендаль/eg<+
-Стенлі noun:m:nv:ist
+Стенлі noun:m:nv:np:anim
 Степаненко/e<+
 Степанков/U<+
 Степан/eghp
@@ -5329,25 +5329,25 @@
 Стороженко/e<+
 Сторожук/eg<+
 Стоун/eg<+
-Стоун noun:f:nv:ist
+Стоун noun:f:nv:np:anim
 Стоцький/V<
 Стоян/eg<+
 Стравінський/i<+
-Страдіварі noun:m:nv:ist
+Страдіварі noun:m:nv:np:anim
 Стражеско/e<+
-Стрейзанд noun:f:nv:ist
+Стрейзанд noun:f:nv:np:anim
 Стрельников/U<+
 Стретович/eg<+
 Стросс-Кан/eg<+
-Струве noun:m:nv:ist
+Струве noun:m:nv:np:anim
 Стругацький/ij<
 Струтинський/V
 Студинський/V
-Стуруа noun:m:nv
+Стуруа noun:m:nv:np
 Стусовий/V
 Стус/eg<+
 Стюарт/egh<
-Стяуа noun:m:nv
+Стяуа noun:m:nv:np
 Суарес/eg<+
 суворовський/V
 Суворов/U<+
@@ -5355,7 +5355,7 @@
 Сулейман/egh<
 Сулима/a<+ ^noun:m
 Сумигаз/e
-Сумиобленерго noun:n:nv
+Сумиобленерго noun:n:nv:np
 Сумитеплосервіс/e
 Сумихімпром/e
 Супруненко/e<+
@@ -5363,17 +5363,17 @@
 Сусанін/U<+
 Сусанна/ad<
 Суслов/U<+
-Сухарто noun:m:nv:ist
-Сухішвілі noun:m:nv:ist
+Сухарто noun:m:nv:np:anim
+Сухішвілі noun:m:nv:np:anim
 Сухомлинський/i<+
 Сухоруков/U<+
 Сушко/e<+
 Схеффер/eg<+
-Східенерго noun:n:nv
+Східенерго noun:n:nv:np
 Сцилла/a
 Сьомін/eg<+
 Сюзанна/ad<
-Сюзан noun:f:nv:ist
+Сюзан noun:f:nv:np:anim
 Сяопін/eg<+
 Табаков/U<+
 Табалов/U<+
@@ -5391,24 +5391,24 @@
 Таїсія/ad<
 Тайлер/eg<+
 Тайсон/eg<+
-Такасі noun:m:nv:ist
-Такаші noun:m:nv:ist
+Такасі noun:m:nv:np:anim
+Такаші noun:m:nv:np:anim
 Такер/eg<+
-Такеші noun:m:nv:ist
+Такеші noun:m:nv:np:anim
 Тализіна/i<+
 Талібан/e
 Таль/eg<+
 Тамара/ad<
 Тамерлан/egh<
-таміфлю noun:m:nv
-Танака noun:m:nv:ist
-Тантаві noun:m:nv:ist
+таміфлю noun:m:nv:np
+Танака noun:m:nv:np:anim
+Тантаві noun:m:nv:np:anim
 Танюк/eg<+
 Таня/a<
-Тап'є noun:m:nv:ist
+Тап'є noun:m:nv:np:anim
 Тараканова/i<+
 Тараненко/e<+
-Тарантіно noun:m:nv:ist
+Тарантіно noun:m:nv:np:anim
 Тарапунька/ad< ^noun:m
 Тарасенко/e<+
 Тарасик/eg<
@@ -5433,8 +5433,8 @@
 Твердислава/ad<
 Твердислав/egh<
 Твіст/eg<+
-Тебальді noun:f:nv:ist
-Тедді noun:m:nv:ist
+Тебальді noun:f:nv:np:anim
+Тедді noun:m:nv:np:anim
 Тедеєв/U<+
 Тед/egh<
 Тейлор/eg<+
@@ -5453,7 +5453,7 @@
 Тенюх/eg<+
 Теодозій/eg<
 Теодозія/ad<
-Теодоро noun:m:nv:ist
+Теодоро noun:m:nv:np:anim
 Теодор/eghp
 Теофан/egh<
 Теофіл/egh<
@@ -5470,14 +5470,14 @@
 Терлецький/V
 Термоприлад/e
 Тернер/eg<+
-Тернопільобленерго noun:n:nv
+Тернопільобленерго noun:n:nv:np
 Тер-Петросян/eg<+
 Терренс/eg<+
-Террі noun:m:nv:ist|noun:f:nv:ist
+Террі noun:m:nv:np:anim|noun:f:nv:np:anim
 Терьохін/eg<+
 Тесла/a<+ ^noun:m
 Тесленко/e<+
-Тетчер noun:f:nv:ist
+Тетчер noun:f:nv:np:anim
 Тетяна/ad<
 Тетянка/ad<
 Теффт/eg<+
@@ -5504,31 +5504,31 @@
 Тишкевич/eg<+
 Тищенко/e<+
 Тібор/egh<
-Тібо noun:m:nv:ist
+Тібо noun:m:nv:np:anim
 тігіпківець/abc<
 тігіпківський/V
 Тігіпко/e<+
-Тіллі noun:m:nv:ist|noun:f:nv:ist
-Тімоті noun:m:nv:ist
+Тіллі noun:m:nv:np:anim|noun:f:nv:np:anim
+Тімоті noun:m:nv:np:anim
 Тіна/ad<
 Тітмар/egh<
-Тіто noun:m:nv:ist
-Тіффані noun:f:nv:ist
+Тіто noun:m:nv:np:anim
+Тіффані noun:f:nv:np:anim
 Тіціан/egh<
 Ткаченко/e<+
 Ткачук/eg<+
-ткемалі noun:m:nv
+ткемалі noun:m:nv:np
 Тлумак/eg<+
 ТНК-Україна/a
 Тобіас/egh<
 Тобілевич/eg<+
-Тобі noun:m:nv:ist
+Тобі noun:m:nv:np:anim
 Товстиженко/e<+
 Тодійчук/eg<+
 Тодоровський/V<
 Тодоров/U<+
 Тодор/egh<
-Тойнбі noun:m:nv:ist
+Тойнбі noun:m:nv:np:anim
 Токаренко/e<+
 Токарчук/eg<+
 Токарюк/eg<+
@@ -5539,27 +5539,27 @@
 Толмачов/U<+
 Толочко/i<+
 Толстоухов/U<+
-Томазо noun:m:nv:ist
+Томазо noun:m:nv:np:anim
 Томас/egh<
 Томашевський/V<
 Томаш/eg<
 Томенко/e<+
 Томіслав/egh<
-Томмазо noun:m:nv:ist
-Томмі noun:m:nv:ist
+Томмазо noun:m:nv:np:anim
+Томмі noun:m:nv:np:anim
 Томпсон/eg<+
 Томсен/eg<+
 Томсон/eg<+
 Тоніс/e
 Тополанек/eg<+
 Тополов/U<+
-Торіно noun:m:nv
-Торнаторе noun:m:nv:ist
+Торіно noun:m:nv:np
+Торнаторе noun:m:nv:np:anim
 Торрес/eg<+
 Торський/V<
-Тосканіні noun:m:nv:ist
+Тосканіні noun:m:nv:np:anim
 Тотлебен/eg<+
-Тото noun:m:nv:ist
+Тото noun:m:nv:np:anim
 Тоттенхем/eg
 Травіата/a
 Трамп/eg<+
@@ -5567,12 +5567,12 @@
 Трахтенберг/eg<+
 Траян/eg<+
 Треверс/eg<+
-Треверс noun:f:nv:ist
+Треверс noun:f:nv:np:anim
 Тревіс/egh<
 Трегубов/U<+
 Трегуб/eg<+
-Трезеге noun:m:nv:ist
-Трейсі noun:m:nv:ist|noun:f:nv:ist
+Трезеге noun:m:nv:np:anim
+Трейсі noun:m:nv:np:anim|noun:f:nv:np:anim
 Трентіньян/eg<+
 Трент/egh<
 Третьяковка/a
@@ -5589,9 +5589,9 @@
 Труханів/V
 Труш/eg<+
 Трьохсвятительська/i
-Трюффо noun:m:nv:ist
+Трюффо noun:m:nv:np:anim
 Туполєв/U<+
-Турандот noun:f:nv:ist
+Турандот noun:f:nv:np:anim
 Турбоатом/e
 тургенєвський/V
 Тургенєв/U<+
@@ -5603,8 +5603,8 @@
 Тухачевський/i<+
 Тухманов/U<+
 Тюдор/eg<+
-Тюїльрі noun:m:nv
-Тюссо noun:f:nv:ist|noun:m:nv
+Тюїльрі noun:m:nv:np
+Тюссо noun:f:nv:np:anim|noun:m:nv:np
 Тютчев/U<+
 Тютюнник/eg<+
 тягнибоківський/V
@@ -5614,7 +5614,7 @@
 Уваров/U<+
 Угаров/U<+
 ударівець/abc<
-Удінезе noun:m:nv
+Удінезе noun:m:nv:np
 Удовенко/e<+
 Удовиченко/e<+
 Уеллс/eg<+
@@ -5632,18 +5632,18 @@
 Укрвинпром/e
 Укргазбанк/e
 Укргазвидобування
-Укргаз-енерго noun:n:nv
+Укргаз-енерго noun:n:nv:np
 Укргазмережа/a
 Укргазпром/e
-Укргідроенерго noun:n:nv
+Укргідроенерго noun:n:nv:np
 Укрдержреєстр/e
 Укрексімбанк/e
 Укренергобуд/e
 Укренергомаш/e
-Укренерго noun:n:nv
+Укренерго noun:n:nv:np
 Укрзалізниця/a
 Укрінвестбуд/e
-Укрінтеренерго noun:n:nv
+Укрінтеренерго noun:n:nv:np
 Укрінформ/e
 Укркінохроніка/a
 Укрмедпром/e
@@ -5654,7 +5654,7 @@
 Укроборонпром/e
 Укроборонсервіс/e
 Укрпатент/e
-Укрпиво noun:n:nv
+Укрпиво noun:n:nv:np
 Укрпошта/a
 Укрпромбанк/e
 Укрпрофоздоровниця/a
@@ -5678,12 +5678,12 @@
 Улас/eghp
 Уленшпігель/eg<
 Улісс/egh<
-Ульріке noun:m:nv:ist
+Ульріке noun:m:nv:np:anim
 Ульріх/eg<
 Ульяненко/i<+
 Ульянченко/e<+
 Уляна/ad<
-Умберто noun:m:nv:ist
+Умберто noun:m:nv:np:anim
 упівець/abc<
 упівський/V
 Уралмаш/e
@@ -5698,22 +5698,22 @@
 Утьосов/U<+
 Ушаков/U<+
 Ушинський/i<+
-Фаберже noun:nv
+Фаберже noun:nv:np
 Фабер/eg<+
 Фаб'єн/egh<
 Фабіан/egh<
-Фабіо noun:m:nv:ist
-Фабріціо noun:m:nv:ist
+Фабіо noun:m:nv:np:anim
+Фабріціо noun:m:nv:np:anim
 Фадей/egp
 Фадєєв/U<+
 Фаїна/ad<
 Файнман/eg<+
 Файнмен/eg<+
 Фалес/eg<+
-Фалуньгун noun:nv
+Фалуньгун noun:nv:np
 Фальк/eg<+
-Фанні noun:f:nv:ist
-Фаріон noun:f:nv:ist
+Фанні noun:f:nv:np:anim
+Фаріон noun:f:nv:np:anim
 Фармак/e
 Фарук/eg<+
 Фатіма/ad<
@@ -5723,7 +5723,7 @@
 Февронія/ad<
 Федак/eg<+
 Федерер/eg<+
-Федеріко noun:m:nv:ist
+Федеріко noun:m:nv:np:anim
 Федецький/i<+
 Федишин/eg<+
 Федір/acdp
@@ -5743,14 +5743,14 @@
 Фейсбук/eo
 Фейхтвангер/eg<+
 Фелікс/eghp
-Феліпе noun:m:nv:ist
+Феліпе noun:m:nv:np:anim
 Феллер/eg<+
-Фелліні noun:m:nv:ist
+Фелліні noun:m:nv:np:anim
 Фелпс/eg<+
 Фельдман/eg<+
 Фемен/e
 Феміда/ad<
-Фенербахче noun:m:nv
+Фенербахче noun:m:nv:np
 Фенімор/egh<
 Феодора/ad<
 Феодор/egh<
@@ -5763,11 +5763,11 @@
 Фергюсон/eg<+
 Фердинанд/egh<
 Ференц/egh<
-Фере noun:m:nv:ist
-Фермі noun:m:nv
+Фере noun:m:nv:np:anim
+Фермі noun:m:nv:np
 Фернандель/eg<+
 Фернандес/eg<+
-Фернандіньйо noun:m:nv:ist
+Фернандіньйо noun:m:nv:np:anim
 Фернан/eg<+
 Фесенко/e<+
 Фессалоніка/ad<
@@ -5779,32 +5779,32 @@
 Филипович/eg<+
 Филипчак/eg<+
 Филипчук/eg<+
-Фібі noun:f:nv:ist
-Фігаро noun:m:nv:ist
-Фіделіо noun:m:nv:ist
+Фібі noun:f:nv:np:anim
+Фігаро noun:m:nv:np:anim
+Фіделіо noun:m:nv:np:anim
 Фідель/eg<
 Фійон/eg<+
 Філарет/eghp
 Філатов/U<+
-Філбі noun:m:nv:ist
+Філбі noun:m:nv:np:anim
 Філдс/eg<+
 Філд/eg<+
 Філенко/e<+
 Філімонов/U<+
 Філіпенко/e<+
-Філіпе noun:m:nv:ist
+Філіпе noun:m:nv:np:anim
 Філіпович/eg<+
 Філіпов/U<+
 Філіппенко/e<+
 Філіппов/U<+
-Філіппо noun:m:nv:ist
+Філіппо noun:m:nv:np:anim
 Філіпп/egh<
 Філіпчук/eg<+
 Філіп/egh<
 Філ/egh<
 Фінберг/eg<+
 Фінкельштейн/eg<+
-Фінлі noun:nv
+Фінлі noun:nv:np
 Фінн/eg<+
 Фінчер/eg<+
 Фінч/eg<+
@@ -5815,33 +5815,33 @@
 Фірташ/eg<+
 Фірцак/eg<+
 Фітч/eg<+
-Фіхте noun:m:nv:ist
+Фіхте noun:m:nv:np:anim
 Фіцджеральд/eg<+
 Фішер/eg<+
 Флавій/eg<+
-Флавіо noun:m:nv:ist
+Флавіо noun:m:nv:np:anim
 Флемінг/eg<+
-Флетлі noun:m:nv:ist
+Флетлі noun:m:nv:np:anim
 Флетчер/eg<+
 Флінн/eg<+
 Флінт/eg<+
 Флобер/eg<+
 Флойд/egh<
-Флоренс noun:f:nv:ist
+Флоренс noun:f:nv:np:anim
 Флоріан/egh<
 Флорівський/V
 Флорізель/eg<
 Фогель/eg<+
 Фокін/U<+
 Фокс/eg<+
-Фокс noun:f:nv:ist
-Фоліо noun:n:nv
+Фокс noun:f:nv:np:anim
+Фоліо noun:n:nv:np
 Фолкнер/eg<+
 Фома/adp
 Фоменко/e<+
 Фомін/eg<+
 Фонвізін/U<+
-Фонтейн noun:f:nv:ist
+Фонтейн noun:f:nv:np:anim
 Форест/egh<
 Форманчук/eg<+
 Форманюк/eg<+
@@ -5854,59 +5854,59 @@
 Франкенштейн/eg<+
 Франклін/eg<+
 Франко/e<
-Франсе noun:nv
-Франсіско noun:m:nv:ist
+Франсе noun:nv:np
+Франсіско noun:m:nv:np:anim
 Франсуаза/ad<
-Франсуа noun:m:nv:ist
+Франсуа noun:m:nv:np:anim
 Франс/egh<
 Франтішек/eg<+
 Франциск/eg<
 Франц/egh<
 Франческа/ad<
-Франческо noun:m:nv:ist
+Франческо noun:m:nv:np:anim
 Франчук/eg<+
-Фраттіні noun:m:nv:ist
-Фредді noun:m:nv:ist
+Фраттіні noun:m:nv:np:anim
+Фредді noun:m:nv:np:anim
 Фредерік/eg<
 Фред/egh<
 фрейдистський/V
 Фрейзер/eg<+
-Фрейндліх noun:f:nv:ist
-Фрейре noun:m:nv:ist
+Фрейндліх noun:f:nv:np:anim
+Фрейре noun:m:nv:np:anim
 Френк/eg<
 Френсіс/egh<
 Фридерик/eg<
 Фріда/ad<
-Фрідеріке noun:f:nv:ist
+Фрідеріке noun:f:nv:np:anim
 Фрідмановий/V
 Фрідман/eg<+
 Фрідрікссон/eg<+
 Фрідріх/egp
 Фріндж/e
 Фріц/egh<
-Фродо noun:m:nv:ist
+Фродо noun:m:nv:np:anim
 Фройд/eg<+
 Фролов/U<+
 Фромм/eg<+
-Фрунзе noun:m:nv:ist
+Фрунзе noun:m:nv:np:anim
 Фуенте
-Фуко noun:m:nv:ist
+Фуко noun:m:nv:np:anim
 Фукуда/a<+ ^noun:m
 Фукуяма/a<+ ^noun:m
 Фулбрайт/eg<+
 Фуллер/eg<+
 Фултон/eg<+
 Фулхем/eg
-Фульхенсіо noun:m:nv:ist
+Фульхенсіо noun:m:nv:np:anim
 фундуклеївський/V
 Фундуклей/eg<+
-Фур'є noun:m:nv:ist
+Фур'є noun:m:nv:np:anim
 Фурманов/U<+
 Фурманюк/eg<+
-Фурньє noun:m:nv:ist
-Фухіморі noun:m:nv:ist
+Фурньє noun:m:nv:np:anim
+Фухіморі noun:m:nv:np:anim
 Фучик/eg<+
-Фуше noun:m:nv:ist
+Фуше noun:m:nv:np:anim
 Фюнес/eg<+
 Хаббард/eg<+
 Хав'єр/egh<
@@ -5914,31 +5914,31 @@
 Хаїм/egh<
 Хайдер/eg<+
 Хайям/eg<+
-Хакслі noun:m:nv:ist
+Хакслі noun:m:nv:np:anim
 Халед/egh<
 Халід/egh<
 Хамас/e
-Хаменеї noun:m:nv:ist
+Хаменеї noun:m:nv:np:anim
 Хамід/egh<
 Хаммер/eg<+
-Ханеке noun:m:nv:ist
+Ханеке noun:m:nv:np:anim
 Харитонов/U<+
 Харитон/eghp
-Харківобленерго noun:n:nv
+Харківобленерго noun:n:nv:np
 Харламов/U<+
-Харлан noun:f:nv:ist
+Харлан noun:f:nv:np:anim
 Хармс/eg<+
 Харпер/eg<+
-Хартлі noun:m:nv:ist
+Хартлі noun:m:nv:np:anim
 Хартман/eg<+
-Харукі noun:m:nv:ist
+Харукі noun:m:nv:np:anim
 Харченко/e<+
 Хасан/egh<
 Хасевич/eg<+
-Хатамі noun:m:nv:ist
-Хатояма noun:m:nv:ist
+Хатамі noun:m:nv:np:anim
+Хатояма noun:m:nv:np:anim
 Хафез/egh<
-Хачеріді noun:m:nv:ist
+Хачеріді noun:m:nv:np:anim
 Хванчкара/a
 Хвостенко/e<+
 Хезболла/a
@@ -5947,25 +5947,25 @@
 Хендерсон/eg<+
 Хенк/eg<
 Хеопс/egh<
-Херсонобленерго noun:n:nv
+Херсонобленерго noun:n:nv:np
 Херст/eg<+
 Хижняк/eg<+
 Химич/eg<+
 Хівря/a<
-Хіларі noun:f:nv:ist
-Хілларі noun:f:nv:ist
+Хіларі noun:f:nv:np:anim
+Хілларі noun:f:nv:np:anim
 Хільченко/e<+
 Хіменес/eg<+
-Хіросі noun:m:nv:ist
-Хірохіто noun:m:nv:ist
+Хіросі noun:m:nv:np:anim
+Хірохіто noun:m:nv:np:anim
 Хірш/eg<+
-Хітоші noun:m:nv:ist
+Хітоші noun:m:nv:np:anim
 Хічкок/eg<+
 Хливнюк/eg<+
 Хмелевський/V<
 Хмелецький/V<
 Хмелько/e<+
-Хмельницькобленерго noun:n:nv
+Хмельницькобленерго noun:n:nv:np
 Хоакін/egh<
 Хованщина/a
 Ходжа/ad< ^noun:m
@@ -5973,7 +5973,7 @@
 Ходорковський/i<+
 Холмс/eg<+
 Хома/adp
-Хомейні noun:m:nv:ist
+Хомейні noun:m:nv:np:anim
 Хоменко/e<+
 Хомутинник/eg<+
 Хонда/a
@@ -5982,9 +5982,9 @@
 Хорошковський/i<+
 Хорс/eg<+
 Хоружинська/i<+
-Хорхе noun:m:nv:ist
-Хосе noun:m:nv:ist
-Хосні noun:m:nv:ist
+Хорхе noun:m:nv:np:anim
+Хосе noun:m:nv:np:anim
+Хосні noun:m:nv:np:anim
 Хостікоєв/U<+
 Хоткевич/eg<+
 Хоттабич/eg<+
@@ -6003,10 +6003,10 @@
 Хуан/egh<
 Худицький/i<+
 Худоб'як/eg<+
-Хуліо noun:m:nv:ist
+Хуліо noun:m:nv:np:anim
 Хусейн/eg<+
-Х'юго noun:m:nv:ist
-Х'ю noun:m:nv:ist
+Х'юго noun:m:nv:np:anim
+Х'ю noun:m:nv:np:anim
 Царенко/e<+
 Царьов/U<+
 Цахес/eg<+
@@ -6015,15 +6015,15 @@
 Цезарій/eg<
 Цейс/eg<+
 Центрвиборчком/e
-Центренерго noun:n:nv
+Центренерго noun:n:nv:np
 центробанк/ef
 Цецилія/ad<
 Цзедун/eg<+
 Цземінь/eg<+
 Цзіньпін/eg<+
-Цзіньтао noun:m:nv:ist
-Цзябао noun:m:nv:ist
-Цзян noun:m:nv:ist
+Цзіньтао noun:m:nv:np:anim
+Цзябао noun:m:nv:np:anim
+Цзян noun:m:nv:np:anim
 Цибенко/e<+
 Цибулько/e<+
 Цибульський/V<
@@ -6031,7 +6031,7 @@
 Циганов/U<+
 Цимбалюк/eg<+
 Циммерман/eg<+
-Цинандалі noun:n:nv
+Цинандалі noun:n:nv:np
 цитрамон/e
 Ціолковський/i<+
 Цірцея/ad<
@@ -6042,9 +6042,9 @@
 Чабанов/U<+
 Чабанюк/eg<+
 Чавес/eg<+
-Чавчавадзе noun:m:nv:ist
+Чавчавадзе noun:m:nv:np:anim
 Чайковський/i<+
-Чалабі noun:m:nv:ist
+Чалабі noun:m:nv:np:anim
 чандрасекаровий/V
 Чандрасекар/eg<+
 Чандра/ad< ^noun:m
@@ -6054,19 +6054,19 @@
 Чапкіс/eg<+
 Чаплін/eg<+
 Чарлз/egh<
-Чарлі noun:m:nv:ist
+Чарлі noun:m:nv:np:anim
 Чарльз/egh<
 Чарторийський/i
-Чаушеску noun:m:nv:ist
+Чаушеску noun:m:nv:np:anim
 Чебурашка/ad< ^noun:m
 Чедвік/eg<+
 Чейз/eg<+
-Чейні noun:m:nv:ist|noun:f:nv:ist
-Челебі noun:m:nv:ist
-Челентано noun:m:nv:ist
+Чейні noun:m:nv:np:anim|noun:f:nv:np:anim
+Челебі noun:m:nv:np:anim
+Челентано noun:m:nv:np:anim
 Челленджер/eg
-Челліні noun:m:nv:ist
-Челсі noun:f:nv:ist|noun:m:nv
+Челліні noun:m:nv:np:anim
+Челсі noun:f:nv:np:anim|noun:m:nv:np
 Чемберлен/eg<+
 Ченцов/U<+
 Чепмен/eg<+
@@ -6074,16 +6074,16 @@
 Чередниченко/e<+
 Черепанов/U<+
 Черкасигаз/e
-Черкасиобленерго noun:n:nv
-Черкаситеплокомуненерго noun:n:nv
+Черкасиобленерго noun:n:nv:np
+Черкаситеплокомуненерго noun:n:nv:np
 Черкасов/U<+
 Черненко/e<+
 Чернишевський/i<+
 Чернишов/U<+
 Чернівціводоканал/e
 Чернівцігаз/e
-Чернівціобленерго noun:n:nv
-Чернігівобленерго noun:n:nv
+Чернівціобленерго noun:n:nv:np
+Чернігівобленерго noun:n:nv:np
 Черновецький/i<+
 Черномирдін/eg<+
 Чернявський/V<
@@ -6095,16 +6095,16 @@
 чеховський/V
 Чечетов/U<+
 Чеширський/i
-Чжан noun:m:nv:ist
-Чжао noun:nv
-Чжоу noun:nv
+Чжан noun:m:nv:np:anim
+Чжао noun:nv:np
+Чжоу noun:nv:np
 Чигринський/i<+
 Чижевський/i<+
 Чижов/U<+
 Чикаленко/e<+
 Чингіз/egh<
 Чингісхан/egh<
-Чипполіно noun:m:nv:ist
+Чипполіно noun:m:nv:np:anim
 Чистяков/U<+
 Чкалов/U<+
 Чміль/eg<+
@@ -6117,15 +6117,15 @@
 Чуковський/i<+
 Шакіра/ad<
 Шалімов/U<+
-Шальке noun:m:nv
+Шальке noun:m:nv:np
 Шаляпін/U<+
 Шаміль/eg<
 Шандор/eg<+
 Шанель/i
-Шапіро noun:m:nv
+Шапіро noun:m:nv:np
 Шаповалов/U<+
-Шардоне noun:m:nv
-Шарко noun:m:nv:ist
+Шардоне noun:m:nv:np
+Шарко noun:m:nv:np:anim
 Шарлотта/ad<
 Шарль/eg<
 Шарон/egh<
@@ -6141,17 +6141,17 @@
 Шварцман/eg<+
 Шварц/eg<+
 Швейк/eg<+
-Шеварднадзе noun:m:nv:ist
-Шева noun:m:nv:ist
+Шеварднадзе noun:m:nv:np:anim
+Шева noun:m:nv:np:anim
 Шевельов/U<+
 Шевцов/U<+
 шевченковий/V
 Шевченко/e<+
-Шеклі noun:m:nv:ist
+Шеклі noun:m:nv:np:anim
 Шекспір/eg<+
 Шелаєв/U<+
 Шелдон/egh<
-Шеллі noun:f:nv:ist
+Шеллі noun:f:nv:np:anim
 Шемчук/eg<+
 Шемякін/eg<+
 Шенберг/eg<+
@@ -6166,7 +6166,7 @@
 Шерідан/eg<+
 Шерлок/eg<
 Шерман/eg<+
-Шерон noun:f:nv:ist
+Шерон noun:f:nv:np:anim
 Шестаков/U<+
 Шибалов/e
 Шиллер/eg<+
@@ -6180,7 +6180,7 @@
 Шмідт/eg<+
 Шмітт/eg<+
 Шнайдер/eg<+
-Шнітке noun:m:nv:ist
+Шнітке noun:m:nv:np:anim
 Шовковський/i<+
 Шокін/eg<+
 Шолом-Алейхем/eg<+
@@ -6188,7 +6188,7 @@
 Шон/egh<
 Шопенгауер/eg<+
 Шостакович/eg<+
-Шота noun:m:nv:ist
+Шота noun:m:nv:np:anim
 Шредер/eg<+
 Шредінґер/eg<+
 Шрьодер/eg<+
@@ -6218,7 +6218,7 @@
 Щорс/eg<+
 Ювентус/eg
 Юзеф/egp
-Юкіо noun:m:nv:ist
+Юкіо noun:m:nv:np:anim
 Юліан/eghp
 Юлій/egp
 Юліус/egh<
@@ -6257,7 +6257,7 @@
 Яворівський/V<
 Яворницький/i<+
 Ягайло/e<
-Яго noun:m:nv:ist
+Яго noun:m:nv:np:anim
 Якименко/e<+
 Якимчук/eg<+
 Яким/eghp
@@ -6268,7 +6268,7 @@
 Яковченко/e<+
 Якубовський/V<
 Якушенко/e<+
-Ямамото noun:m:nv:ist
+Ямамото noun:m:nv:np:anim
 Яна/ad<
 Янгель/eg<+
 Янг/eg<+
@@ -6301,8 +6301,8 @@
 Ярузельський/i<+
 Ясір/egh<
 Ястржембський/i<+
-Ясунарі noun:m:nv:ist
-Ясуо noun:m:nv:ist
-Ясухіро noun:m:nv:ist
+Ясунарі noun:m:nv:np:anim
+Ясуо noun:m:nv:np:anim
+Ясухіро noun:m:nv:np:anim
 Яценко/e<+
 Яценюк/eg<+

@@ -101,27 +101,27 @@
 # додаткові форми
 стіс стос noun:m:v_naz/v_zna
 залім залом noun:m:v_naz/v_zna
-хірт хорт noun:m:v_naz/v_zna:ist
-кріль кріль noun:m:v_naz:ist
+хірт хорт noun:m:v_naz/v_zna:anim
+кріль кріль noun:m:v_naz:anim
 сосон сосна noun:p:v_rod
-відьом відьма noun:p:v_rod/v_zna:ist
+відьом відьма noun:p:v_rod/v_zna:anim
 верстов верста noun:p:v_rod
 одіж одежа noun:f:v_naz/v_zna
-воріженьки вороженьки noun:p:v_naz:ist
+воріженьки вороженьки noun:p:v_naz:anim
 очки очко noun:p:v_naz
 воєн війна noun:p:v_rod
 грошима гроші noun:p:v_oru
 грішми гроші noun:p:v_oru
-людоньки людоньки noun:p:v_naz:ist
+людоньки людоньки noun:p:v_naz:anim
 
 яловець ялівець noun:m:v_naz/v_zna
 
 крильми крило noun:p:v_oru
 слізьми сльоза noun:p:v_oru
 коліньми коліно noun:p:v_oru
-гістьми гість noun:p:v_oru:ist
+гістьми гість noun:p:v_oru:anim
 кістьми кість noun:p:v_oru
-свиньми свиня noun:p:v_oru:ist
+свиньми свиня noun:p:v_oru:anim
 ворітьми ворота noun:p:v_oru
 воротям ворота noun:p:v_dav
 воротях ворота noun:p:v_mis
@@ -130,12 +130,12 @@
 зморщок зморшка noun:p:v_rod
 легенів легеня noun:p:v_rod
 льоту літ noun:m:v_rod/v_dav/v_mis
-панотче панотець noun:m:v_kly:ist
+панотче панотець noun:m:v_kly:anim
 персні перстень noun:p:v_naz/v_zna
-старче старець noun:m:v_kly:ist
-чернець ченець noun:m:v_naz:ist
+старче старець noun:m:v_kly:anim
+чернець ченець noun:m:v_naz:anim
 яблуці яблуко noun:n:v_mis
-мамів мама noun:p:v_rod:ist
+мамів мама noun:p:v_rod:anim
 
 штаням штани noun:p:v_dav
 штаньми штани noun:p:v_oru
@@ -201,16 +201,16 @@
 вівсами овес noun:p:v_oru
 вівсах овес noun:p:v_mis
 
-вівці вівця noun:p:v_naz/v_zna:ist
-овець вівця noun:p:v_rod/v_zna:ist
-вівцям вівця noun:p:v_dav:ist
-вівцями вівця noun:p:v_oru:ist
-вівцях вівця noun:p:v_mis:ist
+вівці вівця noun:p:v_naz/v_zna:anim
+овець вівця noun:p:v_rod/v_zna:anim
+вівцям вівця noun:p:v_dav:anim
+вівцями вівця noun:p:v_oru:anim
+вівцях вівця noun:p:v_mis:anim
 
 
-дідуньо дідунь noun:m:v_naz:ist
-татуньо татунь noun:m:v_naz:ist
-татусьо татусь noun:m:v_naz:ist
+дідуньо дідунь noun:m:v_naz:anim
+татуньо татунь noun:m:v_naz:anim
+татусьо татусь noun:m:v_naz:anim
 
 ігри гра noun:p:v_naz/v_zna
 ігор гра noun:p:v_rod
@@ -234,30 +234,30 @@
 
 окові око noun:n:v_dav
 
-Ігор Ігор noun:m:v_naz:ist
-Ігореві Ігор noun:m:v_dav:ist
-Ігореві Ігор noun:m:v_mis:ist
-Ігорем Ігор noun:m:v_oru:ist
-Ігорі Ігор noun:m:v_mis:ist
-Ігоря Ігор noun:m:v_rod/v_zna:ist
-Ігорю Ігор noun:m:v_dav/v_mis:ist
-Ігоре Ігор noun:m:v_kly:ist
+Ігор Ігор noun:m:v_naz:anim
+Ігореві Ігор noun:m:v_dav:anim
+Ігореві Ігор noun:m:v_mis:anim
+Ігорем Ігор noun:m:v_oru:anim
+Ігорі Ігор noun:m:v_mis:anim
+Ігоря Ігор noun:m:v_rod/v_zna:anim
+Ігорю Ігор noun:m:v_dav/v_mis:anim
+Ігоре Ігор noun:m:v_kly:anim
 Ігор/p
 
-Господь Господь noun:m:v_naz:ist
-Господа Господь noun:m:v_rod:ist
-Господові Господь noun:m:v_dav/v_mis:ist
-Господеві Господь noun:m:v_dav/v_mis:ist
-Господу Господь noun:m:v_dav:ist
-Господом Господь noun:m:v_oru:ist
-Господі Господь noun:m:v_mis:ist
-Господи Господь noun:m:v_kly:ist
+Господь Господь noun:m:v_naz:anim
+Господа Господь noun:m:v_rod:anim
+Господові Господь noun:m:v_dav/v_mis:anim
+Господеві Господь noun:m:v_dav/v_mis:anim
+Господу Господь noun:m:v_dav:anim
+Господом Господь noun:m:v_oru:anim
+Господі Господь noun:m:v_mis:anim
+Господи Господь noun:m:v_kly:anim
 
-Христа Христос noun:m:v_rod/v_zna:ist
-Христу Христос noun:m:v_dav:ist
-Христові Христос noun:m:v_dav/v_mis:ist
-Христом Христос noun:m:v_oru:ist
-Христі Христос noun:m:v_mis:ist
+Христа Христос noun:m:v_rod/v_zna:anim
+Христу Христос noun:m:v_dav:anim
+Христові Христос noun:m:v_dav/v_mis:anim
+Христом Христос noun:m:v_oru:anim
+Христі Христос noun:m:v_mis:anim
 
 Донець Донець noun:m:v_naz/v_zna
 Дінця Донець noun:m:v_rod
@@ -349,14 +349,27 @@
 кінця-краю кінця-краю noun:m:v_rod
 предку-віку предку-віку noun:m:v_zna
 
+панове пан noun:p:v_kly
+
 
 # Прислівники
 
 більше багато adv:compr
 більш багато adv:compr
 найбільше багато adv:super
+найбільш багато adv:super
 щонайбільше багато adv:super
+щонайбільш багато adv:super
 якнайбільше багато adv:super
+якнайбільш багато adv:super
+менше мало adv:compr
+менш мало adv:compr
+найменше мало adv:super
+найменш мало adv:super
+щонайменше мало adv:super
+щонайменш мало adv:super
+якнайменше мало adv:super
+якнайменш мало adv:super
 
 
 #
