@@ -385,12 +385,20 @@ def expand_prefix(word, affixFlag, affixGroups):
 
     return str
 
+def retain_tags(line, tags):
+    parts = line.split(':')
+    line = parts[0]
+    for part in parts:
+        if part in tags:
+            line += ':' + part
+    return line
+
 def post_process(line, affixFlags):
     if "impers" in line:
-        if ':bad' in line:
-           line = re.sub('impers.*:bad', 'impers:bad', line)
-        else:
-           line = re.sub('impers.*', 'impers', line)
+#         if ':bad' in line:
+         line = retain_tags(line, ['impers', 'imperf', 'perf', 'bad', 'slang', 'coll', 'alt', 'rare'])
+#         else:
+#            line = re.sub('impers.*', 'impers', line)
     elif "advp" in line:
         line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
 # дієприслівник, як окрема лема
@@ -448,11 +456,36 @@ def collect_all_words(line):
         adverbs.append(line.split(' ')[0])
 
 
+
+VIDM=['v_naz', 'v_rod', 'v_dav', 'v_zna', 'v_oru', 'v_mis']
+re_nv_vidm=re.compile('(noun):[mfn]:(.*)')
+
+def expand_nv(in_lines):
+  lines = []
+  
+  for line in in_lines:
+    if 'noun' in line and ':nv' in line:
+        parts = line.split(':nv')
+    
+        for v in VIDM:
+          lines.append(parts[0] + ':' + v + ':nv' + parts[1])
+          
+        if not ':p' in line and not ':np' in line:
+          for v in VIDM:
+            lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
+    else:
+        lines.append(line)
+
+  return lines
+
 #@profile
 def process_line(line):
     if " " in line and not " :" in line and not " ^" in line:
         out = expand_alts([line], '//', tag_split2_re)
         out = expand_alts(out, '/', tag_split1_re)
+       
+        out = expand_nv(out)
+        
         ofile.write("\n".join(out) + '\n')
         
         [collect_all_words(w) for w in out]

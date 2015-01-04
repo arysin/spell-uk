@@ -122,9 +122,9 @@
 гістьми гість noun:p:v_oru:anim
 кістьми кість noun:p:v_oru
 свиньми свиня noun:p:v_oru:anim
-ворітьми ворота noun:p:v_oru
-воротям ворота noun:p:v_dav
-воротях ворота noun:p:v_mis
+ворітьми ворота noun:p:v_oru:ns
+воротям ворота noun:p:v_dav:ns
+воротях ворота noun:p:v_mis:ns
 
 губів губа noun:p:v_rod
 зморщок зморшка noun:p:v_rod
@@ -137,10 +137,10 @@
 яблуці яблуко noun:n:v_mis
 мамів мама noun:p:v_rod:anim
 
-штаням штани noun:p:v_dav
-штаньми штани noun:p:v_oru
-штанями штани noun:p:v_oru
-штанях штани noun:p:v_mis
+штаням штани noun:p:v_dav:ns
+штаньми штани noun:p:v_oru:ns
+штанями штани noun:p:v_oru:ns
+штанях штани noun:p:v_mis:ns
 
 дошки дошка noun:p:v_naz/v_zna
 дощок дошка noun:p:v_rod
@@ -155,7 +155,7 @@
 язицех язик noun:p:v_mis
 властен властен predic
 
-давніх-давен давніх-давен noun:p:v_rod
+давніх-давен давніх-давен noun:p:v_rod:ns
 
 тьма-тьмуща тьма-тьмуща noun:f:v_naz
 тьми-тьмущої тьма-тьмуща noun:f:v_rod
@@ -271,9 +271,9 @@
 четвергові четвер noun:m:v_dav
 четвергом четвер noun:m:v_oru
 четверги четвер noun:p:v_naz/v_zna
-четвергах четвер noun:m:v_mis
-четвергів четвер noun:m:v_rod
-четвергам четвер noun:m:v_dav
+четвергах четвер noun:p:v_mis
+четвергів четвер noun:p:v_rod
+четвергам четвер noun:p:v_dav
 
 плечі плече noun:p:v_naz/v_zna
 плечей плече noun:p:v_rod
