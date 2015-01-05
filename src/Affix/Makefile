@@ -7,15 +7,16 @@ src_affixfiles = uk.REP uk.aff.ADJ uk.aff.NOUN uk.aff.VERB uk.aff.VERB_REV uk.af
 
 CLEANFILES = $(affixfile) uk.aff.VERB_REV
 
+alt_suff_cmd=sed -r '/:alt/ s/^\#//' | sed -r "s/SFX l Y 50/SFX l Y 52/"
 
 all: $(affixfile)
 
 
-$(affixfile): $(src_affixfiles)
+$(affixfile): $(src_affixfiles) Makefile
 	cat $(src_affixfiles) | sed 's/[\t ]*#.*$$//g; s/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
 
-uk_affix.tag: $(src_affixfiles)
-	cat $(src_affixfiles) | grep -Ev "^#|^REP" | sed 's/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
+uk_affix.tag: $(src_affixfiles) Makefile
+	cat $(src_affixfiles) | $(alt_suff_cmd) | grep -Ev "^#|^REP" | sed 's/	/ /g; s/ \+/ /g; /^ *$$/d' > $@
 
 uk.aff.VERB_REV: uk.aff.VERB $(reverse_verbs)
 	$(reverse_verbs) < uk.aff.VERB > uk.aff.VERB_REV

@@ -1379,6 +1379,8 @@ SFX l Y 50
 # із закінченням на -ість -їсть
 SFX l   ість	ості	ість		#  ніжність  ніжності 	(Р.Д.М.)                @ noun:f:v_rod/v_dav/v_zna/v_mis
 SFX l   їсть	йості	їсть		#  безкраїсть  безкрайості  (Р.Д.М.)            @ noun:f:v_rod/v_dav/v_zna/v_mis
+#SFX l   ість	ости	ість		#  ніжність  ніжности 	(Р.Д.М.)                @ noun:f:v_rod/v_dav/v_zna/v_mis:alt
+#SFX l   їсть	йости	їсть		#  безкраїсть  безкрайости  (Р.Д.М.)            @ noun:f:v_rod/v_dav/v_zna/v_mis:alt
 SFX l   ь	і	[^їі]сть	#  водорость  водорості (Р.Д.М.)                @ noun:f:v_rod/v_dav/v_zna/v_mis
 SFX l   ь	ю	сть		#  ніжність  ніжністю 	(О.)                    @ noun:f:v_oru
 # з чергуванням і/е

@@ -118,7 +118,7 @@ fi
 
 if [ "$FILTER_DICT" != "" ]; then
     echo "Створюємо список слів-покручів" >&2
-    hunspell -G -d $FILTER_DICT ${FILE}.withtwisters.txt
+    hunspell -G -d $FILTER_DICT ${FILE}.withtwisters.txt > ${FILE}.twisters.lst
 fi
 
 # hunspell does not handle long strings (>5K utf-8 chars) well - need to split
