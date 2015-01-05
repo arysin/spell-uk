@@ -280,6 +280,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+            if istota(word, allAffixFlags):
+              str += '/v_kly'
         elif affixFlag == 'i' and word.endswith('ів'):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
@@ -457,7 +459,7 @@ def collect_all_words(line):
 
 
 
-VIDM=['v_naz', 'v_rod', 'v_dav', 'v_zna', 'v_oru', 'v_mis']
+VIDM=['v_naz', 'v_rod', 'v_dav', 'v_zna', 'v_oru', 'v_mis', 'v_kly']
 re_nv_vidm=re.compile('(noun):[mfn]:(.*)')
 
 def expand_nv(in_lines):
@@ -468,11 +470,13 @@ def expand_nv(in_lines):
         parts = line.split(':nv')
     
         for v in VIDM:
-          lines.append(parts[0] + ':' + v + ':nv' + parts[1])
+          if v != 'v_kly' or 'anim' in line:
+            lines.append(parts[0] + ':' + v + ':nv' + parts[1])
           
         if not ':p' in line and not ':np' in line:
           for v in VIDM:
-            lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
+            if v != 'v_kly' or 'anim' in line:
+              lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
     else:
         lines.append(line)
 
