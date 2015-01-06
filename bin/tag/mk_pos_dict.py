@@ -615,15 +615,15 @@ def process_line(line):
               if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
                  if 'noun:' in main_tag:
                    if not ':p:' in out_line2:
-                     repl_str=re.sub('[^ :]+', '[^ :]+', main_tag)
+                     repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
                      out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
                  else:
-                   repl_str='[a-z]+'
+                   repl_str = '[a-z]+'
                    out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
 
-              if " adjp" in out_line2:
-                if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
-                  out_line2 += ":&adj"
+#              if " adjp" in out_line2:
+#                if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
+#                  out_line2 += ":&adj"
             
               # put end tags at the end
               if end_tag_re.search(out_line2):
