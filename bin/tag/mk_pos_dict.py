@@ -178,7 +178,7 @@ def generate(word, allAffixFlags, origAffixFlags):
                         line = line.replace('m:v_dav/v_mis', 'm:v_dav')
             elif affixFlag in "ir":
                  if istota(word, allAffixFlags):
-                   if 'noun:f:v_rod' in line and not word.endswith('матір'):
+                   if 'noun:f:v_rod' in line and not word.endswith('а') and not word.endswith('матір'):
                      line = line.replace('f:v_rod', 'f:v_rod/v_zna')
 #                 else:
 #                   if 'noun:f:v_naz' in line:
@@ -223,23 +223,35 @@ def generate(word, allAffixFlags, origAffixFlags):
 
 def get_word_base(word, affixFlag, allAffixFlags):
         str = ''
+        
+        v_zna_for_anim = ""
+        if istota(word, allAffixFlags):
+            v_zna_for_anim = "/v_zna";
 
         if affixFlag == 'U' and '+' in allAffixFlags:
             str = word + ' ' + word + ' noun:m:v_naz'
+        elif affixFlag == 'U' and word.endswith('ий'):
+            str = word + ' ' + word + ' adj:m:v_naz/v_zna:np'
         elif affixFlag == 'V' or affixFlag == 'U':
             if word.endswith('е'):
-                str = word + ' ' + word + ' noun:n:v_naz/v_zna'
+                str = word + ' ' + word + ' adj:n:v_naz/v_zna'
+            elif word.endswith('і'):
+                str = word + ' ' + word + ' adj:p:v_naz/v_zna:ns'
+            elif word.endswith('а'):
+                str = word + ' ' + word + ' adj:f:v_naz/v_zna'
             elif word.endswith('ій'):
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna//f:v_dav/v_mis'
             else:
               if istota(word, allAffixFlags):
-                str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+                str = word + ' ' + word + ' noun:m:v_naz'
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
+                
         elif re.match('[AIKMC]', affixFlag):
             str = word + ' ' + word + ' verb:inf'
         elif re.match('[BJLN]', affixFlag):
             str = word + ' ' + word + ' verb:rev:inf'
+            
         elif affixFlag == 'a' and ending_a_numr_re.match(word):
             str = word + ' ' + word + ' numr:v_naz/v_zna'
         elif affixFlag == 'a' and ending_a_aja_re.match(word):
@@ -251,6 +263,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
                 str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag in 'bfo':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
+        elif affixFlag == 'e' and word.endswith('е'):
+            str = word + ' ' + word + ' noun:n:v_naz/v_zna'
         elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
@@ -287,9 +301,17 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
-            str = word + ' ' + word + ' noun:n:v_naz/v_zna'
+            str = word + ' ' + word + ' noun:n:v_naz'
             if word.endswith('е') and istota(word, allAffixFlags):
               str += '/v_kly'
+            else:
+              str += '/v_zna'
+        elif affixFlag == 'i' and (word.endswith('а')):
+            str = word + ' ' + word + ' noun:f:v_naz'
+            if istota(word, allAffixFlags):
+              str += '/v_kly'
+#            else:
+#              str += '/v_zna'
         elif affixFlag in "ir" and word[-1] in "ьаячшжрвф":
             str = word + ' ' + word + ' noun:f:v_naz'
             if not istota(word, allAffixFlags) or word.endswith('матір'):
@@ -336,6 +358,7 @@ def generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
 #            elif 'advp' in affix.tags:
 #                lines.append( deriv + ' ' + deriv + ' ' + affix.tags )
             else:
+                # по-батькові
                 if affixFlag == 'p':
                     if 'm:v_naz' in affix.tags:
                         patronim_base_m = deriv
@@ -397,10 +420,7 @@ def retain_tags(line, tags):
 
 def post_process(line, affixFlags):
     if "impers" in line:
-#         if ':bad' in line:
          line = retain_tags(line, ['impers', 'imperf', 'perf', 'bad', 'slang', 'coll', 'alt', 'rare'])
-#         else:
-#            line = re.sub('impers.*', 'impers', line)
     elif "advp" in line:
         line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
 # дієприслівник, як окрема лема
@@ -611,6 +631,12 @@ def process_line(line):
         out_lines2 = post_process(out_line, affixFlags)
         
         for out_line2 in out_lines2:
+            # пропустити середній для прізвищ
+            if origAffixFlags.endswith('V<') and ':n:' in out_line2:
+              continue
+            
+
+        
             if main_tag:
               if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
                  if 'noun:' in main_tag:
