@@ -20,7 +20,7 @@ logger = logging.getLogger('tofsa')
 #spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
 
 
-PLURAL_FLAGS_RE = '[bfjlq]'
+PLURAL_FLAGS_RE = '[bfjlq9]'
 NOUN_FLAGS_RE = '[a-z]';
 
 allWords = []
@@ -110,7 +110,6 @@ def lastname_dual(word, allAffixFlags):
 def istota(word, allAffixFlags):
   return ('p' in allAffixFlags or '<' in allAffixFlags) \
     or lastname(word, allAffixFlags)
-#    and ('g' in allAffixFlags or 'c' in allAffixFlags or ('e' in allAffixFlags and word.endswith('о')))) \
 
 def person(word, allAffixFlags):
   return ('p' in allAffixFlags or ('<' in allAffixFlags and not '>' in allAffixFlags)) \
@@ -119,7 +118,7 @@ def person(word, allAffixFlags):
 
 
 #@profile
-def generate(word, allAffixFlags, origAffixFlags):
+def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
     all_forms = []
     
@@ -157,6 +156,14 @@ def generate(word, allAffixFlags, origAffixFlags):
                   or (('v_zna' in line or 'v_dav' in line) and 'd' in origAffixFlags and affixFlag != 'p') \
                   or lastname(word, origAffixFlags):
                     line = re.sub('/v_kly', '', line)
+
+            if affixFlag in 'V9j' and 'adj:p:v_naz/v_zna' in line:
+              if '<' in allAffixFlags:
+                if not '>' in allAffixFlags:
+                  line = line.replace('/v_zna', '')
+#              else:
+#                if 'noun' in main_tag:
+#                  line = line.replace('v_naz/', '')
 
             # handle rodovyi for singular
             if affixFlag == 'e':
@@ -238,7 +245,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             elif word.endswith('і'):
                 str = word + ' ' + word + ' adj:p:v_naz/v_zna:ns'
             elif word.endswith('а'):
-                str = word + ' ' + word + ' adj:f:v_naz/v_zna'
+                str = word + ' ' + word + ' adj:f:v_naz'
             elif word.endswith('ій'):
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna//f:v_dav/v_mis'
             else:
@@ -293,9 +300,11 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
-            str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+            str = word + ' ' + word + ' noun:m:v_naz'
             if istota(word, allAffixFlags):
               str += '/v_kly'
+            else:
+              str += '/v_zna'
         elif affixFlag == 'i' and word.endswith('ів'):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
@@ -530,7 +539,7 @@ def process_line(line):
 
     extra_tag = ''
     
-    if line.endswith('/V<'):
+    if '/V' in line and '<' in line:
       line += ' ^noun'
 
     if not '^noun' in line:
@@ -613,7 +622,7 @@ def process_line(line):
         if not affixFlags:
           out_lines.append( word + ' ' + word + ' unknown')
         else:
-          out_lines.extend( generate(word, affixFlags, origAffixFlags) )
+          out_lines.extend( generate(word, affixFlags, origAffixFlags, main_tag) )
 
     for out_line in out_lines:
 #        print("affixFlags", affixFlags, out_line, extra_tag)

@@ -27,9 +27,10 @@ uk_words.tag: $(dict) $(TAGS_ONLY) Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) $(TAGS_ONLY) | $(sort) > $@
 	@(grep -E $(BAD_TAGS_RE) $@ && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
 
-wc:     uk_words.out
+wc:     uk_words.out uk_words.tag
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
 	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.out | wc -l
+	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.tag | wc -l
 
 sort:
 	@for ff in $(SORTED) ; do \
