@@ -18,7 +18,7 @@ from compar_forms import COMPAR_FORMS
 logger = logging.getLogger('tofsa')
 
 #spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
-
+all_out_lines = []
 
 PLURAL_FLAGS_RE = '[bfjlq9]'
 NOUN_FLAGS_RE = '[a-z]';
@@ -99,12 +99,12 @@ def expand_alts(lines, splitter, regexp):
 
 def lastname(word, allAffixFlags):
   return '+' in allAffixFlags \
-    or ('+' in allAffixFlags and word.endswith('о')) \
-    or ('e' in allAffixFlags and word[0].isupper() \
-           and ( word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
+    or ('+' in allAffixFlags and word.endswith('о'))
+#    or ('e' in allAffixFlags and word[0].isupper() \
+#           and ( word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
 def lastname_dual(word, allAffixFlags):
-  return ('e' in allAffixFlags and word[0].isupper() \
+  return '+' in allAffixFlags and ('e' in allAffixFlags and word[0].isupper() \
            and (word.endswith('ко') or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
 def istota(word, allAffixFlags):
@@ -519,7 +519,7 @@ def process_line(line):
        
         out = expand_nv(out)
         
-        ofile.write("\n".join(out) + '\n')
+        all_out_lines.extend(out)
         
         [collect_all_words(w) for w in out]
         
@@ -604,7 +604,7 @@ def process_line(line):
             tag = ' '
 
         outline = line + ' ' + line + tag + extra_tag
-        ofile.write(outline + '\n')
+        all_out_lines.append(outline)
 
         collect_all_words(outline)
         return
@@ -665,16 +665,62 @@ def process_line(line):
                 #print('main tag for ', out_line2, file=sys.stderr)
                 out_line2 = end_tag_re.sub('\\2\\1', out_line2)
         
-            ofile.write( out_line2 + '\n' )
+            all_out_lines.append( out_line2 )
         
             collect_all_words(out_line2)
 
 
 # end
 
+tags_re = re.compile('(.*:)v_...(.*)')
+
+def match_comps(lefts, rights):
+    outs = []
+    left_v = {}
+    
+    for ln in lefts:
+        parts = ln.split(' ')
+        rrr = re.search(':(.:v_...)', parts[2])
+        if not rrr:
+            print('ignoring left', ln)
+            continue
+        
+        vidm = rrr.group(1)
+        
+        if not vidm in left_v:
+            left_v[vidm] = []
+
+        left_v[vidm].append(parts[0])
+        left_wn = parts[1]
+        left_tags = parts[2]
+
+    for rn in rights:
+        parts = rn.split(' ')
+        rrr = re.search(':(.:v_...)', rn)
+        if not rrr:
+            print('ignoring right', rn)
+            continue
+
+        vidm = rrr.group(1)
+        
+        if not vidm in left_v:
+            continue
+        
+        for left_wi in left_v[vidm]:
+            wi = left_wi + '-' + parts[0]
+            wn = left_wn + '-' + parts[1]
+            outs.append(wi + ' ' + wn + ' ' + tags_re.sub('\\1'+vidm+'\\2', left_tags))
+
+    return outs
+
 # --------------
 # main code
 # --------------
+
+if '-comp' in sys.argv:
+    comp_flag = True
+else:
+    comp_flag = False
 
 aff_arg_idx = sys.argv.index('-aff') if '-aff' in sys.argv else -1
 if aff_arg_idx != -1:
@@ -726,7 +772,30 @@ else:
   ifile = open(src_filename, "r")
   ofile = open("tagged.main.txt"+file_sfx, "w")
 
-for line in ifile:
+if comp_flag:
+
+  for line in ifile:
+
+    line = line.strip()
+    if len(line) == 0:
+      continue
+
+    parts = line.split('-')
+        
+    process_line(parts[0])
+    lefts = all_out_lines
+    all_out_lines = []
+
+    process_line(parts[1])
+    rights = all_out_lines
+    all_out_lines = []
+    
+    comps = match_comps(lefts, rights)
+    ofile.write('\n'.join(comps) + '\n')
+
+else:
+
+  for line in ifile:
 
     line = line.strip()
     if len(line) == 0:
@@ -738,11 +807,14 @@ for line in ifile:
         process_line(line)
 
 
-
-for adv_line in adverbs_compar:
+  for adv_line in adverbs_compar:
     adv = adv_line.split(' ')[1]
     if adv in adverbs:
-        ofile.write( adv_line + '\n' )
+        all_out_lines.append( adv_line )
+
+
+for out_line in all_out_lines:
+    ofile.write(out_line + '\n')
 
 
 if not '-' in sys.argv:

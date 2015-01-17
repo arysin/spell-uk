@@ -191,6 +191,40 @@
 тих той pron:p:v_rod/v_zna/v_mis
 тими той pron:p:v_oru
 
+позатой позатой pron:m:v_naz/v_zna
+позатого позатой pron:m:v_rod/v_zna//n:v_rod
+позатому позатой pron:m:v_dav/v_mis//n:v_dav/v_mis
+позатим позатой pron:m:v_oru//n:v_oru//p:v_dav
+позатім позатой pron:m:v_mis//n:v_mis
+позата позатой pron:f:v_naz
+позатої позатой pron:f:v_rod
+позатієї позатой pron:f:v_rod
+позатій позатой pron:f:v_dav/v_mis
+позату позатой pron:f:v_zna
+позатією позатой pron:f:v_oru
+позатою позатой pron:f:v_oru
+позате позатой pron:n:v_naz/v_zna
+позаті позатой pron:p:v_naz/v_zna
+позатих позатой pron:p:v_rod/v_zna/v_mis
+позатими позатой pron:p:v_oru
+
+тамтой тамтой pron:m:v_naz/v_zna
+тамтого тамтой pron:m:v_rod/v_zna//n:v_rod
+тамтому тамтой pron:m:v_dav/v_mis//n:v_dav/v_mis
+тамтим тамтой pron:m:v_oru//n:v_oru//p:v_dav
+тамтім тамтой pron:m:v_mis//n:v_mis
+тамта тамтой pron:f:v_naz
+тамтої тамтой pron:f:v_rod
+тамтієї тамтой pron:f:v_rod
+тамтій тамтой pron:f:v_dav/v_mis
+тамту тамтой pron:f:v_zna
+тамтією тамтой pron:f:v_oru
+тамтою тамтой pron:f:v_oru
+тамте тамтой pron:n:v_naz/v_zna
+тамті тамтой pron:p:v_naz/v_zna
+тамтих тамтой pron:p:v_rod/v_zna/v_mis
+тамтими тамтой pron:p:v_oru
+
 отой отой pron:m:v_naz/v_zna
 отого отой pron:m:v_rod/v_zna//n:v_rod
 отому отой pron:m:v_dav/v_mis//n:v_dav/v_mis
@@ -330,7 +364,13 @@
 аніде аніде adv
 анізащо анізащо adv
 аніколи аніколи adv
-анікогісінько аніколи adv
+
+нікогісінько нікогісінько pron:v_naz/v_rod/v_zna
+анікогісінько анікогісінько pron:v_naz/v_rod/v_zna
+
+нікоторий/V :&pron:rare
+однакий/V :&pron:rare
+оттакий/V :&pron:rare
 
 небагато небагато adv
 небагато небагато numr:v_naz/v_zna
@@ -343,6 +383,18 @@
 небагато-кому небагато-хто pron:v_dav/v_mis
 небагато-ким небагато-хто pron:v_oru
 небагато-кім небагато-хто pron:v_mis
+
+невість-хто невість-хто pron:v_naz
+невість-кого невість-хто pron:v_rod/v_zna
+невість-кому невість-хто pron:v_dav/v_mis
+невість-ким невість-хто pron:v_oru
+невість-кім невість-хто pron:v_mis
+
+невіть-хто невіть-хто pron:v_naz
+невіть-кого невіть-хто pron:v_rod/v_zna
+невіть-кому невіть-хто pron:v_dav/v_mis
+невіть-ким невіть-хто pron:v_oru
+невіть-кім невіть-хто pron:v_mis
 
 будь-хто будь-хто pron:v_naz
 будь-кого будь-хто pron:v_rod/v_zna
@@ -374,6 +426,12 @@
 бозна-чому бозна-що pron:v_dav/v_mis
 бозна-чим бозна-що pron:v_oru
 бозна-чім бозна-що pron:v_mis
+
+чортзна-хто чортзна-хто pron:v_naz
+чортзна-кого чортзна-хто pron:v_rod/v_zna
+чортзна-кому чортзна-хто pron:v_dav/v_mis
+чортзна-ким чортзна-хто pron:v_oru
+чортзна-кім чортзна-хто pron:v_mis
 
 бозна-де adv
 бозна-як adv
