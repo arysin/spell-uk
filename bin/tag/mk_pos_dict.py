@@ -153,6 +153,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
             if '/v_kly' in line:
                 if not person(word, origAffixFlags) \
                   or ('v_dav' in line and 'h' in origAffixFlags and affixFlag != 'p') \
+                  or ('v_dav' in line and word.endswith('ло')) \
                   or (('v_zna' in line or 'v_dav' in line) and 'd' in origAffixFlags and affixFlag != 'p') \
                   or lastname(word, origAffixFlags):
                     line = re.sub('/v_kly', '', line)
@@ -174,7 +175,11 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if ending_istu_re.match(line):
                     line = line.replace('m:v_dav/v_mis', 'm:v_dav')
                 if ('j' in allAffixFlags or 'b' in allAffixFlags) and word.endswith('о'):
-                    line = line.replace('m:v_rod', 'm:v_rod//p:v_naz')
+                    if istota(word, allAffixFlags):
+                        new_aff = 'm:v_rod/v_zna//p:v_naz'
+                    else:
+                        new_aff = 'm:v_rod//p:v_naz'
+                    line = line.replace('m:v_rod', new_aff)
                     line = line.replace(':m:', ':n:')
 
                 if istota(word, allAffixFlags):
@@ -187,7 +192,9 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                  if istota(word, allAffixFlags):
                    if 'noun:f:v_rod' in line and not word.endswith('а') and not word.endswith('матір'):
                      line = line.replace('f:v_rod', 'f:v_rod/v_zna')
-#                 else:
+                 else:
+                   if 'noun:m:v_rod/v_zna' in line:
+                     line = line.replace('/v_zna', '')
 #                   if 'noun:f:v_naz' in line:
 #                     line = line.replace('f:v_naz', 'f:v_naz/v_zna')
             elif affixFlag == 'a':
@@ -231,9 +238,13 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 def get_word_base(word, affixFlag, allAffixFlags):
         str = ''
         
-        v_zna_for_anim = ""
-        if istota(word, allAffixFlags):
-            v_zna_for_anim = "/v_zna";
+        v_zna_for_inanim = ""
+        v_kly_for_anim = ""
+        if not istota(word, allAffixFlags):
+            v_zna_for_inanim = "/v_zna";
+        else:
+            if 'd' not in allAffixFlags and 'h' not in allAffixFlags:
+                v_kly_for_anim = "/v_kly"
 
         if affixFlag == 'U' and '+' in allAffixFlags:
             str = word + ' ' + word + ' noun:m:v_naz'
@@ -264,10 +275,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'a' and ending_a_aja_re.match(word):
             str = word + ' ' + word + ' noun:f:v_naz'
         elif affixFlag == 'a':
-            if not istota(word, allAffixFlags):
-                str = word + ' ' + word + ' noun:m:v_naz/v_zna'
-            else:
-                str = word + ' ' + word + ' noun:m:v_naz'
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag in 'bfo':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
         elif affixFlag == 'e' and word.endswith('е'):
@@ -275,52 +283,41 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
-            if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
-                str = word + ' ' + word + ' noun:m:v_naz/v_zna'
-            else:
-                str = word + ' ' + word + ' noun:m:v_naz'
+            #if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
+            #elif istota(word, allAffixFlags) and not 'h' in allAffixFlags and word.endswith('о'):
+            #    str = word + ' ' + word + ' noun:m:v_naz/v_kly'
+            #else:
+            #    str = word + ' ' + word + ' noun:m:v_naz'
+                
+            if istota(word, allAffixFlags):
+                str += '/v_kly'
 #        elif affixFlag == 'o' and (word.endswith('и')):
 #            str = word + ' ' + word + ' noun:p:v_naz/v_zna'
         elif affixFlag == 'l' and word[-1] in 'р':
-            if not istota(word, allAffixFlags):
-                str = word + ' ' + word + ' noun:m:v_naz/v_zna'
-            else:
-                str = word + ' ' + word + ' noun:m:v_naz'
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and word[-1] in 'яа':
-            #if not istota(word, allAffixFlags):
-            str = word + ' ' + word + ' noun:n:v_naz/v_zna'
-            if istota(word, allAffixFlags):
-              str += '/v_kly'
-            #else:
-            #    str = word + ' ' + word + ' noun:n:v_naz'
+            str = word + ' ' + word + ' noun:n:v_naz/v_zna' + v_kly_for_anim
         elif affixFlag == 'l' and re.match('.*[еє]нь$', word):
-            str = word + ' ' + word + ' noun:m:v_naz/v_zna'
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*ець$', word):
-            str = word + ' ' + word + ' noun:m:v_naz'
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
-            str = word + ' ' + word + ' noun:m:v_naz'
-            if istota(word, allAffixFlags):
-              str += '/v_kly'
-            else:
-              str += '/v_zna'
+            str = word + ' ' + word + ' noun:m:v_naz'  + v_zna_for_inanim + v_kly_for_anim
         elif affixFlag == 'i' and word.endswith('ів'):
             str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
             str = word + ' ' + word + ' noun:n:v_naz'
-            if word.endswith('е') and istota(word, allAffixFlags):
+            if word[-1] in 'ео' and not word.endswith('ко') and istota(word, allAffixFlags):
               str += '/v_kly'
             else:
               str += '/v_zna'
         elif affixFlag == 'i' and (word.endswith('а')):
-            str = word + ' ' + word + ' noun:f:v_naz'
-            if istota(word, allAffixFlags):
-              str += '/v_kly'
-#            else:
-#              str += '/v_zna'
+            str = word + ' ' + word + ' noun:f:v_naz' + v_kly_for_anim
         elif affixFlag in "ir" and word[-1] in "ьаячшжрвф":
             str = word + ' ' + word + ' noun:f:v_naz'
             if not istota(word, allAffixFlags) or word.endswith('матір'):
@@ -328,10 +325,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'j' and word[-1] in 'іа':
-#            if not istota(word, allAffixFlags):
-#                str = word + ' ' + word + ' noun:p:v_naz/v_zna'
-#            else:
-                str = word + ' ' + word + ' noun:p:v_naz'
+            str = word + ' ' + word + ' noun:p:v_naz'
         elif re.match('[a-p]', affixFlag):
             if affixFlag == 'p' and allAffixFlags[0] == 'p':
               return str
@@ -427,7 +421,11 @@ def retain_tags(line, tags):
             line += ':' + part
     return line
 
-def post_process(line, affixFlags):
+
+extra_gen_re=re.compile(':\\+([mnf])')
+gen_tag_re=re.compile(':[mfn]:')
+
+def post_process(line, affixFlags, extra_tag):
     if "impers" in line:
          line = retain_tags(line, ['impers', 'imperf', 'perf', 'bad', 'slang', 'coll', 'alt', 'rare'])
     elif "advp" in line:
@@ -477,6 +475,14 @@ def post_process(line, affixFlags):
         line1 = re.sub('([^ ]+ше [^ ]+[^чш])ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
         adverbs_compar.append( line1 )
 
+    # подвійний рід
+    if extra_gen_re.search(extra_tag) and gen_tag_re.search(line):
+        if 'm:v_kly' in line and re.match('([^ ]+)ле ', line):
+            another_gen_line = re.sub('^([^ ]+)ле ', '\\1ло ', line).replace(':m:', ':n:')
+        else:
+            another_gen_line = gen_tag_re.sub(':'+ extra_gen_re.search(extra_tag).group(1) +':', line)
+        lines.append(another_gen_line) 
+
     return lines
 
 
@@ -510,6 +516,23 @@ def expand_nv(in_lines):
         lines.append(line)
 
   return lines
+
+def apply_main_tag(out_line2, origAffixFlags, main_tag):
+    if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
+        if 'noun:' in main_tag:
+          if not ':p:' in out_line2:
+            repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
+            out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
+        else:
+            repl_str = '[a-z]+'
+            out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
+  
+#              if " adjp" in out_line2:
+#                if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
+#                  out_line2 += ":&adj"
+           
+    return out_line2
+
 
 #@profile
 def process_line(line):
@@ -635,30 +658,22 @@ def process_line(line):
             else:
                 extra_tag = extra_tag.replace(':compb', '')
         
-        out_line += extra_tag
+        if ':+' in extra_tag:
+            extra_tag2 = extra_gen_re.sub('', extra_tag)
+        else:
+            extra_tag2 = extra_tag
+            
+        out_line += extra_tag2
         
-        out_lines2 = post_process(out_line, affixFlags)
+        out_lines2 = post_process(out_line, affixFlags, extra_tag)
         
         for out_line2 in out_lines2:
             # пропустити середній для прізвищ
             if origAffixFlags.endswith('V<') and ':n:' in out_line2:
               continue
             
-
-        
             if main_tag:
-              if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
-                 if 'noun:' in main_tag:
-                   if not ':p:' in out_line2:
-                     repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
-                     out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
-                 else:
-                   repl_str = '[a-z]+'
-                   out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
-
-#              if " adjp" in out_line2:
-#                if ('Z' in origAffixFlags or 'W' in origAffixFlags) and not "&adj" in out_line2:
-#                  out_line2 += ":&adj"
+              out_line2 = apply_main_tag(out_line2, origAffixFlags, main_tag)
             
               # put end tags at the end
               if end_tag_re.search(out_line2):
@@ -672,7 +687,7 @@ def process_line(line):
 
 # end
 
-tags_re = re.compile('(.*:)v_...(.*)')
+tags_re = re.compile('(.*:)[mfnp]:v_...(.*)')
 
 def match_comps(lefts, rights):
     outs = []
@@ -682,7 +697,7 @@ def match_comps(lefts, rights):
         parts = ln.split(' ')
         rrr = re.search(':(.:v_...)', parts[2])
         if not rrr:
-            print('ignoring left', ln)
+            print('composite: ignoring left', ln, file=sys.stderr)
             continue
         
         vidm = rrr.group(1)
@@ -698,7 +713,7 @@ def match_comps(lefts, rights):
         parts = rn.split(' ')
         rrr = re.search(':(.:v_...)', rn)
         if not rrr:
-            print('ignoring right', rn)
+            print('composite: ignoring right', rn, file=sys.stderr)
             continue
 
         vidm = rrr.group(1)
@@ -707,9 +722,15 @@ def match_comps(lefts, rights):
             continue
         
         for left_wi in left_v[vidm]:
-            wi = left_wi + '-' + parts[0]
-            wn = left_wn + '-' + parts[1]
-            outs.append(wi + ' ' + wn + ' ' + tags_re.sub('\\1'+vidm+'\\2', left_tags))
+            w_infl = left_wi + '-' + parts[0]
+            lemma = left_wn + '-' + parts[1]
+            if '-spell' in sys.argv:
+                str = w_infl
+                if not str in outs:
+                    outs.append(str)
+            else:
+                str = w_infl + ' ' + lemma + ' ' + tags_re.sub('\\1'+vidm+'\\2', left_tags)
+                outs.append(str)
 
     return outs
 
@@ -761,10 +782,6 @@ if not '-' in sys.argv:
     sys.exit(1)
 
 
-print("comparatives", len(comparatives))
-#print("comparatives " + str(comparatives))
-print("comparatives_shy", len(comparatives_shy))
-
 if '-' in sys.argv:
   ifile = sys.stdin
   ofile = sys.stdout
@@ -780,7 +797,14 @@ if comp_flag:
     if len(line) == 0:
       continue
 
+    parts_all = line.split(' ')
+    line = parts_all[0]
     parts = line.split('-')
+
+    if len(parts_all) > 1:
+        extra_tags = parts_all[1]
+        parts[0] += ' ' + extra_tags
+        parts[1] += ' ' + extra_tags
         
     process_line(parts[0])
     lefts = all_out_lines
@@ -794,6 +818,9 @@ if comp_flag:
     ofile.write('\n'.join(comps) + '\n')
 
 else:
+
+  print("comparatives", len(comparatives), file=sys.stderr)
+  print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
 
   for line in ifile:
 

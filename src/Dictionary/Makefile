@@ -16,15 +16,17 @@ BAD_TAGS_RE="nontran|:[а-яіїєґ]|/.* [^:^]|[OPGHQR].* :perf|/.* [a-z]|[A-T]
 all:	uk_words.out
 
 
-uk_words.out: $(dict) Makefile
+uk_words.out: $(dict) composite.lst Makefile
 	cat $(SPACED) | sed -r "s/( [^ ]+)? :?[a-z].*$$//g" | $(LC_ALL) grep -vE '^[#[:space:]]' | $(spcr) > spaced.tmp
 	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
 	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[+<>]//g" | $(sort) > $@
+	../../bin/tag/mk_pos_dict.py - -comp -spell < composite.lst >> $@
 	rm -f spaced.tmp
 	@(grep -E $(BAD_FLAG_RE) $@ && echo "ERROR: Bad flag combinations exist!" && /bin/false) || /bin/true
 
-uk_words.tag: $(dict) $(TAGS_ONLY) Makefile
+uk_words.tag: $(dict) $(TAGS_ONLY) composite.lst Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) $(TAGS_ONLY) | $(sort) > $@
+	../../bin/tag/mk_pos_dict.py - -comp < composite.lst >> $@
 	@(grep -E $(BAD_TAGS_RE) $@ && echo "ERROR: Bad tags exist!" && /bin/false) || /bin/true
 
 wc:     uk_words.out uk_words.tag
