@@ -90,11 +90,11 @@ class MyDlg < Qt::Widget
 	
 	return if txt2 == nil
 	
-	ot = txt2.delete(' ').split(/[:]/)
+	ot = txt2.delete(' ').split(/:/)
 	dict = ot[0]
 	oldStr = ot[1]
 
-        resultText = @d.txtResult.text.force_encoding('utf-8')
+	resultText = @d.txtResult.text.force_encoding('utf-8')
 	newFlags = get_flags( resultText )
 
 	if oldStr.include?('/')
@@ -245,7 +245,7 @@ class MyDlg < Qt::Widget
 #	@origWordMap[ @d.txtResult.text ] = @d.lstInput.currentItem.text
 
         txt = @d.txtResult.text.force_encoding('utf-8')
-	return if /[0-9]/.match( txt ) 
+	return if /[5-9]/.match( txt ) 
 	dict = @d.lstDicts.currentItem.text.force_encoding('utf-8')
 	
 	word = txt
@@ -321,12 +321,15 @@ class MyDlg < Qt::Widget
 	
 	outText = item.text.force_encoding('utf-8')
 #	ot = outText.delete(' ').split(/[:]/)
-	ot = outText.split(/[:]/)[1].strip().split(' ')
+	puts "xx1: " +outText
+	otx = outText.split(/ : /)
+	ot = otx[1].strip().split(' ')
+	puts "xx2: " +ot[0] + ", " #+ot[1]
 	@d.txtResult.setText( ot[0] )
 	@d.txtExtra.setText( ot[1] )
 	@d.lstOutput.takeItem( @d.lstOutput.currentRow )
 
-	remove_word_from_dict(ot[0], ot[1])
+	remove_word_from_dict(otx[0], ot[0])
 	@wordsRemoved += 1
 
 	update_counters
@@ -339,7 +342,7 @@ class MyDlg < Qt::Widget
 	@d.btnDefinition.setEnabled( !noText )
 	@d.btnStardict.setEnabled( !noText )
 	
-	wellFormed = /^[а-яіїєґ'-]+(\/[a-z0-9]+(<>?)?-?)?$/i.match(text) ? true : false	#'
+	wellFormed = /^[а-яіїєґ'-]+(\/[a-zA-Z0-9]+(<>?)?\+?-?)?$/i.match(text) ? true : false	#'
 	#puts "wellFormed #{wellFormed}"
 	@d.btnAdd.setEnabled( wellFormed )
 	

@@ -1294,6 +1294,7 @@
 якраз adv|part
 якщо conj:subord
 як adv|conj:subord|part
+а-ля conj:subord
 
 ге part|excl
 се part
@@ -1341,3 +1342,9 @@
 попроз попроз prep:rv_zna:rare:coll
 зверх зверх prep:rv_rod:rare:coll
 намість намість prep:rv_rod:rare:coll
+неке part:rare
+ніже part:rare:coll
+ніже-ні part:rare:coll
+отце part:rare
+таже part:rare
+хибань part:rare:coll

@@ -20,7 +20,7 @@ def aspell_expand(word)
 	return [] if word.empty? 
 	return [word] if !word.include?('/')
 	
-	word.delete!('<>-')
+	word.delete!('<>\+-')
 	
   puts "expanding: #{word}"
 
@@ -173,9 +173,9 @@ def find_in_dicts(word)
 	  word = word[0..-5] if word[-4..-1] == "ся"
 	end
 
-	cmd = IO.popen("grep -i -E \"#{word}(/[/A-Za-z]+)?( .*)?$\" #{Dictionary_Src_Dir}/??[!_]*.lst out/*.lst", mode: 'r+:UTF-8',)
+	cmd = IO.popen("grep -i -E \"#{word}(/[a-z0-9<>+-]+)?( .*)?$\" #{Dictionary_Src_Dir}/??[!_]*.lst out/*.lst", mode: 'r+:UTF-8',)
 	while r = cmd.gets
-	  ret << r.chop
+	  ret << r.chop #.gsub(/^([^:]*):/, '\1::')
 	end
     cmd.close
 
@@ -212,7 +212,7 @@ def add_word_to_dict(dict, word)
 end
 
 def remove_word_from_dict(dict, word)
-  puts "removing #{word} to #{dict}"
+  puts "removing #{word} from dict #{dict}"
   RemoveWords[ dict ] = Array.new() if RemoveWords[ dict ] == nil
   RemoveWords[ dict ] << word
 end
@@ -248,7 +248,7 @@ def merge
   f = Dir.foreach(Output_Dir) { |file|
 	if (/\.lst-remove$/ =~ file)
 	  dictFile = file.gsub(/-remove/, '')
-puts "removing list: #{file} from #{dictFile}"
+    puts "removing list: #{file} from #{dictFile}"
 	  dictFilePath = "#{Dictionary_Src_Dir}/#{dictFile}"
 	  
 	  cmdStr = "grep -v -x -f #{Output_Dir}/#{file} #{dictFilePath} > #{dictFilePath}.tmp"

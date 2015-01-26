@@ -284,14 +284,14 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
             #if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
-            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim + v_kly_for_anim
             #elif istota(word, allAffixFlags) and not 'h' in allAffixFlags and word.endswith('о'):
             #    str = word + ' ' + word + ' noun:m:v_naz/v_kly'
             #else:
             #    str = word + ' ' + word + ' noun:m:v_naz'
                 
-            if istota(word, allAffixFlags):
-                str += '/v_kly'
+            #if istota(word, allAffixFlags):
+            #    str += '/v_kly'
 #        elif affixFlag == 'o' and (word.endswith('и')):
 #            str = word + ' ' + word + ' noun:p:v_naz/v_zna'
         elif affixFlag == 'l' and word[-1] in 'р':
@@ -481,6 +481,11 @@ def post_process(line, affixFlags, extra_tag):
             another_gen_line = re.sub('^([^ ]+)ле ', '\\1ло ', line).replace(':m:', ':n:')
         else:
             another_gen_line = gen_tag_re.sub(':'+ extra_gen_re.search(extra_tag).group(1) +':', line)
+            
+        if 'n:v_zna' in line and re.match('([^ ]+)а ', line):
+            line = re.sub('^([^ ]+)а ', '\\1о ', line)
+            lines = [line]
+            
         lines.append(another_gen_line) 
 
     return lines
