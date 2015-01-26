@@ -1348,3 +1348,22 @@
 отце part:rare
 таже part:rare
 хибань part:rare:coll
+
+оба оба numr:m:v_naz/v_zna:rare:rare
+обi обi numr:f:v_naz/v_zna:rare:rare
+штири штири numr:v_naz/v_zna:rare
+обойко обойко numr:nv:coll
+двойко двойко numr:nv:coll
+тройко тройко numr:nv:coll
+семерко семерко numr:nv:coll
+четвірко четвірко numr:nv:coll
+обоєчко обоєчко numr:nv
+кілько кілько numr:v_naz/v_zna:rare
+декілько декілько numr:v_naz/v_zna:coll
+скілько скілько numr:v_naz/v_zna:rare
+кількадесятеро кількадесятеро numr:v_naz/v_zna:coll
+кільканадцятеро кільканадцятеро numr:v_naz/v_zna:coll
+дев'ятнадцятеро дев'ятнадцятеро numr:v_naz/v_zna
+дев'ятдесят дев'ятдесят numr:v_naz/v_zna:rare
+тридесять тридесять numr:v_naz/v_zna:rare
+півтретя півтретя numr:v_naz/v_zna:rare
