@@ -173,7 +173,7 @@ def find_in_dicts(word)
 	  word = word[0..-5] if word[-4..-1] == "ся"
 	end
 
-	cmd = IO.popen("grep -i -E \"#{word}(/[a-z0-9<>+-]+)?( .*)?$\" #{Dictionary_Src_Dir}/??[!_]*.lst out/*.lst", mode: 'r+:UTF-8',)
+	cmd = IO.popen("grep -i -E \"#{word}(ся)?(/[a-z0-9<>+-]+)?( .*)?$\" #{Dictionary_Src_Dir}/??[!_]*.lst out/*.lst", mode: 'r+:UTF-8',)
 	while r = cmd.gets
 	  ret << r.chop #.gsub(/^([^:]*):/, '\1::')
 	end
@@ -181,8 +181,9 @@ def find_in_dicts(word)
 
 	newRet = []
 	for r in ret
-	  r = r.split(':')
-	  r[0] = r[0][ r[0].rindex('/')+1, 100 ]
+	  puts r
+	  r = r.split(':', 2)
+	  r[0] = r[0][ r[0].rindex('/')+1, 100 ] # cut dir names
 	  newRet << r
 	end
 

@@ -415,6 +415,25 @@
 будь-куди будь-куди adv
 будь-звідки будь-звідки adv
 
+будлі-хто будлі-хто pron:v_naz
+будлі-кого будлі-хто pron:v_rod/v_zna
+будлі-кому будлі-хто pron:v_dav/v_mis
+будлі-ким будлі-хто pron:v_oru
+будлі-кім будлі-хто pron:v_mis
+
+будлі-що будлі-що adv
+будлі-що будлі-що pron:v_naz/v_zna
+будлі-чого будлі-що pron:v_rod
+будлі-чому будлі-що pron:v_dav/v_mis
+будлі-чим будлі-що pron:v_oru
+будлі-чім будлі-що pron:v_mis
+
+будлі-де будлі-де adv
+будлі-як будлі-як adv
+будлі-коли будлі-коли adv
+будлі-куди будлі-куди adv
+будлі-звідки будлі-звідки adv
+
 бозна-хто бозна-хто pron:v_naz
 бозна-кого бозна-хто pron:v_rod/v_zna
 бозна-кому бозна-хто pron:v_dav/v_mis
@@ -1104,7 +1123,7 @@
 посередині посередині prep:rv_rod
 при при prep:rv_mis
 про про prep:rv_zna
-просто просто prep:rv_rod
+просто просто prep:rv_rod|part
 проти проти prep:rv_rod
 раніше раніше prep:rv_rod
 серед серед prep:rv_rod
@@ -1318,6 +1337,7 @@
 помісь part
 хоть part
 хотя part
+чортзна чортзна part
 
 #subordinate conjunction
 таж conj:subord

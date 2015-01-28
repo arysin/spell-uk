@@ -59,7 +59,7 @@ shy_remove_re = re.compile('[шщч]ий/.*$')
 yi_sub_re = re.compile('ий/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
 
-end_tag_re = re.compile('((?::(?:&[a-z]+|bad|slang|rare|coll))+)(:.+)')
+end_tag_re = re.compile('((?::(?:&[a-z]+|v-u|bad|slang|rare|coll))+)(:.+)')
 
 #@profile
 def expand_alts(lines, splitter, regexp):
@@ -427,7 +427,7 @@ gen_tag_re=re.compile(':[mfn]:')
 
 def post_process(line, affixFlags, extra_tag):
     if "impers" in line:
-         line = retain_tags(line, ['impers', 'imperf', 'perf', 'bad', 'slang', 'coll', 'alt', 'rare'])
+         line = retain_tags(line, ['impers', 'imperf', 'perf', 'v-u', 'bad', 'slang', 'coll', 'alt', 'rare'])
     elif "advp" in line:
         line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
 # дієприслівник, як окрема лема

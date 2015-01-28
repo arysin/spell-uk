@@ -23,14 +23,14 @@ class MyDlg < Qt::Widget
 	TAB_ADJ = 2
 
     def initialize(parent = nil)
-        super
+	super
 #	  super(parent, name, fl)
 
-        @d = Ui_IspellDictDlg.new()
-        height = Qt::DesktopWidget.new().availableGeometry().height
-        @d.setupUi(self)
+	@d = Ui_IspellDictDlg.new()
+	height = Qt::DesktopWidget.new().availableGeometry().height
+	@d.setupUi(self)
 #        d.setupUi(self)
-        resize(-1, height)
+	resize(-1, height)
 
 	  @stats = Stats.new
 	  @origWordMap = Hash.new(0)
@@ -84,7 +84,7 @@ class MyDlg < Qt::Widget
   end
 
   def extendWordFlags
-        return if @d.lstOutput.currentItem == nil
+	return if @d.lstOutput.currentItem == nil
   
 	txt2 = @d.lstOutput.currentItem.text.force_encoding('utf-8')
 	
@@ -126,7 +126,7 @@ class MyDlg < Qt::Widget
 #	txtEnc = URI.escape("http://www.slovnyk.net/?swrd=#{txt}")
 #	txtEnc = "http://www.slovnyk.net/?swrd=#{txt}".gsub( /'/, "%27" ) #'
 	txt = txt.gsub( /'/, "%27" ) #'
-	txtEnc = "'http://r2u.org.ua/krym/krym_search.php?word_str=#{txt}&type=ukrq&highlight=on'";
+	txtEnc = "'http://r2u.org.ua/s?w=#{txt}&type=ukrq&highlight=on'";
 #	runCmd = "dcop `dcop konq* | head -1` konqueror-mainwindow#1 #{txtEnc}"
 #	runCmd = "dcop `dcop konq* | head -1` default createNewWindow #{txtEnc}"
 #	runCmd = "dcop klauncher klauncher 'kdeinit_exec(QString,QStringList)' konqueror '(' #{txtEnc} ')'"
@@ -149,7 +149,7 @@ class MyDlg < Qt::Widget
 	word = t[0]
 	flags = t[1]
 
-        return if @d.lstOutput.currentItem == nil
+	return if @d.lstOutput.currentItem == nil
 
 	outText = @d.lstOutput.currentItem.text
 	ot = outText.delete(' ').split(/[:\/]/)
@@ -191,7 +191,7 @@ class MyDlg < Qt::Widget
   end
   
   def getDeclinations
-        wrd = @d.txtResult.text.force_encoding('utf-8')
+	wrd = @d.txtResult.text.force_encoding('utf-8')
 	expands = aspell_expand( wrd )
 	@d.lstDeclinations.clear
 	for ex in expands
@@ -202,7 +202,7 @@ class MyDlg < Qt::Widget
   def removeWord(*k)
 	return if ! @d.lstInput.currentIndex.isValid
   
-        currentRow = @d.lstInput.currentIndex.row
+	currentRow = @d.lstInput.currentIndex.row
 	nextItem = currentRow < SrcList.count-1 ? currentRow : currentRow - 1
 	
 	txt = @d.lstInput.currentItem.text.force_encoding('utf-8')
@@ -244,7 +244,7 @@ class MyDlg < Qt::Widget
 #	@d.lstOutput.addItem( @d.txtResult.text )
 #	@origWordMap[ @d.txtResult.text ] = @d.lstInput.currentItem.text
 
-        txt = @d.txtResult.text.force_encoding('utf-8')
+	txt = @d.txtResult.text.force_encoding('utf-8')
 	return if /[5-9]/.match( txt ) 
 	dict = @d.lstDicts.currentItem.text.force_encoding('utf-8')
 	
@@ -272,7 +272,7 @@ class MyDlg < Qt::Widget
   end
 
   def addSuggestedWord(*k)
-        puts "addSuggestedWord"
+	puts "addSuggestedWord"
 	@d.txtResult.setText( @d.lstSuggestions.currentItem.text )
 	addWord(k)
   end
@@ -305,7 +305,7 @@ class MyDlg < Qt::Widget
 	@deletingInput = false
 	
 
-        wordSelected
+	wordSelected
 
 #	currItem = @d.lstInput.currentItem
 #	if currItem != nil
@@ -316,15 +316,13 @@ class MyDlg < Qt::Widget
   end
 
   def getWordBack(*k)
-        item = @d.lstOutput.currentItem
+	item = @d.lstOutput.currentItem
 	return if item == nil
 	
 	outText = item.text.force_encoding('utf-8')
 #	ot = outText.delete(' ').split(/[:]/)
-	puts "xx1: " +outText
 	otx = outText.split(/ : /)
 	ot = otx[1].strip().split(' ')
-	puts "xx2: " +ot[0] + ", " #+ot[1]
 	@d.txtResult.setText( ot[0] )
 	@d.txtExtra.setText( ot[1] )
 	@d.lstOutput.takeItem( @d.lstOutput.currentRow )
@@ -343,12 +341,19 @@ class MyDlg < Qt::Widget
 	@d.btnStardict.setEnabled( !noText )
 	
 	wellFormed = /^[а-яіїєґ'-]+(\/[a-zA-Z0-9]+(<>?)?\+?-?)?$/i.match(text) ? true : false	#'
+	
+	if wellFormed and /\/[ABIJKLMN]/.match(text)
+	  if @d.txtExtra.text.empty?
+	    wellFormed = false
+	  end
+	end
+	
 	#puts "wellFormed #{wellFormed}"
 	@d.btnAdd.setEnabled( wellFormed )
 	
 	return if noText or not wellFormed
 
-        getDeclinations
+	getDeclinations
 	
 #	@d.btnDecline.setEnabled(true)
 #	@d.btnAdd.setEnabled( text.length > 0 )
@@ -361,7 +366,7 @@ class MyDlg < Qt::Widget
   end
 
   def suggSelected(*k)
-        currItem = @d.lstSuggestions.currentItem
+	currItem = @d.lstSuggestions.currentItem
 	curText = currItem != nil ? currItem.text.force_encoding('utf-8') : ""
 
 #	puts "=====: #{curText.force_encoding('utf-8')}"
@@ -373,15 +378,15 @@ class MyDlg < Qt::Widget
 	
 #	matches = /[A-Za-z]+/.match(curText)
 
-        currItem = @d.lstSuggestions.currentItem
+	currItem = @d.lstSuggestions.currentItem
 	curText = currItem != nil ? currItem.text.force_encoding('utf-8') : ""
 	@d.txtResult.setText( curText )
 
 	matches = /^[^\/]+/.match(curText)
-        if matches
-            clipboard = Qt::Application::clipboard()
-            clipboard.setText(matches[0])
-        end
+	if matches
+	    clipboard = Qt::Application::clipboard()
+	    clipboard.setText(matches[0])
+	end
 
 	populate_similar( get_word(curText) )
   end
@@ -391,8 +396,8 @@ class MyDlg < Qt::Widget
 	@d.lstKrym.clear
 	return if txt.empty?
 
-        txt = txt.force_encoding('utf-8')
-        puts "шукаємо схожі для: #{txt}"
+	txt = txt.force_encoding('utf-8')
+	puts "шукаємо схожі для: #{txt}"
 
 	founds = find_in_dicts( txt )
 	exactMatchIndex = -1
@@ -424,7 +429,7 @@ class MyDlg < Qt::Widget
 	str = SrcList[ @d.lstInput.currentIndex.row ]
 	return if str == nil
 	
-        puts "вибране слово: #{str}"
+	puts "вибране слово: #{str}"
 	@d.txtResult.setText('')
 
 	suggestions = @stats.suggestions_by_suffix(str)
@@ -506,7 +511,7 @@ Qt::Object.connect(@d.lstInput, SIGNAL('currentRowChanged(int)'), self, SLOT('wo
 	end
 
 	for item in DictList
-	 # if "base-abbr.lst" && item != "pronouns.lst"
+	# if "base-abbr.lst" && item != "pronouns.lst"
 	  if item != "pronouns.lst" and item != 'tag.lst' and item != 'lang.lst'
 		@d.lstDicts.addItem( item );
 		if item == "base.lst"

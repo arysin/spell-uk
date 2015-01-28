@@ -373,7 +373,26 @@
 #
 # !verb
 
-є бути verb:pres:p/1/2/3:imperf
+бути бути verb:inf:imperf
+буду бути verb:futr:s:1:imperf
+будеш бути verb:futr:s:2:imperf
+буде бути verb:futr:s:3:imperf
+будемо бути verb:futr:p:1:imperf
+будем бути verb:futr:p:1:imperf
+будете бути verb:futr:p:2:imperf
+будуть бути verb:futr:p:3:imperf
+є бути verb:pres:p:/1/2/3:imperf
+є бути verb:pres:s:/1/2/3:imperf
+єси бути verb:pres:s:2:imperf:rare
+суть бути verb:pres:p:3:imperf:rare
+був бути verb:past:m:imperf
+була бути verb:past:f:imperf
+було бути verb:past:n:imperf
+були бути verb:past:p:imperf
+будь бути verb:impr:s:2:imperf
+будьмо бути verb:impr:p:2:imperf
+будьте бути verb:impr:p:3:imperf
+бувши бути advp
 
 підем піти verb:futr:p:2:perf
 підім піти verb:impr:p:2:perf
