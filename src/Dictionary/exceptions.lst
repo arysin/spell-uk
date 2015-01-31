@@ -130,7 +130,6 @@
 персні перстень noun:p:v_naz/v_zna
 старче старець noun:m:v_kly:anim
 чернець ченець noun:m:v_naz:anim
-яблуці яблуко noun:n:v_mis
 мамів мама noun:p:v_rod:anim
 
 штаням штани noun:p:v_dav:ns
@@ -152,12 +151,6 @@
 властен властен predic
 
 давніх-давен давніх-давен noun:p:v_rod:ns
-
-тьма-тьмуща тьма-тьмуща noun:f:v_naz
-тьми-тьмущої тьма-тьмуща noun:f:v_rod
-тьмі-тьмущій тьма-тьмуща noun:f:v_dav/v_mis
-тьму-тьмущу тьма-тьмуща noun:f:v_zna
-тьмою-тьмущою тьма-тьмуща noun:f:v_oru
 
 Кишиневі Кишинів noun:m:v_mis
 відома відом noun:n:v_rod

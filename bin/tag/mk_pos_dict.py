@@ -160,7 +160,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
             if affixFlag in 'V9j' and 'adj:p:v_naz/v_zna' in line:
               if '<' in allAffixFlags:
-                if not '>' in allAffixFlags:
+                if not '>' in allAffixFlags: # animal
                   line = line.replace('/v_zna', '')
 #              else:
 #                if 'noun' in main_tag:
@@ -217,7 +217,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if len(set(allAffixFlags) & set("bojms")) > 0:
                     if '<' in allAffixFlags or 'p' in allAffixFlags:
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
-                        if '>' in allAffixFlags:
+                        if '>' in allAffixFlags: # animal
                             line = line.replace('p:v_naz', 'p:v_naz/v_zna')
                     else:
                         line = line.replace('p:v_naz', 'p:v_naz/v_zna')
@@ -426,15 +426,16 @@ extra_gen_re=re.compile(':\\+([mnf])')
 gen_tag_re=re.compile(':[mfn]:')
 
 def post_process(line, affixFlags, extra_tag):
-    if "impers" in line:
-         line = retain_tags(line, ['impers', 'imperf', 'perf', 'v-u', 'bad', 'slang', 'coll', 'alt', 'rare'])
-    elif "advp" in line:
+    if "advp" in line:
         line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
 # дієприслівник, як окрема лема
 #        line = re.sub('([^ ]+) [^ ]+ (advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1 \\1 \\2\\3', line)
         if ":rev" in line and "tran" in line:
             line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
     elif "verb" in line:
+        if "impers" in line:
+            line = retain_tags(line, ['impers', 'imperf', 'perf', 'v-u', 'bad', 'slang', 'coll', 'alt', 'rare'])
+            
         if ":rev" in line and "tran" in line:
             line = re.sub(':(in)?tran(:rv_[a-z]+)*', '', line)
             
