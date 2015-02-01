@@ -558,19 +558,22 @@ def apply_main_tag(out_line2, origAffixFlags, main_tag):
     return out_line2
 
 
+def dual_last_name_ending(line):
+  return '+d' in line or re.match('.*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон)/', line)
+
 def pre_process(line):
   out = []
 
   if "<+" in line:
     if " <+" in line:
       if not "<+f" in line:
-        out.append( re.sub(" <\\+[fm]?", " noun:m:nv:np:anim:lname", line) )
+        out.append( re.sub(" <\\+[fmd]?", " noun:m:nv:np:anim:lname", line) )
       if not "<+m" in line:
-        out.append( re.sub(" <\\+[fm]?", " noun:f:nv:np:anim:lname", line) )
+        out.append( re.sub(" <\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
     elif "e" in line or "ac" in line or "lq" in line:
       out.append( line )
-      if not "<+m" in line:
-        out.append( re.sub("/[efgabc]+<\\+", " noun:f:nv:np:anim:lname", line) )
+      if not "<+m" in line and dual_last_name_ending(line):
+        out.append( re.sub("/[efgabc]+<\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
     elif "a" in line and not "^" in line:
       out.append( line + ' :+m')
     else:

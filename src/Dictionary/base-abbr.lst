@@ -332,8 +332,6 @@
 Пбайт noun:m:nv
 Пб noun:m:nv
 ПВХ noun:m:nv
-ПЛР noun:f:nv
-РХБ noun:f:nv
 ПДВЛ noun:m:nv
 ПДВ noun:m:nv
 ПДП noun:m:nv
@@ -344,6 +342,7 @@
 ПЗУ noun:f:nv
 ПЗ noun:n:nv
 ПК noun:m:nv
+ПЛР noun:f:nv
 ПНР noun:f:nv
 ПОРП noun:f:nv
 ППО noun:n:nv:np
@@ -384,6 +383,7 @@
 РУВС noun:n:nv
 РУП noun:f:nv
 РФ noun:f:nv
+РХБ noun:f:nv
 РХП noun:f:nv
 р unknown
 САПР noun:n:nv
@@ -516,7 +516,6 @@
 ФІСУ noun:f:nv
 ФІФА noun:f:nv
 ф-ка/a
-ф-т/ef
 ФКП noun:f:nv
 ФК noun:m:nv
 ФМ-діапазон/e
@@ -527,6 +526,7 @@
 ФРЕЛІМО noun:m:nv
 ФСБ noun:f:nv:np
 ФСП noun:f:nv
+ф-т/ef
 ФФУ noun:f:nv:np
 ХАЕС noun:f:nv
 ХАМАС noun:m:nv:np
