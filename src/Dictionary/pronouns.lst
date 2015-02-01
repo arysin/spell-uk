@@ -1174,7 +1174,7 @@
 
 # частки і сполучники
 # Однолітерні слова
-а а conj:coord|part
+а а conj:coord|part|excl
 б б part
 ж ж conj:coord
 ж ж part

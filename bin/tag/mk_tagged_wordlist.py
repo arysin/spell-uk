@@ -40,8 +40,8 @@ def process_line(line, extra_tags):
     out_line = line
   elif re.match('^[^ ]+ [^ ]+ [^:]?[a-z].*$', line):
     out_line = line
-  elif re.match('^[^ ]+ [^:]?[a-z].*$', line):
-    out_line = re.sub('^([^ ]+) ([a-z].*)$', '\\1 \\1 \\2', line)
+  elif re.match('^[^ ]+ [:^<a-z].*$', line):
+    out_line = re.sub('^([^ ]+) ([^<a-z].*)$', '\\1 \\1 \\2', line)
   else:
     print('hit-', line, file=sys.stderr)
     base = re.findall('^[^ ]+', line)[0]

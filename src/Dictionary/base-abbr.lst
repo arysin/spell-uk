@@ -145,6 +145,7 @@
 ЗМІ noun:p:nv:ns
 ЗМОП noun:m:nv
 ЗНО noun:n:nv
+ЗПГ noun:m:nv
 ЗРК noun:m:nv
 ЗСУ noun:p:nv:ns
 ЗУНР noun:f:nv
@@ -330,6 +331,9 @@
 Па noun:m:nv
 Пбайт noun:m:nv
 Пб noun:m:nv
+ПВХ noun:m:nv
+ПЛР noun:f:nv
+РХБ noun:f:nv
 ПДВЛ noun:m:nv
 ПДВ noun:m:nv
 ПДП noun:m:nv
@@ -512,6 +516,7 @@
 ФІСУ noun:f:nv
 ФІФА noun:f:nv
 ф-ка/a
+ф-т/ef
 ФКП noun:f:nv
 ФК noun:m:nv
 ФМ-діапазон/e

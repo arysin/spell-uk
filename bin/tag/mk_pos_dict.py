@@ -59,7 +59,8 @@ shy_remove_re = re.compile('[шщч]ий/.*$')
 yi_sub_re = re.compile('ий/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
 
-end_tag_re = re.compile('((?::(?:&[a-z]+|v-u|bad|slang|rare|coll))+)(:.+)')
+end_tag1_re = re.compile('((?::(?:fname|lname|patr))+)(:.+)')
+end_tag2_re = re.compile('((?::(?:&[a-z]+|v-u|bad|slang|rare|coll))+)(:.+)')
 
 #@profile
 def expand_alts(lines, splitter, regexp):
@@ -103,9 +104,9 @@ def lastname(word, allAffixFlags):
 #    or ('e' in allAffixFlags and word[0].isupper() \
 #           and ( word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
-def lastname_dual(word, allAffixFlags):
-  return '+' in allAffixFlags and ('e' in allAffixFlags and word[0].isupper() \
-           and (word.endswith('ко') or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
+#def lastname_dual(word, allAffixFlags):
+#  return '+' in allAffixFlags and ('e' in allAffixFlags and word[0].isupper() \
+#           and (word.endswith('ко'))) # or word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
 def istota(word, allAffixFlags):
   return ('p' in allAffixFlags or '<' in allAffixFlags) \
@@ -115,6 +116,9 @@ def person(word, allAffixFlags):
   return ('p' in allAffixFlags or ('<' in allAffixFlags and not '>' in allAffixFlags)) \
     or lastname(word, allAffixFlags)
 
+def firstname(word, affixFlag, allAffixFlags):
+  return ('p' in allAffixFlags or ('<' in allAffixFlags and not '>' in allAffixFlags)) and not '+' in allAffixFlags \
+    and affixFlag != 'p' and word[0].isupper()
 
 
 #@profile
@@ -124,7 +128,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
     
     for affixFlag in allAffixFlags:
         if affixFlag in "<>+":
-          continue
+          break
 
         if not affixFlag in affixMap:
           print("ERROR: Invalid flag", affixFlag, "for", word, file=sys.stderr)
@@ -207,6 +211,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
             elif affixFlag in 'cgq':
                 if istota(word, allAffixFlags) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
+            elif affixFlag == 'p':
+                line += ':patr'
 
             if not '/v_kly' in line:
               if 'p:v_naz' in line and person(word, allAffixFlags):
@@ -227,6 +233,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                     line = line.replace('p:v_naz', 'p:v_naz/v_zna')
 
 #                print("--", word, allAffixFlags, line, file=sys.stderr)
+
 
             out = expand_alts([line], '//', tag_split2_re)
             out = expand_alts(out, '/', tag_split1_re)
@@ -280,8 +287,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
         elif affixFlag == 'e' and word.endswith('е'):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna'
-        elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
-            str = word + ' ' + word + ' noun:m:v_naz//f:nv'
+#        elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
+#            str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
             #if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim + v_kly_for_anim
@@ -337,6 +344,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' unknown'
             print(str, '---', word, affixFlag)
 
+        if firstname(word, affixFlag, allAffixFlags):
+          str += ':fname'
+
         return str
 
 
@@ -379,7 +389,13 @@ def generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
                 else:
                     word_base = word
                     
-                lines.append( deriv + ' ' + word_base + ' ' + affix.tags )
+                
+                ln = deriv + ' ' + word_base + ' ' + affix.tags
+                
+                if firstname(word, affixFlag, allAffixFlags):
+                     ln += ':fname'
+
+                lines.append(ln)
 
     return lines
 
@@ -511,10 +527,11 @@ def expand_nv(in_lines):
         parts = line.split(':nv')
     
         for v in VIDM:
-          if v != 'v_kly' or 'anim' in line:
-            lines.append(parts[0] + ':' + v + ':nv' + parts[1])
+          if v == 'v_kly' and (not ':anim' in line or ':lname' in line):
+            continue
+          lines.append(parts[0] + ':' + v + ':nv' + parts[1])
           
-        if not ':p' in line and not ':np' in line:
+        if not ':p' in line and not ':np' in line and not ':lname' in line:
           for v in VIDM:
             if v != 'v_kly' or 'anim' in line:
               lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
@@ -522,6 +539,7 @@ def expand_nv(in_lines):
         lines.append(line)
 
   return lines
+
 
 def apply_main_tag(out_line2, origAffixFlags, main_tag):
     if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
@@ -540,12 +558,58 @@ def apply_main_tag(out_line2, origAffixFlags, main_tag):
     return out_line2
 
 
+def pre_process(line):
+  out = []
+
+  if "<+" in line:
+    if " <+" in line:
+      if not "<+f" in line:
+        out.append( re.sub(" <\\+[fm]?", " noun:m:nv:np:anim:lname", line) )
+      if not "<+m" in line:
+        out.append( re.sub(" <\\+[fm]?", " noun:f:nv:np:anim:lname", line) )
+    elif "e" in line or "ac" in line or "lq" in line:
+      out.append( line )
+      if not "<+m" in line:
+        out.append( re.sub("/[efgabc]+<\\+", " noun:f:nv:np:anim:lname", line) )
+    elif "a" in line and not "^" in line:
+      out.append( line + ' :+m')
+    else:
+      out = [line]
+  elif "<" in line and line[0].isupper():
+    if "/" in line:
+#      if re.match(".* [:a-z^].*", line):
+#        line += ":fname"
+#      else:
+#        line += " :fname"
+      out = [line]
+    else:
+      if not "<f" in line:
+        out.append( re.sub(" <[fm]?", " noun:m:nv:np:anim:fname", line) )
+      if not "<m" in line:
+        out.append( re.sub(" <[fm]?", " noun:f:nv:np:anim:fname", line) )
+  else:
+    out = [line]
+
+  return out
+
+
 #@profile
 def process_line(line):
+    lines = pre_process(line)
+    for line2 in lines:
+        process_line2(line2)
+
+
+def process_line2(line):
+
     if " " in line and not " :" in line and not " ^" in line:
+        parts = line.split(' ')
+        if len(parts) < 3:
+          line = parts[0] + ' ' + parts[0] + ' ' + parts[1]
+    
         out = expand_alts([line], '//', tag_split2_re)
         out = expand_alts(out, '/', tag_split1_re)
-       
+
         out = expand_nv(out)
         
         all_out_lines.extend(out)
@@ -599,11 +663,11 @@ def process_line(line):
         main_tag = spl[1]
         line = spl[0]
 
-    if "X" in line:
-        extra_tag += ':v-u'
-
     if "<" in line or "p" in line:
         extra_tag += ':anim'
+        
+        if "<+" in line:
+          extra_tag += ':lname'
         # if not ">" in line:
         #   extra_tag += ':pers'
 
@@ -616,6 +680,9 @@ def process_line(line):
 #        ofile.write(line + ' ' + line + ' ' + main_tag + extra_tag + '\n')
 #        collect_all_words(line)
 #        return
+
+    if "X" in line:
+        extra_tag += ':v-u'
 
     if not with_flags_re.match(line):
         tag = ' unknown'
@@ -669,7 +736,14 @@ def process_line(line):
         else:
             extra_tag2 = extra_tag
             
-        out_line += extra_tag2
+        if out_line.endswith(':fname'):
+          extra_tag2 = extra_tag2.replace(':anim', ':anim:fname')
+          out_line = out_line.replace(':fname', extra_tag2)
+        elif out_line.endswith(':patr'):
+          extra_tag2 = extra_tag2.replace(':anim', ':anim:patr')
+          out_line = out_line.replace(':patr', extra_tag2)
+        else:
+          out_line += extra_tag2
         
         out_lines2 = post_process(out_line, affixFlags, extra_tag)
         
@@ -682,9 +756,10 @@ def process_line(line):
               out_line2 = apply_main_tag(out_line2, origAffixFlags, main_tag)
             
               # put end tags at the end
-              if end_tag_re.search(out_line2):
-                #print('main tag for ', out_line2, file=sys.stderr)
-                out_line2 = end_tag_re.sub('\\2\\1', out_line2)
+              if end_tag1_re.search(out_line2):
+                out_line2 = end_tag1_re.sub('\\2\\1', out_line2)
+              if end_tag2_re.search(out_line2):
+                out_line2 = end_tag2_re.sub('\\2\\1', out_line2)
         
             all_out_lines.append( out_line2 )
         
