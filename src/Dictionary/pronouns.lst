@@ -1319,7 +1319,6 @@
 се part
 осе part
 отсе part
-таж part
 так-таки part
 ачей part
 так-так part|excl
@@ -1340,7 +1339,6 @@
 чортзна чортзна part
 
 #subordinate conjunction
-таж conj:subord
 помісь conj:subord
 хоть conj:subord
 
@@ -1366,7 +1364,6 @@
 ніже part:rare:coll
 ніже-ні part:rare:coll
 отце part:rare
-таже part:rare
 хибань part:rare:coll
 
 оба оба numr:m:v_naz/v_zna:rare:rare
@@ -1387,3 +1384,56 @@
 дев'ятдесят дев'ятдесят numr:v_naz/v_zna:rare
 тридесять тридесять numr:v_naz/v_zna:rare
 півтретя півтретя numr:v_naz/v_zna:rare
+
+бусі бусі predic
+вісьта вісьта excl:rare
+єсть єсть excl
+кихи кихи predic
+крумк крумк predic
+магайбі магайбі excl:rare
+отако отако adv
+оттак оттак adv
+охо-хо охо-хо excl
+охо-хо-хо охо-хо-хо excl
+пирск пирск predic
+присійбо присійбо excl:coll
+присяй-богу присяй-богу excl:coll
+присясто-Боже присясто-Боже excl:coll
+ти-ни-ни ти-ни-ни predic
+тирири тирири predic
+тиририри тиририри predic
+теліп теліп predic
+удвурядь удвурядь adv:rare
+упривечір упривечір adv
+фьюіть фьюіть predic
+хавав хавав predic
+хвось хвось predic
+хресійбо хресійбо excl:rare
+хроп хроп predic
+хрум хрум predic
+ців-ців ців-ців predic
+цурпек цурпек excl
+цур-цура цур-цура excl:coll
+чик-чирик чик-чирик predic
+чичирк чичирк predic
+чухи чухи predic
+шкитильг шкитильг predic
+штирк штирк predic
+штовхіць штовхіць excl
+баньгу баньгу noun:m:nv
+картулі картулі noun:m:nv
+
+абись conj:subord:rare
+гейби conj:subord:rare
+докіль conj:subord:rare
+заким conj:subord:rare
+замісто prep:rv_rod:rare
+коби conj:subord:rare
+ніже conj:coord:rare
+оттим conj:subord:rare
+притім conj:bad:rare
+таже conj:subord:rare|part:rare
+таж conj:subord|part
+
+надсир adv
+тому conj:subord|adv

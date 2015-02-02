@@ -112,6 +112,13 @@
 
 яловець ялівець noun:m:v_naz/v_zna
 
+відом відом noun:m:v_naz:rare
+відома відом noun:m:v_rod
+відому відом noun:m:v_dav:rare
+відом відом noun:m:v_zna:rare
+відомом відом noun:m:v_oru
+відомі відом noun:m:v_mis:rare
+
 крильми крило noun:p:v_oru
 слізьми сльоза noun:p:v_oru
 коліньми коліно noun:p:v_oru
@@ -153,7 +160,6 @@
 давніх-давен давніх-давен noun:p:v_rod:ns
 
 Кишиневі Кишинів noun:m:v_mis
-відома відом noun:n:v_rod
 робом роб noun:m:v_oru
 лихвою лихва noun:f:v_oru
 

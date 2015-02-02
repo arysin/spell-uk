@@ -723,6 +723,9 @@ def process_line2(line):
         else:
           out_lines.extend( generate(word, affixFlags, origAffixFlags, main_tag) )
 
+    fem_lastnames_deferred = []
+    last_fem_lastname_v_naz = ''
+
     for out_line in out_lines:
 #        print("affixFlags", affixFlags, out_line, extra_tag)
 #        print('--:', out_line, word, re.sub('ий$', '', word), extra_tag)
@@ -749,12 +752,14 @@ def process_line2(line):
           out_line += extra_tag2
         
         out_lines2 = post_process(out_line, affixFlags, extra_tag)
+
+
         
         for out_line2 in out_lines2:
             # пропустити середній для прізвищ
-            if origAffixFlags.endswith('V<') and ':n:' in out_line2:
+            if 'V<' in origAffixFlags and ':n:' in out_line2:
               continue
-            
+
             if main_tag:
               out_line2 = apply_main_tag(out_line2, origAffixFlags, main_tag)
             
@@ -763,6 +768,32 @@ def process_line2(line):
                 out_line2 = end_tag1_re.sub('\\2\\1', out_line2)
               if end_tag2_re.search(out_line2):
                 out_line2 = end_tag2_re.sub('\\2\\1', out_line2)
+
+
+            # жіночі прізвища мають жіночу лему
+            if ('V' in origAffixFlags or 'U' in origAffixFlags) and '+' in origAffixFlags and ':f:' in out_line2:
+                    #print('-', out_line2)
+                    parts = out_line2.split(' ')
+                    if ':f:v_naz' in out_line2:
+                      #print('+', parts[0])
+                      last_fem_lastname_v_naz = parts[0]
+                      out_line2 = parts[0] + ' ' + parts[0] + ' ' + parts[2]
+                      
+                      for lastname_line in fem_lastnames_deferred:
+                        new_line = lastname_line.replace('XXX', last_fem_lastname_v_naz)
+                        #print('    undeferring', new_line)
+                        all_out_lines.append( new_line )
+                        
+                      fem_lastnames_deferred = []
+                    else:
+                      if last_fem_lastname_v_naz != '':
+                        #print('replacing with', last_fem_lastname_v_naz)
+                        out_line2 = parts[0] + ' ' + last_fem_lastname_v_naz + ' ' + parts[2]
+                      else:
+                        #print('deferring', out_line2)
+                        fem_lastnames_deferred.append(out_line2)
+                        continue
+
         
             all_out_lines.append( out_line2 )
         
