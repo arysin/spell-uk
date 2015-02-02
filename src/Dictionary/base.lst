@@ -18549,7 +18549,7 @@
 вміщування/iX
 вміщувати/ABGHOPX :imperf
 вмлілий/V ^adjp:actv:past
-вмовити/ABCD0X :perf
+вмовити/ABCD0 :perf
 вмовкати/IQGX :imperf
 вмовкнути/KX :perf
 вмовлений/V ^adjp:pasv:past
@@ -103694,6 +103694,7 @@
 умножений/V ^adjp:pasv:past
 умова/ab
 умовивід/ab
+умовити/ABCD0 :perf
 умовлений/V ^adjp:pasv:past
 умовний/VW
 умовність/lm
