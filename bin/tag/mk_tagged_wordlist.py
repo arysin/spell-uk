@@ -49,7 +49,7 @@ def process_line(line, extra_tags):
     return out_line[:-1]
 
 #  if extra_tags != '' and not re.match('.* [a-z].*$', out_line):
-  if extra_tags != '' and not ' ' in out_line:
+  if extra_tags != '' and (not ' ' in out_line or ' ^' in out_line):
     extra_tags = ' ' + extra_tags
 
 #  if len(out_line)> 100:

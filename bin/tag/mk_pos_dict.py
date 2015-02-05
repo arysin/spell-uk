@@ -220,17 +220,16 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
             # handle znahidny for plural
             if len(set(allAffixFlags) & set("bofjms")) > 0:
-                if len(set(allAffixFlags) & set("bojms")) > 0:
                     if '<' in allAffixFlags or 'p' in allAffixFlags:
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags: # animal
                             line = line.replace('p:v_naz', 'p:v_naz/v_zna')
                     else:
                         line = line.replace('p:v_naz', 'p:v_naz/v_zna')
-                elif istota(word, allAffixFlags):
-                    line = line.replace('p:v_rod', 'p:v_rod/v_zna')
-                else:
-                    line = line.replace('p:v_naz', 'p:v_naz/v_zna')
+#                elif istota(word, allAffixFlags):
+#                    line = line.replace('p:v_rod', 'p:v_rod/v_zna')
+#            else:
+#                    line = line.replace('p:v_naz', 'p:v_naz/v_zna')
 
 #                print("--", word, allAffixFlags, line, file=sys.stderr)
 
@@ -459,6 +458,9 @@ def post_process(line, affixFlags, extra_tag):
             line1 = line.replace(":perf", "")
             line2 = line.replace(":imperf", "")
 
+            if re.search("тим(у|усь|уся|еш|ешся|е|еться|емо|ем|емося|емось|мемся|ете|етеся|етесь|уть|уться)? .*:perf", line2):
+              return [line1]
+
             if ":pres" in line2:
                 line2 = line2.replace(':pres', ':futr')
 
@@ -523,18 +525,19 @@ def expand_nv(in_lines):
   lines = []
   
   for line in in_lines:
-    if 'noun' in line and ':nv' in line:
+    if ('noun' in line or 'numr' in line) and ':nv' in line:
         parts = line.split(':nv')
     
         for v in VIDM:
           if v == 'v_kly' and (not ':anim' in line or ':lname' in line):
             continue
           lines.append(parts[0] + ':' + v + ':nv' + parts[1])
-          
-        if not ':p' in line and not ':np' in line and not ':lname' in line:
-          for v in VIDM:
-            if v != 'v_kly' or 'anim' in line:
-              lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
+        
+        if 'noun' in line:
+          if not ':p' in line and not ':np' in line and not ':lname' in line:
+            for v in VIDM:
+              if v != 'v_kly' or 'anim' in line:
+                lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
     else:
         lines.append(line)
 
@@ -657,11 +660,12 @@ def process_line2(line):
 
     main_tag = ''
     if " :" in line:
-        spl = line.split(" ")
-        extra_tag = spl[1]
+        spl = line.split(" :")
+        extra_tag = ":" + spl[1]
         line = spl[0]
 #        print("extra tag", extra_tag, "for", line)
-    elif " ^" in line:
+    
+    if " ^" in line:
         spl = line.split(" ^")
         main_tag = spl[1]
         line = spl[0]
@@ -771,7 +775,7 @@ def process_line2(line):
 
 
             # жіночі прізвища мають жіночу лему
-            if ('V' in origAffixFlags or 'U' in origAffixFlags) and '+' in origAffixFlags and ':f:' in out_line2:
+            if ('V' in origAffixFlags or 'U' in origAffixFlags) and "<+" in origAffixFlags and ':f:' in out_line2:
                     #print('-', out_line2)
                     parts = out_line2.split(' ')
                     if ':f:v_naz' in out_line2:

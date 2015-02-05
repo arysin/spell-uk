@@ -488,11 +488,35 @@
 хтозна-куди adv
 хтозна-звідки adv
 
+невідь-що невідь-що pron:v_naz/v_zna
+невідь-чого невідь-що pron:v_rod
+невідь-чому невідь-що pron:v_dav/v_mis
+невідь-чим невідь-що pron:v_oru
+невідь-чім невідь-що pron:v_mis
+
+невідь-хто невідь-хто pron:v_naz
+невідь-кого невідь-хто pron:v_rod/v_zna
+невідь-кому невідь-хто pron:v_dav/v_mis
+невідь-ким невідь-хто pron:v_oru
+невідь-кім невідь-хто pron:v_mis
+
+невідь-де adv
+невідь-як adv
+невідь-коли adv
+невідь-куди adv
+невідь-звідки adv
+
 казна-що казна-що pron:v_naz/v_zna
 казна-чого казна-що pron:v_rod
 казна-чому казна-що pron:v_dav/v_mis
 казна-чим казна-що pron:v_oru
 казна-чім казна-що pron:v_mis
+
+казна-хто казна-хто pron:v_naz
+казна-кого казна-хто pron:v_rod/v_zna
+казна-кому казна-хто pron:v_dav/v_mis
+казна-ким казна-хто pron:v_oru
+казна-кім казна-хто pron:v_mis
 
 казна-де adv
 казна-як adv
@@ -775,6 +799,8 @@
 бозна-скільки adv
 чортзна-скільки adv
 хтозна-скільки adv
+казна-скільки adv
+невідь-скільки adv
 
 один один numr:m:v_naz/v_zna
 одного один numr:m:v_rod/v_zna//n:v_rod
@@ -1007,10 +1033,10 @@
 упродовж упродовж adv
 впродовж впродовж prep:rv_rod:v-u
 упродовж упродовж prep:rv_rod:v-u
-уздовж уздовж prep:rv_rod:v-u
-вздовж вздовж prep:rv_rod:v-u
-впоперек впоперек prep:rv_rod:v-u
-упоперек упоперек prep:rv_rod:v-u
+вздовж вздовж prep:rv_rod:v-u|adv
+уздовж уздовж prep:rv_rod:v-u|adv
+впоперек впоперек prep:rv_rod:v-u|adv
+упоперек упоперек prep:rv_rod:v-u|adv
 вслід вслід prep:rv_dav:v-u
 услід услід prep:rv_dav:v-u
 всупереч всупереч prep:rv_dav:v-u
@@ -1385,7 +1411,6 @@
 тридесять тридесять numr:v_naz/v_zna:rare
 півтретя півтретя numr:v_naz/v_zna:rare
 
-бусі бусі predic
 вісьта вісьта excl:rare
 єсть єсть excl
 кихи кихи predic
@@ -1437,3 +1462,7 @@
 
 надсир adv
 тому conj:subord|adv
+
+он-он part
+он-як excl
+он-оно part
