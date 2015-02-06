@@ -15945,9 +15945,9 @@
 відвоювання/ij
 відвоювати/AB0 :perf
 відв'язаний/V ^adjp:pasv:past
+відв'язуваний/V ^adjp:pasv:pres
 відв'язати/ABW :perf
 відв'язування/i
-відвязувати/ABGHOP :imperf
 відв'язувати/ABGHOP :imperf
 відгаданий/V ^adjp:pasv:past
 відгадати/IW :perf
@@ -19503,7 +19503,7 @@
 впаювати/ABOPX :imperf
 впаяння/iX
 впаяти/ABWX :perf
-впевнений/VWX ^adjp:pasv:past
+впевнений/VWX ^adjp:pasv:past:&adj
 впевненість/lmX
 впевненіший/VY
 впевнення/iX

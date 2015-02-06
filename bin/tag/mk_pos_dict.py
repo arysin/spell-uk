@@ -13,6 +13,7 @@ import affix
 from affix import affixMap
 from affix import prefixes
 from compar_forms import COMPAR_FORMS
+from compar_forms import COMPAR_SOFT_BASE
 
 
 logger = logging.getLogger('tofsa')
@@ -480,6 +481,8 @@ def post_process(line, affixFlags, extra_tag):
             l1 = ' '+lemma+' '
             l2 = ' '+base+' '
             line = line.replace(l1, l2)
+        elif lemma in COMPAR_SOFT_BASE:
+            line = line.replace('іший adj', 'ій adj')
         else:
             line = line.replace('іший adj', 'ий adj')
 
