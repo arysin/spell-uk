@@ -18,7 +18,6 @@ from compar_forms import COMPAR_FORMS
 logger = logging.getLogger('tofsa')
 
 #spell_uk_dir = os.getenv("HOME") + "/work/ukr/spelling/spell-uk/"
-all_out_lines = []
 
 PLURAL_FLAGS_RE = '[bfjlq9]'
 NOUN_FLAGS_RE = '[a-z]';
@@ -578,7 +577,10 @@ def pre_process(line):
       if not "<+m" in line and dual_last_name_ending(line):
         out.append( re.sub("/[efgabc]+<\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
     elif "a" in line and not "^" in line:
-      out.append( line + ' :+m')
+        if "+m" in line:
+            out.append( line + " ^noun:m" )
+        else:
+            out.append( line + ' :+m')
     else:
       out = [line]
   elif "<" in line and line[0].isupper():
@@ -601,12 +603,22 @@ def pre_process(line):
 
 #@profile
 def process_line(line):
+#     print("process line", line, file=sys.stderr)
+    all_out_lines = []
+    
     lines = pre_process(line)
     for line2 in lines:
-        process_line2(line2)
+        outs = process_line2(line2)
+        if outs:
+            all_out_lines.extend( outs )
+        else:
+            print("skipping no-tag item", line2, file=sys.stderr)
+        
+    return all_out_lines
 
 
 def process_line2(line):
+    all_out_lines = []
 
     if " " in line and not " :" in line and not " ^" in line:
         parts = line.split(' ')
@@ -622,18 +634,7 @@ def process_line2(line):
         
         [collect_all_words(w) for w in out]
         
-        return
-
-#    if line.endswith('ен'):
-#        tag = 'adj:m:v_naz'
-#        outline = line + ' ' + re.sub('ен$', 'ний', line)
-#        ofile.write(outline + ' ' + tag + '\n')
-#
-#        tag = 'adj:m:v_zna'
-#        ofile.write(outline + ' ' + tag + '\n')
-#
-#        collect_all_words(outline)
-#        return
+        return all_out_lines
 
 
     extra_tag = ''
@@ -692,8 +693,21 @@ def process_line2(line):
         extra_tag += ':v-u'
 
     if not with_flags_re.match(line):
+        if line.endswith('ен'):
+            lemma = re.sub('ен$', 'ний', line)
+            outline = line + ' ' + lemma
+            tag = 'adj:m:v_naz' + extra_tag
+            all_out_lines.append(outline + ' ' + tag)
+            tag = 'adj:m:v_zna' + extra_tag
+            all_out_lines.append(outline + ' ' + tag)
+    
+            [collect_all_words(w) for w in all_out_lines]
+            
+            return all_out_lines
+
+
         tag = ' unknown'
-        
+
         if advp_re.match(line):
             tag = ' advp:imperf'
         elif advp_rev_re.match(line):
@@ -702,6 +716,8 @@ def process_line2(line):
             tag = ' advp:perf'
         elif line.endswith('шись'):
             tag = ' advp:rev:perf'
+        
+#         print('-', line, tag, file=sys.stderr)
             
         if tag == '' and extra_tag != '':
             tag = ' '
@@ -709,8 +725,11 @@ def process_line2(line):
         outline = line + ' ' + line + tag + extra_tag
         all_out_lines.append(outline)
 
+        if tag == ' unknown':
+            print('-', line, tag, file=sys.stderr)
+
         collect_all_words(outline)
-        return
+        return all_out_lines
 
 
     halfs = re.split('/', line)
@@ -726,6 +745,7 @@ def process_line2(line):
           out_lines.append( word + ' ' + word + ' unknown')
         else:
           out_lines.extend( generate(word, affixFlags, origAffixFlags, main_tag) )
+
 
     fem_lastnames_deferred = []
     last_fem_lastname_v_naz = ''
@@ -794,6 +814,7 @@ def process_line2(line):
                         #print('replacing with', last_fem_lastname_v_naz)
                         out_line2 = parts[0] + ' ' + last_fem_lastname_v_naz + ' ' + parts[2]
                       else:
+                        out_line2 = parts[0] + ' XXX ' + parts[2]
                         #print('deferring', out_line2)
                         fem_lastnames_deferred.append(out_line2)
                         continue
@@ -803,65 +824,15 @@ def process_line2(line):
         
             collect_all_words(out_line2)
 
+    return all_out_lines
 
 # end
 
-tags_re = re.compile('(.*:)[mfnp]:v_...(.*)')
-
-def match_comps(lefts, rights):
-    outs = []
-    left_v = {}
-    
-    for ln in lefts:
-        parts = ln.split(' ')
-        rrr = re.search(':(.:v_...)', parts[2])
-        if not rrr:
-            print('composite: ignoring left', ln, file=sys.stderr)
-            continue
-        
-        vidm = rrr.group(1)
-        
-        if not vidm in left_v:
-            left_v[vidm] = []
-
-        left_v[vidm].append(parts[0])
-        left_wn = parts[1]
-        left_tags = parts[2]
-
-    for rn in rights:
-        parts = rn.split(' ')
-        rrr = re.search(':(.:v_...)', rn)
-        if not rrr:
-            print('composite: ignoring right', rn, file=sys.stderr)
-            continue
-
-        vidm = rrr.group(1)
-        
-        if not vidm in left_v:
-            continue
-        
-        for left_wi in left_v[vidm]:
-            w_infl = left_wi + '-' + parts[0]
-            lemma = left_wn + '-' + parts[1]
-            if '-spell' in sys.argv:
-                str = w_infl
-                if not str in outs:
-                    outs.append(str)
-            else:
-                str = w_infl + ' ' + lemma + ' ' + tags_re.sub('\\1'+vidm+'\\2', left_tags)
-                outs.append(str)
-
-    return outs
 
 # --------------
 # main code
 # --------------
-
-if '-comp' in sys.argv:
-    comp_flag = True
-else:
-    comp_flag = False
-
+    
 aff_arg_idx = sys.argv.index('-aff') if '-aff' in sys.argv else -1
 if aff_arg_idx != -1:
   affix_filename = sys.argv[aff_arg_idx+1]
@@ -871,109 +842,84 @@ else:
 affix.load_affixes(affix_filename)
 
 
-if not '-' in sys.argv:
-  src_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Dictionary/uk_words.tag"
-
-  file_sfx = ''
-  if '-t' in sys.argv:
-    print("Running in test mode")
-    file_sfx = '.test'
-    src_filename = "uk_words.tag.test"
-
-  print("Working with word list from", src_filename)
-
-  ifile = open(src_filename, "r")
-
-  line_cnt = 0
-  for line in ifile:
-    line = line.strip()
-    if 'ий/V' in line:
-        if 'іший/V' in line and 'Y' in line:
-            comparatives.append( ishy_re.sub('', line ) )
-        elif shy_re.search(line):
-            comparatives_shy.append( shy_remove_re.sub('', line ) )
-        elif 'іший/V' in line and line.startswith('най'):
-            comparatives.append( re.sub('^най(.*)іший/.*$', '\\1', line ) )
-    line_cnt += 1
-
-  if line_cnt < 1:
-    print("ERROR: empty source file", file=sys.stderr)
-    sys.exit(1)
-
-
-if '-' in sys.argv:
-  ifile = sys.stdin
-  ofile = sys.stdout
-else:
-  ifile = open(src_filename, "r")
-  ofile = open("tagged.main.txt"+file_sfx, "w")
-
-if comp_flag:
-
-  for line in ifile:
-
-    line = line.strip()
-    if len(line) == 0:
-      continue
-
-    parts_all = line.split(' ')
-    line = parts_all[0]
-    parts = line.split('-')
-
-    if len(parts_all) > 1:
-        extra_tags = parts_all[1]
-        parts[0] += ' ' + extra_tags
-        parts[1] += ' ' + extra_tags
-        
-    process_line(parts[0])
-    lefts = all_out_lines
-    all_out_lines = []
-
-    process_line(parts[1])
-    rights = all_out_lines
-    all_out_lines = []
+if __name__ == "__main__":
     
-    comps = match_comps(lefts, rights)
-    ofile.write('\n'.join(comps) + '\n')
+    
+    if not '-' in sys.argv:
+      src_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Dictionary/uk_words.tag"
+    
+      file_sfx = ''
+      if '-t' in sys.argv:
+        print("Running in test mode")
+        file_sfx = '.test'
+        src_filename = "uk_words.tag.test"
+    
+      print("Working with word list from", src_filename)
+    
+      ifile = open(src_filename, "r")
+    
+      line_cnt = 0
+      for line in ifile:
+        line = line.strip()
+        if 'ий/V' in line:
+            if 'іший/V' in line and 'Y' in line:
+                comparatives.append( ishy_re.sub('', line ) )
+            elif shy_re.search(line):
+                comparatives_shy.append( shy_remove_re.sub('', line ) )
+            elif 'іший/V' in line and line.startswith('най'):
+                comparatives.append( re.sub('^най(.*)іший/.*$', '\\1', line ) )
+        line_cnt += 1
+    
+      if line_cnt < 1:
+        print("ERROR: empty source file", file=sys.stderr)
+        sys.exit(1)
+    
+    
+    if '-' in sys.argv:
+      ifile = sys.stdin
+      ofile = sys.stdout
+    else:
+      ifile = open(src_filename, "r")
+      ofile = open("tagged.main.txt"+file_sfx, "w")
+    
+    all_out_lines = []
 
-else:
+    print("comparatives", len(comparatives), file=sys.stderr)
+    print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
 
-  print("comparatives", len(comparatives), file=sys.stderr)
-  print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
-
-  for line in ifile:
-
-    line = line.strip()
-    if len(line) == 0:
-      continue
-
-    lines = expand_alts([line], '|', tag_split0_re)
-
-    for line in lines:
-        process_line(line)
+    for line in ifile:
+    
+      line = line.strip()
+      if len(line) == 0:
+        continue
+    
+      lines = expand_alts([line], '|', tag_split0_re)
+    
+      for line in lines:
+          all_out_lines.extend( process_line(line) )
 
 
-  for adv_line in adverbs_compar:
-    adv = adv_line.split(' ')[1]
-    if adv in adverbs:
-        all_out_lines.append( adv_line )
-
-
-for out_line in all_out_lines:
-    ofile.write(out_line + '\n')
-
-
-if not '-' in sys.argv:
-
-  locale.setlocale(locale.LC_ALL, "uk_UA.UTF-8")
-
-  lst_ofile = open("all_words.lst"+file_sfx, "w")
-  allWords = list(set(allWords))
-  allWords.sort(key=locale.strxfrm)
-
-  for w in allWords:
-    if not w.startswith('#'):
-      lst_ofile.write(w + '\n')
+    for adv_line in adverbs_compar:
+      adv = adv_line.split(' ')[1]
+      if adv in adverbs:
+          all_out_lines.append( adv_line )
+      
+      
+    for out_line in all_out_lines:
+        ofile.write(out_line + '\n')
+      
+      
+    if not '-' in sys.argv:
+      
+        locale.setlocale(locale.LC_ALL, "uk_UA.UTF-8")
+      
+        lst_ofile = open("all_words.lst"+file_sfx, "w")
+        allWords = list(set(allWords))
+        allWords.sort(key=locale.strxfrm)
+      
+        for w in allWords:
+          if not w.startswith('#'):
+            lst_ofile.write(w + '\n')
 
 ## expand_alts
 ## process_line
