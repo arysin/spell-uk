@@ -29,11 +29,13 @@ def match_comps(lefts, rights):
             continue
         
         vidm = rrr.group(1)
-        if not left_gen and vidm[0] in "mfn":
-            if left_gen != vidm[0]:
-                mixed_gen = True
-            left_gen = vidm[0]
-        
+        if vidm[0] in "mfn":
+            if not left_gen:
+                left_gen = vidm[0]
+            else:
+                if left_gen != vidm[0]:
+                    mixed_gen = True
+
         if not vidm in left_v:
             left_v[vidm] = []
 
@@ -43,6 +45,7 @@ def match_comps(lefts, rights):
 
     if mixed_gen:
         left_gen = ""
+#     print("left_gen", left_gen, "mixed_gen", mixed_gen, file=sys.stderr)
 
     for rn in rights:
         parts = rn.split(' ')
@@ -54,6 +57,8 @@ def match_comps(lefts, rights):
         vidm = rrr.group(1)
         if left_gen != "" and vidm[0] in "mfn":
           vidm = left_gen + vidm[1:]
+        
+#         print("-", vidm, file=sys.stderr)
         
         if not vidm in left_v:
             continue

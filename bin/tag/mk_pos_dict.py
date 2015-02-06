@@ -323,7 +323,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
               str += '/v_zna'
         elif affixFlag == 'i' and (word.endswith('а')):
             str = word + ' ' + word + ' noun:f:v_naz' + v_kly_for_anim
-        elif affixFlag in "ir" and word[-1] in "ьаячшжрвф":
+        elif affixFlag in "ir" and word[-1] in "ьаячшжрбвф":
             str = word + ' ' + word + ' noun:f:v_naz'
             if not istota(word, allAffixFlags) or word.endswith('матір'):
               str += '/v_zna'
@@ -524,7 +524,7 @@ def expand_nv(in_lines):
   lines = []
   
   for line in in_lines:
-    if ('noun' in line or 'numr' in line) and ':nv' in line:
+    if ('noun' in line or 'numr' in line) and ':nv' in line and not ":v_" in line:
         parts = line.split(':nv')
     
         for v in VIDM:
