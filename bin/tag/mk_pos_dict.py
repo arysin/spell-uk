@@ -300,10 +300,10 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
+        elif affixFlag in 'il' and word.endswith("ів"):
+            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
             str = word + ' ' + word + ' noun:m:v_naz'  + v_zna_for_inanim + v_kly_for_anim
-        elif affixFlag == 'i' and word.endswith('ів'):
-            str = word + ' ' + word + ' noun:m:v_naz/v_zna'
         elif affixFlag == 'i' and ending_i_nnia_re.match(word):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
