@@ -285,22 +285,11 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag in 'bfo':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
-        elif affixFlag == 'e' and word.endswith('е'):
-            str = word + ' ' + word + ' noun:n:v_naz/v_zna'
-#        elif affixFlag == 'e' and lastname_dual(word, allAffixFlags):
-#            str = word + ' ' + word + ' noun:m:v_naz//f:nv'
         elif affixFlag == 'e':
-            #if not istota(word, allAffixFlags) or ('j' in allAffixFlags and word.endswith('о')):
-            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim + v_kly_for_anim
-            #elif istota(word, allAffixFlags) and not 'h' in allAffixFlags and word.endswith('о'):
-            #    str = word + ' ' + word + ' noun:m:v_naz/v_kly'
-            #else:
-            #    str = word + ' ' + word + ' noun:m:v_naz'
-                
-            #if istota(word, allAffixFlags):
-            #    str += '/v_kly'
-#        elif affixFlag == 'o' and (word.endswith('и')):
-#            str = word + ' ' + word + ' noun:p:v_naz/v_zna'
+            if word.endswith('е'):
+                str = word + ' ' + word + ' noun:n:v_naz/v_zna'
+            else:
+                str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and word[-1] in 'р':
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and word[-1] in 'яа':
