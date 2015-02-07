@@ -241,6 +241,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
             
     return all_forms
 
+#@profile
 def get_word_base(word, affixFlag, allAffixFlags):
         str = ''
         
@@ -271,9 +272,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
                 
-        elif re.match('[AIKMC]', affixFlag):
+        elif affixFlag in '[AIKMC]':
             str = word + ' ' + word + ' verb:inf'
-        elif re.match('[BJLN]', affixFlag):
+        elif affixFlag in '[BJLN]':
             str = word + ' ' + word + ' verb:rev:inf'
             
         elif affixFlag == 'a' and ending_a_numr_re.match(word):
@@ -439,7 +440,9 @@ def retain_tags(line, tags):
 
 extra_gen_re=re.compile(':\\+([mnf])')
 gen_tag_re=re.compile(':[mfn]:')
+compar_line_re=re.compile('[^ ]+ше [^ ]+ .*v_naz.*(compr|super).*')
 
+#@profile
 def post_process(line, affixFlags, extra_tag):
     if "advp" in line:
         line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
@@ -491,9 +494,11 @@ def post_process(line, affixFlags, extra_tag):
     
     lines = [line]
     
-    if re.match('[^ ]+ше [^ ]+ .*v_naz.*(compr|super).*', line):
+    if compar_line_re.match(line):
         line1 = re.sub('([^ ]+ше [^ ]+[чш])ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
         line1 = re.sub('([^ ]+ше [^ ]+[^чш])ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
+        line1 = re.sub('([^ ]+ше [^ ]+)ій adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
+#        print("c", line1)
         adverbs_compar.append( line1 )
 
     # подвійний рід
@@ -512,10 +517,12 @@ def post_process(line, affixFlags, extra_tag):
     return lines
 
 
+#@profile
 def collect_all_words(line):
-    if not ':bad' in line and not ':rare' in line and not ':obs' in line and not ':coll' in line: # and not ':alt' in line:
+    if not ':bad' in line and not ':rare' in line and not ':coll' in line: # and not ':alt' in line:
         allWords.append(line.split(' ')[0])
     if ' adv' in line:
+#        print("-", line.split(" ")[0])
         adverbs.append(line.split(' ')[0])
 
 
@@ -523,6 +530,7 @@ def collect_all_words(line):
 VIDM=['v_naz', 'v_rod', 'v_dav', 'v_zna', 'v_oru', 'v_mis', 'v_kly']
 re_nv_vidm=re.compile('(noun):[mfn]:(.*)')
 
+#@profile
 def expand_nv(in_lines):
   lines = []
   
@@ -546,6 +554,7 @@ def expand_nv(in_lines):
   return lines
 
 
+#@profile
 def apply_main_tag(out_line2, origAffixFlags, main_tag):
     if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
         if 'noun:' in main_tag:
@@ -566,6 +575,7 @@ def apply_main_tag(out_line2, origAffixFlags, main_tag):
 def dual_last_name_ending(line):
   return '+d' in line or re.match('.*(о|ич|ук|юк|як|аш|яш|сь|ун|ин|сон)/', line)
 
+#@profile
 def pre_process(line):
   out = []
 
@@ -620,6 +630,7 @@ def process_line(line):
     return all_out_lines
 
 
+#@profile
 def process_line2(line):
     all_out_lines = []
 
