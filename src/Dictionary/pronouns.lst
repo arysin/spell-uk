@@ -373,10 +373,10 @@
 оттакий/V :&pron:rare
 
 небагато небагато adv
-небагато небагато numr:v_naz/v_zna
-небагатьох небагато numr:v_rod/v_zna/v_mis
-небагатьом небагато numr:v_dav
-небагатьма небагато numr:v_oru
+небагато небагато numr:p:v_naz/v_zna
+небагатьох небагато numr:p:v_rod/v_zna/v_mis
+небагатьом небагато numr:p:v_dav
+небагатьма небагато numr:p:v_oru
 
 небагато-хто небагато-хто pron:v_naz
 небагато-кого небагато-хто pron:v_rod/v_zna
@@ -766,35 +766,35 @@
 звідкись звідкись adv
 
 багато багато adv
-багато багато numr:v_naz/v_zna
-багатьох багато numr:v_rod/v_zna/v_mis
-багатьом багато numr:v_dav
-багатьма багато numr:v_oru
+багато багато numr:p:v_naz/v_zna
+багатьох багато numr:p:v_rod/v_zna/v_mis
+багатьом багато numr:p:v_dav
+багатьма багато numr:p:v_oru
 
-декілька numr:v_naz/v_zna
-декількох numr:v_rod/v_zna/v_mis
-декільком numr:v_dav
-декількома numr:v_oru
+декілька numr:p:v_naz/v_zna
+декількох numr:p:v_rod/v_zna/v_mis
+декільком numr:p:v_dav
+декількома numr:p:v_oru
 
-кілька кілька numr:v_naz/v_zna
-кількох кілька numr:v_rod/v_zna/v_mis
-кільком кілька numr:v_dav
-кількома кілька numr:v_oru
+кілька кілька numr:p:v_naz/v_zna
+кількох кілька numr:p:v_rod/v_zna/v_mis
+кільком кілька numr:p:v_dav
+кількома кілька numr:p:v_oru
 
-скільки numr:v_naz/v_zna
-скількох numr:v_rod/v_zna/v_mis
-скільком numr:v_dav
-скількома numr:v_oru
+скільки numr:p:v_naz/v_zna
+скількох numr:p:v_rod/v_zna/v_mis
+скільком numr:p:v_dav
+скількома numr:p:v_oru
 
-стільки numr:v_naz/v_zna
-стількох numr:v_rod/v_zna/v_mis
-стільком numr:v_dav
-стількома numr:v_oru
+стільки numr:p:v_naz/v_zna
+стількох numr:p:v_rod/v_zna/v_mis
+стільком numr:p:v_dav
+стількома numr:p:v_oru
 
-скільки-небудь numr:v_naz/v_zna
-скількох-небудь numr:v_rod/v_zna/v_mis
-скільком-небудь numr:v_dav
-скількома-небудь numr:v_oru
+скільки-небудь numr:p:v_naz/v_zna
+скількох-небудь numr:p:v_rod/v_zna/v_mis
+скільком-небудь numr:p:v_dav
+скількома-небудь numr:p:v_oru
 
 бозна-скільки adv
 чортзна-скільки adv
@@ -820,16 +820,26 @@
 одне один numr:n:v_naz/v_zna
 одно один numr:n:v_naz
 
+один-єдиний один-єдиний numr:m:v_naz/v_zna
+одного-єдиного один-єдиний numr:m:v_rod/v_zna//n:v_rod
+одному-єдиному один-єдиний numr:m:v_dav/v_mis//n:v_dav/v_mis
+одним-єдиним один-єдиний numr:m:v_oru//n:v_oru
+однім-єдинім один-єдиний numr:m:v_mis//n:v_mis
+одна-єдина один-єдиний numr:f:v_naz
+одної-єдиної один-єдиний numr:f:v_rod
+однієї-єдинієї один-єдиний numr:f:v_rod
+одній-єдиній один-єдиний numr:f:v_dav/v_mis
+однією-єдинією один-єдиний numr:f:v_oru
+одною-єдиною один-єдиний numr:f:v_oru
+одну-єдину один-єдиний numr:f:v_zna
+
+
 обоє обоє numr:p:v_naz/v_zna
 обох обоє numr:p:v_rod/v_zna/v_mis
 обом обоє numr:p:v_dav
 обома обоє numr:p:v_oru
 обидва обидва numr:m:v_naz/v_zna
 обидві обидва numr:f:v_naz/v_zna
-обидвоє обидвоє numr:p:v_naz/v_zna
-обидвох обидвоє numr:p:v_rod/v_zna/v_mis
-обидвом обидвоє numr:p:v_dav
-обидвома обидвоє numr:p:v_oru
 
 годину-дві adv
 годину-другу adv
@@ -841,126 +851,130 @@
 сам-самісінький сам-самісінький pron:m:v_naz/v_zna
 
 # Числівники
-обидвоє обидвоє numr:v_naz/v_zna
-обидвох обидвоє numr:v_rod/v_zna/v_mis
-обидвом обидвоє numr:v_dav
-обидвома обидвоє numr:v_oru
+обидвоє обидвоє numr:p:v_naz/v_zna
+обидвох обидвоє numr:p:v_rod/v_zna/v_mis
+обидвом обидвоє numr:p:v_dav
+обидвома обидвоє numr:p:v_oru
 
 два два numr:m:v_naz/v_zna//n:v_naz/v_zna
 дві два numr:f:v_naz/v_zna
 двох два numr:m:v_rod/v_zna/v_mis//n:v_rod/v_zna/v_mis//f:v_rod/v_zna/v_mis
 двом два numr:m:v_dav//n:v_dav//f:v_dav
 двома два numr:m:v_oru//n:v_oru//f:v_oru
-двоє двоє numr:v_naz/v_zna
-двох двоє numr:v_rod/v_zna/v_mis
-двом двоє numr:v_dav
-двома двоє numr:v_oru
-троє троє numr:v_naz/v_zna
-трьом троє numr:v_dav
-трьох троє numr:v_rod/v_zna/v_mis
-трьома троє numr:v_oru
-три три numr:v_naz/v_zna
-трьом три numr:v_dav
-трьох три numr:v_rod/v_zna/v_mis
-трьома три numr:v_oru
-четверо четверо numr:v_naz/v_zna
-чотирма четверо numr:v_oru
-чотирьох четверо numr:v_rod/v_zna/v_mis
-чотирьом четверо numr:v_dav
-чотири чотири numr:v_naz/v_zna
-чотирма чотири numr:v_oru
-чотирьох чотири numr:v_oru/v_zna/v_mis
-чотирьом чотири numr:v_dav
-п'ятеро п'ятеро numr:v_naz/v_zna
-шість шість numr:v_naz/v_zna
-шести шість numr:v_rod/v_dav/v_mis
-шістьом шість numr:v_dav
-шістьох шість numr:v_rod/v_zna/v_mis
-шістьма шість numr:v_oru
-шістьома шість numr:v_oru
-шестеро шість numr:v_naz/v_zna
-семеро сім numr:v_naz/v_zna
-сім сім numr:v_naz/v_zna
-семи сім numr:v_rod/v_dav/v_mis
-сімох сім numr:v_rod/v_zna/v_mis
-сімом сім numr:v_dav
-сьома сім numr:v_oru
-сімома сім numr:v_oru
-вісім вісім numr:v_naz/v_zna
-восьми вісім numr:v_rod/v_dav/v_mis
-вісьмох вісім numr:v_rod/v_zna/v_mis
-вісьмом вісім numr:v_dav
-вісьма вісім numr:v_oru
-вісьмома вісім numr:v_oru
-восьмеро вісім numr:v_naz/v_zna
-дев'ятеро дев'ять numr:v_naz/v_zna
+двоє двоє numr:p:v_naz/v_zna
+двох двоє numr:p:v_rod/v_zna/v_mis
+двом двоє numr:p:v_dav
+двома двоє numr:p:v_oru
+троє троє numr:p:v_naz/v_zna
+трьом троє numr:p:v_dav
+трьох троє numr:p:v_rod/v_zna/v_mis
+трьома троє numr:p:v_oru
+три три numr:p:v_naz/v_zna
+трьом три numr:p:v_dav
+трьох три numr:p:v_rod/v_zna/v_mis
+трьома три numr:p:v_oru
+четверо четверо numr:p:v_naz/v_zna
+чотирма четверо numr:p:v_oru
+чотирьох четверо numr:p:v_rod/v_zna/v_mis
+чотирьом четверо numr:p:v_dav
+чотири чотири numr:p:v_naz/v_zna
+чотирма чотири numr:p:v_oru
+чотирьох чотири numr:p:v_oru/v_zna/v_mis
+чотирьом чотири numr:p:v_dav
+п'ятеро п'ятеро numr:p:v_naz/v_zna
+шість шість numr:p:v_naz/v_zna
+шести шість numr:p:v_rod/v_dav/v_mis
+шістьом шість numr:p:v_dav
+шістьох шість numr:p:v_rod/v_zna/v_mis
+шістьма шість numr:p:v_oru
+шістьома шість numr:p:v_oru
+шестеро шість numr:p:v_naz/v_zna
+семеро сім numr:p:v_naz/v_zna
+сім сім numr:p:v_naz/v_zna
+семи сім numr:p:v_rod/v_dav/v_mis
+сімох сім numr:p:v_rod/v_zna/v_mis
+сімом сім numr:p:v_dav
+сьома сім numr:p:v_oru
+сімома сім numr:p:v_oru
+вісім вісім numr:p:v_naz/v_zna
+восьми вісім numr:p:v_rod/v_dav/v_mis
+вісьмох вісім numr:p:v_rod/v_zna/v_mis
+вісьмом вісім numr:p:v_dav
+вісьма вісім numr:p:v_oru
+вісьмома вісім numr:p:v_oru
+восьмеро вісім numr:p:v_naz/v_zna
+дев'ятеро дев'ять numr:p:v_naz/v_zna
 
-одинадцятеро одинадцять numr:v_naz/v_zna
-дванадцятеро дванадцять numr:v_naz/v_zna
-тринадцятеро numr:v_naz/v_zna
-чотирнадцятеро чотирнадцятеро numr:v_naz/v_zna
-п'ятнадцятеро п'ятнадцять numr:v_naz/v_zna
-шістнадцятеро шістнадцятеро numr:v_naz/v_zna
-сімнадцятеро сімнадцятеро numr:v_naz/v_zna
-вісімнадцятеро вісімнадцятеро numr:v_naz/v_zna
-двадцятеро двадцять numr:v_naz/v_zna
-тридцятеро тридцятеро numr:v_naz/v_zna
+одинадцятеро одинадцять numr:p:v_naz/v_zna
+дванадцятеро дванадцять numr:p:v_naz/v_zna
+тринадцятеро numr:p:v_naz/v_zna
+чотирнадцятеро чотирнадцятеро numr:p:v_naz/v_zna
+п'ятнадцятеро п'ятнадцять numr:p:v_naz/v_zna
+шістнадцятеро шістнадцятеро numr:p:v_naz/v_zna
+сімнадцятеро сімнадцятеро numr:p:v_naz/v_zna
+вісімнадцятеро вісімнадцятеро numr:p:v_naz/v_zna
+двадцятеро двадцять numr:p:v_naz/v_zna
+тридцятеро тридцятеро numr:p:v_naz/v_zna
 
-сорок сорок numr:v_naz/v_zna
-сорока сорок numr:v_rod/v_dav/v_zna/v_oru/v_mis
-дев'яносто дев'яносто numr:v_naz/v_zna
-дев'яноста дев'яносто numr:v_rod/v_dav/v_oru/v_mis
+сорок сорок numr:p:v_naz/v_zna
+сорока сорок numr:p:v_rod/v_dav/v_zna/v_oru/v_mis
+дев'яносто дев'яносто numr:p:v_naz/v_zna
+дев'яноста дев'яносто numr:p:v_rod/v_dav/v_oru/v_mis
 
-сто сто numr:v_naz/v_zna
-ста сто numr:v_rod
-двісті двісті numr:v_naz
-двохсот двісті numr:v_rod/v_zna
-двомстам двісті numr:v_dav
-двомастами двісті numr:v_oru
-двохстах двісті numr:v_mis
-триста триста numr:v_naz/v_zna
-трьохсот триста numr:v_rod/v_zna
-трьомстам триста numr:v_dav
-трьомастами триста numr:v_oru
-трьохстах триста numr:v_mis
-чотириста чотириста numr:v_naz/v_zna
-чотирьохсот чотириста numr:v_rod/v_zna
-чотирьомстам чотириста numr:v_dav
-чотирмастами чотириста numr:v_oru
-чотирьохстах чотириста numr:v_mis
-п'ятсот п'ятсот numr:v_naz/v_zna
-п'ятисот п'ятсот numr:v_rod
-п'ятистам п'ятсот numr:v_dav
-п'ятьмастами п'ятсот numr:v_oru
-п'ятистах п'ятсот numr:v_mis
-шістсот шістсот numr:v_naz/v_zna
-шестисот шістсот numr:v_rod
-шестистам шістсот numr:v_dav
-шестистах шістсот numr:v_mis
-шістьмастами шістсот numr:v_oru
-сімсот сімсот numr:v_naz/v_zna
-семисот сімсот numr:v_rod
-семистам сімсот numr:v_dav
-семистах сімсот numr:v_mis
-семистами сімсот numr:v_oru
-сімомастами сімсот numr:v_oru
-вісімсот вісімсот numr:v_naz/v_zna
-восьмисот вісімсот numr:v_rod
-восьмистам вісімсот numr:v_dav
-восьмистах вісімсот numr:v_mis
-восьмистами вісімсот numr:v_oru
-дев'ятсот дев'ятсот numr:v_naz/v_zna
-дев'ятисот дев'ятсот numr:v_rod
-дев'ятистам дев'ятсот numr:v_dav
-дев'ятьмастами дев'ятсот numr:v_oru
-дев'ятьомастами дев'ятсот numr:v_oru
-дев'ятистах дев'ятсот numr:v_mis
+сто сто numr:p:v_naz/v_zna
+ста сто numr:p:v_rod
+двісті двісті numr:p:v_naz
+двохсот двісті numr:p:v_rod/v_zna
+двомстам двісті numr:p:v_dav
+двомастами двісті numr:p:v_oru
+двохстах двісті numr:p:v_mis
+триста триста numr:p:v_naz/v_zna
+трьохсот триста numr:p:v_rod/v_zna
+трьомстам триста numr:p:v_dav
+трьомастами триста numr:p:v_oru
+трьохстах триста numr:p:v_mis
+чотириста чотириста numr:p:v_naz/v_zna
+чотирьохсот чотириста numr:p:v_rod/v_zna
+чотирьомстам чотириста numr:p:v_dav
+чотирмастами чотириста numr:p:v_oru
+чотирьохстах чотириста numr:p:v_mis
+п'ятсот п'ятсот numr:p:v_naz/v_zna
+п'ятисот п'ятсот numr:p:v_rod
+п'ятистам п'ятсот numr:p:v_dav
+п'ятьмастами п'ятсот numr:p:v_oru
+п'ятистах п'ятсот numr:p:v_mis
+шістсот шістсот numr:p:v_naz/v_zna
+шестисот шістсот numr:p:v_rod
+шестистам шістсот numr:p:v_dav
+шестистах шістсот numr:p:v_mis
+шістьмастами шістсот numr:p:v_oru
+сімсот сімсот numr:p:v_naz/v_zna
+семисот сімсот numr:p:v_rod
+семистам сімсот numr:p:v_dav
+семистах сімсот numr:p:v_mis
+семистами сімсот numr:p:v_oru
+сімомастами сімсот numr:p:v_oru
+вісімсот вісімсот numr:p:v_naz/v_zna
+восьмисот вісімсот numr:p:v_rod
+восьмистам вісімсот numr:p:v_dav
+восьмистах вісімсот numr:p:v_mis
+восьмистами вісімсот numr:p:v_oru
+дев'ятсот дев'ятсот numr:p:v_naz/v_zna
+дев'ятисот дев'ятсот numr:p:v_rod
+дев'ятистам дев'ятсот numr:p:v_dav
+дев'ятьмастами дев'ятсот numr:p:v_oru
+дев'ятьомастами дев'ятсот numr:p:v_oru
+дев'ятистах дев'ятсот numr:p:v_mis
 
-кількасот кількасот numr:v_naz/v_zna
-кількохсот кількасот numr:v_rod
-кількомстам кількасот numr:v_dav
-кількомастами кількасот numr:v_oru
-кількохстах кількасот numr:v_mis
+кількасот кількасот numr:p:v_naz/v_zna
+кількохсот кількасот numr:p:v_rod
+кількомстам кількасот numr:p:v_dav
+кількомастами кількасот numr:p:v_oru
+кількохстах кількасот numr:p:v_mis
+
+півтора numr:m:nv//n:nv
+півтори numr:f:nv
+
 
 # Прислівники
 вдвічі adv
@@ -1003,9 +1017,9 @@
 один-два numr:p:v_naz/v_zna
 два-три numr:p:v_naz/v_zna
 дві-три numr:p:v_naz/v_zna
-двома-трьома numr:v_oru
-двох-трьох numr:v_rod/v_zna/v_mis
-три-чотири numr:v_naz/v_zna
+двома-трьома numr:p:v_oru
+двох-трьох numr:p:v_rod/v_zna/v_mis
+три-чотири numr:p:v_naz/v_zna
 
 день-два adv
 
@@ -1396,22 +1410,27 @@
 
 оба оба numr:m:v_naz/v_zna:rare:rare
 обi обi numr:f:v_naz/v_zna:rare:rare
-штири штири numr:v_naz/v_zna:rare
-обойко обойко numr:nv:coll
-двойко двойко numr:nv:coll
-тройко тройко numr:nv:coll
-семерко семерко numr:nv:coll
-четвірко четвірко numr:nv:coll
-обоєчко обоєчко numr:nv
-кілько кілько numr:v_naz/v_zna:rare
-декілько декілько numr:v_naz/v_zna:coll
-скілько скілько numr:v_naz/v_zna:rare
-кількадесятеро кількадесятеро numr:v_naz/v_zna:coll
-кільканадцятеро кільканадцятеро numr:v_naz/v_zna:coll
-дев'ятнадцятеро дев'ятнадцятеро numr:v_naz/v_zna
-дев'ятдесят дев'ятдесят numr:v_naz/v_zna:rare
-тридесять тридесять numr:v_naz/v_zna:rare
-півтретя півтретя numr:v_naz/v_zna:rare
+штири штири numr:p:v_naz/v_zna:rare
+обойко обойко numr:p:nv:coll
+обоєчко обоєчко numr:p:nv:coll
+двойко двойко numr:p:nv:coll
+двоєчко двоєчко numr:p:nv:coll
+трійко трійко numr:p:nv:coll
+тройко тройко numr:p:nv:coll
+четвірко четвірко numr:p:nv:coll
+семерко семерко numr:p:nv:coll
+кілько кілько numr:p:v_naz/v_zna:rare
+декілько декілько numr:p:v_naz/v_zna:coll
+скілько скілько numr:p:v_naz/v_zna:rare
+кількадесятеро кількадесятеро numr:p:v_naz/v_zna:coll
+кільканадцятеро кільканадцятеро numr:p:v_naz/v_zna:coll
+дев'ятнадцятеро дев'ятнадцятеро numr:p:v_naz/v_zna
+дев'ятдесят дев'ятдесят numr:p:v_naz/v_zna:rare
+тридесять тридесять numr:p:v_naz/v_zna:rare
+
+півтора-два numr:m:nv//n:nv
+півтретя півтретя numr:f:v_naz/v_zna:rare
+півтораста numr:p:nv
 
 вісьта вісьта excl:rare
 єсть єсть excl

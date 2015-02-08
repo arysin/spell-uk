@@ -230,8 +230,8 @@
 МінАП noun:n:nv
 мкм noun:m:nv
 мкФ noun:m:nv
-млн noun:m:nv|numr:nv
-млрд noun:m:nv|numr:nv
+млн noun:m:nv|numr:p:nv
+млрд noun:m:nv|numr:p:nv
 мл noun:m:nv
 ММКФ noun:m:nv
 мм noun:m:nv

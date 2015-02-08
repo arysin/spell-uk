@@ -278,7 +278,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' verb:rev:inf'
             
         elif affixFlag == 'a' and ending_a_numr_re.match(word):
-            str = word + ' ' + word + ' numr:v_naz/v_zna'
+            str = word + ' ' + word + ' numr:p:v_naz/v_zna'
         elif affixFlag == 'a' and ending_a_aja_re.match(word):
             str = word + ' ' + word + ' noun:f:v_naz'
         elif affixFlag == 'a':

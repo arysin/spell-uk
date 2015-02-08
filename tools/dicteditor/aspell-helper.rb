@@ -20,7 +20,7 @@ def aspell_expand(word)
 	return [] if word.empty? 
 	return [word] if !word.include?('/')
 	
-	word.delete!('<>\+-')
+	word.delete!('<>\+')
 	
   puts "expanding: #{word}"
 
