@@ -7,7 +7,7 @@ src_affixfiles = uk.REP uk.aff.ADJ uk.aff.NOUN uk.aff.VERB uk.aff.VERB_REV uk.af
 
 CLEANFILES = $(affixfile) uk.aff.VERB_REV
 
-alt_suff_cmd=sed -r '/:alt/ s/^\#//' | sed -r "s/SFX l Y 50/SFX l Y 52/"
+alt_suff_cmd=sed -r '/:alt/ s/^\#//' | sed -r "s/SFX l Y 54/SFX l Y 56/"
 
 all: $(affixfile)
 

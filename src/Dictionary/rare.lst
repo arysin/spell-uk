@@ -38,6 +38,20 @@
 одітий/V ^adjp:pasv:past
 озутий/V ^adjp:pasv:past
 опірений/V ^adjp:pasv:past
+сей сей pron:m:v_naz/v_zna
+сього сей pron:m:v_rod/v_zna//n:v_rod
+сьому сей pron:m:v_dav/v_mis//n:v_dav/v_mis
+сим сей pron:m:v_oru//n:v_oru//p:v_dav
+сім сей pron:m:v_mis//n:v_mis
+ся сей pron:f:v_naz
+сієї сей pron:f:v_rod
+сій сей pron:f:v_dav/v_mis
+сю сей pron:f:v_zna
+сією сей pron:f:v_oru
+се сей pron:n:v_naz/v_zna
+сі сей pron:p:v_naz/v_zna/v_mis
+сих сей pron:p:v_rod/v_zna/v_mis
+сими сей pron:p:v_oru
 силяти/IGQ :imperf
 угощати/I :imperf
 уздогін уздогін adv
