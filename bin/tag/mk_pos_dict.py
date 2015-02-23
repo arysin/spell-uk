@@ -51,6 +51,7 @@ ending_masc_dull_re = re.compile('.*[бвжлнртьшк]$')
 ending_evi_re = re.compile('^.*?[еоє]ві .*$')
 ending_iv_re = re.compile('^.* .*?[ії]в .*$')
 ending_istu_re = re.compile('^.*?[иі]сту .* .*$')
+ending_iku_re = re.compile('^.*?(р|ст|пот)оку .* .*$')
 ending_uyu_re = re.compile('^.*?[ую] .* .*$')
 
 ishy_re = re.compile('іший/.*$')
@@ -118,8 +119,10 @@ def person(word, allAffixFlags):
 
 def firstname(word, affixFlag, allAffixFlags):
   return ('p' in allAffixFlags or ('<' in allAffixFlags and not '>' in allAffixFlags)) and not '+' in allAffixFlags \
-    and affixFlag != 'p' and word[0].isupper()
+    and affixFlag != 'p' and word[0].isupper() and (word[1].islower() or word[1] == "'")
 
+def secondVZna(line):
+  return False
 
 #@profile
 def generate(word, allAffixFlags, origAffixFlags, main_tag):
@@ -208,8 +211,12 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if not istota(word, allAffixFlags):
                     if not ending_iv_re.match(word) and ending_evi_re.match(line):
                         line = line.replace('m:v_dav/v_mis', 'm:v_dav')
+                    elif ending_iku_re.match(line):
+                        line = line.replace('v_dav/v_mis', 'v_dav')
+                    elif line.startswith('кону кін '):
+                        line = line.replace('v_dav', 'v_dav/v_mis')
             elif affixFlag in 'cgq':
-                if istota(word, allAffixFlags) and 'noun:m:v_rod' in line:
+                if istota(word, allAffixFlags) or secondVZna(line) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
             elif affixFlag == 'p':
                 line += ':patr'
@@ -220,7 +227,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
             # handle znahidny for plural
             if len(set(allAffixFlags) & set("bofjms")) > 0:
-                    if '<' in allAffixFlags or 'p' in allAffixFlags:
+                    if istota(word, allAffixFlags):
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags: # animal
                             line = line.replace('p:v_naz', 'p:v_naz/v_zna')

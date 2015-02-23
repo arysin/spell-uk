@@ -11,7 +11,7 @@ dictionary =	uk_words.out
 
 CLEANFILES =	uk_words.out *.tmp *.old *.bak *.tag
 BAD_FLAG_RE="(/[IJ].*[OP]|[AB][^IJ]*[QR]|/[^AIKM].*[OQ0]|JH?O|BH?R|AG?Q|IG?O)"
-BAD_TAGS_RE="nontran|:[а-яіїєґ]|/.* [^:^]|[OPGHQR].* :perf|/.* [a-z]|[A-T].* :([^ipbr]|in)|[A-T][^ ]*$$"
+BAD_TAGS_RE="nontran|:[а-яіїєґ]|/.* [^:^]|^[^/]+ [:^]|[OPGHQR].* :perf|/.* [a-z]|[A-T].* :([^ipbr]|in)|[A-T][^ ]*$$"
 
 all:	uk_words.out
 

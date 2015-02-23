@@ -6,6 +6,7 @@
 болюче adv
 боляче adv
 болячий/V ^adjp:actv:pres:bad
+боці бік noun:m:v_mis
 бродячий/V ^adjp:actv:pres:bad
 будинкові будинок noun:m:v_mis
 варіанту варіант noun:m:v_rod
@@ -18,6 +19,7 @@
 дрижачий/V ^adjp:actv:pres:bad
 їдучий/V ^adjp:actv:pres:bad
 киплячий/V ^adjp:actv:pres:bad
+коневі кінь noun:m:v_mis
 лежачий/V ^adjp:actv:pres:bad
 люблячий/V ^adjp:actv:pres:bad
 максимум adv
@@ -50,7 +52,21 @@
 тремтячий/V ^adjp:actv:pres:bad
 тролеєві тролей noun:m:v_mis
 ходячий/V ^adjp:actv:pres:bad
+хрону хрін noun:m:v_mis
 шинку шинок noun:m:v_rod
 шиплячий/V ^adjp:actv:pres:bad
 шлунку шлунок noun:m:v_rod
 щемлячий/V ^adjp:actv:pres:bad
+лоба лоб noun:m:v_zna:&v_zna2
+носа ніс noun:m:v_zna:&v_zna2
+воза віз noun:m:v_zna:&v_zna2
+Спаса Спас noun:m:v_zna:&v_zna2
+дуба дуб noun:m:v_zna:&v_zna2
+зуба зуб noun:m:v_zna:&v_zna2
+листа лист noun:m:v_zna:&v_zna2
+гарбуза гарбуз noun:m:v_zna:&v_zna2
+годинника годинник noun:m:v_zna:&v_zna2
+велосипеда велосипед noun:m:v_zna:&v_zna2
+стола стіл noun:m:v_zna:&v_zna2
+ляпаса ляпас noun:m:v_zna:&v_zna2
+мотоцикла мотоцикл noun:m:v_zna:&v_zna2
