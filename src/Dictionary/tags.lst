@@ -17,6 +17,8 @@
 двору двір noun:m:v_mis
 дзвенячий/V ^adjp:actv:pres:bad
 дрижачий/V ^adjp:actv:pres:bad
+злібові хліб noun:m:v_mis
+зшиткові зшиток noun:m:v_mis
 їдучий/V ^adjp:actv:pres:bad
 киплячий/V ^adjp:actv:pres:bad
 коневі кінь noun:m:v_mis
@@ -34,6 +36,7 @@
 плоту пліт noun:m:v_mis
 плоту пліт noun:m:v_rod
 помосту поміст noun:m:v_mis
+послові посол noun:m:v_mis:anim
 роду рід noun:m:v_mis
 свистячий/V ^adjp:actv:pres:bad
 сидячий/V ^adjp:actv:pres:bad
@@ -51,22 +54,10 @@
 телемосту телеміст noun:m:v_rod
 тремтячий/V ^adjp:actv:pres:bad
 тролеєві тролей noun:m:v_mis
+учневі учень noun:m:v_mis:anim
 ходячий/V ^adjp:actv:pres:bad
 хрону хрін noun:m:v_mis
 шинку шинок noun:m:v_rod
 шиплячий/V ^adjp:actv:pres:bad
 шлунку шлунок noun:m:v_rod
 щемлячий/V ^adjp:actv:pres:bad
-лоба лоб noun:m:v_zna:&v_zna2
-носа ніс noun:m:v_zna:&v_zna2
-воза віз noun:m:v_zna:&v_zna2
-Спаса Спас noun:m:v_zna:&v_zna2
-дуба дуб noun:m:v_zna:&v_zna2
-зуба зуб noun:m:v_zna:&v_zna2
-листа лист noun:m:v_zna:&v_zna2
-гарбуза гарбуз noun:m:v_zna:&v_zna2
-годинника годинник noun:m:v_zna:&v_zna2
-велосипеда велосипед noun:m:v_zna:&v_zna2
-стола стіл noun:m:v_zna:&v_zna2
-ляпаса ляпас noun:m:v_zna:&v_zna2
-мотоцикла мотоцикл noun:m:v_zna:&v_zna2

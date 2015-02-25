@@ -130,7 +130,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
     all_forms = []
     
     for affixFlag in allAffixFlags:
-        if affixFlag in "<>+":
+        if affixFlag in "<>+@":
           break
 
         if not affixFlag in affixMap:
@@ -240,6 +240,9 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
 #                print("--", word, allAffixFlags, line, file=sys.stderr)
 
+            if affixFlag in "cgq":
+              if "@" in allAffixFlags:
+                line = line.replace('m:v_rod', 'm:v_rod/v_zna')  # TODO: add :&v_zna2
 
             out = expand_alts([line], '//', tag_split2_re)
             out = expand_alts(out, '/', tag_split1_re)
