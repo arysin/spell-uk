@@ -353,6 +353,7 @@
 
 вуса вуса noun:p:v_naz/v_zna
 
+скаку скак noun:m:v_mis
 
 # Прислівники
 
@@ -553,3 +554,54 @@
 відгусти відгуду відгудеш відгуде відгудемо відгудем відгудете відгудуть
 перегусти перегуде перегудуть перегув перегула перегуло перегули
 нагустися нагудуся нагудусь нагудешся нагудеться нагудемося нагудемось нагудемсь нагудетеся нагудетесь нагудудться нагувшись
+
+
+# короткі прикметники
+безвинен безвинний adj:m:v_naz/v_zna:contr
+благословен благословенний adj:m:v_naz/v_zna:contr
+#блажен блаженний adj:m:v_naz/v_zna:contr
+винен винний adj:m:v_naz/v_zna:contr
+#вістен вістний adj:m:v_naz/v_zna:contr
+вістен вісний adj:m:v_naz/v_zna:contr
+годен годний adj:m:v_naz/v_zna:contr
+дивен дивний adj:m:v_naz/v_zna:contr
+достоїн достойний adj:m:v_naz/v_zna:contr
+дрібен дрібний adj:m:v_naz/v_zna:contr
+єхиден єхидний adj:m:v_naz/v_zna:contr
+жаден жадний adj:m:v_naz/v_zna:contr
+жив живий adj:m:v_naz/v_zna:contr
+жоден жодний adj:m:v_naz/v_zna:contr
+звістен звісний adj:m:v_naz/v_zna:contr
+згоден згодний adj:m:v_naz/v_zna:contr
+здатен здатний adj:m:v_naz/v_zna:contr
+здоров здоровий adj:m:v_naz/v_zna:contr
+зелен зелений adj:m:v_naz/v_zna:contr
+золот золотий adj:m:v_naz/v_zna:contr
+кожен кожний adj:m:v_naz/v_zna:contr
+красен красний adj:m:v_naz/v_zna:contr
+ладен ладний adj:m:v_naz/v_zna:contr
+молод молодий adj:m:v_naz/v_zna:contr
+невинен невинний adj:m:v_naz/v_zna:contr
+негоден негодний adj:m:v_naz/v_zna:contr
+незгоден незгодний adj:m:v_naz/v_zna:contr
+неладен неладний adj:m:v_naz/v_zna:contr
+немощен немощний adj:m:v_naz/v_zna:contr
+ненавиден ненавидний adj:m:v_naz/v_zna:contr
+ненавистен ненависний adj:m:v_naz/v_zna:contr
+певен певний adj:m:v_naz/v_zna:contr
+повен повний adj:m:v_naz/v_zna:contr
+#повинен повинний adj:m:v_naz/v_zna:contr
+#потрібен потрібний adj:m:v_naz/v_zna:contr
+прекрасен прекрасний adj:m:v_naz/v_zna:contr
+привинен привинний adj:m:v_naz/v_zna:contr
+провинен провинний adj:m:v_naz/v_zna:contr
+рад радий adj:m:v_naz/v_zna:contr
+рівен рівний adj:m:v_naz/v_zna:contr
+самітен самітний adj:m:v_naz/v_zna:contr
+свят святий adj:m:v_naz/v_zna:contr
+силен сильний adj:m:v_naz/v_zna:contr
+славен славний adj:m:v_naz/v_zna:contr
+смутен смутний adj:m:v_naz/v_zna:contr
+срібен срібний adj:m:v_naz/v_zna:contr
+чорен чорний adj:m:v_naz/v_zna:contr
+ясен ясний adj:m:v_naz/v_zna:contr
