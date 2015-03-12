@@ -40,7 +40,7 @@ def process_line(line, extra_tags):
     out_line = line
   elif re.match('^[^ ]+ [^ ]+ [^:]?[a-z].*$', line):
     out_line = line
-  elif re.match('^[^ ]+ [:^<a-z].*$', line):
+  elif re.match('^[^ ]+ [:^<a-z0-9_].*$', line):
     out_line = re.sub('^([^ ]+) ([^<a-z].*)$', '\\1 \\1 \\2', line)
   else:
     print('hit-', line, file=sys.stderr)
@@ -51,6 +51,9 @@ def process_line(line, extra_tags):
 #  if extra_tags != '' and not re.match('.* [a-z].*$', out_line):
   if extra_tags != '' and (not ' ' in out_line or ' ^' in out_line):
     extra_tags = ' ' + extra_tags
+
+#  if not "/" in out_line and not re.match("^[^ ]+ [^ ]+ [^ ]+$", out_line + extra_tags):
+#    print("bad line:", out_line + extra_tags, file=sys.stderr)
 
 #  if len(out_line)> 100:
 #      print(out_line, file=sys.stderr)

@@ -675,7 +675,7 @@ def process_line2(line):
     main_tag = ''
     if " :" in line:
         spl = line.split(" :")
-        extra_tag = ":" + spl[1]
+        extra_tag += ":" + spl[1]
         line = spl[0]
 #        print("extra tag", extra_tag, "for", line)
     

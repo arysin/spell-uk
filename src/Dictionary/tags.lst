@@ -23,6 +23,7 @@
 киплячий/V ^adjp:actv:pres:bad
 коневі кінь noun:m:v_mis
 лежачий/V ^adjp:actv:pres:bad
+# ліса ліс noun:m:v_rod:obs
 люблячий/V ^adjp:actv:pres:bad
 максимум adv
 мати мати noun:f:v_naz/v_kly:anim
@@ -39,6 +40,7 @@
 послові посол noun:m:v_mis:anim
 роду рід noun:m:v_mis
 свистячий/V ^adjp:actv:pres:bad
+# світа світ noun:m:v_rod:obs
 сидячий/V ^adjp:actv:pres:bad
 скажімо insert
 скриплячий/V ^adjp:actv:pres:bad

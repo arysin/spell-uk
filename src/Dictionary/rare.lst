@@ -1,3 +1,5 @@
+
+банно банно adv
 баяти/I :imperf
 бистрота/a
 бісиця/ad<
@@ -7,6 +9,7 @@
 бюрко/ij
 ваганки/f
 вазка/a
+варівко варівко adv
 вигибти verb:inf:perf
 вилочний/V
 виміна/a
@@ -18,15 +21,21 @@
 висмівати/I :imperf
 вистреляти/I :perf
 відіткати/I :perf
+в'їжно в'їжно adv
 вколо вколо adv
+вліжно вліжно adv
 воркотливий/V
 вхорканий/VX ^adjp:pasv:past
+глупий/V
 головочка/a
+далебіг далебіг insert
 дармовіс/efg
 дармо adv
 дворець/abc
+дейко дейко predic
 дільчий/V
 дрожка/ab
+єсть єсть predic
 жалуватися/BHP :imperf
 жемчужний/V
 завідатель/eg<
@@ -34,16 +43,47 @@
 змирятися/JHR :imperf
 змисл/e
 з-позаду з-позаду adv
+кально кально adv
+катмає катмає predic:coll
+ке ке predic
+кете кете predic
 ке excl
+любля любля predic
+мабіть мабіть insert
+майбуть майбуть insert
+мість prep
+можний/VZ
+мо мо insert
+навперед prep:coll
+навручки навручки adv
 намість намість adv
 напуцований/V ^adjp:pasv:past
+невпам'ятку невпам'ятку predic:coll
+невпотріб невпотріб predic
+немать немать predic
+нітелень нітелень predic:coll
+ніт ніт part
 обікласти verb:inf:perf
 одітий/V ^adjp:pasv:past
 озутий/V ^adjp:pasv:past
+окроме prep
 опірений/V ^adjp:pasv:past
+опостін prep
+опріче prep
+опроче prep
 памка/a
 печально adv
+півперек prep
 підсичувати/AGO :imperf
+подовш prep
+посереду prep
+почерез prep
+пріч prep:coll
+простибіг простибіг insert
+простибі простибі insert
+против prep:rare
+рибно рибно adv
+рік-річно рік-річно adv
 святешний/V
 сей сей pron:m:v_naz/v_zna
 се сей pron:n:v_naz/v_zna
@@ -54,42 +94,43 @@
 сієї сей pron:f:v_rod
 сією сей pron:f:v_oru
 сій сей pron:f:v_dav/v_mis
+сількось сількось adv
+сількось сількось insert
 сім сей pron:m:v_mis//n:v_mis
 сі сей pron:p:v_naz/v_zna/v_mis
+спечно спечно adv
+споміж prep:coll
+спосеред prep:coll
 стосувати/AGO :imperf
 сього сей pron:m:v_rod/v_zna//n:v_rod
 сьому сей pron:m:v_dav/v_mis//n:v_dav/v_mis
 сю сей pron:f:v_zna
 ся сей pron:f:v_naz
 трепетати/AG :imperf
+трясцяма трясцяма predic:coll
 угощати/I :imperf
 уздогін уздогін adv
+уїжно уїжно adv
 уїхати/M :perf
 уйматися/J :imperf
 уконтентовувати/AB :imperf
 уконтентувати/AB :perf
+укруть укруть adv
+уліжно уліжно adv
 упоминати/IJ :imperf
+упомки упомки predic
 упруг/eg
 урадуваний/V ^adjp:pasv:past
 уряджений/V ^adjp:pasv:past
 успокоєний/V ^adjp:pasv:past
 фашистівський/V
 хватаний/V
+чортмає чортмає predic:coll
+чорт-мало чорт-мало predic:coll
+чорт-матиме чорт-матиме predic:coll
+чортма чортма predic:coll
+чорт-ма чорт-ма predic:coll
 чуткість/l
 шияка/a
+шкварко шкварко adv
 шушон/eg
-мість prep
-навперед prep:coll
-окроме prep
-опостін prep
-опріче prep
-опроче prep
-півперек prep
-подовш prep
-посереду prep
-почерез prep
-пріч prep:coll
-против prep:rare
-споміж prep:coll
-спосеред prep:coll
-можний/VZ

@@ -300,7 +300,8 @@
 всіх весь pron:p:v_rod/v_zna/v_mis
 всіма весь pron:p:v_oru
 
-все все adv
+все/X ^adv|^conj:coord|^part
+
 усюд phras
 усюдів phras
 
@@ -791,6 +792,9 @@
 стільком numr:p:v_dav
 стількома numr:p:v_oru
 
+півстільки numr:nv:coll
+півста numr:nv:coll
+
 скільки-небудь numr:p:v_naz/v_zna
 скількох-небудь numr:p:v_rod/v_zna/v_mis
 скільком-небудь numr:p:v_dav
@@ -1080,7 +1084,7 @@
 залежно залежно prep:rv_rod
 замість замість prep:rv_rod
 заради заради prep:rv_rod
-згідно згідно prep:rv_rod
+#згідно згідно prep:rv_rod
 здовж здовж prep:rv_rod|adv
 з-за з-за prep:rv_rod
 із-за із-за prep:rv_rod
