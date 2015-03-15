@@ -1,5 +1,27 @@
-
 банно банно adv
+півтретя numr:f:v_naz/v_zna
+абись conj:subord
+гейби conj:subord
+докіль conj:subord
+заким conj:subord
+замісто prep:rv_rod
+коби conj:subord
+ніже conj:coord
+оттим conj:subord
+притім conj:bad
+таже conj:subord:rare|part
+таж conj:subord|part
+оба numr:m:v_naz/v_zna
+обi numr:f:v_naz/v_zna
+штири numr:p:v_naz/v_zna
+скілько numr:p:v_naz/v_zna
+кілько numr:p:v_naz/v_zna
+дев'ятдесят numr:p:v_naz/v_zna
+тридесять numr:p:v_naz/v_zna
+вісьта excl
+магайбі excl
+удвурядь adv
+хресійбо excl
 баяти/I :imperf
 бистрота/a
 бісиця/ad<
@@ -78,6 +100,8 @@
 подовш prep
 посереду prep
 почерез prep
+кождий/V :&pron:def
+леда-який/V :&pron:ind
 пріч prep:coll
 простибіг простибіг insert
 простибі простибі insert
@@ -134,3 +158,19 @@
 шияка/a
 шкварко шкварко adv
 шушон/eg
+щіль/ij
+неякийсь неякийсь adj:m:v_naz/v_zna:&pron:ind
+неякогось неякийсь adj:m:v_rod/v_zna//n:v_rod:&pron:ind
+неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+неякимсь неякийсь adj:m:v_oru:&pron:ind
+неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+неякась неякийсь adj:f:v_naz:&pron:ind
+неякоїсь неякийсь adj:f:v_rod:&pron:ind
+неякійсь неякийсь adj:f:v_dav/v_mis:&pron:ind
+неякусь неякийсь adj:f:v_zna:&pron:ind
+неякоюсь неякийсь adj:f:v_oru:&pron:ind
+неякесь неякийсь adj:n:v_naz/v_zna:&pron:ind
+неякісь неякийсь adj:p:v_naz/v_zna:&pron:ind
+неякихось неякийсь adj:p:v_rod/v_zna/v_mis:&pron:ind
+неякимись неякийсь adj:p:v_oru:&pron:ind
+онакий/V :&pron:def

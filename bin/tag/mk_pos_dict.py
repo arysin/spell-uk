@@ -78,7 +78,7 @@ def expand_alts(lines, splitter, regexp):
         elif splitter == '|':
           groups = re.match("^(.* )(.*)$", line).groups()
         else:
-          groups = re.match("^([^/:]+:)(.*)$", line).groups()
+          groups = re.match("^(.* [^:]+:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$", line).groups()
 
 #        print(groups)
 

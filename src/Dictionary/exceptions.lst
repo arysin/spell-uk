@@ -355,6 +355,15 @@
 
 скаку скак noun:m:v_mis
 
+галай-балай галай-балай phras
+дель
+усюд усюд phras
+усюдів усюдів phras
+
+
+# ч.р.
+купіль
+
 # Прислівники
 
 більше багато adv:compr
@@ -568,7 +577,7 @@
 достоїн достойний adj:m:v_naz/v_zna:contr
 дрібен дрібний adj:m:v_naz/v_zna:contr
 єхиден єхидний adj:m:v_naz/v_zna:contr
-жаден жадний adj:m:v_naz/v_zna:contr
+жаден жадний adj:m:v_naz/v_zna:contr:&pron:neg
 жив живий adj:m:v_naz/v_zna:contr
 жоден жодний adj:m:v_naz/v_zna:contr
 звістен звісний adj:m:v_naz/v_zna:contr
