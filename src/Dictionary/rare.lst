@@ -1,27 +1,5 @@
-банно банно adv
-півтретя numr:f:v_naz/v_zna
 абись conj:subord
-гейби conj:subord
-докіль conj:subord
-заким conj:subord
-замісто prep:rv_rod
-коби conj:subord
-ніже conj:coord
-оттим conj:subord
-притім conj:bad
-таже conj:subord:rare|part
-таж conj:subord|part
-оба numr:m:v_naz/v_zna
-обi numr:f:v_naz/v_zna
-штири numr:p:v_naz/v_zna
-скілько numr:p:v_naz/v_zna
-кілько numr:p:v_naz/v_zna
-дев'ятдесят numr:p:v_naz/v_zna
-тридесять numr:p:v_naz/v_zna
-вісьта excl
-магайбі excl
-удвурядь adv
-хресійбо excl
+банно банно adv
 баяти/I :imperf
 бистрота/a
 бісиця/ad<
@@ -43,24 +21,30 @@
 висмівати/I :imperf
 вистреляти/I :perf
 відіткати/I :perf
+вісьта excl
 в'їжно в'їжно adv
 вколо вколо adv
 вліжно вліжно adv
 воркотливий/V
 вхорканий/VX ^adjp:pasv:past
+гейби conj:subord
 глупий/V
 головочка/a
 далебіг далебіг insert
 дармовіс/efg
 дармо adv
 дворець/abc
+дев'ятдесят numr:p:v_naz/v_zna
 дейко дейко predic
 дільчий/V
+докіль conj:subord
 дрожка/ab
 єсть єсть predic
 жалуватися/BHP :imperf
 жемчужний/V
 завідатель/eg<
+заким conj:subord
+замісто prep:rv_rod
 зверх зверх adv
 змирятися/JHR :imperf
 змисл/e
@@ -70,8 +54,13 @@
 ке ке predic
 кете кете predic
 ке excl
+кілько numr:p:v_naz/v_zna
+коби conj:subord
+кождий/V :&pron:def
+леда-який/V :&pron:ind
 любля любля predic
 мабіть мабіть insert
+магайбі excl
 майбуть майбуть insert
 мість prep
 можний/VZ
@@ -83,25 +72,44 @@
 невпам'ятку невпам'ятку predic:coll
 невпотріб невпотріб predic
 немать немать predic
+неякась неякийсь adj:f:v_naz:&pron:ind
+неякесь неякийсь adj:n:v_naz/v_zna:&pron:ind
+неякийсь неякийсь adj:m:v_naz/v_zna:&pron:ind
+неякимись неякийсь adj:p:v_oru:&pron:ind
+неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
+неякимсь неякийсь adj:m:v_oru:&pron:ind
+неякихось неякийсь adj:p:v_rod/v_zna/v_mis:&pron:ind
+неякійсь неякийсь adj:f:v_dav/v_mis:&pron:ind
+неякісь неякийсь adj:p:v_naz/v_zna:&pron:ind
+неякогось неякийсь adj:m:v_rod/v_zna//n:v_rod:&pron:ind
+неякоїсь неякийсь adj:f:v_rod:&pron:ind
+неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
+неякоюсь неякийсь adj:f:v_oru:&pron:ind
+неякусь неякийсь adj:f:v_zna:&pron:ind
+ніже conj:coord
 нітелень нітелень predic:coll
 ніт ніт part
+оба numr:m:v_naz/v_zna
 обікласти verb:inf:perf
+обi numr:f:v_naz/v_zna
 одітий/V ^adjp:pasv:past
 озутий/V ^adjp:pasv:past
 окроме prep
+онакий/V :&pron:def
 опірений/V ^adjp:pasv:past
 опостін prep
 опріче prep
 опроче prep
+оттим conj:subord
 памка/a
 печально adv
 півперек prep
+півтретя numr:f:v_naz/v_zna
 підсичувати/AGO :imperf
 подовш prep
 посереду prep
 почерез prep
-кождий/V :&pron:def
-леда-який/V :&pron:ind
+притім conj:bad
 пріч prep:coll
 простибіг простибіг insert
 простибі простибі insert
@@ -122,6 +130,7 @@
 сількось сількось insert
 сім сей pron:m:v_mis//n:v_mis
 сі сей pron:p:v_naz/v_zna/v_mis
+скілько numr:p:v_naz/v_zna
 спечно спечно adv
 споміж prep:coll
 спосеред prep:coll
@@ -130,9 +139,13 @@
 сьому сей pron:m:v_dav/v_mis//n:v_dav/v_mis
 сю сей pron:f:v_zna
 ся сей pron:f:v_naz
+таже conj:subord:rare|part
+таж conj:subord|part
 трепетати/AG :imperf
+тридесять numr:p:v_naz/v_zna
 трясцяма трясцяма predic:coll
 угощати/I :imperf
+удвурядь adv
 уздогін уздогін adv
 уїжно уїжно adv
 уїхати/M :perf
@@ -149,6 +162,7 @@
 успокоєний/V ^adjp:pasv:past
 фашистівський/V
 хватаний/V
+хресійбо excl
 чортмає чортмає predic:coll
 чорт-мало чорт-мало predic:coll
 чорт-матиме чорт-матиме predic:coll
@@ -157,20 +171,6 @@
 чуткість/l
 шияка/a
 шкварко шкварко adv
+штири numr:p:v_naz/v_zna
 шушон/eg
 щіль/ij
-неякийсь неякийсь adj:m:v_naz/v_zna:&pron:ind
-неякогось неякийсь adj:m:v_rod/v_zna//n:v_rod:&pron:ind
-неякомусь неякийсь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:ind
-неякимсь неякийсь adj:m:v_oru:&pron:ind
-неякимось неякийсь adj:m:v_oru//n:v_oru//p:v_dav:&pron:ind
-неякась неякийсь adj:f:v_naz:&pron:ind
-неякоїсь неякийсь adj:f:v_rod:&pron:ind
-неякійсь неякийсь adj:f:v_dav/v_mis:&pron:ind
-неякусь неякийсь adj:f:v_zna:&pron:ind
-неякоюсь неякийсь adj:f:v_oru:&pron:ind
-неякесь неякийсь adj:n:v_naz/v_zna:&pron:ind
-неякісь неякийсь adj:p:v_naz/v_zna:&pron:ind
-неякихось неякийсь adj:p:v_rod/v_zna/v_mis:&pron:ind
-неякимись неякийсь adj:p:v_oru:&pron:ind
-онакий/V :&pron:def

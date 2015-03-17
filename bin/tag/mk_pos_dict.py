@@ -78,7 +78,8 @@ def expand_alts(lines, splitter, regexp):
         elif splitter == '|':
           groups = re.match("^(.* )(.*)$", line).groups()
         else:
-          groups = re.match("^(.* [^:]+:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$", line).groups()
+#          print(line, file=sys.stderr)
+          groups = re.match("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$", line).groups()
 
 #        print(groups)
 
@@ -148,6 +149,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
             if '//p:v_' in line:
                 if affixFlag in 'eg' and 'f' not in allAffixFlags and 'j' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
+                if affixFlag in 'ux' and 'v' not in allAffixFlags:
+                    line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag == 'i' and 'j' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag == 'r' and 's' not in allAffixFlags:
@@ -204,8 +207,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                      line = line.replace('/v_zna', '')
 #                   if 'noun:f:v_naz' in line:
 #                     line = line.replace('f:v_naz', 'f:v_naz/v_zna')
-            elif affixFlag == 'a':
-                if 'c' not in allAffixFlags:
+            elif affixFlag in 'au':
+                if 'c' not in allAffixFlags and 'x' not in allAffixFlags:
                     if 'noun:m:v_dav' in line and ('у ' in line or 'ю ' in line):
                         line = line.replace('m:v_dav', 'm:v_rod/v_dav')
                 if not istota(word, allAffixFlags):
@@ -215,7 +218,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                         line = line.replace('v_dav/v_mis', 'v_dav')
                     elif line.startswith('кону кін '):
                         line = line.replace('v_dav', 'v_dav/v_mis')
-            elif affixFlag in 'cgq':
+            elif affixFlag in 'cgqx':
                 if istota(word, allAffixFlags) or secondVZna(line) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
             elif affixFlag == 'p':
@@ -226,7 +229,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 line = line.replace('p:v_naz', 'p:v_naz/v_kly')
 
             # handle znahidny for plural
-            if len(set(allAffixFlags) & set("bofjms")) > 0:
+            if len(set(allAffixFlags) & set("bofjmsv")) > 0:
                     if istota(word, allAffixFlags):
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags: # animal
@@ -291,9 +294,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' numr:p:v_naz/v_zna'
         elif affixFlag == 'a' and ending_a_aja_re.match(word):
             str = word + ' ' + word + ' noun:f:v_naz'
-        elif affixFlag == 'a':
+        elif affixFlag in 'au':
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
-        elif affixFlag in 'bfo':
+        elif affixFlag in 'bfox':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
         elif affixFlag == 'e':
             if word.endswith('е'):
@@ -310,7 +313,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
-        elif affixFlag in 'il' and word.endswith("ів"):
+        elif affixFlag in 'ilu' and (word.endswith("ів") or word.endswith("їв")):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'i' and (word.endswith('ий') or word.endswith('ій')):
             str = word + ' ' + word + ' noun:m:v_naz'  + v_zna_for_inanim + v_kly_for_anim

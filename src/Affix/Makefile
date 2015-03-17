@@ -9,7 +9,7 @@ CLEANFILES = $(affixfile) uk.aff.VERB_REV
 
 alt_suff_cmd=sed -r '/:alt/ s/^\#//' | sed -r "s/SFX l Y 54/SFX l Y 56/"
 
-all: $(affixfile)
+all: $(affixfile) uk_affix.tag
 
 
 $(affixfile): $(src_affixfiles) Makefile
