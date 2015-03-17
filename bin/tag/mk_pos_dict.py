@@ -285,7 +285,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
                 
-        elif affixFlag in '[AIKMC]':
+        elif affixFlag in '[AIKMCS]':
             str = word + ' ' + word + ' verb:inf'
         elif affixFlag in '[BJLN]':
             str = word + ' ' + word + ' verb:rev:inf'
