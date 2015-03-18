@@ -24,12 +24,12 @@
 нею вона pron:pers:f:3:v_oru:anim
 ній вона pron:pers:f:3:v_mis:anim
 
-воно воно pron:pers:n:3:v_naz:anim
-його воно pron:pers:n:3:v_rod/v_zna:anim
-нього воно pron:pers:n:3:v_rod/v_zna:anim
-йому воно pron:pers:n:3:v_dav:anim
-ньому воно pron:pers:n:3:v_mis:anim
-ним воно pron:pers:n:3:v_oru:anim
+воно воно pron:pers:n:3:v_naz
+його воно pron:pers:n:3:v_rod/v_zna
+нього воно pron:pers:n:3:v_rod/v_zna
+йому воно pron:pers:n:3:v_dav
+ньому воно pron:pers:n:3:v_mis
+ним воно pron:pers:n:3:v_oru
 
 ми ми pron:pers:p:1:v_naz:anim
 нас ми pron:pers:p:1:v_rod/v_zna/v_mis:anim
@@ -113,12 +113,6 @@
 будь-чим будь-що pron:ind:v_oru
 будь-чім будь-що pron:ind:v_mis
 
-будь-де будь-де adv
-будь-як будь-як adv
-будь-коли будь-коли adv
-будь-куди будь-куди adv
-будь-звідки будь-звідки adv
-
 будлі-хто будлі-хто pron:ind:v_naz:anim
 будлі-кого будлі-хто pron:ind:v_rod/v_zna:anim
 будлі-кому будлі-хто pron:ind:v_dav/v_mis:anim
@@ -132,11 +126,6 @@
 будлі-чим будлі-що pron:ind:v_oru
 будлі-чім будлі-що pron:ind:v_mis
 
-будлі-де будлі-де adv
-будлі-як будлі-як adv
-будлі-коли будлі-коли adv
-будлі-куди будлі-куди adv
-будлі-звідки будлі-звідки adv
 
 бозна-хто бозна-хто pron:ind:v_naz:anim
 бозна-кого бозна-хто pron:ind:v_rod/v_zna:anim
@@ -776,34 +765,53 @@
 оттакий/V :&pron:dem:rare
 
 
-кудись кудись adv
-звідкись звідкись adv
+кудись adv:&pron:ind
+звідкись adv:&pron:ind
 
-абиде абиде adv
-абиколи абиколи adv
-абикуди абикуди adv
+абиде adv
+абиколи adv
+абикуди adv
 
-аніде аніде adv
-анізащо анізащо adv
-аніколи аніколи adv
+аніде adv:&pron:neg
+анізащо adv:&pron:neg
+аніколи adv:&pron:neg
 
-бозна-де adv
+бозна-де adv:&pron:ind:coll
 бозна-як adv
 бозна-коли adv
 бозна-куди adv
 бозна-звідки adv
 
-чортзна-де adv
-чортзна-як adv
-чортзна-коли adv
-чортзна-куди adv
-чортзна-звідки adv
+будь-де adv:&pron:ind
+будь-як adv
+будь-коли adv
+будь-куди adv
+будь-звідки adv
 
-хтозна-де adv
-хтозна-як adv
-хтозна-коли adv
-хтозна-куди adv
-хтозна-звідки adv
+будлі-де adv
+будлі-як adv
+будлі-коли adv
+будлі-куди adv
+будлі-звідки adv
+
+чортзна-де adv:&pron:ind
+чортзна-як adv:&pron:ind
+чортзна-коли adv:&pron:ind
+чортзна-куди adv:&pron:ind
+чортзна-звідки adv:&pron:ind
+чортзна-відкіля adv:&pron:ind:coll
+чортзна-відкіль adv:&pron:ind:coll
+чортзна-відколи adv:&pron:ind:coll
+
+хтозна-де adv:&pron:ind
+хтозна-як adv:&pron:ind
+хтозна-коли adv:&pron:ind
+хтозна-куди adv:&pron:ind
+хтозна-звідки adv:&pron:ind
+хтозна-чому adv:&pron:ind
+хтозна-відкіля adv:&pron:ind:coll
+хтозна-відкіль adv:&pron:ind:coll
+хтозна-відколи adv:&pron:ind:coll
 
 невідь-де adv
 невідь-як adv
@@ -811,14 +819,14 @@
 невідь-куди adv
 невідь-звідки adv
 
-казна-де adv
+казна-де adv:&pron:ind
 казна-як adv
 казна-коли adv
-казна-куди adv
-казна-звідки adv
+казна-куди adv:&pron:ind
+казна-звідки adv:&pron:ind
 
 всяк всяк adv:rare|adj:m:v_naz/v_zna
-
+чомусь adv:&pron:ind
 
 # числівникові займенники
 
@@ -895,7 +903,6 @@
 невідь-скількох невідь-скільки numr:v_rod/v_zna/v_mis:&pron:ind
 невідь-скільком невідь-скільки numr:v_dav:&pron:ind
 невідь-скількома невідь-скільки numr:v_oru:&pron:ind
-
 
 півстільки numr:nv:coll
 
@@ -1352,7 +1359,7 @@
 бо conj:subord|part
 буцім conj:subord|part
 буцімто conj:subord|part
-відколи adv|conj:subord
+відколи adv:&pron:int:rel|conj:subord
 власне insert|part
 властиво part|predic
 все-таки/X ^conj:coord
@@ -1360,15 +1367,15 @@
 втім adv:v-u|conj:coord:v-u
 геть adv|excl|part
 дедалі adv|part
-де adv|part
-доки adv|conj:subord
+де adv:&pron:int:rel|part
+доки adv:&pron:int:rel|conj:subord
 допоки adv|conj:subord
 еге part|excl
 же part|conj:coord
 зате conj:coord
 затим adv
 ібн part
-коли adv|conj:subord|part
+коли adv:&pron:int:rel|conj:subord|part
 ледве adv|part|conj:subord
 ледь adv|conj:subord
 лиш part|conj:subord
@@ -1414,7 +1421,6 @@
 от part
 пак part
 позаяк conj:subord
-поки conj:subord
 покіль adv|conj:subord
 попросту adv|part
 прецінь part|adv|insert|conj:coord
@@ -1427,8 +1433,8 @@
 сиріч conj:subord
 справді adv|insert|part
 також adv|conj:coord
-так adv|part|conj:coord:subord
-там adv|part
+так adv:&pron:dem|part|conj:coord:subord
+там adv:&pron:dem|part
 та conj:coord|part
 теє part
 теж adv|part
@@ -1455,7 +1461,7 @@
 як-от part
 якраз adv|part
 якщо conj:subord
-як adv|conj:subord|part
+як adv:&pron:int:rel|conj:subord|part
 а-ля conj:subord
 
 ге part|excl
@@ -1476,14 +1482,7 @@
 осісьо part
 угу part
 чень part
-помісь part
-хоть part
-хотя part
 чортзна чортзна part
-
-#subordinate conjunction
-помісь conj:subord
-хоть conj:subord
 
 # рідковживані
 ув ув prep:rv_zna:rv_mis:rv_rod
@@ -1520,37 +1519,6 @@
 декілько декілько numr:p:v_naz/v_zna:coll
 кількадесятеро кількадесятеро numr:p:v_naz/v_zna:coll
 кільканадцятеро кільканадцятеро numr:p:v_naz/v_zna:coll
-
-єсть єсть excl
-кихи кихи predic
-крумк крумк predic
-отако отако adv
-оттак оттак adv
-охо-хо охо-хо excl
-охо-хо-хо охо-хо-хо excl
-пирск пирск predic
-присійбо присійбо excl:coll
-присяй-богу присяй-богу excl:coll
-присясто-Боже присясто-Боже excl:coll
-ти-ни-ни ти-ни-ни predic
-тирири тирири predic
-тиририри тиририри predic
-теліп теліп predic
-упривечір упривечір adv
-фьюіть фьюіть predic
-хавав хавав predic
-хвось хвось predic
-хроп хроп predic
-хрум хрум predic
-ців-ців ців-ців predic
-цурпек цурпек excl
-цур-цура цур-цура excl:coll
-чик-чирик чик-чирик predic
-чичирк чичирк predic
-чухи чухи predic
-шкитильг шкитильг predic
-штирк штирк predic
-штовхіць штовхіць excl
 
 доперва adv:rare|part:rare
 суціль adv:rare

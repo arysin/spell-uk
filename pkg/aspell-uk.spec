@@ -3,7 +3,7 @@
 
 Summary:	Ukrainian dictionaries for aspell
 Name:		aspell-%{languagecode}
-Version:	1.8.0
+Version:	1.9.5
 Release:	1
 Epoch:		5
 URL:		http://ispell-uk.sourceforge.net/

@@ -31,8 +31,8 @@ uk_words.tag: $(dict) $(TAGS_ONLY) composite.lst Makefile
 
 wc:     uk_words.out uk_words.tag
 #	echo `cat uk_words.out | wc -l` + `grep -E "W|Z|A.*B|I.*J|K.*L|M.*N|Y|X" uk_words.out | wc -l` | bc
-	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.out | wc -l
-	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N/\n/g" uk_words.tag | wc -l
+	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N|S/\n/g" uk_words.out | wc -l
+	sed -r "s/[ZYXW0-3|]|A.*B|I.*J|K.*L|M.*N|S/\n/g" uk_words.tag | wc -l
 
 sort:
 	@for ff in $(SORTED) ; do \
