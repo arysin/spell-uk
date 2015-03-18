@@ -327,6 +327,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
               str += '/v_zna'
         elif affixFlag == 'i' and (word.endswith('а')):
             str = word + ' ' + word + ' noun:f:v_naz' + v_kly_for_anim
+        elif affixFlag == 'i' and (word.endswith('м')):
+            str = word + ' ' + word + ' noun:f:v_naz' + v_zna_for_inanim + v_kly_for_anim
         elif affixFlag in "ir" and word[-1] in "ьаячшжрбвф":
             str = word + ' ' + word + ' noun:f:v_naz'
             if not istota(word, allAffixFlags) or word.endswith('матір'):
