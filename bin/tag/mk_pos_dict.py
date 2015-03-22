@@ -602,6 +602,9 @@ def pre_process(line):
       out = [line]
   elif "<" in line and line[0].isupper():
     if "/" in line:
+      if "a" in line and not "^" in line:
+        if "<m" in line:
+            line = line.replace("<m", "< ^noun:m")
 #      if re.match(".* [:a-z^].*", line):
 #        line += ":fname"
 #      else:
