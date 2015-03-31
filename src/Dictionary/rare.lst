@@ -19,11 +19,6 @@
 висказати/ABW :perf
 висміватися/J :imperf
 висмівати/I :imperf
-помісь part
-хоть part
-хотя part
-помісь conj:subord
-хоть conj:subord
 вистреляти/I :perf
 відіткати/I :perf
 вісьта excl
@@ -49,6 +44,7 @@
 жемчужний/V
 завідатель/eg<
 заким conj:subord
+заки conj:subord
 замісто prep:rv_rod
 зверх зверх adv
 змирятися/JHR :imperf
@@ -67,11 +63,13 @@
 мабіть мабіть insert
 магайбі excl
 майбуть майбуть insert
+мізок/a
 мість prep
 можний/VZ
 мо мо insert
 навперед prep:coll
 навручки навручки adv
+надцять/a
 намість намість adv
 напуцований/V ^adjp:pasv:past
 невпам'ятку невпам'ятку predic:coll
@@ -112,6 +110,8 @@
 півтретя numr:f:v_naz/v_zna
 підсичувати/AGO :imperf
 подовш prep
+помісь conj:subord
+помісь part
 посереду prep
 почерез prep
 притім conj:bad
@@ -167,6 +167,9 @@
 успокоєний/V ^adjp:pasv:past
 фашистівський/V
 хватаний/V
+хоть conj:subord
+хоть part
+хотя part
 хресійбо excl
 чортмає чортмає predic:coll
 чорт-мало чорт-мало predic:coll
