@@ -157,7 +157,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag in 'lq' and 'm' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
-                if affixFlag in 'ac' and 'o' not in allAffixFlags and 'b' not in allAffixFlags:
+                if affixFlag in 'ac' and 'o' not in allAffixFlags and 'b' not in allAffixFlags and 'f' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
 
             if '/v_kly' in line:
