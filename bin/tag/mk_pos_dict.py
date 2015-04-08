@@ -218,7 +218,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                         line = line.replace('v_dav/v_mis', 'v_dav')
                     elif line.startswith('кону кін '):
                         line = line.replace('v_dav', 'v_dav/v_mis')
-            elif affixFlag in 'cgqx':
+            elif affixFlag in 'cgqx' or (affixFlag == "l" and word.endswith("боєць")):
                 if istota(word, allAffixFlags) or secondVZna(line) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
             elif affixFlag == 'p':
@@ -309,7 +309,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_zna' + v_kly_for_anim
         elif affixFlag == 'l' and re.match('.*[еє]нь$', word):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
-        elif affixFlag == 'l' and re.match('.*ець$', word):
+        elif affixFlag == 'l' and re.match('.*[єе]ць$', word):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'

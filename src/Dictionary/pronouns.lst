@@ -246,8 +246,9 @@
 дечим дещо pron:ind:v_oru
 дечім дещо pron:ind:v_mis
 
-нікогісінько нікогісінько pron:neg:v_naz/v_rod/v_zna:anim:coll
-анікогісінько анікогісінько pron:neg:v_naz/v_rod/v_zna:coll
+нікогісінько нікогісінько pron:neg:v_naz/v_rod/v_zna:anim
+анікогісінько анікогісінько pron:neg:v_naz/v_rod/v_zna
+анічогісінько анічогісінько pron:neg:v_naz/v_rod/v_zna
 
 
 # Примкетникові займенники
