@@ -218,7 +218,10 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                         line = line.replace('v_dav/v_mis', 'v_dav')
                     elif line.startswith('кону кін '):
                         line = line.replace('v_dav', 'v_dav/v_mis')
-            elif affixFlag in 'cgqx' or (affixFlag == "l" and word.endswith("боєць")):
+            elif affixFlag in "l" and not 'q' in allAffixFlags:
+                if 'noun:m:v_dav' in line and re.match(".*і[дтнр]$", word) and ending_uyu_re.match(line):
+                    line = line.replace('m:v_dav', 'm:v_rod/v_dav')
+            elif affixFlag in 'cgqx' or (affixFlag == "l" and re.match(".*(боєць|і[тдрн])$", word)):
                 if istota(word, allAffixFlags) or secondVZna(line) and 'noun:m:v_rod' in line:
                     line = line.replace('m:v_rod', 'm:v_rod/v_zna')
             elif affixFlag == 'p':
@@ -307,9 +310,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and word[-1] in 'яа':
             str = word + ' ' + word + ' noun:n:v_naz/v_zna' + v_kly_for_anim
-        elif affixFlag == 'l' and re.match('.*[еє]нь$', word):
-            str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
-        elif affixFlag == 'l' and re.match('.*[єе]ць$', word):
+        elif affixFlag == 'l' and re.match('.*([еє][цн]ь|і[тднр]|ен|ок)$', word):
             str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
         elif affixFlag == 'l' and re.match('.*([^ц]ь|[чш]|іць)$', word):
             str = word + ' ' + word + ' noun:f:v_naz/v_zna'
@@ -444,7 +445,7 @@ def retain_tags(line, tags):
 
 extra_gen_re=re.compile(':\\+([mnf])')
 gen_tag_re=re.compile(':[mfn]:')
-compar_line_re=re.compile('[^ ]+ше [^ ]+ .*v_naz.*(compr|super).*')
+compar_line_re=re.compile('[^ ]+([шщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 
 #@profile
 def post_process(line, affixFlags, extra_tag):
@@ -499,11 +500,17 @@ def post_process(line, affixFlags, extra_tag):
     lines = [line]
     
     if compar_line_re.match(line):
-        line1 = re.sub('([^ ]+ше [^ ]+[чш])ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
-        line1 = re.sub('([^ ]+ше [^ ]+[^чш])ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
-        line1 = re.sub('([^ ]+ше [^ ]+)ій adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
-#        print("c", line1)
+ #       line1 = re.sub('([^ ]+ще [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
+        if re.search("[чшщ]ий adj", line):
+          line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
+        elif "ий adj" in line or "ій adj" in line:
+          line1 = re.sub('([^ ]+[шщ]е [^ ]+[^чшщ])[іи]й adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
+#        else:
+#          line1 = line
+#        elif "ій adj" in line:
+#          line1 = re.sub('([^ ]+ше [^ ]+)ій adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line1)
         adverbs_compar.append( line1 )
+#        print("adv compar", adverbs_compar, file=sys.stderr)
 
     # подвійний рід
     if extra_gen_re.search(extra_tag) and gen_tag_re.search(line):

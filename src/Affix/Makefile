@@ -7,7 +7,8 @@ src_affixfiles = uk.REP uk.aff.ADJ uk.aff.NOUN uk.aff.VERB uk.aff.VERB_REV uk.af
 
 CLEANFILES = $(affixfile) uk.aff.VERB_REV
 
-alt_suff_cmd=sed -r '/:alt/ s/^\#//' | sed -r "s/SFX l Y 54/SFX l Y 56/"
+# add affixes for alternative spelling
+alt_suff_cmd=sed -r '/:alt/ s/^\#//' | awk '{ if (/SFX l Y/) { print $$1,$$2,$$3,$$4+2 } else { print $$0 } }'
 
 all: $(affixfile) uk_affix.tag
 
