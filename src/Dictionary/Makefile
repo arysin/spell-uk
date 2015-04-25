@@ -18,8 +18,8 @@ all:	uk_words.out
 
 uk_words.out: $(dict) composite.lst Makefile
 	cat $(SPACED) | sed -r "s/( [^ ]+)? :?[a-z].*$$//g" | $(LC_ALL) grep -vE '^[#[:space:]]' | $(spcr) > spaced.tmp
-	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort -u >> spaced.tmp
-	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[+@<>].*//g" | $(sort) > $@
+	cat $(TAGGED) | $(LC_ALL) grep -vE "^ *#|^ *$$" | awk -F " " '{ print $$1}' | sort >> spaced.tmp
+	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[+@<>].*//g" | sed -r "s/ *#.*$$//" | $(sort) > $@
 	../../bin/tag/mk_comps.py - -spell < composite.lst >> $@
 	rm -f spaced.tmp
 	@(grep -E $(BAD_FLAG_RE) $@ && echo "ERROR: Bad flag combinations exist!" && /bin/false) || /bin/true

@@ -34,6 +34,8 @@ def process_line_exceptions(line, extra_tags):
 
 
 def process_line(line, extra_tags):
+  line = re.sub(' *#.*$', '', line) # remove comments
+
   line = re.sub('-$', '', line)
 
   if not ' ' in line or re.match('.*[а-яіїєґ]/.*', line):
