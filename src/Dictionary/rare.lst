@@ -47,9 +47,11 @@
 заки conj:subord
 замісто prep:rv_rod
 зверх зверх adv
+здрійко здрійко numr:nv
 змирятися/JHR :imperf
 змисл/e
 з-позаду з-позаду adv
+кабацький/V
 кально кально adv
 катмає катмає predic:coll
 ке ке predic
@@ -103,6 +105,7 @@
 опостін prep
 опріче prep
 опроче prep
+осьмий/V
 оттим conj:subord
 памка/a
 печально adv
@@ -135,6 +138,7 @@
 сількось сількось insert
 сім сей pron:m:v_mis//n:v_mis
 сі сей pron:p:v_naz/v_zna/v_mis
+скілька скілька numr:nv:coll
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
 споміж prep:coll
@@ -179,8 +183,9 @@
 чорт-ма чорт-ма predic:coll
 чуткість/l
 шияка/a
-шкварко шкварко adv
+шкварко adv
 шкло/i :np
 штири numr:p:v_naz/v_zna
+штирнадцять штирнадцять numr:nv
 шушон/eg
 щіль/ij

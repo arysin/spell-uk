@@ -73,13 +73,17 @@ def expand_alts(lines, splitter, regexp):
             out.append( line )
             continue
             
-        if splitter == '/':
-          groups = re.match("^([^/]+:)([^:]+)(:[^/]+)?$", line).groups()
-        elif splitter == '|':
-          groups = re.match("^(.* )(.*)$", line).groups()
-        else:
-#          print(line, file=sys.stderr)
-          groups = re.match("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$", line).groups()
+        try:
+          if splitter == '/':
+            groups = re.match("^([^/]+:)([^:]+)(:[^/]+)?$", line).groups()
+          elif splitter == '|':
+            groups = re.match("^(.* )(.*)$", line).groups()
+          else:
+#            print(line, file=sys.stderr)
+            groups = re.match("^(.* .+?:)((?:.:(?:nv|v_...)(?:/(?:nv|v_...))*)(?://.:(?:nv|v_...)(?:/(?:nv|v_...))*)+)(:[^/]+)?$", line).groups()
+        except:
+          print("invalid format for", line, file=sys.stderr)
+          raise
 
 #        print(groups)
 
