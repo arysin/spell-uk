@@ -53,6 +53,9 @@ def process_line(line, extra_tags):
 #  if extra_tags != '' and not re.match('.* [a-z].*$', out_line):
   if extra_tags != '' and (not ' ' in out_line or ' ^' in out_line):
     extra_tags = ' ' + extra_tags
+    
+  if '|' in out_line:
+    out_line = out_line.replace('|', extra_tags + '|')
 
 #  if not "/" in out_line and not re.match("^[^ ]+ [^ ]+ [^ ]+$", out_line + extra_tags):
 #    print("bad line:", out_line + extra_tags, file=sys.stderr)
@@ -67,6 +70,7 @@ def process_line(line, extra_tags):
 
 extra_tag_map = {
   'base-abbr.lst': ':abbr',
+  'dot-abbr.lst': ':abbr',
   'twisters.lst': ':bad',
   'rare.lst': ':rare',
   'slang.lst': ':slang',

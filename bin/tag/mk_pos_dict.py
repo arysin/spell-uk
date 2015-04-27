@@ -534,7 +534,7 @@ def post_process(line, affixFlags, extra_tag):
 
 #@profile
 def collect_all_words(line):
-    if not ':bad' in line and not ':rare' in line and not ':coll' in line: # and not ':alt' in line:
+    if not ':bad' in line and not ':rare' in line and not ':coll' in line and not ". " in line: # and not ':alt' in line:
         allWords.append(line.split(' ')[0])
     if ' adv' in line:
 #        print("-", line.split(" ")[0])
@@ -542,6 +542,7 @@ def collect_all_words(line):
 
 
 
+GEN=['m', 'f', 'n', 'p']
 VIDM=['v_naz', 'v_rod', 'v_dav', 'v_zna', 'v_oru', 'v_mis', 'v_kly']
 re_nv_vidm=re.compile('(noun):[mfn]:(.*)')
 
@@ -563,6 +564,20 @@ def expand_nv(in_lines):
             for v in VIDM:
               if v != 'v_kly' or 'anim' in line:
                 lines.append(re_nv_vidm.sub('\\1:p:' + v + ':\\2', line))
+    elif ('adj' in line) and ':nv' in line and not ":v_" in line:
+        parts = line.split(':nv')
+        
+        if re.match('.*:[mnfp]', parts[0]):
+            gens = parts[0][-1:]
+            parts[0] = parts[0][:-2]
+        else:
+            gens = GEN
+
+        for g in gens:    
+            for v in VIDM:
+              if v == 'v_kly' and (not ':anim' in line or ':lname' in line):    # TODO: include v_kly? but not for abbr like кв.
+                continue
+              lines.append(parts[0] + ':' + g + ":" + v + ':nv' + parts[1])
     else:
         lines.append(line)
 

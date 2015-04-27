@@ -17,8 +17,9 @@
 АТР noun:m:nv
 АТС noun:f:nv
 АТ noun:n:nv
+б-во/ij
 БД noun:f:nv
-б-ка/a
+б-ка/ab
 БК noun:m:nv
 БМД noun:m:nv
 БМП noun:f:nv
@@ -30,6 +31,7 @@
 ВАК noun:m:nv
 ВАСУ noun:m:nv
 ВАТ noun:n:nv
+в-во/ij
 ВВП noun:m:nv
 ВВ noun:p:nv:ns
 ВГСУ noun:m:nv
@@ -67,6 +69,7 @@
 Гбайт noun:m:nv
 Гбіт noun:m:nv
 Гб noun:m:nv
+г-во/i
 ГГц noun:m:nv
 ГеВ noun:m:nv
 ГЕС noun:f:nv
@@ -83,6 +86,7 @@
 ГУМВС noun:n:nv:np
 ГУУАМ noun:n:nv:np
 Гц noun:m:nv
+г noun:m:nv
 ДАІ noun:f:nv
 ДАТ noun:n:nv
 ДБСТ noun:m:nv
@@ -234,6 +238,7 @@
 МЖК noun:m:nv
 МЗС noun:n:nv
 МінАП noun:n:nv
+мін-во/ij
 мкм noun:m:nv
 мкФ noun:m:nv
 млн noun:m:nv|numr:p:nv
@@ -429,7 +434,9 @@
 СТД noun:f:nv
 СУБД noun:f:nv
 СУМ/e
+сусп-во/i
 СФРЮ noun:f:nv
+с-ще/i
 ТАРС noun:n:nv:np
 Тбайт noun:m:nv
 Тб noun:m:nv
@@ -447,6 +454,7 @@
 ТОВ noun:n:nv
 ТОУК noun:n:nv
 ТРК noun:f:nv
+трлн noun:m:nv|numr:p:nv
 тРНК noun:f:nv
 т noun:f:nv
 УААН noun:f:nv
@@ -514,6 +522,7 @@
 УТОС noun:n:nv
 УХДП noun:f:nv
 УЦЕПД noun:m:nv
+у-ще/i
 ФАО noun:f:nv
 ФАТХ noun:m:nv:np
 ФБР noun:n:nv:np
