@@ -1,4 +1,3 @@
-барлогу барліг noun:m:v_mis
 барлогу барліг noun:m:v_rod
 бен бен unknown
 білячий/V ^adjp:actv:pres:bad
@@ -8,37 +7,26 @@
 болячий/V ^adjp:actv:pres:bad
 боці бік noun:m:v_mis
 бродячий/V ^adjp:actv:pres:bad
-будинкові будинок noun:m:v_mis
 варіанту варіант noun:m:v_rod
 везучий/V ^adjp:actv:pres:bad
 висячий/V ^adjp:actv:pres:bad
 говорили-балакали говорити-балакати verb:past:p:imperf
-двору двір noun:m:v_mis
 дзвенячий/V ^adjp:actv:pres:bad
 дрижачий/V ^adjp:actv:pres:bad
-злібові хліб noun:m:v_mis
-зшиткові зшиток noun:m:v_mis
 їдучий/V ^adjp:actv:pres:bad
 киплячий/V ^adjp:actv:pres:bad
-коневі кінь noun:m:v_mis
 лежачий/V ^adjp:actv:pres:bad
 # ліса ліс noun:m:v_rod:obs
 люблячий/V ^adjp:actv:pres:bad
 максимум adv
 мати мати noun:f:v_naz/v_kly:anim
 мінімум adv
-мосту міст noun:m:v_mis
 мосту міст noun:m:v_rod
 нев'янучий/V ^adjp:actv:pres:bad
 немеркнучий/V ^adjp:actv:pres:bad
-паперу папір noun:m:v_mis
 паркану паркан noun:m:v_rod
 пливучий/V ^adjp:actv:pres:bad
-плоту пліт noun:m:v_mis
 плоту пліт noun:m:v_rod
-помосту поміст noun:m:v_mis
-послові посол noun:m:v_mis:anim
-роду рід noun:m:v_mis
 свистячий/V ^adjp:actv:pres:bad
 # світа світ noun:m:v_rod:obs
 сидячий/V ^adjp:actv:pres:bad
@@ -47,18 +35,12 @@
 смердячий/V ^adjp:actv:pres:bad
 сміло сміло adv
 сплячий/V ^adjp:actv:pres:bad
-столу стіл noun:m:v_mis
 столу стіл noun:m:v_rod
 стоячий/V ^adjp:actv:pres:bad
 таранячий/V ^adjp:actv:pres:bad
-телемосту телеміст noun:m:v_mis
 телемосту телеміст noun:m:v_rod
 тремтячий/V ^adjp:actv:pres:bad
-тролеєві тролей noun:m:v_mis
-учневі учень noun:m:v_mis:anim
 ходячий/V ^adjp:actv:pres:bad
-хрону хрін noun:m:v_mis
-шву шов noun:m:v_mis
 шинку шинок noun:m:v_rod
 шиплячий/V ^adjp:actv:pres:bad
 шлунку шлунок noun:m:v_rod

@@ -146,6 +146,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
         lines = generate_suffix(word, affixFlag, affixGroups, allAffixFlags, origAffixFlags)
         
+#        print(lines, file=sys.stderr)
+        
         for line in lines:
 #            print(affixFlag, word, ':', line, file=sys.stderr)
             
@@ -186,8 +188,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                     line = line.replace('m:v_dav', 'm:v_rod/v_dav')
 #                if not 'g' in allAffixFlags and 'noun:m:v_dav' in line and ending_uyu_re.match(line) and 'о ' in line and word[0].isupper():
 #                    line = line.replace('m:v_dav', 'm:v_dav/v_mis')
-                if ending_istu_re.match(line):
-                    line = line.replace('m:v_dav/v_mis', 'm:v_dav')
+#                if ending_istu_re.match(line):
+#                    line = line.replace('m:v_dav/v_mis', 'm:v_dav')
                 if ('j' in allAffixFlags or 'b' in allAffixFlags) and word.endswith('о'):
                     if istota(word, allAffixFlags):
                         new_aff = 'm:v_rod/v_zna//p:v_naz'
@@ -199,9 +201,9 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if istota(word, allAffixFlags):
                     if 'm:v_rod' in line:
                         line = line.replace('m:v_rod', 'm:v_rod/v_zna')
-                else:
-                    if not ending_iv_re.match(word) and ending_evi_re.match(line):
-                        line = line.replace('m:v_dav/v_mis', 'm:v_dav')
+#                else:
+#                    if not ending_iv_re.match(word) and ending_evi_re.match(line):
+#                        line = line.replace('m:v_dav/v_mis', 'm:v_dav')
             elif affixFlag in "ir":
                  if istota(word, allAffixFlags):
                    if 'noun:f:v_rod' in line and not word.endswith('а') and not word.endswith('матір'):
@@ -215,13 +217,13 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if 'c' not in allAffixFlags and 'x' not in allAffixFlags:
                     if 'noun:m:v_dav' in line and ('у ' in line or 'ю ' in line):
                         line = line.replace('m:v_dav', 'm:v_rod/v_dav')
-                if not istota(word, allAffixFlags):
-                    if not ending_iv_re.match(word) and ending_evi_re.match(line):
-                        line = line.replace('m:v_dav/v_mis', 'm:v_dav')
-                    elif ending_iku_re.match(line):
-                        line = line.replace('v_dav/v_mis', 'v_dav')
-                    elif line.startswith('кону кін '):
-                        line = line.replace('v_dav', 'v_dav/v_mis')
+#                if not istota(word, allAffixFlags):
+#                    if not ending_iv_re.match(word) and ending_evi_re.match(line):
+#                        line = line.replace('m:v_dav/v_mis', 'm:v_dav')
+#                    elif ending_iku_re.match(line):
+#                        line = line.replace('v_dav/v_mis', 'v_dav')
+#                    elif line.startswith('кону кін '):
+#                        line = line.replace('v_dav', 'v_dav/v_mis')
             elif affixFlag in "l" and not 'q' in allAffixFlags:
                 if 'noun:m:v_dav' in line and re.match(".*і[дтнр]$", word) and ending_uyu_re.match(line):
                     line = line.replace('m:v_dav', 'm:v_rod/v_dav')

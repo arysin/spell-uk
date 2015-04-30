@@ -48,19 +48,19 @@
 ними вони noun:p:v_oru:anim:&pron:pers:3
 
 хто хто conj:subord
-хто хто noun:rel:m:v_naz:anim:&pron:int
-кого хто noun:rel:m:v_rod/v_zna:anim:&pron:int
-кому хто noun:rel:m:v_dav:anim:&pron:int
-ким хто noun:rel:m:v_oru:anim:&pron:int
-кім хто noun:rel:m:v_mis:anim:&pron:int
+хто хто noun:m:v_naz:anim:&pron:int:rel
+кого хто noun:m:v_rod/v_zna:anim:&pron:int:rel
+кому хто noun:m:v_dav:anim:&pron:int:rel
+ким хто noun:m:v_oru:anim:&pron:int:rel
+кім хто noun:m:v_mis:anim:&pron:int:rel
 
 що що conj:subord
-що що noun:rel:n:v_naz/v_zna:&pron:int
-віщо що noun:rel:n:v_zna:&pron:int
-чого що noun:rel:n:v_rod:&pron:int
-чому що noun:rel:n:v_dav/v_mis:&pron:int
-чим що noun:rel:n:v_oru:&pron:int
-чім що noun:rel:n:v_mis:&pron:int
+що що noun:n:v_naz/v_zna:&pron:int:rel
+віщо що noun:n:v_zna:&pron:int:rel
+чого що noun:n:v_rod:&pron:int:rel
+чому що noun:n:v_dav/v_mis:&pron:int:rel
+чим що noun:n:v_oru:&pron:int:rel
+чім що noun:n:v_mis:&pron:int:rel
 
 абихто абихто noun:v_naz:anim:&pron:ind
 абикого абихто noun:v_rod/v_zna:anim:&pron:ind
