@@ -125,29 +125,29 @@
 рибно рибно adv
 рік-річно рік-річно adv
 святешний/V
-сей сей pron:m:v_naz/v_zna
-се сей pron:n:v_naz/v_zna
+сей сей adj:m:v_naz/v_zna:&pron:dem
+се сей adj:n:v_naz/v_zna:&pron:dem
 силяти/IGQ :imperf
-сими сей pron:p:v_oru
-сим сей pron:m:v_oru//n:v_oru//p:v_dav
-сих сей pron:p:v_rod/v_zna/v_mis
-сієї сей pron:f:v_rod
-сією сей pron:f:v_oru
-сій сей pron:f:v_dav/v_mis
+сими сей adj:p:v_oru:&pron:dem
+сим сей adj:m:v_oru//n:v_oru//p:v_dav:&pron:dem
+сих сей adj:p:v_rod/v_zna/v_mis:&pron:dem
+сієї сей adj:f:v_rod:&pron:dem
+сією сей adj:f:v_oru:&pron:dem
+сій сей adj:f:v_dav/v_mis:&pron:dem
 сількось сількось adv
 сількось сількось insert
-сім сей pron:m:v_mis//n:v_mis
-сі сей pron:p:v_naz/v_zna/v_mis
+сім сей adj:m:v_mis//n:v_mis:&pron:dem
+сі сей adj:p:v_naz/v_zna/v_mis:&pron:dem
 скілька скілька numr:nv:coll
 скілько numr:p:v_naz/v_zna
 спечно спечно adv
 споміж prep:coll
 спосеред prep:coll
 стосувати/AGO :imperf
-сього сей pron:m:v_rod/v_zna//n:v_rod
-сьому сей pron:m:v_dav/v_mis//n:v_dav/v_mis
-сю сей pron:f:v_zna
-ся сей pron:f:v_naz
+сього сей adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+сьому сей adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+сю сей adj:f:v_zna:&pron:dem
+ся сей adj:f:v_naz:&pron:dem
 таже conj:subord:rare|part
 таж conj:subord|part
 трепетати/AG :imperf
