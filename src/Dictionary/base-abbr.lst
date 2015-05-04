@@ -82,6 +82,7 @@
 грн noun:f:nv
 ГРУ noun:n:nv:np
 Гр noun:f:nv
+ГУАМ noun:f:nv:np
 ГУБОЗ noun:n:nv:np
 ГУМВС noun:n:nv:np
 ГУУАМ noun:n:nv:np
@@ -206,6 +207,7 @@
 КПРФ noun:f:nv:np
 КПУ noun:f:nv:np
 КП noun:m:nv
+крб noun:m:nv
 к-сть/lm
 КУІн noun:m:nv
 КУК noun:m:nv
@@ -549,6 +551,7 @@
 ФФУ noun:f:nv:np
 ХАЕС noun:f:nv
 ХАМАС noun:m:nv:np
+хв noun:f:nv
 ХДПУ noun:f:nv
 ХЛПУ noun:f:nv
 ХНС noun:m:nv

@@ -26,10 +26,15 @@ tags.lst	-- additional tags for POS
 
 
 Additional flags for LanguageTool that won't be used in spell-uk:
-  affix "-" extra line for LT (ignored altogether for spell-uk)
+  affix "-" extra line just for tag dictionary (ignored altogether for spell-uk)
   affix "<" creature, live being, person
   affix "<>" creature, live being
   affix "+" last name
+  affix "@" другий знахідний із закінченням -а/-я
+  affix :+m додатковий чоловічий рід
+  affix :+f додатковий жіночий рід
+  affix ^noun форсування частини мови (напр. "дорослий/V< ^noun" тут буде згенеровано іменник)
+  affix ^noun:m форсування роду (на ч.р.)
 
 D. Kovalov (Дмитро Ковальов) Dec 2000
-A. Rysin (Андрій Рисін) 2005-2014
+A. Rysin (Андрій Рисін) 2005-2015
