@@ -6,16 +6,21 @@
 зв. adj:nv
 ім. noun:n:v_rod
 ін. noun:n:nv
-кв. adj:nv
+кв. adj:nv|noun:f:nv:np         # квадратний, квартира
 коп. noun:f:nv
+м. noun:n:nv:np
 н.е. noun:n:v_rod
 обл. noun:f:nv
 п. noun:m:nv
+перекл. noun:m:nv:np
+р. noun:m:nv:np|noun:f:nv:np    # рік, річка
 рр. noun:p:nv
 руб. noun:n:nv
-ст. noun:f:nv|noun:n:nv
+с. noun:n:nv:np
+ст. noun:f:nv|noun:n:nv         # стаття, століття
 стор. noun:f:nv
 тис. numr:f:nv
 франц. adj:nv
 фр. adj:nv
 ч. noun:f:nv
+шт. noun:f:nv

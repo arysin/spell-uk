@@ -36,6 +36,7 @@
 ВВ noun:p:nv:ns
 ВГСУ noun:m:nv
 ВДНГ noun:f:nv:np
+вдсх noun:n:nv
 ВДЦП noun:m:nv
 вид-во/ij
 ВИХ noun:m:nv
@@ -75,6 +76,7 @@
 ГЕС noun:f:nv
 ГІС noun:f:nv
 ГОЕЛРО noun:f:nv
+госп-во/i
 ГПа noun:m:nv
 ГПО noun:n:nv
 ГПУ noun:f:nv:np
@@ -172,6 +174,7 @@
 кбайт noun:m:nv
 кбіт noun:m:nv
 кб noun:m:nv
+КБ noun:n:nv
 КВК noun:m:nv
 кВт noun:m:nv
 КГЗКОР noun:m:nv
@@ -221,7 +224,7 @@
 ЛНУ noun:m:nv
 ЛОДА noun:f:nv
 ЛОМ noun:f:nv
-л-ра/a
+л-ра/a :np
 ЛСД noun:m:nv:np
 ЛуАЗ/e
 МАГАТЕ noun:n:nv:np
@@ -231,6 +234,7 @@
 Мбіт noun:m:nv
 МБРР noun:m:nv:np
 Мб noun:m:nv
+м-во/ij
 МВСУ noun:n:nv:np
 МВС noun:n:nv
 МВт noun:m:nv
@@ -241,7 +245,10 @@
 МЗС noun:n:nv
 МінАП noun:n:nv
 мін-во/ij
+мкг noun:m:nv
 мкм noun:m:nv
+МКС noun:f:nv
+мкс noun:f:nv
 мкФ noun:m:nv
 млн noun:m:nv|numr:p:nv
 млрд noun:m:nv|numr:p:nv
@@ -328,6 +335,7 @@
 ОБСЄ noun:f:nv:np
 ОВДП noun:p:nv:ns
 ОВП noun:f:nv
+о-в/efg
 ОДА noun:f:nv
 ОДКБ noun:f:nv
 ОДПІ noun:f:nv
@@ -401,7 +409,6 @@
 РФ noun:f:nv
 РХБ noun:f:nv
 РХП noun:f:nv
-р unknown
 САПР noun:n:nv
 САР noun:f:nv
 САУ noun:f:nv
@@ -439,6 +446,7 @@
 сусп-во/i
 СФРЮ noun:f:nv
 с-ще/i
+с noun:f:nv
 ТАРС noun:n:nv:np
 Тбайт noun:m:nv
 Тб noun:m:nv
