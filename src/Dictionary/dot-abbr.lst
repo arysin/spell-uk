@@ -1,26 +1,44 @@
 англ. adj:nv
+бл. adv
+близьк. adv
+вірм. adj:nv
 грец. adj:nv
+грецьк. adj:nv
 давньогрец. adj:nv
 дол. noun:m:nv
 досл. adv
+ел. adj:nv
+жін. adj:nv
+заст. noun:m:nv|adj:nv          # заступник, застарілий
 зв. adj:nv
 ім. noun:n:v_rod
 ін. noun:n:nv
 кв. adj:nv|noun:f:nv:np         # квадратний, квартира
+кімн. noun:f:nv
+кл. noun:m:nv
 коп. noun:f:nv
 м. noun:n:nv:np
 н.е. noun:n:v_rod
 обл. noun:f:nv
 п. noun:m:nv
 перекл. noun:m:nv:np
+пл. noun:f:np
+пров. noun:m:nv
 р. noun:m:nv:np|noun:f:nv:np    # рік, річка
+реж. noun:m:nv
 рр. noun:p:nv
+рт. adj:nv
 руб. noun:n:nv
 с. noun:n:nv:np
-ст. noun:f:nv|noun:n:nv         # стаття, століття
+ст. noun:f:nv|noun:n:nv|adj:nv  # стаття, століття, столовий
+стол. adj:nv
 стор. noun:f:nv
+тел. noun:m:nv
 тис. numr:f:nv
+укр. adj:nv
 франц. adj:nv
 фр. adj:nv
-ч. noun:f:nv
+ч. noun:f:nv|adj:nv             # частина, чайний
+чайн. adj:nv
+чол. adj:nv|noun:p:nv
 шт. noun:f:nv
