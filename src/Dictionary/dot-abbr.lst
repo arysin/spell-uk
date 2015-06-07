@@ -7,6 +7,7 @@
 давньогрец. adj:nv
 дол. noun:m:nv
 досл. adv
+е. noun:f:nv                    # ера
 ел. adj:nv
 жін. adj:nv
 заст. noun:m:nv|adj:nv          # заступник, застарілий
@@ -17,8 +18,8 @@
 кімн. noun:f:nv
 кл. noun:m:nv
 коп. noun:f:nv
-м. noun:n:nv:np
-н.е. noun:n:v_rod
+м. noun:n:nv:np                 # місто
+н. adj:nv                       # наша (ера)
 обл. noun:f:nv
 п. noun:m:nv
 перекл. noun:m:nv:np
