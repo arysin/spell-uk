@@ -22,7 +22,7 @@ uk_words.out: $(dict) composite.lst Makefile
 	cat $(NOTSPACED) spaced.tmp | grep -vE "[-]$$" | sed -r "s/[+@<>].*//g" | sed -r "s/ *#.*$$//" | $(sort) > $@
 	../../bin/tag/mk_comps.py - -spell < composite.lst >> $@
 	rm -f spaced.tmp
-	@(grep -E $(BAD_FLAG_RE) $@ && echo "ERROR: Bad flag combinations exist!" && /bin/false) || /bin/true
+	@(grep -E $(BAD_FLAG_RE) $@ twisters.lst && echo "ERROR: Bad flag combinations exist!" && /bin/false) || /bin/true
 
 uk_words.tag: $(dict) $(TAGS_ONLY) composite.lst Makefile
 	../../bin/tag/mk_tagged_wordlist.py $(dict) $(TAGS_ONLY) | $(sort) > $@
