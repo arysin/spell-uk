@@ -854,8 +854,8 @@
 кількома кілька numr:p:v_oru:&pron:ind
 
 скількись adv
-скількись скількись numr:n_naz/v_zna:&pron:ind
-скількохсь скількись numr:n_rod/v_zna/v_mis:&pron:ind
+скількись скількись numr:v_naz/v_zna:&pron:ind
+скількохсь скількись numr:v_rod/v_zna/v_mis:&pron:ind
 скількомcь скількись numr:v_dav:&pron:ind
 скількомась скількись numr:v_oru:&pron:ind
 
