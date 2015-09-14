@@ -105,8 +105,8 @@ def expand_alts(lines, splitter, regexp):
  #   return (affixFlag == 'e' and not 'g' in allAffixFlags) #or (affixFlag == 'a' and 'c' in allAffixFlags)
 
 def lastname(word, allAffixFlags):
-  return '+' in allAffixFlags \
-    or ('+' in allAffixFlags and word.endswith('о'))
+  return '+' in allAffixFlags
+#    or ('+' in allAffixFlags and word.endswith('о'))
 #    or ('e' in allAffixFlags and word[0].isupper() \
 #           and ( word.endswith('ич') or word.endswith('ук') or word.endswith('юк') or word.endswith('як')) )
 
@@ -269,6 +269,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         
         v_zna_for_inanim = ""
         v_kly_for_anim = ""
+
         if not istota(word, allAffixFlags):
             v_zna_for_inanim = "/v_zna";
         else:
