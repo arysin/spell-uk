@@ -23,6 +23,8 @@ logger = logging.getLogger('tofsa')
 PLURAL_FLAGS_RE = '[bfjlq9]'
 NOUN_FLAGS_RE = '[a-z]';
 
+CONSONANTS="бвгґджзклмнпрстфхцчшщ"
+
 allWords = []
 
 comparatives = []
@@ -41,7 +43,7 @@ tag_split1_re = re.compile('[^: ]+$')
 tag_split2_re = re.compile('[a-z]:v_[a-z]{3}(/v_[a-z]{3})*')
 
 ending_a_aja_re = re.compile('.*[ая]$')
-ending_i_nnia_re = re.compile(r'.*(([бвгджзклмнпрстфхцчшщ])\2|\'|[рдтж])я$')
+ending_i_nnia_re = re.compile(r'.*(([бвгґджзклмнпрстфхцчшщ])\2|\'|[рдтж])я$')
 ending_ae_ets_re = re.compile('.*[еє]ць$')
 ending_a_n_re = re.compile('.*([ео]нь|оль|оть)$')
 ending_ae_ik_re = re.compile('.*і[дйрлгсзкп]$')
@@ -129,10 +131,14 @@ def firstname(word, affixFlag, allAffixFlags):
 def secondVZna(line):
   return False
 
+def filter_lines(lines, inStr):
+  return [line for line in lines if not inStr in line]
+
 #@profile
 def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
     all_forms = []
+    allAffixFlagsStr = ''.join(allAffixFlags)
     
     for affixFlag in allAffixFlags:
         if affixFlag in "<>+@":
@@ -150,6 +156,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
         
         for line in lines:
 #            print(affixFlag, word, ':', line, file=sys.stderr)
+
             
             # remove plurals
             if '//p:v_' in line:
@@ -181,6 +188,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 #              else:
 #                if 'noun' in main_tag:
 #                  line = line.replace('v_naz/', '')
+
+
 
             # handle rodovyi for singular
             if affixFlag == 'e':
@@ -238,7 +247,11 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 line = line.replace('p:v_naz', 'p:v_naz/v_kly')
 
             # handle znahidny for plural
-            if len(set(allAffixFlags) & set("bofjmsv")) > 0:
+            
+            allAffixFlags_ = list(re.sub('\+[mf]', '', allAffixFlagsStr))
+#            print(allAffixFlags_, file=sys.stderr)
+            
+            if len(set(allAffixFlags_) & set("bofjmsv")) > 0:
                     if istota(word, allAffixFlags):
                         line = line.replace('p:v_rod', 'p:v_rod/v_zna')
                         if '>' in allAffixFlags: # animal
@@ -258,6 +271,10 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 
             out = expand_alts([line], '//', tag_split2_re)
             out = expand_alts(out, '/', tag_split1_re)
+            
+            if "U" in allAffixFlags and "<+m" in allAffixFlagsStr: # remove :f:
+              out = filter_lines(out, ':f:')
+              out = filter_lines(out, ':p:')
 
             all_forms.extend(out)
             
@@ -473,7 +490,7 @@ def post_process(line, affixFlags, extra_tag):
             line1 = line.replace(":perf", "")
             line2 = line.replace(":imperf", "")
 
-            if re.search("тим(у|усь|уся|еш|ешся|е|еться|емо|ем|емося|емось|мемся|ете|етеся|етесь|уть|уться)? .*:perf", line2):
+            if re.search("тим(у|усь|уся|еш|ешся|е|еться|емо|ем|емося|емось|емся|ете|етеся|етесь|уть|уться)? .*:perf", line2):
               return [line1]
 
             if ":pres" in line2:
@@ -856,15 +873,24 @@ def process_line2(line):
                       for lastname_line in fem_lastnames_deferred:
                         new_line = lastname_line.replace('XXX', last_fem_lastname_v_naz)
                         #print('    undeferring', new_line)
+
+                        if last_fem_lastname_v_naz[:-1] in CONSONANTS + "o":
+                          new_line = re.sub('^[^ ]+', last_fem_lastname_v_naz, new_line)
+
                         all_out_lines.append( new_line )
                         
                       fem_lastnames_deferred = []
                     else:
+                      deriv = parts[0]
                       if last_fem_lastname_v_naz != '':
                         #print('replacing with', last_fem_lastname_v_naz)
-                        out_line2 = parts[0] + ' ' + last_fem_lastname_v_naz + ' ' + parts[2]
+                        
+                        if last_fem_lastname_v_naz[:-1] in CONSONANTS + "o":
+                          deriv = last_fem_lastname_v_naz
+                        
+                        out_line2 = deriv + ' ' + last_fem_lastname_v_naz + ' ' + parts[2]
                       else:
-                        out_line2 = parts[0] + ' XXX ' + parts[2]
+                        out_line2 = deriv + ' XXX ' + parts[2]
                         #print('deferring', out_line2)
                         fem_lastnames_deferred.append(out_line2)
                         continue
