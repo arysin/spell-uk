@@ -85,7 +85,6 @@
 
 панове пан noun:p:v_kly:anim
 вуса вуса noun:p:v_naz/v_zna
-скаку скак noun:m:v_mis
 
 яловець ялівець noun:m:v_naz/v_zna
 
@@ -122,7 +121,6 @@
 Руси Русь noun:f:v_rod:alt
 Кишиневі Кишинів noun:m:v_mis
 робом роб noun:m:v_oru
-лихвою лихва noun:f:v_oru
 
 очі око noun:p:v_naz/v_zna
 очей око noun:p:v_rod
@@ -356,7 +354,7 @@
 будь бути verb:impr:s:2:imperf
 будьмо бути verb:impr:p:2:imperf
 будьте бути verb:impr:p:3:imperf
-бувши бути advp
+бувши бути advp:imperf
 
 підем піти verb:futr:p:2:perf
 підім піти verb:impr:p:2:perf
@@ -380,7 +378,7 @@
 гнисти гнистиме гнистимеш гнистимуть гнистиму гнистимемо гнистимем гнистимете
 загнисти загнити verb:inf:perf
 вичахти вичахнути verb:inf:perf
-вичахши вичахнути advp
+вичахши вичахнути advp:imperf
 #замокти замокне замокнуть замок замокла замокло замокли замокши
 замокти замокнути verb:inf:perf
 
@@ -519,7 +517,7 @@
 #блажен блаженний adj:m:v_naz/v_zna:contr
 винен винний adj:m:v_naz/v_zna:contr
 #вістен вістний adj:m:v_naz/v_zna:contr
-вістен вісний adj:m:v_naz/v_zna:contr
+вістен вісний adj:m:v_naz/v_zna:contr:rare
 годен годний adj:m:v_naz/v_zna:contr
 дивен дивний adj:m:v_naz/v_zna:contr
 достоїн достойний adj:m:v_naz/v_zna:contr

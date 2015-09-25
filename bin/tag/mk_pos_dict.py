@@ -474,7 +474,15 @@ compar_line_re=re.compile('[^ ]+([шщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 #@profile
 def post_process(line, affixFlags, extra_tag):
     if "advp" in line:
-        line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+        if re.search("чи(с[яь])? ", line):
+            line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
+        else:
+            if ":imperf:perf" in line:
+                line1 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1imperf', line)
+                line2 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1perf', line)
+                return [line1, line2]
+            else:
+                line = re.sub('(advp:(?:rev:)?)(?:im)?perf:((?:im)?perf)(.*)', '\\1\\2\\3', line)
 # дієприслівник, як окрема лема
 #        line = re.sub('([^ ]+) [^ ]+ (advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1 \\1 \\2\\3', line)
         if ":rev" in line and "tran" in line:
@@ -635,10 +643,10 @@ def pre_process(line):
         out.append( re.sub(" <\\+[fmd]?", " noun:m:nv:np:anim:lname", line) )
       if not "<+m" in line:
         out.append( re.sub(" <\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
-    elif "e" in line or "ac" in line or "lq" in line:
+    elif "e" in line or "ac" in line or "lq" in line or "U" in line:
       out.append( line )
       if not "<+m" in line and dual_last_name_ending(line):
-        out.append( re.sub("/[efgabc]+<\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
+        out.append( re.sub("/[efgabcU]+<\\+[fmd]?", " noun:f:nv:np:anim:lname", line) )
     elif "a" in line and not "^" in line:
         if "+m" in line:
             out.append( line + " ^noun:m" )
