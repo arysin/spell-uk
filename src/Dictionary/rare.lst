@@ -21,6 +21,7 @@
 висмівати/I :imperf
 вистреляти/I :perf
 відіткати/I :perf
+вісний/V
 вісьта excl
 в'їжно в'їжно adv
 вколо вколо adv
@@ -115,10 +116,9 @@
 подовш prep
 помісь conj:subord
 помісь part
+попсути/I :perf
 посереду prep:rv_rod
 почерез prep:rv_zna
-вісний/V
-попсути/I :perf
 притім conj:bad
 пріч prep:coll
 простибіг простибіг insert
