@@ -882,10 +882,10 @@
 хтозна-скількома хтозна-скільки numr:v_oru:&pron:ind
 
 бозна-скільки adv
-бозна-скільки хтозна-скільки numr:v_naz/v_zna:&pron:ind
-бозна-скількох хтозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
-бозна-скільком хтозна-скільки numr:v_dav:&pron:ind
-бозна-скількома хтозна-скільки numr:v_oru:&pron:ind
+бозна-скільки бозна-скільки numr:v_naz/v_zna:&pron:ind
+бозна-скількох бозна-скільки numr:v_rod/v_zna/v_mis:&pron:ind
+бозна-скільком бозна-скільки numr:v_dav:&pron:ind
+бозна-скількома бозна-скільки numr:v_oru:&pron:ind
 
 чортзна-скільки adv
 чортзна-скільки чортзна-скільки numr:v_naz/v_zna:&pron:ind
@@ -1247,7 +1247,7 @@
 округи округи prep:rv_rod
 опісля опісля prep:rv_rod
 опріч опріч prep:rv_rod|adv
-пепед перед prep:rv_oru:rv_zna
+перед перед prep:rv_oru:rv_zna
 під під prep:rv_zna:rv_oru
 після після prep:rv_rod
 по по prep:rv_mis:rv_zna
