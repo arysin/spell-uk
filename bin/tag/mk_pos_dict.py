@@ -164,7 +164,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag in 'ux' and 'v' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
-                if affixFlag == 'i' and 'j' not in allAffixFlags:
+                if affixFlag == 'i' and 'j' not in allAffixFlags and 'f' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag == 'r' and 's' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
