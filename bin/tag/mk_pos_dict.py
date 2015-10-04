@@ -471,6 +471,14 @@ extra_gen_re=re.compile(':\\+([mnf])')
 gen_tag_re=re.compile(':[mfn]:')
 compar_line_re=re.compile('[^ ]+([шщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 
+
+def tail_tag(line, tags):
+    for tag in tags:
+        tag = ':' + tag
+        if tag in line and not line.endswith(tag):
+            line = line.replace(tag, '') + tag
+    return line
+
 #@profile
 def post_process(line, affixFlags, extra_tag):
     if "advp" in line:
@@ -865,8 +873,8 @@ def process_line2(line):
               # put end tags at the end
               if end_tag1_re.search(out_line2):
                 out_line2 = end_tag1_re.sub('\\2\\1', out_line2)
-              if end_tag2_re.search(out_line2):
-                out_line2 = end_tag2_re.sub('\\2\\1', out_line2)
+#              if end_tag2_re.search(out_line2):
+#                out_line2 = end_tag2_re.sub('\\2\\1', out_line2)
 
 
             # жіночі прізвища мають жіночу лему
@@ -907,6 +915,13 @@ def process_line2(line):
             all_out_lines.append( out_line2 )
         
             collect_all_words(out_line2)
+
+
+    all_out_lines = [ tail_tag(line, ['&adj', 'v-u', 'bad', 'slang', 'rare', 'coll']) for line in all_out_lines ]
+
+    for i, line in enumerate(all_out_lines):
+        if " adjp" in line:
+            all_out_lines[i] = re.sub(" (adjp(:pasv|:actv|:pres|:past|:perf|:imperf)+):(.*)(:&adj)", " adj:\\3:&\\1", line)
 
     return all_out_lines
 

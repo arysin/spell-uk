@@ -1,47 +1,47 @@
 барлогу барліг noun:m:v_rod
 бен бен unknown
-білячий/V ^adjp:actv:pres:bad
-бісячий/V ^adjp:actv:pres:bad
+білячий/V ^adjp:actv:pres :bad
+бісячий/V ^adjp:actv:pres :bad
 болюче adv
 боляче adv
-болячий/V ^adjp:actv:pres:bad
+болячий/V ^adjp:actv:pres :bad
 боці бік noun:m:v_mis
-бродячий/V ^adjp:actv:pres:bad
+бродячий/V ^adjp:actv:pres :bad
 варіанту варіант noun:m:v_rod
-везучий/V ^adjp:actv:pres:bad
-висячий/V ^adjp:actv:pres:bad
-дзвенячий/V ^adjp:actv:pres:bad
-дрижачий/V ^adjp:actv:pres:bad
-їдучий/V ^adjp:actv:pres:bad
-киплячий/V ^adjp:actv:pres:bad
-лежачий/V ^adjp:actv:pres:bad
+везучий/V ^adjp:actv:pres :bad
+висячий/V ^adjp:actv:pres :bad
+дзвенячий/V ^adjp:actv:pres :bad
+дрижачий/V ^adjp:actv:pres :bad
+їдучий/V ^adjp:actv:pres :bad
+киплячий/V ^adjp:actv:pres :bad
+лежачий/V ^adjp:actv:pres :bad
 # ліса ліс noun:m:v_rod:obs
-люблячий/V ^adjp:actv:pres:bad
+люблячий/V ^adjp:actv:pres :bad
 максимум adv
 мати мати noun:f:v_naz/v_kly:anim
 мінімум adv
 мосту міст noun:m:v_rod
-нев'янучий/V ^adjp:actv:pres:bad
-немеркнучий/V ^adjp:actv:pres:bad
+нев'янучий/V ^adjp:actv:pres :bad
+немеркнучий/V ^adjp:actv:pres :bad
 паркану паркан noun:m:v_rod
-пливучий/V ^adjp:actv:pres:bad
+пливучий/V ^adjp:actv:pres :bad
 плоту пліт noun:m:v_rod
 порогу поріг noun:m:v_rod
-свистячий/V ^adjp:actv:pres:bad
+свистячий/V ^adjp:actv:pres :bad
 # світа світ noun:m:v_rod:obs
-сидячий/V ^adjp:actv:pres:bad
+сидячий/V ^adjp:actv:pres :bad
 скажімо insert
-скриплячий/V ^adjp:actv:pres:bad
-смердячий/V ^adjp:actv:pres:bad
+скриплячий/V ^adjp:actv:pres :bad
+смердячий/V ^adjp:actv:pres :bad
 сміло сміло adv
-сплячий/V ^adjp:actv:pres:bad
+сплячий/V ^adjp:actv:pres :bad
 столу стіл noun:m:v_rod
-стоячий/V ^adjp:actv:pres:bad
-таранячий/V ^adjp:actv:pres:bad
+стоячий/V ^adjp:actv:pres :bad
+таранячий/V ^adjp:actv:pres :bad
 телемосту телеміст noun:m:v_rod
-тремтячий/V ^adjp:actv:pres:bad
-ходячий/V ^adjp:actv:pres:bad
+тремтячий/V ^adjp:actv:pres :bad
+ходячий/V ^adjp:actv:pres :bad
 шинку шинок noun:m:v_rod
-шиплячий/V ^adjp:actv:pres:bad
+шиплячий/V ^adjp:actv:pres :bad
 шлунку шлунок noun:m:v_rod
-щемлячий/V ^adjp:actv:pres:bad
+щемлячий/V ^adjp:actv:pres :bad
