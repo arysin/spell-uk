@@ -200,7 +200,7 @@ SFX a   ок	ку	ок		#  будиночок  будиночку 	(З.)    @ no
 SFX a   ок	кові	ок		#  будиночок  будиночкові 	(Д.)    @ noun:m:v_dav/v_mis
 SFX a   ок	ком	ок		#  будиночок  будиночком 	(О.)    @ noun:m:v_oru
 #
-SFX a   ол	лу	ол		#  вузол  вузлу 	(З.)    @ noun:m:v_dav/v_kly
+SFX a   ол	лу	ол		#  вузол  вузлу 	(З.)    @ noun:m:v_dav/v_mis/v_kly
 SFX a   ол	лові	ол		#  вузол  вузлові 	(Д.)    @ noun:m:v_dav/v_mis
 SFX a   ол	лі	ол		#  вузол  вузлі 	(M.)    @ noun:m:v_mis
 SFX a   ол	лом	ол		#  вузол  вузлом 	(О.)    @ noun:m:v_oru
@@ -267,7 +267,7 @@ SFX a   оть	теві	оть		#  ніготь  нігтеві 		(Д.)    @ nou
 SFX a   оть	тем	оть		#  ніготь  нігтем 		(О.)    @ noun:m:v_oru
 SFX a   оть	ті	оть		#  ніготь  нігті 		(M.)    @ noun:m:v_mis//p:v_naz
 
-SFX a   іль	лю	гіль		# вугіль  вуглю      	(Д.)    @ noun:m:v_dav/v_kly
+SFX a   іль	лю	гіль		# вугіль  вуглю      	(Д.)    @ noun:m:v_dav/v_mis/v_kly
 SFX a   іль	леві	гіль		# вугіль  вуглеві	(Д.)    @ noun:m:v_dav/v_mis
 SFX a   іль	лем	гіль		# вугіль  вуглем	(О.)    @ noun:m:v_oru
 SFX a   іль	лі	гіль		# вугіль  вуглі        (М.)    @ noun:m:v_mis//p:v_naz

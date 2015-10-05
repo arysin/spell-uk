@@ -28,7 +28,12 @@ def process_line_exceptions(line, extra_tags):
       base_add = 'inf:'
       if base.endswith('ся'):
         base_add = 'rev:' + base_add
-      out_line = out_line.replace(except_base_tag, except_base_tag.replace('verb:', 'verb:' + base_add), 1)
+      new_tag = except_base_tag.replace('verb:', 'verb:' + base_add)
+      out_line = out_line.replace(except_base_tag, new_tag, 1)
+      
+      out_lines = out_line.split('\n')
+      out_lines[0] = out_lines[0].replace(':unknown', '')
+      out_line = '\n'.join(out_lines)
     
     return out_line[:-1]
 
