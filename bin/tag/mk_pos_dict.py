@@ -164,7 +164,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag in 'ux' and 'v' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
-                if affixFlag == 'i' and 'j' not in allAffixFlags and 'f' not in allAffixFlags:
+                if affixFlag == 'i' and 'j' not in allAffixFlags and 'f' not in allAffixFlags and (not 'o' in allAffixFlags or not word.endswith("ря")):
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
                 if affixFlag == 'r' and 's' not in allAffixFlags:
                     line = re.sub('//p:v_[a-z]+(/v_[a-z]+)*', '', line)
@@ -215,7 +215,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 #                        line = line.replace('m:v_dav/v_mis', 'm:v_dav')
             elif affixFlag in "ir":
                  if istota(word, allAffixFlags):
-                   if 'noun:f:v_rod' in line and not word.endswith('а') and not word.endswith('матір'):
+                   if 'noun:f:v_rod' in line and not word[-1:] in 'аь' and not word.endswith('матір'):
                      line = line.replace('f:v_rod', 'f:v_rod/v_zna')
                  else:
                    if 'noun:m:v_rod/v_zna' in line:
@@ -290,7 +290,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         if not istota(word, allAffixFlags):
             v_zna_for_inanim = "/v_zna";
         else:
-            if 'd' not in allAffixFlags and 'h' not in allAffixFlags:
+            if ('d' not in allAffixFlags and 'h' not in allAffixFlags):
                 v_kly_for_anim = "/v_kly"
 
         if affixFlag == 'U' and '+' in allAffixFlags:
@@ -309,6 +309,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
             else:
               if istota(word, allAffixFlags):
                 str = word + ' ' + word + ' noun:m:v_naz'
+                if not lastname(word, allAffixFlags) and not '>' in allAffixFlags:
+                    str += '/v_kly'
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
                 
@@ -347,6 +349,8 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
             str = word + ' ' + word + ' noun:n:v_naz'
             if word[-1] in 'ео' and not word.endswith('ко') and istota(word, allAffixFlags):
+              if word.endswith("ще"):
+                str += "/v_zna"
               str += '/v_kly'
             else:
               str += '/v_zna'
@@ -356,7 +360,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:f:v_naz' + v_zna_for_inanim + v_kly_for_anim
         elif affixFlag in "ir" and word[-1] in "ьаячшжрбвф":
             str = word + ' ' + word + ' noun:f:v_naz'
-            if not istota(word, allAffixFlags) or word.endswith('матір'):
+            if not istota(word, allAffixFlags) or word.endswith('матір') or word[-1:] == 'ь':
               str += '/v_zna'
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
@@ -520,8 +524,8 @@ def post_process(line, affixFlags, extra_tag):
 #            else: # :imperf:perf
 #                line = line.replace(':perf', '') + "\n" + line.replace(':pres', ':futr').replace(':imperf', '')
     elif 'comp' in line or 'super' in line: # and not ' якнай' in line:
+    
         line = re.sub(' (як|що)?най', ' ', line)
-        
 
         lemma = line.split(' ')[1]
         if lemma in COMPAR_FORMS:
@@ -532,6 +536,7 @@ def post_process(line, affixFlags, extra_tag):
         elif lemma in COMPAR_SOFT_BASE:
             line = line.replace('іший adj', 'ій adj')
         else:
+            #if lemma.replace('іший', 'ий') in :
             line = line.replace('іший adj', 'ий adj')
 
         if ':compr' in line and line.startswith('най'):

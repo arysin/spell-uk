@@ -24,11 +24,11 @@ def process_line_exceptions(line, extra_tags):
       
     out_line = re.sub('([^ ]+) ?', '\\1 ' + base + ' ' + except_base_tag + 'unknown' + extra_tags + '\n', line)
     
-    if except_base_tag == 'verb:':
+    if except_base_tag in ('verb:imperf:', 'verb:perf:'):
       base_add = 'inf:'
       if base.endswith('ся'):
-        base_add = base_add + 'rev:'
-      out_line = out_line.replace(except_base_tag, except_base_tag+base_add, 1)
+        base_add = 'rev:' + base_add
+      out_line = out_line.replace(except_base_tag, except_base_tag.replace('verb:', 'verb:' + base_add), 1)
     
     return out_line[:-1]
 

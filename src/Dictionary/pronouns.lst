@@ -507,7 +507,6 @@
 всіма весь adj:p:v_oru:&pron:dem
 
 увесь увесь adj:m:v_naz/v_zna:&pron:dem
-ввесь увесь adj:m:v_naz/v_zna:&pron:dem
 усього увесь adj:m:v_rod/v_zna//n:v_rod:&pron:dem
 усьому увесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
 усім увесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:dem
@@ -520,6 +519,20 @@
 усі увесь adj:p:v_naz/v_zna:&pron:dem
 усіх увесь adj:p:v_rod/v_zna/v_mis:&pron:dem
 усіма увесь adj:p:v_oru:&pron:dem
+
+ввесь ввесь adj:m:v_naz/v_zna:&pron:dem
+всього ввесь adj:m:v_rod/v_zna//n:v_rod:&pron:dem
+всьому ввесь adj:m:v_dav/v_mis//n:v_dav/v_mis:&pron:dem
+всім ввесь adj:m:v_oru/v_mis//n:v_oru/v_mis//p:v_dav:&pron:dem
+вся ввесь adj:f:v_naz:&pron:dem
+всієї ввесь adj:f:v_rod:&pron:dem
+всій ввесь adj:f:v_dav/v_zna:&pron:dem
+всією ввесь adj:f:v_oru:&pron:dem
+всю ввесь adj:f:v_zna:&pron:dem
+все ввесь adj:n:v_naz/v_zna:&pron:dem
+всі ввесь adj:p:v_naz/v_zna:&pron:dem
+всіх ввесь adj:p:v_rod/v_zna/v_mis:&pron:dem
+всіма ввесь adj:p:v_oru:&pron:dem
 
 все/X ^adv|^conj:coord|^part
 
