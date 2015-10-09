@@ -59,7 +59,7 @@ ending_uyu_re = re.compile('^.*?[ую] .* .*$')
 ishy_re = re.compile('іший/.*$')
 shy_re = re.compile('[^і][шщч]ий/.*$')
 shy_remove_re = re.compile('[шщч]ий/.*$')
-yi_sub_re = re.compile('ий/.*$')
+yi_sub_re = re.compile('[іи]й/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
 
 end_tag1_re = re.compile('((?::(?:fname|lname|patr))+)(:.+)')
@@ -738,7 +738,6 @@ def process_line2(line):
                 else:
                     extra_tag += ':compr';
             elif yi_V_flag_re.match(line):
-                print('--1', line, file=sys.stderr)
                 if (line.startswith('най') and 'іший/' in line):# or line.startswith('якнай') or line.startswith('щонай'):
                     extra_tag += ':super';
                 elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
@@ -746,6 +745,9 @@ def process_line2(line):
             #            print('compb for ' + line)
                 elif re.sub('/.*', '', line) in COMPAR_FORMS.values():
                     extra_tag += ':compb'
+#                print('--1', line, extra_tag, file=sys.stderr)
+#                print('--2', comparatives_shy, file=sys.stderr)
+#                print('--3', comparatives, file=sys.stderr)
     #    elif re.match('/[^ ]*p', line):
     #       extra_tag += ':pers'
 
