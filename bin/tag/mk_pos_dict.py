@@ -738,6 +738,7 @@ def process_line2(line):
                 else:
                     extra_tag += ':compr';
             elif yi_V_flag_re.match(line):
+                print('--1', line, file=sys.stderr)
                 if (line.startswith('най') and 'іший/' in line):# or line.startswith('якнай') or line.startswith('щонай'):
                     extra_tag += ':super';
                 elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
