@@ -442,7 +442,7 @@ def expand_word(word, affixFlags):
         if affixFlag in prefixes:
 #            print(affixFlag, 'in prefixes for', word)
             affixGroups = affixMap[affixFlag]
-            words.append( expand_prefix(word, affixFlag, affixGroups) )
+            words.extend( expand_prefix(word, affixFlag, affixGroups) )
             affixFlagsToRemove.append(affixFlag)
     
     for f in affixFlagsToRemove:
@@ -453,14 +453,14 @@ def expand_word(word, affixFlags):
 
 #@profile
 def expand_prefix(word, affixFlag, affixGroups):
-    str = word
+    words = []
 
     for affixGroup in affixGroups.values():
       if affixGroup.matches(word):
         for affix in affixGroup.affixes:
-          str = affix.apply(word)
+          words.append( affix.apply(word) )
 
-    return str
+    return words
 
 def retain_tags(line, tags):
     parts = line.split(':')
@@ -539,7 +539,7 @@ def post_process(line, affixFlags, extra_tag):
             #if lemma.replace('іший', 'ий') in :
             line = line.replace('іший adj', 'ий adj')
 
-        if ':compr' in line and line.startswith('най'):
+        if ':compr' in line and re.match('(як|що)?най.*', line):
             line = line.replace(':compr', ':super')
     
     lines = [line]
@@ -727,25 +727,26 @@ def process_line2(line):
 
     extra_tag = ''
     
-    if '/V' in line and '<' in line:
-      line += ' ^noun'
+    if '/V' in line:
+        if '<' in line:
+            line += ' ^noun'
 
-    if not '^noun' in line:
-      if with_Y_flag_re.match(line):
-        if line.startswith('най'):
-            extra_tag += ':super';
-        else:
-            extra_tag += ':compr';
-      elif yi_V_flag_re.match(line):
-        if (line.startswith('най') and 'іший/' in line) or line.startswith('якнай') or line.startswith('щонай'):
-            extra_tag += ':super';
-        elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
-            extra_tag += ':compb'
-#            print('compb for ' + line)
-        elif re.sub('/.*', '', line) in COMPAR_FORMS.values():
-            extra_tag += ':compb'
-#    elif re.match('/[^ ]*p', line):
-#       extra_tag += ':pers'
+        if not '^noun' in line:
+            if "Y" in line and with_Y_flag_re.match(line):
+                if re.match('(як|що)?най.*', line):
+                    extra_tag += ':super';
+                else:
+                    extra_tag += ':compr';
+            elif yi_V_flag_re.match(line):
+                if (line.startswith('най') and 'іший/' in line):# or line.startswith('якнай') or line.startswith('щонай'):
+                    extra_tag += ':super';
+                elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
+                    extra_tag += ':compb'
+            #            print('compb for ' + line)
+                elif re.sub('/.*', '', line) in COMPAR_FORMS.values():
+                    extra_tag += ':compb'
+    #    elif re.match('/[^ ]*p', line):
+    #       extra_tag += ':pers'
 
     main_tag = ''
     if " :" in line:
@@ -833,6 +834,7 @@ def process_line2(line):
           out_lines.append( word + ' ' + word + ' unknown')
         else:
           out_lines.extend( generate(word, affixFlags, origAffixFlags, main_tag) )
+
 
 
     fem_lastnames_deferred = []
@@ -970,8 +972,8 @@ if __name__ == "__main__":
                 comparatives.append( ishy_re.sub('', line ) )
             elif shy_re.search(line):
                 comparatives_shy.append( shy_remove_re.sub('', line ) )
-            elif 'іший/V' in line and line.startswith('най'):
-                comparatives.append( re.sub('^най(.*)іший/.*$', '\\1', line ) )
+            elif 'іший/V' in line and re.match('(як|що)?най.*', line):
+                comparatives.append( re.sub('^(?:як|що)?най(.*)іший/.*$', '\\1', line ) )
         line_cnt += 1
     
       if line_cnt < 1:
