@@ -112,6 +112,7 @@
 
 # давні форми
 житіє житіє noun:n:v_naz/v_zna
+бельмес бельмес noun:m:v_naz:rare
 бельмеса бельмес noun:m:v_rod
 язицех язик noun:p:v_mis
 властен властен predic
@@ -305,7 +306,7 @@
 кінця-краю кінця-краю noun:m:v_rod
 предку-віку предку-віку noun:m:v_zna
 
-галай-балай noun:m:v_naz
+галай-балай галай-балай noun:m:v_naz/v_zna
 усюди/fo
 
 дель part:pers
@@ -545,7 +546,7 @@
 винен винний adj:m:v_naz/v_zna:contr
 #вістен вістний adj:m:v_naz/v_zna:contr
 вістен вісний adj:m:v_naz/v_zna:contr:rare
-годен годний adj:m:v_naz/v_zna:contr
+годен годний adj:m:v_naz/v_zna:contr:coll
 дивен дивний adj:m:v_naz/v_zna:contr
 достоїн достойний adj:m:v_naz/v_zna:contr
 дрібен дрібний adj:m:v_naz/v_zna:contr

@@ -727,7 +727,10 @@ def process_line2(line):
 
     extra_tag = ''
     
-    if '/V' in line:
+    if 'ів/U' in line:
+        if '<' in line:
+            line += ' ^noun'
+    elif '/V' in line:
         if '<' in line:
             line += ' ^noun'
 
@@ -874,7 +877,7 @@ def process_line2(line):
         
         for out_line2 in out_lines2:
             # пропустити середній для прізвищ
-            if 'V<' in origAffixFlags and ':n:' in out_line2:
+            if ('V<' in origAffixFlags or 'U<' in origAffixFlags) and ':n:' in out_line2:
               continue
 
             if main_tag:
