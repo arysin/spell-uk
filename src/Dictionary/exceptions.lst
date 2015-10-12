@@ -47,8 +47,6 @@
 
 
 # додаткові форми
-стіс стос noun:m:v_naz/v_zna
-залім залом noun:m:v_naz/v_zna
 хірт хорт noun:m:v_naz/v_zna:anim
 сосон сосна noun:p:v_rod
 відьом відьма noun:p:v_rod/v_zna:anim
@@ -121,6 +119,7 @@
 
 Руси Русь noun:f:v_rod:alt
 Кишиневі Кишинів noun:m:v_mis
+роб роб noun:m:v_naz/v_zna
 робом роб noun:m:v_oru
 
 очі око noun:p:v_naz/v_zna
@@ -346,8 +345,8 @@
 будем бути verb:futr:p:1:imperf
 будете бути verb:futr:p:2:imperf
 будуть бути verb:futr:p:3:imperf
-є бути verb:pres:p:/1/2/3:imperf
-є бути verb:pres:s:/1/2/3:imperf
+є бути verb:pres:p:1/2/3:imperf
+є бути verb:pres:s:1/2/3:imperf
 єси бути verb:pres:s:2:imperf:rare
 суть бути verb:pres:p:3:imperf:rare
 був бути verb:past:m:imperf
@@ -380,11 +379,11 @@
 
 # !verb:imperf
 гнисти гнистиме гнистимеш гнистимуть гнистиму гнистимемо гнистимем гнистимете
-загнисти загнити verb:inf:perf
-вичахти вичахнути verb:inf:perf
-вичахши вичахнути advp:imperf
+загнисти загнисти verb:inf:perf
+вичахти вичахти verb:inf:perf
+вичахши вичахти advp:imperf
 #замокти замокне замокнуть замок замокла замокло замокли замокши
-замокти замокнути verb:inf:perf
+замокти замокти verb:inf:perf
 
 # !verb:perf
 ввити ввив ввила ввило ввили ввий ввиймо ввийте ввито ввивши
@@ -530,9 +529,7 @@
 довити дов'ю дов'єш дов'є
 # !verb:imperf
 слатися слатись
-густи/G :imperf
-# !verb:imperf
-густи гуду гудеш гуде гудемо гудем гудете гудуть гув гуло гула гули
+густи гуду гудеш гуде гудемо гудем гудете гудуть гув гуло гула гули густиму густимеш густиме густимемо густимем густимете густимуть
 # !verb:perf
 відгусти відгуду відгудеш відгуде відгудемо відгудем відгудете відгудуть відгув відгуло відгула відгули
 перегусти перегуду перегудеш перегуде перегудемо перегудем перегудете перегудуть перегув перегуло перегула перегули
@@ -551,7 +548,7 @@
 достоїн достойний adj:m:v_naz/v_zna:contr
 дрібен дрібний adj:m:v_naz/v_zna:contr
 єхиден єхидний adj:m:v_naz/v_zna:contr
-жаден жадний adj:m:v_naz/v_zna:contr:&pron:neg
+жаден жадний adj:m:v_naz/v_zna:contr:rare:&pron:neg
 жив живий adj:m:v_naz/v_zna:contr
 жоден жодний adj:m:v_naz/v_zna:contr
 звістен звісний adj:m:v_naz/v_zna:contr

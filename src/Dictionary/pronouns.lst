@@ -194,7 +194,7 @@
 кимсь хтось noun:v_oru:anim:&pron:ind
 кімсь хтось noun:v_mis:anim:&pron:ind
 
-щось щось noun:n:v_zna:inanim:&pron:ind
+щось щось noun:n:v_naz/v_zna:inanim:&pron:ind
 чогось щось noun:n:v_rod/v_zna:inanim:&pron:ind
 віщось щось noun:n:v_zna:inanim:&pron:ind
 чомусь щось noun:n:v_dav/v_mis:inanim:&pron:ind
@@ -1180,6 +1180,7 @@
 
 # Прийменники
 без без prep:rv_rod
+біля біля prep:rv_rod
 в в prep:rv_zna:rv_mis:rv_rod:v-u
 у у prep:rv_zna:rv_mis:rv_rod:v-u
 уві уві prep:rv_zna:rv_mis:rv_rod:v-u

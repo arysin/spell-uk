@@ -43,7 +43,7 @@ tag_split1_re = re.compile('[^: ]+$')
 tag_split2_re = re.compile('[a-z]:v_[a-z]{3}(/v_[a-z]{3})*')
 
 ending_a_aja_re = re.compile('.*[ая]$')
-ending_i_nnia_re = re.compile(r'.*(([бвгґджзклмнпрстфхцчшщ])\2|\'|[рдтж])я$')
+ending_i_nnia_re = re.compile(r'.*(([бвгґджзклмнпрстфхцчшщ])\2|\'|[рдлтж])я$')
 ending_ae_ets_re = re.compile('.*[еє]ць$')
 ending_a_n_re = re.compile('.*([ео]нь|оль|оть)$')
 ending_ae_ik_re = re.compile('.*і[дйрлгсзкп]$')
@@ -304,6 +304,9 @@ def get_word_base(word, affixFlag, allAffixFlags):
                 str = word + ' ' + word + ' adj:p:v_naz/v_zna:ns'
             elif word.endswith('а'):
                 str = word + ' ' + word + ' adj:f:v_naz'
+                if not "<+" in allAffixFlags:
+                    str += v_kly_for_anim
+
             elif word.endswith('ій'):
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna//f:v_dav/v_mis'
             else:
@@ -328,7 +331,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag in 'bfox':
             str = word + ' ' + word + ' noun:p:v_naz/v_kly'
         elif affixFlag == 'e':
-            if word.endswith('е'):
+            if word.endswith('е'):# or (word.endswith("ло") and "j" in allAffixFlags):
                 str = word + ' ' + word + ' noun:n:v_naz/v_zna'
             else:
                 str = word + ' ' + word + ' noun:m:v_naz' + v_zna_for_inanim
@@ -348,12 +351,12 @@ def get_word_base(word, affixFlag, allAffixFlags):
             str = word + ' ' + word + ' noun:n:v_naz/v_rod/v_zna//p:v_naz'
         elif affixFlag == 'i' and (word.endswith('о') or word.endswith('е')):
             str = word + ' ' + word + ' noun:n:v_naz'
-            if word[-1] in 'ео' and not word.endswith('ко') and istota(word, allAffixFlags):
-              if word.endswith("ще"):
-                str += "/v_zna"
-              str += '/v_kly'
+            if word[-1] in 'ео' and istota(word, allAffixFlags):# and not word.endswith('ко'):
+                if word.endswith("ще") or word.endswith("ко"):
+                    str += "/v_zna"
+                str += '/v_kly'
             else:
-              str += '/v_zna'
+                str += '/v_zna'
         elif affixFlag == 'i' and (word.endswith('а')):
             str = word + ' ' + word + ' noun:f:v_naz' + v_kly_for_anim
         elif affixFlag == 'i' and (word.endswith('м')):
@@ -542,6 +545,9 @@ def post_process(line, affixFlags, extra_tag):
         if ':compr' in line and re.match('(як|що)?най.*', line):
             line = line.replace(':compr', ':super')
     
+    if line.startswith("не") and ":v-u" in line:
+        line = line.replace(":v-u", "")
+    
     lines = [line]
     
     if compar_line_re.match(line):
@@ -627,7 +633,7 @@ def expand_nv(in_lines):
 
 #@profile
 def apply_main_tag(out_line2, origAffixFlags, main_tag):
-    if not " adv" in out_line2 and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
+    if not " adv" in out_line2:# and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
         if 'noun:' in main_tag:
           if not ':p:' in out_line2:
             repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
@@ -717,11 +723,13 @@ def process_line2(line):
         out = expand_alts(out, '/', tag_split1_re)
 
         out = expand_nv(out)
+
+        out = [ tail_tag(line, ['&adj', 'v-u', 'bad', 'slang', 'rare', 'coll', 'abbr']) for line in out ]
         
         all_out_lines.extend(out)
         
         [collect_all_words(w) for w in out]
-        
+
         return all_out_lines
 
 
@@ -930,7 +938,7 @@ def process_line2(line):
             collect_all_words(out_line2)
 
 
-    all_out_lines = [ tail_tag(line, ['&adj', 'v-u', 'bad', 'slang', 'rare', 'coll']) for line in all_out_lines ]
+    all_out_lines = [ tail_tag(line, ['&adj', 'v-u', 'bad', 'slang', 'rare', 'coll', 'abbr']) for line in all_out_lines ]
 
     for i, line in enumerate(all_out_lines):
         if " adjp" in line:
@@ -1008,9 +1016,18 @@ if __name__ == "__main__":
       lines = expand_alts([line], '|', tag_split0_re)
     
       for line in lines:
-          all_out_lines.extend( process_line(line) )
+        out_lines = process_line(line)
+#           print(out_line, file=sys.stderr)
+        
+        for out_line in out_lines:
+            if " adv" in out_line and not "advp" in out_line and not ":comp" in out_line and not ":super" in out_line:
+                adv = out_line.split(' ')[1]
+     #           print('-', adv[:-1], file=sys.stderr)
+                if adv[:-1] in comparatives:
+                    out_line += ":compb"
+            all_out_lines.append( out_line )
 
-
+    #print('advs', adverbs, adverbs_compar, comparatives, file=sys.stderr)
     for adv_line in adverbs_compar:
       adv = adv_line.split(' ')[1]
       if adv in adverbs:

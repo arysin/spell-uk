@@ -21,15 +21,18 @@ def process_line_exceptions(line, extra_tags):
       return ''
     
     base = re.findall('^[^ ]+', line)[0]
+    
+    except_base_tag2 = except_base_tag
+    if base.endswith('ся'):
+        except_base_tag2 = except_base_tag.replace('verb:', 'verb:rev:')
       
-    out_line = re.sub('([^ ]+) ?', '\\1 ' + base + ' ' + except_base_tag + 'unknown' + extra_tags + '\n', line)
+    out_line = re.sub('([^ ]+) ?', '\\1 ' + base + ' ' + except_base_tag2 + 'unknown' + extra_tags + '\n', line)
     
     if except_base_tag in ('verb:imperf:', 'verb:perf:'):
       base_add = 'inf:'
-      if base.endswith('ся'):
-        base_add = 'rev:' + base_add
-      new_tag = except_base_tag.replace('verb:', 'verb:' + base_add)
-      out_line = out_line.replace(except_base_tag, new_tag, 1)
+#      if base.endswith('ся'):
+#        base_add = 'rev:' + base_add
+      out_line = re.sub("(verb:(?:rev:)?)((im)?perf:)", "\\1inf:\\2", out_line, 1)
       
       out_lines = out_line.split('\n')
       out_lines[0] = out_lines[0].replace(':unknown', '')
