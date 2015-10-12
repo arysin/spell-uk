@@ -47,7 +47,6 @@
 
 
 # додаткові форми
-хірт хорт noun:m:v_naz/v_zna:anim
 сосон сосна noun:p:v_rod
 відьом відьма noun:p:v_rod/v_zna:anim
 верстов верста noun:p:v_rod
@@ -55,11 +54,11 @@
 воріженьки вороженько noun:p:v_naz:anim:rare
 очки очко noun:p:v_naz
 воєн війна noun:p:v_rod
-грошима гроші noun:p:v_oru
-грішми гроші noun:p:v_oru
+грошима гроші noun:p:v_oru:ns
+грішми гроші noun:p:v_oru:ns
 людоньки людоньки noun:p:v_naz:anim
 басищеві басище noun:m:v_dav//n:v_dav
-дровець дрівця noun:p:v_rod
+дровець дрівця noun:p:v_rod:ns
 
 крильми крило noun:p:v_oru
 слізьми сльоза noun:p:v_oru
@@ -308,8 +307,9 @@
 галай-балай галай-балай noun:m:v_naz/v_zna
 усюди/fo
 
-дель part:pers
-фон part:pers
+дель дель part:pers
+фон фон part:pers
+бен бен part:pers
 
 
 # Прислівники
@@ -562,7 +562,7 @@
 ладен ладний adj:m:v_naz/v_zna:contr
 молод молодий adj:m:v_naz/v_zna:contr
 невинен невинний adj:m:v_naz/v_zna:contr
-негоден негодний adj:m:v_naz/v_zna:contr
+негоден негідний adj:m:v_naz/v_zna:contr
 незгоден незгодний adj:m:v_naz/v_zna:contr
 неладен неладний adj:m:v_naz/v_zna:contr
 немощен немощний adj:m:v_naz/v_zna:contr

@@ -839,7 +839,8 @@
 казна-куди adv:&pron:ind
 казна-звідки adv:&pron:ind
 
-всяк adv:rare|adj:m:v_naz/v_zna:&pron:gen
+всяк adv:rare:v-u|adj:m:v_naz/v_zna:&pron:gen:v-u
+усяк adv:rare:v-u|adj:m:v_naz/v_zna:&pron:gen:v-u
 чомусь adv:&pron:ind
 
 # числівникові займенники

@@ -181,10 +181,10 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                   or lastname(word, origAffixFlags):
                     line = re.sub('/v_kly', '', line)
 
-            if affixFlag in 'V9j' and 'adj:p:v_naz/v_zna' in line:
-              if '<' in allAffixFlags:
+            if '<' in allAffixFlags:
                 if not '>' in allAffixFlags: # animal
-                  line = line.replace('/v_zna', '')
+                    if affixFlag in 'V9jU' and 'adj:p:v_naz/v_zna' in line:
+                        line = line.replace('/v_zna', '')
 #              else:
 #                if 'noun' in main_tag:
 #                  line = line.replace('v_naz/', '')
@@ -317,10 +317,15 @@ def get_word_base(word, affixFlag, allAffixFlags):
               else:
                 str = word + ' ' + word + ' adj:m:v_naz/v_zna'
                 
-        elif affixFlag in '[AIKMCS]':
+        elif affixFlag in '[AIKMC]':
             str = word + ' ' + word + ' verb:inf'
         elif affixFlag in '[BJLN]':
             str = word + ' ' + word + ' verb:rev:inf'
+        elif affixFlag in 'S':
+            if word.endswith("ся"):
+                str = word + ' ' + word + ' verb:rev:inf'
+            else:
+                str = word + ' ' + word + ' verb:inf'
             
         elif affixFlag == 'a' and ending_a_numr_re.match(word):
             str = word + ' ' + word + ' numr:p:v_naz/v_zna'
@@ -368,7 +373,7 @@ def get_word_base(word, affixFlag, allAffixFlags):
         elif affixFlag == 'i' and word.endswith('ін'):
             str = word + ' ' + word + ' noun:m:v_naz'
         elif affixFlag == 'j' and word[-1] in 'іа':
-            str = word + ' ' + word + ' noun:p:v_naz'
+            str = word + ' ' + word + ' noun:p:v_naz:ns'
         elif re.match('[a-p]', affixFlag):
             if affixFlag == 'p' and allAffixFlags[0] == 'p':
               return str
@@ -655,6 +660,11 @@ def dual_last_name_ending(line):
 #@profile
 def pre_process(line):
   out = []
+
+  if re.search("[аиіїя]/[bfo]", line):
+      if not " :" in line:
+        line += " "
+      line += ":ns"
 
   if "<+" in line:
     if " <+" in line:

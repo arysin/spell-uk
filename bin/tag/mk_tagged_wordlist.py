@@ -80,6 +80,7 @@ extra_tag_map = {
   'base-abbr.lst': ':abbr',
   'dot-abbr.lst': ':abbr',
   'twisters.lst': ':bad',
+  'ignored.lst': ':bad',
   'rare.lst': ':rare',
   'slang.lst': ':slang',
   'alt.lst': ':alt'
