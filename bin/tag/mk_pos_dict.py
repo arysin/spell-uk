@@ -639,7 +639,7 @@ def expand_nv(in_lines):
 #@profile
 def apply_main_tag(out_line2, origAffixFlags, main_tag):
     if not " adv" in out_line2:# and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
-        if 'noun:' in main_tag:
+        if 'noun:' in main_tag and not ":patr" in out_line2:
           if not ':p:' in out_line2:
             repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
             out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
