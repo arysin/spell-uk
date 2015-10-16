@@ -43,7 +43,7 @@ tag_split1_re = re.compile('[^: ]+$')
 tag_split2_re = re.compile('[a-z]:v_[a-z]{3}(/v_[a-z]{3})*')
 
 ending_a_aja_re = re.compile('.*[ая]$')
-ending_i_nnia_re = re.compile(r'.*(([бвгґджзклмнпрстфхцчшщ])\2|\'|[рдлтж])я$')
+ending_i_nnia_re = re.compile(r'.*(([бвгґджзклмнпрстфхцчшщ])\2|\'|[джлнрт])я$')
 ending_ae_ets_re = re.compile('.*[еє]ць$')
 ending_a_n_re = re.compile('.*([ео]нь|оль|оть)$')
 ending_ae_ik_re = re.compile('.*і[дйрлгсзкп]$')
@@ -185,6 +185,8 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
                 if not '>' in allAffixFlags: # animal
                     if affixFlag in 'V9jU' and 'adj:p:v_naz/v_zna' in line:
                         line = line.replace('/v_zna', '')
+                    elif affixFlag in 'V' and ':m:v_naz/v_zna' in line:
+                        line = line.replace('/v_zna', '')
 #              else:
 #                if 'noun' in main_tag:
 #                  line = line.replace('v_naz/', '')
@@ -234,7 +236,7 @@ def generate(word, allAffixFlags, origAffixFlags, main_tag):
 #                    elif line.startswith('кону кін '):
 #                        line = line.replace('v_dav', 'v_dav/v_mis')
             elif affixFlag in "l" and not 'q' in allAffixFlags:
-                if 'noun:m:v_dav' in line and re.match(".*і[дтнр]$", word) and ending_uyu_re.match(line):
+                if 'noun:m:v_dav' in line and re.match(".*[аиі][дтнр]$", word) and ending_uyu_re.match(line):
                     line = line.replace('m:v_dav', 'm:v_rod/v_dav')
             elif affixFlag in 'cgqx' or (affixFlag == "l" and re.match(".*(боєць|і[тдрн])$", word)):
                 if istota(word, allAffixFlags) or secondVZna(line) and 'noun:m:v_rod' in line:
@@ -498,8 +500,8 @@ def post_process(line, affixFlags, extra_tag):
             line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
         else:
             if ":imperf:perf" in line:
-                line1 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1imperf', line)
-                line2 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1perf', line)
+                line1 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1imperf\\2', line)
+                line2 = re.sub('(advp:(?:rev:)?)(?:im)?perf:(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1perf\\2', line)
                 return [line1, line2]
             else:
                 line = re.sub('(advp:(?:rev:)?)(?:im)?perf:((?:im)?perf)(.*)', '\\1\\2\\3', line)
@@ -638,8 +640,8 @@ def expand_nv(in_lines):
 
 #@profile
 def apply_main_tag(out_line2, origAffixFlags, main_tag):
-    if not " adv" in out_line2:# and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
-        if 'noun:' in main_tag and not ":patr" in out_line2:
+    if not " adv" in out_line2 and not ":patr" in out_line2:# and (not 'Z' in origAffixFlags or not out_line2.startswith('не') or not main_tag.startswith('adjp')):
+        if 'noun:' in main_tag:
           if not ':p:' in out_line2:
             repl_str = re.sub('[^ :]+', '[^ :]+', main_tag)
             out_line2 = re.sub(' ' + repl_str, ' ' + main_tag, out_line2)
