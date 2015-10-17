@@ -483,7 +483,6 @@ def retain_tags(line, tags):
 
 extra_gen_re=re.compile(':\\+([mnf])')
 gen_tag_re=re.compile(':[mfn]:')
-compar_line_re=re.compile('[^ ]+([шщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 
 
 def tail_tag(line, tags):
@@ -492,6 +491,9 @@ def tail_tag(line, tags):
         if tag in line and not line.endswith(tag):
             line = line.replace(tag, '') + tag
     return line
+
+
+compar_line_re=re.compile('[^ ]+([чшщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 
 #@profile
 def post_process(line, affixFlags, extra_tag):
@@ -558,11 +560,21 @@ def post_process(line, affixFlags, extra_tag):
     lines = [line]
     
     if compar_line_re.match(line):
+        #print('xx', line, file=sys.stderr)
  #       line1 = re.sub('([^ ]+ще [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
         if re.search("[чшщ]ий adj", line):
-          line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
+            line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
+#        elif line.split()[1] in COMPAR_FORMS.values():
+#            print('xx', line)
+#            #line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
         elif "ий adj" in line or "ій adj" in line:
-          line1 = re.sub('([^ ]+[шщ]е [^ ]+[^чшщ])[іи]й adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
+            if "ій adj" in line:
+                adv_ending = "ьо"
+                line2 = re.sub('([^ ]+[чшщ]е [^ ]+[^чшщ])[іи]й adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
+                adverbs_compar.append( line2 )
+            else:
+                adv_ending = "о"
+            line1 = re.sub('([^ ]+[чшщ]е [^ ]+[^чшщ])[іи]й adj:n:v_naz.*((compr|super).*)', '\\1'+adv_ending+' adv:\\2', line)
 #        else:
 #          line1 = line
 #        elif "ій adj" in line:
@@ -960,6 +972,26 @@ def process_line2(line):
 
 # end
 
+def collect_comparatives(ifile):
+    line_cnt = 0
+    for line in ifile:
+      line = line.strip()
+      if 'ий/V' in line:
+          if 'іший/V' in line and 'Y' in line:
+              comparatives.append( ishy_re.sub('', line ) )
+          elif shy_re.search(line):
+              comparatives_shy.append( shy_remove_re.sub('', line ) )
+          elif 'іший/V' in line and re.match('(як|що)?най.*', line):
+              comparatives.append( re.sub('^(?:як|що)?най(.*)іший/.*$', '\\1', line ) )
+      line_cnt += 1
+    
+    if line_cnt < 1:
+      print("ERROR: empty source file", file=sys.stderr)
+      sys.exit(1)
+
+    print("comparatives", len(comparatives), file=sys.stderr)
+    print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
+
 
 # --------------
 # main code
@@ -976,70 +1008,52 @@ affix.load_affixes(affix_filename)
 
 if __name__ == "__main__":
     
-    
     if not '-' in sys.argv:
-      src_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Dictionary/uk_words.tag"
-    
-      file_sfx = ''
-      if '-t' in sys.argv:
-        print("Running in test mode")
-        file_sfx = '.test'
-        src_filename = "uk_words.tag.test"
-    
-      print("Working with word list from", src_filename)
-    
-      ifile = open(src_filename, "r")
-    
-      line_cnt = 0
-      for line in ifile:
-        line = line.strip()
-        if 'ий/V' in line:
-            if 'іший/V' in line and 'Y' in line:
-                comparatives.append( ishy_re.sub('', line ) )
-            elif shy_re.search(line):
-                comparatives_shy.append( shy_remove_re.sub('', line ) )
-            elif 'іший/V' in line and re.match('(як|що)?най.*', line):
-                comparatives.append( re.sub('^(?:як|що)?най(.*)іший/.*$', '\\1', line ) )
-        line_cnt += 1
-    
-      if line_cnt < 1:
-        print("ERROR: empty source file", file=sys.stderr)
-        sys.exit(1)
-    
+        src_filename = os.path.dirname(os.path.abspath(__file__)) + "/../../src/Dictionary/uk_words.tag"
+        
+        file_sfx = ''
+        if '-t' in sys.argv:
+            print("Running in test mode")
+            file_sfx = '.test'
+            src_filename = "uk_words.tag.test"
+        
+        print("Working with word list from", src_filename)
+        
+        ifile = open(src_filename, "r")
+        
+        collect_comparatives(ifile)
     
     if '-' in sys.argv:
-      ifile = sys.stdin
-      ofile = sys.stdout
+        ifile = sys.stdin
+        ofile = sys.stdout
     else:
-      ifile = open(src_filename, "r")
-      ofile = open("tagged.main.txt"+file_sfx, "w")
+        ifile = open(src_filename, "r")
+        ofile = open("tagged.main.txt"+file_sfx, "w")
     
     all_out_lines = []
-
-    print("comparatives", len(comparatives), file=sys.stderr)
-    print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
 
     for line in ifile:
     
       line = line.strip()
       if len(line) == 0:
-        continue
+          continue
     
       lines = expand_alts([line], '|', tag_split0_re)
     
       for line in lines:
         out_lines = process_line(line)
-#           print(out_line, file=sys.stderr)
         
         for out_line in out_lines:
             if " adv" in out_line and not "advp" in out_line and not ":comp" in out_line and not ":super" in out_line:
                 adv = out_line.split(' ')[1]
-     #           print('-', adv[:-1], file=sys.stderr)
                 if adv[:-1] in comparatives:
                     out_line += ":compb"
             all_out_lines.append( out_line )
 
-    #print('advs', adverbs, adverbs_compar, comparatives, file=sys.stderr)
+    print('advs', adverbs, file=sys.stderr)
+    print('adv_compar', adverbs_compar, file=sys.stderr)
+    print('comparatives', comparatives, file=sys.stderr)
+    
     for adv_line in adverbs_compar:
       adv = adv_line.split(' ')[1]
       if adv in adverbs:
