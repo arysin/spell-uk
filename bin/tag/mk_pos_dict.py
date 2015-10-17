@@ -560,13 +560,9 @@ def post_process(line, affixFlags, extra_tag):
     lines = [line]
     
     if compar_line_re.match(line):
-        #print('xx', line, file=sys.stderr)
  #       line1 = re.sub('([^ ]+ще [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1о adv:\\2', line)
         if re.search("[чшщ]ий adj", line):
             line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
-#        elif line.split()[1] in COMPAR_FORMS.values():
-#            print('xx', line)
-#            #line1 = re.sub('([^ ]+ше [^ ]+)ий adj:n:v_naz.*((compr|super).*)', '\\1е adv:\\2', line)
         elif "ий adj" in line or "ій adj" in line:
             if "ій adj" in line:
                 adv_ending = "ьо"
@@ -603,7 +599,6 @@ def collect_all_words(line):
     if not ':bad' in line and not ':rare' in line and not ':coll' in line and not ". " in line: # and not ':alt' in line:
         allWords.append(line.split(' ')[0])
     if ' adv' in line:
-#        print("-", line.split(" ")[0])
         adverbs.append(line.split(' ')[0])
 
 
@@ -777,12 +772,8 @@ def process_line2(line):
                     extra_tag += ':super';
                 elif shyi_sub_re.sub('', line) in comparatives_shy or yi_sub_re.sub('', line) in comparatives:
                     extra_tag += ':compb'
-            #            print('compb for ' + line)
                 elif re.sub('/.*', '', line) in COMPAR_FORMS.values():
                     extra_tag += ':compb'
-#                print('--1', line, extra_tag, file=sys.stderr)
-#                print('--2', comparatives_shy, file=sys.stderr)
-#                print('--3', comparatives, file=sys.stderr)
     #    elif re.match('/[^ ]*p', line):
     #       extra_tag += ':pers'
 
@@ -844,8 +835,6 @@ def process_line2(line):
         elif line.endswith('шись'):
             tag = ' advp:rev:perf'
         
-#         print('-', line, tag, file=sys.stderr)
-            
         if tag == '' and extra_tag != '':
             tag = ' '
 
@@ -867,7 +856,6 @@ def process_line2(line):
 
     out_lines = []
     for word in expand_word( word, affixFlags ):
-#        print("affixFlags", affixFlags, word)
         if not affixFlags:
           out_lines.append( word + ' ' + word + ' unknown')
         else:
@@ -879,8 +867,6 @@ def process_line2(line):
     last_fem_lastname_v_naz = ''
 
     for out_line in out_lines:
-#        print("affixFlags", affixFlags, out_line, extra_tag)
-#        print('--:', out_line, word, re.sub('ий$', '', word), extra_tag)
 
         if 'Z' in origAffixFlags and out_line.startswith('не'):
             if re.sub('ий$', '', word) in comparatives: # and word in COMPAR_FORMS.values():
@@ -924,16 +910,13 @@ def process_line2(line):
 
             # жіночі прізвища мають жіночу лему
             if ('V' in origAffixFlags or 'U' in origAffixFlags) and "<+" in origAffixFlags and ':f:' in out_line2:
-                    #print('-', out_line2)
                     parts = out_line2.split(' ')
                     if ':f:v_naz' in out_line2:
-                      #print('+', parts[0])
                       last_fem_lastname_v_naz = parts[0]
                       out_line2 = parts[0] + ' ' + parts[0] + ' ' + parts[2]
                       
                       for lastname_line in fem_lastnames_deferred:
                         new_line = lastname_line.replace('XXX', last_fem_lastname_v_naz)
-                        #print('    undeferring', new_line)
 
                         if last_fem_lastname_v_naz[:-1] in CONSONANTS + "o":
                           new_line = re.sub('^[^ ]+', last_fem_lastname_v_naz, new_line)
@@ -944,7 +927,6 @@ def process_line2(line):
                     else:
                       deriv = parts[0]
                       if last_fem_lastname_v_naz != '':
-                        #print('replacing with', last_fem_lastname_v_naz)
                         
                         if last_fem_lastname_v_naz[:-1] in CONSONANTS + "o":
                           deriv = last_fem_lastname_v_naz
@@ -952,7 +934,6 @@ def process_line2(line):
                         out_line2 = deriv + ' ' + last_fem_lastname_v_naz + ' ' + parts[2]
                       else:
                         out_line2 = deriv + ' XXX ' + parts[2]
-                        #print('deferring', out_line2)
                         fem_lastnames_deferred.append(out_line2)
                         continue
 
@@ -1050,9 +1031,9 @@ if __name__ == "__main__":
                     out_line += ":compb"
             all_out_lines.append( out_line )
 
-    print('advs', adverbs, file=sys.stderr)
-    print('adv_compar', adverbs_compar, file=sys.stderr)
-    print('comparatives', comparatives, file=sys.stderr)
+#    print('advs', adverbs, file=sys.stderr)
+#    print('adv_compar', adverbs_compar, file=sys.stderr)
+#    print('comparatives', comparatives, file=sys.stderr)
     
     for adv_line in adverbs_compar:
       adv = adv_line.split(' ')[1]
