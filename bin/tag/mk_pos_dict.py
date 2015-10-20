@@ -57,7 +57,7 @@ ending_iku_re = re.compile('^.*?(р|ст|пот)оку .* .*$')
 ending_uyu_re = re.compile('^.*?[ую] .* .*$')
 
 ishy_re = re.compile('іший/.*$')
-shy_re = re.compile('[^і][шщч]ий/.*$')
+shy_re = re.compile('[^ін][шщч]ий/.*$')
 shy_remove_re = re.compile('[шщч]ий/.*$')
 yi_sub_re = re.compile('[іи]й/.*$')
 shyi_sub_re = re.compile('(кий|с?окий)/.*$')
@@ -498,6 +498,10 @@ compar_line_re=re.compile('[^ ]+([чшщ]е) [^ ]+ .*v_naz.*(compr|super).*')
 #@profile
 def post_process(line, affixFlags, extra_tag):
     if "advp" in line:
+    
+        if "ись " in line and "ти " in line:
+            line = line.replace("ти ", "тися ")
+    
         if re.search("чи(с[яь])? ", line):
             line = re.sub('(advp:(?:rev:)?(?:im)?perf):(?:im)?perf(?::(?:im)?perf)?(.*)', '\\1\\2', line)
         else:
@@ -553,6 +557,9 @@ def post_process(line, affixFlags, extra_tag):
 
         if ':compr' in line and re.match('(як|що)?най.*', line):
             line = line.replace(':compr', ':super')
+            
+        if ":bad:compb" in line:
+            line = line.replace(":bad:compb", ":compb:bad")
     
     if line.startswith("не") and ":v-u" in line:
         line = line.replace(":v-u", "")
@@ -972,6 +979,8 @@ def collect_comparatives(ifile):
 
     print("comparatives", len(comparatives), file=sys.stderr)
     print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
+    print("comparatives", comparatives, file=sys.stderr)
+    print("comparatives_shy", comparatives_shy, file=sys.stderr)
 
 
 # --------------
