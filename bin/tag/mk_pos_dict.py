@@ -979,8 +979,8 @@ def collect_comparatives(ifile):
 
     print("comparatives", len(comparatives), file=sys.stderr)
     print("comparatives_shy", len(comparatives_shy), file=sys.stderr)
-    print("comparatives", comparatives, file=sys.stderr)
-    print("comparatives_shy", comparatives_shy, file=sys.stderr)
+    #print("comparatives", comparatives, file=sys.stderr)
+    #print("comparatives_shy", comparatives_shy, file=sys.stderr)
 
 
 # --------------
