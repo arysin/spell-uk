@@ -839,19 +839,20 @@
 казна-куди adv:&pron:ind
 казна-звідки adv:&pron:ind
 
-всяк adv:rare:v-u|adj:m:v_naz/v_zna:&pron:gen:v-u
-усяк adv:rare:v-u|adj:m:v_naz/v_zna:&pron:gen:v-u
+всяк adv:rare:v-u
+всяк всяк adj:m:v_naz/v_zna:&pron:gen:v-u
+усяк adv:rare:v-u
+усяк усяк adj:m:v_naz/v_zna:&pron:gen:v-u
+
 чомусь adv:&pron:ind
 
 # числівникові займенники
 
-небагато adv
 небагато небагато numr:p:v_naz/v_zna:&pron:ind
 небагатьох небагато numr:p:v_rod/v_zna/v_mis:&pron:ind
 небагатьом небагато numr:p:v_dav:&pron:ind
 небагатьма небагато numr:p:v_oru:&pron:ind
 
-багато adv
 багато багато numr:p:v_naz/v_zna:&pron:ind
 багатьох багато numr:p:v_rod/v_zna/v_mis:&pron:ind
 багатьом багато numr:p:v_dav:&pron:ind

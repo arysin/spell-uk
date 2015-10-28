@@ -57,7 +57,7 @@
 грошима гроші noun:p:v_oru:ns
 грішми гроші noun:p:v_oru:ns
 людоньки людоньки noun:p:v_naz:anim
-басищеві басище noun:m:v_dav//n:v_dav
+#басищеві басище noun:m:v_dav//n:v_dav  # в ГС цієї форми немає
 дровець дрівця noun:p:v_rod:ns
 
 крильми крило noun:p:v_oru
@@ -84,7 +84,7 @@
 вуса вуса noun:p:v_naz/v_zna
 
 яловець ялівець noun:m:v_naz/v_zna
-стос стіс noun:m:v_naz/v_zna
+стос стіс noun:m:v_naz/v_zna:rare
 
 відом відом noun:m:v_naz:rare
 відома відом noun:m:v_rod

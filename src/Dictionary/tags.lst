@@ -1,8 +1,6 @@
 барлогу барліг noun:m:v_rod
 білячий/V ^adjp:actv:pres :bad
 бісячий/V ^adjp:actv:pres :bad
-болюче adv
-боляче adv
 болячий/V ^adjp:actv:pres :bad
 боці бік noun:m:v_mis
 бродячий/V ^adjp:actv:pres :bad
@@ -16,9 +14,7 @@
 лежачий/V ^adjp:actv:pres :bad
 # ліса ліс noun:m:v_rod:obs
 люблячий/V ^adjp:actv:pres :bad
-максимум adv
 мати мати noun:f:v_naz/v_kly:anim
-мінімум adv
 мосту міст noun:m:v_rod
 нев'янучий/V ^adjp:actv:pres :bad
 немеркнучий/V ^adjp:actv:pres :bad
@@ -29,10 +25,8 @@
 свистячий/V ^adjp:actv:pres :bad
 # світа світ noun:m:v_rod:obs
 сидячий/V ^adjp:actv:pres :bad
-скажімо insert
 скриплячий/V ^adjp:actv:pres :bad
 смердячий/V ^adjp:actv:pres :bad
-сміло сміло adv
 сплячий/V ^adjp:actv:pres :bad
 столу стіл noun:m:v_rod
 стоячий/V ^adjp:actv:pres :bad
