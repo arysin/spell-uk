@@ -55,7 +55,7 @@ SFX Q Y 8
 SFX Q   яти	ючи	[аяіо]яти	#  віяти  віючи 		         @ advp:imperf
 SFX Q   ти	ючи	[илнрцду]яти	#  ганяти  ганяючи 	         @ advp:imperf
 SFX Q   ти	ючи	[аіу]ти		#  вбивати  вбиваючи 	                 @ advp:imperf
-SFX Q   ити	'ючи	[бвп]ити	#  бити  б'ючи 	                 @ advp:imperf
+SFX Q   ити	'ючи	[бп]ити	        #  бити  б'ючи 	                 @ advp:imperf
 SFX Q   ити	иючи	[врмнш]ити	#  рити  риючи	                 @ advp:imperf
 SFX Q   ити	лючи	лити		#  лити  ллючи		                 @ advp:imperf
 SFX Q   ти	вучи	жити		#  жити  живучи		                 @ advp:imperf
@@ -69,3 +69,6 @@ SFX Q   ти	учи	сти		#  пасти  пасучи		                 @ advp
 #SFX M   гнати	женучи	гнати		#  гнати  женучи		           @ advp:imperf
 #SFX M   сти	дучи	[еая]сти		#  вести  ведучи		           @ advp:imperf
 #SFX M   сти	м	[ії]сти		#  їсти  їм		           @ advp:imperf
+
+SFX 6 Y 1
+SFX 6   ити	'ючи	вити	        #  вити  в'ючи 	                 @ advp:imperf

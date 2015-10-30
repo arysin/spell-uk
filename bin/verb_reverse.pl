@@ -25,7 +25,7 @@ my @lines;
 my %SFX_REV = (
     A => "B", I => "J", K => "L", M => "N",
     G => "H", C => "D", E => "F",
-    O => "P", Q => "R"
+    O => "P", Q => "R", 6 => "7"
 );
 
 # для слів, які мають і "-ся" і "-сь"
@@ -54,7 +54,7 @@ while(<>) {
     
 # Заміна груп відповідними парами та зворотні інфінітиви
 
-    if( /SFX\s[AIKMGCEOQ]\s[YN]\s[0-9]+/ ) {
+    if( /SFX\s[AIKMGCEOQ6]\s[YN]\s[0-9]+/ ) {
 	my @SFX = split /\s+/, $_;
 	my $sfx_rev = $SFX_REV{$SFX[1]};
 
@@ -81,7 +81,7 @@ while(<>) {
 	next;
     }
 
-    if( /SFX\s[AIKMGCEOQ]\s/ ) {
+    if( /SFX\s[AIKMGCEOQ6]\s/ ) {
 
 	my @LINE = split /\s+/, $_;
 	my @LINE_COMMENT = split /#/, $_;
