@@ -13052,7 +13052,7 @@
 вдумливість/l
 вдумуватися/BHP :imperf
 вдунути/A :perf
-вдути/IJ :perf
+вдути/AI :perf
 вдушений/VX ^adjp:pasv:past
 вдушення/iX
 вдушити/ABX :perf
@@ -14897,7 +14897,7 @@
 видурювання/ij
 видурювати/ABGHOP :imperf
 видутий/V ^adjp:pasv:past
-видути/IJ :perf
+видути/ABIJ :perf
 видушений/VZ ^adjp:pasv:past
 видушити/ABEF0 :perf
 видушування/i
@@ -35313,7 +35313,7 @@
 дутик/efg
 дутик/efg<-
 дутися/JHR :imperf
-дути/IGQ :imperf
+дути/AIGQ :imperf
 дутовський/V
 дуттьовий/V
 дуття/if
@@ -40722,7 +40722,7 @@
 задурювання/i
 задурювати/AGO :imperf
 задутий/V ^adjp:pasv:past
-задути/I2 :perf
+задути/AI2 :perf
 задуха/a
 задухуватий/V :rare
 задушевний/VW  #> сердечний, щирий, щиросердечний, душевний
@@ -66257,7 +66257,7 @@
 надумувати/ABGHOP :imperf
 надурити/A :perf
 надутий/VW ^adjp:pasv:past
-надути/IJ2 :perf
+надути/ABIJ2 :perf
 надутість/l
 надушений/V ^adjp:pasv:past
 надушеність/l
@@ -89401,7 +89401,7 @@
 подусівський/V
 подусільнянський/V
 подутися/J :perf
-подути/I :perf
+подути/ABIJ :perf
 подушений/V ^adjp:pasv:past
 подушечка/ab
 подушити/ABEF :perf
@@ -98965,7 +98965,7 @@
 продумувати/ABGHOP :imperf
 продутація/ab
 продутий/V ^adjp:pasv:past
-продути/IJ2 :perf
+продути/ABIJ2 :perf
 продухвина/a
 продуховина/ab
 продух/e
