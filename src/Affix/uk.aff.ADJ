@@ -311,9 +311,9 @@ SFX 3 Y 1
 
 SFX 3   сти	дено	сти	                #  ввести введено              @ verb:impers
 
-SFX 9 Y 4
+SFX 4 Y 4
 
-SFX 9   а	і	а		#  вожата  вожаті 	(Н.)            @ adj:p:v_naz/v_zna
-SFX 9   а	их	а		#  вожата  вожатих 	(Р.)            @ adj:p:v_rod/v_zna/v_mis
-SFX 9   а	им	а		#  вожата  вожатим 	            @ adj:p:v_dav
-SFX 9   а	ими	а		#  вожата  вожатими 	(О.)            @ adj:p:v_oru
+SFX 4   а	і	а		#  вожата  вожаті 	(Н.)            @ adj:p:v_naz/v_zna
+SFX 4   а	их	а		#  вожата  вожатих 	(Р.)            @ adj:p:v_rod/v_zna/v_mis
+SFX 4   а	им	а		#  вожата  вожатим 	            @ adj:p:v_dav
+SFX 4   а	ими	а		#  вожата  вожатими 	(О.)            @ adj:p:v_oru
