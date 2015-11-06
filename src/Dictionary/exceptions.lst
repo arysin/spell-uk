@@ -369,7 +369,7 @@
 кленемо клясти verb:pres:p:1:rare
 кленете клясти verb:pres:p:2:rare
 кленуть клясти verb:pres:p:3:rare
-кленучи advp:imperf
+кленучи клясти advp:imperf
 
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
@@ -393,12 +393,73 @@
 стривати/C :imperf
 прощавати/C :imperf
 
-# !verb:perf
-ввити ввив ввила ввило ввили ввий ввиймо ввийте ввито ввивши
+ввити ввити verb:inf:perf
+ввий ввити verb:impr:s:2:perf
+ввиймо ввити verb:impr:p:1:perf
+ввийте ввити verb:impr:p:2:perf
+ввию ввити verb:pres:s:1:perf
+ув'ю ввити verb:pres:s:1:perf
+ув'єш ввити verb:pres:s:2:perf
+ув'є ввити verb:pres:s:3:perf
+ув'єм ввити verb:pres:p:1:perf
+ув'ємо ввити verb:pres:p:1:perf
+ув'єте ввити verb:pres:p:2:perf
+ув'ють ввити verb:pres:p:3:perf
+ввив ввити verb:past:m:perf
+ввила ввити verb:past:f:perf
+ввило ввити verb:past:n:perf
+ввили ввити verb:past:p:perf
+ввивши ввити advp:perf:perf
+ввито ввити verb:impers:perf
+
+ввитися ввитися verb:rev:inf:perf
+ввитись ввитися verb:rev:inf:perf
+ввийсь ввитися verb:rev:impr:s:2:perf
+ввийся ввитися verb:rev:impr:s:2:perf
+ввиймось ввитися verb:rev:impr:p:1:perf
+ввиймося ввитися verb:rev:impr:p:1:perf
+ввийтесь ввитися verb:rev:impr:p:2:perf
+ввийтеся ввитися verb:rev:impr:p:2:perf
+ув'юся ввитися verb:rev:pres:s:1:perf
+ув'юсь ввитися verb:rev:pres:s:1:perf
+ув'єшся ввитися verb:rev:pres:s:2:perf
+ув'єся ввитися verb:rev:pres:s:3:perf
+ув'ємся ввитися verb:rev:pres:p:1:perf
+ув'ємося ввитися verb:rev:pres:p:1:perf
+ув'ємось ввитися verb:rev:pres:p:1:perf
+ув'єтеся ввитися verb:rev:pres:p:2:perf
+ув'єтесь ввитися verb:rev:pres:p:2:perf
+ув'ються ввитися verb:rev:pres:p:3:perf
+ввивсь ввитися verb:rev:past:m:perf
+ввився ввитися verb:rev:past:m:perf
+ввилась ввитися verb:rev:past:f:perf
+ввилася ввитися verb:rev:past:f:perf
+ввилось ввитися verb:rev:past:n:perf
+ввилося ввитися verb:rev:past:n:perf
+ввились ввитися verb:rev:past:p:perf
+ввилися ввитися verb:rev:past:p:perf
+ввившись ввитися advp:rev:perf
 
 # гнисти - гнию
-# !verb:imperf
-гнисти гнистиме гнистимеш гнистимуть гнистиму гнистимемо гнистимем гнистимете
+гнисти гнисти verb:inf:imperf
+гнистиму гнисти verb:futr:s:1:imperf
+гнистимеш гнисти verb:futr:s:2:imperf
+гнистиме гнисти verb:futr:s:3:imperf
+гнистимем гнисти verb:futr:p:1:imperf
+гнистимемо гнисти verb:futr:p:1:imperf
+гнистимете гнисти verb:futr:p:2:imperf
+гнистимуть гнисти verb:futr:p:3:imperf
+гнию гнисти verb:pres:s:1:perf
+гниєш гнисти verb:pres:s:2:perf
+гниє гнисти verb:pres:s:3:perf
+гниєм гнисти verb:pres:p:1:perf
+гниємо гнисти verb:pres:p:1:perf
+гниєте гнисти verb:pres:p:2:perf
+гниють гнисти verb:pres:p:3:perf
+гнив гнисти verb:past:m:imperf
+гнила гнисти verb:past:f:imperf
+гнило гнисти verb:past:n:imperf
+гнили гнисти verb:past:p:imperf
 
 загнисти загнисти verb:inf:perf
 
@@ -460,7 +521,9 @@
 # !verb:imperf
 жене жену женете жени женімо женемо женіть женуть женеш      # spell-only
 женетеся женися женімося женемося женуся женіться женеться женуться женешся женетесь женись женімось женемось женусь      # spell-only
-шлю шле шлете шли шлімо шлемо шлем шліть шлють шлеш  # spell-only
+#шлю шле шлете шли шлімо шлемо шлем шліть шлють шлеш  # spell-only
+діти діну дінеш діне дінемо дінем дінете дінуть дінь діньмо діньте  # spell-only
+дітися дінуся дінусь дінешся дінеться дінемося дінемось дінемся дінетеся дінетесь дінуться дінься діньмося діньмось діньтеся діньтесь  # spell-only
 
 # !verb:perf
 роздути розідму розідмеш розідме розідмемо розідмем розідмете розідмуть
