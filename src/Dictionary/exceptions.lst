@@ -423,7 +423,7 @@
 ув'юся ввитися verb:rev:pres:s:1:perf
 ув'юсь ввитися verb:rev:pres:s:1:perf
 ув'єшся ввитися verb:rev:pres:s:2:perf
-ув'єся ввитися verb:rev:pres:s:3:perf
+ув'ється ввитися verb:rev:pres:s:3:perf
 ув'ємся ввитися verb:rev:pres:p:1:perf
 ув'ємося ввитися verb:rev:pres:p:1:perf
 ув'ємось ввитися verb:rev:pres:p:1:perf
@@ -439,29 +439,6 @@
 ввились ввитися verb:rev:past:p:perf
 ввилися ввитися verb:rev:past:p:perf
 ввившись ввитися advp:rev:perf
-
-# гнисти - гнию
-гнисти гнисти verb:inf:imperf
-гнистиму гнисти verb:futr:s:1:imperf
-гнистимеш гнисти verb:futr:s:2:imperf
-гнистиме гнисти verb:futr:s:3:imperf
-гнистимем гнисти verb:futr:p:1:imperf
-гнистимемо гнисти verb:futr:p:1:imperf
-гнистимете гнисти verb:futr:p:2:imperf
-гнистимуть гнисти verb:futr:p:3:imperf
-гнию гнисти verb:pres:s:1:perf
-гниєш гнисти verb:pres:s:2:perf
-гниє гнисти verb:pres:s:3:perf
-гниєм гнисти verb:pres:p:1:perf
-гниємо гнисти verb:pres:p:1:perf
-гниєте гнисти verb:pres:p:2:perf
-гниють гнисти verb:pres:p:3:perf
-гнив гнисти verb:past:m:imperf
-гнила гнисти verb:past:f:imperf
-гнило гнисти verb:past:n:imperf
-гнили гнисти verb:past:p:imperf
-
-загнисти загнисти verb:inf:perf
 
 
 # з -ну- та без
@@ -516,7 +493,9 @@
 
 гнати/KG :imperf
 гнатися/LH :imperf
+
 слати/AG :imperf
+шлю шлеш шле шлемо шлем шлете шлють шли шлімо шлім шліть  # spell-only
 
 # !verb:imperf
 жене жену женете жени женімо женемо женіть женуть женеш      # spell-only
