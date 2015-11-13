@@ -18165,7 +18165,7 @@
 відволікати/IJGHQR :imperf
 відволікти/AB :perf
 відвологлий/V ^adjp:actv:past
-відвологнути/A :perf
+відвологнути/K :perf
 відволожений/V ^adjp:pasv:past
 відволожити/AB :perf
 відволожний/V
@@ -46706,6 +46706,7 @@
 зігріти/IJ2 :perf
 зідентифікований/V
 зідраний/V ^adjp:pasv:past
+зідрати/KLW :perf
 зідьківський/V
 зіжмаканий/V ^adjp:pasv:past
 зізнавати/ABGHOP :imperf
@@ -104643,7 +104644,7 @@
 розвезти/AB0 :perf
 розвержений/V ^adjp:pasv:past
 розверзати/IJGHQR :imperf
-розверзнути/ABEF :perf
+розверзнути/ABEF2 :perf
 розвернений/V ^adjp:pasv:past
 розвернення/i
 розвернутий/V ^adjp:pasv:past
@@ -105120,8 +105121,6 @@
 розібраний/VZ ^adjp:pasv:past
 розібраність/l :np
 розібрання/i
-розідрати/KLW :perf
-зідрати/KLW :perf
 розібрати/KLW :perf
 розігнаний/V ^adjp:pasv:past
 розігнання/i
@@ -105146,6 +105145,7 @@
 розігрувати/ABGHOP :imperf
 розідраний/V ^adjp:pasv:past
 розідраність/l :np
+розідрати/KLW :perf
 розізлений/V ^adjp:pasv:past
 розізлити/AB :perf
 розійтися/N :perf
@@ -106078,8 +106078,6 @@
 розпростаний/V ^adjp:pasv:past
 розпростати/IJW :perf
 розпростертий/V ^adjp:pasv:past
-розпростерти/AB2 :perf
-простерти/AB2 :perf
 розпростертість/l
 розпросторений/V ^adjp:pasv:past
 розпростувати/ABGHOP :imperf
