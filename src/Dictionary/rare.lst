@@ -27,7 +27,7 @@
 вколо вколо prep:rv_rod|adv
 вліжно вліжно adv
 воркотливий/V
-вхорканий/VX ^adjp:pasv:past
+вхорканий/VX ^adjp:pasv:perf # :past
 гейби conj:subord
 глупий/V :xv1
 головочка/a
@@ -74,7 +74,7 @@
 навручки навручки adv
 надцять/a
 намість намість adv
-напуцований/V ^adjp:pasv:past
+напуцований/V ^adjp:pasv:perf # :past
 невпам'ятку невпам'ятку predic:coll
 невпотріб невпотріб predic
 немать немать predic
@@ -99,11 +99,11 @@
 оба numr:m:v_naz/v_zna
 обікласти verb:inf:perf
 обi numr:f:v_naz/v_zna
-одітий/V ^adjp:pasv:past
-озутий/V ^adjp:pasv:past
+одітий/V ^adjp:pasv:perf # :past
+озутий/V ^adjp:pasv:perf # :past
 окроме prep
 онакий/V :&pron:def
-опірений/V ^adjp:pasv:past
+опірений/V ^adjp:pasv:perf # :past
 опостін prep
 опріче prep
 опроче prep
@@ -170,9 +170,9 @@
 упоминати/IJ :imperf
 упомки упомки predic
 упруг/eg
-урадуваний/V ^adjp:pasv:past
-уряджений/V ^adjp:pasv:past
-успокоєний/V ^adjp:pasv:past
+урадуваний/V ^adjp:pasv:perf # :past
+уряджений/V ^adjp:pasv:perf # :past
+успокоєний/V ^adjp:pasv:perf # :past
 фашистівський/V
 хватаний/V
 хоть conj:subord

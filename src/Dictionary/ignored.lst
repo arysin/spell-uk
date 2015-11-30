@@ -1,5 +1,5 @@
 алегретто adv
-грунтований/VZ ^adjp:pasv:past
+грунтований/VZ ^adjp:pasv:imperf # :past
 грунтовий/V
 грунтовний/VW
 грунтовність/l
@@ -12,7 +12,7 @@
 згвалтування/ij
 згвалтувати/A0 :perf
 локоть/ab
-обгрунтований/VZW ^adjp:pasv:past
+обгрунтований/VZW ^adjp:pasv:perf # :past
 обгрунтованість/l
 обгрунтовувати/ABGHOP :imperf
 обгрунтування/ij
