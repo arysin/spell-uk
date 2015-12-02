@@ -11731,7 +11731,6 @@
 бутилен/ef
 бутилкаучук/ef
 бутиловий/V
-бутильований/V ^adjp:pasv:imperf:perf # :past
 бутин/ef
 бутирометр/efg
 бутити/AG :imperf
@@ -14440,7 +14439,7 @@
 вивертання/ij
 вивертати/IJGHQR :imperf
 вивертень/abc
-вивертіти/A0 :perf
+вивертіти/A :perf
 виверткий/V
 виверткість/lm
 вивертливий/VW
@@ -19709,7 +19708,7 @@
 відтермінування/i
 відтермінувати/A0 :perf
 відтесаний/V ^adjp:pasv:perf # :past
-відтесати/A0 :perf
+відтесати/AW :perf
 відтикання/i
 відтикати/A :perf
 відтикати/IJGHQR :imperf
@@ -19847,7 +19846,7 @@
 відхлебтувати/AGO :imperf
 відхлинати/IGQ :imperf
 відхлинути/A :perf
-відхльостаний/V ^adjp:pasv:past
+відхльостаний/V ^adjp:pasv:perf # :past
 відхльостати/AW :perf
 відхльостувати/AGO :imperf
 відхлюпування/i
@@ -22018,16 +22017,16 @@
 впівголоса/X ^adv
 впівсили/X ^adv
 впізнавальний/VX
-впізнаваний/VX ^adjp:pasv:past
+впізнаваний/VX ^adjp:pasv:imperf # :past
 впізнаваність/lX
 впізнаванність/lX
 впізнавання/ijX
 впізнавати/ABGHOPX :imperf
-впізнаний/VX ^adjp:pasv:past
+впізнаний/VX ^adjp:pasv:perf # :past
 впізнанність/lX
 впізнання/ijX
 впізнати/IWX :perf
-впійманий/VX ^adjp:pasv:past
+впійманий/VX ^adjp:pasv:perf # :past
 впіймати/IJWX :perf
 впікання/iX
 впікати/IJQRX :imperf
@@ -22040,7 +22039,7 @@
 вплатити/AE0X :perf
 вплач adv
 вплести/AB1X :perf
-вплетений/VX ^adjp:pasv:past
+вплетений/VX ^adjp:pasv:perf # :past
 впливання/iX
 впливати/IGQX :imperf
 впливовий/VW
@@ -22056,7 +22055,7 @@
 впліскувати/AX :imperf
 вплітання/iX
 вплітати/IJGHQRX :imperf
-вплутаний/VX ^adjp:pasv:past
+вплутаний/VX ^adjp:pasv:perf # :past
 вплутати/IJWX :perf
 вплутування/iX
 вплутувати/ABOPX :imperf
@@ -22065,46 +22064,48 @@
 вповзати/IGQX :imperf
 вповзти/AX :perf
 вповивати/IGQX :imperf
-вповитий/VX ^adjp:pasv:past
-вповільнений/VWX ^adjp:pasv:past
+вповитий/VX ^adjp:pasv:perf # :past
+вповити/K2 :perf
+вповільнений/VWX ^adjp:pasv:perf # :past
 вповільненість/lX
 вповільнення/ijX
 вповільнити/ABEF0X :perf
-вповільнюваний/VX ^adjp:pasv:past
+вповільнюваний/VX ^adjp:pasv:imperf # :past
 вповільнювання/ijX
 вповільнювати/ABOPX :imperf
 вповільнювач/efgX
 вповільняти/IJGHQRX :imperf
 вповні/X ^adv
-вповноважений/VX ^adjp:pasv:past
+вповноважений/VX ^adjp:pasv:perf # :past
 вповноваження/ijX
 вповноважити/A0X :perf
 вповноважування/iX
 вповноважувати/ABOPX :imperf
-вподібнений/VX ^adjp:pasv:past
+вподібнений/VX ^adjp:pasv:perf # :past
 вподібнення/ijX
 вподібнити/AB0X :perf
 вподібнювання/iX
 вподібнювати/ABGHOPX :imperf
-вподобаний/VX ^adjp:pasv:past
+вподобаний/VX ^adjp:pasv:perf # :past
 вподобання/ijX
 вподобати/IJWX :perf
 вподоба/aX
 вподовж/X ^adv
-впоєний/VX ^adjp:pasv:past
+впоєний/VX ^adjp:pasv:perf # :past
+впоїти/A0X :perf
 впокірливий/VX
-впокоєний/VX ^adjp:pasv:past
-впокоїти/ABCDX :perf
-впокорений/VX ^adjp:pasv:past
+впокоєний/VX ^adjp:pasv:perf # :past
+впокоїти/ABCD0X :perf
+впокорений/VX ^adjp:pasv:perf # :past
 впокорення/iX
 впокорити/AB0X :perf
 впокорювання/ijX
 впокорювати/ABOPX :imperf
 впокоювати/ABX :imperf
 вполовину/X ^adv
-впольований/VX ^adjp:pasv:past
+впольований/VX ^adjp:pasv:perf # :past
 вполювати/AB0X :perf
-впораний/VX ^adjp:pasv:past
+впораний/VX ^adjp:pasv:perf # :past
 впорати/IJWX :perf
 впорожні adv
 впороти/A02X :perf
@@ -22112,15 +22113,15 @@
 впорскування/ijX
 впорскувати/ABOPX :imperf
 впорснення/iX
-впорснутий/VX ^adjp:pasv:past
-впорснути/AEX :perf
+впорснутий/VX ^adjp:pasv:perf # :past
+впорснути/AE2X :perf
 впору adv
 впоряджати/IJQRX :imperf
-впоряджений/VX ^adjp:pasv:past
+впоряджений/VX ^adjp:pasv:perf # :past
 впорядженість/lmX
 впорядження/iX
 впорядити/AB0X :perf
-впорядкований/VWX ^adjp:pasv:past:&adj
+впорядкований/VWX ^adjp:pasv:perf:&adj # :past
 впорядкованість/lX
 впорядковний/VZ
 впорядковування/ijX
@@ -22131,18 +22132,18 @@
 впорядник/efgX<
 впорядницький/VX
 впорядниця/abXd<
-впосліджений/VX ^adjp:pasv:past:&adj
+впосліджений/VX ^adjp:pasv:perf:&adj # :past
 впослідженість/lX
 впослідження/iX
-впосліджуваний/VX ^adjp:pasv:past
-впосліджувати/AOX :imperf
+впосліджуваний/VX ^adjp:pasv:imperf # :past
+впосліджувати/AGOWX :imperf
 впослідити/AX :perf
 впотілий/VX ^adjp:actv:perf
 впотіти/IX :perf
 впоювати/ABX :imperf
 вправа/ab
 вправити/ABCD0X :perf
-вправлений/VX ^adjp:pasv:past
+вправлений/VX ^adjp:pasv:perf # :past
 вправлення/ijX
 вправляння/i
 вправляти/IJGHQR :imperf
@@ -22165,7 +22166,7 @@
 впрівати/IGQX :imperf
 впрілий/VX ^adjp:actv:perf
 впріти/IX :perf
-впроваджений/VX ^adjp:pasv:past
+впроваджений/VX ^adjp:pasv:perf # :past
 впровадження/ijX
 впроваджувальний/VX
 впроваджуваний/VX ^adjp:pasv:imperf # :past:pres
@@ -22178,14 +22179,14 @@
 впросити/ABEF0X :perf
 впростяж/X ^adv
 впрост adv
-впроханий/V ^adjp:pasv:past
+впроханий/V ^adjp:pasv:perf # :past
 впрохати/IX :perf
 впрохувати/AX :imperf
 впрошувати/ABGHOPX :imperf
 впрягання/iX
 впрягати/IJGHQRX :imperf
 впрягти/AB0X :perf
-впряжений/VX ^adjp:pasv:past
+впряжений/VX ^adjp:pasv:perf # :past
 впурхування/iX
 впурхувати/AOX :imperf
 впускання/iX
@@ -22193,20 +22194,22 @@
 впускний/V
 впуск/e
 впустити/AE0X :perf
-впущений/V ^adjp:pasv:past
+впущений/V ^adjp:pasv:perf # :past
 впущення/ijX
 впхати/IJX :perf
-впхнутий/V ^adjp:pasv:past
+впхнутий/V ^adjp:pasv:perf # :past
 впхнути/AB2X :perf
 вп'ялити/A0X :perf
 вп'ясти/ABX :perf
-враджений/V ^adjp:pasv:past
-врадуваний/V ^adjp:pasv:past
+враджений/V ^adjp:pasv:perf # :past
+врадити/AB0 :perf
+врадуваний/V ^adjp:pasv:perf # :past
+врадувати/AW :perf
 вражальний/V
 вражальність/l
 вражання/i
 вражати/IJGHQR :imperf
-вражений/VW ^adjp:pasv:past
+вражений/VW ^adjp:pasv:perf # :past
 враженість/l
 враженний/V
 враження/ij
@@ -22221,13 +22224,13 @@
 вранішній/VX
 вранці/X ^adv
 врата/b
-врахований/VX ^adjp:pasv:past
+врахований/VX ^adjp:pasv:perf # :past
 враховуваний/VX ^adjp:pasv:imperf # :past:pres
 враховування/iX
 враховувати/ABGHOPX :imperf
 врахування/ijX
 врахувати/AB0X :perf
-врегульований/VX ^adjp:pasv:past
+врегульований/VX ^adjp:pasv:perf # :past
 врегульованість/lX
 врегульовувати/ABOPX :imperf
 врегулювання/ijX
@@ -22235,23 +22238,25 @@
 вректи/A :perf
 врешті-решт/X ^adv
 врешті/X ^adv
-вриваний/VX ^adjp:pasv:past
+вриваний/VX ^adjp:pasv:imperf # :past
 вриваність/lX
 вривання/iX
 вривано/X ^adv
-вривати/IJQRX :imperf
-вритий/VX ^adjp:pasv:past
+вривати/IJQRX :imperf # xv2
+вритий/VX ^adjp:pasv:perf # :past
 врити/IJ2WX :perf
-врихтований/VX ^adjp:pasv:past
+вритувати/AB0 :perf
+врихтований/VX ^adjp:pasv:perf # :past
+врихтовувати/ABGHOPX :imperf
 врівень/X ^adv
 врівні/X ^adv
-врівноважений/VWX ^adjp:pasv:past:&adj
+врівноважений/VWX ^adjp:pasv:perf:&adj # :past
 врівноваженість/lmX
 врівноваження/ijX
-врівноважити/ABCDX :perf
+врівноважити/ABCD0X :perf
 врівноважування/iX
 врівноважувати/ABGHOPX :imperf
-врізаний/VX ^adjp:pasv:past
+врізаний/VX ^adjp:pasv:perf # :past
 врізання/ijX
 врізати/ABWX :perf
 врізати/IJGHQRX :imperf
@@ -22263,13 +22268,13 @@
 врізувати/ABOPX :imperf
 врічний/VX :rare
 вробити/AB0X :perf
-вроблений/VX ^adjp:pasv:past
+вроблений/VX ^adjp:pasv:perf # :past
 вроблення/iX
 вроблювання/iX
 вроблювати/ABOPX :imperf
 вробляти/IJQRX :imperf
 врода/aX
-вроджений/VX ^adjp:pasv:past:&adj
+вроджений/VX ^adjp:pasv:perf:&adj # :past
 вродженість/lX
 вроджуватися/BPX :imperf
 вродини/oX
@@ -22302,7 +22307,6 @@
 врубання/i
 врубати/IJWX :perf
 врубити/A0X :perf
-врубльований/VX ^adjp:pasv:past
 врубмашина/ab
 врубово-навалювальний/V
 врубування/iX
@@ -22314,30 +22318,30 @@
 вруно/ij
 вручання/i
 вручати/IJGHQR :imperf
-вручений/V ^adjp:pasv:past
+вручений/V ^adjp:pasv:perf # :past
 вручення/ij
 вручити/AE0 :perf
 вручну/X ^adv
 вряджати/IJQRX :imperf
-вряджений/V ^adjp:pasv:past
+вряджений/V ^adjp:pasv:perf # :past
 вряджувати/ABOPX :imperf
 вряди-годи/X ^adv
 врядити/AB0X :perf
 врядницький/VX
 врядування/ijX
 вряд adv
-врятований/VX ^adjp:pasv:past
+врятований/VX ^adjp:pasv:perf # :past
 врятовувати/ABOPX :imperf
 врятування/ijX
 врятувати/AB0X :perf
-всаджений/VX ^adjp:pasv:past
+всаджений/VX ^adjp:pasv:perf # :past
 всаджувати/ABOPX :imperf
 всадити/A0X :perf
 всадовити/ABX :perf
-всамітнений/VWX ^adjp:pasv:past
+всамітнений/VWX ^adjp:actv:perf # :pasv:past
 всамітнення/iX
 всамітнитися/BX :perf
-всамітнювати/ABOPX :imperf
+всамітнюватися/BHPX :imperf
 всамостійнення/iX
 всамостійнювання/iX
 всебілоруський/VX
@@ -22373,7 +22377,7 @@
 всеїдність/lX
 всеїдно adv
 всекримський/VX
-вселений/VX ^adjp:pasv:past
+вселений/VX ^adjp:pasv:perf # :past
 вселення/ijX
 вселенський/VX
 вселити/ABEF0X :perf
@@ -22452,13 +22456,13 @@
 всиляти/IJQRX :imperf
 всиновитель/efgX<
 всиновити/AE0X :perf
-всиновлений/VX ^adjp:pasv:past
+всиновлений/VX ^adjp:pasv:perf # :past
 всиновлення/ijX
 всиновлювати/ABOPX :imperf
 всиновлювач/efgX<
 всиновляння/iX
 всиновляти/IJGHQRX :imperf
-всипаний/VX ^adjp:pasv:past
+всипаний/VX ^adjp:pasv:perf # :past
 всипання/iX
 всипати/ABWX :perf
 всипати/IJGHQRX :imperf
@@ -22479,7 +22483,7 @@
 всіляко/X ^adv
 всістися/LX :perf
 всічення/iX
-всіяний/VX ^adjp:pasv:past
+всіяний/VX ^adjp:pasv:perf # :past
 всіяти/IJWX :perf
 вскакування/iX
 вскакувати/AOX :imperf
@@ -22487,7 +22491,8 @@
 вскоки adv
 вскочити/ACX :perf
 вскубнути/AX :perf
-вславлений/V ^adjp:pasv:past:&adj
+вславити/A0 :perf
+вславлений/V ^adjp:pasv:perf:&adj # :past
 вслідкувати/AX :perf
 вслід/X ^adv
 вслужливий/VX
@@ -22495,7 +22500,8 @@
 вслухатися/JX :perf
 вслуховуватися/BPX :imperf
 вслухуватися/BX :imperf
-всмажений/VX ^adjp:pasv:past
+всмажений/VX ^adjp:pasv:perf # :past
+всмажити/AB0X :perf
 всмак/X ^adv
 всмерть/X ^adv
 всміхатися/JHRX :imperf
@@ -22504,7 +22510,7 @@
 всміхнутий/VX
 всміхнутися/BFX :perf
 всмішки adv
-всмоктаний/VX ^adjp:pasv:past
+всмоктаний/VX ^adjp:pasv:perf # :past
 всмоктати/ABWX :perf
 всмоктувальний/VX
 всмоктувально-нагнітальний/V
@@ -22526,22 +22532,22 @@
 всохнути/KEX :perf
 вспід/X ^adv
 всподі adv
-вспокоєний/V ^adjp:pasv:past
+вспокоєний/V ^adjp:pasv:perf # :past
 вспокоїти/ABCD0X :perf:rare
 вставання/iX
 вставати/AGOX :imperf
 вставити/ABCD0X :perf
 вставка/abX
-вставлений/V ^adjp:pasv:past
+вставлений/V ^adjp:pasv:perf # :past
 вставлення/ijX
-вставлюваний/VX ^adjp:pasv:past
+вставлюваний/VX ^adjp:pasv:imperf # :past
 вставляння/iX
 вставляти/IJGHQRX :imperf
 вставний/VX
 вставність/lX
 вставочка/ab
 встановити/ABEF0 :perf
-встановлений/VX ^adjp:pasv:past
+встановлений/VX ^adjp:pasv:perf # :past
 встановлення/ijX
 встановлювальний/VX
 встановлюваний/VX ^adjp:pasv:imperf # :pres
@@ -22549,15 +22555,15 @@
 встановлювати/ABGHOPX :imperf
 встановлювач/efg
 встати/KX :perf
-встаткований/VX ^adjp:pasv:past
+встаткований/VX ^adjp:pasv:perf # :past
 встатковання/iX
 встатковування/iX
 встатковувати/ABX :imperf
 встаткування/iX
-встаткувати/ABX :perf
+встаткувати/AB0X :perf
 встежити/AX :perf
 встеклий/VX :rare
-встелений/VX ^adjp:pasv:past
+встелений/VX ^adjp:pasv:perf # :past
 встелити/AB0X :perf
 встеляти/IJQRX :imperf
 встерегтися/BX :perf
@@ -22567,14 +22573,14 @@
 встидати/IJQRX :imperf
 встидливий/VZ :coll
 встилати/IJQRX :imperf
-встояний/VX ^adjp:pasv:past
+встояний/VX ^adjp:pasv:perf # :past
 встояти/IJX :perf
 встрелити/AX :perf
 встрибати/IQX :imperf
 встрибнути/AX :perf
 встрибувати/ABOPX :imperf
 встромити/AB0X :perf
-встромлений/VX ^adjp:pasv:past
+встромлений/VX ^adjp:pasv:perf # :past
 встромлювати/ABGHOP :imperf
 встромляння/iX
 встромляти/IJGHQRX :imperf
@@ -22600,10 +22606,10 @@
 всукування/iX
 всукувати/AOX :imperf
 всуміш/X ^adv
-всунений/V ^adjp:pasv:past
+всунений/V ^adjp:pasv:perf # :past
 всунення/i
-всунутий/V ^adjp:pasv:past
-всунути/ABCD2 :perf
+всунутий/V ^adjp:pasv:perf # :past
+всунути/ABCD02 :perf
 всухом'ятку adv
 всуціль/X ^adv
 всучити/A0X :perf
@@ -22619,13 +22625,13 @@
 всяко/X ^adv
 всячина/abX
 втаборитися/BX :perf
-втаємничений/VX ^adjp:pasv:past:&adj
+втаємничений/VX ^adjp:pasv:perf:&adj # :past
 втаємниченість/lX
 втаємничення/iX
 втаємничити/AB0X :perf
 втаємничувати/ABOPX :imperf
-втаєний/VX ^adjp:pasv:past
-втаїти/AX :perf
+втаєний/VX ^adjp:pasv:perf # :past
+втаїти/A0X :perf
 втамовувати/ABOPX :imperf
 втамувати/AB0X :perf
 втаювання/iX
@@ -22634,7 +22640,7 @@
 втекти/AX :perf
 втелепатися/JX :perf
 втелющити/AX :perf
-втеплений/VX ^adjp:pasv:past
+втеплений/VX ^adjp:pasv:perf # :past
 втепленість/lX
 втеплення/ijX
 втеплити/ABEF0X :perf
@@ -22645,13 +22651,14 @@
 втепляти/IJQRX :imperf
 втеребити/AB0X :perf
 втерпіти/AX :perf
-втертий/VX ^adjp:pasv:past
+втертий/VX ^adjp:pasv:perf # :past
 втерти/AB2X :perf
 втертість/lX
 втеча/abX
-втиканий/VX ^adjp:pasv:past
+втиканий/VX ^adjp:pasv:perf # :past
 втикання/ijX
-втикати/IJQRX :imperf
+втикати/IJGHQRX :imperf:xp1 # втика́ти
+втикати/IX :perf:xp2 # вти́кати
 втинання/iX
 втинати/IQX :imperf
 втинок/abcX
@@ -22662,14 +22669,14 @@
 втискати/IJGHQRX :imperf
 втискування/iX
 втискувати/ABOPX :imperf
-втиснений/V ^adjp:pasv:past
+втиснений/V ^adjp:pasv:perf # :past
 втиснення/iX
-втиснутий/V ^adjp:pasv:past
+втиснутий/V ^adjp:pasv:perf # :past
 втиснути/ABEF02X :perf
 втихати/IQX :imperf
 втихлий/VX ^adjp:actv:perf
 втихнути/KEX :perf
-втихомирений/VX ^adjp:pasv:past:&adj
+втихомирений/VX ^adjp:pasv:perf:&adj # :past
 втихомиреність/lX
 втихомирення/iX
 втихомирити/ABCD0X :perf
@@ -22680,7 +22687,7 @@
 втікацький/VX
 втікачка/abXd<
 втікач/efgX<
-втілений/VX ^adjp:pasv:past
+втілений/VX ^adjp:pasv:perf # :past
 втіленість/lX
 втілення/ijX
 втілити/AB0X :perf
@@ -22692,7 +22699,7 @@
 втіхонька/abX
 втішання/iX
 втішати/IJGHQRX :imperf
-втішений/VX ^adjp:pasv:past
+втішений/VX ^adjp:pasv:perf # :past
 втішити/ABCD0X :perf
 втішливий/VWX
 втішливість/lX
@@ -22702,13 +22709,13 @@
 втішниця/abXd<
 втішність/lX
 вткати/A :perf
-вткнутий/V ^adjp:pasv:past
+вткнутий/V ^adjp:pasv:perf # :past
 вткнути/ABEF2X :perf
-втлумачений/VX ^adjp:pasv:past
-втлумачити/AX :perf
+втлумачений/VX ^adjp:pasv:perf # :past
+втлумачити/A0X :perf
 втлумачувати/AOX :imperf
 втнути/AEX :perf
-втовкмачений/VX ^adjp:pasv:past
+втовкмачений/VX ^adjp:pasv:perf # :past
 втовкмачити/A0X :perf
 втовкмачування/iX
 втовкмачувати/AGOX :imperf
@@ -22718,13 +22725,13 @@
 втокмачувати/AOX :imperf
 втолковувати/ABGHOP :imperf
 втолкувати/AB :perf
-втолочений/VX ^adjp:pasv:past
+втолочений/VX ^adjp:pasv:perf # :past
 втолочити/A0X :perf
 втолочування/iX
 втолочувати/AOX :imperf
 втома/aX
 втомити/ABEF0X :perf
-втомлений/VWXZ ^adjp:pasv:past:&adj
+втомлений/VWXZ ^adjp:pasv:perf:&adj # :past
 втомленість/lX
 втомливий/VX
 втомливість/lX
@@ -22735,45 +22742,39 @@
 втонути/AEX :perf
 втопати/IQX :imperf
 втопити/ABEF0X :perf
-втоплений/VX ^adjp:pasv:past
+втоплений/VX ^adjp:pasv:perf # :past
 втопленик/efgX<
 втоплениця/abXd<
 втоплення/ijX
 втоплювання/ij
-втоптаний/VX ^adjp:pasv:past:&adj
+втоптаний/VX ^adjp:pasv:perf:&adj # :past
 втоптаність/lX
 втоптати/ABWX :perf
 втоптування/iX
 втоптувати/ABOPX :imperf
 втора/a
-вторгований/VX ^adjp:pasv:past
-вторговувати/ABOPX :imperf
+вторгований/VX ^adjp:pasv:perf # :past
+вторговувати/ABGHOPX :imperf
 вторгувати/AB0X :perf
 вторинний/VW
 вторинність/lm
 вториннобезкрилі/j<>
 вториннороті/j<>
 вторити/AGO :imperf
-вторований/VX ^adjp:pasv:past
+вторований/VX ^adjp:pasv:perf # :past
 второваність/lX
 второвування/iX
 второвувати/ABOPX :imperf
 второпати/IX :perf
 вторсировина/a
 вторування/iX
-вторувати/AOX :imperf
-вточений/VX ^adjp:pasv:past
+вторувати/AGO :imperf
+вточений/VX ^adjp:pasv:perf # :past
 вточити/AB0X :perf
-вточнений/VX ^adjp:pasv:past
-вточнення/ijX
-вточнювальний/VX
-вточнювання/iX
-вточнювати/ABGHOPX :imperf
-вточняти/IJQRX :imperf
 вточування/iX
 вточувати/ABOPX :imperf
 втравлювання/ijX
-втрамбований/VX ^adjp:pasv:past:&adj
+втрамбований/VX ^adjp:pasv:perf:&adj # :past
 втрамбованість/lX
 втрамбовувальний/VX
 втрамбовування/ijX
@@ -22788,31 +22789,31 @@
 втратність/lX
 втратно/X ^adv
 втрачати/IJGHQRX :imperf
-втрачений/VX ^adjp:pasv:past
+втрачений/VX ^adjp:pasv:perf # :past
 втридешева/X ^adv
 втридорога/X ^adv
-втриманий/VX ^adjp:pasv:past
+втриманий/VX ^adjp:pasv:perf # :past
 втримання/ijX
 втриманство/ijX
 втриманський/VX
 втримати/IJWX :perf
 втримний/VX
 втримувальний/VX
-втримуваний/VX ^adjp:pasv:past
+втримуваний/VX ^adjp:pasv:imperf # :past
 втримування/ijX
 втримувати/ABGHOPX :imperf
 втришия/X ^adv
-втрусити/ABX :perf
+втрусити/AB0X :perf
 втрутити/ABX :perf
 втручання/ijX
 втручати/IJGHQRX :imperf
-втрушений/VX ^adjp:pasv:past
+втрушений/VX ^adjp:pasv:perf # :past
 втрушування/iX
 втрушувати/ABOPX :imperf
 втрясання/ijX
 втрясати/IJGHQRX :imperf
 втрясти/IJX :perf
-втулений/VX ^adjp:pasv:past
+втулений/VX ^adjp:pasv:perf # :past
 втулити/AB0X :perf
 втулище/i
 втулковий/V
@@ -22820,18 +22821,20 @@
 втулювати/ABGHOPX :imperf
 втуляти/IJQRX :imperf
 втупити/AB0X :perf
-втуплений/VX ^adjp:pasv:past
+втуплений/VX ^adjp:pasv:perf # :past
 втуплювати/ABOPX :imperf
-втушкований/VX ^adjp:pasv:past
+втушкований/VX ^adjp:pasv:perf # :past
+втушковувати/ABGHOPX :imperf
+втушкувати/AB0X :perf
 втюхати/IWX :perf
 втюхувати/AGOX :imperf
 втягання/iX
 втягати/IJQRX :imperf
-втягнений/VX ^adjp:pasv:past
+втягнений/VX ^adjp:pasv:perf # :past
 втягненість/lX
 втягнення/ijX
-втягнутий/VX ^adjp:pasv:past
-втягнути/ABEF2X :perf
+втягнутий/VX ^adjp:pasv:perf # :past
+втягнути/ABEF02X :perf
 втягнутість/lX
 втягти/MNX :perf
 втягувальний/VX
@@ -22841,7 +22844,7 @@
 втяжний/VX
 втямити/ABX :perf
 втямки/X ^adv
-втятий/VX ^adjp:pasv:past
+втятий/VX ^adjp:pasv:perf # :past
 втяти/K2X :perf
 вуайєризм/e
 вуаль/ij
@@ -22925,7 +22928,7 @@
 вугровий/V
 вугруватий/V
 вугруватість/l
-вуджений/V ^adjp:pasv:past
+вуджений/V ^adjp:pasv:imperf # :past
 вудженина/a
 вудження/i
 вудилище/ij
@@ -23026,9 +23029,9 @@
 вулканізаційний/V
 вулканізація/ab
 вулканізм/ef
-вулканізований/V ^adjp:pasv:past
+вулканізований/V ^adjp:pasv:imperf:perf # :past
 вулканізування/i
-вулканізувати/ABGHOP :imperf
+вулканізувати/ABGHOP0 :imperf:perf
 вулканіт/ef
 вулканічний/V
 вулкановий/V
@@ -23102,24 +23105,26 @@
 входовий/V
 вхожий/VX
 вхопити/ABEF0X :perf
-вхоплений/VX ^adjp:pasv:past
+вхоплений/VX ^adjp:pasv:perf # :past
 вхоплювати/ABOPX :imperf
 вцерковлення/iX
 вцитькувати/AX :imperf
 вцідити/AX :perf
-вцілений/VX ^adjp:pasv:past
+вцілений/VX ^adjp:pasv:perf # :past
 вцілити/A0X :perf
-вцілілий/VX ^adjp:pasv:past
+вцілілий/VX ^adjp:actv:perf # :pasv:past
 вцілілість/lX
 вціліти/IX :perf
 вціляти/IQX :imperf
-вцяцькований/VX ^adjp:pasv:past
-вцяцьковувати/AX :imperf
-вчавлений/VX ^adjp:pasv:past
+вцяцькований/VX ^adjp:pasv:perf # :past
+вцяцьковувати/A0X :imperf
+вчавити/A0X :perf
+вчавлений/VX ^adjp:pasv:perf # :past
 вчавлювати/ABGHOPX :imperf
 вчаділий/VX ^adjp:actv:perf
 вчадіти/IX :perf
-вчарований/VX ^adjp:pasv:past
+вчарований/VX ^adjp:pasv:perf # :past
+вчарувати/A0X :perf
 вчасний/VWZ
 вчасність/lZ
 вчастити/ABEFX :perf
@@ -23127,14 +23132,14 @@
 вчащати/IGX :imperf
 вчвал/X ^adv
 вчений/ijX<
-вчений/VX ^adjp:pasv:past:&adj
-вченість/lmX
+вчений/VX ^adjp:pasv:imperf:&adj # :past
+вченість/lX
 вчення/ijX
 вчепистий/VX :rare
 вчепити/AB0X :perf
-вчеплений/VX ^adjp:pasv:past
+вчеплений/VX ^adjp:pasv:perf # :past
 вчергове adv
-вчинений/VX ^adjp:pasv:past
+вчинений/VX ^adjp:pasv:perf # :past
 вчинення/ijX
 вчинити/ABEF0X :perf
 вчинок/abX
@@ -23167,18 +23172,19 @@
 вшивати/IJGHQRX :imperf
 вшивка/abX
 вшивний/VX
-вшикований/VX ^adjp:pasv:past
+вшикований/VX ^adjp:pasv:perf # :past
 вшикувати/AB0X :perf
 вшир/X ^adv
-вшитий/VX ^adjp:pasv:past
+вшитий/VX ^adjp:pasv:perf # :past
 вшити/IJ2X :perf
 вшкварити/A0X :perf
 вшляхетнений/V ^adjp:pasv:past
+вшляхетнити/AB0 :perf
 вштовхнути/AEX :perf
 вштовхування/iX
 вштовхувати/ABOPX :imperf
 вщасливити/A0X :perf
-вщасливлений/VX ^adjp:pasv:past
+вщасливлений/VX ^adjp:pasv:perf # :past
 вщасливлювати/AOX :imperf
 вщент/X ^adv
 вщербити/ABX :perf
@@ -23201,18 +23207,18 @@
 в'юн/efg
 в'юрок/abc<>
 в'ючак/efg<>
-в'ючений/V ^adjp:pasv:past
-в'ючити/AG :imperf
+в'ючений/V ^adjp:pasv:imperf # :past
+в'ючити/AGO0 :imperf
 в'ючний/V
 в'юшка/ab
 в'язальний/V
 в'язальник/efg<
 в'язальниця/abd<
 в'язально-трикотажний/V
-в'язаний/V ^adjp:pasv:past
+в'язаний/V ^adjp:pasv:imperf # :past
 в'язанка/ab
 в'язання/i
-в'язати/ABGHOP :imperf
+в'язати/ABGHOPW :imperf
 в'язень/abc<
 в'язистий/V
 в'язіль/u
@@ -23226,10 +23232,10 @@
 в'язочка/a
 в'язь/i
 в'яз/efg
-в'ялений/V ^adjp:pasv:past
+в'ялений/V ^adjp:pasv:imperf # :past
 в'ялення/i
 в'ялий/VWZ
-в'ялити/ABGHOP :imperf
+в'ялити/ABGHOP0 :imperf
 в'яління/i
 в'ялість/lm
 в'янення/i
@@ -23341,7 +23347,7 @@
 газобалон/efg
 газобезпечний/V
 газобетон/e
-газований/V ^adjp:pasv:past
+газований/V ^adjp:pasv:perf # :past
 газованка/a
 газовбирач/efg
 газовбирний/V
@@ -23807,7 +23813,7 @@
 ганьбителька/abd<
 ганьбитель/efg<
 ганьбити/ABGHOP :imperf
-ганьблений/V ^adjp:pasv:past
+ганьблений/V ^adjp:pasv:imperf # :past
 ганьблення/ij
 ганьбливий/V
 ганьбливо adv
@@ -23828,10 +23834,10 @@
 гаптариха/abd<
 гаптарка/abd< :rare
 гаптарювати/AGO :imperf
-гаптований/V ^adjp:pasv:past
+гаптований/V ^adjp:pasv:imperf # :past
 гаптувальниця/abd<
 гаптування/i
-гаптувати/ABGHOP :imperf
+гаптувати/ABGHOP0 :imperf
 гаражний/V
 гараж/efg
 гаразденько adv
@@ -23955,13 +23961,13 @@
 гартівний/V
 гартівник/efg<
 гартівня/a
-гартований/V ^adjp:pasv:past
+гартований/V ^adjp:pasv:imperf # :past
 гартовий/V
 гартувальний/V
 гартувальник/efg<
 гартувальня/ab
 гартування/ij
-гартувати/ABGHOP :imperf
+гартувати/ABGHOP0 :imperf
 гарт/e
 гарувати/AGO :imperf
 гарусний/V
@@ -24061,7 +24067,7 @@
 гачкоподібний/V
 гачкуватий/V
 гачок/abc
-гашений/VZ ^adjp:pasv:past
+гашений/VZ ^adjp:pasv:imperf # :past
 гашення/ij
 гашетка/ab
 гашиш/ef
@@ -24092,7 +24098,8 @@
 гвинтувальний/V
 гвинтувальня/ab
 гвинт/efg
-гвіздкований/V ^adjp:pasv:past
+гвіздкований/V ^adjp:pasv:imperf # :past
+гвіздкувати/AGO :imperf
 гвіздок/abc
 гвіздочок/abc
 гвінея-бісауський/V
@@ -24105,7 +24112,8 @@
 гвоздівка/ab
 гебановий/V
 гебраїзм/e
-гебраїзований/V ^adjp:pasv:past
+гебраїзований/V ^adjp:pasv:imperf # :past
+гебраїзувати/AGO0 :imperf
 гебраїка/a
 гебраїстика/ab
 гебраїст/efgh<
@@ -24177,9 +24185,9 @@
 гектоват/efg
 гектограм/efg
 гектографічний/V
-гектографований/V ^adjp:pasv:past
+гектографований/V ^adjp:pasv:imperf # :past
 гектографування/i
-гектографувати/ABGHOP :imperf
+гектографувати/ABGHOP0 :imperf
 гектограф/efg
 гектолітр/efg
 гектометровий/V
@@ -24358,7 +24366,7 @@
 генерал-губернаторський/V
 генерал-губернатор/efgh<
 генералізація/a
-генералізований/V ^adjp:pasv:past
+генералізований/V ^adjp:pasv:imperf # :past
 генералізувати/ABGHOP :imperf
 генералісимус/efgh<
 генералітет/ef
@@ -24377,7 +24385,7 @@
 генераторний/V
 генератор/efg
 генерація/ab
-генерований/V ^adjp:pasv:past
+генерований/V ^adjp:pasv:imperf # :past
 генеровний/V
 генерувальний/V
 генерування/ij
@@ -24491,7 +24499,8 @@
 геомерида/a
 геометеорологія/a :np
 геометральний/V
-геометризований/V ^adjp:pasv:past
+геометризований/V ^adjp:pasv:imperf # :past
+геометризувати/ABGHOP0 :imperf
 геометричний/VW
 геометричність/l
 геометрія/a
@@ -24581,8 +24590,8 @@
 герасимівський/V
 гераськівський/V
 гербаризація/a
-гербаризований/V ^adjp:pasv:past
-гербаризувати/AGO :imperf
+гербаризований/V ^adjp:pasv:imperf # :past
+гербаризувати/AGO0 :imperf
 гербарій/ef
 гербарний/V
 гербинський/V
@@ -24638,10 +24647,10 @@
 герменевтичний/V
 гермесографічний/V
 герметизація/a
-герметизований/V ^adjp:pasv:past
+герметизований/V ^adjp:pasv:imperf # :past
 герметизувальний/V
 герметизування/i
-герметизувати/ABGHOP :imperf
+герметизувати/ABGHOP0 :imperf
 герметик/efg
 герметичний/VW
 герметичність/lmZ
@@ -24958,7 +24967,7 @@
 гідратація/ab
 гідратний/V
 гідратнозв'язаний/V
-гідратований/V ^adjp:pasv:past
+гідратований/V ^adjp:pasv:imperf # :past
 гідратцелюлоза/ab
 гідратцелюлозний/V
 гідрат/ef
@@ -24992,7 +25001,7 @@
 гідробудівник/efg<
 гідробудівництво/i
 гідровал/efg
-гідрований/V ^adjp:pasv:past
+гідрований/V ^adjp:pasv:imperf # :past
 гідровелосипед/efg
 гідровидобуток/a
 гідровузол/abc
@@ -25198,7 +25207,8 @@
 гідрофізика/a
 гідрофізичний/V
 гідрофікація/a :np
-гідрофікований/V ^adjp:pasv:past
+гідрофікований/V ^adjp:pasv:imperf # :past
+гідрофікувати/ABGHOP0 :imperf
 гідрофілія/a
 гідрофільний/V
 гідрофільність/l
@@ -25501,7 +25511,7 @@
 гіпоциклоїдний/V
 гіпсобетонний/V
 гіпсобетон/e
-гіпсований/V ^adjp:pasv:past
+гіпсований/V ^adjp:pasv:imperf # :past
 гіпсовапняний/V
 гіпсовий/V
 гіпсовипалювальний/V
@@ -25519,7 +25529,7 @@
 гіпсохромний/V
 гіпсошлакобетонний/V
 гіпсування/ij
-гіпсувати/ABGHOP :imperf
+гіпсувати/ABGHOP0 :imperf
 гіпс/ef
 гіпюрний/V
 гіпюровий/V
@@ -25672,14 +25682,14 @@
 гладеньком'язовий/V
 гладесенький/V
 гладесенько adv
-гладжений/VW ^adjp:pasv:past
+гладжений/V ^adjp:pasv:imperf # :past
 гладження/i
 гладилка/ab
 гладильний/V
 гладильник/efg<
 гладильниця/abd<
 гладильня/ab
-гладити/ABGHOP :imperf
+гладити/ABGHOP0 :imperf
 гладіаторський/V
 гладіатор/efgh<
 гладінь/i
@@ -26184,11 +26194,12 @@
 гнобительство/i
 гнобительський/V
 гнобитель/efg<
-гнобити/ABEFOP :imperf
-гноблений/V ^adjp:pasv:past
+гнобити/ABEFOP0 :imperf
+гноблений/V ^adjp:pasv:imperf # :past
 гноблення/ij
 гноєвіддільний/V
 гноєзбиральний/V
+гноєний/V ^adjp:actv:imperf # :pasv:past
 гноєння/i
 гноєпідбиральний/V
 гноєподібний/V
@@ -26200,7 +26211,7 @@
 гноївка/a
 гноївня/ab
 гноїння/i
-гноїстий/V ^adjp:pasv:past
+гноїстий/V
 гноїти/ABGHOP :imperf
 гноїще/i
 гнойовий/V
@@ -26229,7 +26240,7 @@
 гнуздати/IG :imperf
 гнуздечка/a
 гнус/e
-гнутий/V ^adjp:pasv:past
+гнутий/V ^adjp:pasv:imperf # :past
 гнути/ABEFGHOP2 :imperf
 гнутівський/V
 гнуття/i
@@ -26315,7 +26326,7 @@
 годі predic
 годний/V :coll
 годованець/abc<
-годований/VZ ^adjp:pasv:past
+годований/VZ ^adjp:pasv:imperf # :past
 годованка/abd<
 годованчик/efg<
 годовицький/V
@@ -26330,7 +26341,7 @@
 годувати/ABGHOP0 :imperf
 годунівський/V
 годящий/V
-гоєний/V ^adjp:pasv:past
+гоєний/V ^adjp:pasv:imperf # :past
 гоєння/i
 гожий/VZ
 гожість/l
@@ -26367,7 +26378,7 @@
 голендерка/ab<>
 голендерський/V
 голендрівський/V
-голений/VZ ^adjp:pasv:past
+голений/VZ ^adjp:pasv:imperf # :past
 голенищівський/V
 голення/i
 голенський/V
@@ -26383,7 +26394,7 @@
 голина/a :np
 голинський/V
 голинчинецький/V
-голити/ABEFGHOP :imperf
+голити/ABEFGHOP0 :imperf
 голиці/b
 голишівський/V
 голіаф/efg<>-
@@ -26612,7 +26623,7 @@
 голубіти/IGQ :imperf
 голубка/abd<>
 голубківський/V
-голублений/V ^adjp:pasv:past
+голублений/V ^adjp:pasv:imperf # :past
 голублення/ij
 голубливий/V
 голубливість/l :np
@@ -27071,7 +27082,7 @@
 городецький/V
 городець/abc<
 городещинський/V
-городжений/V ^adjp:pasv:past
+городжений/V ^adjp:pasv:imperf # :past
 городжівський/V
 городилецький/V
 городина/a
@@ -27079,7 +27090,7 @@
 городинський/V
 городиславицький/V
 городиський/V
-городити/ABGHOP :imperf
+городити/ABGHOP0 :imperf
 городищанський/V
 городищансько-косівський/V
 городищенський/V
@@ -27252,14 +27263,14 @@
 гостинчик/efg
 гостити/ABGH :imperf
 гостівський/V
-гострений/V ^adjp:pasv:past
+гострений/V ^adjp:pasv:imperf # :past
 гостренний/V
 гостренький/V
 гострець/e
 гострий/VWZ
 гострильний/V
 гострильник/efg<
-гострити/ABGHOP :imperf
+гострити/ABGHOP0 :imperf
 гостріння/ij
 гострість/l
 гострішати/IGQ :imperf
@@ -27431,7 +27442,7 @@
 граблище/i
 граблі/f
 грабняцький/V
-грабований/V ^adjp:pasv:past
+грабований/V ^adjp:pasv:imperf # :past
 грабовецький/V
 грабовий/V
 грабовський/V
@@ -27456,7 +27467,7 @@
 гравіметричний/V
 гравіметрія/ab
 гравіметр/efg
-гравірований/V ^adjp:pasv:past
+гравірований/V ^adjp:pasv:imperf # :past
 гравірувальний/V
 гравірувальник/efg<
 гравірувальниця/abd<
@@ -27573,7 +27584,7 @@
 гранд-опера/a
 гранд/efgh<
 гранецентрований/V
-граний/V ^adjp:pasv:past
+граний/V ^adjp:pasv:imperf # :past
 гранильний/V
 гранильник/efg<
 гранити/ABGHOP :imperf
@@ -27647,7 +27658,7 @@
 графен/e
 графильний/V
 графиня/abd<
-графин/efg    #> карафа|карафка
+графин/efg
 графити/ABGHOP :imperf
 графіка/ab
 графік/efg
@@ -27663,7 +27674,7 @@
 графіто noun:n:nv
 графіт/ef
 графічний/VW
-графлений/V ^adjp:pasv:past
+графлений/V ^adjp:pasv:imperf # :past
 графлення/i
 графоаналітичний/V
 графобудівник/efg
@@ -27890,7 +27901,7 @@
 гримкотливий/V
 гримливий/V
 гримнути/ABEF :perf
-гримований/V ^adjp:pasv:past
+гримований/V ^adjp:pasv:imperf # :past
 гримонути/A :perf
 гримотання/i
 гримотати/AGO :imperf
@@ -27900,7 +27911,7 @@
 гримувальний/V
 гримувальня/ab
 гримування/ij
-гримувати/ABGHOP :imperf
+гримувати/ABGHOP0 :imperf
 гримучий/V
 гримучортутний/V
 грим'яцький/V
@@ -27965,7 +27976,7 @@
 грім/ab
 грінка/ab
 грінченківський/V
-грітий/V ^adjp:pasv:past
+грітий/V ^adjp:pasv:imperf # :past
 гріти/IJGHQR :imperf
 гріховний/VW
 гріховність/lm
@@ -28017,7 +28028,7 @@
 грозяно adv
 громада/abd
 громаддя/i
-громаджений/V ^adjp:pasv:past
+громаджений/V ^adjp:pasv:imperf # :past
 громадження/i
 громадина/ab
 громадити/ABGHOP :imperf
@@ -28191,7 +28202,7 @@
 група/ab
 групівщина/a
 групка/ab
-групований/V ^adjp:pasv:past
+групований/V ^adjp:pasv:imperf # :past
 груповий/V
 груповод/efgh<
 групоїд/efg
@@ -28475,7 +28486,7 @@
 гумнищанський/V
 гумоазбестовий/V
 гумоасфальтовий/V
-гумований/V ^adjp:pasv:past
+гумований/V ^adjp:pasv:imperf # :past
 гумовий/V
 гумовик/efg<
 гумовотехнічний/V
@@ -28496,7 +28507,7 @@
 гумотехнічний/V
 гумофос/e
 гумування/i
-гумувати/ABGHOP :imperf
+гумувати/ABGHOP0 :imperf
 гумусний/V
 гумусовий/V
 гумусоутворення/i
@@ -28778,11 +28789,11 @@
 ґанок/ab
 ґаночок/efg
 ґара/ab
-ґарований/V ^adjp:pasv:past
+ґарований/V ^adjp:pasv:imperf # :past
 ґарувати/AGO :imperf
 ґатунок/ab
 ґвалтівник/efg<
-ґвалтований/V ^adjp:pasv:past
+ґвалтований/V ^adjp:pasv:imperf # :past
 ґвалтовний/VW
 ґвалтування/ij
 ґвалтувати/ABGHOP :imperf
@@ -28852,8 +28863,8 @@
 ґратка/ab
 ґратковий/V
 ґратниця/ab
-ґратований/V ^adjp:pasv:past
-ґратувати/ABGHOP :imperf
+ґратований/V ^adjp:pasv:imperf # :past
+ґратувати/ABGHOP0 :imperf
 ґратчастий/V
 ґречний/VW
 ґречність/lmZ
@@ -28863,7 +28874,7 @@
 ґрунтець/ac
 ґрунтобетонний/V
 ґрунтобетон/ef
-ґрунтований/V ^adjp:pasv:past
+ґрунтований/V ^adjp:pasv:imperf # :past
 ґрунтовий/V
 ґрунтовирівнювач/efg
 ґрунтовка/ab
@@ -28893,7 +28904,7 @@
 ґрунтувальний/V
 ґрунтувальник/efg<
 ґрунтування/ij
-ґрунтувати/ABGHOP :imperf
+ґрунтувати/ABGHOP0 :imperf
 ґрунт/ef
 ґрунь/i
 ґудзикарка/abd<
@@ -121587,10 +121598,17 @@
 утопія/ab
 уторник/eg
 уторниця/ab
+уторувати/A0 :perf
 утор/efg
 уточина/ab
-уточнити/ABEF0 :perf
+уточнений/V ^adjp:pasv:perf # :past
+уточнення/ij
+уточнити/AB0 :perf
+уточнювальний/V
+уточнювання/i
+уточнювати/ABGHOP :imperf
 уточнювач/efg
+уточняти/IJGHQR :imperf
 утраквіст/efgh<
 утреня/a
 утриманець/abc<
