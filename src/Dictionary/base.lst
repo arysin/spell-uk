@@ -11723,6 +11723,7 @@
 бутафорний/V
 бутафорський/V
 бутафор/efg
+бутельований/V
 бутель/abc
 бутербродик/e
 бутербродний/V
@@ -16662,7 +16663,7 @@
 висалювання/ij
 висалювати/AGO :imperf
 висапаний/V ^adjp:pasv:perf # :past
-висапати/IJЦ :perf
+висапати/IJW :perf
 висапувати/AGO :imperf
 висварений/V ^adjp:pasv:perf # :past
 висварити/AB0 :perf
@@ -19294,7 +19295,7 @@
 відпрацювати/AB0 :perf
 відпрепарований/V ^adjp:pasv:perf # :past
 відпрепарувати/AB0 :perf
-відпресований/V ^adjp:pasv:past
+відпресований/V ^adjp:pasv:perf # :past
 відпресовувати/ABGHOP :imperf
 відпресувати/AB0 :perf
 відпровадження/i
@@ -23178,7 +23179,7 @@
 вшитий/VX ^adjp:pasv:perf # :past
 вшити/IJ2X :perf
 вшкварити/A0X :perf
-вшляхетнений/V ^adjp:pasv:past
+вшляхетнений/V ^adjp:pasv:perf # :past
 вшляхетнити/AB0 :perf
 вштовхнути/AEX :perf
 вштовхування/iX
@@ -28927,7 +28928,7 @@
 давальний/V
 давальник/efg<
 давальницький/V
-даваний/V ^adjp:pasv:past
+даваний/V ^adjp:pasv:imperf # :past
 даванка/ab
 давання/ij
 давати/ABGHOP :imperf
@@ -28947,7 +28948,7 @@
 давити/ABEFGHOP0 :imperf
 давкий/V
 давкотня/a :np:rare
-давлений/V ^adjp:pasv:past
+давлений/V ^adjp:pasv:imperf # :past
 давлення/i
 давнезний/V
 давнеколишній/V :rare
@@ -29090,7 +29091,7 @@
 дамочка/abd<
 дамський/V
 данайський/V
-даний/V ^adjp:pasv:past
+даний/V ^adjp:pasv:perf # :past
 данилівський/V
 данилківський/V
 даниловецький/V
@@ -29829,9 +29830,9 @@
 дебальцівський/V
 дебаркадер/efg
 дебати/f
-дебатований/V ^adjp:pasv:past
+дебатований/V ^adjp:pasv:imperf # :past
 дебатування/i
-дебатувати/ABGHOP :imperf
+дебатувати/ABGHOP0 :imperf
 дебеленькуватий/V :rare
 дебелий/V
 дебеління/i
@@ -30009,7 +30010,8 @@
 деескалація/a
 деестетизація/a :np
 деетимологізація/a
-деетимологізований/V ^adjp:pasv:past
+деетимологізований/V ^adjp:pasv:imperf # :past
+деетимологізуватися/B :perf
 дежавю noun:n:nv
 дезабільє noun:n:nv:np
 дезавуйований/V ^adjp:pasv:imperf:perf # :past
@@ -30081,7 +30083,8 @@
 дезурбанізація/a :np
 дезурбанізм/e
 деідеологізація/a
-деідеологізований/V ^adjp:pasv:past
+деідеологізований/V ^adjp:pasv:imperf:perf # :past
+деідеологізувати/ABGHOP :imperf:perf
 деінде adv:&pron:ind
 деіндивідуалізація/a
 деіндустріалізація/a
@@ -30166,7 +30169,8 @@
 декатрон/efg
 дека/ab
 декваліфікація/a
-декваліфікований/V ^adjp:pasv:past
+декваліфікований/V ^adjp:pasv:imperf # :past
+декваліфікуватися/B :perf
 декельний/V
 декель/eg
 декількамісячний/V
@@ -30176,7 +30180,7 @@
 декламаційний/VW
 декламаційність/l
 декламація/ab
-декламований/V ^adjp:pasv:past
+декламований/V ^adjp:pasv:imperf # :past
 декламування/i
 декламувати/ABGHOP0 :imperf
 декларант/efgh<
@@ -30208,7 +30212,8 @@
 деколорація/a
 деколорований/V ^adjp:pasv:perf
 декольте noun:n:nv
-декольтований/V ^adjp:pasv:past
+декольтований/V ^adjp:pasv:imperf:perf # :past
+декольтувати/ABGHOP0 :imperf:perf
 декомпенсація/ab
 декомпілятор/efg
 декомпозиційний/V
@@ -30281,14 +30286,16 @@
 делікт/ef
 делімітаційний/V
 делімітація/ab
-делімітований/V ^adjp:pasv:imperf:perf
+делімітований/V ^adjp:pasv:imperf:perf # :past
 делімітувати/ABGHOP0 :imperf:perf
 делінквентний/V
 делінквент/efgh<
 делірій/e
 делірія/a :np
 делокалізаційний/V
-делокалізований/V ^adjp:pasv:past
+делокалізований/V ^adjp:pasv:perf # :past
+делокалізовувати/AGO :imperf
+делокалізувати/A0 :perf
 делькредере noun:n:nv
 дельта-деревина/a
 дельта-залізо/i
@@ -30391,15 +30398,15 @@
 демонетизація/a
 демонізація/a
 демонізм/ef
-демонізований/V ^adjp:pasv:past
-демонізувати/ABGHOP :imperf
+демонізований/V ^adjp:pasv:imperf:perf # :past
+демонізувати/ABGHOP0 :imperf:perf
 демонічний/VW
 демонічність/l
 демонологічний/V
 демонологія/a
 демонополізація/ab
-демонополізований/V ^adjp:pasv:past
-демонополізувати/ABGHOP :imperf
+демонополізований/V ^adjp:pasv:imperf:perf # :past
+демонополізувати/ABGHOP0 :imperf:perf
 демонстрантка/abd<
 демонстрантський/V
 демонстрант/efgh<
@@ -30511,7 +30518,7 @@
 денник/efg
 деномінативний/V
 деномінація/ab
-деномінований/V ^adjp:pasv:past
+деномінований/V ^adjp:pasv:imperf:perf # :past
 денонсація/ab
 денонсований/V ^adjp:pasv:imperf:perf # :past
 денонсування/ij
@@ -30705,7 +30712,7 @@
 держалко/ij
 держално/i
 держальце/i
-держаний/VZ ^adjp:pasv:past
+держаний/VZ ^adjp:pasv:imperf # :past
 держанівський/V
 держання/ij
 держанський/V
@@ -30906,9 +30913,9 @@
 десегрегація/ab
 десенсибілізаційний/V
 десенсибілізація/a
-десенсибілізований/V ^adjp:pasv:past
+десенсибілізований/V ^adjp:pasv:imperf:perf # :past
 десенсибілізувальний/V
-десенсибілізувати/AGO :imperf
+десенсибілізувати/AGO0 :imperf:perf
 десертний/V
 десерт/ef
 десигнат/eg
@@ -31594,7 +31601,7 @@
 диктатура/ab
 диктат/ef
 диктіосома/ab
-диктований/V ^adjp:pasv:past
+диктований/V ^adjp:pasv:imperf # :past
 диктовий/V
 дикторка/abd<
 дикторський/V
@@ -31759,7 +31766,8 @@
 дипломний/V
 дипломник/efg<
 дипломниця/abd<
-дипломований/V ^adjp:pasv:past
+дипломований/V ^adjp:pasv:imperf:perf # :past
+дипломувати/ABGHOP0 :imperf:perf
 диплом/efg
 диплостемонний/V
 дипмісія/ab
@@ -31816,7 +31824,7 @@
 дисгормональний/V
 дисектор/efg
 дисемінація/a
-дисемінований/V ^adjp:pasv:past
+дисемінований/V ^adjp:pasv:perf # :past
 дисертабельний/V
 дисертантка/abd<
 дисертант/efgh<
@@ -32245,7 +32253,7 @@
 діахронічний/V
 діахронія/a
 діахронний/V
-дібраний/V ^adjp:pasv:past
+дібраний/V ^adjp:pasv:perf # :past
 дібрати/MW :perf
 дібрівський/V
 діброва/ab
@@ -32334,7 +32342,7 @@
 діетиловий/V
 дієвий/VW
 дієвідміна/ab
-дієвідмінюваний/V ^adjp:pasv:past
+дієвідмінюваний/V ^adjp:pasv:imperf # :past
 дієвідмінювання/i
 дієвідмінювати/ABGHOP :imperf
 дієвість/lmZ
@@ -32373,7 +32381,7 @@
 дієцезійний/V
 дієцезія/ab
 діжа/ab
-діжданий/V ^adjp:pasv:past
+діжданий/V ^adjp:pasv:perf # :past
 діждати/ABW :perf
 діжечка/ab
 діжистий/V
@@ -32403,8 +32411,8 @@
 дійсно adv
 дійство/ij
 дійти/MN :perf
-дійшлий/VZ ^adjp:actv:perf
-ділений/V ^adjp:pasv:past
+дійшлий/VZ ^adjp:actv:perf # :past
+ділений/V ^adjp:pasv:imperf # :past
 ділениця/a
 ділення/ij
 ділечко/i
@@ -32485,7 +32493,7 @@
 діснеївський/V
 діставання/ij
 діставати/ABGHOP :imperf
-дістаний/V ^adjp:pasv:past
+дістаний/V ^adjp:pasv:perf # :past
 дістання/i
 дістати/KL :perf
 дітвак/efg<
@@ -32498,7 +32506,7 @@
 дітки/b<
 діткливий/VW
 діткливість/l
-діткнутий/V ^adjp:pasv:past
+діткнутий/V ^adjp:pasv:perf # :past
 діткнути/ABEF2 :perf
 дітковецький/V
 дітлахи/f<
@@ -32581,7 +32589,7 @@
 доатомний/V
 добавити/ABCD0 :perf
 добавка/ab
-добавлений/V ^adjp:pasv:past
+добавлений/V ^adjp:pasv:perf # :past
 добазікатися/J :perf
 добалакати/IJ :perf
 добалакувати/ABGHOP :imperf
@@ -32596,14 +32604,14 @@
 добирати/IJGHQR :imperf
 добирачка/abd<
 добирач/efg<
-добитий/VZ ^adjp:pasv:past
+добитий/VZ ^adjp:pasv:perf # :past
 добити/IJ2 :perf
 добич/i
 добігатися/J :perf
 добігати/IGQ :imperf
 добігти/A :perf
-добілений/V ^adjp:pasv:past
-добілити/A :perf
+добілений/V ^adjp:pasv:perf # :past
+добілити/AB0 :perf
 добілювання/i
 добілювати/ABGHOP :imperf
 добіляти/IJGHQR :imperf
@@ -32619,7 +32627,7 @@
 добовий/V
 доборотися/B :perf
 добощівський/V
-добраний/V ^adjp:pasv:past
+добраний/V ^adjp:pasv:perf # :past
 добраничівський/V
 добраніч excl
 добрати/ABW :perf
@@ -32752,7 +32760,7 @@
 добрячий/V
 добрячість/l
 добрящий/V :coll
-добуваний/V ^adjp:pasv:past
+добуваний/V ^adjp:pasv:imperf # :past
 добуваність/l
 добування/ij
 добувати/IJGHQR :imperf
@@ -32760,7 +32768,7 @@
 добувач/efg<
 добувний/V
 добудитися/B :perf
-добудований/VZ ^adjp:pasv:past
+добудований/VZ ^adjp:pasv:perf # :past
 добудова/ab
 добудовний/V
 добудовник/efg<
@@ -32769,12 +32777,12 @@
 добудування/ij
 добудувати/AB0 :perf
 добуржуазний/V
-добутий/V ^adjp:pasv:past
+добутий/V ^adjp:pasv:perf # :past
 добути/AB2 :perf
 добутливий/V
 добуток/ab
 довага/a
-доважений/V ^adjp:pasv:past
+доважений/V ^adjp:pasv:perf # :past
 доваження/i
 доважити/A0 :perf
 доважка/ab
@@ -32783,18 +32791,18 @@
 доважувати/ABGHOP :imperf
 довалити/AB0 :perf
 довалювати/ABGHOP :imperf
-довантажений/V ^adjp:pasv:past
+довантажений/V ^adjp:pasv:perf # :past
 довантаження/ijZ
 довантажити/AB0 :perf
 довантажування/i
 довантажувати/ABGHOP :imperf
-доварений/VZ ^adjp:pasv:past
+доварений/VZ ^adjp:pasv:perf # :past
 доварити/ABEF0 :perf
 доварювання/i
 доварювати/ABGHOP :imperf
 довбальний/V
 довбальник/efg<
-довбаний/V ^adjp:pasv:past
+довбаний/V ^adjp:pasv:imperf # :past
 довбанка/ab
 довбання/ij
 довбаночка/ab
@@ -32858,7 +32866,7 @@
 довгогривий/V
 довгодзьобий/V
 довго-довго adv
-довгожданий/V ^adjp:pasv:past
+довгожданий/V
 довгоживучий/V
 довгожителька/abd<
 довгожительство/i
@@ -32915,16 +32923,16 @@
 довгуватий/V
 довгунець/ac
 довгунівський/V
-доведений/VZ ^adjp:pasv:past
+доведений/VZ ^adjp:pasv:perf # :past
 доведеність/lZ
 доведення/ij
-довезений/V ^adjp:pasv:past
+довезений/V ^adjp:pasv:perf # :past
 довезення/i
 довезти/A0 :perf
 довербальний/V
 довередуватися/B :perf
 доверху adv
-довершений/VZ ^adjp:pasv:past
+довершений/VZ ^adjp:pasv:perf # :past
 довершеність/lmZ
 довершення/ij
 довершити/ABEF0 :perf
@@ -32963,7 +32971,7 @@
 довільність/lm
 довінчати/IW :perf
 довіра/aZ
-довірений/V ^adjp:pasv:past
+довірений/V ^adjp:pasv:perf # :past
 довіреність/lm
 довірення/i
 довірителька/abd<
@@ -32980,8 +32988,8 @@
 довір'я/iZ
 довічний/VW
 довічність/l
-довішаний/V ^adjp:pasv:past
-довішати/I :perf
+довішаний/V ^adjp:pasv:perf # :past
+довішати/IW :perf
 довішувати/AGO :imperf
 довіювання/i
 довіювати/ABGHOP :imperf
@@ -33006,7 +33014,7 @@
 доволікати/IJGHQR :imperf
 доволі adv
 доволокти/AB :perf
-доволочений/V ^adjp:pasv:past
+доволочений/V ^adjp:pasv:perf # :past
 доволочити/AB0 :perf
 доволочування/i
 доволочувати/ABGHOP :imperf
@@ -33018,7 +33026,7 @@
 довшання/i
 довшати/IGQ :imperf
 довший/VY
-дов'язаний/V ^adjp:pasv:past
+дов'язаний/V ^adjp:pasv:perf # :past
 дов'язати/ABW :perf
 дов'язування/i
 дов'язувати/ABGHOP :imperf
@@ -33030,7 +33038,7 @@
 догадуватися/BHP :imperf
 догана/ab
 доганяти/IGQ :imperf
-догартований/V ^adjp:pasv:past
+догартований/V ^adjp:pasv:perf # :past
 догартовування/i
 догартовувати/ABGHOP :imperf
 догартування/i
@@ -33038,7 +33046,7 @@
 догасати/IGQ :imperf
 догаснути/A :perf
 догвинтити/AB0 :perf
-догвинчений/V ^adjp:pasv:past
+догвинчений/V ^adjp:pasv:perf # :past
 догвинчування/i
 догвинчувати/ABGHOP :imperf
 догідливий/VW
@@ -33060,15 +33068,15 @@
 доглядіти/AB :perf
 доглядовий/V
 догляд/efZ
-доглянутий/VZ ^adjp:pasv:past:&adj
+доглянутий/VZ ^adjp:pasv:perf:&adj # :past
 доглянути/AC2 :perf
 доглянутість/l
 доглянутіший/VY
 догмарівський/V
 догматизація/a
 догматизм/e
-догматизований/V ^adjp:pasv:past:&adj
-догматизувати/ABGHOP :imperf
+догматизований/V ^adjp:pasv:imperf:perf:&adj # :past
+догматизувати/ABGHOP0 :imperf:perf
 догматик/efg<
 догматичний/VW
 догматичність/l
@@ -33084,7 +33092,7 @@
 договірно-правовиий/V
 договірно-правовий/V
 договір/ab
-договорений/VZ ^adjp:pasv:past
+договорений/VZ ^adjp:pasv:perf # :past
 договореність/lmZ
 договорити/ABEF0 :perf
 договоровий/V
@@ -33097,7 +33105,7 @@
 догоджувати/AGO :imperf
 догодити/AB :perf
 догодний/V :rare
-догодований/V ^adjp:pasv:past
+догодований/V ^adjp:pasv:perf # :past
 догодовування/i
 догодовувати/AGO :imperf
 догодувати/A0 :perf
@@ -33114,20 +33122,20 @@
 догоріти/A :perf
 догоряння/i
 догоряти/IGQ :imperf
-догострений/V ^adjp:pasv:past
-догострити/A0 :perf
+догострений/V ^adjp:pasv:perf # :past
+догострити/AB0 :perf
 догострювання/i
 догострювати/AGO :imperf
 догоювати/ABGH :imperf
 дограбуватися/B :perf
 догравання/ij
 догравати/ABGHOP :imperf
-дограний/V ^adjp:pasv:past
+дограний/V ^adjp:pasv:perf # :past
 дограти/IJW :perf
 догребти/AB :perf
 догризання/i
 догризати/IGQ :imperf
-догризений/VZ ^adjp:pasv:past
+догризений/VZ ^adjp:pasv:perf # :past
 догризти/A0 :perf
 догрібання/i
 догрібати/IJGHQR :imperf
@@ -33141,10 +33149,10 @@
 догулювати/ABGHOP :imperf
 догуляти/IJW :perf
 дог/efg<>
-додаваний/V ^adjp:pasv:past
+додаваний/V ^adjp:pasv:imperf # :past
 додавання/ij
 додавати/ABGHOP :imperf
-доданий/VZ ^adjp:pasv:past
+доданий/VZ ^adjp:pasv:perf # :past
 додання/ij
 доданок/abc
 додати/KLW :perf
@@ -33161,7 +33169,7 @@
 додекафонічність/l
 додекафонія/a
 додемісія/a
-додержаний/V ^adjp:pasv:past
+додержаний/V ^adjp:pasv:perf # :past
 додержання/i
 додержати/ABW :perf
 додержування/i
@@ -33190,7 +33198,7 @@
 додоювання/i
 додоювати/ABGHOP :imperf
 додрукарський/V
-додрукований/V ^adjp:pasv:past
+додрукований/V ^adjp:pasv:perf # :past
 додруковування/ij
 додруковувати/ABGHOP :imperf
 додрукування/ij
@@ -33198,7 +33206,7 @@
 додумати/IJ :perf
 додумувати/ABGHOP :imperf
 доевтектоїдний/V
-доєний/V ^adjp:pasv:past
+доєний/V ^adjp:pasv:imperf # :past
 дожартуватися/B :perf
 дожевріти/I :perf
 дожерти/A :perf
@@ -33215,7 +33223,7 @@
 дожити/IJ :perf
 дожиття/i
 дожів/V
-дожований/V ^adjp:pasv:past
+дожований/V ^adjp:pasv:perf # :past
 дожовтневий/V
 дожовування/i
 дожовувати/AGO :imperf
@@ -33223,7 +33231,7 @@
 дозавантаження/i
 дозаписування/i
 дозаправити/AB0 :perf
-дозаправлений/V ^adjp:pasv:past
+дозаправлений/V ^adjp:pasv:perf # :past
 дозаправлення/ij
 дозаправляння/i
 дозаправляти/IJGHQR :imperf
@@ -33236,7 +33244,7 @@
 дозвілля/i
 дозвільний/VW
 дозвіл/ab
-дозволений/VZ ^adjp:pasv:past
+дозволений/VZ ^adjp:pasv:perf # :past
 дозволеність/l
 дозволенний/V
 дозволити/AC0 :perf
@@ -33282,7 +33290,7 @@
 доісторичний/V
 доісторія/a
 доїдати/IQZ :imperf
-доїдений/V ^adjp:pasv:past
+доїдений/V ^adjp:pasv:perf # :past
 доїдливий/VW
 доїжджати/IGQ :imperf
 доїздити/AB :imperf
@@ -33300,13 +33308,13 @@
 дойчмарка/ab
 докажчик/efg<
 докажчиця/abd<
-доказаний/VZ ^adjp:pasv:past
+доказаний/VZ ^adjp:pasv:perf # :past
 доказаність/l
 доказати/ABW :perf
 доказовий/VZ
 доказовість/lm
 доказово adv
-доказуваний/V ^adjp:pasv:past
+доказуваний/V ^adjp:pasv:imperf # :past
 доказуваність/l
 доказування/ij
 доказувати/AGO :imperf
@@ -33315,17 +33323,18 @@
 докапіталістичний/V
 докачувати/ABGHOP :imperf
 доквасити/AB0 :perf
-доквашений/V ^adjp:pasv:past
+доквашений/V ^adjp:pasv:perf # :past
 доквашування/i
 доквашувати/ABGHOP :imperf
 докембрійський/V
 докембрій/e
 докер/efg
-докиданий/V ^adjp:pasv:past
-докидати/IGQ :imperf
-докинений/V ^adjp:pasv:past
-докинутий/V ^adjp:pasv:past
-докинути/AC2 :perf
+докиданий/V ^adjp:pasv:perf # :past
+докидати/IGQ :imperf:xp1 # докида́ти
+докидати/IW :perf:xp2 # доки́дати
+докинений/V ^adjp:pasv:perf # :past
+докинутий/V ^adjp:pasv:perf # :past
+докинути/AC02 :perf
 докипання/i
 докипати/IGQ :imperf
 докипіти/A :perf
@@ -33334,7 +33343,7 @@
 докиснути/A :perf
 докінчання/i
 докінчати/IGQ :imperf
-докінчений/V ^adjp:pasv:past
+докінчений/V ^adjp:pasv:perf # :past
 докінчення/i
 докінчити/ABEF0 :perf
 докінчувати/ABGHOP :imperf
@@ -33346,7 +33355,7 @@
 докір/ab
 докладання/ij
 докладати/IJGHQR :imperf
-докладений/V ^adjp:pasv:past
+докладений/V ^adjp:pasv:perf # :past
 докладний/VW
 докладність/l
 докладніший/VY
@@ -33354,9 +33363,9 @@
 докласовий/V
 докласовість/l
 докласти/MN3 :perf
-доклеєний/V ^adjp:pasv:past
+доклеєний/V ^adjp:pasv:perf # :past
 доклеїти/A0 :perf
-доклепаний/V ^adjp:pasv:past
+доклепаний/V ^adjp:pasv:perf # :past
 доклепати/IW :perf
 доклепування/i
 доклепувати/ABGHOP :imperf
@@ -33367,19 +33376,19 @@
 докльовування/i
 докльовувати/AGO :imperf
 доклювати/A0 :perf
-докований/V ^adjp:pasv:past
+докований/V ^adjp:pasv:perf # :past
 доковий/V
 доковування/i
 доковувати/ABGHOP :imperf
-доколений/V ^adjp:pasv:past
-доколоти/A02 :perf
+доколений/V ^adjp:pasv:perf # :past
+доколоти/A0 :perf
 доколумбовий/V
 доколупати/IJW :perf
 доколупування/i
 доколупувати/ABGHOP :imperf
 доколювання/i
 доколювати/AGO :imperf
-доконаний/VZ ^adjp:pasv:past
+доконаний/VZ ^adjp:pasv:perf # :past
 доконаність/l
 доконати/IW :perf
 доконечний/VW
@@ -33387,12 +33396,12 @@
 доконопачування/i
 доконопачувати/ABGHOP :imperf
 доконче adv
-докопаний/V ^adjp:pasv:past
+докопаний/V ^adjp:pasv:perf # :past
 докопати/IJW :perf
 докоптити/AB0 :perf
 докопування/i
 докопувати/ABGHOP :imperf
-докопчений/V ^adjp:pasv:past
+докопчений/V ^adjp:pasv:perf # :past
 докопчування/i
 докопчувати/ABGHOP :imperf
 докорити/A :perf
@@ -33405,11 +33414,11 @@
 докотити/AB0 :perf
 докочування/i
 докочувати/ABGHOP :imperf
-докошений/V ^adjp:pasv:past
+докошений/V ^adjp:pasv:perf # :past
 докошування/i
 докошувати/ABGHOP :imperf
 док-панель/ij
-докреслений/V ^adjp:pasv:past
+докреслений/V ^adjp:pasv:perf # :past
 докреслити/AB0 :perf
 докреслювання/i
 докреслювати/ABGHOP :imperf
@@ -33417,12 +33426,12 @@
 докризовий/V
 докрити/I2 :perf
 докричатися/B :perf
-докроєний/V ^adjp:pasv:past
+докроєний/V ^adjp:pasv:perf # :past
 докроїти/A0 :perf
 докроювання/i
 докроювати/ABGHOP :imperf
 докрутити/AB0 :perf
-докручений/V ^adjp:pasv:past
+докручений/V ^adjp:pasv:perf # :past
 докручування/i
 докручувати/ABGHOP :imperf
 докторальний/V
@@ -33461,12 +33470,12 @@
 докупати/IGQ :imperf
 докупити/ABEF0 :perf
 докупи adv
-докуплений/V ^adjp:pasv:past
+докуплений/V ^adjp:pasv:perf # :past
 докупляти/IJGHQR :imperf
 докуповування/i
 докуповувати/ABGHOP :imperf
 докупувати/AGO :imperf
-докурений/V ^adjp:pasv:past
+докурений/V ^adjp:pasv:perf # :past
 докурити/ABEF0 :perf
 докурювання/i
 докурювати/ABGHOP :imperf
@@ -33490,7 +33499,7 @@
 доладніший/VY
 доладно adv
 долазити/AG :imperf
-доламаний/V ^adjp:pasv:past
+доламаний/V ^adjp:pasv:perf # :past
 доламати/IW :perf
 доламування/i
 доламувати/ABGHOP :imperf
@@ -33513,8 +33522,8 @@
 долетіти/A :perf
 доливання/ij
 доливати/IJGHQR :imperf
-долизаний/V ^adjp:pasv:past
-долизати/A :perf
+долизаний/V ^adjp:pasv:perf # :past
+долизати/AW :perf
 долизування/i
 долизувати/ABGHOP :imperf
 долинати/IGQ :imperf
@@ -33532,7 +33541,7 @@
 долинчастий/V :rare
 долинчатий/V :rare
 долинянський/V
-долитий/V ^adjp:pasv:past
+долитий/V ^adjp:pasv:perf # :past
 долити/IJ2 :perf
 долівка/ab
 долівковий/V
@@ -33544,7 +33553,7 @@
 долілиць adv
 долініж adv
 доліпити/AB0 :perf
-доліплений/V ^adjp:pasv:past
+доліплений/V ^adjp:pasv:perf # :past
 доліплювання/i
 доліплювати/ABGHOP :imperf
 долітати/IGQ :imperf
@@ -33555,7 +33564,7 @@
 доліхоцефалічний/V
 доліхоцефалія/a
 доліхоцефал/efgh<
-долічений/V ^adjp:pasv:past
+долічений/V ^adjp:pasv:perf # :past
 долічерева adv
 долічити/AB0 :perf
 долічування/i
@@ -33574,7 +33583,7 @@
 доломітний/V
 доломітовий/V
 доломіт/ef
-доломлений/V ^adjp:pasv:past
+доломлений/V ^adjp:pasv:perf # :past
 доломлювання/i
 доломлювати/ABGHOP :imperf
 долом adv
@@ -33588,7 +33597,7 @@
 долото/io
 долучання/i
 долучати/IJGHQR :imperf
-долучений/V ^adjp:pasv:past
+долучений/V ^adjp:pasv:perf # :past
 долучення/ij
 долучити/ABEF0 :perf
 долущити/AB0 :perf
@@ -33605,7 +33614,7 @@
 домазати/AW :perf
 домазування/i
 домазувати/ABGHOP :imperf
-домальований/V ^adjp:pasv:past
+домальований/V ^adjp:pasv:perf # :past
 домальовування/ij
 домальовувати/ABGHOP :imperf
 домалювати/AB0 :perf
@@ -33620,12 +33629,12 @@
 домашлинський/V
 домашній/V
 домашність/l
-домащений/V ^adjp:pasv:past
+домащений/V ^adjp:pasv:perf # :past
 домащування/i
 домащувати/ABGHOP :imperf
 дома adv
 домбра/ab
-домелений/V ^adjp:pasv:past
+домелений/V ^adjp:pasv:perf # :past
 домелювання/i
 домелювати/ABGHOP :imperf
 доменний/V
@@ -33644,7 +33653,7 @@
 домислити/AB0 :perf
 домислювання/i
 домислювати/ABGHOP :imperf
-домитий/VZ ^adjp:pasv:past
+домитий/VZ ^adjp:pasv:perf # :past
 домити/IJ2 :perf
 домище/i
 домівка/ab
@@ -33670,16 +33679,16 @@
 домірно adv
 домірювання/i
 домірювати/ABGHOP :imperf
-доміряний/V ^adjp:pasv:past
-доміряти/IGQ :imperf
-доміряти/IW :perf
+доміряний/V ^adjp:pasv:perf # :past
+доміряти/IGQ :imperf:xp1 # доміря́ти
+доміряти/IW :perf:xp2 # домі́ряти
 домісити/ABEF0 :perf
 домістикація/a :np
 домітання/i
 домітати/IGQ :imperf
-домішаний/VW ^adjp:pasv:past
+домішаний/VW ^adjp:pasv:perf # :past
 домішати/IJW :perf
-домішений/V ^adjp:pasv:past
+домішений/V ^adjp:pasv:perf # :past
 домішка/ab
 домішковий/V
 домішування/ij
@@ -33711,7 +33720,7 @@
 домовласницький/V
 домовласниця/abd<
 домовласничин/V
-домовлений/V ^adjp:pasv:past
+домовлений/V ^adjp:pasv:perf # :past
 домовленість/lmZ
 домовлення/i
 домовляти/IJGHQR :imperf
@@ -33720,10 +33729,10 @@
 домогосподарство/ij
 домогтися/B :perf
 домолитися/B :perf
-домолотий/V ^adjp:pasv:past
+домолотий/V ^adjp:pasv:perf # :past
 домолотити/A0 :perf
 домолоти/KLW :perf
-домолочений/V ^adjp:pasv:past
+домолочений/V ^adjp:pasv:perf # :past
 домолочування/i
 домолочувати/ABGHOP :imperf
 домонополістичний/V
@@ -33737,9 +33746,9 @@
 домосід/efgh<
 домостити/AB0 :perf
 домостроївський/V :rare
-домотаний/V ^adjp:pasv:past
+домотаний/V ^adjp:pasv:perf # :past
 домотати/IJW :perf
-домотканий/VZ ^adjp:pasv:past
+домотканий/VZ
 домотканський/V
 домотування/i
 домотувати/ABGHOP :imperf
@@ -33759,16 +33768,16 @@
 домування/i
 домувати/AGO :imperf
 домудруватися/B :perf
-домурований/V ^adjp:pasv:past
+домурований/V ^adjp:pasv:perf # :past
 домуровування/i
 домуровувати/ABGHOP :imperf
-домурувати/AB :perf
+домурувати/AB0 :perf
 домусульманський/V
 домучити/ABCD :perf
 домучувати/ABGHOP :imperf
 домуштрувати/AB0 :perf
 домчати/AB :perf
-донарахований/V ^adjp:pasv:past
+донарахований/V ^adjp:pasv:perf # :past
 донарахування/ij
 донаторський/V
 донауковий/V
@@ -33778,7 +33787,7 @@
 донезмоги adv
 донезмогу adv
 доненька/abd<
-донесений/VZ ^adjp:pasv:past
+донесений/VZ ^adjp:pasv:perf # :past
 донесення/ijZ
 донестися/J :perf
 донести/I0 :perf
@@ -33792,7 +33801,7 @@
 донжуанство/ij
 донжуанський/V
 донжуан/efgh<
-донизаний/V ^adjp:pasv:past
+донизаний/V ^adjp:pasv:perf # :past
 донизати/ABW :perf
 донизування/i
 донизувати/ABGHOP :imperf
@@ -33816,7 +33825,7 @@
 доносити/ACGO :imperf
 доносництво/i
 донос/ef
-доношений/VZ ^adjp:pasv:past
+доношений/VZ ^adjp:pasv:perf # :past
 доношеність/l
 доношування/i
 доношувати/ABGHOP :imperf
@@ -33835,7 +33844,7 @@
 дообідній/V
 дообідування/i
 дообідувати/AO :imperf
-дообладнаний/V ^adjp:pasv:past
+дообладнаний/V ^adjp:pasv:perf # :past
 дообладнання/ij
 дообладнати/IJW :perf
 дообладнування/ij
@@ -33843,12 +33852,12 @@
 дообпилення/i
 дообрати/ABW :perf
 дообстеження/i
-доодержаний/V ^adjp:pasv:past
+доодержаний/V ^adjp:pasv:perf # :past
 доодержання/i
 доодержати/AW :perf
 доодержування/i
 доодержувати/AGO :imperf
-доозброєний/V ^adjp:pasv:past
+доозброєний/V ^adjp:pasv:perf # :past
 доозброєння/i
 доозброїти/AB0 :perf
 доозброювання/i
@@ -33856,46 +33865,46 @@
 доокола adv
 дооколишній/V
 доопераційний/V
-доопрацьований/VZ ^adjp:pasv:past
+доопрацьований/VZ ^adjp:pasv:perf # :past
 доопрацьовування/i
 доопрацьовувати/AGO :imperf
 доопрацювання/ij
 доопрацювати/AB0 :perf
 доопроцювання/i
-доораний/V ^adjp:pasv:past
+доораний/V ^adjp:pasv:perf # :past
 доорати/ABW :perf
 доорювати/ABGHOP :imperf
 доочистити/A0 :perf
 доочистка/ab
 доочищання/i
 доочищати/IGQ :imperf
-доочищений/V ^adjp:pasv:past
+доочищений/V ^adjp:pasv:perf # :past
 доочищення/ij
 допадатися/JHR :imperf
-допалений/V ^adjp:pasv:past
+допалений/V ^adjp:pasv:perf # :past
 допалити/A0 :perf
 допалювання/i
 допалювати/ABGHOP :imperf
 допантрувати/A :perf
 допануватися/B :perf
 допанькатися/J :perf
-допарений/V ^adjp:pasv:past
+допарений/V ^adjp:pasv:perf # :past
 допарити/AB0 :perf
 допарубкуватися/B :perf
 допарювання/i
 допарювати/ABGHOP :imperf
 допасати/IJGHQR :imperf
-допасований/V ^adjp:pasv:past
+допасований/V ^adjp:pasv:perf # :past
 допасовування/i
 допасовувати/ABGHOP :imperf
 допасти/IJ :perf
-допасувати/A :perf
+допасувати/AB0 :perf
 допатрати/I :perf
 допатрування/i
 допатрувати/AG :imperf
 допаювати/ABGHOP :imperf
 допаювати/A :perf
-допаяний/V ^adjp:pasv:past
+допаяний/V ^adjp:pasv:perf # :past
 допаяти/AW :perf
 допевнитися/B :perf
 допевнюватися/BHP :imperf
@@ -33904,7 +33913,7 @@
 допенсійний/V
 доперебудовний/V
 допетровський/V
-допечений/VZ ^adjp:pasv:past
+допечений/VZ ^adjp:pasv:perf # :past
 допивання/i
 допивати/IJGHQR :imperf
 допильновувати/AGO :imperf
@@ -33914,7 +33923,7 @@
 допиляти/IW :perf
 допинати/IJGHQR :imperf
 допирати/IGQ :imperf
-дописаний/VZ ^adjp:pasv:past
+дописаний/VZ ^adjp:pasv:perf # :past
 дописати/ABW :perf
 дописемний/V
 дописка/ab
@@ -33923,10 +33932,10 @@
 дописувачка/abd<
 дописувач/efg<
 допис/ef
-допитаний/V ^adjp:pasv:past
+допитаний/V ^adjp:pasv:perf # :past
 допитати/IJW :perf
-допитий/VZ ^adjp:pasv:past
-допити/IJ :perf
+допитий/VZ ^adjp:pasv:perf # :past
+допити/IJ2 :perf
 допитливий/VZ
 допитливість/lm
 допитливіший/VY
@@ -33948,15 +33957,15 @@
 доплата/ab
 доплатити/AE0 :perf
 доплатний/V
-доплачуваний/V ^adjp:pasv:past
+доплачуваний/V ^adjp:pasv:imperf # :past
 доплачування/i
 доплачуватися/BHP :imperf
-доплачувати/AGO :imperf
+доплачувати/AGO0 :imperf
 доплентати/IJ :perf
 доплеровський/V
 доплеснути/A :perf
-доплести/AB2 :perf
-доплетений/V ^adjp:pasv:past
+доплести/AB1 :perf
+доплетений/V ^adjp:pasv:perf # :past
 допливати/IGQ :imperf
 допливти/A :perf
 доплив/e
@@ -33984,7 +33993,7 @@
 доповідно adv
 доповідь/ij
 доповісти/M :perf
-доповнений/V ^adjp:pasv:past
+доповнений/V ^adjp:pasv:perf # :past
 доповнення/ij
 доповнити/ABEF0 :perf
 доповнювальний/V
@@ -33995,7 +34004,7 @@
 доповняльність/l
 доповняти/IJGHQR :imperf
 допоїти/A :perf
-дополений/V ^adjp:pasv:past
+дополений/V ^adjp:pasv:perf # :past
 дополіскування/i
 дополіскувати/ABGHOP :imperf
 допологовий/V
@@ -34019,12 +34028,12 @@
 доправлення/i
 доправляння/i
 доправляти/IJGHQR :imperf
-допрасований/V ^adjp:pasv:past
+допрасований/V ^adjp:pasv:perf # :past
 допрасовування/i
 допрасовувати/ABGHOP :imperf
 допрасувати/AB0 :perf
 допрати/AW :perf
-допрацьований/V ^adjp:pasv:past
+допрацьований/V ^adjp:pasv:perf # :past
 допрацьовування/i
 допрацьовувати/ABGHOP :imperf
 допрацювання/i
@@ -34038,14 +34047,14 @@
 допроваджувати/AGO :imperf
 допровадити/A0 :perf
 допродавати/ABGH :imperf
-допроданий/V ^adjp:pasv:past
+допроданий/V ^adjp:pasv:perf # :past
 допродати/IW :perf
 допроростковий/V
 допроситися/B :perf
 допрошувати/ABGHOP :imperf
 допрядання/i
 допрядати/IGQ :imperf
-допрядений/V ^adjp:pasv:past
+допрядений/V ^adjp:pasv:perf # :past
 допрясти/M3 :perf
 допускальний/V
 допускання/ij
@@ -34060,7 +34069,7 @@
 допустовість/lm
 допустово-підсилювальний/V
 допустувати/AB :perf
-допущений/V ^adjp:pasv:past
+допущений/V ^adjp:pasv:perf # :past
 допущенний/V
 допущенність/l
 допущення/ijZ
@@ -34076,7 +34085,7 @@
 дорадчий/V
 дорадянський/V
 доразу adv
-дорахований/V ^adjp:pasv:past
+дорахований/V ^adjp:pasv:perf # :past
 дораховування/i
 дораховувати/ABGHOP :imperf
 дорахувати/AB0 :perf
@@ -34092,7 +34101,7 @@
 доривання/i
 дориватися/JHR :imperf
 доривати/IGQ :imperf
-дорисований/V ^adjp:pasv:past
+дорисований/V ^adjp:pasv:perf # :past
 дорисовування/i
 дорисовувати/ABGHOP :imperf
 дорисувати/A0 :perf
@@ -34107,9 +34116,9 @@
 доріженька/ab
 доріжечка/ab
 доріжка/ab
-дорізаний/V ^adjp:pasv:past
-дорізати/ABW :perf
-дорізати/IJGHQR :imperf
+дорізаний/V ^adjp:pasv:perf # :past
+дорізати/ABW :perf:xp2 # дорі́зати
+дорізати/IJGHQR :imperf:xp1 # доріза́ти
 дорізування/i
 дорізувати/ABGHOP :imperf
 дорійський/V
@@ -34122,7 +34131,7 @@
 доробало/ejh< :+m
 доробити/ABEF0 :perf
 доробка/abZ
-дороблений/V ^adjp:pasv:past
+дороблений/V ^adjp:pasv:perf # :past
 дороблення/i
 доробло/ejh< :+m
 дороблювання/i
@@ -34199,7 +34208,7 @@
 доручальний/V
 доручання/i
 доручати/IJGHQR :imperf
-доручений/V ^adjp:pasv:past
+доручений/V ^adjp:pasv:perf # :past
 доручення/ij
 доручитель/efg<
 доручитися/B :perf
@@ -34207,7 +34216,7 @@
 доручний/V
 досаафівський/V :rare
 досада/ad
-досаджений/V ^adjp:pasv:past
+досаджений/V ^adjp:pasv:perf # :past
 досаджувати/ABGHOP :imperf
 досадити/A0 :perf
 досадливий/VW
@@ -34240,16 +34249,18 @@
 досвітчаний/V
 досвіт/ef
 досвічений/VZ
-досвяткований/V ^adjp:pasv:past
+досвяткований/V ^adjp:pasv:perf # :past
+досвятковувати/A :imperf
+досвяткувати/A :perf
 досередини adv
 досиджувати/ABGHOP :imperf
 досидіти/ABEF :perf
 досилання/ij
 досилати/IJGHQR :imperf
-досипаний/V ^adjp:pasv:past
+досипаний/V ^adjp:pasv:perf # :past
 досипання/i
-досипати/ABW :perf
-досипати/IJGHQR :imperf
+досипати/ABW :perf:xp2 # доси́пати
+досипати/IJGHQR :imperf:xp1 # досипа́ти
 досипка/a
 досипляння/i
 досипляти/IJGHQR :imperf
@@ -34298,7 +34309,7 @@
 дослати/A :perf
 дослівний/VW
 дослівник/eg
-досліджений/VZ ^adjp:pasv:past
+досліджений/VZ ^adjp:pasv:perf # :past
 дослідження/ij
 досліджувальний/V
 досліджуваний/V ^adjp:pasv:imperf # :pres:past
@@ -34325,7 +34336,7 @@
 дослухати/IJ :perf
 дослухування/i
 дослухувати/ABGHOP :imperf
-досмажений/V ^adjp:pasv:past
+досмажений/V ^adjp:pasv:perf # :past
 досмажити/AB0 :perf
 досмажування/i
 досмажувати/ABGHOP :imperf
@@ -34340,7 +34351,7 @@
 досмолювати/ABGHOP :imperf
 доснідати/I :perf
 доснідувати/AO :imperf
-досолений/V ^adjp:pasv:past
+досолений/V ^adjp:pasv:perf # :past
 досолити/AB0 :perf
 досолювання/ij
 досолювати/ABGHOP :imperf
@@ -34348,10 +34359,10 @@
 досоціалістичний/V
 доспатися/J :perf
 доспати/A :perf
-доспіваний/V ^adjp:pasv:past
+доспіваний/V ^adjp:pasv:perf # :past
 доспівання/i
-доспівати/IGQ :imperf
-доспівати/I :perf
+доспівати/IGQ :imperf:xp1 # дозрівати
+доспівати/IW :perf:xp2 # закінчувати співати
 доспівування/i
 доспівувати/AGO :imperf
 доспілий/VZ ^adjp:actv:perf
@@ -34360,7 +34371,7 @@
 доссати/K :perf
 доставити/ABCD0 :perf
 доставка/a
-доставлений/V ^adjp:pasv:past
+доставлений/V ^adjp:pasv:perf # :past
 доставлення/i
 доставляння/ijZ
 доставляти/IJGHQR :imperf
@@ -34407,7 +34418,7 @@
 достригання/i
 достригати/IJGHQR :imperf
 достригти/AB0 :perf
-дострижений/V ^adjp:pasv:past
+дострижений/V ^adjp:pasv:perf # :past
 дострілювання/i
 дострілювати/AGO :imperf
 достріляти/I :perf
@@ -34429,12 +34440,12 @@
 доступ/ef
 достягати/IGQ :imperf
 досудовий/V
-досуканий/V ^adjp:pasv:past
+досуканий/V ^adjp:pasv:perf # :past
 досукати/IW :perf
 досукування/i
 досукувати/AGO :imperf
 досуха adv
-досушений/V ^adjp:pasv:past
+досушений/V ^adjp:pasv:perf # :past
 досушити/ABEF0 :perf
 досушування/i
 досушувати/ABGHOP :imperf
@@ -34448,7 +34459,7 @@
 досягання/i
 досягати/IJGHQR :imperf
 досягнення/ij
-досягнутий/V ^adjp:pasv:past
+досягнутий/V ^adjp:pasv:perf # :past
 досягнути/AE2 :perf
 досягти/M :perf
 досяжний/VZ
@@ -34479,7 +34490,7 @@
 дотерміновість/l
 дотерпіти/AB :perf
 дотерти/AB2 :perf
-дотесаний/V ^adjp:pasv:past
+дотесаний/V ^adjp:pasv:perf # :past
 дотесати/AW :perf
 дотикальний/V
 дотикання/i
@@ -34501,10 +34512,10 @@
 доти adv:&pron:dem
 дотікання/i
 дотікати/IGQ :imperf
-дотісуваний/V ^adjp:pasv:past
+дотісуваний/V ^adjp:pasv:imperf # :past
 дотісування/i
 дотісувати/ABGHOP :imperf
-дотканий/V ^adjp:pasv:past
+дотканий/V ^adjp:pasv:perf # :past
 доткати/IW :perf
 доткливий/V
 доткливість/l
@@ -34519,8 +34530,8 @@
 дотовпитися/B :perf
 дотогочасний/V
 дотопитися/B :perf
-дотопити/A :perf
-дотоплений/V ^adjp:pasv:past
+дотопити/A0 :perf
+дотоплений/V ^adjp:pasv:perf # :past
 дотоплювати/ABGHOP :imperf
 дотоптати/AW :perf
 дотоптування/i
@@ -34532,14 +34543,14 @@
 доторкування/i
 доторкуватися/BHP :imperf
 доторк/ef
-доточений/V ^adjp:pasv:past
+доточений/V ^adjp:pasv:perf # :past
 доточення/i
 доточити/ABEF0 :perf
-доточуваний/V ^adjp:pasv:past
+доточуваний/V ^adjp:pasv:imperf # :past
 доточування/i
 доточувати/ABGHOP :imperf
 дотрансформаційний/V
-дотриманий/V ^adjp:pasv:past
+дотриманий/V ^adjp:pasv:perf # :past
 дотримання/ijZ
 дотримати/IJW :perf
 дотримування/ij
@@ -34552,7 +34563,7 @@
 дотюпати/I :perf
 дотягатися/J :perf
 дотягати/IJGHQR :imperf
-дотягнутий/V ^adjp:pasv:past
+дотягнутий/V ^adjp:pasv:perf # :past
 дотягнути/ABEF2 :perf
 дотягти/MN :perf
 дотягування/i
@@ -34560,13 +34571,13 @@
 дот/ef
 доузгодження/i
 доукомплектація/a
-доукомплектований/V ^adjp:pasv:past
+доукомплектований/V ^adjp:pasv:perf # :past
 доукомплектовування/i
 доукомплектовувати/ABGHOP :imperf
 доукомплектування/ij
 доукомплектувати/AB0 :perf
 доумуватися/B :perf
-доустаткований/V ^adjp:pasv:past
+доустаткований/V ^adjp:pasv:perf # :past
 доустатковування/i
 доустатковувати/ABGHOP :imperf
 доустаткування/i
@@ -34575,7 +34586,7 @@
 доучувати/ABGHOP :imperf
 дофамін/e
 дофантазувати/A0 :perf
-дофарбований/V ^adjp:pasv:past
+дофарбований/V ^adjp:pasv:perf # :past
 дофарбовування/i
 дофарбовувати/ABGHOP :imperf
 дофарбування/i
@@ -34634,13 +34645,13 @@
 дочасу adv
 дочвалати/I :perf
 дочекатися/J :perf
-дочесаний/V ^adjp:pasv:past
+дочесаний/V ^adjp:pasv:perf # :past
 дочесати/ABW :perf
 дочечка/ad<
 дочимчикувати/A :perf
 дочиста adv
 дочистити/A0 :perf
-дочитаний/V ^adjp:pasv:past
+дочитаний/V ^adjp:pasv:perf # :past
 дочитати/IJW :perf
 дочитування/i
 дочитувати/ABGHOP :imperf
@@ -34801,7 +34812,7 @@
 драмстудія/ab
 драмтеатр/ef
 драненький/V
-драний/V ^adjp:pasv:past
+драний/V ^adjp:pasv:imperf # :past
 дранівський/V
 дранка/ab
 дранковий/V
@@ -34821,14 +34832,14 @@
 драпіжницький/V
 драпіжність/l
 драпіка/abd<
-драпірований/V ^adjp:pasv:past
+драпірований/V ^adjp:pasv:imperf # :past
 драпіровка/ab
 драпірувальний/V
 драпірувальник/efg<
 драпірувальниця/abd<
 драпірування/ij
 драпірувати/ABGHOP :imperf
-драпований/V ^adjp:pasv:past
+драпований/V ^adjp:pasv:imperf # :past
 драповий/V
 драпонути/A :perf
 драпрі noun:f:nv
@@ -34899,7 +34910,7 @@
 дренчерний/V
 дренчер/efg
 дрен/eg
-дресований/V ^adjp:pasv:past
+дресований/V ^adjp:pasv:imperf # :past
 дресувальник/efg<
 дресувальниця/abd<
 дресування/ij
@@ -35041,11 +35052,11 @@
 дріб/ab
 дрівця/o
 дріжджі/f
-дріжджований/V ^adjp:pasv:past
+дріжджований/V ^adjp:pasv:imperf # :past
 дріжджовий/V
 дріжджоподібний/V
 дріжджування/i
-дріжджувати/ABGHOP :imperf
+дріжджувати/ABGHOP0 :imperf
 дріжжування/ij
 дрізд/abc<>
 дрік/a-
@@ -35073,11 +35084,11 @@
 дробильно-сортувальний/V
 дробина/ab
 дробинка/ab
-дробити/ABEFGHOP :imperf
+дробити/ABEFGHOP0 :imperf
 дробишівський/V
 дробівниця/ab
 дробіння/i
-дроблений/V ^adjp:pasv:past
+дроблений/V ^adjp:pasv:imperf # :past
 дроблення/ij
 дробний/V
 дробовий/V
@@ -35203,11 +35214,11 @@
 друкарський/V
 друкарчин/V
 друкар/lmq<
-друкований/VZ ^adjp:pasv:past
+друкований/VZ ^adjp:pasv:imperf # :past
 друковний/VZ
 друкувальний/V
 друкування/ij
-друкувати/ABGHOP :imperf
+друкувати/ABGHOP0 :imperf
 друк/efo
 друцький/V
 друшляк/efg
@@ -35261,7 +35272,7 @@
 дубинонька/ab
 дубинський/V
 дубиський/V
-дубити/ABGHOP :imperf
+дубити/ABGHOP0 :imperf
 дубище/i
 дубівка/ab
 дубіївський/V
@@ -35269,7 +35280,7 @@
 дубіти/IGQ :imperf
 дубкевичівський/V
 дубківський/V
-дублений/VZ ^adjp:pasv:past
+дублений/VZ ^adjp:pasv:imperf # :past
 дублення/i
 дублерка/abd<
 дублерський/V
@@ -35844,14 +35855,15 @@
 екзактний/V
 екзальтаційний/V
 екзальтація/ab
-екзальтований/VW ^adjp:pasv:past
+екзальтований/VW ^adjp:pasv:imperf:perf # :past
 екзальтованість/l
+екзальтувати/ABGHOP0 :imperf:perf
 екзаменаторський/V
 екзаменатор/efgh<
 екзаменаційний/V
-екзаменований/V ^adjp:pasv:past
+екзаменований/V ^adjp:pasv:imperf # :past
 екзаменування/i
-екзаменувати/ABGHOP :imperf
+екзаменувати/ABGHOP0 :imperf
 екзамен/ef
 екзантема/a
 екзарація/a
@@ -36149,7 +36161,7 @@
 експериментаторство/i
 експериментаторський/V
 експериментатор/efgh<
-експериментований/V ^adjp:pasv:past
+експериментований/V ^adjp:pasv:imperf # :past
 експериментування/ij
 експериментувати/AGO :imperf
 експеримент/ef
@@ -36169,8 +36181,8 @@
 експлетивний/V
 експлікативний/V
 експлікація/a
-експлікований/V ^adjp:pasv:past
-експлікувати/AGO :imperf
+експлікований/V ^adjp:pasv:imperf # :past
+експлікувати/AGO0 :imperf
 експліцитний/V
 експлозивний/V
 експлозивність/l
@@ -36183,7 +36195,7 @@
 експлуатаційник/efg<
 експлуатаційно-технічний/V
 експлуатація/a
-експлуатований/V ^adjp:pasv:past
+експлуатований/V ^adjp:pasv:imperf # :past
 експлуатування/i
 експлуатувати/ABGHOP0 :imperf
 експозе noun:n:nv
@@ -36874,9 +36886,9 @@
 елімінатор/efg
 елімінаційний/V
 елімінація/a
-елімінований/V ^adjp:pasv:past
+елімінований/V ^adjp:pasv:imperf:perf # :past
 елімінування/i
-елімінувати/ABGHOP :imperf
+елімінувати/ABGHOP0 :imperf:perf
 елінварний/V
 елінваровий/V
 елінвар/e
@@ -37518,9 +37530,9 @@
 ермітаж/ef
 ермітовий/V
 ерогенний/V
-еродований/V ^adjp:pasv:past
+еродований/V ^adjp:pasv:imperf # :past
 еродованість/l
-еродувати/ABGHOP :imperf
+еродувати/ABGHOP0 :imperf
 ерозивний/V
 ерозійний/V
 ерозійностійкий/V
@@ -37717,16 +37729,17 @@
 етиленоксид/e
 етилен-пропіленовий/V
 етилен/ef
-етилований/V ^adjp:pasv:past
+етилований/V ^adjp:pasv:imperf # :past
 етиловий/V
 етилування/i
+етилувати/ABGHOP0 :imperf
 етилхлорид/e
 етилцелюлоза/a
 етил/e
 етимологізація/a
-етимологізований/V ^adjp:pasv:past
+етимологізований/V ^adjp:pasv:imperf:perf # :past
 етимологізування/i
-етимологізувати/ABGHOP :imperf
+етимологізувати/ABGHOP0 :imperf:perf
 етимологічний/VW
 етимологія/a
 етимолог/efg<
@@ -38111,7 +38124,7 @@
 жагучий/V
 жагучість/l
 жагучо adv
-жаданий/VW ^adjp:pasv:past
+жаданий/VW ^adjp:pasv:imperf # :past
 жаданівський/V
 жаданка/ad<
 жадання/ij
@@ -38175,8 +38188,8 @@
 жалоподібний/V
 жалощі/f
 жало/ij
-жалуваний/VW ^adjp:pasv:past
-жалувати/AGO :imperf
+жалуваний/VW ^adjp:pasv:imperf # :past
+жалувати/AGO0 :imperf
 жальний/V
 жальце/ij
 жаль/ef
@@ -38201,12 +38214,12 @@
 жаргоновий/V
 жаргон/ef
 жардиньєрка/ab
-жарений/V ^adjp:pasv:past
+жарений/V ^adjp:pasv:imperf # :past
 жарення/i
 жарина/a
 жаринка/a
 жаристий/V
-жарити/ABGHOP :imperf
+жарити/ABGHOP0 :imperf
 жарівка/ab
 жарівниця/ab
 жарівня/ab
@@ -38259,7 +38272,7 @@
 жасминовий/V
 жасмин/ef
 жасний/V :rare
-жатий/V ^adjp:pasv:past
+жатий/V ^adjp:pasv:imperf # :past
 жати/KL :imperf
 жаткар/lmq<
 жатка/ab
@@ -38300,7 +38313,7 @@
 жванецький/V
 жвяхкотіти/AGO :imperf
 жгут/efg
-жданий/V ^adjp:pasv:past
+жданий/V ^adjp:pasv:imperf # :past
 жданки/b
 ждання/i
 ждатися/B :imperf
@@ -38313,7 +38326,7 @@
 жебракування/ij
 жебракувати/AGO :imperf
 жебрак/efg<
-жебраний/V ^adjp:pasv:past
+жебраний/V ^adjp:pasv:imperf # :past
 жебрання/ij
 жебрати/IGQ :imperf
 жебрацтво/i
@@ -38456,7 +38469,7 @@
 жертвопринесення/ij
 жертвоприносини/o
 жертвоприношення/ij
-жертвуваний/V ^adjp:pasv:past
+жертвуваний/V ^adjp:pasv:imperf # :past
 жертвування/i
 жертвувати/ABGHOP :imperf
 жерти/AGO :imperf
@@ -38638,7 +38651,7 @@
 жирнючий/V
 жиробанк/ef
 жиробус/efg
-жирований/V ^adjp:pasv:past
+жирований/V ^adjp:pasv:imperf # :past
 жировиділення/i
 жировиділяння/i
 жировий/V
@@ -38825,7 +38838,7 @@
 жничка/abd<
 жнучи advp:imperf
 жобринський/V
-жований/V ^adjp:pasv:past
+жований/V ^adjp:pasv:imperf # :past
 жованка/a
 жовенце/i
 жовідський/V
@@ -117591,6 +117604,7 @@
 телекерований/V
 телекерованість/l
 телекерування/ij
+телекінез/e
 телекінетичний/V
 телекіноустановка/ab
 телекіно noun:n:nv
@@ -121603,7 +121617,7 @@
 уточина/ab
 уточнений/V ^adjp:pasv:perf # :past
 уточнення/ij
-уточнити/AB0 :perf
+уточнити/ABEF0 :perf
 уточнювальний/V
 уточнювання/i
 уточнювати/ABGHOP :imperf
@@ -121628,6 +121642,7 @@
 утрудняти/IGQ :imperf
 уфологічний/V
 уфологія/a
+уфолог/efg<
 ухання/i
 ухатий/V
 ухати/IGQ :imperf
