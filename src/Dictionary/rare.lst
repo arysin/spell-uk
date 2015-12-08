@@ -38,7 +38,7 @@
 дев'ятдесят numr:p:v_naz/v_zna
 дейко дейко predic
 дільчий/V
-докіль conj:subord
+докіль adv|conj:subord
 дрожка/ab
 єсть єсть predic
 жалуватися/BHP :imperf
@@ -98,6 +98,7 @@
 ніт ніт part
 оба numr:m:v_naz/v_zna
 обікласти verb:inf:perf
+обсіч adv:rare
 обi numr:f:v_naz/v_zna
 одітий/V ^adjp:pasv:perf # :past
 озутий/V ^adjp:pasv:perf # :past

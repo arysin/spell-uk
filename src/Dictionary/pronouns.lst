@@ -1387,7 +1387,7 @@
 буцімто conj:subord|part
 відколи adv:&pron:int:rel|conj:subord
 власне insert|part
-властиво part|predic
+властиво part|insert|predic
 все-таки/X ^conj:coord
 все-таки/X ^part
 втім adv:v-u|conj:coord:v-u
