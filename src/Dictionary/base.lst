@@ -1093,10 +1093,10 @@
 агрегувальний/V
 агрегування/i
 агрегувати/ABGHOP0 :imperf:perf
-агреже noun:f:anim:xp1 # людина
-агреже noun:m:anim:xp1 # людина
-агреже noun:m:xp2  # вчений ступінь
-агреже noun:n:xp2  # вчений ступінь
+агреже noun:f:anim:xp1:nv # людина
+агреже noun:m:anim:xp1:nv # людина
+агреже noun:m:xp2:nv  # вчений ступінь
+агреже noun:n:xp2:nv  # вчений ступінь
 агреман/e
 агресивний/VW
 агресивність/l
@@ -13265,7 +13265,7 @@
 велемовство/i
 велемудрий/VW
 веленевий/V
-велено verb:impers
+велено verb:imperf:impers
 велень/i
 велеречивість/l :np
 велерит/ef
@@ -37061,7 +37061,7 @@
 елементний/V
 елементоорганічний/V
 елемент/efg :xp1 # конкретний
-елемент/ef- :xp2 # асбрактний
+елемент/ef- :xp2 # абстрактний
 еленіум/eg
 елеронний/V
 елерон/efg
@@ -50628,11 +50628,11 @@
 їсти/MNGH :imperf
 їстівний/VZ
 їстівність/l
-їстки verb:inf:dimin
+їстки verb:imperf:inf:dimin
 їстовний/V
 їстоньки predic
-їстоньки verb:inf:dimin
-їсточки verb:inf:dimin
+їстоньки verb:imperf:inf:dimin
+їсточки verb:imperf:inf:dimin
 їхатися/N :imperf
 їхати/MG :imperf
 їхній/V :&pron:pos
@@ -58593,7 +58593,7 @@
 купонний/V
 купоно-карбованець/abc
 купонька/ab
-купоньки verb:inf:dimin
+купоньки verb:imperf:inf:dimin
 купон/efg
 купоросний/V
 купоросовий/V
@@ -64346,7 +64346,7 @@
 млість/lm
 мліти/IGQ :imperf
 млоївши advp:perf
-млоїти/S5
+млоїти/S5 :imperf
 млосний/VW
 млосність/lm
 млость/l
@@ -84875,7 +84875,7 @@
 питий/V :rare
 питимий/V :rare
 пити/IJGHQR :imperf
-питки verb:inf:dimin
+питки verb:imperf:inf:dimin
 питливий/V :rare
 питлівка/a
 питльований/V ^adjp:pasv:past
@@ -84885,7 +84885,7 @@
 питлювати/ABGHOP :imperf
 питний/V
 питомий/VW
-питоньки verb:inf:dimin
+питоньки verb:imperf:inf:dimin
 пиття/i
 питульський/V
 питущий/VZ
@@ -95729,7 +95729,7 @@
 початкоцвітий/V
 початкування/i
 початок/ab
-початоньки verb:inf:dimin
+початоньки verb:perf:inf:dimin
 початувати/A :perf
 почахнути/A :perf
 почвалати/I :perf
@@ -99903,7 +99903,7 @@
 проклюнути/AB :perf
 проклясти/AB :perf
 проклятий/V ^adjp:pasv:past
-проклято verb:impers
+проклято verb:perf:impers
 прокляття/ij
 проклятущий/V
 прокований/V ^adjp:pasv:past
@@ -105587,7 +105587,7 @@
 роба/ab
 робер/efg
 робити/ABEFGHOP0 :imperf
-робитоньки verb:inf:dimin
+робитоньки verb:imperf:inf:dimin
 робінзонада/ab
 робінзон/efgh<
 робінія/a
@@ -106470,7 +106470,7 @@
 розіпрілість/l :np
 розіп'ясти/AB :perf
 розіп'ятий/V ^adjp:pasv:past
-розіп'ято verb:impers
+розіп'ято verb:perf:impers
 розірваний/V ^adjp:pasv:past
 розірваність/l
 розірвання/ij
@@ -109625,7 +109625,7 @@
 сваволя/a
 свара/ab
 сварити/ABEFGHOP :imperf
-сваритоньки verb:inf:dimin
+сваритоньки verb:imperf:inf:dimin
 сварка/ab
 сварливець/abc<
 сварливий/VW
@@ -111268,7 +111268,7 @@
 сірячинний/V
 сірячок/ac
 сісти/K :perf
-сістоньки verb:inf:dimin
+сістоньки verb:perf:inf:dimin
 сіті noun:n:nv:np
 сітка/ab
 сітківка/a
@@ -112727,7 +112727,7 @@
 смішно adv
 смішок/ac
 сміятися/JHR :imperf
-сміятоньки verb:inf:dimin
+сміятоньки verb:imperf:inf:dimin
 смовдь/i
 смог/e
 смоква/ab
@@ -113571,11 +113571,11 @@
 Спас/egh<
 спатися/BH :imperf
 спати/AG :imperf
-спатки verb:inf:dimin
-спатоньки verb:inf:dimin
-спаточки verb:inf:dimin
-спатуні verb:inf:dimin
-спатусі verb:inf:dimin
+спатки verb:imperf:inf:dimin
+спатоньки verb:imperf:inf:dimin
+спаточки verb:imperf:inf:dimin
+спатуні verb:imperf:inf:dimin
+спатусі verb:imperf:inf:dimin
 спахнути/K :perf
 спахувати/AGO :imperf
 спашений/V ^adjp:pasv:past
@@ -124550,19 +124550,19 @@
 ходики/f
 ходитися/B :imperf
 ходити/AEGO :imperf
-ходитоньки verb:inf:dimin
+ходитоньки verb:imperf:inf:dimin
 ходіння/ij
 ходовий/VZ
 ходовість/lm
 ходором adv
 ходуличник/efg<>
-ходулі verb:inf:dimin
+ходулі verb:imperf:inf:dimin
 ходульний/V
 ходульність/l
 ходунок/abc<
 ходунок/abc-
 ходун/efg
-ходусеньки verb:inf:dimin
+ходусеньки verb:imperf:inf:dimin
 ходьба/a
 ходячий/V
 хозарка/abd<
