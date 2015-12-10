@@ -39648,12 +39648,12 @@
 забрудник/efg<
 забруднити/AB0 :perf
 забруднювальний/V
-забруднюваний/V ^adjp:pasv:impef # :past
+забруднюваний/V ^adjp:pasv:imperf # :past
 забруднюваність/l
 забруднювання/i
 забруднювати/ABGHOPW :imperf
 забруднювач/efg
-забрукований/V ^adjp:pasv:perf$1 # :past
+забрукований/V ^adjp:pasv:perf # :past
 забруковування/i
 забруковувати/ABGHOP :imperf
 забрукувати/AB0 :perf
@@ -39671,7 +39671,7 @@
 забування/ij
 забувати/IJGHQR :imperf
 забудівля/a
-забудований/V ^adjp:pasv:perf$1 # :past
+забудований/V ^adjp:pasv:perf # :past
 забудова/ab
 забудовник/efg<
 забудовниця/abd<
@@ -39694,13 +39694,13 @@
 забурлити/A :perf
 забурмотати/A :perf
 забурмотіти/A :perf
-забуртований/V ^adjp:pasv:perf$1 # :past
+забуртований/V ^adjp:pasv:perf # :past
 забуртованість/l
 забуртувати/A0 :perf
 забурунілий/V ^adjp:actv:perf
 забурхати/I :perf
 забурчати/A :perf
-забур'янений/V ^adjp:pasv:perf$1 # :past
+забур'янений/V ^adjp:pasv:perf # :past
 забур'яненість/l
 забур'янення/i
 забур'янити/AB0 :perf
@@ -41952,7 +41952,7 @@
 закрученість/l
 закручення/ij
 закручувальний/V
-закручуваний/V ^adjp:pasv:impef # :past
+закручуваний/V ^adjp:pasv:imperf # :past
 закручуваність/l
 закручування/ij
 закручувати/ABGHOP :imperf
