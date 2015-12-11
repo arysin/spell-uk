@@ -358,35 +358,35 @@
 жилось житися verb:rev:past:s:3:imperf
 
 # паралельна: кляну - клену
-кленім клясти verb:impr:p:1:rare
-кленімо клясти verb:impr:p:1:rare
-кленіть клясти verb:impr:p:2:rare
-клену клясти verb:pres:s:1:rare
-кленеш клясти verb:pres:s:2:rare
-клене клясти verb:pres:s:3:rare
-кленем клясти verb:pres:p:1:rare
-кленемо клясти verb:pres:p:1:rare
-кленете клясти verb:pres:p:2:rare
-кленуть клясти verb:pres:p:3:rare
+кленім клясти verb:impr:p:1:imperf:rare
+кленімо клясти verb:impr:p:1:imperf:rare
+кленіть клясти verb:impr:p:2:imperf:rare
+клену клясти verb:pres:s:1:imperf:rare
+кленеш клясти verb:pres:s:2:imperf:rare
+клене клясти verb:pres:s:3:imperf:rare
+кленем клясти verb:pres:p:1:imperf:rare
+кленемо клясти verb:pres:p:1:imperf:rare
+кленете клясти verb:pres:p:2:imperf:rare
+кленуть клясти verb:pres:p:3:imperf:rare
 кленучи клясти advp:imperf
 
 
 # наказна фома є зайвою - не має сенсу значно ускладнювати правила???
-могти могти verb:inf
-можіть могти verb:impr:p:2
-можу могти verb:pres:s:1
-можеш могти verb:pres:s:2
-може могти verb:pres:s:3
-можем могти verb:pres:p:1
-можемо могти verb:pres:p:1
-можете могти verb:pres:p:2
-можуть могти verb:pres:p:3
-міг могти verb:past:m
-могла могти verb:past:f
-могло могти verb:past:n
-могли могти verb:past:p
+могти могти verb:inf:imperf
+можіть могти verb:impr:p:2:imperf
+можу могти verb:pres:s:1:imperf
+можеш могти verb:pres:s:2:imperf
+може могти verb:pres:s:3:imperf
+можем могти verb:pres:p:1:imperf
+можемо могти verb:pres:p:1:imperf
+можете могти verb:pres:p:2:imperf
+можуть могти verb:pres:p:3:imperf
+міг могти verb:past:m:imperf
+могла могти verb:past:f:imperf
+могло могти verb:past:n:imperf
+могли могти verb:past:p:imperf
 можучи могти advp:imperf
-мігши могти advp:perf
+мігши могти advp:perf:imperf
 
 # лише наказова
 стривати/C :imperf
@@ -499,10 +499,10 @@
 підтяти/A2 :perf
 
 
-жати/89
-нажати/89
-пожати/89
-пережати/89
+жати/89 :imperf
+нажати/89 :perf
+пожати/89 :perf
+пережати/89 :perf
 
 # !verb:perf
 зжати зіжну зіжнеш зіжне зіжнемо зіжнете зіжнуть зжав зжало зжала зжали зжавши          # spell-only
