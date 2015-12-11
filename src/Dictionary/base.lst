@@ -15184,7 +15184,7 @@
 вийнятий/V ^adjp:pasv:perf # :past
 вийняти/AB2 :perf
 вийняття/i
-вийти/M :perf:perf
+вийти/M :perf
 викажчик/efg<
 викажчиця/abd<
 виказаний/V ^adjp:pasv:perf # :past
@@ -22081,7 +22081,7 @@
 вписуваний/VX ^adjp:pasv:imperf # :past
 вписування/iX
 вписувати/ABOPX :imperf
-впитий/VX ^adjp:actv:perf # :pasv:perf # :past
+впитий/VX ^adjp:actv:perf # :pasv:past
 впитися/JX :perf
 впихання/iX
 впихати/IJGHQRX :imperf
@@ -55691,7 +55691,7 @@
 констеляційний/V
 констеляція/a :np
 конституанта/ab
-конституйований/V ^adjp:pasv:imperf:perf # :perf
+конституйований/V ^adjp:pasv:imperf:perf # :past
 конститутивний/V
 конституційний/VZ
 конституційність/lmZ
@@ -70933,7 +70933,7 @@
 неізотопний/V
 неізотопність/l
 неіндукційний/V
-неініціалізований/V ^adjp:pasv:imperf:imperf # :past
+неініціалізований/V ^adjp:pasv:imperf:perf # :past
 неініціативний/V
 неініціативність/l
 неінспірований/V ^adjp:pasv:imperf:perf # :past
@@ -104742,7 +104742,7 @@
 ретрактивний/V
 ретрактний/V
 ретракція/a
-ретрансльований/V ^adjp:pasv:imperf:perf:past
+ретрансльований/V ^adjp:pasv:imperf:perf # :past
 ретрансльовний/V
 ретранслювальний/V
 ретранслювання/i
