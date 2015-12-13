@@ -16441,7 +16441,12 @@
 випрудити/A0 :perf
 випручання/i
 випручати/IJ :perf:xp2 # ви́пручати
-випручати/IJW :imperf:xp1 # випруча́ти
+випручати/IJ :imperf:xp1 # випруча́ти
+вигадуваний/V ^adjp:pasv:imperf
+відшаровуваний/V ^adjp:pasv:imperf
+візований/V ^adjp:pasv:imperf
+говорений/V ^adjp:pasv:imperf
+денервований/V ^adjp:pasv:imperf
 випручування/i
 випручувати/ABGHOP :imperf
 випрягання/i
@@ -23360,8 +23365,8 @@
 вціліти/IX :perf
 вціляти/IQX :imperf
 вцяцькований/VX ^adjp:pasv:perf # :past
-вцяцьковований/V ^adjp:pasv:imperf
-вцяцьковувати/A0X :imperf
+вцяцьковуваний/V ^adjp:pasv:imperf
+вцяцьковувати/AX :imperf
 вчавити/A0X :perf
 вчавлений/VX ^adjp:pasv:perf # :past
 вчавлювати/ABGHOPX :imperf
@@ -38631,7 +38636,7 @@
 жало/ij
 жалуваний/VW ^adjp:pasv:imperf # :past
 жалування/i # xv2
-жалувати/AGO0 :imperf
+жалувати/AGOW :imperf
 жальний/V
 жальце/ij
 жаль/ef # xv2
@@ -40388,7 +40393,6 @@
 завширшки adv
 зав'юга/ab
 зав'южений/V ^adjp:pasv:perf # :past
-завюрвідділу noun:m:nv:anim|noun:f:nv:anim
 зав'ючений/V ^adjp:pasv:perf # :past
 зав'ючити/AB0 :perf
 зав'язанецький/V
@@ -66031,7 +66035,7 @@
 наближувати/ABGHOP :imperf
 наблизити/ABCD0 :perf
 набоб/efgh<
-набовтувати/A0 :imperf
+набовтувати/AGOW :imperf
 набожний/VW
 набожність/lm
 наболілий/V ^adjp:actv:perf
@@ -66386,7 +66390,7 @@
 нав'ючувати/ABGHOP :imperf
 нав'язаний/V ^adjp:pasv:perf # :past
 нав'язати/ABW :perf:xp2 # від: в'яза́ти
-нав'язати/IGO :imperf:xp1 # чіплятися, набридати
+нав'язати/IGQ :imperf:xp1 # чіплятися, набридати
 нав'язливий/VWZ
 нав'язливість/lmZ
 нав'язуваний/V ^adjp:pasv:imperf # :past
@@ -66530,7 +66534,7 @@
 наготовити/A0 :perf
 наготові adv
 наготовлений/V ^adjp:pasv:perf # :past
-наготовлювати/ABGHOP0 :imperf
+наготовлювати/ABGHOPW :imperf
 наготувати/AB0 :perf
 нагофрований/V ^adjp:pasv:perf # :past
 награбований/V ^adjp:pasv:perf # :past
@@ -81329,6 +81333,7 @@
 патрульно-постовий/V
 патруль/efg
 патрулювання/ij
+патрульований/V ^adjp:pasv:imperf
 патрулювати/ABGHOP0 :imperf
 патьок/ef
 патьохи/f
@@ -90239,7 +90244,7 @@
 подвоювати/ABGHOP :imperf
 подгорицький/V
 подебрадський/V
-подейкувати/AGOW :imperf
+подейкувати/AGO :imperf
 подекадний/V
 подеколи adv
 подекуди adv:&pron:ind
@@ -99102,7 +99107,7 @@
 притрухнути/A :perf
 притрушений/V ^adjp:pasv:perf # :past
 притрушування/i
-притрушувати/AB0 :imperf
+притрушувати/ABW :imperf
 притужавілий/V ^adjp:actv:perf
 притужина/ab
 притужити/A :perf
@@ -103370,7 +103375,10 @@
 радий/VW
 радикалізація/a
 радикалізм/e
-радикалізувати/ABGHOP0 :imperf
+радикалізувати/ABGHOP0 :imperf:perf
+радикалізований/V ^adjp:pasv:imperf:perf
+сервований/V ^adjp:pasv:imperf
+спуджуваний/V ^adjp:pasv:imperf
 радикалістський/V
 радикал-соціаліст/efgh<
 радикальний/VW
@@ -106858,6 +106866,9 @@
 розжалоблювання/i
 розжалуваний/V ^adjp:pasv:perf # :past
 розжалування/ij
+карбонільований/V ^adjp:pasv:imperf
+комісований/V ^adjp:pasv:imperf
+комплектований/V ^adjp:pasv:imperf
 розжалувати/ABW :perf
 розжарений/V ^adjp:pasv:perf # :past
 розжареність/l
@@ -118500,7 +118511,9 @@
 телефонографія/a :np
 телефонометрія/a :np
 телефонування/i
-телефонувати/ABGHOP0 :imperf
+телефонувати/ABGHOP :imperf
+трушений/V ^adjp:pasv:imperf
+угрупований/V ^adjp:pasv:perf
 телефон/ef-
 телефон/efg
 телефотографія/ab
