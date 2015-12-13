@@ -14592,6 +14592,7 @@
 вигадництво/i
 вигадниця/abd<
 вигадочка/a
+вигадуваний/V ^adjp:pasv:imperf
 вигадування/ij
 вигадувати/ABGHOPW :imperf # xv2
 вигад/ef
@@ -16440,13 +16441,8 @@
 випруджувати/AGO :imperf
 випрудити/A0 :perf
 випручання/i
-випручати/IJ :perf:xp2 # ви́пручати
 випручати/IJ :imperf:xp1 # випруча́ти
-вигадуваний/V ^adjp:pasv:imperf
-відшаровуваний/V ^adjp:pasv:imperf
-візований/V ^adjp:pasv:imperf
-говорений/V ^adjp:pasv:imperf
-денервований/V ^adjp:pasv:imperf
+випручати/IJ :perf:xp2 # ви́пручати
 випручування/i
 випручувати/ABGHOP :imperf
 випрягання/i
@@ -20128,6 +20124,7 @@
 відчуття/if
 відчухрати/I :perf
 відшарований/V ^adjp:pasv:perf # :past xv2
+відшаровуваний/V ^adjp:pasv:imperf
 відшаровування/ij # xv2
 відшаровувати/ABGHOPW :imperf # xv2
 відшарування/ij # xv2
@@ -20255,6 +20252,7 @@
 візницький/V
 візниця/abd<
 візничий/ij<
+візований/V ^adjp:pasv:imperf
 візовий/V
 візок/abc
 візочник/efg<
@@ -26553,6 +26551,7 @@
 говіронька/a
 говір/ab
 говіти/IGQ :imperf
+говорений/V ^adjp:pasv:imperf
 говорильня/ab
 говорити/ABEFGHOP0 :imperf
 говорівський/V
@@ -30818,6 +30817,7 @@
 де-небудь adv:&pron:ind
 де-не-де adv:&pron:ind
 денервація/a
+денервований/V ^adjp:pasv:imperf
 денервування/i
 денервувати/ABGHOP0 :imperf
 денечко/i
@@ -38634,7 +38634,7 @@
 жалоподібний/V
 жалощі/f
 жало/ij
-жалуваний/VW ^adjp:pasv:imperf # :past
+жалуваний/V ^adjp:pasv:imperf # :past
 жалування/i # xv2
 жалувати/AGOW :imperf
 жальний/V
@@ -52171,6 +52171,7 @@
 карбонілований/V ^adjp:pasv:perf
 карбоніловмісний/V
 карбонільний/V
+карбонільований/V ^adjp:pasv:imperf
 карбонілювати/ABGHOP0 :imperf
 карбоніл/ef
 карбоніт/ef
@@ -55446,6 +55447,7 @@
 комісіонерський/V
 комісіонер/efgh<
 комісія/ab
+комісований/V ^adjp:pasv:imperf
 комісувати/ABGHOP0 :imperf
 комісуральний/V
 комісура/ab
@@ -55539,6 +55541,7 @@
 комплектація/ab
 комплектний/VWZ
 комплектність/lmZ
+комплектований/V ^adjp:pasv:imperf
 комплектовання/i
 комплектувальний/V
 комплектувальник/efg<
@@ -66035,6 +66038,7 @@
 наближувати/ABGHOP :imperf
 наблизити/ABCD0 :perf
 набоб/efgh<
+набовтуваний/V ^adjp:pasv:imperf
 набовтувати/AGOW :imperf
 набожний/VW
 набожність/lm
@@ -66534,6 +66538,7 @@
 наготовити/A0 :perf
 наготові adv
 наготовлений/V ^adjp:pasv:perf # :past
+наготовлюваний/V ^adjp:pasv:imperf
 наготовлювати/ABGHOPW :imperf
 наготувати/AB0 :perf
 нагофрований/V ^adjp:pasv:perf # :past
@@ -81331,9 +81336,9 @@
 патрубок/abc
 патрульний/V
 патрульно-постовий/V
+патрульований/V ^adjp:pasv:imperf
 патруль/efg
 патрулювання/ij
-патрульований/V ^adjp:pasv:imperf
 патрулювати/ABGHOP0 :imperf
 патьок/ef
 патьохи/f
@@ -92926,8 +92931,8 @@
 понабивати/IJW :perf
 понабирати/IJ :perf
 понабігати/I :perf
-понабріхуваний/V ^adjp:pasv:imperf # :past
-понабріхувати/A :perf
+понабріхуваний/V ^adjp:pasv:perf # :past
+понабріхувати/AW :perf
 понабрякати/I :perf
 понабувати/I :perf
 понабудовувати/A :perf
@@ -92940,45 +92945,46 @@
 понавиписувати/AW :perf
 понависалий/V ^adjp:actv:perf:rare
 понависати/I :perf
-понавірчуваний/V ^adjp:pasv:imperf # :past
-понавірчувати/A :perf
+понавірчуваний/V ^adjp:pasv:perf # :past
+понавірчувати/AW :perf
 понавіряти/I :perf
 понавішаний/V ^adjp:pasv:perf:coll
 понавішати/IW :perf
-понавішуваний/V ^adjp:pasv:imperf # :past
-понавішувати/AB :perf
+понавішуваний/V ^adjp:pasv:perf # :past
+понавішувати/ABW :perf
 понаводити/A :perf
 понавозити/AB :perf
 понавчати/IJ :perf
-понав'язуваний/V ^adjp:pasv:imperf # :past
-понав'язувати/A :perf
+понав'язуваний/V ^adjp:pasv:perf # :past
+понав'язувати/AW :perf
 понаганяти/I :perf
 понагинати/IJ :perf
-понаговорюваний/V ^adjp:pasv:imperf # :past
-понаговорювати/A :perf
+понаговорюваний/V ^adjp:pasv:perf # :past
+понаговорювати/AW :perf
 понагодовувати/A :perf
 понагороджувати/A :perf
 понагортаний/V ^adjp:pasv:perf # :past
 понагортати/I :perf
-понагострюваний/V ^adjp:pasv:imperf # :past
-понагострювати/A :perf
-понаготовлюваний/V ^adjp:pasv:imperf # :past
-понаготовлювати/A :perf
+понагострюваний/V ^adjp:pasv:perf # :past
+понагострювати/AW :perf
+понаготовлюваний/V ^adjp:pasv:perf # :past
+понаготовлювати/AW :perf
 понагризати/I :perf
 понагрібати/I :perf
 понадавати/A :perf
 понадаровувати/A :perf
 понадбережний/V
 понадбиваний/V ^adjp:pasv:perf # :past
-понадбивати/I :perf
+понадбивати/IW :perf
 понадбираний/V ^adjp:pasv:perf # :past
-понадбирати/I :perf
+понадбирати/IW :perf
 понадбудовувати/A :perf
 понадводний/V :rare
 понадгірний/V
 понадгнилий/V ^adjp:actv:perf:rare
 понадгнити/I :perf
-понадгризати/I :perf
+понадгризаний/V ^adjp:pasv:perf
+понадгризати/IW :perf
 понаддальній/V
 понаддніпровий/V
 понаддніпровський/V
@@ -92993,58 +92999,58 @@
 понаділяти/I :perf
 понадіятися/J :perf
 понад'їдати/I :perf
-понадколюваний/V ^adjp:pasv:imperf # :past
-понадколювати/A :perf
+понадколюваний/V ^adjp:pasv:perf # :past
+понадколювати/AW :perf
 понадконтрактний/V
-понадкраюваний/V ^adjp:pasv:imperf # :past
-понадкраювати/A :perf
-понадкушуваний/V ^adjp:pasv:imperf # :past
-понадкушувати/A :perf
-понадламуваний/V ^adjp:pasv:imperf # :past
-понадламувати/AB :perf
+понадкраюваний/V ^adjp:pasv:perf # :past
+понадкраювати/AW :perf
+понадкушуваний/V ^adjp:pasv:perf # :past
+понадкушувати/AW :perf
+понадламуваний/V ^adjp:pasv:perf # :past
+понадламувати/ABW :perf
 понадливаний/V ^adjp:pasv:perf # :past
 понадливати/I :perf
 понадливий/V :coll
 понадливний/V :rare
 понадлімітний/V
-понадломлюваний/V ^adjp:pasv:imperf # :past
-понадломлювати/AB :perf
+понадломлюваний/V ^adjp:pasv:perf # :past
+понадломлювати/ABW :perf
 понадлюдський/V
 понадморський/V
 понадний/V
 понадність/l :np:rare
 понаднормативний/V
 понаднормовий/VW
-понадоюваний/V ^adjp:pasv:imperf # :past
-понадоювати/A :perf
+понадоюваний/V ^adjp:pasv:perf # :past
+понадоювати/AW :perf
 понадпартійний/V
 понадпиваний/V ^adjp:pasv:perf # :past
-понадпивати/I :perf
-понадпилюваний/V ^adjp:pasv:imperf # :past
-понадпилювати/A :perf
-понадписуваний/V ^adjp:pasv:imperf # :past
-понадписувати/A :perf
+понадпивати/IW :perf
+понадпилюваний/V ^adjp:pasv:perf # :past
+понадпилювати/AW :perf
+понадписуваний/V ^adjp:pasv:perf # :past
+понадписувати/AW :perf
 понадпланетний/V
 понадплановий/V
 понадплановість/l
 понадремонтний/V
 понадриваний/V ^adjp:pasv:perf # :past
 понадривати/IJ :perf
-понадрізуваний/V ^adjp:pasv:imperf # :past
-понадрізувати/A :perf
+понадрізуваний/V ^adjp:pasv:perf # :past
+понадрізувати/AW :perf
 понадрічний/V
-понадрубуваний/V ^adjp:pasv:imperf # :past
-понадрубувати/A :perf
-понадруковуваний/V ^adjp:pasv:imperf # :past
-понадруковувати/A :perf
+понадрубуваний/V ^adjp:pasv:perf # :past
+понадрубувати/AW :perf
+понадруковуваний/V ^adjp:pasv:perf # :past
+понадруковувати/AW :perf
 понадсипати/I :perf
 понадсторічний/V
 понадстроковий/V
 понадтарифний/V
 понадтинати/I :perf
 понадтиражний/V
-понадтісуваний/V ^adjp:pasv:imperf # :past
-понадтісувати/A :perf
+понадтісуваний/V ^adjp:pasv:perf # :past
+понадтісувати/AW :perf
 понадтронний/V
 понадувати/I :perf
 понадурочний/V
@@ -93055,211 +93061,216 @@
 понадягати/I :perf
 понажинати/I :perf
 понажиратися/J :perf
-поназбируваний/V ^adjp:pasv:imperf # :past
+поназбируваний/V ^adjp:pasv:perf # :past
 поназбігатися/J :perf
 поназиванний/V
-поназначуваний/V ^adjp:pasv:imperf # :past
-поназношуваний/V ^adjp:pasv:imperf # :past
+поназначуваний/V ^adjp:pasv:perf # :past
+поназношуваний/V ^adjp:pasv:perf # :past
 понаїдатися/J :perf
 понаїжджати/I :perf
 понаїхати/M :perf
 понайманий/V
 понайматися/J :perf
-понаквашуваний/V ^adjp:pasv:imperf # :past
+понаквашуваний/V ^adjp:pasv:perf # :past
 понаквашувати/A :perf
 понакиданий/V ^adjp:pasv:perf # :past
 понакидати/IJ :perf
 понакладати/I :perf
 понакладений/V ^adjp:pasv:perf # :past
-понаклеюваний/V ^adjp:pasv:imperf # :past
-понаклеювати/A :perf
+понаклеюваний/V ^adjp:pasv:perf # :past
+понаклеювати/AW :perf
 понакликаний/V ^adjp:pasv:perf # :past
-понакликати/I :perf
-понаколюваний/V ^adjp:pasv:imperf # :past
-понаколювати/A :perf
-понакопуваний/V ^adjp:pasv:imperf # :past
-понакопувати/A :perf
-понакочуваний/V ^adjp:pasv:imperf # :past
+понакликати/IW :perf
+понаколюваний/V ^adjp:pasv:perf # :past
+понаколювати/AW :perf
+понакопуваний/V ^adjp:pasv:perf # :past
+понакопувати/AW :perf
+понакочуваний/V ^adjp:pasv:perf # :past
 понакочуватися/B :perf
-понакочувати/A :perf
-понакошуваний/V ^adjp:pasv:imperf # :past
-понакошувати/A :perf
+понакочувати/AW :perf
+понакошуваний/V ^adjp:pasv:perf # :past
+понакошувати/AW :perf
 понакрадати/I :perf
-понакреслюваний/V ^adjp:pasv:imperf # :past
-понакреслювати/A :perf
+понакреслюваний/V ^adjp:pasv:perf # :past
+понакреслювати/AW :perf
 понакриваний/V ^adjp:pasv:perf # :past
 понакривати/IJ :perf
-понакришуваний/V ^adjp:pasv:imperf # :past
-понакришувати/A :perf
-понакручуваний/V ^adjp:pasv:imperf # :past
-понакручувати/AB :perf
-понакуповуваний/V ^adjp:pasv:imperf # :past
-понакурюваний/V ^adjp:pasv:imperf # :past
-понакурювати/A :perf
-понакутувати/A :perf
-поналагоджуваний/V ^adjp:pasv:imperf # :past
-поналагоджувати/A :perf
+понакришуваний/V ^adjp:pasv:perf # :past
+понакришувати/AW :perf
+понакручуваний/V ^adjp:pasv:perf # :past
+понакручувати/ABW :perf
+понакуповуваний/V ^adjp:pasv:perf # :past
+понакурюваний/V ^adjp:pasv:perf # :past
+понакурювати/AW :perf
+понакутуваний/V ^adjp:pasv:perf
+понакутувати/AW :perf
+поналагоджуваний/V ^adjp:pasv:perf # :past
+поналагоджувати/AW :perf
 поналазити/A :perf
-поналамуваний/V ^adjp:pasv:imperf # :past
-поналамувати/A :perf
-поналатуваний/V ^adjp:pasv:imperf # :past
-поналатувати/A :perf
+поналамуваний/V ^adjp:pasv:perf # :past
+поналамувати/AW :perf
+поналатуваний/V ^adjp:pasv:perf # :past
+поналатувати/AW :perf
 поналиваний/V ^adjp:pasv:perf # :past
 поналиватися/J :perf
-поналивати/I :perf
+поналивати/IW :perf
 поналигувати/A :perf
 поналипати/I :perf
-поналіплюваний/V ^adjp:pasv:imperf # :past
+поналіплюваний/V ^adjp:pasv:perf # :past
 поналітати/I :perf
 поналовлювати/A :perf
-поналузуваний/V ^adjp:pasv:imperf # :past
-поналузувати/A :perf
-поналускуваний/V ^adjp:pasv:imperf # :past
+поналузуваний/V ^adjp:pasv:perf # :past
+поналузувати/AW :perf
+поналускуваний/V ^adjp:pasv:perf # :past
 поналускувати/A :perf
 поналягати/I :perf
-поналякуваний/V ^adjp:pasv:imperf # :past
-поналякувати/A :perf
-поналяпуваний/V ^adjp:pasv:imperf # :past
-поналяпувати/A :perf
-понамазуваний/V ^adjp:pasv:imperf # :past
-понамазувати/AB :perf
+поналякуваний/V ^adjp:pasv:perf # :past
+поналякувати/AW :perf
+поналяпуваний/V ^adjp:pasv:perf # :past
+поналяпувати/AW :perf
+понамазуваний/V ^adjp:pasv:perf # :past
+понамазувати/ABW :perf
 понамальований/V ^adjp:pasv:perf
-понамальовуваний/V ^adjp:pasv:imperf # :past
-понамальовувати/A :perf
-понамащуваний/V ^adjp:pasv:imperf # :past
-понамащувати/AB :perf
+понамальовуваний/V ^adjp:pasv:perf # :past
+понамальовувати/AW :perf
+понамащуваний/V ^adjp:pasv:perf # :past
+понамащувати/ABW :perf
 понамерзати/IJ :perf
-понамилюваний/V ^adjp:pasv:imperf # :past
-понамилювати/A :perf
+понамилюваний/V ^adjp:pasv:perf # :past
+понамилювати/AW :perf
 понаминати/I :perf
-понамінюваний/V ^adjp:pasv:imperf # :past
-понамінювати/A :perf
+понамінюваний/V ^adjp:pasv:perf # :past
+понамінювати/AW :perf
 понамітаний/V ^adjp:pasv:perf # :past
 понамітати/I :perf
-понамішуваний/V ^adjp:pasv:imperf # :past
-понамішувати/A :perf
+понамішуваний/V ^adjp:pasv:perf # :past
+понамішувати/AW :perf
 понамовляти/I :perf
 понамокати/I :perf
-понамолочуваний/V ^adjp:pasv:imperf # :past
-понамолочувати/A :perf
+понамолочуваний/V ^adjp:pasv:perf # :past
+понамолочувати/AW :perf
 понамотувати/AB :perf
-понамочуваний/V ^adjp:pasv:imperf # :past
-понамочувати/A :perf
-понамощуваний/V ^adjp:pasv:imperf # :past
-понамощувати/A :perf
-понамулюваний/V ^adjp:pasv:imperf # :past
-понамулювати/A :perf
-понанизуваний/V ^adjp:pasv:imperf # :past
-понанизувати/A :perf
+понамочуваний/V ^adjp:pasv:perf # :past
+понамочувати/AW :perf
+понамощуваний/V ^adjp:pasv:perf # :past
+понамощувати/AW :perf
+понамулюваний/V ^adjp:pasv:perf # :past
+понамулювати/AW :perf
+понанизуваний/V ^adjp:pasv:perf # :past
+понанизувати/AW :perf
 понаносити/A :perf
 понапалювати/A :perf
 понапасати/IJ :perf
-понапаскуджуваний/V ^adjp:pasv:imperf # :past
+понапаскуджуваний/V ^adjp:pasv:perf # :past
 понапиватися/J :perf
 понапинаний/V ^adjp:pasv:perf # :past
 понапинатий/V ^adjp:pasv:perf # :past
 понапинати/IJ :perf
-понаписуваний/V ^adjp:pasv:imperf # :past
-понаписувати/A :perf
+понаписуваний/V ^adjp:pasv:perf # :past
+понаписувати/AW :perf
 понапиханий/V ^adjp:pasv:perf # :past
 понапихати/I :perf
 понапікати/I :perf
 понапліскувати/A :perf
 понаплітати/I :perf
 понаплутувати/A :perf
-понапльовуваний/V ^adjp:pasv:imperf # :past
-понапльовувати/A :perf
+понапльовуваний/V ^adjp:pasv:perf # :past
+понапльовувати/AW :perf
 понаповзати/I :perf
 понаповнювати/A :perf
-понапоюваний/V ^adjp:pasv:imperf # :past
-понапоювати/A :perf
+понапоюваний/V ^adjp:pasv:perf # :past
+понапоювати/AW :perf
 понаправляти/I :perf
 понапрохувати/A :perf
-понапрошуваний/V ^adjp:pasv:imperf # :past
+понапрошуваний/V ^adjp:pasv:perf # :past
 понапрядати/I :perf
 понапувати/I :perf
 понапускати/I :perf
 понапухати/I :perf
-понараховуваний/V ^adjp:pasv:imperf # :past
-понараховувати/A :perf
+понараховуваний/V ^adjp:pasv:perf # :past
+понараховувати/AW :perf
 понариваний/V ^adjp:pasv:perf # :past
 понарізаний/V ^adjp:pasv:perf # :past
 понарізати/I :perf
-понарізуваний/V ^adjp:pasv:imperf # :past
-понарізувати/AB :perf
-понароблюваний/V ^adjp:pasv:imperf # :past
-понароблювати/A :perf
+понарізуваний/V ^adjp:pasv:perf # :past
+понарізувати/ABW :perf
+понароблюваний/V ^adjp:pasv:perf # :past
+понароблювати/AW :perf
 понароджувати/AB :perf
 понарозказувати/AB :perf
 понаростати/I :perf
-понаряджуваний/V ^adjp:pasv:imperf # :past
-понасаджуваний/V ^adjp:pasv:imperf # :past
+понаряджуваний/V ^adjp:pasv:perf # :past
+понасаджуваний/V ^adjp:pasv:perf # :past
 понасаджувати/A :perf
 понасилати/I :perf
 понасипати/IJ :perf
 понасівати/I :perf
 понасідати/I :perf
 понаслухуватися/B :perf
-понасмажуваний/V ^adjp:pasv:imperf # :past
+понасмажуваний/V ^adjp:pasv:perf # :past
 понасмажувати/A :perf
 понасмічувати/A :perf
 понасовувати/AB :perf
-понасолюваний/V ^adjp:pasv:imperf # :past
-понасолювати/A :perf
+понасолюваний/V ^adjp:pasv:perf # :past
+понасолювати/AW :perf
 понаставлений/V ^adjp:pasv:perf
-понаставлюваний/V ^adjp:pasv:imperf # :past
+понаставлюваний/V ^adjp:pasv:perf # :past
+понаставлювати/AW :perf
 понаставляний/V ^adjp:pasv:perf:coll
 понаставляти/IJ :perf
-понастовбурчуваний/V ^adjp:pasv:imperf # :past
-понастовбурчувати/AB :perf
+понастовбурчуваний/V ^adjp:pasv:perf # :past
+понастовбурчувати/ABW :perf
 понастромлюваний/V ^adjp:pasv:perf # :past
 понастромлювати/ABW :perf
-понастругуваний/V ^adjp:pasv:imperf # :past
-понастругувати/A :perf
-понасуваний/V ^adjp:pasv:imperf # :past
-понасувати/IJ :perf
-понасуплюваний/V ^adjp:pasv:imperf # :past
-понасуплювати/AB :perf
+понастругуваний/V ^adjp:pasv:perf # :past
+понастругувати/AW :perf
+понасуваний/V ^adjp:pasv:perf # :past
+понасувати/IJW :perf
+понасуплюваний/V ^adjp:pasv:perf # :past
+понасуплювати/ABW :perf
 понасурмити/A :perf:coll
 понасурмлений/V ^adjp:pasv:perf:coll
-понасушуваний/V ^adjp:pasv:imperf # :past
-понасушувати/A :perf
+понасушуваний/V ^adjp:pasv:perf # :past
+понасушувати/AW :perf
 по-наськи adv:&pron:pos
 понатаскувати/A :perf
 понатиканий/V ^adjp:pasv:perf # :past
-понатикуваний/V ^adjp:pasv:imperf # :past
-понатирати/IJ :perf
+понатикуваний/V ^adjp:pasv:perf # :past
+понатираний/V ^adjp:pasv:perf
+понатирати/IJW :perf
 понатікати/I :perf
-понатісуваний/V ^adjp:pasv:imperf # :past
-понатісувати/A :perf
-понатомлюваний/V ^adjp:pasv:imperf # :past
-понатомлювати/A :perf
-понатоплюваний/V ^adjp:pasv:imperf # :past
-понатоплювати/A :perf
-понатоптуваний/V ^adjp:pasv:imperf # :past
-понаточуваний/V ^adjp:pasv:imperf # :past
-понаточувати/AB :perf
-понатрушуваний/V ^adjp:pasv:imperf # :past
+понатісуваний/V ^adjp:pasv:perf # :past
+понатісувати/AW :perf
+понатомлюваний/V ^adjp:pasv:perf # :past
+понатомлювати/AW :perf
+понатоплюваний/V ^adjp:pasv:perf # :past
+понатоплювати/AW :perf
+понатоптуваний/V ^adjp:pasv:perf # :past
+понаточуваний/V ^adjp:pasv:perf # :past
+понаточувати/ABW :perf
+понатрушуваний/V ^adjp:pasv:perf # :past
 понатяганий/V ^adjp:pasv:perf # :past
-понатягати/IJ :perf
-понатягувати/AB :perf
-понаучуваний/V ^adjp:pasv:imperf # :past
-понафарбовуваний/V ^adjp:pasv:imperf # :past
-понафарбовувати/AB :perf
+понатягати/IJW :perf
+понатягуваний/V ^adjp:pasv:perf
+понатягувати/ABW :perf
+понаучуваний/V ^adjp:pasv:perf # :past
+понафарбовуваний/V ^adjp:pasv:perf # :past
+понафарбовувати/ABW :perf
 понахиляний/V ^adjp:pasv:perf # :past
-понахиляти/IJ :perf
-понахмурюваний/V ^adjp:pasv:imperf # :past
+понахиляти/IJW :perf
+понахмурюваний/V ^adjp:pasv:perf # :past
 понахмурюватися/B :perf
 понаховувати/A :perf
 понаходитися/B :perf
 понаходити/A :perf
 понаціджувати/A :perf
-поначеркуваний/V ^adjp:pasv:imperf # :past
-поначерпувати/A :perf
+поначеркуваний/V ^adjp:pasv:perf # :past
+поначерпуваний/V ^adjp:pasv:perf
+поначерпувати/AW :perf
 поначиняти/I :perf
 поначитуватися/B :perf
-поначіплюваний/V ^adjp:pasv:imperf # :past
-поначіплювати/AB :perf
+поначіплюваний/V ^adjp:pasv:perf # :past
+поначіплювати/ABW :perf
 понашиваний/V ^adjp:pasv:perf # :past
 понашивати/I :perf
 по-нашому adv:&pron:pos
@@ -99106,6 +99117,7 @@
 притрухлий/V
 притрухнути/A :perf
 притрушений/V ^adjp:pasv:perf # :past
+притрушуваний/V ^adjp:pasv:imperf
 притрушування/i
 притрушувати/ABW :imperf
 притужавілий/V ^adjp:actv:perf
@@ -103375,10 +103387,8 @@
 радий/VW
 радикалізація/a
 радикалізм/e
-радикалізувати/ABGHOP0 :imperf:perf
 радикалізований/V ^adjp:pasv:imperf:perf
-сервований/V ^adjp:pasv:imperf
-спуджуваний/V ^adjp:pasv:imperf
+радикалізувати/ABGHOP0 :imperf:perf
 радикалістський/V
 радикал-соціаліст/efgh<
 радикальний/VW
@@ -106866,9 +106876,6 @@
 розжалоблювання/i
 розжалуваний/V ^adjp:pasv:perf # :past
 розжалування/ij
-карбонільований/V ^adjp:pasv:imperf
-комісований/V ^adjp:pasv:imperf
-комплектований/V ^adjp:pasv:imperf
 розжалувати/ABW :perf
 розжарений/V ^adjp:pasv:perf # :past
 розжареність/l
@@ -110883,6 +110890,7 @@
 сервіс/ef
 сервітут/e
 сервлет/ef
+сервований/V ^adjp:pasv:imperf
 сервомотор/efg
 сервопривід/ab
 сервувати/ABGHOP0 :imperf
@@ -115163,6 +115171,7 @@
 спугнутий/V ^adjp:pasv:perf
 спудей/efg<
 спуджений/V ^adjp:pasv:perf:rare # :past
+спуджуваний/V ^adjp:pasv:imperf
 спуджувати/ABGHOPW :imperf
 спуртувати/AGO :imperf:perf
 спурт/ef
@@ -118512,8 +118521,6 @@
 телефонометрія/a :np
 телефонування/i
 телефонувати/ABGHOP :imperf
-трушений/V ^adjp:pasv:imperf
-угрупований/V ^adjp:pasv:perf
 телефон/ef-
 телефон/efg
 телефотографія/ab
@@ -121069,6 +121076,7 @@
 трухлятина/a :np
 трухнути/A :perf
 трух-трух excl
+трушений/V ^adjp:pasv:imperf
 трьохактний/V
 трьохактність/l
 трьохдіапазонний/V
@@ -121629,6 +121637,7 @@
 угодовський/V
 угорськомовний/V
 уготування/i
+угрупований/V ^adjp:pasv:perf
 угруповання/ij
 угруповування/i
 угрупування/ij
