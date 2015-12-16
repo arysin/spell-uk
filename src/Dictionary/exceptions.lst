@@ -636,3 +636,36 @@
 срібен срібний adj:m:v_naz/v_zna:short
 чорен чорний adj:m:v_naz/v_zna:short
 ясен ясний adj:m:v_naz/v_zna:short
+
+# дієприслівники
+
+боячись боятися advp:rev:imperf
+бредучи брести advp:imperf
+ведучи вести advp:imperf
+гувши густи advp:imperf
+гудучи гудіти advp:imperf
+діявшись діятися advp:perf
+дмучи дути advp:imperf
+ждучи ждати advp:imperf
+женучись гнатися advp:rev:imperf
+женучи гнати advp:imperf
+жнучи жати advp:imperf
+зболівши зболіти advp:perf
+ідучи іти advp:imperf
+іржучи іржати advp:imperf
+їдучи їхати advp:imperf
+йдучи йти advp:imperf
+кладучи класти advp:imperf
+крадучись крастися advp:rev:imperf
+крадучи красти advp:imperf
+мелючись молотися advp:rev:imperf
+мелючи молоти advp:imperf
+мінячись мінятися advp:imperf
+млоївши млоїти advp:imperf
+мнучись мнутися advp:rev:imperf
+мнучи мнути advp:imperf
+несучи нести advp:imperf
+ржучи ржати advp:imperf
+сплючи спати advp:imperf
+ссучи ссати advp:imperf
+стогнучи стогнати advp:imperf
