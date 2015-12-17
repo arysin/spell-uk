@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Usage: aff <word>/<flags>
+
+BASEDIR=$( dirname "${BASH_SOURCE[0]}" )
+
+STR=`echo "$@" | tr ' ' '\n'`
+echo "$STR" | $BASEDIR/tag/affix.py
