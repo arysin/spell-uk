@@ -69,7 +69,7 @@ while(<>) {
 	@lines = ();
 	$line_count = 0;
 	
-	if( $SFX[1] =~ /[AIKM]/ ) {
+	if( $SFX[1] =~ /[AIKM8]/ ) {
 	    push(@lines, "# Зворотня форма дієслів (-ся та -сь)\n");
 	    push(@lines, "SFX ", $sfx_rev, "   0\tся	ти		#  ~ти  ~тися    @ verb:rev:inf\n");
 	    push(@lines, "SFX ", $sfx_rev, "   0\tсь	ти		#  ~ти  ~ись     @ verb:rev:inf\n");

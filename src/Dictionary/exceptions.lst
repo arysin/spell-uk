@@ -71,9 +71,7 @@
 губів губа noun:p:v_rod
 зморщок зморшка noun:p:v_rod
 легенів легеня noun:p:v_rod
-льоту літ noun:m:v_rod/v_dav/v_mis
 панотче панотець noun:m:v_kly:anim
-персні перстень noun:p:v_naz/v_zna
 старче старець noun:m:v_kly:anim
 чернець ченець noun:m:v_naz:anim
 мамів мама noun:p:v_rod:anim
@@ -497,10 +495,10 @@
 підтяти/A2 :perf
 
 
-жати/89 :imperf
-нажати/89 :perf
-пожати/89 :perf
-пережати/89 :perf
+жати/89 :imperf # жну
+нажати/89 :perf # нажну
+пожати/89 :perf # пожну
+пережати/89 :perf # пережну
 
 # !verb:perf
 зжати зіжну зіжнеш зіжне зіжнемо зіжнете зіжнуть зжав зжало зжала зжали зжавши          # spell-only
